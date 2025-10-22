@@ -11,6 +11,9 @@
 <link as="script" href="/wp-content/cache/wpo-minify/1761131694/assets/wpo-minify-footer-aed009fb.min.js" rel="preload"/>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- [AI for SEO] This site is optimized with the AI for SEO plugin v2.1.6 - https://aiforseo.ai -->
+<meta content="Automate your blog publishing with GitHub Actions and Cloudflare. Learn how to set up a static website effortlessly. Read more now!" name="description">
+<!-- [AI for SEO] End -->
 <link href="http://gmpg.org/xfn/11" rel="profile"/>
 <link href="/xmlrpc.php" rel="pingback"/>
 <style type="text/css">
@@ -27,61 +30,63 @@
                     </style>
 <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 <!-- All in One SEO 4.8.8 - aioseo.com -->
-<meta content="AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them. As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute" name="description">
 <meta content="max-image-preview:large" name="robots">
 <meta content="James" name="author"/>
-<link href="/2018/05/aws-status-page-monitoring-included/" rel="canonical">
+<link href="/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/" rel="canonical">
 <meta content="All in One SEO (AIOSEO) 4.8.8" name="generator"/>
 <meta content="en_GB" property="og:locale"/>
 <meta content="Jameskilbycouk - Some ramblings usually about computers" property="og:site_name"/>
 <meta content="article" property="og:type"/>
-<meta content="AWS Status Page – Monitoring Included - Jameskilbycouk" property="og:title"/>
-<meta content="AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them. As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute" property="og:description"/>
-<meta content="https://wordpress.jameskilby.cloud/2018/05/aws-status-page-monitoring-included/" property="og:url"/>
-<meta content="2018-05-15T21:41:14+00:00" property="article:published_time"/>
-<meta content="2025-10-01T15:22:16+00:00" property="article:modified_time"/>
+<meta content="How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare - Jameskilbycouk" property="og:title"/>
+<meta content="I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started withWhat I finished withHow I got thereWordpress APIGithub RunnerPythonBuild NotificationsCreate a Slack Webhook URLGitHub NotificationsCloudflare NotificationsUsing Utterance for CommentsUse GitHub Actions What I started with My previous" property="og:description"/>
+<meta content="https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/" property="og:url"/>
+<meta content="2025-10-06T15:57:06+00:00" property="article:published_time"/>
+<meta content="2025-10-22T21:02:22+00:00" property="article:modified_time"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="AWS Status Page – Monitoring Included - Jameskilbycouk" name="twitter:title"/>
-<meta content="AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them. As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute" name="twitter:description"/>
+<meta content="How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare - Jameskilbycouk" name="twitter:title"/>
+<meta content="I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started withWhat I finished withHow I got thereWordpress APIGithub RunnerPythonBuild NotificationsCreate a Slack Webhook URLGitHub NotificationsCloudflare NotificationsUsing Utterance for CommentsUse GitHub Actions What I started with My previous" name="twitter:description"/>
 <script class="aioseo-schema" type="application/ld+json">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BlogPosting","@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#blogposting","name":"AWS Status Page \u2013 Monitoring Included - Jameskilbycouk","headline":"AWS Status Page &#8211; Monitoring Included","author":{"@id":"https:\/\/wordpress.jameskilby.cloud\/author\/admin\/#author"},"publisher":{"@id":"https:\/\/wordpress.jameskilby.cloud\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/wordpress.jameskilby.cloud\/wp-content\/uploads\/2018\/05\/AmazonWebservices_Logo.svg_.png","width":2000,"height":800},"datePublished":"2018-05-15T21:41:14+00:00","dateModified":"2025-10-01T15:22:16+00:00","inLanguage":"en-GB","mainEntityOfPage":{"@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#webpage"},"isPartOf":{"@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#webpage"},"articleSection":"AWS, Hosting, AWS, Lambda"},{"@type":"BreadcrumbList","@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud#listItem","position":1,"name":"Home","item":"https:\/\/wordpress.jameskilby.cloud","nextItem":{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud\/category\/aws\/#listItem","name":"AWS"}},{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud\/category\/aws\/#listItem","position":2,"name":"AWS","item":"https:\/\/wordpress.jameskilby.cloud\/category\/aws\/","nextItem":{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#listItem","name":"AWS Status Page &#8211; Monitoring Included"},"previousItem":{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud#listItem","name":"Home"}},{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#listItem","position":3,"name":"AWS Status Page &#8211; Monitoring Included","previousItem":{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud\/category\/aws\/#listItem","name":"AWS"}}]},{"@type":"Organization","@id":"https:\/\/wordpress.jameskilby.cloud\/#organization","name":"Jameskilbycouk","description":"Some ramblings usually about computers","url":"https:\/\/wordpress.jameskilby.cloud\/","sameAs":["https:\/\/facebook.com\/","https:\/\/x.com\/","https:\/\/instagram.com\/","https:\/\/pinterest.com\/","https:\/\/youtube.com\/","https:\/\/linkedin.com\/in\/"]},{"@type":"Person","@id":"https:\/\/wordpress.jameskilby.cloud\/author\/admin\/#author","url":"https:\/\/wordpress.jameskilby.cloud\/author\/admin\/","name":"James","image":{"@type":"ImageObject","@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&d=mm&r=g","width":96,"height":96,"caption":"James"}},{"@type":"WebPage","@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#webpage","url":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/","name":"AWS Status Page \u2013 Monitoring Included - Jameskilbycouk","description":"AWS Status Page \u2013 Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them. As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute","inLanguage":"en-GB","isPartOf":{"@id":"https:\/\/wordpress.jameskilby.cloud\/#website"},"breadcrumb":{"@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#breadcrumblist"},"author":{"@id":"https:\/\/wordpress.jameskilby.cloud\/author\/admin\/#author"},"creator":{"@id":"https:\/\/wordpress.jameskilby.cloud\/author\/admin\/#author"},"image":{"@type":"ImageObject","url":"https:\/\/wordpress.jameskilby.cloud\/wp-content\/uploads\/2018\/05\/AmazonWebservices_Logo.svg_.png","@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#mainImage","width":2000,"height":800},"primaryImageOfPage":{"@id":"https:\/\/wordpress.jameskilby.cloud\/2018\/05\/aws-status-page-monitoring-included\/#mainImage"},"datePublished":"2018-05-15T21:41:14+00:00","dateModified":"2025-10-01T15:22:16+00:00"},{"@type":"WebSite","@id":"https:\/\/wordpress.jameskilby.cloud\/#website","url":"https:\/\/wordpress.jameskilby.cloud\/","name":"jameskilbycouk","description":"Some ramblings usually about computers","inLanguage":"en-GB","publisher":{"@id":"https:\/\/wordpress.jameskilby.cloud\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BlogPosting","@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#blogposting","name":"How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare - Jameskilbycouk","headline":"How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare","author":{"@id":"https:\/\/wordpress.jameskilby.cloud\/author\/admin\/#author"},"publisher":{"@id":"https:\/\/wordpress.jameskilby.cloud\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/wordpress.jameskilby.cloud\/wp-content\/uploads\/2025\/10\/Github-Actions.webp","width":720,"height":302},"datePublished":"2025-10-06T15:57:06+00:00","dateModified":"2025-10-22T21:02:22+00:00","inLanguage":"en-GB","mainEntityOfPage":{"@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#webpage"},"isPartOf":{"@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#webpage"},"articleSection":"Cloudflare, Devops, Github, Wordpress, Blog, Cloudflare, Cloudflare Pages, github, Runners, Wordpress"},{"@type":"BreadcrumbList","@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud#listItem","position":1,"name":"Home","item":"https:\/\/wordpress.jameskilby.cloud","nextItem":{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud\/category\/cloudflare\/#listItem","name":"Cloudflare"}},{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud\/category\/cloudflare\/#listItem","position":2,"name":"Cloudflare","item":"https:\/\/wordpress.jameskilby.cloud\/category\/cloudflare\/","nextItem":{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#listItem","name":"How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare"},"previousItem":{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud#listItem","name":"Home"}},{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#listItem","position":3,"name":"How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare","previousItem":{"@type":"ListItem","@id":"https:\/\/wordpress.jameskilby.cloud\/category\/cloudflare\/#listItem","name":"Cloudflare"}}]},{"@type":"Organization","@id":"https:\/\/wordpress.jameskilby.cloud\/#organization","name":"Jameskilbycouk","description":"Some ramblings usually about computers","url":"https:\/\/wordpress.jameskilby.cloud\/","sameAs":["https:\/\/facebook.com\/","https:\/\/x.com\/","https:\/\/instagram.com\/","https:\/\/pinterest.com\/","https:\/\/youtube.com\/","https:\/\/linkedin.com\/in\/"]},{"@type":"Person","@id":"https:\/\/wordpress.jameskilby.cloud\/author\/admin\/#author","url":"https:\/\/wordpress.jameskilby.cloud\/author\/admin\/","name":"James","image":{"@type":"ImageObject","@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&d=mm&r=g","width":96,"height":96,"caption":"James"}},{"@type":"WebPage","@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#webpage","url":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/","name":"How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare - Jameskilbycouk","description":"I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started withWhat I finished withHow I got thereWordpress APIGithub RunnerPythonBuild NotificationsCreate a Slack Webhook URLGitHub NotificationsCloudflare NotificationsUsing Utterance for CommentsUse GitHub Actions What I started with My previous","inLanguage":"en-GB","isPartOf":{"@id":"https:\/\/wordpress.jameskilby.cloud\/#website"},"breadcrumb":{"@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#breadcrumblist"},"author":{"@id":"https:\/\/wordpress.jameskilby.cloud\/author\/admin\/#author"},"creator":{"@id":"https:\/\/wordpress.jameskilby.cloud\/author\/admin\/#author"},"image":{"@type":"ImageObject","url":"https:\/\/wordpress.jameskilby.cloud\/wp-content\/uploads\/2025\/10\/Github-Actions.webp","@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#mainImage","width":720,"height":302},"primaryImageOfPage":{"@id":"https:\/\/wordpress.jameskilby.cloud\/2025\/10\/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare\/#mainImage"},"datePublished":"2025-10-06T15:57:06+00:00","dateModified":"2025-10-22T21:02:22+00:00"},{"@type":"WebSite","@id":"https:\/\/wordpress.jameskilby.cloud\/#website","url":"https:\/\/wordpress.jameskilby.cloud\/","name":"jameskilbycouk","description":"Some ramblings usually about computers","inLanguage":"en-GB","publisher":{"@id":"https:\/\/wordpress.jameskilby.cloud\/#organization"}}]}
 		</script>
 <!-- All in One SEO -->
 <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
-<title>AWS Status Page – Monitoring Included - Jameskilbycouk</title>
-<meta content="LambStatus, Monitoring, AWS, Lambda" name="description"/>
-<meta content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" name="robots"/>
-<link href="/2018/05/aws-status-page-monitoring-included/" rel="canonical">
+<title>How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare - Jameskilbycouk</title>
+<meta content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" name="robots"/>
+<link href="/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/" rel="canonical">
 <meta content="en_GB" property="og:locale"/>
 <meta content="article" property="og:type"/>
-<meta content="AWS Status Page - Real-Time Monitoring Insights" property="og:title"/>
-<meta content="Stay updated with AWS service metrics. Check the status now!" property="og:description"/>
-<meta content="https://wordpress.jameskilby.cloud/2018/05/aws-status-page-monitoring-included/" property="og:url"/>
-<meta content="AWS" property="article:tag"/>
-<meta content="Lambda" property="article:tag"/>
-<meta content="AWS" property="article:section"/>
-<meta content="2025-10-01T15:22:16+00:00" property="og:updated_time"/>
-<meta content="https://wordpress.jameskilby.cloud/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png" property="og:image"/>
-<meta content="https://wordpress.jameskilby.cloud/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png" property="og:image:secure_url"/>
-<meta content="2000" property="og:image:width"/>
-<meta content="800" property="og:image:height"/>
-<meta content="AWS Status Page - Monitoring Included" property="og:image:alt"/>
-<meta content="image/png" property="og:image:type"/>
-<meta content="2018-05-15T21:41:14+00:00" property="article:published_time"/>
-<meta content="2025-10-01T15:22:16+00:00" property="article:modified_time"/>
+<meta content="Deploy Your Blog as a Static Website" property="og:title"/>
+<meta content="Automate your blog with GitHub Actions and Cloudflare. Learn how to set it up today!" property="og:description"/>
+<meta content="https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/" property="og:url"/>
+<meta content="Blog" property="article:tag"/>
+<meta content="Cloudflare" property="article:tag"/>
+<meta content="Cloudflare Pages" property="article:tag"/>
+<meta content="github" property="article:tag"/>
+<meta content="Runners" property="article:tag"/>
+<meta content="Wordpress" property="article:tag"/>
+<meta content="Cloudflare" property="article:section"/>
+<meta content="2025-10-22T21:02:22+00:00" property="og:updated_time"/>
+<meta content="https://wordpress.jameskilby.cloud/wp-content/uploads/2025/10/Github-Actions.webp" property="og:image"/>
+<meta content="https://wordpress.jameskilby.cloud/wp-content/uploads/2025/10/Github-Actions.webp" property="og:image:secure_url"/>
+<meta content="720" property="og:image:width"/>
+<meta content="302" property="og:image:height"/>
+<meta content="How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare" property="og:image:alt"/>
+<meta content="image/webp" property="og:image:type"/>
+<meta content="2025-10-06T15:57:06+00:00" property="article:published_time"/>
+<meta content="2025-10-22T21:02:22+00:00" property="article:modified_time"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="AWS Status Page - Real-Time Monitoring Insights" name="twitter:title"/>
-<meta content="Stay updated with AWS service metrics. Check the status now!" name="twitter:description"/>
-<meta content="https://wordpress.jameskilby.cloud/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png" name="twitter:image"/>
+<meta content="Deploy Your Blog as a Static Website" name="twitter:title"/>
+<meta content="Automate your blog with GitHub Actions and Cloudflare. Learn how to set it up today!" name="twitter:description"/>
+<meta content="https://wordpress.jameskilby.cloud/wp-content/uploads/2025/10/Github-Actions.webp" name="twitter:image"/>
 <meta content="Written by" name="twitter:label1"/>
 <meta content="James" name="twitter:data1"/>
 <meta content="Time to read" name="twitter:label2"/>
-<meta content="Less than a minute" name="twitter:data2"/>
-<script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://wordpress.jameskilby.cloud/#person","name":"Jameskilbycouk"},{"@type":"WebSite","@id":"https://wordpress.jameskilby.cloud/#website","url":"https://wordpress.jameskilby.cloud","publisher":{"@id":"https://wordpress.jameskilby.cloud/#person"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"https://wordpress.jameskilby.cloud/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png","url":"https://wordpress.jameskilby.cloud/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png","width":"2000","height":"800","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"https://wordpress.jameskilby.cloud/2018/05/aws-status-page-monitoring-included/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://wordpress.jameskilby.cloud","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://wordpress.jameskilby.cloud/2018/05/aws-status-page-monitoring-included/","name":"AWS Status Page &#8211; Monitoring Included"}}]},{"@type":"WebPage","@id":"https://wordpress.jameskilby.cloud/2018/05/aws-status-page-monitoring-included/#webpage","url":"https://wordpress.jameskilby.cloud/2018/05/aws-status-page-monitoring-included/","name":"AWS Status Page - Monitoring Included - Jameskilbycouk","datePublished":"2018-05-15T21:41:14+00:00","dateModified":"2025-10-01T15:22:16+00:00","isPartOf":{"@id":"https://wordpress.jameskilby.cloud/#website"},"primaryImageOfPage":{"@id":"https://wordpress.jameskilby.cloud/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png"},"inLanguage":"en-GB","breadcrumb":{"@id":"https://wordpress.jameskilby.cloud/2018/05/aws-status-page-monitoring-included/#breadcrumb"}},{"@type":"Person","@id":"https://wordpress.jameskilby.cloud/author/admin/","name":"James","url":"https://wordpress.jameskilby.cloud/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","caption":"James","inLanguage":"en-GB"},"sameAs":["https://wordpress.jameskilby.cloud"]},{"@type":"BlogPosting","headline":"AWS Status Page - Monitoring Included - Jameskilbycouk","keywords":"AWS Status Page - Monitoring Included","datePublished":"2018-05-15T21:41:14+00:00","dateModified":"2025-10-01T15:22:16+00:00","author":{"@id":"https://wordpress.jameskilby.cloud/author/admin/","name":"James"},"publisher":{"@id":"https://wordpress.jameskilby.cloud/#person"},"description":"LambStatus, Monitoring, AWS, Lambda","name":"AWS Status Page - Monitoring Included - Jameskilbycouk","@id":"https://wordpress.jameskilby.cloud/2018/05/aws-status-page-monitoring-included/#richSnippet","isPartOf":{"@id":"https://wordpress.jameskilby.cloud/2018/05/aws-status-page-monitoring-included/#webpage"},"image":{"@id":"https://wordpress.jameskilby.cloud/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"https://wordpress.jameskilby.cloud/2018/05/aws-status-page-monitoring-included/#webpage"}}]}</script>
+<meta content="7 minutes" name="twitter:data2"/>
+<script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[[{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"What I started with","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#original-setup"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"What I finished with","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#what-i-finished-with"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"How I got there","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#how-i-got-there"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Wordpress API","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#w"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Github Runner","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#github-hosted-runner"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Python","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#cloudflare-static-pages"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Build Notifications","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#build-notifications"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Create a Slack Webhook URL","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#create-a-slack-webhook-url"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"GitHub Notifications","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#git-hub-notifications"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Cloudflare Notifications","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#cloudflare-notifications"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Using Utterance for Comments","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#u"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Use GitHub Actions","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#option-2-use-git-hub-actions-simpler-no-middleware-needed"}],{"@type":["Person","Organization"],"@id":"https://wordpress.jameskilby.cloud/#person","name":"Jameskilbycouk"},{"@type":"WebSite","@id":"https://wordpress.jameskilby.cloud/#website","url":"https://wordpress.jameskilby.cloud","publisher":{"@id":"https://wordpress.jameskilby.cloud/#person"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"https://wordpress.jameskilby.cloud/wp-content/uploads/2025/10/Github-Actions.webp","url":"https://wordpress.jameskilby.cloud/wp-content/uploads/2025/10/Github-Actions.webp","width":"720","height":"302","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://wordpress.jameskilby.cloud","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/","name":"How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare"}}]},{"@type":"WebPage","@id":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#webpage","url":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/","name":"How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare - Jameskilbycouk","datePublished":"2025-10-06T15:57:06+00:00","dateModified":"2025-10-22T21:02:22+00:00","isPartOf":{"@id":"https://wordpress.jameskilby.cloud/#website"},"primaryImageOfPage":{"@id":"https://wordpress.jameskilby.cloud/wp-content/uploads/2025/10/Github-Actions.webp"},"inLanguage":"en-GB","breadcrumb":{"@id":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#breadcrumb"}},{"@type":"Person","@id":"https://wordpress.jameskilby.cloud/author/admin/","name":"James","url":"https://wordpress.jameskilby.cloud/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","caption":"James","inLanguage":"en-GB"},"sameAs":["https://wordpress.jameskilby.cloud"]},{"@type":"BlogPosting","headline":"How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare - Jameskilbycouk","datePublished":"2025-10-06T15:57:06+00:00","dateModified":"2025-10-22T21:02:22+00:00","author":{"@id":"https://wordpress.jameskilby.cloud/author/admin/","name":"James"},"publisher":{"@id":"https://wordpress.jameskilby.cloud/#person"},"description":"Automate your blog publishing with GitHub Actions and Cloudflare. Learn how to set up a static website effortlessly. Read more now!","name":"How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare - Jameskilbycouk","@id":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#richSnippet","isPartOf":{"@id":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#webpage"},"image":{"@id":"https://wordpress.jameskilby.cloud/wp-content/uploads/2025/10/Github-Actions.webp"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"https://wordpress.jameskilby.cloud/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/#webpage"}}]}</script>
 <!-- /Rank Math WordPress SEO plugin -->
 <link href="/feed/" rel="alternate" title="Jameskilbycouk » Feed" type="application/rss+xml"/>
 <link href="/comments/feed/" rel="alternate" title="Jameskilbycouk » Comments Feed" type="application/rss+xml"/>
-<link href="/2018/05/aws-status-page-monitoring-included/feed/" rel="alternate" title="Jameskilbycouk » AWS Status Page – Monitoring Included Comments Feed" type="application/rss+xml"/>
+<link href="/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/feed/" rel="alternate" title="Jameskilbycouk » How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare Comments Feed" type="application/rss+xml"/>
 <style id="wp-block-library-theme-inline-css" type="text/css">
 .wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
 </style>
@@ -102,14 +107,14 @@
 <style class="optimize_css_2" media="all" type="text/css">.mfp-bg{top:0;left:0;width:100%;height:100%;z-index:999998;overflow:hidden;position:fixed;background:#0b0b0b;opacity:.8}.mfp-wrap{top:0;left:0;width:100%;height:100%;z-index:999999;position:fixed;outline:none!important;-webkit-backface-visibility:hidden}.mfp-container{text-align:center;position:absolute;width:100%;height:100%;left:0;top:0;padding:0 8px;box-sizing:border-box}.mfp-container:before{content:'';display:inline-block;height:100%;vertical-align:middle}.mfp-align-top .mfp-container:before{display:none}.mfp-content{position:relative;display:inline-block;vertical-align:middle;margin:0 auto;text-align:left;z-index:1045}.mfp-inline-holder .mfp-content,.mfp-ajax-holder .mfp-content{width:100%;cursor:auto}.mfp-ajax-cur{cursor:progress}.mfp-zoom-out-cur,.mfp-zoom-out-cur .mfp-image-holder .mfp-close{cursor:-moz-zoom-out;cursor:-webkit-zoom-out;cursor:zoom-out}.mfp-zoom{cursor:pointer;cursor:-webkit-zoom-in;cursor:-moz-zoom-in;cursor:zoom-in}.mfp-auto-cursor .mfp-content{cursor:auto}.mfp-close,.mfp-arrow,.mfp-preloader,.mfp-counter{-webkit-user-select:none;-moz-user-select:none;user-select:none}.mfp-loading.mfp-figure{display:none}.mfp-hide{display:none!important}.mfp-preloader{color:#CCC;position:absolute;top:50%;width:auto;text-align:center;margin-top:-.8em;left:8px;right:8px;z-index:1044}.mfp-preloader a{color:#CCC}.mfp-preloader a:hover{color:#FFF}.mfp-s-ready .mfp-preloader{display:none}.mfp-s-error .mfp-content{display:none}button.mfp-close,button.mfp-arrow{overflow:visible;cursor:pointer;background:#fff0;border:0;-webkit-appearance:none;display:block;outline:none;padding:0;z-index:1046;box-shadow:none;touch-action:manipulation}button::-moz-focus-inner{padding:0;border:0}.mfp-close{width:44px;height:44px;line-height:44px;position:absolute;right:0;top:0;text-decoration:none;text-align:center;opacity:.65;padding:0 0 18px 10px;color:#FFF;font-style:normal;font-size:28px;font-family:Arial,Baskerville,monospace}.mfp-close:hover,.mfp-close:focus{opacity:1}.mfp-close:active{top:1px}.mfp-close-btn-in .mfp-close{color:#333}.mfp-image-holder .mfp-close,.mfp-iframe-holder .mfp-close{color:#FFF;right:-6px;text-align:right;padding-right:6px;width:100%}.mfp-counter{position:absolute;top:0;right:0;color:#CCC;font-size:12px;line-height:18px;white-space:nowrap}.mfp-arrow{position:absolute;opacity:.65;margin:0;top:50%;margin-top:-55px;padding:0;width:90px;height:110px;-webkit-tap-highlight-color:#fff0}.mfp-arrow:active{margin-top:-54px}.mfp-arrow:hover,.mfp-arrow:focus{opacity:1}.mfp-arrow:before,.mfp-arrow:after{content:'';display:block;width:0;height:0;position:absolute;left:0;top:0;margin-top:35px;margin-left:35px;border:medium inset #fff0}.mfp-arrow:after{border-top-width:13px;border-bottom-width:13px;top:8px}.mfp-arrow:before{border-top-width:21px;border-bottom-width:21px;opacity:.7}.mfp-arrow-left{left:0}.mfp-arrow-left:after{border-right:17px solid #FFF;margin-left:31px}.mfp-arrow-left:before{margin-left:25px;border-right:27px solid #3F3F3F}.mfp-arrow-right{right:0}.mfp-arrow-right:after{border-left:17px solid #FFF;margin-left:39px}.mfp-arrow-right:before{border-left:27px solid #3F3F3F}.mfp-iframe-holder{padding-top:40px;padding-bottom:40px}.mfp-iframe-holder .mfp-content{line-height:0;width:100%;max-width:900px}.mfp-iframe-holder .mfp-close{top:-40px}.mfp-iframe-scaler{width:100%;height:0;overflow:hidden;padding-top:56.25%}.mfp-iframe-scaler iframe{position:absolute;display:block;top:0;left:0;width:100%;height:100%;box-shadow:0 0 8px rgb(0 0 0 / .6);background:#000}img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;box-sizing:border-box;padding:40px 0 40px;margin:0 auto}.mfp-figure{line-height:0}.mfp-figure:after{content:'';position:absolute;left:0;top:40px;bottom:40px;display:block;right:0;width:auto;height:auto;z-index:-1;box-shadow:0 0 8px rgb(0 0 0 / .6);background:#444}.mfp-figure small{color:#BDBDBD;display:block;font-size:12px;line-height:14px}.mfp-figure figure{margin:0}.mfp-bottom-bar{margin-top:-36px;position:absolute;top:100%;left:0;width:100%;cursor:auto}.mfp-title{text-align:left;line-height:18px;color:#F3F3F3;word-wrap:break-word;padding-right:36px}.mfp-image-holder .mfp-content{max-width:100%}.mfp-gallery .mfp-image-holder .mfp-figure{cursor:pointer}@media screen and (max-width:800px) and (orientation:landscape),screen and (max-height:300px){.mfp-img-mobile .mfp-image-holder{padding-left:0;padding-right:0}.mfp-img-mobile img.mfp-img{padding:0}.mfp-img-mobile .mfp-figure:after{top:0;bottom:0}.mfp-img-mobile .mfp-figure small{display:inline;margin-left:5px}.mfp-img-mobile .mfp-bottom-bar{background:rgb(0 0 0 / .6);bottom:0;margin:0;top:auto;padding:3px 5px;position:fixed;box-sizing:border-box}.mfp-img-mobile .mfp-bottom-bar:empty{padding:0}.mfp-img-mobile .mfp-counter{right:5px;top:3px}.mfp-img-mobile .mfp-close{top:0;right:0;width:35px;height:35px;line-height:35px;background:rgb(0 0 0 / .6);position:fixed;text-align:center;padding:0}}@media all and (max-width:900px){.mfp-arrow{-webkit-transform:scale(.75);transform:scale(.75)}.mfp-arrow-left{-webkit-transform-origin:0;transform-origin:0}.mfp-arrow-right{-webkit-transform-origin:100%;transform-origin:100%}.mfp-container{padding-left:6px;padding-right:6px}}</style>
 <link href="/wp-content/cache/wpo-minify/1761131694/assets/wpo-minify-header-ac3325c8.min.css" id="wpo_min-header-0-css" media="all" rel="stylesheet" type="text/css"/>
 <script id="wpo_min-header-0-js" src="/wp-content/cache/wpo-minify/1761131694/assets/wpo-minify-header-7bf70e5b.min.js" type="text/javascript"></script>
-<link href="/wp-json/wp/v2/posts/266" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="/wp-json/wp/v2/posts/7127" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
 
-<link href="/?p=266" rel="shortlink"/>
-<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2018%2F05%2Faws-status-page-monitoring-included%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
-<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2018%2F05%2Faws-status-page-monitoring-included%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+<link href="/?p=7127" rel="shortlink"/>
+<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2025%2F10%2Fhow-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2025%2F10%2Fhow-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
 <script data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script>
 </link></link></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/></head>
-<body class="wp-singular post-template-default single single-post postid-266 single-format-standard wp-embed-responsive wp-theme-infinity-blog right-sidebar home-content-not-enabled">
+<body class="wp-singular post-template-default single single-post postid-7127 single-format-standard wp-embed-responsive wp-theme-infinity-blog right-sidebar home-content-not-enabled">
 <div class="preloader">
 <div class="preloader-wrapper">
 <div class="loader">
@@ -190,9 +195,9 @@
 <div class="container">
 <div class="row">
 <div class="col-md-10">
-<h1 class="entry-title">AWS Status Page – Monitoring Included</h1> <div class="inner-meta-info">
-<span class="posted-on secondary-font">Posted On <a href="/2018/05/15/" rel="bookmark"><time class="entry-date published" datetime="2018-05-15T21:41:14+00:00">May 15, 2018</time><time class="updated" datetime="2025-10-01T15:22:16+00:00">October 1, 2025</time></a></span><span class="author secondary-font"> By <a class="url" href="/author/admin/">James</a></span> </div>
-<div aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb" role="navigation"><ul class="trail-items" itemscope="" itemtype="http://schema.org/BreadcrumbList"><meta content="4" name="numberOfItems"/><meta content="Ascending" name="itemListOrder"/><li class="trail-item trail-begin" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item" rel="home"><span itemprop="name">Home</span></a><meta content="1" itemprop="position"/></li><li class="trail-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/2018/" itemprop="item"><span itemprop="name">2018</span></a><meta content="2" itemprop="position"/></li><li class="trail-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/2018/05/" itemprop="item"><span itemprop="name">May</span></a><meta content="3" itemprop="position"/></li><li class="trail-item trail-end" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/2018/05/aws-status-page-monitoring-included/" itemprop="item"><span itemprop="name">AWS Status Page – Monitoring Included</span></a><meta content="4" itemprop="position"/></li></ul></div> </div>
+<h1 class="entry-title">How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare</h1> <div class="inner-meta-info">
+<span class="posted-on secondary-font">Posted On <a href="/2025/10/06/" rel="bookmark"><time class="entry-date published" datetime="2025-10-06T15:57:06+00:00">October 6, 2025</time><time class="updated" datetime="2025-10-22T21:02:22+00:00">October 22, 2025</time></a></span><span class="author secondary-font"> By <a class="url" href="/author/admin/">James</a></span> </div>
+<div aria-label="Breadcrumbs" class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb" role="navigation"><ul class="trail-items" itemscope="" itemtype="http://schema.org/BreadcrumbList"><meta content="4" name="numberOfItems"/><meta content="Ascending" name="itemListOrder"/><li class="trail-item trail-begin" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item" rel="home"><span itemprop="name">Home</span></a><meta content="1" itemprop="position"/></li><li class="trail-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/2025/" itemprop="item"><span itemprop="name">2025</span></a><meta content="2" itemprop="position"/></li><li class="trail-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/2025/10/" itemprop="item"><span itemprop="name">October</span></a><meta content="3" itemprop="position"/></li><li class="trail-item trail-end" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/" itemprop="item"><span itemprop="name">How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare</span></a><meta content="4" itemprop="position"/></li></ul></div> </div>
 </div>
 </div>
 </header><!-- .entry-header -->
@@ -204,37 +209,174 @@
 <main class="site-main" id="main" role="main">
 <div class="entry-content">
 <div class="twp-article-wrapper clearfix">
-<div class="image-full"><img alt="" class="attachment-full size-full wp-post-image" decoding="async" fetchpriority="high" height="800" sizes="(max-width: 2000px) 100vw, 2000px" src="/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png" srcset="/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png 2000w, /wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-300x120.png 300w, /wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-1024x410.png 1024w, /wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-768x307.png 768w, /wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-1536x614.png 1536w" width="2000"/></div><h2 class="wp-block-heading"><strong>AWS Status Page – Enhancements</strong></h2>
-<p>The tool I deployed <a href="https://lambstatus.github.io/get-started/" rel="noopener" target="_blank">lambstatus</a> supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page.</p>
-<p>I managed to get this working as can be seen <a href="https://d1wijjwc03zzo1.cloudfront.net" rel="noopener" target="_blank">here. </a>This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at <strong>effectively zero cost</strong></p>
-<h4 class="wp-block-heading">Site Response</h4>
-<div class="wp-block-image">
-<figure class="aligncenter size-full"><img alt="" class="wp-image-4546" decoding="async" height="461" loading="lazy" sizes="auto, (max-width: 879px) 100vw, 879px" src="/wp-content/uploads/2023/04/Screen-Shot-2018-05-15-at-22.39.01.png" srcset="/wp-content/uploads/2023/04/Screen-Shot-2018-05-15-at-22.39.01.png 879w, /wp-content/uploads/2023/04/Screen-Shot-2018-05-15-at-22.39.01-300x157.png 300w, /wp-content/uploads/2023/04/Screen-Shot-2018-05-15-at-22.39.01-768x403.png 768w" width="879"/></figure>
-</div>
-<p>The guide I followed is very good and is documented in the Git repo <a href="https://lambstatus.github.io/set-up-custom-http-s-monitoring/" rel="noopener" target="_blank">here</a></p>
+<div class="image-full"><img alt="" class="attachment-full size-full wp-post-image" decoding="async" fetchpriority="high" height="302" sizes="(max-width: 720px) 100vw, 720px" src="/wp-content/uploads/2025/10/Github-Actions.webp" srcset="/wp-content/uploads/2025/10/Github-Actions.webp 720w, /wp-content/uploads/2025/10/Github-Actions-300x126.webp 300w" width="720"/></div>
+<p>I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made.</p>
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc"><h2>Table of Contents</h2><nav><ul><li><a href="#original-setup">What I started with</a></li><li><a href="#what-i-finished-with">What I finished with</a></li><li><a href="#how-i-got-there">How I got there</a><ul><li><a href="#w">WordPress API</a></li><li><a href="#github-hosted-runner">Github Runner</a></li><li><a href="#cloudflare-static-pages">Python</a></li></ul></li><li><a href="#build-notifications">Build Notifications</a><ul><li><a href="#create-a-slack-webhook-url">Create a Slack Webhook URL</a><ul><li><a href="#git-hub-notifications">GitHub Notifications</a></li><li><a href="#cloudflare-notifications">Cloudflare Notifications</a></li></ul></li></ul></li><li><a href="#u">Using Utterance for Comments</a><ul><li><a href="#option-2-use-git-hub-actions-simpler-no-middleware-needed">Use GitHub Actions</a></li></ul></li></ul></nav></div>
+<h2 class="wp-block-heading" id="original-setup">What I started with</h2>
+<p>My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring instance. Within this WordPress instance I have the “<a data-id="https://simplystatic.com" data-type="link" href="https://simplystatic.com" rel="noopener" target="_blank">Simply Static</a>” Plugin. When I have finished writing a post or making changes, I then hit “Generate” within the plugin. It will then scan the entire site, creating an entire copy that’s made available as a Zip download. The benefits of this setup I have discussed <a href="/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/">previously</a></p>
+<p>I then take this export and copy it to a public Github repo called “WordPress”. When the code is checked in, this triggers a process within Cloudflare to publish it as a static site in Cloudflare’s CDN. I have previously written about the Cloudflare part.</p>
+<h2 class="wp-block-heading" id="what-i-finished-with">What I finished with</h2>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-7148" decoding="async" height="677" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2025/10/Wordpress-Authoring-2-1024x677.png" srcset="/wp-content/uploads/2025/10/Wordpress-Authoring-2-1024x677.png 1024w, /wp-content/uploads/2025/10/Wordpress-Authoring-2-300x198.png 300w, /wp-content/uploads/2025/10/Wordpress-Authoring-2-768x508.png 768w, /wp-content/uploads/2025/10/Wordpress-Authoring-2.png 1089w" width="1024"/></figure>
+<p>The new setup is conceptually similar in that I have maintained the authoring WordPress instance. The major difference is how the data gets from the authoring WordPress instance to GitHub. The Github to Cloudflare part remains unchanged.</p>
+<p>I have introduced a GitHub runner that runs alongside the WordPress Instance. This runner has permissions to query the WordPress API to get data. Now when I have finished updating my site, I can start the runner. It then scans the site making a local copy of it and performs an automated check-in to Github.</p>
+<p><strong>Disclaime</strong>r: I used a fair bit of AI to help with some of the python and API calls. It also wrote the documentation for me.</p>
+<h2 class="wp-block-heading" id="how-i-got-there">How I got there</h2>
+<p>First things first, I created a new GitHub repo so that if I messed anything up, I could point Cloudflare back to the previous WordPress Repo.</p>
+<h3 class="wp-block-heading" id="w">WordPress API</h3>
+<p>The next step was to enable the WordPress API. This was to allow a GitHub runner to communicate directly with WordPress. I chose to do this with a plugin called <a data-id="https://en-gb.wordpress.org/plugins/wp-rest-api-authentication/" data-type="link" href="https://en-gb.wordpress.org/plugins/wp-rest-api-authentication/" rel="noopener" target="_blank">REST API Authentication for WP</a></p>
+<p>I then created a simple basic authentication token. This is then stored in the GitHub repo as an action secret. This allows me to have a public repo but without leaking the key.</p>
+<p>This is done by navigating to the Github repo &gt; Settings then navigate to the Security section and select “Secrets &amp; Variables” Then create a “New Repository Secret”   called WP_AUTH_TOKEN add your API token.</p>
+<h3 class="wp-block-heading" id="github-hosted-runner">Github Runner</h3>
+<p>The next step was to deploy a runner. These can either be a GitHub-hosted runner or a local runner. I am using a local GitHub runner running on an Ubuntu machine in my lab to perform this function as the WordPress instance isn’t available publicly and therefore for the GitHub-hosted runner.</p>
+<p>To set this up, first you need to navigate to the Actions section within your GitHub Repo and select the “Runners” section.  </p>
+<p>Ensure you have the Self-hosted runners tab selected.</p>
+<p>GitHub then gives you easy instructions to set up the runner. First, you select the Architecture I am using Ubuntu and therefore selected Linux. GitHub then gives you great instructions.</p>
+<pre class="wp-block-code"><code># Create a folder
+$ mkdir actions-runner &amp;&amp; cd actions-runner
+# Download the latest runner package
+$ curl -o actions-runner-osx-x64-2.329.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.329.0/actions-runner-osx-x64-2.329.0.tar.gz
+# Optional: Validate the hash
+$ echo "c5a14e84b358c72ca83bf14518e004a8ad195cc440322fbca2a4fec7649035c7  actions-runner-osx-x64-2.329.0.tar.gz" | shasum -a 256 -c
+# Extract the installer
+$ tar xzf ./actions-runner-osx-x64-2.329.0.tar.gz</code></pre>
+<p>Then configure the runner </p>
+<pre class="wp-block-code"><code># Create the runner and start the configuration experience
+$ ./config.sh --url https://github.com/jameskilbynet/jkcoukblog --token AFPWGXXXXXXXXXVHXXI7D7DM
+# Last step, run it!
+$ ./run.sh</code></pre>
+<h3 class="wp-block-heading" id="cloudflare-static-pages">Python</h3>
+<p>The runner is then executing a number of Python scripts as can be seen in the GitHub repo.</p>
+<p>At a high level these:</p>
+<ul class="wp-block-list">
+<li>Discover all posts, pages, categories and tags</li>
+<li>Fetches the media library assets </li>
+<li>Replaces all WordPress URL’s as relative</li>
+<li>Converts WordPress Embed blocks to iframes</li>
+<li>Removes WordPress specific elements that are not required in the static site.</li>
+</ul>
+<p>This grabs a copy of the site and then stores it in the Public directory within the GitHub Repo and issues a Git Commit and Git Push command.</p>
+<h2 class="wp-block-heading" id="build-notifications">Build Notifications</h2>
+<p>I didn’t want to have to login to GitHub or Cloudflare to monitor progress of the runner, so I added notifications to Slack.</p>
+<h3 class="wp-block-heading" id="create-a-slack-webhook-url">Create a Slack Webhook URL</h3>
+<p>First, you’ll need to create a Slack webhook. Here’s how:</p>
+<ol class="wp-block-list">
+<li>Go to your Slack workspace</li>
+<li>Navigate to Apps: Click on your workspace name → Settings &amp; administration → Manage apps</li>
+<li>Search for “Incoming Webhooks” and add it to your workspace</li>
+<li>Create a webhook:<br/>◦ Choose the channel where you want notifications (e.g., #deployments, #general) I created a web channel<br/>◦ Click “Add Incoming Webhooks Integration”<br/>◦ Copy the Webhook URL (looks like: https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXX</li>
+</ol>
+<h4 class="wp-block-heading" id="git-hub-notifications">GitHub Notifications</h4>
+<p>In GitHub, navigate to the secrets actions section of your repo</p>
+<p>Add a new secret Called SLACK_WEBHOOK_URL</p>
+<p>This will automatically get triggered by the workflow in the repo</p>
+<h4 class="wp-block-heading" id="cloudflare-notifications">Cloudflare Notifications</h4>
+<p>In Cloudflare, go to the Notifications settings and select Destinations.</p>
+<p>Create a Webhook using the Webhook URL created above with an appropriate name.</p>
+<p>Then navigate to the “Workers &amp; Pages” section and select your static pages site. Then navigate to the settings of your workers and select the notification events that you want, and select the Webhook name created above.</p>
+<p>While testing, I have all notifications turned on.</p>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-7184" decoding="async" height="214" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2025/10/Cloudflare-Events-1024x214.png" srcset="/wp-content/uploads/2025/10/Cloudflare-Events-1024x214.png 1024w, /wp-content/uploads/2025/10/Cloudflare-Events-300x63.png 300w, /wp-content/uploads/2025/10/Cloudflare-Events-768x160.png 768w, /wp-content/uploads/2025/10/Cloudflare-Events.png 1316w" width="1024"/></figure>
+<p>When I trigger the runner, I get 3 Slack notifications in my Web channel. The first is the Commit to GitHub, I then get one when Cloudflare starts building the Static site and one when it completes. One useful feature is that it gives you the preview URL so you can’t instantly view your changes without having any DNS propagation issues.</p>
+<pre class="wp-block-code"><code>incoming-webhook
+APP  10:27 PM
+:white_check_mark: Succeeded GitHub Actions
+
+8398a7@action-slack
+repo
+jameskilbynet/jkcoukblog
+commit
+4761df3f
+10:27
+Slack
+:zap: Cloudflare Pages: A production deployment has started for jkcoukblog :zap:
+Build Link: https://dash.cloudflare.com/c9bb9919eaab3686694017fa604070dd/pages/view/jkcoukblog/aeacb2b5-03c8-4771-a252-cf48b2c86da0
+Commit Hash: b72489f574a14dc6aacad7c2fa1fbd874ed7fed4
+Environment: ENVIRONMENT_PRODUCTION
+Timestamp: 2025-10-09T21:27:53.399259Z
+Cloudflare | Oct 9th
+10:28
+Slack
+:white_check_mark: Cloudflare Pages: A production deployment has succeeded for jkcoukblog :white_check_mark:
+Build Link: https://dash.cloudflare.com/c9bb9919eaab3686694017fa604070dd/pages/view/jkcoukblog/aeacb2b5-03c8-4771-a252-cf48b2c86da0
+Commit Hash: b72489f574a14dc6aacad7c2fa1fbd874ed7fed4
+Preview URL: https://aeacb2b5.jkcoukblog.pages.dev
+Branch Alias URL:
+Project URL: https://jkcoukblog.pages.dev
+Show more
+Cloudflare | Oct 9th</code></pre>
+<h2 class="wp-block-heading" id="u">Using Utterance for Comments</h2>
+<p>I wanted to add a comment mechanism to my pages, but as it’s a static site that needs a little bit of planning as the traditional WordPress mechanisms won’t work. After a little bit of research I decided to use <a data-id="https://utteranc.es" data-type="link" href="https://utteranc.es" rel="noreferrer noopener" target="_blank">Utterance</a>.</p>
+<p>Utterance is lightweight javascript code that integrates with GitHub issues. To enable it, I enabled Issues on the repo I have been using for all of my Web stuff and then edited the WordPress theme using the built in theme editor.</p>
+<p>Within WordPress changed comments.php to the following</p>
+<pre class="wp-block-code"><code>&lt;?php
+/**
+ * Utterances-only comments template.
+ *
+ * @package Infinity Blog
+ */
+
+if (post_password_required()) {
+    return;
+}
+?&gt;
+
+&lt;div id="comments" class="comments-area"&gt;
+    &lt;div class="pb-30"&gt;
+        &lt;!-- Utterances Comments Embed --&gt;
+        &lt;section id="utterances-comments"&gt;
+            &lt;script src="https://utteranc.es/client.js"
+                repo="jameskilbynet/jkcoukblog"
+                issue-term="pathname"
+                theme="github-light"
+                crossorigin="anonymous"
+                async&gt;
+            &lt;/script&gt;
+        &lt;/section&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- #comments --&gt;</code></pre>
+<p>I also wanted a Slack notification if anyone posted comments on one of my pages. Unfortunately the payload Slack is expecting is a JSON payload in a specific format that GitHub doesn’t do by default. I therefore created a new GitHub Action to trigger the notification</p>
+<h3 class="wp-block-heading" id="option-2-use-git-hub-actions-simpler-no-middleware-needed"><strong>Use GitHub Actions</strong></h3>
+<p>You can trigger Slack messages directly via GitHub Actions:</p>
+<ol class="wp-block-list">
+<li><strong>Create a GitHub Action workflow</strong> <code>.github/workflows/issue-to-slack.yml</code>:</li>
+</ol>
+<pre class="wp-block-code"><code>name: Notify Slack on Issue Creation
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  notify-slack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Slack Notification
+        uses: slackapi/slack-github-action@v1.23.0
+        with:
+          payload: |
+            {
+              "text": "New Comment Created: &lt;${{ github.event.issue.html_url }}|${{ github.event.issue.title }}&gt; by ${{ github.event.issue.user.login }}"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+</code></pre>
+<p>I am using the same SLACK_WEBHOOK_URL as defined previously so these get posted in my existing web channel.</p>
 </div>
 </div><!-- .entry-content -->
 <div class="single-meta">
 <footer class="entry-footer alternative-bgcolor">
-		Category: <a href="/category/aws/" rel="category tag">AWS</a>/<a href="/category/hosting/" rel="category tag">Hosting</a> </footer><!-- .entry-footer -->
+		Category: <a href="/category/cloudflare/" rel="category tag">Cloudflare</a>/<a href="/category/devops/" rel="category tag">Devops</a>/<a href="/category/github/" rel="category tag">Github</a>/<a href="/category/wordpress/" rel="category tag">Wordpress</a> </footer><!-- .entry-footer -->
 <div class="post-tags alternative-bgcolor">
-<span class="tags-links"> Tagged: <a href="/tag/aws/" rel="tag">AWS</a>/<a href="/tag/lambda/" rel="tag">Lambda</a></span> </div>
+<span class="tags-links"> Tagged: <a href="/tag/blog/" rel="tag">Blog</a>/<a href="/tag/cloudflare/" rel="tag">Cloudflare</a>/<a href="/tag/cloudflare-pages/" rel="tag">Cloudflare Pages</a>/<a href="/tag/github/" rel="tag">github</a>/<a href="/tag/runners/" rel="tag">Runners</a>/<a href="/tag/wordpress/" rel="tag">Wordpress</a></span> </div>
 </div>
 <!-- #post-## -->
 <nav aria-label="Posts" class="navigation post-navigation">
 <h2 class="screen-reader-text">Post navigation</h2>
-<div class="nav-links"><div class="nav-previous"><a href="/2018/03/aws-for-beginners1/" rel="prev"><span class="screen-reader-text">Previous post:</span> <span class="post-title">AWS for Beginners</span></a></div><div class="nav-next"><a href="/2018/06/nutanix-command-reference-guide/" rel="next"><span class="screen-reader-text">Next post:</span> <span class="post-title">Nutanix Command Reference Guide</span></a></div></div>
+<div class="nav-links"><div class="nav-previous"><a href="/2025/09/managing-my-homelab-with-semaphoreui/" rel="prev"><span class="screen-reader-text">Previous post:</span> <span class="post-title">Managing my Homelab with SemaphoreUI</span></a></div></div>
 </nav>
 <div class="floating-post-navigation floating-navigation-prev">
-<img alt="" class="attachment-medium size-medium wp-post-image" height="300" src="/wp-content/uploads/2018/03/raf750x1000075t101010_01c5ca27c6.u2-225x300.jpg" width="225"/> <a href="/2018/03/aws-for-beginners1/">
+<img alt="" class="attachment-medium size-medium wp-post-image" height="300" loading="lazy" src="/wp-content/uploads/2025/07/semaphore-300x300.png" width="300"/> <a href="/2025/09/managing-my-homelab-with-semaphoreui/">
 <span class="floating-navigation-label">Previous post</span>
-<span class="floating-navigation-title">AWS for Beginners</span>
-</a>
-</div>
-<div class="floating-post-navigation floating-navigation-next">
-<img alt="" class="attachment-medium size-medium wp-post-image" height="77" loading="lazy" src="/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-300x77.jpg" width="300"/> <a href="/2018/06/nutanix-command-reference-guide/">
-<span class="floating-navigation-label">Next post</span>
-<span class="floating-navigation-title">Nutanix Command Reference Guide</span>
+<span class="floating-navigation-title">Managing my Homelab with SemaphoreUI</span>
 </a>
 </div>
 <div class="comments-area" id="comments">
