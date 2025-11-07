@@ -2177,7 +2177,7 @@
   {
     "title": "How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare",
     "url": "https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/",
-    "description": "Automate your blog publishing with GitHub Actions and Cloudflare. Learn how to set up a static website effortlessly. Read more now!",
+    "description": "Learn how to automate your blog with GitHub Actions and Cloudflare for seamless publishing. Check out my steps to improve your setup today!",
     "content": "How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare - Jameskilbycouk Skip to content Jameskilbycouk Some ramblings usually about computers Search for: How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare Posted On October 6, 2025October 22, 2025 By James Home2025OctoberHow I upgraded my blog as a Static Website with GitHub Actions and Cloudflare I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. Table of Contents What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring instance. Within this WordPress instance I have the “Simply Static” Plugin. When I have finished writing a post or making changes, I then hit “Generate” within the plugin. It will then scan the entire site, creating an entire copy that’s made available as a Zip download. The benefits ",
     "categories": [
       "Cloudflare",
