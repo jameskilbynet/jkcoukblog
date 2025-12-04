@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jameskilbycouk</title>
+    <link>https://jameskilby.co.uk/</link>
+    <description>VMware and cloud infrastructure tutorials, homelab guides, and DevOps insights</description>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 04 Dec 2025 12:37:16 +0000</lastBuildDate>
+    <atom:link href="https://jameskilby.co.uk/feed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare</title>
+      <link>https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/</link>
+      <description>I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started withWhat I finished withHow I got thereWordpress APIGithub RunnerPythonBuild NotificationsCreate a Slack Webhook URLGitHub NotificationsCloudflare NotificationsUsing Utterance for CommentsUse GitHub Actions What I started with My previous</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/</guid>
+      <pubDate>Mon, 06 Oct 2025 15:57:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>Managing my Homelab with SemaphoreUI</title>
+      <link>https://jameskilby.co.uk/2025/09/managing-my-homelab-with-semaphoreui/</link>
+      <description>I recently stumbled across Semaphore, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running easily with</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2025/09/managing-my-homelab-with-semaphoreui/</guid>
+      <pubDate>Tue, 02 Sep 2025 16:01:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide</title>
+      <link>https://jameskilby.co.uk/2025/08/vmc-host-deepdive/</link>
+      <description>This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page *I3en is using NVMe namespace to split the 8 physical disks into 32 NVMe namespaces.</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2025/08/vmc-host-deepdive/</guid>
+      <pubDate>Thu, 14 Aug 2025 12:32:01 +0000</pubDate>
+    </item>
+    <item>
+      <title>VMC Quick Sizing Guide</title>
+      <link>https://jameskilby.co.uk/2025/05/vmc-quick-sizing-guide/</link>
+      <description>Quick reference guide to the available storage resources that you get in VMware Cloud on AWS</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2025/05/vmc-quick-sizing-guide/</guid>
+      <pubDate>Wed, 21 May 2025 09:33:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>Warp – The intelligent terminal</title>
+      <link>https://jameskilby.co.uk/2025/04/warp-the-intelligent-terminal/</link>
+      <description>How Warp is helping me run my homelab.</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2025/04/warp-the-intelligent-terminal/</guid>
+      <pubDate>Fri, 11 Apr 2025 15:46:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to Fix Portainer Agent Not Starting On Synology DSM</title>
+      <link>https://jameskilby.co.uk/2025/03/portainer-agent-on-synology-dsm/</link>
+      <description>How to fix Portainer Agent not starting on Synology</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2025/03/portainer-agent-on-synology-dsm/</guid>
+      <pubDate>Tue, 11 Mar 2025 12:06:39 +0000</pubDate>
+    </item>
+    <item>
+      <title>How I Migrated from Pocket to Hoarder with AI Integration</title>
+      <link>https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/</link>
+      <description>Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/</guid>
+      <pubDate>Wed, 29 Jan 2025 23:31:56 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</title>
+      <link>https://jameskilby.co.uk/2024/12/zfs-on-vmware/</link>
+      <description>Table of ContentsCopy on WriteDisk ID’sTrim I have run a number of systems utilising ZFS since the earliest days of my homelab using Nexenta all the way back in 2010. The image below is my lab at the time with an IBM Head unit that I think had 18GB of RAM 6x450GB SAS drives and</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2024/12/zfs-on-vmware/</guid>
+      <pubDate>Wed, 18 Dec 2024 17:47:57 +0000</pubDate>
+    </item>
+    <item>
+      <title>Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU</title>
+      <link>https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/</link>
+      <description>Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock price has gone to the moon. So I thought I better get some knowledge and understand some of this. As it’s a huge field and I wasn’t exactly sure</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/</guid>
+      <pubDate>Fri, 11 Oct 2024 15:03:26 +0000</pubDate>
+    </item>
+    <item>
+      <title>Can you really squeeze 96TB in 1U ?</title>
+      <link>https://jameskilby.co.uk/2024/09/can-you-really-squeeze-96tb-in-1u/</link>
+      <description>Yes, that’s a clickbait title. But technically it’s possible if I dropped all drive redundancy… I recently saw an advert for a server that was just too good to be true. It promised to bring a huge amount of storage and future options in a quite hard-to-believe 1U. The price it was on offer for</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2024/09/can-you-really-squeeze-96tb-in-1u/</guid>
+      <pubDate>Thu, 12 Sep 2024 12:39:16 +0000</pubDate>
+    </item>
+    <item>
+      <title>Home Network Upgrade</title>
+      <link>https://jameskilby.co.uk/2024/09/home-network-upgrade/</link>
+      <description>My journey to superfast networking in my homelab</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2024/09/home-network-upgrade/</guid>
+      <pubDate>Mon, 09 Sep 2024 08:25:08 +0000</pubDate>
+    </item>
+    <item>
+      <title>New Nodes</title>
+      <link>https://jameskilby.co.uk/2024/07/new-nodes/</link>
+      <description>I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of ContentsNode ChoiceBill of MaterialsRescue IPMIWeb ServerInstallCluster CreationVMware ConfigDistributed</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2024/07/new-nodes/</guid>
+      <pubDate>Tue, 02 Jul 2024 08:01:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>Using Unifi DHCP Option 43 in my Network</title>
+      <link>https://jameskilby.co.uk/2024/06/unifi-dhcp-option-43/</link>
+      <description>How to configure DHCP Option 43 for UniFi devices</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2024/06/unifi-dhcp-option-43/</guid>
+      <pubDate>Wed, 26 Jun 2024 10:50:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>Holodeck CPU Fixes</title>
+      <link>https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/</link>
+      <description>How to deploy Holodeck with Legacy CPU's</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/</guid>
+      <pubDate>Thu, 18 Jan 2024 14:37:04 +0000</pubDate>
+    </item>
+    <item>
+      <title>MultiHost Holodeck VCF</title>
+      <link>https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/</link>
+      <description>How to Deploy VMware Holodeck on multiple hosts</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/</guid>
+      <pubDate>Wed, 17 Jan 2024 17:29:38 +0000</pubDate>
+    </item>
+    <item>
+      <title>VMC – vSAN ESA</title>
+      <link>https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/</link>
+      <description>An Overview of vSAN ESA in VMC</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/</guid>
+      <pubDate>Fri, 17 Nov 2023 11:29:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>Advanced Deploy VMware vSphere 7.x 3V0-22.21N</title>
+      <link>https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/</link>
+      <description>Yesterday I sat and passed the above exam. It had been on my todo list for a good number of years. With the current pause in the Broadcom VMware takeover deal. I had some downtime and decided to use one of the three exam vouchers VMware give me each year. This upgrades me to a</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/</guid>
+      <pubDate>Fri, 10 Nov 2023 11:34:42 +0000</pubDate>
+    </item>
+    <item>
+      <title>Configuring a Zen Internet and City Fibre connection with a 3rd party router</title>
+      <link>https://jameskilby.co.uk/2023/11/configuring-a-zen-internet-and-city-fibre-connection-with-a-3rd-party-router/</link>
+      <description>Back in July I bought a new house and one of the best things about the property was that it was already in a City Fibre location. That meant I could take my Zen internet connection with me but ditch the ADSL (and Phone Line requirement). This gave me a much better connection in terms</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2023/11/configuring-a-zen-internet-and-city-fibre-connection-with-a-3rd-party-router/</guid>
+      <pubDate>Wed, 15 Nov 2023 19:27:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>Analytics in a privacy focused world</title>
+      <link>https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/</link>
+      <description>I recently helped my friend Dean Lewis @veducate with some hosting issues. As part of the testing of this he kindly gave me a login to his WordPress instance. He has been a pretty prolific blogger over the years pumping out an amazing amount of really good content. It also highlighted to me that I</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/</guid>
+      <pubDate>Fri, 10 Nov 2023 16:45:03 +0000</pubDate>
+    </item>
+    <item>
+      <title>TrueNAS Scale Useful Commands</title>
+      <link>https://jameskilby.co.uk/2023/11/truenas-scale-useful-commands/</link>
+      <description>A list of useful Truenas Scale commands</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2023/11/truenas-scale-useful-commands/</guid>
+      <pubDate>Mon, 13 Nov 2023 14:34:17 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
