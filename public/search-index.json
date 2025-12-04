@@ -48,12 +48,11 @@
     "categories": [
       "Homelab",
       "Networking",
-      "Nutanix",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
+      "Ansible",
       "VMware",
-      "Storage"
+      "Artificial Intelligence",
+      "Nutanix",
+      "Docker"
     ],
     "tags": [
       "#DHCP",
@@ -72,14 +71,12 @@
       "VMware",
       "vSAN",
       "vSphere",
+      "VCF",
       "Homelab",
-      "VMware Cloud on AWS",
-      "Nutanix",
-      "Artificial Intelligence",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
-      "Personal"
+      "Networking",
+      "Personal",
+      "Storage",
+      "Nutanix"
     ],
     "tags": [
       "#Homelab",
@@ -99,12 +96,10 @@
       "Artificial Intelligence",
       "Docker",
       "Homelab",
-      "Runecast",
-      "VMware",
-      "VCF",
-      "Networking",
-      "Mikrotik",
       "Nutanix",
+      "Hosting",
+      "VCF",
+      "VMware",
       "Storage",
       "Synology"
     ],
@@ -124,14 +119,10 @@
       "Homelab",
       "Storage",
       "TrueNAS Scale",
+      "Artificial Intelligence",
       "Docker",
-      "Portainer",
-      "Synology",
-      "Kubernetes",
-      "Automation",
       "VMware",
-      "vExpert",
-      "Ansible",
+      "Synology",
       "Networking"
     ],
     "tags": [
@@ -149,12 +140,13 @@
       "Mikrotik",
       "Networking",
       "Homelab",
-      "Veeam",
       "VMware",
-      "Automation",
-      "Nutanix",
-      "Storage",
+      "Docker",
+      "Portainer",
       "Synology",
+      "Storage",
+      "TrueNAS Scale",
+      "Runecast",
       "Hosting"
     ],
     "tags": [
@@ -173,15 +165,14 @@
       "Homelab",
       "Nutanix",
       "VMware",
-      "Networking",
-      "Storage",
       "VMware Cloud on AWS",
-      "Hosting",
+      "Docker",
+      "Portainer",
       "Synology",
-      "TrueNAS Scale",
-      "vSAN",
+      "Ansible",
+      "Personal",
       "vSphere",
-      "Personal"
+      "vSAN"
     ],
     "tags": [
       "#Homelab",
@@ -198,16 +189,14 @@
     "categories": [
       "VCF",
       "VMware",
-      "Personal",
-      "TrueNAS Scale",
+      "VMware Cloud on AWS",
       "vSAN",
-      "vSphere",
+      "Docker",
       "Homelab",
-      "Storage",
-      "Synology",
-      "vExpert",
-      "Mikrotik",
-      "Networking"
+      "Hosting",
+      "Kubernetes",
+      "AWS",
+      "Veeam"
     ],
     "tags": [
       "#CPU",
@@ -227,11 +216,11 @@
       "VCF",
       "Homelab",
       "Veeam",
-      "Runecast",
+      "Automation",
       "VMware Cloud on AWS",
-      "vSAN",
-      "TrueNAS Scale",
-      "vSphere"
+      "Storage",
+      "vExpert",
+      "Networking"
     ],
     "tags": [
       "#Holodeck",
@@ -259,12 +248,10 @@
       "VMware",
       "AWS",
       "Veeam",
-      "Homelab",
+      "VMware Cloud on AWS",
+      "vSAN",
       "Personal",
-      "vSphere",
-      "Networking",
-      "Storage",
-      "VMware Cloud on AWS"
+      "Homelab"
     ],
     "tags": [
       "#AWS",
@@ -277,16 +264,16 @@
     "title": "AWS Solution Architect – Associate",
     "url": "https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/",
     "description": "Renew your AWS Solution Architect certification today! Stay updated with the latest AWS services and enhance your skills for future challenges.",
-    "content": "AWS Solution Architect – Associate - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Personal AWS Solution Architect – Associate ByJames December 16, 2019July 10, 2024 Today was a good day.   I renewed my AWS Solution Architect certification.   Although my work is primarily in and around the VMware ecosystem I have been working a lot with VMware Cloud on AWS recently with a number of our customers.     Having a good foundation of the core AWS services has made this much easier to be able to articulate to the customers. Due to the non-disclosure agreement, I can’t talk about any specific questions however I will say that the questions and the focus have changed quite significantly since I sat the exam a few years ago.  Like AWS itself they were at the cutting edge of the industry and the number of services they now offer is extreme, adding to the challenge of the exam.  I am now good for the next three years however I am planning to sit the Professional le",
+    "content": "AWS Solution Architect – Associate - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Personal AWS Solution Architect – Associate ByJames December 16, 2019December 4, 2025 Today was a good day.   I renewed my AWS Solution Architect certification.   Although my work is primarily in and around the VMware ecosystem I have been working a lot with VMware Cloud on AWS recently with a number of our customers.     Having a good foundation of the core AWS services has made this much easier to be able to articulate to the customers. Due to the non-disclosure agreement, I can’t talk about any specific questions however I will say that the questions and the focus have changed quite significantly since I sat the exam a few years ago.  Like AWS itself they were at the cutting edge of the industry and the number of services they now offer is extreme, adding to the challenge of the exam.  I am now good for the next three years however I am planning to sit the Professional",
     "categories": [
       "AWS",
       "Personal",
-      "Nutanix",
-      "VMware",
+      "Consulting",
       "Hosting",
+      "Cloudflare",
+      "Wordpress",
       "Devops",
-      "VMware Cloud on AWS",
-      "vSphere"
+      "VMware"
     ],
     "tags": [
       "#AWS",
@@ -301,16 +288,16 @@
     "content": "Lab Storage - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Lab Storage ByJames February 10, 2019July 10, 2024 Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology DS918 It’s a very compact unit with a quad-core Intel Celeron & I have left the RAM at 4 GB for now. I have added some of the existing SSD’s that I had giving me about 3TB of usable flash.  I am presenting this back to my VMware hosts using NFS 4.1.   I must have missed the announcement as this is now built into the Synology GUI ( It used to be a command-line-only option) I have verified the VAAI works as expected in this configuration.  At present I am using this with a single network connection however I will be testi",
     "categories": [
       "Homelab",
+      "Storage",
+      "vExpert",
+      "VMware",
+      "vSphere",
+      "Veeam",
+      "Nutanix",
+      "Synology",
       "Docker",
       "Hosting",
-      "Kubernetes",
-      "Storage",
-      "TrueNAS Scale",
-      "Veeam",
-      "VMware",
-      "Artificial Intelligence",
-      "Ansible",
-      "VCF"
+      "Kubernetes"
     ],
     "tags": [
       "#Homelab",
@@ -352,8 +339,10 @@
       "VMware",
       "Personal",
       "Synology",
-      "TrueNAS Scale",
-      "Kubernetes"
+      "Mikrotik",
+      "Networking",
+      "Hosting",
+      "VCF"
     ],
     "tags": [
       "#Homelab",
@@ -376,13 +365,12 @@
       "VMware Cloud on AWS",
       "vSAN",
       "Homelab",
-      "Networking",
-      "Storage",
       "Automation",
-      "Runecast",
-      "Nutanix",
       "Personal",
-      "VCF"
+      "AWS",
+      "Veeam",
+      "TrueNAS Scale",
+      "vSphere"
     ],
     "tags": [
       "#Storage",
@@ -401,14 +389,10 @@
       "VMware",
       "Personal",
       "vSphere",
-      "Nutanix",
+      "VMware Cloud on AWS",
       "Homelab",
-      "AWS",
-      "Veeam",
-      "VCF",
       "Hosting",
-      "Cloudflare",
-      "Wordpress"
+      "Nutanix"
     ],
     "tags": [
       "#Certification",
@@ -425,9 +409,9 @@
     "categories": [
       "Networking",
       "Homelab",
+      "Mikrotik",
       "Storage",
-      "VMware",
-      "Mikrotik"
+      "VMware"
     ],
     "tags": [
       "#City Fibre",
@@ -445,11 +429,10 @@
     "categories": [
       "Hosting",
       "Personal",
-      "Artificial Intelligence",
-      "Docker",
-      "VMware",
-      "Cloudflare",
-      "Wordpress"
+      "AWS",
+      "Nutanix",
+      "Homelab",
+      "Consulting"
     ],
     "tags": [
       "#Analytics",
@@ -470,14 +453,14 @@
     "categories": [
       "Kubernetes",
       "TrueNAS Scale",
-      "Docker",
       "Homelab",
-      "Hosting",
       "Storage",
-      "vExpert",
       "VMware",
       "vSAN",
-      "vSphere"
+      "vSphere",
+      "Docker",
+      "Hosting",
+      "vExpert"
     ],
     "tags": [
       "#Reference",
@@ -494,11 +477,8 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Homelab",
-      "Devops",
-      "Github",
-      "Docker",
-      "Kubernetes"
+      "AWS",
+      "Personal"
     ],
     "tags": [
       "#Cloudflare",
@@ -516,13 +496,14 @@
     "categories": [
       "Runecast",
       "VMware",
+      "Artificial Intelligence",
       "Homelab",
-      "vSphere",
-      "Networking",
+      "VMware Cloud on AWS",
+      "vSAN",
       "Personal",
-      "Ansible",
-      "AWS",
-      "Veeam"
+      "Storage",
+      "Synology",
+      "vSphere"
     ],
     "tags": [
       "#Homelab",
@@ -540,14 +521,14 @@
     "categories": [
       "Homelab",
       "Storage",
-      "Networking",
+      "Veeam",
       "VMware",
+      "Synology",
+      "Ansible",
+      "Artificial Intelligence",
       "TrueNAS Scale",
-      "vSphere",
-      "Hosting",
-      "Docker",
-      "Kubernetes",
-      "Veeam"
+      "vSAN",
+      "vSphere"
     ],
     "tags": [
       "#NAS",
@@ -564,12 +545,15 @@
     "categories": [
       "VMware",
       "Personal",
-      "Runecast",
       "Homelab",
-      "Networking",
-      "Storage",
-      "Consulting",
-      "Automation"
+      "Nutanix",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere",
+      "VMware Cloud on AWS",
+      "AWS",
+      "Veeam",
+      "VCF"
     ],
     "tags": [
       "#Charity",
@@ -587,13 +571,12 @@
     "categories": [
       "Homelab",
       "VMware",
-      "Personal",
+      "VCF",
+      "Hosting",
+      "Artificial Intelligence",
+      "Docker",
       "Storage",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere",
-      "Networking",
-      "Nutanix"
+      "Synology"
     ],
     "tags": [
       "#Homelab",
@@ -617,11 +600,11 @@
     "title": "Nutanix Command Reference Guide",
     "url": "https://jameskilby.co.uk/2018/06/nutanix-command-reference-guide/",
     "description": "Access a comprehensive list of useful Nutanix commands. Enhance your skills and streamline your operations with our handy reference guide.",
-    "content": "Nutanix Command Reference Guide - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Nutanix Nutanix Command Reference Guide ByJames June 5, 2018July 10, 2024 Nutanix Command List This is a list of Nutanix commands I have found useful. Its here as a reference and if i need a command more than a few times ill generally add it here. CLI ncli cluster get-domain-fault-tolerance-status type=node  (Checks if all of the storage components meet the desired replication factor) cvm_shutdown -P now  ( Correct way to shutdown a CVM) ncc health_checks run_all –parallel=4 .  ( 4 is the max number) curator_cli get_under_replication_info summary=true Checks if any objects are not at the desired replication factor curl localhost:2019/prism/leader . Find the leader WEB http://{curator-master-cvm-ip}:2010/master/control ( If you want to invoke a curator scan manually) Similar Posts Nutanix | Personal Nutanix NCP ByJames July 2, 2020July 10, 2024 I saw a tweet a couple of weeks ago m",
+    "content": "Nutanix Command Reference Guide - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Nutanix Nutanix Command Reference Guide ByJames June 5, 2018July 10, 2024 Nutanix Command List This is a list of Nutanix commands I have found useful. Its here as a reference and if i need a command more than a few times ill generally add it here. CLI ncli cluster get-domain-fault-tolerance-status type=node  (Checks if all of the storage components meet the desired replication factor) cvm_shutdown -P now  ( Correct way to shutdown a CVM) ncc health_checks run_all –parallel=4 .  ( 4 is the max number) curator_cli get_under_replication_info summary=true Checks if any objects are not at the desired replication factor curl localhost:2019/prism/leader . Find the leader WEB http://{curator-master-cvm-ip}:2010/master/control ( If you want to invoke a curator scan manually) Similar Posts Homelab | Nutanix Nutanix CE ByJames January 6, 2018July 10, 2024 I ran a Nutanix CE server at home fo",
     "categories": [
       "Nutanix",
-      "Personal",
       "Homelab",
+      "Personal",
       "VMware"
     ],
     "tags": [
@@ -634,19 +617,16 @@
     "title": "AWS Status Page – Monitoring Included",
     "url": "https://jameskilby.co.uk/2018/05/aws-status-page-monitoring-included/",
     "description": "AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them. As part of my personal development, I thought I would include this on my",
-    "content": "AWS Status Page – Monitoring Included - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at effectively zero cost Site Response The guide I followed is very good and is documented in the Git repo here Similar Posts Docker | Homelab | Hosting | Kubernetes Use Portainer in a Homelab with GitHub ByJames December 9, 2022October 1, 2025 Late to the party or not, I have been using containers in my lab more and",
+    "content": "AWS Status Page – Monitoring Included - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at effectively zero cost Site Response The guide I followed is very good and is documented in the Git repo here Similar Posts Hosting Cloudflare ByJames March 27, 2018December 8, 2024 Cloudflare – What is it and why would I care? I have been using Cloudflare for a long time.  It is one of my go-to services and I use ",
     "categories": [
       "AWS",
       "Hosting",
-      "Docker",
-      "Homelab",
-      "Kubernetes",
-      "VMware",
-      "VMware Cloud on AWS",
-      "Personal",
-      "Veeam",
       "Cloudflare",
-      "Wordpress"
+      "Wordpress",
+      "VMware",
+      "Veeam",
+      "Homelab",
+      "Personal"
     ],
     "tags": [
       "#AWS",
@@ -676,12 +656,11 @@
     "content": "And now for something completely different - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Personal And now for something completely different ByJames October 16, 2018July 10, 2024 I have worked for my current employer Zen Internet for  3.5 years.  Over that time I have changed roles from what was originally a customer-focused role into a role with one of the core platform teams.  This has meant looking after the majority of the Internal and customer Virtual platforms.  During this time Zen has undergone several large migration programs and countless smaller ones. Some of the big ones include: Core ISP network refresh Microsegmentation rollout Nutanix integration Backup Consolidation I have been lucky enough to be involved with all of these ( some much more than others)  Although the work is never complete Zen are in a good place. At the same time, my personal circumstances have changed somewhat. My upcoming wedding and my fiancé not knowing exactly where she",
     "categories": [
       "Personal",
-      "VMware",
+      "Consulting",
       "Hosting",
-      "Cloudflare",
-      "Wordpress",
-      "Nutanix",
-      "AWS"
+      "VMware",
+      "vSphere",
+      "Nutanix"
     ],
     "tags": [],
     "date": "2018-10-16T08:22:45+00:00"
@@ -693,11 +672,13 @@
     "content": "Cloudflare - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting Cloudflare ByJames March 27, 2018December 8, 2024 Cloudflare – What is it and why would I care? I have been using Cloudflare for a long time.  It is one of my go-to services and I use it to protect all of the public services I run for myself and other sites/ organizations. The basic premise of what Cloudflare do is that they are a distributed Web Application Firewall (WAF) and CDN but they also offer so much more. Because they have a large number of POP’s they can cache and push content closer to your end users to give them a better experience. This also offloads work from your firewalls, DNS, Web and Database servers.  At present they have 139 sites globally allowing you to host a site anywhere and get good global performance. Cloudflare has an amazing free tier so you can get started easily.   I use this to host all of my public DNS records. So what does that look like? [codeblocks name=’hos",
     "categories": [
       "Hosting",
-      "Artificial Intelligence",
-      "Docker",
+      "Homelab",
+      "AWS",
+      "Wordpress",
       "Cloudflare",
       "Personal",
-      "Wordpress"
+      "Artificial Intelligence",
+      "Docker"
     ],
     "tags": [
       "#Cloudflare"
@@ -711,11 +692,11 @@
     "content": "AWS for Beginners - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS AWS for Beginners ByJames March 30, 2018July 10, 2024 AWS for Beginners Part 1 I am hoping to get back into doing some AWS stuff over the next couple of months.  I am a huge fan of some of the tools and technology they have built.  It’s not perfect and it is often not well understood by people lifting and shifting existing infrastructure into “the cloud” My view is firmly if this is what you have done, then you have done it wrong and missed the point…. But if you do want to kick the tyres and see what it’s all about go and set up an account and play Ensure you implement these three recommendations Root Account Security – Ensure you have a strong password on this account then stop using it.  Use IAM to set up another account and then use that. Enable Two Factor Authentication – This is a must,  Sadly AWS don’t appear to support my preferred 2FA device. Yubikey so I’m using the Google authent",
     "categories": [
       "AWS",
-      "Hosting",
       "VMware",
+      "VMware Cloud on AWS",
       "Veeam",
       "Personal",
-      "VMware Cloud on AWS"
+      "Hosting"
     ],
     "tags": [
       "#Account Setup",
@@ -731,12 +712,10 @@
     "categories": [
       "Homelab",
       "Nutanix",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
-      "Veeam",
-      "VMware",
       "Storage",
+      "TrueNAS Scale",
+      "VMware",
+      "Ansible",
       "Synology"
     ],
     "tags": [
@@ -755,10 +734,13 @@
       "Synology",
       "Runecast",
       "VMware",
+      "vSphere",
+      "VMware Cloud on AWS",
+      "vSAN",
+      "Automation",
+      "Networking",
       "Artificial Intelligence",
-      "Veeam",
-      "vExpert",
-      "Hosting"
+      "Docker"
     ],
     "tags": [
       "#Homelab",
@@ -770,7 +752,7 @@
     "title": "Docker",
     "url": "https://jameskilby.co.uk/category/docker/",
     "description": "Docker",
-    "content": "Docker - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Docker Docker | Portainer | Synology How to Fix Portainer Agent Not Starting On Synology DSM ByJames March 11, 2025October 1, 2025 How to fix Portainer Agent not starting on Synology Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025October 1, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a… Artificial Intelligence | Docker | Homelab Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU ByJames October 11, 2024October 1, 2025 Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock p",
+    "content": "Docker - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Docker Docker | Portainer | Synology How to Fix Portainer Agent Not Starting On Synology DSM ByJames March 11, 2025October 1, 2025 How to fix Portainer Agent not starting on Synology Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 4, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a… Artificial Intelligence | Docker | Homelab Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU ByJames October 11, 2024October 1, 2025 Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock ",
     "categories": [
       "Docker",
       "Portainer",
@@ -856,7 +838,7 @@
     "title": "Artificial Intelligence",
     "url": "https://jameskilby.co.uk/category/artificial-intelligence/",
     "description": "Artificial Intelligence",
-    "content": "Artificial Intelligence - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Artificial Intelligence Artificial Intelligence | Homelab Warp – The intelligent terminal ByJames April 11, 2025October 3, 2025 How Warp is helping me run my homelab. Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025October 1, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a… Artificial Intelligence | Docker | Homelab Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU ByJames October 11, 2024October 1, 2025 Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock ",
+    "content": "Artificial Intelligence - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Artificial Intelligence Artificial Intelligence | Homelab Warp – The intelligent terminal ByJames April 11, 2025October 3, 2025 How Warp is helping me run my homelab. Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 4, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a… Artificial Intelligence | Docker | Homelab Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU ByJames October 11, 2024October 1, 2025 Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock",
     "categories": [
       "Artificial Intelligence",
       "Homelab",
@@ -1112,7 +1094,7 @@
     "title": "AWS",
     "url": "https://jameskilby.co.uk/category/aws/",
     "description": "AWS",
-    "content": "AWS - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS VMware | AWS | Veeam Monitoring VMC – Part 1 ByJames December 17, 2019October 1, 2025 As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams… AWS | Personal AWS Solution Architect – Associate ByJames December 16, 2019July 10, 2024 Today was a good day.   I renewed my AWS Solution Architect certification.   Although my work is primarily in and around the VMware ecosystem I have been working a lot with VMware Cloud on AWS recently with a number of our customers.     Having a good foundation of the core AWS services has… AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 AWS Status Page – Enhancements The tool I de",
+    "content": "AWS - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS VMware | AWS | Veeam Monitoring VMC – Part 1 ByJames December 17, 2019October 1, 2025 As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams… AWS | Personal AWS Solution Architect – Associate ByJames December 16, 2019December 4, 2025 Today was a good day.   I renewed my AWS Solution Architect certification.   Although my work is primarily in and around the VMware ecosystem I have been working a lot with VMware Cloud on AWS recently with a number of our customers.     Having a good foundation of the core AWS services has… AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 AWS Status Page – Enhancements The tool I",
     "categories": [
       "VMware",
       "AWS",
@@ -1195,7 +1177,7 @@
     "title": "Hosting",
     "url": "https://jameskilby.co.uk/category/hosting/",
     "description": "Hosting",
-    "content": "Hosting - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025October 1, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a… Hosting | Personal Analytics in a privacy focused world ByJames November 10, 2023October 1, 2025 I recently helped my friend Dean Lewis @veducate with some hosting issues. As part of the testing of this he kindly gave me a login to his WordPress instance. He has been a pretty prolific blogger over the years pumping out an amazing amount of really good content. It also highlighted to me that I… Cloudflare | Hosting | Wordpress WordPress Hosting with Cloudflare Pages ByJames May 14",
+    "content": "Hosting - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 4, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a… Hosting | Personal Analytics in a privacy focused world ByJames November 10, 2023October 1, 2025 I recently helped my friend Dean Lewis @veducate with some hosting issues. As part of the testing of this he kindly gave me a login to his WordPress instance. He has been a pretty prolific blogger over the years pumping out an amazing amount of really good content. It also highlighted to me that I… Cloudflare | Hosting | Wordpress WordPress Hosting with Cloudflare Pages ByJames May 1",
     "categories": [
       "Artificial Intelligence",
       "Docker",
@@ -1218,12 +1200,12 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "vSAN",
       "Homelab",
+      "Runecast",
+      "TrueNAS Scale",
+      "vSAN",
       "vSphere",
-      "Networking",
-      "Storage",
-      "Automation",
+      "Personal",
       "VCF"
     ],
     "tags": [
@@ -1239,13 +1221,13 @@
     "categories": [
       "Artificial Intelligence",
       "Homelab",
-      "Runecast",
-      "VMware",
-      "Nutanix",
       "Storage",
-      "Synology",
+      "Ansible",
       "Docker",
-      "Automation"
+      "Synology",
+      "Hosting",
+      "Kubernetes",
+      "VMware"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -1262,10 +1244,13 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "Homelab",
+      "TrueNAS Scale",
+      "vSAN",
       "vSphere",
-      "Personal",
-      "Automation"
+      "Homelab",
+      "VCF",
+      "Veeam",
+      "Personal"
     ],
     "tags": [
       "#Sizing",
@@ -1307,13 +1292,12 @@
       "Portainer",
       "Synology",
       "Homelab",
+      "Veeam",
+      "VMware",
       "Storage",
       "TrueNAS Scale",
-      "Networking",
-      "VMware",
       "Artificial Intelligence",
-      "Hosting",
-      "Automation"
+      "Hosting"
     ],
     "tags": [
       "#Homelab",
@@ -1331,11 +1315,11 @@
       "Ansible",
       "Homelab",
       "Networking",
+      "Mikrotik",
       "Storage",
-      "VMware",
-      "Nutanix",
-      "Veeam",
-      "Hosting"
+      "vExpert",
+      "Hosting",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Ansible",
@@ -1349,18 +1333,23 @@
     "title": "How I Migrated from Pocket to Hoarder with AI Integration",
     "url": "https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/",
     "description": "Learn how I transitioned from Pocket to Karakeep, enhancing my data control with AI. Join the journey of local hosting and bookmark management!",
-    "content": "How I Migrated from Pocket to Hoarder with AI Integration - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025October 1, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a win…. One of them is my bookmark manager. Up until now I used Pocket  since way back in the day when it was originally called “Read it Later”. I wanted to bring it away from a cloud service and host locally, I also had the opportunity to add a little AI magic to go with it. Table of Contents What is hoarder? Taken from the Hoarder website it’s an App that can do all of this…. 🔗 Bookmark links, take simple notes and store images and pdfs. ⬇",
+    "content": "How I Migrated from Pocket to Hoarder with AI Integration - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 4, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a win…. One of them is my bookmark manager. Up until now I used Pocket  since way back in the day when it was originally called “Read it Later”. I wanted to bring it away from a cloud service and host locally, I also had the opportunity to add a little AI magic to go with it. Table of Contents What is hoarder? Taken from the Hoarder website, it’s an App that can do all of this…. 🔗 Bookmark links, take simple notes and store images and pdfs.",
     "categories": [
       "Artificial Intelligence",
       "Docker",
       "Hosting",
-      "Homelab",
-      "Storage",
-      "Synology",
-      "AWS",
-      "Networking",
+      "Cloudflare",
+      "Personal",
+      "Wordpress",
+      "TrueNAS Scale",
       "VMware",
-      "Ansible"
+      "vSAN",
+      "vSphere",
+      "Homelab",
+      "Networking",
+      "Storage",
+      "Runecast",
+      "Nutanix"
     ],
     "tags": [
       "#AI",
@@ -1409,7 +1398,7 @@
     "title": "Docker",
     "url": "https://jameskilby.co.uk/tag/docker/",
     "description": "Docker",
-    "content": "Docker - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Docker Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025October 1, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a… Docker | Homelab | Hosting | Kubernetes Use Portainer in a Homelab with GitHub ByJames December 9, 2022October 1, 2025 Late to the party or not, I have been using containers in my lab more and more and that has led me to Portainer…. I use it for managing the docker containers on my Synology but it can also be used for managing lots of other things. In their own words “Portainer accelerates container adoption….",
+    "content": "Docker - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Docker Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 4, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a… Docker | Homelab | Hosting | Kubernetes Use Portainer in a Homelab with GitHub ByJames December 9, 2022October 1, 2025 Late to the party or not, I have been using containers in my lab more and more and that has led me to Portainer…. I use it for managing the docker containers on my Synology but it can also be used for managing lots of other things. In their own words “Portainer accelerates container adoption….",
     "categories": [
       "Artificial Intelligence",
       "Docker",
@@ -1459,7 +1448,7 @@
     "title": "Ollama",
     "url": "https://jameskilby.co.uk/tag/ollama/",
     "description": "Ollama",
-    "content": "Ollama - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Ollama Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025October 1, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a…",
+    "content": "Ollama - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Ollama Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 4, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a…",
     "categories": [
       "Artificial Intelligence",
       "Docker",
@@ -1472,7 +1461,7 @@
     "title": "AI",
     "url": "https://jameskilby.co.uk/tag/ai/",
     "description": "AI",
-    "content": "AI - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AI Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025October 1, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a…",
+    "content": "AI - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AI Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 4, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a…",
     "categories": [
       "Artificial Intelligence",
       "Docker",
@@ -1678,7 +1667,7 @@
     "title": "Homelab",
     "url": "https://jameskilby.co.uk/tag/homelab/",
     "description": "Homelab",
-    "content": "Homelab - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Ansible | Homelab Managing my Homelab with SemaphoreUI ByJames September 2, 2025October 1, 2025 I recently stumbled across Semaphore, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running easily with… Artificial Intelligence | Homelab Warp – The intelligent terminal ByJames April 11, 2025October 3, 2025 How Warp is helping me run my homelab. Docker | Portainer | Synology How to Fix Portainer Agent Not Starting On Synology DSM ByJames March 11, 2025October 1, 2025 How to fix Portainer Agent not starting on Synology Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025October 1, 2025 Update: Hoarder has no",
+    "content": "Homelab - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Ansible | Homelab Managing my Homelab with SemaphoreUI ByJames September 2, 2025October 1, 2025 I recently stumbled across Semaphore, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running easily with… Artificial Intelligence | Homelab Warp – The intelligent terminal ByJames April 11, 2025October 3, 2025 How Warp is helping me run my homelab. Docker | Portainer | Synology How to Fix Portainer Agent Not Starting On Synology DSM ByJames March 11, 2025October 1, 2025 How to fix Portainer Agent not starting on Synology Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 4, 2025 Update: Hoarder has n",
     "categories": [
       "Ansible",
       "Homelab",
@@ -1783,7 +1772,7 @@
     "title": "AWS",
     "url": "https://jameskilby.co.uk/tag/aws/",
     "description": "AWS",
-    "content": "AWS - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS VMware | VMware Cloud on AWS VMC Host Errors ByJames September 15, 2020October 1, 2025 When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and… VMware | AWS | Veeam Monitoring VMC – Part 1 ByJames December 17, 2019October 1, 2025 As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams… AWS | Personal AWS Solution Architect – Associate ByJames December 16, 2019July 10, 2024 Today was a good day.   I re",
+    "content": "AWS - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS VMware | VMware Cloud on AWS VMC Host Errors ByJames September 15, 2020October 1, 2025 When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and… VMware | AWS | Veeam Monitoring VMC – Part 1 ByJames December 17, 2019October 1, 2025 As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams… AWS | Personal AWS Solution Architect – Associate ByJames December 16, 2019December 4, 2025 Today was a good day.   I",
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
@@ -1981,7 +1970,7 @@
     "title": "Certification",
     "url": "https://jameskilby.co.uk/tag/certification/",
     "description": "Certification",
-    "content": "Certification - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Certification VMware | Personal | vSphere Advanced Deploy VMware vSphere 7.x 3V0-22.21N ByJames November 10, 2023November 17, 2023 Yesterday I sat and passed the above exam. It had been on my todo list for a good number of years. With the current pause in the Broadcom VMware takeover deal. I had some downtime and decided to use one of the three exam vouchers VMware give me each year. This upgrades me to a… Nutanix | Personal Nutanix NCP ByJames July 2, 2020July 10, 2024 I saw a tweet a couple of weeks ago mentioning that Nutanix were offering a free go at the Nutanix Certified Professional exam. They are also offering free on-demand training to go with it. In my current role, I haven’t used Nutanix however I have good experience using it as the storage platform with vSphere… AWS | Personal AWS Solution Architect – Associate ByJames December 16, 2019July 10, 2024 Today was a good day.   I renewed my",
+    "content": "Certification - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Certification VMware | Personal | vSphere Advanced Deploy VMware vSphere 7.x 3V0-22.21N ByJames November 10, 2023November 17, 2023 Yesterday I sat and passed the above exam. It had been on my todo list for a good number of years. With the current pause in the Broadcom VMware takeover deal. I had some downtime and decided to use one of the three exam vouchers VMware give me each year. This upgrades me to a… Nutanix | Personal Nutanix NCP ByJames July 2, 2020July 10, 2024 I saw a tweet a couple of weeks ago mentioning that Nutanix were offering a free go at the Nutanix Certified Professional exam. They are also offering free on-demand training to go with it. In my current role, I haven’t used Nutanix however I have good experience using it as the storage platform with vSphere… AWS | Personal AWS Solution Architect – Associate ByJames December 16, 2019December 4, 2025 Today was a good day.   I renewed",
     "categories": [
       "VMware",
       "Personal",
@@ -1996,7 +1985,7 @@
     "title": "Hoarder",
     "url": "https://jameskilby.co.uk/tag/hoarder/",
     "description": "Hoarder",
-    "content": "Hoarder - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hoarder Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025October 1, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a…",
+    "content": "Hoarder - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hoarder Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 4, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I have been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail but I have had some successes with other cloud services and a win is a…",
     "categories": [
       "Artificial Intelligence",
       "Docker",
@@ -2052,12 +2041,13 @@
       "Automation",
       "Homelab",
       "VMware",
+      "Storage",
+      "Synology",
+      "Runecast",
+      "VMware Cloud on AWS",
       "Docker",
       "Hosting",
       "Kubernetes",
-      "Networking",
-      "Storage",
-      "Synology",
       "Personal",
       "vSphere"
     ],
@@ -2077,12 +2067,13 @@
     "categories": [
       "Personal",
       "Consulting",
+      "VMware",
+      "vSphere",
+      "Nutanix",
+      "AWS",
       "Hosting",
       "Cloudflare",
-      "Wordpress",
-      "Devops",
-      "Nutanix",
-      "VMware"
+      "Wordpress"
     ],
     "tags": [
       "#Homeoffice",
@@ -2125,13 +2116,15 @@
     "categories": [
       "Devops",
       "Personal",
-      "Hosting",
-      "Cloudflare",
-      "Wordpress",
       "VMware",
+      "vSphere",
       "Automation",
       "Homelab",
-      "AWS"
+      "Nutanix",
+      "AWS",
+      "Cloudflare",
+      "Github",
+      "Wordpress"
     ],
     "tags": [
       "#Git",
@@ -2144,20 +2137,17 @@
     "title": "VMware Certified Master Specialist HCI 2020",
     "url": "https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/",
     "description": "VMware Certified Master Specialist HCI 2020: Join me in celebrating passing the HCI Master Specialist exam and enhancing your VMware skills today!",
-    "content": "VMware Certified Master Specialist HCI 2020 - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Personal | VMware VMware Certified Master Specialist HCI 2020 ByJames September 13, 2020November 11, 2023 I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This was my third remote proctored exam and I must say the experience has improved. Partially that is down to Pearson Vue improving the process and partially down to knowing what to expect a bit better. Together with the vSAN exam that I passed earlier in the month, this entitles me to a VMware Master Services Competency. This is now the second that I hold and I must say I like the way VMware is delivering a thought out learning path. Similar Posts Runecast | VMware ",
+    "content": "VMware Certified Master Specialist HCI 2020 - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Personal | VMware VMware Certified Master Specialist HCI 2020 ByJames September 13, 2020November 11, 2023 I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This was my third remote proctored exam and I must say the experience has improved. Partially that is down to Pearson Vue improving the process and partially down to knowing what to expect a bit better. Together with the vSAN exam that I passed earlier in the month, this entitles me to a VMware Master Services Competency. This is now the second that I hold and I must say I like the way VMware is delivering a thought out learning path. Similar Posts Automation | Homel",
     "categories": [
       "Personal",
       "VMware",
-      "Runecast",
-      "AWS",
-      "Veeam",
-      "Nutanix",
+      "Automation",
       "Homelab",
-      "Networking",
+      "Devops",
+      "Veeam",
       "Storage",
-      "vSphere",
-      "VMware Cloud on AWS",
-      "vSAN"
+      "vExpert",
+      "Hosting"
     ],
     "tags": [
       "#Certifications",
@@ -2174,11 +2164,12 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "Automation",
       "Homelab",
+      "AWS",
+      "Hosting",
+      "Veeam",
       "VCF",
-      "Networking",
-      "Storage"
+      "Nutanix"
     ],
     "tags": [
       "#AWS",
@@ -2198,13 +2189,13 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
+      "AWS",
+      "Veeam",
       "Homelab",
-      "Personal",
       "vSphere",
-      "Networking",
-      "Storage",
-      "TrueNAS Scale",
-      "vSAN"
+      "Runecast",
+      "Personal",
+      "VCF"
     ],
     "tags": [
       "#VMC",
@@ -2220,9 +2211,9 @@
     "categories": [
       "Nutanix",
       "Personal",
-      "Consulting",
-      "Homelab",
       "VMware",
+      "Hosting",
+      "Homelab",
       "Devops"
     ],
     "tags": [
@@ -2240,13 +2231,15 @@
       "Homelab",
       "Storage",
       "Synology",
+      "Networking",
       "TrueNAS Scale",
+      "VMware",
+      "vSAN",
+      "vSphere",
       "Artificial Intelligence",
       "Docker",
-      "Hosting",
-      "Networking",
-      "VMware",
-      "Mikrotik"
+      "Ansible",
+      "Runecast"
     ],
     "tags": [
       "#Homelab",
@@ -2263,15 +2256,13 @@
       "Homelab",
       "VMware",
       "vSphere",
-      "Ansible",
       "Storage",
-      "TrueNAS Scale",
-      "VMware Cloud on AWS",
-      "vSAN",
+      "Synology",
+      "Networking",
       "Artificial Intelligence",
       "Docker",
-      "Networking",
-      "vExpert"
+      "AWS",
+      "Veeam"
     ],
     "tags": [
       "#Upgrade",
@@ -2289,11 +2280,14 @@
       "Networking",
       "Storage",
       "VMware",
-      "Nutanix",
+      "Docker",
+      "Portainer",
       "Synology",
       "VMware Cloud on AWS",
-      "Personal",
-      "vSphere"
+      "vSAN",
+      "Hosting",
+      "VCF",
+      "Runecast"
     ],
     "tags": [
       "#Homelab",
@@ -2313,13 +2307,13 @@
       "Kubernetes",
       "Cloudflare",
       "Wordpress",
-      "Runecast",
-      "VMware",
-      "Networking",
       "Storage",
-      "Portainer",
-      "Synology",
-      "AWS"
+      "vExpert",
+      "Networking",
+      "VMware",
+      "Ansible",
+      "Veeam",
+      "Personal"
     ],
     "tags": [
       "#Containers",
@@ -2336,15 +2330,14 @@
     "categories": [
       "Homelab",
       "Hosting",
-      "VMware",
-      "vSphere",
-      "Cloudflare",
-      "Wordpress",
-      "Docker",
-      "Portainer",
-      "Synology",
-      "Ansible",
+      "Networking",
       "Artificial Intelligence",
+      "Docker",
+      "Runecast",
+      "VMware",
+      "VCF",
+      "Wordpress",
+      "Cloudflare",
       "Personal"
     ],
     "tags": [
@@ -2362,13 +2355,10 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Homelab",
       "Personal",
-      "Docker",
-      "Kubernetes",
       "Devops",
       "Github",
-      "AWS"
+      "Homelab"
     ],
     "tags": [
       "#Cloudflare",
@@ -2386,13 +2376,12 @@
     "categories": [
       "Homelab",
       "VMware",
-      "Networking",
-      "Personal",
+      "VCF",
       "vSphere",
-      "VMware Cloud on AWS",
+      "Personal",
+      "Artificial Intelligence",
       "Storage",
-      "TrueNAS Scale",
-      "Runecast"
+      "Synology"
     ],
     "tags": [
       "#Homelab",
@@ -2409,13 +2398,10 @@
     "categories": [
       "Hosting",
       "Wordpress",
+      "AWS",
       "Cloudflare",
       "Devops",
-      "Github",
-      "Docker",
-      "Homelab",
-      "Kubernetes",
-      "Personal"
+      "Github"
     ],
     "tags": [
       "#Blogging",
@@ -2433,15 +2419,11 @@
       "Homelab",
       "Veeam",
       "VMware",
+      "Networking",
       "Storage",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere",
-      "Artificial Intelligence",
-      "Personal",
-      "Docker",
-      "Portainer",
-      "Synology"
+      "AWS",
+      "VMware Cloud on AWS",
+      "Runecast"
     ],
     "tags": [
       "#Desired State",
@@ -2458,8 +2440,10 @@
     "categories": [
       "Cloudflare",
       "Hosting",
+      "Personal",
       "Wordpress",
-      "Personal"
+      "Devops",
+      "Github"
     ],
     "tags": [
       "#Cloudflare",
@@ -2473,22 +2457,17 @@
     "title": "Lab Update – Part 3 Network",
     "url": "https://jameskilby.co.uk/2022/01/lab-update-part-3-network/",
     "description": "Stay updated on our lab's network migration to PFSense. Learn about the benefits of 40Gb/s vMotion and future plans for a 25Gb/s switch.",
-    "content": "Lab Update – Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022October 1, 2025 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. Similar Posts Docker | Homelab | Hosting | Kubernetes Use Portainer in a Homelab with GitHub ByJames December 9, 2022October 1, 2025 Late to the party or",
+    "content": "Lab Update – Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022October 1, 2025 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. Similar Posts Homelab | VMware Nvidia Tesla P4 Homelab Setup ByJames October 23, 2023July 10, 2024 A little while ago I decided to play with vGPU in my h",
     "categories": [
       "Homelab",
       "Networking",
+      "VMware",
+      "Runecast",
       "Docker",
       "Hosting",
       "Kubernetes",
-      "Artificial Intelligence",
-      "Portainer",
-      "Synology",
-      "VCF",
-      "VMware",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere",
-      "Storage"
+      "Nutanix",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Homelab",
@@ -2506,12 +2485,11 @@
       "Cloudflare",
       "Personal",
       "Wordpress",
-      "VMware",
-      "vSphere",
-      "Docker",
+      "Nutanix",
       "Homelab",
-      "Kubernetes",
-      "AWS"
+      "VMware",
+      "Docker",
+      "Kubernetes"
     ],
     "tags": [
       "#Cloudflare",
@@ -2527,13 +2505,12 @@
     "categories": [
       "Homelab",
       "Storage",
-      "Ansible",
-      "Automation",
-      "VMware",
-      "vSphere",
       "Synology",
-      "Kubernetes",
-      "TrueNAS Scale"
+      "Hosting",
+      "VMware",
+      "TrueNAS Scale",
+      "Docker",
+      "Kubernetes"
     ],
     "tags": [
       "#NVMe",
