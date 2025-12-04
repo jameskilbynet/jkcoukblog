@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and system directories
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /xmlrpc.php
+
+# Sitemap location
+Sitemap: https://jameskilby.co.uk/sitemap.xml
