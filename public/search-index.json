@@ -48,9 +48,12 @@
     "categories": [
       "Homelab",
       "Networking",
-      "VMware",
-      "Mikrotik",
-      "Veeam"
+      "Ansible",
+      "Storage",
+      "vExpert",
+      "Artificial Intelligence",
+      "Automation",
+      "VMware"
     ],
     "tags": [
       "#DHCP",
@@ -69,10 +72,9 @@
       "VMware",
       "vSAN",
       "vSphere",
-      "VMware Cloud on AWS",
       "Homelab",
-      "Hosting",
-      "Networking"
+      "VMware Cloud on AWS",
+      "Kubernetes"
     ],
     "tags": [
       "#Homelab",
@@ -93,12 +95,11 @@
       "Docker",
       "Homelab",
       "Storage",
-      "Networking",
-      "Hosting",
+      "TrueNAS Scale",
       "Portainer",
       "Synology",
       "VMware",
-      "vExpert"
+      "Networking"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -116,14 +117,14 @@
       "Homelab",
       "Storage",
       "TrueNAS Scale",
-      "Networking",
       "VMware",
+      "vSphere",
+      "Networking",
+      "vSAN",
       "Artificial Intelligence",
       "Docker",
       "Hosting",
-      "Mikrotik",
-      "Nutanix",
-      "vExpert"
+      "Kubernetes"
     ],
     "tags": [
       "#Homelab",
@@ -139,14 +140,13 @@
     "categories": [
       "Mikrotik",
       "Networking",
-      "Homelab",
-      "Storage",
-      "Synology",
-      "Artificial Intelligence",
-      "Veeam",
+      "VCF",
       "VMware",
+      "Homelab",
       "Nutanix",
-      "vExpert"
+      "Artificial Intelligence",
+      "Docker",
+      "Hosting"
     ],
     "tags": [
       "#Homelab",
@@ -164,15 +164,12 @@
       "Homelab",
       "Nutanix",
       "VMware",
-      "Docker",
-      "Portainer",
-      "Synology",
-      "AWS",
-      "Veeam",
+      "Automation",
       "Storage",
+      "vExpert",
+      "VMware Cloud on AWS",
       "Personal",
-      "vSphere",
-      "Networking"
+      "VCF"
     ],
     "tags": [
       "#Homelab",
@@ -189,15 +186,16 @@
     "categories": [
       "VCF",
       "VMware",
-      "Homelab",
-      "Runecast",
-      "Hosting",
+      "AWS",
       "Veeam",
-      "Docker",
-      "Portainer",
-      "Synology",
+      "Mikrotik",
+      "Networking",
+      "Homelab",
       "Storage",
-      "vExpert"
+      "Synology",
+      "Runecast",
+      "Docker",
+      "Portainer"
     ],
     "tags": [
       "#CPU",
@@ -215,11 +213,14 @@
     "categories": [
       "VMware",
       "VCF",
-      "Personal",
+      "VMware Cloud on AWS",
+      "vSAN",
+      "AWS",
+      "Veeam",
+      "Runecast",
       "Homelab",
-      "vSphere",
-      "TrueNAS Scale",
-      "vSAN"
+      "Storage",
+      "vExpert"
     ],
     "tags": [
       "#Holodeck",
@@ -247,12 +248,14 @@
       "VMware",
       "AWS",
       "Veeam",
-      "Hosting",
-      "VCF",
-      "Runecast",
       "Homelab",
       "Networking",
-      "Storage"
+      "Storage",
+      "VMware Cloud on AWS",
+      "Personal",
+      "vSphere",
+      "TrueNAS Scale",
+      "vSAN"
     ],
     "tags": [
       "#AWS",
@@ -269,13 +272,11 @@
     "categories": [
       "AWS",
       "Personal",
-      "Hosting",
-      "Cloudflare",
-      "Wordpress",
-      "Consulting",
       "Devops",
+      "Consulting",
       "VMware",
-      "Nutanix"
+      "VMware Cloud on AWS",
+      "Hosting"
     ],
     "tags": [
       "#AWS",
@@ -290,12 +291,16 @@
     "content": "Lab Storage - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Lab Storage ByJames February 10, 2019July 10, 2024 Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology DS918 It’s a very compact unit with a quad-core Intel Celeron & I have left the RAM at 4 GB for now. I have added some of the existing SSD’s that I had giving me about 3TB of usable flash.  I am presenting this back to my VMware hosts using NFS 4.1.   I must have missed the announcement as this is now built into the Synology GUI ( It used to be a command-line-only option) I have verified the VAAI works as expected in this configuration.  At present I am using this with a single network connection however I will be testi",
     "categories": [
       "Homelab",
-      "Networking",
-      "Storage",
+      "TrueNAS Scale",
       "VMware",
-      "Automation",
-      "VMware Cloud on AWS",
-      "vSAN"
+      "vSAN",
+      "vSphere",
+      "Artificial Intelligence",
+      "Docker",
+      "Portainer",
+      "Synology",
+      "Nutanix",
+      "Storage"
     ],
     "tags": [
       "#Homelab",
@@ -334,11 +339,15 @@
       "Homelab",
       "Storage",
       "vExpert",
-      "Networking",
       "VMware",
-      "vSphere",
-      "TrueNAS Scale",
-      "VMware Cloud on AWS"
+      "AWS",
+      "Veeam",
+      "Nutanix",
+      "Networking",
+      "Docker",
+      "Portainer",
+      "Synology",
+      "Personal"
     ],
     "tags": [
       "#Homelab",
@@ -361,11 +370,13 @@
       "VMware Cloud on AWS",
       "vSAN",
       "Homelab",
-      "vSphere",
-      "TrueNAS Scale",
-      "Personal",
+      "Veeam",
+      "Nutanix",
+      "Automation",
+      "Networking",
+      "Storage",
       "AWS",
-      "Veeam"
+      "Synology"
     ],
     "tags": [
       "#Storage",
@@ -384,12 +395,13 @@
       "VMware",
       "Personal",
       "vSphere",
-      "Hosting",
       "Homelab",
-      "Networking",
       "Storage",
-      "Runecast",
-      "Nutanix"
+      "vExpert",
+      "VMware Cloud on AWS",
+      "Devops",
+      "AWS",
+      "Veeam"
     ],
     "tags": [
       "#Certification",
@@ -406,9 +418,9 @@
     "categories": [
       "Networking",
       "Homelab",
+      "Mikrotik",
       "Storage",
-      "VMware",
-      "Mikrotik"
+      "VMware"
     ],
     "tags": [
       "#City Fibre",
@@ -426,14 +438,13 @@
     "categories": [
       "Hosting",
       "Personal",
-      "Docker",
-      "Homelab",
-      "Kubernetes",
+      "AWS",
       "Cloudflare",
       "Wordpress",
-      "Devops",
-      "Github",
-      "Nutanix"
+      "Artificial Intelligence",
+      "Docker",
+      "VMware",
+      "vSphere"
     ],
     "tags": [
       "#Analytics",
@@ -456,10 +467,10 @@
       "TrueNAS Scale",
       "Homelab",
       "Storage",
+      "vExpert",
       "VMware",
       "vSAN",
       "vSphere",
-      "vExpert",
       "Docker",
       "Hosting"
     ],
@@ -478,13 +489,11 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "AWS",
       "Devops",
       "Github",
       "Docker",
       "Homelab",
-      "Kubernetes",
-      "Artificial Intelligence"
+      "Kubernetes"
     ],
     "tags": [
       "#Cloudflare",
@@ -502,12 +511,14 @@
     "categories": [
       "Runecast",
       "VMware",
-      "Personal",
-      "vSphere",
+      "Artificial Intelligence",
       "Homelab",
+      "Hosting",
       "VMware Cloud on AWS",
-      "Networking",
-      "Storage"
+      "Storage",
+      "TrueNAS Scale",
+      "Automation",
+      "vSphere"
     ],
     "tags": [
       "#Homelab",
@@ -525,14 +536,12 @@
     "categories": [
       "Homelab",
       "Storage",
-      "Networking",
-      "Veeam",
-      "VMware",
-      "Artificial Intelligence",
-      "Docker",
+      "Kubernetes",
+      "TrueNAS Scale",
       "Automation",
+      "VMware",
       "Nutanix",
-      "vSphere"
+      "Networking"
     ],
     "tags": [
       "#NAS",
@@ -549,14 +558,14 @@
     "categories": [
       "VMware",
       "Personal",
-      "Runecast",
-      "Automation",
       "Homelab",
-      "VMware Cloud on AWS",
-      "vSAN",
-      "Veeam",
+      "Nutanix",
       "vSphere",
-      "VCF"
+      "Devops",
+      "TrueNAS Scale",
+      "vSAN",
+      "Networking",
+      "Storage"
     ],
     "tags": [
       "#Charity",
@@ -575,10 +584,10 @@
       "Homelab",
       "VMware",
       "Storage",
-      "Runecast",
-      "Networking",
-      "Nutanix",
-      "VMware Cloud on AWS"
+      "VMware Cloud on AWS",
+      "VCF",
+      "Veeam",
+      "Synology"
     ],
     "tags": [
       "#Homelab",
@@ -619,14 +628,16 @@
     "title": "AWS Status Page – Monitoring Included",
     "url": "https://jameskilby.co.uk/2018/05/aws-status-page-monitoring-included/",
     "description": "AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them. As part of my personal development, I thought I would include this on my",
-    "content": "AWS Status Page – Monitoring Included - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at effectively zero cost Site Response The guide I followed is very good and is documented in the Git repo here Similar Posts Hosting | Cloudflare | Personal | Wordpress Web Development ByJames January 4, 2022October 1, 2025 A while ago I started messing with Cloudflare Workers. I have now moved this site permanently",
+    "content": "AWS Status Page – Monitoring Included - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at effectively zero cost Site Response The guide I followed is very good and is documented in the Git repo here Similar Posts Docker | Homelab | Hosting | Kubernetes Use Portainer in a Homelab with GitHub ByJames December 9, 2022October 1, 2025 Late to the party or not, I have been using containers in my lab more and",
     "categories": [
       "AWS",
       "Hosting",
-      "Cloudflare",
-      "Personal",
-      "Wordpress",
-      "Homelab"
+      "Docker",
+      "Homelab",
+      "Kubernetes",
+      "VMware",
+      "Veeam",
+      "Personal"
     ],
     "tags": [
       "#AWS",
@@ -656,14 +667,12 @@
     "content": "And now for something completely different - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Personal And now for something completely different ByJames October 16, 2018July 10, 2024 I have worked for my current employer Zen Internet for  3.5 years.  Over that time I have changed roles from what was originally a customer-focused role into a role with one of the core platform teams.  This has meant looking after the majority of the Internal and customer Virtual platforms.  During this time Zen has undergone several large migration programs and countless smaller ones. Some of the big ones include: Core ISP network refresh Microsegmentation rollout Nutanix integration Backup Consolidation I have been lucky enough to be involved with all of these ( some much more than others)  Although the work is never complete Zen are in a good place. At the same time, my personal circumstances have changed somewhat. My upcoming wedding and my fiancé not knowing exactly where she",
     "categories": [
       "Personal",
-      "VMware",
-      "vSphere",
       "Nutanix",
-      "Hosting",
-      "Cloudflare",
-      "Wordpress",
+      "Consulting",
+      "Devops",
+      "VMware",
       "AWS",
-      "Devops"
+      "Hosting"
     ],
     "tags": [],
     "date": "2018-10-16T08:22:45+00:00"
@@ -675,14 +684,15 @@
     "content": "Cloudflare - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting Cloudflare ByJames March 27, 2018December 8, 2024 Cloudflare – What is it and why would I care? I have been using Cloudflare for a long time.  It is one of my go-to services and I use it to protect all of the public services I run for myself and other sites/ organizations. The basic premise of what Cloudflare do is that they are a distributed Web Application Firewall (WAF) and CDN but they also offer so much more. Because they have a large number of POP’s they can cache and push content closer to your end users to give them a better experience. This also offloads work from your firewalls, DNS, Web and Database servers.  At present they have 139 sites globally allowing you to host a site anywhere and get good global performance. Cloudflare has an amazing free tier so you can get started easily.   I use this to host all of my public DNS records. So what does that look like? [codeblocks name=’hos",
     "categories": [
       "Hosting",
-      "Personal",
+      "Artificial Intelligence",
+      "Docker",
       "Cloudflare",
+      "Devops",
+      "Github",
       "Wordpress",
       "Homelab",
-      "Docker",
       "Kubernetes",
-      "Devops",
-      "Github"
+      "Personal"
     ],
     "tags": [
       "#Cloudflare"
@@ -696,10 +706,10 @@
     "content": "AWS for Beginners - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS AWS for Beginners ByJames March 30, 2018July 10, 2024 AWS for Beginners Part 1 I am hoping to get back into doing some AWS stuff over the next couple of months.  I am a huge fan of some of the tools and technology they have built.  It’s not perfect and it is often not well understood by people lifting and shifting existing infrastructure into “the cloud” My view is firmly if this is what you have done, then you have done it wrong and missed the point…. But if you do want to kick the tyres and see what it’s all about go and set up an account and play Ensure you implement these three recommendations Root Account Security – Ensure you have a strong password on this account then stop using it.  Use IAM to set up another account and then use that. Enable Two Factor Authentication – This is a must,  Sadly AWS don’t appear to support my preferred 2FA device. Yubikey so I’m using the Google authent",
     "categories": [
       "AWS",
-      "Personal",
-      "Hosting",
       "VMware",
       "Veeam",
+      "Personal",
+      "Hosting",
       "VMware Cloud on AWS"
     ],
     "tags": [
@@ -717,11 +727,11 @@
       "Homelab",
       "Nutanix",
       "Storage",
-      "VMware",
-      "vExpert",
+      "Networking",
       "Artificial Intelligence",
       "Docker",
-      "Automation"
+      "VMware",
+      "Synology"
     ],
     "tags": [
       "#Nutanix"
@@ -737,15 +747,12 @@
       "Homelab",
       "Storage",
       "Synology",
-      "VMware",
-      "vSphere",
-      "Artificial Intelligence",
-      "TrueNAS Scale",
-      "vSAN",
       "Docker",
-      "Hosting",
-      "Mikrotik",
-      "Networking"
+      "Portainer",
+      "VMware",
+      "Networking",
+      "Ansible",
+      "vExpert"
     ],
     "tags": [
       "#Homelab",
@@ -936,7 +943,7 @@
     "title": "Devops",
     "url": "https://jameskilby.co.uk/category/devops/",
     "description": "Devops",
-    "content": "Devops - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Devops Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Devops | Personal My First Pull ByJames December 22, 2020October 1, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….",
+    "content": "Devops - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Devops Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Devops | Personal My First Pull ByJames December 22, 2020December 8, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….",
     "categories": [
       "Cloudflare",
       "Devops",
@@ -993,7 +1000,7 @@
     "title": "Automation",
     "url": "https://jameskilby.co.uk/category/automation/",
     "description": "Automation",
-    "content": "Automation - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Automation Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021October 1, 2025 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam 🤩 THIS IS…",
+    "content": "Automation - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Automation Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021December 8, 2025 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…",
     "categories": [
       "Automation",
       "Homelab",
@@ -1205,12 +1212,11 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere",
-      "Homelab",
+      "AWS",
       "Veeam",
-      "Personal"
+      "vSAN",
+      "Runecast",
+      "Homelab"
     ],
     "tags": [
       "#VMware Cloud on AWS"
@@ -1225,12 +1231,16 @@
     "categories": [
       "Artificial Intelligence",
       "Homelab",
+      "Docker",
+      "Portainer",
+      "Synology",
       "Hosting",
       "Storage",
-      "Synology",
-      "TrueNAS Scale",
-      "Ansible",
-      "vExpert"
+      "Mikrotik",
+      "Networking",
+      "Automation",
+      "VMware",
+      "Runecast"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -1247,13 +1257,16 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "VCF",
-      "Personal",
-      "Homelab",
-      "Veeam",
+      "TrueNAS Scale",
       "vSAN",
+      "vSphere",
+      "VCF",
+      "Homelab",
       "Networking",
-      "Storage"
+      "Storage",
+      "AWS",
+      "Veeam",
+      "Personal"
     ],
     "tags": [
       "#Sizing",
@@ -1294,15 +1307,16 @@
       "Docker",
       "Portainer",
       "Synology",
-      "TrueNAS Scale",
-      "VMware",
-      "vSAN",
-      "vSphere",
       "Homelab",
-      "Nutanix",
-      "Networking",
       "Storage",
-      "Artificial Intelligence"
+      "vExpert",
+      "Artificial Intelligence",
+      "Hosting",
+      "Veeam",
+      "VMware",
+      "VCF",
+      "Kubernetes",
+      "TrueNAS Scale"
     ],
     "tags": [
       "#Homelab",
@@ -1319,14 +1333,14 @@
     "categories": [
       "Ansible",
       "Homelab",
-      "VMware",
-      "vSphere",
+      "Artificial Intelligence",
       "Docker",
-      "Portainer",
-      "Synology",
+      "Hosting",
       "Storage",
-      "VCF",
-      "Veeam"
+      "TrueNAS Scale",
+      "VMware",
+      "Networking",
+      "Synology"
     ],
     "tags": [
       "#Ansible",
@@ -1345,15 +1359,15 @@
       "Artificial Intelligence",
       "Docker",
       "Hosting",
-      "TrueNAS Scale",
-      "VMware",
-      "vSAN",
-      "vSphere",
+      "Personal",
       "Homelab",
+      "VMware",
       "Storage",
-      "Synology",
-      "vExpert",
-      "Automation"
+      "TrueNAS Scale",
+      "Networking",
+      "Veeam",
+      "vSAN",
+      "vSphere"
     ],
     "tags": [
       "#AI",
@@ -1478,7 +1492,7 @@
     "title": "Hashicorp",
     "url": "https://jameskilby.co.uk/tag/hashicorp/",
     "description": "Hashicorp",
-    "content": "Hashicorp - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hashicorp Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021October 1, 2025 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam 🤩 THIS IS…",
+    "content": "Hashicorp - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hashicorp Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021December 8, 2025 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…",
     "categories": [
       "Automation",
       "Homelab",
@@ -1540,7 +1554,7 @@
     "title": "github",
     "url": "https://jameskilby.co.uk/tag/github/",
     "description": "github",
-    "content": "github - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu github Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Devops | Personal My First Pull ByJames December 22, 2020October 1, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….",
+    "content": "github - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu github Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Devops | Personal My First Pull ByJames December 22, 2020December 8, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….",
     "categories": [
       "Cloudflare",
       "Devops",
@@ -1581,7 +1595,7 @@
     "title": "Git",
     "url": "https://jameskilby.co.uk/tag/git/",
     "description": "Git",
-    "content": "Git - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Git Devops | Personal My First Pull ByJames December 22, 2020October 1, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….",
+    "content": "Git - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Git Devops | Personal My First Pull ByJames December 22, 2020December 8, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….",
     "categories": [
       "Devops",
       "Personal"
@@ -1702,7 +1716,7 @@
     "title": "Automation",
     "url": "https://jameskilby.co.uk/tag/automation/",
     "description": "Automation",
-    "content": "Automation - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Automation Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021October 1, 2025 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam 🤩 THIS IS…",
+    "content": "Automation - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Automation Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021December 8, 2025 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…",
     "categories": [
       "Automation",
       "Homelab",
@@ -1792,7 +1806,7 @@
     "title": "packer",
     "url": "https://jameskilby.co.uk/tag/packer/",
     "description": "packer",
-    "content": "packer - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu packer Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021October 1, 2025 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam 🤩 THIS IS… Devops | Personal My First Pull ByJames December 22, 2020October 1, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….",
+    "content": "packer - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu packer Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021December 8, 2025 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the… Devops | Personal My First Pull ByJames December 22, 2020December 8, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….",
     "categories": [
       "Automation",
       "Homelab",
@@ -2040,20 +2054,18 @@
     "title": "Template Deployment with Packer",
     "url": "https://jameskilby.co.uk/2021/01/hashicorp-packer/",
     "description": "Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the",
-    "content": "Template Deployment with Packer - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021October 1, 2025 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam 🤩 THIS IS AWESOME 🤩 For those who ❤️ Automation, check out @tenthirtyam amazing repo w/working examples to build Photon OS 3/4, Ubuntu 18.04/20.04, RHEL 7/8, CentOS 7/8 & Windows Server 2016/2019 VM images using Packer & pushing to Cont Lib! Well done https://t.co/o7FQXtrpRn — William Lam (@lamw.bsky.social | @lamw@vmst.io) (@lamw) November 30, 2020 That was the kicker I needed to go and have a look at getting it set up and running. As I run a Mac as my main machine it was easy to get deployed following the instructions using brew and the",
+    "content": "Template Deployment with Packer - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021December 8, 2025 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam 🤩 THIS IS AWESOME 🤩For those who ❤️ Automation, check out @tenthirtyam amazing repo w/working examples to build Photon OS 3/4, Ubuntu 18.04/20.04, RHEL 7/8, CentOS 7/8 & Windows Server 2016/2019 VM images using Packer & pushing to Cont Lib! Well done https://t.co/o7FQXtrpRn— William Lam (@lamw) November 30, 2020 That was the kicker I needed to go and have a look at getting it set up and running. As I run a Mac as my main machine it was easy to get deployed following the instructions using brew and the GitHub Repo that William had pointed",
     "categories": [
       "Automation",
       "Homelab",
       "VMware",
-      "Ansible",
+      "Hosting",
       "Personal",
       "vSphere",
-      "TrueNAS Scale",
+      "VMware Cloud on AWS",
       "vSAN",
-      "Artificial Intelligence",
-      "Docker",
-      "Storage",
-      "vExpert"
+      "Veeam",
+      "Storage"
     ],
     "tags": [
       "#Automation",
@@ -2071,9 +2083,10 @@
     "categories": [
       "Personal",
       "Consulting",
-      "AWS",
+      "Hosting",
+      "Devops",
       "VMware",
-      "vSphere"
+      "Nutanix"
     ],
     "tags": [
       "#Homeoffice",
@@ -2098,9 +2111,9 @@
     "content": "VeeamON2020 - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Veeam VeeamON2020 ByJames June 18, 2020April 25, 2023 As everyone knows by now the world has changed possibly forever.  Due to Covid19 working from home has become the new normal.  We are lucky in the IT world that this has been fairly straightforward for most of us.  We are privileged in that it’s possible for us to continue indefinitely.  Organisations still need to move forward, to progress and adapt into the new normal. In the words of Charles Darwin “It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change.” With that most (if not all IT conferences have been postponed or gone online)   Veeam’s annual conference VeeamON is no exception and now it’s here!! As a Veeam Vanguard I was privileged to be given an early briefing on some of the announcements.  These are summarised below but for all the details make sure y",
     "categories": [
       "Veeam",
+      "Homelab",
       "VMware",
-      "AWS",
-      "Homelab"
+      "AWS"
     ],
     "tags": [
       "#Veeam",
@@ -2112,16 +2125,17 @@
     "title": "My First Pull",
     "url": "https://jameskilby.co.uk/2020/12/my-first-pull/",
     "description": "I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working",
-    "content": "My First Pull - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Devops | Personal My First Pull ByJames December 22, 2020October 1, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest. I have worked in IT for over 10 years now but the opportunity to make suggestions to someone else’s codebase hadn’t popped up so I was keen to rectify that. Although I had used Git/GitHub before it was typically for my own uses as a code storage location. I, therefore, needed to sanity check the process of a “pull request” so off to YouTube I went. https://www.youtube.com/watch?v=YTbRzhQju4c The above video seemed to clarify the process the best and with that knowledge, the request was submitted to the owners and lucki",
+    "content": "My First Pull - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Devops | Personal My First Pull ByJames December 22, 2020December 8, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest. I have worked in IT for over 10 years now but the opportunity to make suggestions to someone else’s codebase hadn’t popped up so I was keen to rectify that. Although I had used Git/GitHub before it was typically for my own uses as a code storage location. I, therefore, needed to sanity check the process of a “pull request” so off to YouTube I went. The above video seemed to clarify the process the best and with that knowledge, the request was submitted to the owners and luckily it was accepted. You can see that I am n",
     "categories": [
       "Devops",
       "Personal",
       "Nutanix",
-      "VMware",
-      "vSphere",
+      "AWS",
       "Consulting",
-      "Automation",
-      "Homelab"
+      "VMware",
+      "Cloudflare",
+      "Github",
+      "Wordpress"
     ],
     "tags": [
       "#Git",
@@ -2134,17 +2148,18 @@
     "title": "VMware Certified Master Specialist HCI 2020",
     "url": "https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/",
     "description": "I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won't go into any details of the contents but I will comment that I felt the questions were fair and that there wasn't a",
-    "content": "VMware Certified Master Specialist HCI 2020 - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Personal | VMware VMware Certified Master Specialist HCI 2020 ByJames September 13, 2020November 11, 2023 I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This was my third remote proctored exam and I must say the experience has improved. Partially that is down to Pearson Vue improving the process and partially down to knowing what to expect a bit better. Together with the vSAN exam that I passed earlier in the month, this entitles me to a VMware Master Services Competency. This is now the second that I hold and I must say I like the way VMware is delivering a thought out learning path. Similar Posts VMware | VMware Cl",
+    "content": "VMware Certified Master Specialist HCI 2020 - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Personal | VMware VMware Certified Master Specialist HCI 2020 ByJames September 13, 2020November 11, 2023 I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This was my third remote proctored exam and I must say the experience has improved. Partially that is down to Pearson Vue improving the process and partially down to knowing what to expect a bit better. Together with the vSAN exam that I passed earlier in the month, this entitles me to a VMware Master Services Competency. This is now the second that I hold and I must say I like the way VMware is delivering a thought out learning path. Similar Posts Homelab | Veeam | ",
     "categories": [
       "Personal",
       "VMware",
-      "VMware Cloud on AWS",
-      "Hosting",
-      "Automation",
       "Homelab",
-      "AWS",
       "Veeam",
-      "Nutanix"
+      "Networking",
+      "Storage",
+      "AWS",
+      "Nutanix",
+      "vSphere",
+      "Consulting"
     ],
     "tags": [
       "#Certifications",
@@ -2161,11 +2176,13 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "VCF",
-      "Homelab",
-      "vSphere",
-      "Runecast",
+      "vSAN",
       "AWS",
+      "Personal",
+      "Homelab",
+      "Storage",
+      "vExpert",
+      "VCF",
       "Veeam"
     ],
     "tags": [
@@ -2186,11 +2203,14 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
+      "VCF",
+      "Runecast",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere",
       "Automation",
       "Homelab",
-      "Veeam",
-      "vSphere",
-      "vSAN"
+      "Nutanix"
     ],
     "tags": [
       "#VMC",
@@ -2206,12 +2226,13 @@
     "categories": [
       "Nutanix",
       "Personal",
+      "Hosting",
+      "Cloudflare",
+      "Wordpress",
       "VMware",
       "vSphere",
-      "Homelab",
-      "Devops",
-      "Consulting",
-      "Hosting"
+      "AWS",
+      "Homelab"
     ],
     "tags": [
       "#Certification",
@@ -2228,14 +2249,13 @@
       "Homelab",
       "Storage",
       "Synology",
-      "Ansible",
-      "Networking",
+      "Docker",
+      "Portainer",
+      "Veeam",
       "VMware",
+      "vSphere",
       "Nutanix",
-      "VCF",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere"
+      "Ansible"
     ],
     "tags": [
       "#Homelab",
@@ -2252,11 +2272,12 @@
       "Homelab",
       "VMware",
       "vSphere",
-      "VCF",
-      "AWS",
-      "Veeam",
+      "Networking",
       "Personal",
-      "Runecast"
+      "Automation",
+      "Storage",
+      "Synology",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Upgrade",
@@ -2274,12 +2295,11 @@
       "Networking",
       "Storage",
       "VMware",
+      "Automation",
       "TrueNAS Scale",
-      "VMware Cloud on AWS",
-      "vSAN",
-      "Hosting",
-      "Personal",
-      "vSphere"
+      "VCF",
+      "Veeam",
+      "Personal"
     ],
     "tags": [
       "#Homelab",
@@ -2297,14 +2317,12 @@
       "Homelab",
       "Hosting",
       "Kubernetes",
-      "Veeam",
-      "VMware",
-      "Networking",
-      "Automation",
-      "Mikrotik",
-      "TrueNAS Scale",
       "Storage",
-      "Synology"
+      "Synology",
+      "TrueNAS Scale",
+      "Nutanix",
+      "VMware",
+      "Networking"
     ],
     "tags": [
       "#Containers",
@@ -2321,14 +2339,16 @@
     "categories": [
       "Homelab",
       "Hosting",
-      "Ansible",
-      "Nutanix",
-      "VMware",
-      "Artificial Intelligence",
-      "Veeam",
       "Docker",
-      "Portainer",
-      "Synology"
+      "Kubernetes",
+      "Cloudflare",
+      "Personal",
+      "Wordpress",
+      "Networking",
+      "Veeam",
+      "VMware",
+      "Storage",
+      "TrueNAS Scale"
     ],
     "tags": [
       "#Homelab",
@@ -2345,9 +2365,13 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
+      "Devops",
+      "Github",
       "AWS",
       "Personal",
-      "Homelab"
+      "Docker",
+      "Homelab",
+      "Kubernetes"
     ],
     "tags": [
       "#Cloudflare",
@@ -2365,15 +2389,15 @@
     "categories": [
       "Homelab",
       "VMware",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
+      "Nutanix",
+      "VMware Cloud on AWS",
       "Storage",
+      "vExpert",
       "Synology",
-      "Networking",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere"
+      "Personal",
+      "vSphere",
+      "AWS",
+      "Veeam"
     ],
     "tags": [
       "#Homelab",
@@ -2391,8 +2415,8 @@
       "Hosting",
       "Wordpress",
       "Cloudflare",
-      "Homelab",
-      "AWS",
+      "Artificial Intelligence",
+      "Docker",
       "Devops",
       "Github"
     ],
@@ -2412,11 +2436,17 @@
       "Homelab",
       "Veeam",
       "VMware",
+      "Artificial Intelligence",
       "Docker",
-      "Portainer",
-      "Synology",
-      "Runecast",
-      "Artificial Intelligence"
+      "Hosting",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere",
+      "Storage",
+      "vExpert",
+      "VMware Cloud on AWS",
+      "Mikrotik",
+      "Networking"
     ],
     "tags": [
       "#Desired State",
@@ -2450,14 +2480,18 @@
     "title": "Lab Update – Part 3 Network",
     "url": "https://jameskilby.co.uk/2022/01/lab-update-part-3-network/",
     "description": "I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have",
-    "content": "Lab Update – Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022October 1, 2025 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. Similar Posts Homelab | Storage | vExpert Intel Optane NVMe Homelab ByJames April 17, 2023October 1, 2025 I have been a VMware vExpert for many years and",
+    "content": "Lab Update – Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022October 1, 2025 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. Similar Posts Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021December 8, 2025 Packer is one of those tools I have ",
     "categories": [
       "Homelab",
       "Networking",
-      "Storage",
-      "vExpert",
+      "Automation",
       "VMware",
-      "VCF"
+      "Ansible",
+      "Artificial Intelligence",
+      "Mikrotik",
+      "Storage",
+      "TrueNAS Scale",
+      "Docker"
     ],
     "tags": [
       "#Homelab",
@@ -2475,8 +2509,10 @@
       "Cloudflare",
       "Personal",
       "Wordpress",
-      "AWS",
-      "VMware"
+      "Nutanix",
+      "Consulting",
+      "VMware",
+      "Homelab"
     ],
     "tags": [
       "#Cloudflare",
@@ -2492,12 +2528,10 @@
     "categories": [
       "Homelab",
       "Storage",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
+      "Ansible",
       "Artificial Intelligence",
-      "Networking",
-      "vExpert"
+      "Docker",
+      "Synology"
     ],
     "tags": [
       "#NVMe",
