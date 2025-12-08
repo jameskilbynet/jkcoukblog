@@ -7,66 +7,60 @@
 <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
 <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 <!-- All in One SEO 4.9.1.1 - aioseo.com -->
-<meta content="When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and" name="description">
+<meta content="How to safety shutdown a vSAN Environment" name="description">
 <meta content="max-image-preview:large" name="robots">
 <meta content="James" name="author"/>
-<link href="/2020/09/vmc-host-errors/" rel="canonical"/>
+<link href="/2025/03/vsan-cluster-shutdown/" rel="canonical"/>
 <meta content="All in One SEO (AIOSEO) 4.9.1.1" name="generator"/>
 <meta content="en_GB" property="og:locale"/>
 <meta content="Jameskilbycouk - Some ramblings usually about computers" property="og:site_name"/>
 <meta content="article" property="og:type"/>
-<meta content="VMC Host Errors - Jameskilbycouk" property="og:title"/>
-<meta content="When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and" property="og:description"/>
-<meta content="/2020/09/vmc-host-errors/" property="og:url"/>
-<meta content="2020-09-15T09:56:32+00:00" property="article:published_time"/>
-<meta content="2025-10-01T15:22:15+00:00" property="article:modified_time"/>
+<meta content="vSAN Cluster Shutdown – Orchestration - Jameskilbycouk" property="og:title"/>
+<meta content="How to safety shutdown a vSAN Environment" property="og:description"/>
+<meta content="/2025/03/vsan-cluster-shutdown/" property="og:url"/>
+<meta content="2025-03-24T10:59:14+00:00" property="article:published_time"/>
+<meta content="2025-12-08T14:09:45+00:00" property="article:modified_time"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="VMC Host Errors - Jameskilbycouk" name="twitter:title"/>
-<meta content="When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and" name="twitter:description"/>
+<meta content="vSAN Cluster Shutdown – Orchestration - Jameskilbycouk" name="twitter:title"/>
+<meta content="How to safety shutdown a vSAN Environment" name="twitter:description"/>
 <script class="aioseo-schema" type="application/ld+json">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BlogPosting","@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#blogposting","name":"VMC Host Errors - Jameskilbycouk","headline":"VMC Host Errors","author":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"publisher":{"@id":"https:\/\/jameskilby.co.uk\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/jameskilby.co.uk\/wp-content\/uploads\/2022\/11\/iu-1.png","width":2340,"height":1202},"datePublished":"2020-09-15T10:56:32+00:00","dateModified":"2025-10-01T15:22:15+00:00","inLanguage":"en-GB","mainEntityOfPage":{"@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#webpage"},"isPartOf":{"@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#webpage"},"articleSection":"VMware, VMware Cloud on AWS, AWS, Failure, SRE, VMC, VMware, VMware Cloud on AWS"},{"@type":"BreadcrumbList","@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk#listItem","position":1,"name":"Home","item":"https:\/\/jameskilby.co.uk","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/#listItem","name":"VMware"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/#listItem","position":2,"name":"VMware","item":"https:\/\/jameskilby.co.uk\/category\/vmware\/","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/vmware-cloud-on-aws\/#listItem","name":"VMware Cloud on AWS"},"previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk#listItem","name":"Home"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/vmware-cloud-on-aws\/#listItem","position":3,"name":"VMware Cloud on AWS","item":"https:\/\/jameskilby.co.uk\/category\/vmware\/vmware-cloud-on-aws\/","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#listItem","name":"VMC Host Errors"},"previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/#listItem","name":"VMware"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#listItem","position":4,"name":"VMC Host Errors","previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/vmware-cloud-on-aws\/#listItem","name":"VMware Cloud on AWS"}}]},{"@type":"Organization","@id":"https:\/\/jameskilby.co.uk\/#organization","name":"Jameskilbycouk","description":"Some ramblings usually about computers","url":"https:\/\/jameskilby.co.uk\/","sameAs":["https:\/\/facebook.com\/","https:\/\/x.com\/","https:\/\/instagram.com\/","https:\/\/pinterest.com\/","https:\/\/youtube.com\/","https:\/\/linkedin.com\/in\/"]},{"@type":"Person","@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author","url":"https:\/\/jameskilby.co.uk\/author\/admin\/","name":"James","image":{"@type":"ImageObject","@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&d=mm&r=g","width":96,"height":96,"caption":"James"}},{"@type":"WebPage","@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#webpage","url":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/","name":"VMC Host Errors - Jameskilbycouk","description":"When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24\u00d77 by VMware\/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and","inLanguage":"en-GB","isPartOf":{"@id":"https:\/\/jameskilby.co.uk\/#website"},"breadcrumb":{"@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#breadcrumblist"},"author":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"creator":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"image":{"@type":"ImageObject","url":"https:\/\/jameskilby.co.uk\/wp-content\/uploads\/2022\/11\/iu-1.png","@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#mainImage","width":2340,"height":1202},"primaryImageOfPage":{"@id":"https:\/\/jameskilby.co.uk\/2020\/09\/vmc-host-errors\/#mainImage"},"datePublished":"2020-09-15T10:56:32+00:00","dateModified":"2025-10-01T15:22:15+00:00"},{"@type":"WebSite","@id":"https:\/\/jameskilby.co.uk\/#website","url":"https:\/\/jameskilby.co.uk\/","name":"jameskilbycouk","description":"Some ramblings usually about computers","inLanguage":"en-GB","publisher":{"@id":"https:\/\/jameskilby.co.uk\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BlogPosting","@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#blogposting","name":"vSAN Cluster Shutdown \u2013 Orchestration - Jameskilbycouk","headline":"vSAN Cluster Shutdown &#8211; Orchestration","author":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"publisher":{"@id":"https:\/\/jameskilby.co.uk\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/jameskilby.co.uk\/wp-content\/uploads\/2023\/11\/OrigionalPoweredByvSAN-550x324-1.jpg","width":550,"height":324},"datePublished":"2025-03-24T10:59:14+00:00","dateModified":"2025-12-08T14:09:45+00:00","inLanguage":"en-GB","mainEntityOfPage":{"@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#webpage"},"isPartOf":{"@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#webpage"},"articleSection":"VMware, vSAN"},{"@type":"BreadcrumbList","@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk#listItem","position":1,"name":"Home","item":"https:\/\/jameskilby.co.uk","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/#listItem","name":"VMware"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/#listItem","position":2,"name":"VMware","item":"https:\/\/jameskilby.co.uk\/category\/vmware\/","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/vsan-vmware\/#listItem","name":"vSAN"},"previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk#listItem","name":"Home"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/vsan-vmware\/#listItem","position":3,"name":"vSAN","item":"https:\/\/jameskilby.co.uk\/category\/vmware\/vsan-vmware\/","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#listItem","name":"vSAN Cluster Shutdown &#8211; Orchestration"},"previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/#listItem","name":"VMware"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#listItem","position":4,"name":"vSAN Cluster Shutdown &#8211; Orchestration","previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/vsan-vmware\/#listItem","name":"vSAN"}}]},{"@type":"Organization","@id":"https:\/\/jameskilby.co.uk\/#organization","name":"Jameskilbycouk","description":"Some ramblings usually about computers","url":"https:\/\/jameskilby.co.uk\/","sameAs":["https:\/\/facebook.com\/","https:\/\/x.com\/","https:\/\/instagram.com\/","https:\/\/pinterest.com\/","https:\/\/youtube.com\/","https:\/\/linkedin.com\/in\/"]},{"@type":"Person","@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author","url":"https:\/\/jameskilby.co.uk\/author\/admin\/","name":"James","image":{"@type":"ImageObject","@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&d=mm&r=g","width":96,"height":96,"caption":"James"}},{"@type":"WebPage","@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#webpage","url":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/","name":"vSAN Cluster Shutdown \u2013 Orchestration - Jameskilbycouk","description":"How to safety shutdown a vSAN Environment","inLanguage":"en-GB","isPartOf":{"@id":"https:\/\/jameskilby.co.uk\/#website"},"breadcrumb":{"@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#breadcrumblist"},"author":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"creator":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"image":{"@type":"ImageObject","url":"https:\/\/jameskilby.co.uk\/wp-content\/uploads\/2023\/11\/OrigionalPoweredByvSAN-550x324-1.jpg","@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#mainImage","width":550,"height":324},"primaryImageOfPage":{"@id":"https:\/\/jameskilby.co.uk\/2025\/03\/vsan-cluster-shutdown\/#mainImage"},"datePublished":"2025-03-24T10:59:14+00:00","dateModified":"2025-12-08T14:09:45+00:00"},{"@type":"WebSite","@id":"https:\/\/jameskilby.co.uk\/#website","url":"https:\/\/jameskilby.co.uk\/","name":"jameskilbycouk","description":"Some ramblings usually about computers","inLanguage":"en-GB","publisher":{"@id":"https:\/\/jameskilby.co.uk\/#organization"}}]}
 		</script>
 <!-- All in One SEO -->
 <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
-<title>VMC Host Errors - Jameskilbycouk</title>
-<meta content="Learn how VMware Cloud on AWS handles host errors seamlessly. Ensure your infrastructure remains resilient and efficient. Get started today!" name="description"/>
-<meta content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" name="robots"/>
-<link href="/2020/09/vmc-host-errors/" rel="canonical"/>
+<title>vSAN Cluster Shutdown – Orchestration - Jameskilbycouk</title>
+<meta content="How to safety shutdown a vSAN Environment" name="description"/>
+<meta content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" name="robots"/>
+<link href="/2025/03/vsan-cluster-shutdown/" rel="canonical"/>
 <meta content="en_GB" property="og:locale"/>
 <meta content="article" property="og:type"/>
-<meta content="Seamless Host Error Management with VMware Cloud" property="og:title"/>
-<meta content="Ensure your infrastructure's resilience. Learn how VMware Cloud on AWS manages host errors effortlessly." property="og:description"/>
-<meta content="/2020/09/vmc-host-errors/" property="og:url"/>
-<meta content="AWS" property="article:tag"/>
-<meta content="Failure" property="article:tag"/>
-<meta content="SRE" property="article:tag"/>
-<meta content="VMC" property="article:tag"/>
-<meta content="VMware" property="article:tag"/>
-<meta content="VMware Cloud on AWS" property="article:tag"/>
+<meta content="vSAN Cluster Shutdown - Orchestration - Jameskilbycouk" property="og:title"/>
+<meta content="How to safety shutdown a vSAN Environment" property="og:description"/>
+<meta content="/2025/03/vsan-cluster-shutdown/" property="og:url"/>
 <meta content="VMware" property="article:section"/>
-<meta content="2025-10-01T15:22:15+00:00" property="og:updated_time"/>
-<meta content="/wp-content/uploads/2022/11/iu-1-1024x526.png" property="og:image"/>
-<meta content="/wp-content/uploads/2022/11/iu-1-1024x526.png" property="og:image:secure_url"/>
-<meta content="1024" property="og:image:width"/>
-<meta content="526" property="og:image:height"/>
-<meta content="VMC Host Errors" property="og:image:alt"/>
-<meta content="image/png" property="og:image:type"/>
-<meta content="2020-09-15T10:56:32+00:00" property="article:published_time"/>
-<meta content="2025-10-01T15:22:15+00:00" property="article:modified_time"/>
+<meta content="2025-12-08T14:09:45+00:00" property="og:updated_time"/>
+<meta content="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg" property="og:image"/>
+<meta content="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg" property="og:image:secure_url"/>
+<meta content="550" property="og:image:width"/>
+<meta content="324" property="og:image:height"/>
+<meta content="vSAN Cluster Shutdown – Orchestration" property="og:image:alt"/>
+<meta content="image/jpeg" property="og:image:type"/>
+<meta content="2025-03-24T10:59:14+00:00" property="article:published_time"/>
+<meta content="2025-12-08T14:09:45+00:00" property="article:modified_time"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Seamless Host Error Management with VMware Cloud" name="twitter:title"/>
-<meta content="Ensure your infrastructure's resilience. Learn how VMware Cloud on AWS manages host errors effortlessly." name="twitter:description"/>
-<meta content="/wp-content/uploads/2022/11/iu-1-1024x526.png" name="twitter:image"/>
+<meta content="vSAN Cluster Shutdown - Orchestration - Jameskilbycouk" name="twitter:title"/>
+<meta content="How to safety shutdown a vSAN Environment" name="twitter:description"/>
+<meta content="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg" name="twitter:image"/>
 <meta content="Written by" name="twitter:label1"/>
 <meta content="James" name="twitter:data1"/>
 <meta content="Time to read" name="twitter:label2"/>
 <meta content="Less than a minute" name="twitter:data2"/>
-<script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"/#person","name":"Jameskilbycouk"},{"@type":"WebSite","@id":"/#website","url":"https://jameskilby.co.uk","publisher":{"@id":"/#person"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"/wp-content/uploads/2022/11/iu-1.png","url":"/wp-content/uploads/2022/11/iu-1.png","width":"2340","height":"1202","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"/2020/09/vmc-host-errors/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://jameskilby.co.uk","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"/2020/09/vmc-host-errors/","name":"VMC Host Errors"}}]},{"@type":"WebPage","@id":"/2020/09/vmc-host-errors/#webpage","url":"/2020/09/vmc-host-errors/","name":"VMC Host Errors - Jameskilbycouk","datePublished":"2020-09-15T10:56:32+00:00","dateModified":"2025-10-01T15:22:15+00:00","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/wp-content/uploads/2022/11/iu-1.png"},"inLanguage":"en-GB","breadcrumb":{"@id":"/2020/09/vmc-host-errors/#breadcrumb"}},{"@type":"Person","@id":"/author/admin/","name":"James","url":"/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","caption":"James","inLanguage":"en-GB"},"sameAs":["https://jameskilby.co.uk"]},{"@type":"BlogPosting","headline":"VMC Host Errors - Jameskilbycouk","datePublished":"2020-09-15T10:56:32+00:00","dateModified":"2025-10-01T15:22:15+00:00","author":{"@id":"/author/admin/","name":"James"},"publisher":{"@id":"/#person"},"description":"Learn how VMware Cloud on AWS handles host errors seamlessly. Ensure your infrastructure remains resilient and efficient. Get started today!","name":"VMC Host Errors - Jameskilbycouk","@id":"/2020/09/vmc-host-errors/#richSnippet","isPartOf":{"@id":"/2020/09/vmc-host-errors/#webpage"},"image":{"@id":"/wp-content/uploads/2022/11/iu-1.png"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"/2020/09/vmc-host-errors/#webpage"}}]}</script>
+<script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"/#person","name":"Jameskilbycouk"},{"@type":"WebSite","@id":"/#website","url":"https://jameskilby.co.uk","publisher":{"@id":"/#person"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg","url":"/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg","width":"550","height":"324","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"/2025/03/vsan-cluster-shutdown/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://jameskilby.co.uk","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"/2025/03/vsan-cluster-shutdown/","name":"vSAN Cluster Shutdown &#8211; Orchestration"}}]},{"@type":"WebPage","@id":"/2025/03/vsan-cluster-shutdown/#webpage","url":"/2025/03/vsan-cluster-shutdown/","name":"vSAN Cluster Shutdown - Orchestration - Jameskilbycouk","datePublished":"2025-03-24T10:59:14+00:00","dateModified":"2025-12-08T14:09:45+00:00","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg"},"inLanguage":"en-GB","breadcrumb":{"@id":"/2025/03/vsan-cluster-shutdown/#breadcrumb"}},{"@type":"Person","@id":"/author/admin/","name":"James","url":"/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","caption":"James","inLanguage":"en-GB"},"sameAs":["https://jameskilby.co.uk"]},{"@type":"BlogPosting","headline":"vSAN Cluster Shutdown - Orchestration - Jameskilbycouk","datePublished":"2025-03-24T10:59:14+00:00","dateModified":"2025-12-08T14:09:45+00:00","author":{"@id":"/author/admin/","name":"James"},"publisher":{"@id":"/#person"},"description":"How to safety shutdown a vSAN Environment","name":"vSAN Cluster Shutdown - Orchestration - Jameskilbycouk","@id":"/2025/03/vsan-cluster-shutdown/#richSnippet","isPartOf":{"@id":"/2025/03/vsan-cluster-shutdown/#webpage"},"image":{"@id":"/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"/2025/03/vsan-cluster-shutdown/#webpage"}}]}</script>
 <!-- /Rank Math WordPress SEO plugin -->
 <link href="/feed/" rel="alternate" title="Jameskilbycouk » Feed" type="application/rss+xml"/>
 <link href="/comments/feed/" rel="alternate" title="Jameskilbycouk » Comments Feed" type="application/rss+xml"/>
 <script>document.documentElement.classList.remove( 'no-js' );</script>
-<link href="/2020/09/vmc-host-errors/feed/" rel="alternate" title="Jameskilbycouk » VMC Host Errors Comments Feed" type="application/rss+xml"/>
+<link href="/2025/03/vsan-cluster-shutdown/feed/" rel="alternate" title="Jameskilbycouk » vSAN Cluster Shutdown – Orchestration Comments Feed" type="application/rss+xml"/>
 <style id="classic-theme-styles-inline-css">
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -85,13 +79,13 @@
 <link href="/wp-content/themes/kadence/assets/css/footer.min.css" id="kadence-footer-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/themes/kadence/assets/css/rankmath.min.css" id="kadence-rankmath-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/cache/wpo-minify/1765200617/assets/wpo-minify-header-a98b27a2.min.css" id="wpo_min-header-0-css" media="all" rel="stylesheet"/>
-<link href="/wp-json/wp/v2/posts/3138" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="/wp-json/wp/v2/posts/6644" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
 
-<link href="/?p=3138" rel="shortlink"/>
-<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2020%2F09%2Fvmc-host-errors%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
-<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2020%2F09%2Fvmc-host-errors%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+<link href="/?p=6644" rel="shortlink"/>
+<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2025%2F03%2Fvsan-cluster-shutdown%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2025%2F03%2Fvsan-cluster-shutdown%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
 <link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><script data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
-<body class="wp-singular post-template-default single single-post postid-3138 single-format-standard wp-embed-responsive wp-theme-kadence hide-focus-outline link-style-standard content-title-style-normal content-width-narrow content-style-boxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
+<body class="wp-singular post-template-default single single-post postid-6644 single-format-standard wp-embed-responsive wp-theme-kadence hide-focus-outline link-style-standard content-title-style-normal content-width-narrow content-style-boxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
 <div class="site wp-site-blocks" id="wrapper">
 <a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
 <header class="site-header" id="masthead" itemscope="" itemtype="https://schema.org/WPHeader" role="banner">
@@ -167,55 +161,87 @@
 <div class="content-wrap">
 <div class="post-thumbnail article-post-thumbnail kadence-thumbnail-position-behind alignwide kadence-thumbnail-ratio-2-3">
 <div class="post-thumbnail-inner">
-<img alt="" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="1202" sizes="(max-width: 2340px) 100vw, 2340px" src="/wp-content/uploads/2022/11/iu-1.png" srcset="/wp-content/uploads/2022/11/iu-1.png 2340w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="2340"/> </div>
+<img alt="" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="324" sizes="(max-width: 550px) 100vw, 550px" src="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg" srcset="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg 550w, /wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1-300x177.jpg 300w" width="550"/> </div>
 </div><!-- .post-thumbnail -->
-<article class="entry content-bg single-entry post-3138 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-aws tag-failure tag-sre tag-vmc tag-vmware tag-vmware-cloud-on-aws" id="post-3138">
+<article class="entry content-bg single-entry post-6644 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vsan-vmware" id="post-6644">
 <div class="entry-content-wrap">
 <header class="entry-header post-title title-align-inherit title-tablet-align-inherit title-mobile-align-inherit">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a href="/category/vmware/" rel="tag">VMware</a> | <a href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
+<a href="/category/vmware/" rel="tag">VMware</a> | <a href="/category/vmware/vsan-vmware/" rel="tag">vSAN</a> </span>
 </div><!-- .entry-taxonomies -->
-<h1 class="entry-title">VMC Host Errors</h1><div class="entry-meta entry-meta-divider-dot">
+<h1 class="entry-title">vSAN Cluster Shutdown – Orchestration</h1><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2020-09-15T10:56:32+00:00" itemprop="datePublished">September 15, 2020</time><time class="updated" datetime="2025-10-01T15:22:15+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2025-03-24T10:59:14+00:00" itemprop="datePublished">March 24, 2025</time><time class="updated" datetime="2025-12-08T14:09:45+00:00" itemprop="dateModified">December 8, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-content single-content">
-<p>When you run a large enough Infrastructure failure is inevitable.  How you handle that can be a big differentiator.   With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service.  If you pay for X number of hosts you should have X. That includes during maintenance and failure operations.</p>
-<p>I’m not sure lucky is the right word but I did witness a host issue with a customer I was working with. True to the marketing It was picked up and automatically remediated.</p>
-<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-4 is-layout-flex wp-block-gallery-is-layout-flex">
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-4475" data-id="4475" decoding="async" height="121" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2023/04/Screenshot-2020-08-27-at-16.56.37-1536x182-2-1024x121.png" srcset="/wp-content/uploads/2023/04/Screenshot-2020-08-27-at-16.56.37-1536x182-2-1024x121.png 1024w, /wp-content/uploads/2023/04/Screenshot-2020-08-27-at-16.56.37-1536x182-2-300x36.png 300w, /wp-content/uploads/2023/04/Screenshot-2020-08-27-at-16.56.37-1536x182-2-768x91.png 768w, /wp-content/uploads/2023/04/Screenshot-2020-08-27-at-16.56.37-1536x182-2.png 1536w" width="1024"/></figure>
-</figure>
-<p>Looking at the log extract above a new host was being provisioned the same minute the issue was identified.  Obviously, this needed to boot and join the VMware/vSAN cluster before a full data evacuation takes place on the faulty host and finally, the host is removed.</p>
-<p>All of this was seamless to the customer.  I noticed it as a few HA alarms tripped in the vCenter ( These were cosmetic only)</p>
-<p>Just another reason why you should look at the VMware Cloud on AWS Service</p>
+<p>As can be seen on my Lab Overview page. I have a GPU/Management cluster that is usually running 24×7. I also have a 3x Node vSAN cluster that I use when I need more resources (or specifically if I need vSAN to test with)</p>
+<p>This allows me to </p>
+<p>See the overview below</p>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-6301" decoding="async" height="530" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/12/vSphere-Overview-1024x530.png" srcset="/wp-content/uploads/2024/12/vSphere-Overview-1024x530.png 1024w, /wp-content/uploads/2024/12/vSphere-Overview-300x155.png 300w, /wp-content/uploads/2024/12/vSphere-Overview-768x398.png 768w, /wp-content/uploads/2024/12/vSphere-Overview.png 1278w" width="1024"/></figure>
+<p>To shut down a vSAN cluste,r there is a nice workflow built into vCentre that will orchestrate all the required actions for you</p>
+<p></p>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-6706" decoding="async" height="564" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2025/04/vSAN-Services-Menu-1024x564.png" srcset="/wp-content/uploads/2025/04/vSAN-Services-Menu-1024x564.png 1024w, /wp-content/uploads/2025/04/vSAN-Services-Menu-300x165.png 300w, /wp-content/uploads/2025/04/vSAN-Services-Menu-768x423.png 768w, /wp-content/uploads/2025/04/vSAN-Services-Menu-1536x846.png 1536w, /wp-content/uploads/2025/04/vSAN-Services-Menu.png 1626w" width="1024"/></figure>
+<p></p>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-6707" decoding="async" height="746" loading="lazy" sizes="auto, (max-width: 948px) 100vw, 948px" src="/wp-content/uploads/2025/04/Shutdown-Precheck.png" srcset="/wp-content/uploads/2025/04/Shutdown-Precheck.png 948w, /wp-content/uploads/2025/04/Shutdown-Precheck-300x236.png 300w, /wp-content/uploads/2025/04/Shutdown-Precheck-768x604.png 768w" width="948"/></figure>
+<p></p>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-6708" decoding="async" height="746" loading="lazy" sizes="auto, (max-width: 958px) 100vw, 958px" src="/wp-content/uploads/2025/04/Confirmation.png" srcset="/wp-content/uploads/2025/04/Confirmation.png 958w, /wp-content/uploads/2025/04/Confirmation-300x234.png 300w, /wp-content/uploads/2025/04/Confirmation-768x598.png 768w" width="958"/></figure>
+<p>And there you have it…</p>
+<p></p>
+<p>To restart the cluster, ensure all the hosts are booted. Leave them in maintenance mode and then select “Restart vSAN Services” The workflow will enable them to bring them back into operation. </p>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-7352" decoding="async" height="357" loading="lazy" sizes="auto, (max-width: 464px) 100vw, 464px" src="/wp-content/uploads/2025/03/Restart-vSAN.png" srcset="/wp-content/uploads/2025/03/Restart-vSAN.png 464w, /wp-content/uploads/2025/03/Restart-vSAN-300x231.png 300w" width="464"/><figcaption class="wp-element-caption">Restart vSAN Services</figcaption></figure>
+<p></p>
 </div><!-- .entry-content -->
 <div class="comments-area" id="comments"><div class="pb-30"><section id="utterances-comments"><script async="" crossorigin="anonymous" data-cfasync="false" data-issue-term="pathname" data-repo="jameskilbynet/jkcoukblog" data-theme="github-light" src="https://utteranc.es/client.js"></script></section></div></div><footer class="entry-footer">
-<div class="entry-tags">
-<span class="tags-links">
-<span class="tags-label screen-reader-text">
-			Post Tags:		</span>
-<a class="tag-link tag-item-aws" href="/tag/aws/" rel="tag" title="AWS"><span class="tag-hash">#</span>AWS</a><a class="tag-link tag-item-failure" href="/tag/failure/" rel="tag" title="Failure"><span class="tag-hash">#</span>Failure</a><a class="tag-link tag-item-sre" href="/tag/sre/" rel="tag" title="SRE"><span class="tag-hash">#</span>SRE</a><a class="tag-link tag-item-vmc" href="/tag/vmc/" rel="tag" title="VMC"><span class="tag-hash">#</span>VMC</a><a class="tag-link tag-item-vmware" href="/tag/vmware/" rel="tag" title="VMware"><span class="tag-hash">#</span>VMware</a><a class="tag-link tag-item-vmware-cloud-on-aws" href="/tag/vmware-cloud-on-aws/" rel="tag" title="VMware Cloud on AWS"><span class="tag-hash">#</span>VMware Cloud on AWS</a> </span>
-</div><!-- .entry-tags -->
 </footer><!-- .entry-footer -->
 </div>
-</article><!-- #post-3138 -->
+</article><!-- #post-6644 -->
 <nav aria-label="Posts" class="navigation post-navigation">
 <h2 class="screen-reader-text">Post navigation</h2>
-<div class="nav-links"><div class="nav-previous"><a href="/2020/09/vmware-certified-master-specialist-hci-2020/" rel="prev"><div class="post-navigation-sub"><small><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-left-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 29 28" width="29" xmlns="http://www.w3.org/2000/svg"><title>Previous</title><path d="M28 12.5v3c0 0.281-0.219 0.5-0.5 0.5h-19.5v3.5c0 0.203-0.109 0.375-0.297 0.453s-0.391 0.047-0.547-0.078l-6-5.469c-0.094-0.094-0.156-0.219-0.156-0.359v0c0-0.141 0.063-0.281 0.156-0.375l6-5.531c0.156-0.141 0.359-0.172 0.547-0.094 0.172 0.078 0.297 0.25 0.297 0.453v3.5h19.5c0.281 0 0.5 0.219 0.5 0.5z"></path>
-</svg></span>Previous</small></div>VMware Certified Master Specialist HCI 2020</a></div><div class="nav-next"><a href="/2020/12/my-first-pull/" rel="next"><div class="post-navigation-sub"><small>Next<span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span></small></div>My First Pull</a></div></div>
+<div class="nav-links"><div class="nav-previous"><a href="/2025/03/portainer-agent-on-synology-dsm/" rel="prev"><div class="post-navigation-sub"><small><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-left-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 29 28" width="29" xmlns="http://www.w3.org/2000/svg"><title>Previous</title><path d="M28 12.5v3c0 0.281-0.219 0.5-0.5 0.5h-19.5v3.5c0 0.203-0.109 0.375-0.297 0.453s-0.391 0.047-0.547-0.078l-6-5.469c-0.094-0.094-0.156-0.219-0.156-0.359v0c0-0.141 0.063-0.281 0.156-0.375l6-5.531c0.156-0.141 0.359-0.172 0.547-0.094 0.172 0.078 0.297 0.25 0.297 0.453v3.5h19.5c0.281 0 0.5 0.219 0.5 0.5z"></path>
+</svg></span>Previous</small></div>How to Fix Portainer Agent Not Starting On Synology DSM</a></div><div class="nav-next"><a href="/2025/04/warp-the-intelligent-terminal/" rel="next"><div class="post-navigation-sub"><small>Next<span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span></small></div>Warp – The intelligent terminal</a></div></div>
 </nav> <div class="entry-related alignfull entry-related-style-wide">
 <div class="entry-related-inner content-container site-container">
 <div class="entry-related-inner-content alignwide">
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3229 post type-post status-publish format-standard has-post-thumbnail hentry category-automation category-homelab category-vmware tag-automation tag-hashicorp tag-homelab tag-packer">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3138 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-aws tag-failure tag-sre tag-vmc tag-vmware tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="VMC Host Errors" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/09/vmc-host-errors/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="VMC Host Errors" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2020/09/vmc-host-errors/" rel="bookmark">VMC Host Errors</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2020-09-15T10:56:32+00:00" itemprop="datePublished">September 15, 2020</time><time class="updated" datetime="2025-10-01T15:22:15+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2020/09/vmc-host-errors/">
+				Read More<span class="screen-reader-text"> VMC Host Errors</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3229 post type-post status-publish format-standard has-post-thumbnail hentry category-automation category-homelab category-vmware tag-automation tag-hashicorp tag-homelab tag-packer">
 <a aria-hidden="true" aria-label="Template Deployment with Packer" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2021/01/hashicorp-packer/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="Template Deployment with Packer" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="287" sizes="(max-width: 287px) 100vw, 287px" src="/wp-content/uploads/2021/01/logo_packer.png" srcset="/wp-content/uploads/2021/01/logo_packer.png 287w, /wp-content/uploads/2021/01/logo_packer-150x150.png 150w" width="287"/> </div>
+<img alt="Template Deployment with Packer" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="287" loading="lazy" sizes="auto, (max-width: 287px) 100vw, 287px" src="/wp-content/uploads/2021/01/logo_packer.png" srcset="/wp-content/uploads/2021/01/logo_packer.png 287w, /wp-content/uploads/2021/01/logo_packer-150x150.png 150w" width="287"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -236,66 +262,6 @@
 <p class="more-link-wrap">
 <a class="post-more-link" href="/2021/01/hashicorp-packer/">
 				Read More<span class="screen-reader-text"> Template Deployment with Packer</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4898 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware tag-homelab tag-nvidia tag-vgpu">
-<a aria-hidden="true" aria-label="Nvidia Tesla P4 Homelab Setup" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/10/vgpu-setup-in-my-homelab/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Nvidia Tesla P4 Homelab Setup" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="403" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg" srcset="/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg 768w, /wp-content/uploads/2023/10/IMG_1107-768x403-1-300x157.jpg 300w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/10/vgpu-setup-in-my-homelab/" rel="bookmark">Nvidia Tesla P4 Homelab Setup</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-10-23T14:56:58+00:00" itemprop="datePublished">October 23, 2023</time><time class="updated" datetime="2024-07-10T10:54:03+00:00" itemprop="dateModified">July 10, 2024</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>A little while ago I decided to play with vGPU in my homelab. This was something I had dabbled with in the past but never really had the time or need to get working properly. The first thing that I needed was a GPU. I did have a Dell T20 with an iGPU built into…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2023/10/vgpu-setup-in-my-homelab/">
-				Read More<span class="screen-reader-text"> Nvidia Tesla P4 Homelab Setup</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-2922 post type-post status-publish format-standard has-post-thumbnail hentry category-personal category-vmware tag-certifications tag-vmware tag-vsan">
-<a aria-hidden="true" aria-label="VMware Certified Master Specialist HCI 2020" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/09/vmware-certified-master-specialist-hci-2020/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="VMware Certified Master Specialist HCI 2020" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="600" loading="lazy" sizes="auto, (max-width: 600px) 100vw, 600px" src="/wp-content/uploads/2020/09/vmware_SP_HCI20.png" srcset="/wp-content/uploads/2020/09/vmware_SP_HCI20.png 600w, /wp-content/uploads/2020/09/vmware_SP_HCI20-300x300.png 300w, /wp-content/uploads/2020/09/vmware_SP_HCI20-150x150.png 150w" width="600"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-personal" href="/category/personal/" rel="tag">Personal</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2020/09/vmware-certified-master-specialist-hci-2020/" rel="bookmark">VMware Certified Master Specialist HCI 2020</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2020-09-13T21:38:48+00:00" itemprop="datePublished">September 13, 2020</time><time class="updated" datetime="2023-11-11T21:18:14+00:00" itemprop="dateModified">November 11, 2023</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2020/09/vmware-certified-master-specialist-hci-2020/">
-				Read More<span class="screen-reader-text"> VMware Certified Master Specialist HCI 2020</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -332,60 +298,86 @@
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4869 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-personal tag-charity tag-epic tag-rnli tag-vmware">
-<a aria-hidden="true" aria-label="VMware – Going out with a Bang!" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/10/going-out-with-a-bang/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="VMware – Going out with a Bang!" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="384" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/10/rnli-logo-768x384.png" srcset="/wp-content/uploads/2023/10/rnli-logo-768x384.png 768w, /wp-content/uploads/2023/10/rnli-logo-300x150.png 300w, /wp-content/uploads/2023/10/rnli-logo-1024x512.png 1024w, /wp-content/uploads/2023/10/rnli-logo.png 1200w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-1940 post type-post status-publish format-standard hentry category-vmware category-aws category-veeam tag-aws tag-vmc tag-vmware">
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-personal" href="/category/personal/" rel="tag">Personal</a> </span>
+<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-aws" href="/category/aws/" rel="tag">AWS</a> | <a class="category-link-veeam" href="/category/veeam/" rel="tag">Veeam</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/10/going-out-with-a-bang/" rel="bookmark">VMware – Going out with a Bang!</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2019/12/monitoring-vmc-part-1/" rel="bookmark">Monitoring VMC – Part 1</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-10-07T12:37:14+00:00" itemprop="datePublished">October 7, 2023</time><time class="updated" datetime="2023-11-17T15:22:18+00:00" itemprop="dateModified">November 17, 2023</time> </span>
+<time class="entry-date published" datetime="2019-12-17T23:01:27+00:00" itemprop="datePublished">December 17, 2019</time><time class="updated" datetime="2025-10-01T15:22:15+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>There is a lot of uncertainty with VMware at the moment. This is all due to the pending acquisition by Broadcom. There are a lot of unknowns for the staff and customers about what the company will look like in the future. I certainly have some concerns mainly just with the unknown. However, VMware has…</p>
+<p>As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2023/10/going-out-with-a-bang/">
-				Read More<span class="screen-reader-text"> VMware – Going out with a Bang!</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2019/12/monitoring-vmc-part-1/">
+				Read More<span class="screen-reader-text"> Monitoring VMC – Part 1</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4370 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-vexpert tag-homelab tag-intel tag-optane tag-truenas tag-truenas-scale tag-vexpert tag-vmware">
-<a aria-hidden="true" aria-label="Intel Optane NVMe Homelab" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/04/intel-optane/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4043 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-networking category-storage category-vmware tag-homelab tag-mikrotik">
+<a aria-hidden="true" aria-label="100Gb/s in my Homelab" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/12/100gb-s-in-my-homelab-sort-of/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="Intel Optane NVMe Homelab" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="665" loading="lazy" sizes="auto, (max-width: 678px) 100vw, 678px" src="/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png" srcset="/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png 678w, /wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px-300x294.png 300w" width="678"/> </div>
+<img alt="100Gb/s in my Homelab" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="346" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/04/2157_hi_res-768x346.png" srcset="/wp-content/uploads/2023/04/2157_hi_res-768x346.png 768w, /wp-content/uploads/2023/04/2157_hi_res-300x135.png 300w, /wp-content/uploads/2023/04/2157_hi_res-1024x462.png 1024w, /wp-content/uploads/2023/04/2157_hi_res-1536x693.png 1536w, /wp-content/uploads/2023/04/2157_hi_res.png 1889w" width="768"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-vexpert" href="/category/vexpert/" rel="tag">vExpert</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/04/intel-optane/" rel="bookmark">Intel Optane NVMe Homelab</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2022/12/100gb-s-in-my-homelab-sort-of/" rel="bookmark">100Gb/s in my Homelab</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-04-17T12:20:04+00:00" itemprop="datePublished">April 17, 2023</time><time class="updated" datetime="2025-10-01T15:22:13+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2022-12-19T10:09:58+00:00" itemprop="datePublished">December 19, 2022</time><time class="updated" datetime="2023-11-11T20:57:34+00:00" itemprop="dateModified">November 11, 2023</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>I have been a VMware vExpert for many years and it has brought me many many benefits over the years. I don’t think it’s an understatement to say I probably wouldn’t have my current role within VMware without it. One of the best benefits has been access to a huge amount of licences for VMware…</p>
+<p>For a while, I’ve been looking to update the networking at the core of my homelab. I have had some great results with the current setup utilising a number of DAC’s but there were a couple of things that were annoying me. Then MikroTik dropped the CRS504-4XQ-IN and if the price wasn’t horrendous then that…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2023/04/intel-optane/">
-				Read More<span class="screen-reader-text"> Intel Optane NVMe Homelab</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2022/12/100gb-s-in-my-homelab-sort-of/">
+				Read More<span class="screen-reader-text"> 100Gb/s in my Homelab</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6247 post type-post status-publish format-standard has-post-thumbnail hentry category-truenas-scale category-vmware category-vsan-vmware category-vsphere tag-homelab tag-trim tag-unmap tag-vmware tag-zfs">
+<a aria-hidden="true" aria-label="How to Run ZFS on VMware vSphere: Setup Guide and Best Practices" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/12/zfs-on-vmware/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="How to Run ZFS on VMware vSphere: Setup Guide and Best Practices" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="132" loading="lazy" src="/wp-content/uploads/2024/12/ZFS.jpg" width="200"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vsan-vmware" href="/category/vmware/vsan-vmware/" rel="tag">vSAN</a> | <a class="category-link-vsphere" href="/category/vsphere/" rel="tag">vSphere</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2024/12/zfs-on-vmware/" rel="bookmark">How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2024-12-18T17:47:57+00:00" itemprop="datePublished">December 18, 2024</time><time class="updated" datetime="2025-10-01T15:30:55+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>Table of Contents Copy on Write Disk ID’s Trim I have run a number of systems utilising ZFS since the earliest days of my homelab using Nexenta all the way back in 2010. The image below is my lab at the time with an IBM Head unit that I think had 18GB of RAM 6x450GB…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2024/12/zfs-on-vmware/">
+				Read More<span class="screen-reader-text"> How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
