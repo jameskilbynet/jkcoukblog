@@ -7,63 +7,59 @@
 <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
 <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 <!-- All in One SEO 4.9.1.1 - aioseo.com -->
-<meta content="Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes. At the moment it's very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance. With that in mind, I purchased a new Synology" name="description">
+<meta content="One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time.... A key requirement for any enterprise platform. TimeFirewall Config Time VMC allows you to utilise" name="description">
 <meta content="max-image-preview:large" name="robots">
 <meta content="James" name="author"/>
-<link href="/2019/02/lab-storage-2/" rel="canonical"/>
+<link href="/2025/12/time-in-a-vmc-environment/" rel="canonical"/>
 <meta content="All in One SEO (AIOSEO) 4.9.1.1" name="generator"/>
 <meta content="en_GB" property="og:locale"/>
 <meta content="Jameskilbycouk - Some ramblings usually about computers" property="og:site_name"/>
 <meta content="article" property="og:type"/>
-<meta content="Lab Storage - Jameskilbycouk" property="og:title"/>
-<meta content="Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes. At the moment it's very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance. With that in mind, I purchased a new Synology" property="og:description"/>
-<meta content="/2019/02/lab-storage-2/" property="og:url"/>
-<meta content="2019-02-10T23:59:20+00:00" property="article:published_time"/>
-<meta content="2024-07-10T09:22:32+00:00" property="article:modified_time"/>
+<meta content="Time in a VMC Environment - Jameskilbycouk" property="og:title"/>
+<meta content="One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time.... A key requirement for any enterprise platform. TimeFirewall Config Time VMC allows you to utilise" property="og:description"/>
+<meta content="/2025/12/time-in-a-vmc-environment/" property="og:url"/>
+<meta content="2025-12-08T14:03:44+00:00" property="article:published_time"/>
+<meta content="2025-12-08T14:03:44+00:00" property="article:modified_time"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Lab Storage - Jameskilbycouk" name="twitter:title"/>
-<meta content="Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes. At the moment it's very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance. With that in mind, I purchased a new Synology" name="twitter:description"/>
+<meta content="Time in a VMC Environment - Jameskilbycouk" name="twitter:title"/>
+<meta content="One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time.... A key requirement for any enterprise platform. TimeFirewall Config Time VMC allows you to utilise" name="twitter:description"/>
 <script class="aioseo-schema" type="application/ld+json">
-			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BlogPosting","@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#blogposting","name":"Lab Storage - Jameskilbycouk","headline":"Lab Storage","author":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"publisher":{"@id":"https:\/\/jameskilby.co.uk\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/jameskilby.co.uk\/wp-content\/uploads\/2023\/04\/81-ZoEW24UL._SL1500_.jpg","width":1500,"height":900},"datePublished":"2019-02-10T23:59:20+00:00","dateModified":"2024-07-10T09:22:32+00:00","inLanguage":"en-GB","mainEntityOfPage":{"@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#webpage"},"isPartOf":{"@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#webpage"},"articleSection":"Homelab, Homelab, Storage, Synology"},{"@type":"BreadcrumbList","@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk#listItem","position":1,"name":"Home","item":"https:\/\/jameskilby.co.uk","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/homelab\/#listItem","name":"Homelab"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/homelab\/#listItem","position":2,"name":"Homelab","item":"https:\/\/jameskilby.co.uk\/category\/homelab\/","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#listItem","name":"Lab Storage"},"previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk#listItem","name":"Home"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#listItem","position":3,"name":"Lab Storage","previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/homelab\/#listItem","name":"Homelab"}}]},{"@type":"Organization","@id":"https:\/\/jameskilby.co.uk\/#organization","name":"Jameskilbycouk","description":"Some ramblings usually about computers","url":"https:\/\/jameskilby.co.uk\/","sameAs":["https:\/\/facebook.com\/","https:\/\/x.com\/","https:\/\/instagram.com\/","https:\/\/pinterest.com\/","https:\/\/youtube.com\/","https:\/\/linkedin.com\/in\/"]},{"@type":"Person","@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author","url":"https:\/\/jameskilby.co.uk\/author\/admin\/","name":"James","image":{"@type":"ImageObject","@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&d=mm&r=g","width":96,"height":96,"caption":"James"}},{"@type":"WebPage","@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#webpage","url":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/","name":"Lab Storage - Jameskilbycouk","description":"Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes. At the moment it's very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance. With that in mind, I purchased a new Synology","inLanguage":"en-GB","isPartOf":{"@id":"https:\/\/jameskilby.co.uk\/#website"},"breadcrumb":{"@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#breadcrumblist"},"author":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"creator":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"image":{"@type":"ImageObject","url":"https:\/\/jameskilby.co.uk\/wp-content\/uploads\/2023\/04\/81-ZoEW24UL._SL1500_.jpg","@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#mainImage","width":1500,"height":900},"primaryImageOfPage":{"@id":"https:\/\/jameskilby.co.uk\/2019\/02\/lab-storage-2\/#mainImage"},"datePublished":"2019-02-10T23:59:20+00:00","dateModified":"2024-07-10T09:22:32+00:00"},{"@type":"WebSite","@id":"https:\/\/jameskilby.co.uk\/#website","url":"https:\/\/jameskilby.co.uk\/","name":"jameskilbycouk","description":"Some ramblings usually about computers","inLanguage":"en-GB","publisher":{"@id":"https:\/\/jameskilby.co.uk\/#organization"}}]}
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BlogPosting","@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#blogposting","name":"Time in a VMC Environment - Jameskilbycouk","headline":"Time in a VMC Environment","author":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"publisher":{"@id":"https:\/\/jameskilby.co.uk\/#organization"},"image":{"@type":"ImageObject","url":"https:\/\/jameskilby.co.uk\/wp-content\/uploads\/2025\/02\/Picture-1.png","width":967,"height":279},"datePublished":"2025-12-08T14:03:44+00:00","dateModified":"2025-12-08T14:03:44+00:00","inLanguage":"en-GB","mainEntityOfPage":{"@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#webpage"},"isPartOf":{"@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#webpage"},"articleSection":"VMware Cloud on AWS, NTP, VMware Cloud on AWS"},{"@type":"BreadcrumbList","@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk#listItem","position":1,"name":"Home","item":"https:\/\/jameskilby.co.uk","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/#listItem","name":"VMware"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/#listItem","position":2,"name":"VMware","item":"https:\/\/jameskilby.co.uk\/category\/vmware\/","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/vmware-cloud-on-aws\/#listItem","name":"VMware Cloud on AWS"},"previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk#listItem","name":"Home"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/vmware-cloud-on-aws\/#listItem","position":3,"name":"VMware Cloud on AWS","item":"https:\/\/jameskilby.co.uk\/category\/vmware\/vmware-cloud-on-aws\/","nextItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#listItem","name":"Time in a VMC Environment"},"previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/#listItem","name":"VMware"}},{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#listItem","position":4,"name":"Time in a VMC Environment","previousItem":{"@type":"ListItem","@id":"https:\/\/jameskilby.co.uk\/category\/vmware\/vmware-cloud-on-aws\/#listItem","name":"VMware Cloud on AWS"}}]},{"@type":"Organization","@id":"https:\/\/jameskilby.co.uk\/#organization","name":"Jameskilbycouk","description":"Some ramblings usually about computers","url":"https:\/\/jameskilby.co.uk\/","sameAs":["https:\/\/facebook.com\/","https:\/\/x.com\/","https:\/\/instagram.com\/","https:\/\/pinterest.com\/","https:\/\/youtube.com\/","https:\/\/linkedin.com\/in\/"]},{"@type":"Person","@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author","url":"https:\/\/jameskilby.co.uk\/author\/admin\/","name":"James","image":{"@type":"ImageObject","@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&d=mm&r=g","width":96,"height":96,"caption":"James"}},{"@type":"WebPage","@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#webpage","url":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/","name":"Time in a VMC Environment - Jameskilbycouk","description":"One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time.... A key requirement for any enterprise platform. TimeFirewall Config Time VMC allows you to utilise","inLanguage":"en-GB","isPartOf":{"@id":"https:\/\/jameskilby.co.uk\/#website"},"breadcrumb":{"@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#breadcrumblist"},"author":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"creator":{"@id":"https:\/\/jameskilby.co.uk\/author\/admin\/#author"},"image":{"@type":"ImageObject","url":"https:\/\/jameskilby.co.uk\/wp-content\/uploads\/2025\/02\/Picture-1.png","@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#mainImage","width":967,"height":279},"primaryImageOfPage":{"@id":"https:\/\/jameskilby.co.uk\/2025\/12\/time-in-a-vmc-environment\/#mainImage"},"datePublished":"2025-12-08T14:03:44+00:00","dateModified":"2025-12-08T14:03:44+00:00"},{"@type":"WebSite","@id":"https:\/\/jameskilby.co.uk\/#website","url":"https:\/\/jameskilby.co.uk\/","name":"jameskilbycouk","description":"Some ramblings usually about computers","inLanguage":"en-GB","publisher":{"@id":"https:\/\/jameskilby.co.uk\/#organization"}}]}
 		</script>
 <!-- All in One SEO -->
 <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
-<title>Lab Storage - Jameskilbycouk</title>
-<meta content="Upgrade your lab storage performance with the Synology DS918. Learn how to enhance your VMware stack and achieve efficient NFS setup." name="description"/>
-<meta content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" name="robots"/>
-<link href="/2019/02/lab-storage-2/" rel="canonical"/>
+<title>Time in a VMC Environment - Jameskilbycouk</title>
+<meta content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" name="robots"/>
+<link href="/2025/12/time-in-a-vmc-environment/" rel="canonical"/>
 <meta content="en_GB" property="og:locale"/>
 <meta content="article" property="og:type"/>
-<meta content="Enhance Your Lab Storage Performance Today!" property="og:title"/>
-<meta content="Boost your VMware setup with Synology DS918. Check out the latest updates!" property="og:description"/>
-<meta content="/2019/02/lab-storage-2/" property="og:url"/>
-<meta content="Homelab" property="article:tag"/>
-<meta content="Storage" property="article:tag"/>
-<meta content="Synology" property="article:tag"/>
-<meta content="Homelab" property="article:section"/>
-<meta content="2024-07-10T09:22:32+00:00" property="og:updated_time"/>
-<meta content="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg" property="og:image"/>
-<meta content="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg" property="og:image:secure_url"/>
-<meta content="1500" property="og:image:width"/>
-<meta content="900" property="og:image:height"/>
-<meta content="Lab Storage" property="og:image:alt"/>
-<meta content="image/jpeg" property="og:image:type"/>
-<meta content="2019-02-10T23:59:20+00:00" property="article:published_time"/>
-<meta content="2024-07-10T09:22:32+00:00" property="article:modified_time"/>
+<meta content="Time in a VMC Environment - Jameskilbycouk" property="og:title"/>
+<meta content="One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Time VMC allows you to utilise the Amazon..." property="og:description"/>
+<meta content="/2025/12/time-in-a-vmc-environment/" property="og:url"/>
+<meta content="NTP" property="article:tag"/>
+<meta content="VMware Cloud on AWS" property="article:tag"/>
+<meta content="VMware Cloud on AWS" property="article:section"/>
+<meta content="/wp-content/uploads/2025/02/Picture-1.png" property="og:image"/>
+<meta content="/wp-content/uploads/2025/02/Picture-1.png" property="og:image:secure_url"/>
+<meta content="967" property="og:image:width"/>
+<meta content="279" property="og:image:height"/>
+<meta content="Time in a VMC Environment" property="og:image:alt"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="2025-12-08T14:03:44+00:00" property="article:published_time"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Enhance Your Lab Storage Performance Today!" name="twitter:title"/>
-<meta content="Boost your VMware setup with Synology DS918. Check out the latest updates!" name="twitter:description"/>
-<meta content="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg" name="twitter:image"/>
+<meta content="Time in a VMC Environment - Jameskilbycouk" name="twitter:title"/>
+<meta content="One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Time VMC allows you to utilise the Amazon..." name="twitter:description"/>
+<meta content="/wp-content/uploads/2025/02/Picture-1.png" name="twitter:image"/>
 <meta content="Written by" name="twitter:label1"/>
 <meta content="James" name="twitter:data1"/>
 <meta content="Time to read" name="twitter:label2"/>
-<meta content="1 minute" name="twitter:data2"/>
-<script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"/#person","name":"Jameskilbycouk"},{"@type":"WebSite","@id":"/#website","url":"https://jameskilby.co.uk","publisher":{"@id":"/#person"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg","url":"/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg","width":"1500","height":"900","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"/2019/02/lab-storage-2/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://jameskilby.co.uk","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"/2019/02/lab-storage-2/","name":"Lab Storage"}}]},{"@type":"WebPage","@id":"/2019/02/lab-storage-2/#webpage","url":"/2019/02/lab-storage-2/","name":"Lab Storage - Jameskilbycouk","datePublished":"2019-02-10T23:59:20+00:00","dateModified":"2024-07-10T09:22:32+00:00","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg"},"inLanguage":"en-GB","breadcrumb":{"@id":"/2019/02/lab-storage-2/#breadcrumb"}},{"@type":"Person","@id":"/author/admin/","name":"James","url":"/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","caption":"James","inLanguage":"en-GB"},"sameAs":["https://jameskilby.co.uk"]},{"@type":"BlogPosting","headline":"Lab Storage - Jameskilbycouk","datePublished":"2019-02-10T23:59:20+00:00","dateModified":"2024-07-10T09:22:32+00:00","author":{"@id":"/author/admin/","name":"James"},"publisher":{"@id":"/#person"},"description":"Upgrade your lab storage performance with the Synology DS918. Learn how to enhance your VMware stack and achieve efficient NFS setup.","name":"Lab Storage - Jameskilbycouk","@id":"/2019/02/lab-storage-2/#richSnippet","isPartOf":{"@id":"/2019/02/lab-storage-2/#webpage"},"image":{"@id":"/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"/2019/02/lab-storage-2/#webpage"}}]}</script>
+<meta content="Less than a minute" name="twitter:data2"/>
+<script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[[{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Time","url":"/2025/12/time-in-a-vmc-environment/#t"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Firewall Config","url":"/2025/12/time-in-a-vmc-environment/#firewall-config"}],{"@type":["Person","Organization"],"@id":"/#person","name":"Jameskilbycouk"},{"@type":"WebSite","@id":"/#website","url":"https://jameskilby.co.uk","publisher":{"@id":"/#person"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"/wp-content/uploads/2025/02/Picture-1.png","url":"/wp-content/uploads/2025/02/Picture-1.png","width":"967","height":"279","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"/2025/12/time-in-a-vmc-environment/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://jameskilby.co.uk","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"/2025/12/time-in-a-vmc-environment/","name":"Time in a VMC Environment"}}]},{"@type":"WebPage","@id":"/2025/12/time-in-a-vmc-environment/#webpage","url":"/2025/12/time-in-a-vmc-environment/","name":"Time in a VMC Environment - Jameskilbycouk","datePublished":"2025-12-08T14:03:44+00:00","dateModified":"2025-12-08T14:03:44+00:00","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/wp-content/uploads/2025/02/Picture-1.png"},"inLanguage":"en-GB","breadcrumb":{"@id":"/2025/12/time-in-a-vmc-environment/#breadcrumb"}},{"@type":"Person","@id":"/author/admin/","name":"James","url":"/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","caption":"James","inLanguage":"en-GB"},"sameAs":["https://jameskilby.co.uk"]},{"@type":"BlogPosting","headline":"Time in a VMC Environment - Jameskilbycouk","datePublished":"2025-12-08T14:03:44+00:00","dateModified":"2025-12-08T14:03:44+00:00","author":{"@id":"/author/admin/","name":"James"},"publisher":{"@id":"/#person"},"description":"One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time.... A key requirement for any enterprise platform.","name":"Time in a VMC Environment - Jameskilbycouk","@id":"/2025/12/time-in-a-vmc-environment/#richSnippet","isPartOf":{"@id":"/2025/12/time-in-a-vmc-environment/#webpage"},"image":{"@id":"/wp-content/uploads/2025/02/Picture-1.png"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"/2025/12/time-in-a-vmc-environment/#webpage"}}]}</script>
 <!-- /Rank Math WordPress SEO plugin -->
 <link href="/feed/" rel="alternate" title="Jameskilbycouk » Feed" type="application/rss+xml"/>
 <link href="/comments/feed/" rel="alternate" title="Jameskilbycouk » Comments Feed" type="application/rss+xml"/>
 <script>document.documentElement.classList.remove( 'no-js' );</script>
-<link href="/2019/02/lab-storage-2/feed/" rel="alternate" title="Jameskilbycouk » Lab Storage Comments Feed" type="application/rss+xml"/>
+<link href="/2025/12/time-in-a-vmc-environment/feed/" rel="alternate" title="Jameskilbycouk » Time in a VMC Environment Comments Feed" type="application/rss+xml"/>
 <style id="classic-theme-styles-inline-css">
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -82,13 +78,13 @@
 <link href="/wp-content/themes/kadence/assets/css/footer.min.css" id="kadence-footer-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/themes/kadence/assets/css/rankmath.min.css" id="kadence-rankmath-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/cache/wpo-minify/1765200617/assets/wpo-minify-header-a98b27a2.min.css" id="wpo_min-header-0-css" media="all" rel="stylesheet"/>
-<link href="/wp-json/wp/v2/posts/631" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="/wp-json/wp/v2/posts/7275" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
 
-<link href="/?p=631" rel="shortlink"/>
-<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2019%2F02%2Flab-storage-2%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
-<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2019%2F02%2Flab-storage-2%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
+<link href="/?p=7275" rel="shortlink"/>
+<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2025%2F12%2Ftime-in-a-vmc-environment%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
+<link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2025%2F12%2Ftime-in-a-vmc-environment%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
 <link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><script data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
-<body class="wp-singular post-template-default single single-post postid-631 single-format-standard wp-embed-responsive wp-theme-kadence hide-focus-outline link-style-standard content-title-style-normal content-width-narrow content-style-boxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
+<body class="wp-singular post-template-default single single-post postid-7275 single-format-standard wp-embed-responsive wp-theme-kadence hide-focus-outline link-style-standard content-title-style-normal content-width-narrow content-style-boxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
 <div class="site wp-site-blocks" id="wrapper">
 <a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
 <header class="site-header" id="masthead" itemscope="" itemtype="https://schema.org/WPHeader" role="banner">
@@ -164,73 +160,77 @@
 <div class="content-wrap">
 <div class="post-thumbnail article-post-thumbnail kadence-thumbnail-position-behind alignwide kadence-thumbnail-ratio-2-3">
 <div class="post-thumbnail-inner">
-<img alt="" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="900" sizes="(max-width: 1500px) 100vw, 1500px" src="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg" srcset="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg 1500w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-300x180.jpg 300w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-1024x614.jpg 1024w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-768x461.jpg 768w" width="1500"/> </div>
+<img alt="" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="279" sizes="(max-width: 967px) 100vw, 967px" src="/wp-content/uploads/2025/02/Picture-1.png" srcset="/wp-content/uploads/2025/02/Picture-1.png 967w, /wp-content/uploads/2025/02/Picture-1-300x87.png 300w, /wp-content/uploads/2025/02/Picture-1-768x222.png 768w" width="967"/> </div>
 </div><!-- .post-thumbnail -->
-<article class="entry content-bg single-entry post-631 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab tag-homelab tag-storage tag-synology" id="post-631">
+<article class="entry content-bg single-entry post-7275 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware-cloud-on-aws tag-ntp tag-vmware-cloud-on-aws" id="post-7275">
 <div class="entry-content-wrap">
 <header class="entry-header post-title title-align-inherit title-tablet-align-inherit title-mobile-align-inherit">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a href="/category/homelab/" rel="tag">Homelab</a> </span>
+<a href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
 </div><!-- .entry-taxonomies -->
-<h1 class="entry-title">Lab Storage</h1><div class="entry-meta entry-meta-divider-dot">
+<h1 class="entry-title">Time in a VMC Environment</h1><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2019-02-10T23:59:20+00:00" itemprop="datePublished">February 10, 2019</time><time class="updated" datetime="2024-07-10T09:22:32+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+<time class="entry-date published updated" datetime="2025-12-08T14:03:44+00:00" itemprop="dateModified">December 8, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-content single-content">
-<h2 class="wp-block-heading">Lab Storage Update.</h2>
-<p>Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology DS918</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-4565" decoding="async" height="432" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/04/iu-768x432-1.jpg" srcset="/wp-content/uploads/2023/04/iu-768x432-1.jpg 768w, /wp-content/uploads/2023/04/iu-768x432-1-300x169.jpg 300w" width="768"/></figure>
-<p>It’s a very compact unit with a quad-core Intel Celeron &amp; I have left the RAM at 4 GB for now.</p>
-<p>I have added some of the existing SSD’s that I had giving me about 3TB of usable flash.  I am presenting this back to my VMware hosts using NFS 4.1.   I must have missed the announcement as this is now built into the Synology GUI ( It used to be a command-line-only option) I have verified the VAAI works as expected in this configuration.  At present I am using this with a single network connection however I will be testing NFS Multipathing shortly.</p>
-<p>The performance improvement has been noticeable and I have now removed all non-Synology systems from primary storage.   This has left me with the DS918+ detailed here and a DS216+ with 2TB of Raid1 WD Reds. I am using this for ISO’s and some general file storage.</p>
+<p>One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform.</p>
+<div class="wp-block-rank-math-toc-block" id="rank-math-toc"><h2>Table of Contents</h2><nav><ul><li><a href="#t">Time</a></li><li><a href="#firewall-config">Firewall Config</a></li></ul></nav></div>
+<h2 class="wp-block-heading" id="t">Time</h2>
+<p>VMC allows you to utilise the<a href="https://aws.amazon.com/about-aws/whats-new/2017/11/introducing-the-amazon-time-sync-service/" rel="noopener" target="_blank"> Amazon Time Sync Service</a> for keeping an accurate and precise time. </p>
+<h2 class="wp-block-heading" id="firewall-config">Firewall Config</h2>
+<p>To utilise this from a VMC guest perspective, the appropriate NSX firewall rules need to be in place. I.e. on the Compute Gateway, UDP port 123 needs to be available 169.254.169.123</p>
+<p>The IP Address is part of the “link local” address range 169.254.0.0/16 and I like that they picked .123 matching the NTP port.</p>
+<p></p>
+<p></p>
+<p>Note: This won’t work over a Route-based VPN with the default route to be on-prem.</p>
+<p></p>
 </div><!-- .entry-content -->
 <div class="comments-area" id="comments"><div class="pb-30"><section id="utterances-comments"><script async="" crossorigin="anonymous" data-cfasync="false" data-issue-term="pathname" data-repo="jameskilbynet/jkcoukblog" data-theme="github-light" src="https://utteranc.es/client.js"></script></section></div></div><footer class="entry-footer">
 <div class="entry-tags">
 <span class="tags-links">
 <span class="tags-label screen-reader-text">
 			Post Tags:		</span>
-<a class="tag-link tag-item-homelab" href="/tag/homelab/" rel="tag" title="Homelab"><span class="tag-hash">#</span>Homelab</a><a class="tag-link tag-item-storage" href="/tag/storage/" rel="tag" title="Storage"><span class="tag-hash">#</span>Storage</a><a class="tag-link tag-item-synology" href="/tag/synology/" rel="tag" title="Synology"><span class="tag-hash">#</span>Synology</a> </span>
+<a class="tag-link tag-item-ntp" href="/tag/ntp/" rel="tag" title="NTP"><span class="tag-hash">#</span>NTP</a><a class="tag-link tag-item-vmware-cloud-on-aws" href="/tag/vmware-cloud-on-aws/" rel="tag" title="VMware Cloud on AWS"><span class="tag-hash">#</span>VMware Cloud on AWS</a> </span>
 </div><!-- .entry-tags -->
 </footer><!-- .entry-footer -->
 </div>
-</article><!-- #post-631 -->
+</article><!-- #post-7275 -->
 <nav aria-label="Posts" class="navigation post-navigation">
 <h2 class="screen-reader-text">Post navigation</h2>
-<div class="nav-links"><div class="nav-previous"><a href="/2019/01/whats-in-my-backpack/" rel="prev"><div class="post-navigation-sub"><small><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-left-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 29 28" width="29" xmlns="http://www.w3.org/2000/svg"><title>Previous</title><path d="M28 12.5v3c0 0.281-0.219 0.5-0.5 0.5h-19.5v3.5c0 0.203-0.109 0.375-0.297 0.453s-0.391 0.047-0.547-0.078l-6-5.469c-0.094-0.094-0.156-0.219-0.156-0.359v0c0-0.141 0.063-0.281 0.156-0.375l6-5.531c0.156-0.141 0.359-0.172 0.547-0.094 0.172 0.078 0.297 0.25 0.297 0.453v3.5h19.5c0.281 0 0.5 0.219 0.5 0.5z"></path>
-</svg></span>Previous</small></div>Whats in my backpack?</a></div><div class="nav-next"><a href="/2019/12/aws-solution-architect-associate/" rel="next"><div class="post-navigation-sub"><small>Next<span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span></small></div>AWS Solution Architect – Associate</a></div></div>
+<div class="nav-links"><div class="nav-previous"><a href="/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/" rel="prev"><div class="post-navigation-sub"><small><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-left-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 29 28" width="29" xmlns="http://www.w3.org/2000/svg"><title>Previous</title><path d="M28 12.5v3c0 0.281-0.219 0.5-0.5 0.5h-19.5v3.5c0 0.203-0.109 0.375-0.297 0.453s-0.391 0.047-0.547-0.078l-6-5.469c-0.094-0.094-0.156-0.219-0.156-0.359v0c0-0.141 0.063-0.281 0.156-0.375l6-5.531c0.156-0.141 0.359-0.172 0.547-0.094 0.172 0.078 0.297 0.25 0.297 0.453v3.5h19.5c0.281 0 0.5 0.219 0.5 0.5z"></path>
+</svg></span>Previous</small></div>How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare</a></div></div>
 </nav> <div class="entry-related alignfull entry-related-style-wide">
 <div class="entry-related-inner content-container site-container">
 <div class="entry-related-inner-content alignwide">
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4357 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage tag-nas tag-truenas-scale tag-zfs">
-<a aria-hidden="true" aria-label="Homelab Storage Refresh (Part 1)" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/05/homelab-storage-refresh-part-1/" role="presentation" tabindex="-1">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3117 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-vmc tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="VMC New Host -i3en" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/07/i3en/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="TrueNAS Logo" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="198" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png" srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png 768w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.png 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png 905w" width="768"/> </div>
+<img alt="VMC New Host -i3en" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> </span>
+<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/05/homelab-storage-refresh-part-1/" rel="bookmark">Homelab Storage Refresh (Part 1)</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2020/07/i3en/" rel="bookmark">VMC New Host -i3en</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-05-23T12:07:09+00:00" itemprop="datePublished">May 23, 2023</time><time class="updated" datetime="2025-10-01T15:22:13+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2020-07-02T22:01:39+00:00" itemprop="datePublished">July 2, 2020</time><time class="updated" datetime="2024-07-10T09:28:48+00:00" itemprop="dateModified">July 10, 2024</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>Table of Contents Background ZFS Overview Read Cache (ARC and L2ARC) ZIL (ZFS Intent Log) Hardware Background I have just completed the move of all my production and media-based storage/services to TrueNAS Scale. ( I will just refer to this as TrueNAS) This is based on my HP Z840 and I have now retired my…</p>
+<p>VMware Cloud on AWS (VMC) has introduced a new host to its lineup the “i3en”. This is based on the i3en.metal AWS instance. The specifications are certainly impressive packing in 96 logical cores, 768GiB RAM, and approximately 45.84 TiB of NVMe raw storage capacity per host. It’s certainly a monster with a 266% uplift in…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2023/05/homelab-storage-refresh-part-1/">
-				Read More<span class="screen-reader-text"> Homelab Storage Refresh (Part 1)</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2020/07/i3en/">
+				Read More<span class="screen-reader-text"> VMC New Host -i3en</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -240,7 +240,7 @@
 </li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4940 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws category-vsan-vmware tag-storage tag-vmware-cloud-on-aws tag-vsan tag-vsan-esa">
 <a aria-hidden="true" aria-label="VMC – vSAN ESA" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="VMC – vSAN ESA" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="324" loading="lazy" sizes="auto, (max-width: 550px) 100vw, 550px" src="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg" srcset="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg 550w, /wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1-300x177.jpg 300w" width="550"/> </div>
+<img alt="VMC – vSAN ESA" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="324" sizes="(max-width: 550px) 100vw, 550px" src="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg" srcset="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg 550w, /wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1-300x177.jpg 300w" width="550"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -267,116 +267,90 @@
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3698 post type-post status-publish format-standard hentry category-homelab category-networking tag-homelab tag-networking">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6765 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-sizing tag-vmc tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="VMC Quick Sizing Guide" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/05/vmc-quick-sizing-guide/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="VMC Quick Sizing Guide" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="222" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/02/Picture-1-768x222.png" srcset="/wp-content/uploads/2025/02/Picture-1-768x222.png 768w, /wp-content/uploads/2025/02/Picture-1-300x87.png 300w, /wp-content/uploads/2025/02/Picture-1.png 967w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> </span>
+<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/01/lab-update-part-3-network/" rel="bookmark">Lab Update – Part 3 Network</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2025/05/vmc-quick-sizing-guide/" rel="bookmark">VMC Quick Sizing Guide</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-01-06T19:25:40+00:00" itemprop="datePublished">January 6, 2022</time><time class="updated" datetime="2025-10-01T15:22:14+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2025-05-21T09:33:04+00:00" itemprop="datePublished">May 21, 2025</time><time class="updated" datetime="2025-07-02T08:39:59+00:00" itemprop="dateModified">July 2, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over…</p>
+<p>Quick reference guide to the available storage resources that you get in VMware Cloud on AWS</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2022/01/lab-update-part-3-network/">
-				Read More<span class="screen-reader-text"> Lab Update – Part 3 Network</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2025/05/vmc-quick-sizing-guide/">
+				Read More<span class="screen-reader-text"> VMC Quick Sizing Guide</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5912 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-docker category-homelab tag-artificial-intelligence tag-homelab tag-nvidia">
-<a aria-hidden="true" aria-label="Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6895 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/08/vmc-host-deepdive/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="512" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg" srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg 768w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-300x200.jpg 300w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.jpg 1024w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1536x1024.jpg 1536w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-2048x1365.jpg 2048w" width="768"/> </div>
+<img alt="VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="222" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/02/Picture-1-768x222.png" srcset="/wp-content/uploads/2025/02/Picture-1-768x222.png 768w, /wp-content/uploads/2025/02/Picture-1-300x87.png 300w, /wp-content/uploads/2025/02/Picture-1.png 967w" width="768"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-artificial-intelligence" href="/category/artificial-intelligence/" rel="tag">Artificial Intelligence</a> | <a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> </span>
+<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/" rel="bookmark">Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2025/08/vmc-host-deepdive/" rel="bookmark">VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-10-11T15:03:26+00:00" itemprop="datePublished">October 11, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2025-08-14T12:32:01+00:00" itemprop="datePublished">August 14, 2025</time><time class="updated" datetime="2025-10-01T15:30:40+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock price has gone to the moon. So I thought I better get some knowledge and understand some of this. As it’s a huge field and I wasn’t exactly sure…</p>
+<p>This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3 I3en I4i CPU Processor Name Intel Xeon E5-2686 v4  Intel Xeon Platinum 8175 Intel Xeon 8375c No of…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/">
-				Read More<span class="screen-reader-text"> Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2025/08/vmc-host-deepdive/">
+				Read More<span class="screen-reader-text"> VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-47 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-nutanix tag-nutanix">
-<a aria-hidden="true" aria-label="Nutanix CE" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2018/01/nutanix-ce/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3138 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-aws tag-failure tag-sre tag-vmc tag-vmware tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="VMC Host Errors" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/09/vmc-host-errors/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="Nutanix CE" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="196" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-768x196.jpg" srcset="/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-768x196.jpg 768w, /wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-300x77.jpg 300w, /wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-1024x262.jpg 1024w, /wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-1536x392.jpg 1536w, /wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg 1718w" width="768"/> </div>
+<img alt="VMC Host Errors" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-nutanix" href="/category/nutanix/" rel="tag">Nutanix</a> </span>
+<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2018/01/nutanix-ce/" rel="bookmark">Nutanix CE</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2020/09/vmc-host-errors/" rel="bookmark">VMC Host Errors</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2018-01-06T17:28:56+00:00" itemprop="datePublished">January 6, 2018</time><time class="updated" datetime="2024-07-10T08:56:10+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+<time class="entry-date published" datetime="2020-09-15T10:56:32+00:00" itemprop="datePublished">September 15, 2020</time><time class="updated" datetime="2025-10-01T15:22:15+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>I ran a Nutanix CE server at home for a little while when it first came out.  However, due to the fairly high requirements, it didn’t make sense to me to continue running it at home.  This was compounded by the fact that I have many clusters to play with at work.   These all run my…</p>
+<p>When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2018/01/nutanix-ce/">
-				Read More<span class="screen-reader-text"> Nutanix CE</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5547 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-nutanix category-vmware tag-homelab tag-nutanix tag-vmware">
-<a aria-hidden="true" aria-label="New Nodes" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/07/new-nodes/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="New Nodes" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="149" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg" srcset="/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg 768w, /wp-content/uploads/2024/07/IMG_6629-300x58.jpeg 300w, /wp-content/uploads/2024/07/IMG_6629-1024x198.jpeg 1024w, /wp-content/uploads/2024/07/IMG_6629-1536x297.jpeg 1536w, /wp-content/uploads/2024/07/IMG_6629-2048x397.jpeg 2048w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-nutanix" href="/category/nutanix/" rel="tag">Nutanix</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/07/new-nodes/" rel="bookmark">New Nodes</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-07-02T08:01:04+00:00" itemprop="datePublished">July 2, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice Bill of Materials Rescue IPMI…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2024/07/new-nodes/">
-				Read More<span class="screen-reader-text"> New Nodes</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2020/09/vmc-host-errors/">
+				Read More<span class="screen-reader-text"> VMC Host Errors</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
