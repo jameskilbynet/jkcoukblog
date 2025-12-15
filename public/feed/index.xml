@@ -5,7 +5,7 @@
     <link>https://jameskilby.co.uk/</link>
     <description>VMware and cloud infrastructure tutorials, homelab guides, and DevOps insights</description>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 11 Dec 2025 10:48:26 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 20:58:28 +0000</lastBuildDate>
     <atom:link href="https://jameskilby.co.uk/feed/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Time in a VMC Environment</title>
@@ -22,6 +22,14 @@
       <author>James</author>
       <guid isPermaLink="true">https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/</guid>
       <pubDate>Sat, 06 Dec 2025 10:59:14 +0000</pubDate>
+    </item>
+    <item>
+      <title>Ubuntu Disk Expansion Steps</title>
+      <link>https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/</link>
+      <description>How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps. So I decided to write them down. 1. Rescan for disk size changes2. Extend the physical partition (if needed)3. Resize the physical volume4. Extend the logical volume to use all available</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/</guid>
+      <pubDate>Mon, 15 Dec 2025 20:56:40 +0000</pubDate>
     </item>
     <item>
       <title>How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare</title>
@@ -158,14 +166,6 @@
       <author>James</author>
       <guid isPermaLink="true">https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/</guid>
       <pubDate>Fri, 10 Nov 2023 11:34:42 +0000</pubDate>
-    </item>
-    <item>
-      <title>Configuring a Zen Internet and City Fibre connection with a 3rd party router</title>
-      <link>https://jameskilby.co.uk/2023/11/configuring-a-zen-internet-and-city-fibre-connection-with-a-3rd-party-router/</link>
-      <description>Back in July I bought a new house and one of the best things about the property was that it was already in a City Fibre location. That meant I could take my Zen internet connection with me but ditch the ADSL (and Phone Line requirement). This gave me a much better connection in terms</description>
-      <author>James</author>
-      <guid isPermaLink="true">https://jameskilby.co.uk/2023/11/configuring-a-zen-internet-and-city-fibre-connection-with-a-3rd-party-router/</guid>
-      <pubDate>Wed, 15 Nov 2023 19:27:48 +0000</pubDate>
     </item>
   </channel>
 </rss>
