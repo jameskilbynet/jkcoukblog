@@ -182,7 +182,7 @@
 <p>Portainer then gives you the command to execute on the remote environment to fire up the Portainer Agent for the Portainer server to connect to.</p>
 <h2 class="wp-block-heading" id="issue">Issue</h2>
 <p>When I SSH into my Synology to run the commands I get the below error</p>
-<pre class="wp-block-code"><code> sudo docker run -d \
+<div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code> sudo docker run -d \
 &gt;   -p 9001:9001 \
 &gt;   --name portainer_agent \
 &gt;   --restart=always \
@@ -214,16 +214,26 @@ Digest: sha256:d2e6833bb6f067962f79be262066cc96921159bc9a49a3100cacecb542522fd5
 Status: Downloaded newer image for portainer/agent:2.27.1
 2a0dcdc5b104c35b0b030da973d7f7a6a148c24aa50db35e9ecf49dc0279fd03
 <strong>docker: Error response from daemon: Bind mount failed: '/var/lib/docker/volumes' does not exist.
-</strong></code></pre>
+</strong></code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
+                padding: 6px 12px; background: #2d3748; color: #fff; 
+                border: 1px solid #4a5568; border-radius: 4px; 
+                cursor: pointer; font-size: 12px; font-family: sans-serif;
+                opacity: 0.8; transition: opacity 0.2s, background 0.2s;
+                z-index: 10;">📋 Copy</button></div>
 <h2 class="wp-block-heading" id="the-fix">The Fix</h2>
 <p>This occurs as /var/lib/docker/volumes doesn’t exist on the Synology Filesystem.  If we update the command as below the container starts successfully.</p>
-<pre class="wp-block-code"><code>sudo docker run -d -p 9001:9001 --name portainer_agent --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /volume1/@docker/volumes:/var/lib/docker/volumes portainer/agent
+<div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code>sudo docker run -d -p 9001:9001 --name portainer_agent --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /volume1/@docker/volumes:/var/lib/docker/volumes portainer/agent
 Unable to find image 'portainer/agent:latest' locally
 latest: Pulling from portainer/agent
 Digest: sha256:d2e6833bb6f067962f79be262066cc96921159bc9a49a3100cacecb542522fd5
 Status: Downloaded newer image for portainer/agent:latest
 e770c9990d9afddbbe0098486a421421027de60d1ca324aa3af0cff10ab88ab7
-</code></pre>
+</code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
+                padding: 6px 12px; background: #2d3748; color: #fff; 
+                border: 1px solid #4a5568; border-radius: 4px; 
+                cursor: pointer; font-size: 12px; font-family: sans-serif;
+                opacity: 0.8; transition: opacity 0.2s, background 0.2s;
+                z-index: 10;">📋 Copy</button></div>
 </div><!-- .entry-content -->
 <div class="comments-area" id="comments"><div class="pb-30"><section id="utterances-comments"><script async="" crossorigin="anonymous" data-cfasync="false" data-issue-term="pathname" data-repo="jameskilbynet/jkcoukblog" data-theme="github-light" src="https://utteranc.es/client.js"></script></section></div></div><footer class="entry-footer">
 <div class="entry-tags">
@@ -246,100 +256,10 @@ e770c9990d9afddbbe0098486a421421027de60d1ca324aa3af0cff10ab88ab7
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4047 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-hosting tag-homelab tag-starlink">
-<a aria-hidden="true" aria-label="Starlink" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/10/starlink/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Starlink" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="432" loading="lazy" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920-768x432.jpg" srcset="/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920-768x432.jpg 768w, /wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920-300x169.jpg 300w, /wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920-1024x576.jpg 1024w, /wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920-1536x864.jpg 1536w, /wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920.jpg 1920w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/10/starlink/" rel="bookmark">Starlink</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-10-11T21:40:50+00:00" itemprop="datePublished">October 11, 2022</time><time class="updated" datetime="2025-10-01T15:22:14+00:00" itemprop="dateModified">October 1, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>Since moving to Dorset last year internet connectivity has been the bane of my existence. Currently, I have an ADSL connection provided by my old employer Zen and a 5G connection provided by Three. These are both plumbed into my WatchGuard Firewall with multi-wan configured. Most of the time the usability is ok but there…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2022/10/starlink/">
-				Read More<span class="screen-reader-text"> Starlink</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6710 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-homelab tag-artificial-intelligence tag-homelab tag-warp">
-<a aria-hidden="true" aria-label="Warp – The intelligent terminal" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/04/warp-the-intelligent-terminal/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Wa" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="180" loading="lazy" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-768x180.png" srcset="/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-768x180.png 768w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-300x70.png 300w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1024x240.png 1024w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1536x360.png 1536w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-2048x480.png 2048w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-artificial-intelligence" href="/category/artificial-intelligence/" rel="tag">Artificial Intelligence</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/04/warp-the-intelligent-terminal/" rel="bookmark">Warp – The intelligent terminal</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-04-11T15:46:23+00:00" itemprop="datePublished">April 11, 2025</time><time class="updated" datetime="2025-10-03T09:15:18+00:00" itemprop="dateModified">October 3, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>How Warp is helping me run my homelab. </p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2025/04/warp-the-intelligent-terminal/">
-				Read More<span class="screen-reader-text"> Warp – The intelligent terminal</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6247 post type-post status-publish format-standard has-post-thumbnail hentry category-truenas-scale category-vmware category-vsan-vmware category-vsphere tag-homelab tag-trim tag-unmap tag-vmware tag-zfs">
-<a aria-hidden="true" aria-label="How to Run ZFS on VMware vSphere: Setup Guide and Best Practices" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/12/zfs-on-vmware/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="How to Run ZFS on VMware vSphere: Setup Guide and Best Practices" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="132" loading="lazy" src="/wp-content/uploads/2024/12/ZFS.jpg" width="200"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vsan-vmware" href="/category/vmware/vsan-vmware/" rel="tag">vSAN</a> | <a class="category-link-vsphere" href="/category/vsphere/" rel="tag">vSphere</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/12/zfs-on-vmware/" rel="bookmark">How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-12-18T17:47:57+00:00" itemprop="datePublished">December 18, 2024</time><time class="updated" datetime="2025-10-01T15:30:55+00:00" itemprop="dateModified">October 1, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>Table of Contents Copy on Write Disk ID’s Trim I have run a number of systems utilising ZFS since the earliest days of my homelab using Nexenta all the way back in 2010. The image below is my lab at the time with an IBM Head unit that I think had 18GB of RAM 6x450GB…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2024/12/zfs-on-vmware/">
-				Read More<span class="screen-reader-text"> How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6392 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-docker category-hosting tag-ai tag-docker tag-hoarder tag-homelab tag-ollama">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6392 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-docker category-hosting tag-ai tag-docker tag-hoarder tag-homelab tag-ollama">
 <a aria-hidden="true" aria-label="How I Migrated from Pocket to Hoarder with AI Integration" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="How I Migrated from Pocket to Hoarder with AI Integration" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="411" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png" srcset="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png 768w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-300x160.png 300w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1024x547.png 1024w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1536x821.png 1536w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-2048x1095.png 2048w" width="768"/> </div>
+<img alt="How I Migrated from Pocket to Hoarder with AI Integration" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="411" loading="lazy" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png" srcset="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png 768w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-300x160.png 300w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1024x547.png 1024w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1536x821.png 1536w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-2048x1095.png 2048w" width="768"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -366,56 +286,150 @@ e770c9990d9afddbbe0098486a421421027de60d1ca324aa3af0cff10ab88ab7
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-631 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab tag-homelab tag-storage tag-synology">
-<a aria-hidden="true" aria-label="Lab Storage" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2019/02/lab-storage-2/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5945 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-truenas-scale tag-homelab tag-storage">
+<a aria-hidden="true" aria-label="Can you really squeeze 96TB in 1U ?" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/09/can-you-really-squeeze-96tb-in-1u/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="Lab Storage" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="461" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-768x461.jpg" srcset="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-768x461.jpg 768w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-300x180.jpg 300w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-1024x614.jpg 1024w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg 1500w" width="768"/> </div>
+<img alt="Can you really squeeze 96TB in 1U ?" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="435" loading="lazy" sizes="(max-width: 758px) 100vw, 758px" src="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png" srcset="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png 758w, /wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter-300x172.png 300w" width="758"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2019/02/lab-storage-2/" rel="bookmark">Lab Storage</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2024/09/can-you-really-squeeze-96tb-in-1u/" rel="bookmark">Can you really squeeze 96TB in 1U ?</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2019-02-10T23:59:20+00:00" itemprop="datePublished">February 10, 2019</time><time class="updated" datetime="2024-07-10T09:22:32+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+<time class="entry-date published" datetime="2024-09-12T12:39:16+00:00" itemprop="datePublished">September 12, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology…</p>
+<p>Yes, that’s a clickbait title. But technically it’s possible if I dropped all drive redundancy… I recently saw an advert for a server that was just too good to be true. It promised to bring a huge amount of storage and future options in a quite hard-to-believe 1U. The price it was on offer for…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2019/02/lab-storage-2/">
-				Read More<span class="screen-reader-text"> Lab Storage</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2024/09/can-you-really-squeeze-96tb-in-1u/">
+				Read More<span class="screen-reader-text"> Can you really squeeze 96TB in 1U ?</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3698 post type-post status-publish format-standard hentry category-homelab category-networking tag-homelab tag-networking">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3883 post type-post status-publish format-standard has-post-thumbnail hentry category-docker category-homelab category-hosting category-kubernetes tag-containers tag-docker tag-homelab">
+<a aria-hidden="true" aria-label="Use Portainer in a Homelab with GitHub" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/12/use-portainer-in-a-homelab-with-github/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="Use Portainer in a Homelab with GitHub" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="280" loading="lazy" sizes="auto, (max-width: 280px) 100vw, 280px" src="/wp-content/uploads/2022/12/22225832.png" srcset="/wp-content/uploads/2022/12/22225832.png 280w, /wp-content/uploads/2022/12/22225832-150x150.png 150w" width="280"/> </div>
+</a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> </span>
+<a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> | <a class="category-link-kubernetes" href="/category/kubernetes/" rel="tag">Kubernetes</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/01/lab-update-part-3-network/" rel="bookmark">Lab Update – Part 3 Network</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2022/12/use-portainer-in-a-homelab-with-github/" rel="bookmark">Use Portainer in a Homelab with GitHub</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-01-06T19:25:40+00:00" itemprop="datePublished">January 6, 2022</time><time class="updated" datetime="2025-10-01T15:22:14+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2022-12-09T09:06:37+00:00" itemprop="datePublished">December 9, 2022</time><time class="updated" datetime="2025-10-01T15:22:14+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over…</p>
+<p>Late to the party or not, I have been using containers in my lab more and more and that has led me to Portainer…. I use it for managing the docker containers on my Synology but it can also be used for managing lots of other things. In their own words “Portainer accelerates container adoption….</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2022/01/lab-update-part-3-network/">
-				Read More<span class="screen-reader-text"> Lab Update – Part 3 Network</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2022/12/use-portainer-in-a-homelab-with-github/">
+				Read More<span class="screen-reader-text"> Use Portainer in a Homelab with GitHub</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4370 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-vexpert tag-homelab tag-intel tag-optane tag-truenas tag-truenas-scale tag-vexpert tag-vmware">
+<a aria-hidden="true" aria-label="Intel Optane NVMe Homelab" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/04/intel-optane/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="Intel Optane NVMe Homelab" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="665" loading="lazy" sizes="auto, (max-width: 678px) 100vw, 678px" src="/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png" srcset="/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png 678w, /wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px-300x294.png 300w" width="678"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-vexpert" href="/category/vexpert/" rel="tag">vExpert</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2023/04/intel-optane/" rel="bookmark">Intel Optane NVMe Homelab</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2023-04-17T12:20:04+00:00" itemprop="datePublished">April 17, 2023</time><time class="updated" datetime="2025-10-01T15:22:13+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>I have been a VMware vExpert for many years and it has brought me many many benefits over the years. I don’t think it’s an understatement to say I probably wouldn’t have my current role within VMware without it. One of the best benefits has been access to a huge amount of licences for VMware…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2023/04/intel-optane/">
+				Read More<span class="screen-reader-text"> Intel Optane NVMe Homelab</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4898 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware tag-homelab tag-nvidia tag-vgpu">
+<a aria-hidden="true" aria-label="Nvidia Tesla P4 Homelab Setup" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/10/vgpu-setup-in-my-homelab/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="Nvidia Tesla P4 Homelab Setup" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="403" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg" srcset="/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg 768w, /wp-content/uploads/2023/10/IMG_1107-768x403-1-300x157.jpg 300w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2023/10/vgpu-setup-in-my-homelab/" rel="bookmark">Nvidia Tesla P4 Homelab Setup</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2023-10-23T14:56:58+00:00" itemprop="datePublished">October 23, 2023</time><time class="updated" datetime="2024-07-10T10:54:03+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>A little while ago I decided to play with vGPU in my homelab. This was something I had dabbled with in the past but never really had the time or need to get working properly. The first thing that I needed was a GPU. I did have a Dell T20 with an iGPU built into…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2023/10/vgpu-setup-in-my-homelab/">
+				Read More<span class="screen-reader-text"> Nvidia Tesla P4 Homelab Setup</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3573 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware tag-homelab tag-supermicro tag-vmware">
+<a aria-hidden="true" aria-label="Lab Update – Compute" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/01/lab-update-part-1-compute/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+</div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2022/01/lab-update-part-1-compute/" rel="bookmark">Lab Update – Compute</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2022-01-06T11:12:00+00:00" itemprop="datePublished">January 6, 2022</time><time class="updated" datetime="2024-07-10T10:42:27+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>Quite a few changes have happened in the lab recently. so I decided to do a multipart blog on the changes. The refresh was triggered by the purchase of a SuperMicro Server (2027TR-H71FRF) chassis with 4x X9DRT Nodes / Blades. This is known as a BigTwin configuration in SuperMicro parlance. This is something I was…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2022/01/lab-update-part-1-compute/">
+				Read More<span class="screen-reader-text"> Lab Update – Compute</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -487,5 +501,66 @@ var kadenceConfig = {"screenReader":{"expand":"Child menu","expandOf":"Child men
 var kadenceSlideConfig = {"of":"of","to":"to","slide":"Slide","next":"Next","prev":"Previous"};
 </script>
 <script id="wpo_min-footer-0-js" src="/wp-content/cache/wpo-minify/1765990838/assets/wpo-minify-footer-20ef1812.min.js"></script>
-</body>
+<script>
+(function() {
+    document.querySelectorAll('.copy-code-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var pre = this.previousElementSibling;
+            var code = pre.querySelector('code') || pre;
+            var text = code.textContent || code.innerText;
+            
+            // Copy to clipboard
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(function() {
+                    // Success feedback
+                    button.textContent = '✅ Copied!';
+                    button.style.background = '#48bb78';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                        button.style.background = '#2d3748';
+                    }, 2000);
+                }).catch(function() {
+                    button.textContent = '❌ Failed';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                    }, 2000);
+                });
+            } else {
+                // Fallback for older browsers
+                var textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.style.position = 'fixed';
+                textarea.style.opacity = '0';
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    document.execCommand('copy');
+                    button.textContent = '✅ Copied!';
+                    button.style.background = '#48bb78';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                        button.style.background = '#2d3748';
+                    }, 2000);
+                } catch (err) {
+                    button.textContent = '❌ Failed';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                    }, 2000);
+                }
+                document.body.removeChild(textarea);
+            }
+        });
+        
+        // Hover effects
+        button.addEventListener('mouseenter', function() {
+            this.style.opacity = '1';
+            this.style.background = '#4a5568';
+        });
+        button.addEventListener('mouseleave', function() {
+            this.style.opacity = '0.8';
+            this.style.background = '#2d3748';
+        });
+    });
+})();
+</script></body>
 </html>
