@@ -258,7 +258,12 @@
 <h2 class="wp-block-heading" id="rescue-ipmi">Rescue IPMI</h2>
 <p>The IPMI in the nodes were set to ipv6 only and I didn’t know the password. To set them to DHCP was easy in the bios, however you can’t set the password from the bios. To reset the password’s I resorted to using the <a href="https://github.com/ipmitool/ipmitool" rel="noopener" target="_blank">IPMItool</a>. Due to some security <a href="https://vswitchzero.com/ipmitool-vib/" rel="noopener" target="_blank">changes</a> in ESXi8 it was necessary  to install ESXi7 to reset the password.</p>
 <p>To do this I did a vanilla install of ESXi then uploaded the ipmitool to the datastore before running the below command</p>
-<pre class="wp-block-code"><code>/opt/ipmitool/ipmitool raw 0x30 0x40</code></pre>
+<div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code>/opt/ipmitool/ipmitool raw 0x30 0x40</code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
+                padding: 6px 12px; background: #2d3748; color: #fff; 
+                border: 1px solid #4a5568; border-radius: 4px; 
+                cursor: pointer; font-size: 12px; font-family: sans-serif;
+                opacity: 0.8; transition: opacity 0.2s, background 0.2s;
+                z-index: 10;">📋 Copy</button></div>
 <p>This set the IPMI to factory defaults and took about 30 seconds to complete. From there I could configure as required.</p>
 <h2 class="wp-block-heading" id="nutanix-ce-install-overview">Nutanix CE install Overview</h2>
 <p>The next step was the install of Nutanix CE. This requires deploying the installer to a suitable USB or similar device. As I wanted to utilise ESXi as the underlying Hypervisor an additional step is needed you need to have the ESXi installer ISO available on a webserver.</p>
@@ -320,10 +325,15 @@
 <p>When all of the nodes are imaged the next step is to create the Nutanix Cluster.</p>
 <p>SSH into any of the CVM’s as  the user nutanix with a  password of nutanix/4u</p>
 <p>Then execute the following command utilising your CVM Ip address’s</p>
-<pre class="wp-block-code"><code>cluster -s 192.168.38.171,192.168.38.173,192.168.38.175 create</code></pre>
+<div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code>cluster -s 192.168.38.171,192.168.38.173,192.168.38.175 create</code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
+                padding: 6px 12px; background: #2d3748; color: #fff; 
+                border: 1px solid #4a5568; border-radius: 4px; 
+                cursor: pointer; font-size: 12px; font-family: sans-serif;
+                opacity: 0.8; transition: opacity 0.2s, background 0.2s;
+                z-index: 10;">📋 Copy</button></div>
 <p>Cluster succeed in creating will look similar to the below.</p>
 <p>If you have errors with this step the most likely cause is physical network configuration.</p>
-<pre class="wp-block-code"><code>VM: 192.168.38.175 Up
+<div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code>VM: 192.168.38.175 Up
 		                Zeus   UP	[8656, 8704, 8705, 8706, 8715, 8733]	
 		           Scavenger   UP	[12061, 12187, 12188, 12189]	
 		              Xmount   UP	[12058, 12159, 12160, 12259]	
@@ -372,11 +382,26 @@
 2024-04-05 12:48:17,004Z INFO MainThread cluster:3104 Success!
 
 
-</code></pre>
+</code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
+                padding: 6px 12px; background: #2d3748; color: #fff; 
+                border: 1px solid #4a5568; border-radius: 4px; 
+                cursor: pointer; font-size: 12px; font-family: sans-serif;
+                opacity: 0.8; transition: opacity 0.2s, background 0.2s;
+                z-index: 10;">📋 Copy</button></div>
 <p>Name the cluster (Optional)</p>
-<pre class="wp-block-code"><code> ncli cluster edit-params new-name=ntnx01</code></pre>
+<div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code> ncli cluster edit-params new-name=ntnx01</code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
+                padding: 6px 12px; background: #2d3748; color: #fff; 
+                border: 1px solid #4a5568; border-radius: 4px; 
+                cursor: pointer; font-size: 12px; font-family: sans-serif;
+                opacity: 0.8; transition: opacity 0.2s, background 0.2s;
+                z-index: 10;">📋 Copy</button></div>
 <p>Add at least 1 DNS server</p>
-<pre class="wp-block-code"><code>ncli cluster add-to-name-servers servers=192.168.10.250</code></pre>
+<div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code>ncli cluster add-to-name-servers servers=192.168.10.250</code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
+                padding: 6px 12px; background: #2d3748; color: #fff; 
+                border: 1px solid #4a5568; border-radius: 4px; 
+                cursor: pointer; font-size: 12px; font-family: sans-serif;
+                opacity: 0.8; transition: opacity 0.2s, background 0.2s;
+                z-index: 10;">📋 Copy</button></div>
 <h2 class="wp-block-heading" id="v-mware-config">VMware Config</h2>
 <p>As I wanted to add the Nutanix Hosts into my vCenter one step I needed to do was enable EVC.  To do this no running VM’s can be present on the host.</p>
 <p>Log into one of the CVM’s I executed a “Cluster Stop” command  when the cluster is stopped shut all the CVM’s down. </p>
@@ -412,10 +437,130 @@
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4869 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-personal tag-charity tag-epic tag-rnli tag-vmware">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5343 post type-post status-publish format-standard has-post-thumbnail hentry category-vcf category-vmware tag-cpu tag-holodeck tag-homelab tag-vmware">
+<a aria-hidden="true" aria-label="Holodeck CPU Fixes" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/01/holodeck-cpu-fixes/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="Holodeck CPU Fixes" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="737" loading="lazy" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743-768x737.jpg" srcset="/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743-768x737.jpg 768w, /wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743-300x288.jpg 300w, /wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg 1000w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-vcf" href="/category/vmware/vcf/" rel="tag">VCF</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2024/01/holodeck-cpu-fixes/" rel="bookmark">Holodeck CPU Fixes</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2024-01-18T14:37:04+00:00" itemprop="datePublished">January 18, 2024</time><time class="updated" datetime="2024-07-10T07:21:58+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>How to deploy Holodeck with Legacy CPU’s</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2024/01/holodeck-cpu-fixes/">
+				Read More<span class="screen-reader-text"> Holodeck CPU Fixes</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-7275 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware-cloud-on-aws tag-ntp tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="Time in a VMC Environment" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/12/time-in-a-vmc-environment/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="Time in a VMC Environment" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="222" loading="lazy" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/02/Picture-1-768x222.png" srcset="/wp-content/uploads/2025/02/Picture-1-768x222.png 768w, /wp-content/uploads/2025/02/Picture-1-300x87.png 300w, /wp-content/uploads/2025/02/Picture-1.png 967w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2025/12/time-in-a-vmc-environment/" rel="bookmark">Time in a VMC Environment</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published updated" datetime="2025-12-08T14:03:44+00:00" itemprop="dateModified">December 8, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Time VMC allows you to utilise the Amazon…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2025/12/time-in-a-vmc-environment/">
+				Read More<span class="screen-reader-text"> Time in a VMC Environment</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3138 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-aws tag-failure tag-sre tag-vmc tag-vmware tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="VMC Host Errors" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/09/vmc-host-errors/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="VMC Host Errors" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2020/09/vmc-host-errors/" rel="bookmark">VMC Host Errors</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2020-09-15T10:56:32+00:00" itemprop="datePublished">September 15, 2020</time><time class="updated" datetime="2025-10-01T15:22:15+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2020/09/vmc-host-errors/">
+				Read More<span class="screen-reader-text"> VMC Host Errors</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4898 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware tag-homelab tag-nvidia tag-vgpu">
+<a aria-hidden="true" aria-label="Nvidia Tesla P4 Homelab Setup" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/10/vgpu-setup-in-my-homelab/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="Nvidia Tesla P4 Homelab Setup" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="403" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg" srcset="/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg 768w, /wp-content/uploads/2023/10/IMG_1107-768x403-1-300x157.jpg 300w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2023/10/vgpu-setup-in-my-homelab/" rel="bookmark">Nvidia Tesla P4 Homelab Setup</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2023-10-23T14:56:58+00:00" itemprop="datePublished">October 23, 2023</time><time class="updated" datetime="2024-07-10T10:54:03+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>A little while ago I decided to play with vGPU in my homelab. This was something I had dabbled with in the past but never really had the time or need to get working properly. The first thing that I needed was a GPU. I did have a Dell T20 with an iGPU built into…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2023/10/vgpu-setup-in-my-homelab/">
+				Read More<span class="screen-reader-text"> Nvidia Tesla P4 Homelab Setup</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4869 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-personal tag-charity tag-epic tag-rnli tag-vmware">
 <a aria-hidden="true" aria-label="VMware – Going out with a Bang!" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/10/going-out-with-a-bang/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="VMware – Going out with a Bang!" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="384" loading="lazy" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/10/rnli-logo-768x384.png" srcset="/wp-content/uploads/2023/10/rnli-logo-768x384.png 768w, /wp-content/uploads/2023/10/rnli-logo-300x150.png 300w, /wp-content/uploads/2023/10/rnli-logo-1024x512.png 1024w, /wp-content/uploads/2023/10/rnli-logo.png 1200w" width="768"/> </div>
+<img alt="VMware – Going out with a Bang!" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="384" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/10/rnli-logo-768x384.png" srcset="/wp-content/uploads/2023/10/rnli-logo-768x384.png 768w, /wp-content/uploads/2023/10/rnli-logo-300x150.png 300w, /wp-content/uploads/2023/10/rnli-logo-1024x512.png 1024w, /wp-content/uploads/2023/10/rnli-logo.png 1200w" width="768"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -442,150 +587,30 @@
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4940 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws category-vsan-vmware tag-storage tag-vmware-cloud-on-aws tag-vsan tag-vsan-esa">
-<a aria-hidden="true" aria-label="VMC – vSAN ESA" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6560 post type-post status-publish format-standard has-post-thumbnail hentry category-docker category-portainer category-synology tag-homelab tag-portainer tag-synology">
+<a aria-hidden="true" aria-label="How to Fix Portainer Agent Not Starting On Synology DSM" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/03/portainer-agent-on-synology-dsm/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="VMC – vSAN ESA" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="324" loading="lazy" sizes="(max-width: 550px) 100vw, 550px" src="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg" srcset="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg 550w, /wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1-300x177.jpg 300w" width="550"/> </div>
+<img alt="How to Fix Portainer Agent Not Starting On Synology DSM" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="528" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.png" srcset="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.png 768w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-300x206.png 300w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1024x705.png 1024w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1536x1057.png 1536w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-2048x1409.png 2048w" width="768"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> | <a class="category-link-vsan-vmware" href="/category/vmware/vsan-vmware/" rel="tag">vSAN</a> </span>
+<a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-portainer" href="/category/portainer/" rel="tag">Portainer</a> | <a class="category-link-synology" href="/category/synology/" rel="tag">Synology</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/" rel="bookmark">VMC – vSAN ESA</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2025/03/portainer-agent-on-synology-dsm/" rel="bookmark">How to Fix Portainer Agent Not Starting On Synology DSM</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-11-17T11:29:42+00:00" itemprop="datePublished">November 17, 2023</time><time class="updated" datetime="2024-07-10T10:40:28+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+<time class="entry-date published" datetime="2025-03-11T12:06:39+00:00" itemprop="datePublished">March 11, 2025</time><time class="updated" datetime="2025-10-01T15:40:44+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>An Overview of vSAN ESA in VMC </p>
+<p>How to fix Portainer Agent not starting on Synology</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/">
-				Read More<span class="screen-reader-text"> VMC – vSAN ESA</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6895 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-vmware-cloud-on-aws">
-<a aria-hidden="true" aria-label="VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/08/vmc-host-deepdive/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="222" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/02/Picture-1-768x222.png" srcset="/wp-content/uploads/2025/02/Picture-1-768x222.png 768w, /wp-content/uploads/2025/02/Picture-1-300x87.png 300w, /wp-content/uploads/2025/02/Picture-1.png 967w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/08/vmc-host-deepdive/" rel="bookmark">VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-08-14T12:32:01+00:00" itemprop="datePublished">August 14, 2025</time><time class="updated" datetime="2025-10-01T15:30:40+00:00" itemprop="dateModified">October 1, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3 I3en I4i CPU Processor Name Intel Xeon E5-2686 v4  Intel Xeon Platinum 8175 Intel Xeon 8375c No of…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2025/08/vmc-host-deepdive/">
-				Read More<span class="screen-reader-text"> VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5945 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-truenas-scale tag-homelab tag-storage">
-<a aria-hidden="true" aria-label="Can you really squeeze 96TB in 1U ?" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/09/can-you-really-squeeze-96tb-in-1u/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Can you really squeeze 96TB in 1U ?" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="435" loading="lazy" sizes="auto, (max-width: 758px) 100vw, 758px" src="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png" srcset="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png 758w, /wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter-300x172.png 300w" width="758"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/09/can-you-really-squeeze-96tb-in-1u/" rel="bookmark">Can you really squeeze 96TB in 1U ?</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-09-12T12:39:16+00:00" itemprop="datePublished">September 12, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>Yes, that’s a clickbait title. But technically it’s possible if I dropped all drive redundancy… I recently saw an advert for a server that was just too good to be true. It promised to bring a huge amount of storage and future options in a quite hard-to-believe 1U. The price it was on offer for…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2024/09/can-you-really-squeeze-96tb-in-1u/">
-				Read More<span class="screen-reader-text"> Can you really squeeze 96TB in 1U ?</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-347 post type-post status-publish format-standard has-post-thumbnail hentry category-nutanix tag-cli tag-nutanix">
-<a aria-hidden="true" aria-label="Nutanix Command Reference Guide" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2018/06/nutanix-command-reference-guide/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Nutanix Command Reference Guide" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="196" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-768x196.jpg" srcset="/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-768x196.jpg 768w, /wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-300x77.jpg 300w, /wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-1024x262.jpg 1024w, /wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-1536x392.jpg 1536w, /wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg 1718w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-nutanix" href="/category/nutanix/" rel="tag">Nutanix</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2018/06/nutanix-command-reference-guide/" rel="bookmark">Nutanix Command Reference Guide</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2018-06-05T20:59:24+00:00" itemprop="datePublished">June 5, 2018</time><time class="updated" datetime="2024-07-10T09:17:53+00:00" itemprop="dateModified">July 10, 2024</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>A list of useful Nutanix Commands</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2018/06/nutanix-command-reference-guide/">
-				Read More<span class="screen-reader-text"> Nutanix Command Reference Guide</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-7275 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware-cloud-on-aws tag-ntp tag-vmware-cloud-on-aws">
-<a aria-hidden="true" aria-label="Time in a VMC Environment" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/12/time-in-a-vmc-environment/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Time in a VMC Environment" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="222" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/02/Picture-1-768x222.png" srcset="/wp-content/uploads/2025/02/Picture-1-768x222.png 768w, /wp-content/uploads/2025/02/Picture-1-300x87.png 300w, /wp-content/uploads/2025/02/Picture-1.png 967w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/12/time-in-a-vmc-environment/" rel="bookmark">Time in a VMC Environment</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published updated" datetime="2025-12-08T14:03:44+00:00" itemprop="dateModified">December 8, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Time VMC allows you to utilise the Amazon…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2025/12/time-in-a-vmc-environment/">
-				Read More<span class="screen-reader-text"> Time in a VMC Environment</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2025/03/portainer-agent-on-synology-dsm/">
+				Read More<span class="screen-reader-text"> How to Fix Portainer Agent Not Starting On Synology DSM</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -657,5 +682,66 @@ var kadenceConfig = {"screenReader":{"expand":"Child menu","expandOf":"Child men
 var kadenceSlideConfig = {"of":"of","to":"to","slide":"Slide","next":"Next","prev":"Previous"};
 </script>
 <script id="wpo_min-footer-0-js" src="/wp-content/cache/wpo-minify/1765990838/assets/wpo-minify-footer-20ef1812.min.js"></script>
-</body>
+<script>
+(function() {
+    document.querySelectorAll('.copy-code-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var pre = this.previousElementSibling;
+            var code = pre.querySelector('code') || pre;
+            var text = code.textContent || code.innerText;
+            
+            // Copy to clipboard
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(function() {
+                    // Success feedback
+                    button.textContent = '✅ Copied!';
+                    button.style.background = '#48bb78';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                        button.style.background = '#2d3748';
+                    }, 2000);
+                }).catch(function() {
+                    button.textContent = '❌ Failed';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                    }, 2000);
+                });
+            } else {
+                // Fallback for older browsers
+                var textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.style.position = 'fixed';
+                textarea.style.opacity = '0';
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    document.execCommand('copy');
+                    button.textContent = '✅ Copied!';
+                    button.style.background = '#48bb78';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                        button.style.background = '#2d3748';
+                    }, 2000);
+                } catch (err) {
+                    button.textContent = '❌ Failed';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                    }, 2000);
+                }
+                document.body.removeChild(textarea);
+            }
+        });
+        
+        // Hover effects
+        button.addEventListener('mouseenter', function() {
+            this.style.opacity = '1';
+            this.style.background = '#4a5568';
+        });
+        button.addEventListener('mouseleave', function() {
+            this.style.opacity = '0.8';
+            this.style.background = '#2d3748';
+        });
+    });
+})();
+</script></body>
 </html>

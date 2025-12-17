@@ -215,7 +215,7 @@
 <figure class="wp-block-image size-large"><img alt="" class="wp-image-6414" decoding="async" height="491" loading="eager" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2025/01/HoarderApp-1024x491.png" srcset="/wp-content/uploads/2025/01/HoarderApp-1024x491.png 1024w, /wp-content/uploads/2025/01/HoarderApp-300x144.png 300w, /wp-content/uploads/2025/01/HoarderApp-768x368.png 768w, /wp-content/uploads/2025/01/HoarderApp.png 1344w" width="1024"/></figure>
 <h2 class="wp-block-heading" id="hoarder-install">Hoarder Install</h2>
 <p>Snippet from my docker-compose.yml</p>
-<pre class="wp-block-code"><code>Hoarder
+<div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code>Hoarder
   hoarder:
     image: ghcr.io/hoarder-app/hoarder:${HOARDER_VERSION:-release}
     restart: unless-stopped
@@ -260,13 +260,23 @@
     environment:
       MEILI_NO_ANALYTICS: "true"
     volumes:
-      - ./meilisearch:/meili_data</code></pre>
+      - ./meilisearch:/meili_data</code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
+                padding: 6px 12px; background: #2d3748; color: #fff; 
+                border: 1px solid #4a5568; border-radius: 4px; 
+                cursor: pointer; font-size: 12px; font-family: sans-serif;
+                opacity: 0.8; transition: opacity 0.2s, background 0.2s;
+                z-index: 10;">📋 Copy</button></div>
 <p>.env  snippet file</p>
-<pre class="wp-block-code"><code>
+<div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code>
 OLLAMA_BASE_URL=http://ollama:11434
 INFERENCE_TEXT_MODEL=llama3.1:8b
 INFERENCE_IMAGE_MODEL=llava
-</code></pre>
+</code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
+                padding: 6px 12px; background: #2d3748; color: #fff; 
+                border: 1px solid #4a5568; border-radius: 4px; 
+                cursor: pointer; font-size: 12px; font-family: sans-serif;
+                opacity: 0.8; transition: opacity 0.2s, background 0.2s;
+                z-index: 10;">📋 Copy</button></div>
 <h2 class="wp-block-heading" id="ai-connection">Export from Pocket</h2>
 <p>Luckily, Pocket has an export function that will dump all of your saved URL’s and tags into a single file. This can be run by navigating to https://getpocket.com/export when logged in.</p>
 <h2 class="wp-block-heading" id="import-to-hoarder">Import to Hoarder</h2>
@@ -277,7 +287,7 @@ INFERENCE_IMAGE_MODEL=llava
 <p>When the URLs are loaded. Hoarder passes the URL’s into a headless Chrome to gather the data from that page. It then index’s the contents and then passes the contents to Ollama to apply appropriate tags.</p>
 <h3 class="wp-block-heading" id="ai-prompt">AI Prompt</h3>
 <p>You can tweak the AI prompt that is sent over to Ollama. In my case I have just used the default as it looked like a good starting point. The prompt is</p>
-<pre class="wp-block-code"><code>You are a bot in a read-it-later app and your responsibility is to help with automatic tagging.
+<div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code>You are a bot in a read-it-later app and your responsibility is to help with automatic tagging.
 Please analyze the text between the sentences "CONTENT START HERE" and "CONTENT END HERE" and suggest relevant tags that describe its key themes, topics, and main ideas. The rules are:
 - Aim for a variety of tags, including broad categories, specific keywords, and potential sub-genres.
 - The tags language must be in english.
@@ -291,7 +301,12 @@ CONTENT START HERE
 &lt;CONTENT_HERE&gt;
 
 CONTENT END HERE
-You must respond in JSON with the key "tags" and the value is an array of string tags.</code></pre>
+You must respond in JSON with the key "tags" and the value is an array of string tags.</code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
+                padding: 6px 12px; background: #2d3748; color: #fff; 
+                border: 1px solid #4a5568; border-radius: 4px; 
+                cursor: pointer; font-size: 12px; font-family: sans-serif;
+                opacity: 0.8; transition: opacity 0.2s, background 0.2s;
+                z-index: 10;">📋 Copy</button></div>
 <p>The process of gathering all the webpages, indexing them and analysing with AI took around an hour with my setup. I believe that Hoarder has some internal throttles to try and avoid tripping anti-bot tools.</p>
 <p>You can monitor this process in the admin section. I was also keen to see the stats on my graphics card while this was running so I ran NVTOP on the VM while some AI processing was running.</p>
 <figure class="wp-block-image size-large"><img alt="" class="wp-image-6447" decoding="async" height="329" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.00.23-1024x329.png" srcset="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.00.23-1024x329.png 1024w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.00.23-300x96.png 300w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.00.23-768x247.png 768w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.00.23-1536x494.png 1536w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.00.23-2048x659.png 2048w" width="1024"/></figure>
@@ -327,180 +342,176 @@ You must respond in JSON with the key "tags" and the value is an array of string
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6695 post type-post status-publish format-standard has-post-thumbnail hentry category-mikrotik category-networking tag-homelab tag-mikrotik tag-networking">
-<a aria-hidden="true" aria-label="Home Network Upgrade" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/09/home-network-upgrade/" role="presentation" tabindex="-1">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3229 post type-post status-publish format-standard has-post-thumbnail hentry category-automation category-homelab category-vmware tag-automation tag-hashicorp tag-homelab tag-packer">
+<a aria-hidden="true" aria-label="Template Deployment with Packer" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2021/01/hashicorp-packer/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="CRS-504" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="427" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2024/09/s-l1600-768x427.jpg" srcset="/wp-content/uploads/2024/09/s-l1600-768x427.jpg 768w, /wp-content/uploads/2024/09/s-l1600-300x167.jpg 300w, /wp-content/uploads/2024/09/s-l1600-1024x569.jpg 1024w, /wp-content/uploads/2024/09/s-l1600.jpg 1280w" width="768"/> </div>
+<img alt="Template Deployment with Packer" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="287" loading="lazy" sizes="auto, (max-width: 287px) 100vw, 287px" src="/wp-content/uploads/2021/01/logo_packer.png" srcset="/wp-content/uploads/2021/01/logo_packer.png 287w, /wp-content/uploads/2021/01/logo_packer-150x150.png 150w" width="287"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-mikrotik" href="/category/mikrotik/" rel="tag">Mikrotik</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> </span>
+<a class="category-link-automation" href="/category/automation/" rel="tag">Automation</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/09/home-network-upgrade/" rel="bookmark">Home Network Upgrade</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2021/01/hashicorp-packer/" rel="bookmark">Template Deployment with Packer</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-09-09T08:25:08+00:00" itemprop="datePublished">September 9, 2024</time><time class="updated" datetime="2025-10-24T14:21:56+00:00" itemprop="dateModified">October 24, 2025</time> </span>
+<time class="entry-date published" datetime="2021-01-21T22:26:10+00:00" itemprop="datePublished">January 21, 2021</time><time class="updated" datetime="2025-12-08T12:50:22+00:00" itemprop="dateModified">December 8, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>My journey to superfast networking in my homelab</p>
+<p>Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2024/09/home-network-upgrade/">
-				Read More<span class="screen-reader-text"> Home Network Upgrade</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2021/01/hashicorp-packer/">
+				Read More<span class="screen-reader-text"> Template Deployment with Packer</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6560 post type-post status-publish format-standard has-post-thumbnail hentry category-docker category-portainer category-synology tag-homelab tag-portainer tag-synology">
-<a aria-hidden="true" aria-label="How to Fix Portainer Agent Not Starting On Synology DSM" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/03/portainer-agent-on-synology-dsm/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5547 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-nutanix category-vmware tag-homelab tag-nutanix tag-vmware">
+<a aria-hidden="true" aria-label="New Nodes" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/07/new-nodes/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="How to Fix Portainer Agent Not Starting On Synology DSM" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="528" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.png" srcset="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.png 768w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-300x206.png 300w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1024x705.png 1024w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1536x1057.png 1536w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-2048x1409.png 2048w" width="768"/> </div>
+<img alt="New Nodes" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="149" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg" srcset="/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg 768w, /wp-content/uploads/2024/07/IMG_6629-300x58.jpeg 300w, /wp-content/uploads/2024/07/IMG_6629-1024x198.jpeg 1024w, /wp-content/uploads/2024/07/IMG_6629-1536x297.jpeg 1536w, /wp-content/uploads/2024/07/IMG_6629-2048x397.jpeg 2048w" width="768"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-portainer" href="/category/portainer/" rel="tag">Portainer</a> | <a class="category-link-synology" href="/category/synology/" rel="tag">Synology</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-nutanix" href="/category/nutanix/" rel="tag">Nutanix</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/03/portainer-agent-on-synology-dsm/" rel="bookmark">How to Fix Portainer Agent Not Starting On Synology DSM</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2024/07/new-nodes/" rel="bookmark">New Nodes</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-03-11T12:06:39+00:00" itemprop="datePublished">March 11, 2025</time><time class="updated" datetime="2025-10-01T15:40:44+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2024-07-02T08:01:04+00:00" itemprop="datePublished">July 2, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>How to fix Portainer Agent not starting on Synology</p>
+<p>I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice Bill of Materials Rescue IPMI…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2025/03/portainer-agent-on-synology-dsm/">
-				Read More<span class="screen-reader-text"> How to Fix Portainer Agent Not Starting On Synology DSM</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2024/07/new-nodes/">
+				Read More<span class="screen-reader-text"> New Nodes</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6247 post type-post status-publish format-standard has-post-thumbnail hentry category-truenas-scale category-vmware category-vsan-vmware category-vsphere tag-homelab tag-trim tag-unmap tag-vmware tag-zfs">
-<a aria-hidden="true" aria-label="How to Run ZFS on VMware vSphere: Setup Guide and Best Practices" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/12/zfs-on-vmware/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4043 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-networking category-storage category-vmware tag-homelab tag-mikrotik">
+<a aria-hidden="true" aria-label="100Gb/s in my Homelab" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/12/100gb-s-in-my-homelab-sort-of/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="How to Run ZFS on VMware vSphere: Setup Guide and Best Practices" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="132" loading="lazy" src="/wp-content/uploads/2024/12/ZFS.jpg" width="200"/> </div>
+<img alt="100Gb/s in my Homelab" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="346" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/04/2157_hi_res-768x346.png" srcset="/wp-content/uploads/2023/04/2157_hi_res-768x346.png 768w, /wp-content/uploads/2023/04/2157_hi_res-300x135.png 300w, /wp-content/uploads/2023/04/2157_hi_res-1024x462.png 1024w, /wp-content/uploads/2023/04/2157_hi_res-1536x693.png 1536w, /wp-content/uploads/2023/04/2157_hi_res.png 1889w" width="768"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vsan-vmware" href="/category/vmware/vsan-vmware/" rel="tag">vSAN</a> | <a class="category-link-vsphere" href="/category/vsphere/" rel="tag">vSphere</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/12/zfs-on-vmware/" rel="bookmark">How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2022/12/100gb-s-in-my-homelab-sort-of/" rel="bookmark">100Gb/s in my Homelab</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-12-18T17:47:57+00:00" itemprop="datePublished">December 18, 2024</time><time class="updated" datetime="2025-10-01T15:30:55+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2022-12-19T10:09:58+00:00" itemprop="datePublished">December 19, 2022</time><time class="updated" datetime="2023-11-11T20:57:34+00:00" itemprop="dateModified">November 11, 2023</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>Table of Contents Copy on Write Disk ID’s Trim I have run a number of systems utilising ZFS since the earliest days of my homelab using Nexenta all the way back in 2010. The image below is my lab at the time with an IBM Head unit that I think had 18GB of RAM 6x450GB…</p>
+<p>For a while, I’ve been looking to update the networking at the core of my homelab. I have had some great results with the current setup utilising a number of DAC’s but there were a couple of things that were annoying me. Then MikroTik dropped the CRS504-4XQ-IN and if the price wasn’t horrendous then that…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2024/12/zfs-on-vmware/">
-				Read More<span class="screen-reader-text"> How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2022/12/100gb-s-in-my-homelab-sort-of/">
+				Read More<span class="screen-reader-text"> 100Gb/s in my Homelab</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6800 post type-post status-publish format-standard has-post-thumbnail hentry category-ansible category-homelab tag-ansible tag-homelab tag-iac tag-semaphore">
-<a aria-hidden="true" aria-label="Managing my Homelab with SemaphoreUI" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/09/managing-my-homelab-with-semaphoreui/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5945 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-truenas-scale tag-homelab tag-storage">
+<a aria-hidden="true" aria-label="Can you really squeeze 96TB in 1U ?" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/09/can-you-really-squeeze-96tb-in-1u/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="Managing my Homelab with SemaphoreUI" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="768" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/07/semaphore-768x768.png" srcset="/wp-content/uploads/2025/07/semaphore-768x768.png 768w, /wp-content/uploads/2025/07/semaphore-300x300.png 300w, /wp-content/uploads/2025/07/semaphore-150x150.png 150w, /wp-content/uploads/2025/07/semaphore.png 1024w" width="768"/> </div>
+<img alt="Can you really squeeze 96TB in 1U ?" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="435" loading="lazy" sizes="auto, (max-width: 758px) 100vw, 758px" src="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png" srcset="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png 758w, /wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter-300x172.png 300w" width="758"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-ansible" href="/category/ansible/" rel="tag">Ansible</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/09/managing-my-homelab-with-semaphoreui/" rel="bookmark">Managing my Homelab with SemaphoreUI</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2024/09/can-you-really-squeeze-96tb-in-1u/" rel="bookmark">Can you really squeeze 96TB in 1U ?</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-09-02T16:01:48+00:00" itemprop="datePublished">September 2, 2025</time><time class="updated" datetime="2025-10-01T15:22:09+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2024-09-12T12:39:16+00:00" itemprop="datePublished">September 12, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>I recently stumbled across Semaphore, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running easily with…</p>
+<p>Yes, that’s a clickbait title. But technically it’s possible if I dropped all drive redundancy… I recently saw an advert for a server that was just too good to be true. It promised to bring a huge amount of storage and future options in a quite hard-to-believe 1U. The price it was on offer for…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2025/09/managing-my-homelab-with-semaphoreui/">
-				Read More<span class="screen-reader-text"> Managing my Homelab with SemaphoreUI</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2024/09/can-you-really-squeeze-96tb-in-1u/">
+				Read More<span class="screen-reader-text"> Can you really squeeze 96TB in 1U ?</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4627 post type-post status-publish format-standard has-post-thumbnail hentry category-runecast category-vmware tag-homelab tag-powercli tag-runecast tag-vmware">
-<a aria-hidden="true" aria-label="Runecast Remediation Script’s" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/05/runecast-remediation-scripts/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Runecast Remediation Script’s" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="300" loading="lazy" sizes="auto, (max-width: 571px) 100vw, 571px" src="/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png" srcset="/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png 571w, /wp-content/uploads/2023/05/Runecast-Solutions-Ltd-300x158.png 300w" width="571"/> </div>
-</a><!-- .post-thumbnail -->
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3703 post type-post status-publish format-standard hentry category-homelab category-veeam category-vmware tag-desired-state tag-homelab tag-vmware">
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-runecast" href="/category/runecast/" rel="tag">Runecast</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-veeam" href="/category/veeam/" rel="tag">Veeam</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/05/runecast-remediation-scripts/" rel="bookmark">Runecast Remediation Script’s</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2022/01/lab-update-part-5-desired-workloads/" rel="bookmark">Lab Update –  Desired Workloads</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-05-16T10:38:45+00:00" itemprop="datePublished">May 16, 2023</time><time class="updated" datetime="2023-11-17T15:28:57+00:00" itemprop="dateModified">November 17, 2023</time> </span>
+<time class="entry-date published" datetime="2022-01-06T19:23:11+00:00" itemprop="datePublished">January 6, 2022</time><time class="updated" datetime="2023-11-11T21:15:26+00:00" itemprop="dateModified">November 11, 2023</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>I am a huge fan of the Runecast product and luckily as a vExpert they give out NFR licences for my lab. One of the really cool features I wanted to mention today was the remediation script function. I have been playing with storage a lot in my lab recently as part of a wider…</p>
+<p>My lab is always undergoing change. Partially as I want to try new things or new ways of doing things. Sometimes because I break things (not always by accident) sometimes it’s a great way to learn…. I decided to list the workloads I am looking to run (some of these are already in place) Infrastucture…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2023/05/runecast-remediation-scripts/">
-				Read More<span class="screen-reader-text"> Runecast Remediation Script’s</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2022/01/lab-update-part-5-desired-workloads/">
+				Read More<span class="screen-reader-text"> Lab Update –  Desired Workloads</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-266 post type-post status-publish format-standard has-post-thumbnail hentry category-aws category-hosting tag-aws tag-lambda">
-<a aria-hidden="true" aria-label="AWS Status Page – Monitoring Included" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2018/05/aws-status-page-monitoring-included/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3573 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware tag-homelab tag-supermicro tag-vmware">
+<a aria-hidden="true" aria-label="Lab Update – Compute" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/01/lab-update-part-1-compute/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="AWS Status Page – Monitoring Included" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="307" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-768x307.png" srcset="/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-768x307.png 768w, /wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-300x120.png 300w, /wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-1024x410.png 1024w, /wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-1536x614.png 1536w, /wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png 2000w" width="768"/> </div>
+</div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-aws" href="/category/aws/" rel="tag">AWS</a> | <a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2018/05/aws-status-page-monitoring-included/" rel="bookmark">AWS Status Page – Monitoring Included</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2022/01/lab-update-part-1-compute/" rel="bookmark">Lab Update – Compute</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2018-05-15T21:41:14+00:00" itemprop="datePublished">May 15, 2018</time><time class="updated" datetime="2025-10-01T15:22:16+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2022-01-06T11:12:00+00:00" itemprop="datePublished">January 6, 2022</time><time class="updated" datetime="2024-07-10T10:42:27+00:00" itemprop="dateModified">July 10, 2024</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute…</p>
+<p>Quite a few changes have happened in the lab recently. so I decided to do a multipart blog on the changes. The refresh was triggered by the purchase of a SuperMicro Server (2027TR-H71FRF) chassis with 4x X9DRT Nodes / Blades. This is known as a BigTwin configuration in SuperMicro parlance. This is something I was…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2018/05/aws-status-page-monitoring-included/">
-				Read More<span class="screen-reader-text"> AWS Status Page – Monitoring Included</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2022/01/lab-update-part-1-compute/">
+				Read More<span class="screen-reader-text"> Lab Update – Compute</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -572,5 +583,66 @@ var kadenceConfig = {"screenReader":{"expand":"Child menu","expandOf":"Child men
 var kadenceSlideConfig = {"of":"of","to":"to","slide":"Slide","next":"Next","prev":"Previous"};
 </script>
 <script id="wpo_min-footer-0-js" src="/wp-content/cache/wpo-minify/1765990838/assets/wpo-minify-footer-20ef1812.min.js"></script>
-</body>
+<script>
+(function() {
+    document.querySelectorAll('.copy-code-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var pre = this.previousElementSibling;
+            var code = pre.querySelector('code') || pre;
+            var text = code.textContent || code.innerText;
+            
+            // Copy to clipboard
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(function() {
+                    // Success feedback
+                    button.textContent = '✅ Copied!';
+                    button.style.background = '#48bb78';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                        button.style.background = '#2d3748';
+                    }, 2000);
+                }).catch(function() {
+                    button.textContent = '❌ Failed';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                    }, 2000);
+                });
+            } else {
+                // Fallback for older browsers
+                var textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.style.position = 'fixed';
+                textarea.style.opacity = '0';
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    document.execCommand('copy');
+                    button.textContent = '✅ Copied!';
+                    button.style.background = '#48bb78';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                        button.style.background = '#2d3748';
+                    }, 2000);
+                } catch (err) {
+                    button.textContent = '❌ Failed';
+                    setTimeout(function() {
+                        button.textContent = '📋 Copy';
+                    }, 2000);
+                }
+                document.body.removeChild(textarea);
+            }
+        });
+        
+        // Hover effects
+        button.addEventListener('mouseenter', function() {
+            this.style.opacity = '1';
+            this.style.background = '#4a5568';
+        });
+        button.addEventListener('mouseleave', function() {
+            this.style.opacity = '0.8';
+            this.style.background = '#2d3748';
+        });
+    });
+})();
+</script></body>
 </html>
