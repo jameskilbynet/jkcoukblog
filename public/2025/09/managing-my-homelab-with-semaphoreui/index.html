@@ -22,7 +22,7 @@
 <meta content="IAC" property="article:tag"/>
 <meta content="Semaphore" property="article:tag"/>
 <meta content="Ansible" property="article:section"/>
-<meta content="2025-10-01T15:22:09+00:00" property="og:updated_time"/>
+<meta content="2025-12-18T00:03:28+00:00" property="og:updated_time"/>
 <meta content="/wp-content/uploads/2025/07/semaphore.png" property="og:image"/>
 <meta content="/wp-content/uploads/2025/07/semaphore.png" property="og:image:secure_url"/>
 <meta content="1024" property="og:image:width"/>
@@ -30,7 +30,7 @@
 <meta content="Managing my Homelab with SemaphoreUI" property="og:image:alt"/>
 <meta content="image/png" property="og:image:type"/>
 <meta content="2025-09-02T16:01:48+00:00" property="article:published_time"/>
-<meta content="2025-10-01T15:22:09+00:00" property="article:modified_time"/>
+<meta content="2025-12-18T00:03:28+00:00" property="article:modified_time"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Master Your Homelab With SemaphoreUI Today!" name="twitter:title"/>
 <meta content="Get started with SemaphoreUI for efficient homelab management!" name="twitter:description"/>
@@ -39,7 +39,7 @@
 <meta content="James" name="twitter:data1"/>
 <meta content="Time to read" name="twitter:label2"/>
 <meta content="8 minutes" name="twitter:data2"/>
-<script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"/#person","name":"Jameskilbycouk","logo":{"@type":"ImageObject","@id":"/#logo","url":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","contentUrl":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","caption":"Jameskilbycouk","inLanguage":"en-GB","width":"1024","height":"1024"},"image":{"@type":"ImageObject","@id":"/#logo","url":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","contentUrl":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","caption":"Jameskilbycouk","inLanguage":"en-GB","width":"1024","height":"1024"},"url":"https://jameskilby.co.uk"},{"@type":"WebSite","@id":"/#website","url":"https://jameskilby.co.uk","name":"Jameskilbycouk","publisher":{"@id":"/#person"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"/wp-content/uploads/2025/07/semaphore.png","url":"/wp-content/uploads/2025/07/semaphore.png","width":"1024","height":"1024","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"/2025/09/managing-my-homelab-with-semaphoreui/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://jameskilby.co.uk","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"/2025/09/managing-my-homelab-with-semaphoreui/","name":"Managing my Homelab with SemaphoreUI"}}]},{"@type":"WebPage","@id":"/2025/09/managing-my-homelab-with-semaphoreui/#webpage","url":"/2025/09/managing-my-homelab-with-semaphoreui/","name":"Managing My Homelab With SemaphoreUI - Jameskilbycouk","datePublished":"2025-09-02T16:01:48+00:00","dateModified":"2025-10-01T15:22:09+00:00","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/wp-content/uploads/2025/07/semaphore.png"},"inLanguage":"en-GB","breadcrumb":{"@id":"/2025/09/managing-my-homelab-with-semaphoreui/#breadcrumb"}},{"@type":"Person","@id":"/author/admin/","name":"James","url":"/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","caption":"James","inLanguage":"en-GB"},"sameAs":["https://wordpress.jameskilby.cloud"]},{"@type":"BlogPosting","headline":"Managing My Homelab With SemaphoreUI - Jameskilbycouk","datePublished":"2025-09-02T16:01:48+00:00","dateModified":"2025-10-01T15:22:09+00:00","author":{"@id":"/author/admin/","name":"James"},"publisher":{"@id":"/#person"},"description":"Learn to manage your homelab using SemaphoreUI with Docker. Follow our guide to streamline your DevOps tools like Ansible and Terraform today!","name":"Managing My Homelab With SemaphoreUI - Jameskilbycouk","@id":"/2025/09/managing-my-homelab-with-semaphoreui/#richSnippet","isPartOf":{"@id":"/2025/09/managing-my-homelab-with-semaphoreui/#webpage"},"image":{"@id":"/wp-content/uploads/2025/07/semaphore.png"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"/2025/09/managing-my-homelab-with-semaphoreui/#webpage"},"wordCount":1576,"timeRequired":"PT8M","articleBody":"I recently stumbled across Semaphore , which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running easily with SemaphoreUI in Docker and use it to execute a basic Ansible playbook to deploy Docker onto an Ubuntu Server. Table of Contents Pre-reqs Somewhere to run your Semaphore server. I chose to use a Docker container on one of my existing hosts. Git Repo. I am using GitHub. My code is all stored in a public repo here so others can follow along. SSH Keys/Authentication into the server to be provisioned. Docker Configuration This is the config that I am using (with some environment variables obscured). If you want to build your own docker run or compose file they have built a website that helps you build your docker configuration. I love this. That is what I used to build the below config. services: semaphore: image: semaphoreui/semaphore:v2.15.12-powershell7.5.0 labels: - \"com.example.description=semaphore\" - \"traefik.enable=true\" - \"traefik.http.routers.semaphore.rule=Host(`semaphore.jameskilby.cloud`)\" - \"traefik.http.routers.semaphore.entrypoints=https\" - \"traefik.http.routers.semaphore.tls=true\" - \"traefik.http.routers.semaphore.tls.certresolver=cloudflare\" - \"traefik.http.services.semaphore.loadbalancer.server.port=3000\" networks: traefik: environment: SEMAPHORE_DB_DIALECT: bolt SEMAPHORE_ADMIN: admin SEMAPHORE_ADMIN_PASSWORD: XXXXXX SEMAPHORE_ADMIN_NAME: James SEMAPHORE_ADMIN_EMAIL: email@jameskilby.cloud SEMAPHORE_RUNNER_REGISTRATION_TOKEN: \"mwsEdFU51pZDjkZsDsmws8yOvfdvdf\" SEMAPHORE_EMAIL_SENDER: \"semaphore@jameskilby.cloud\" SEMAPHORE_EMAIL_HOST: \"mail.jameskilby.cloud\" SEMAPHORE_EMAIL_PORT: \"25\" SEMAPHORE_EMAIL_SECURE: \"True\" volumes: - semaphore_data:/var/lib/semaphore - semaphore_config:/etc/semaphore - semaphore_tmp:/tmp/semaphore volumes: semaphore_data: semaphore_config: semaphore_tmp: networks: traefik: external: true Playbook Walkthrough Once Semaphore is up and running, you can start setting up your automation pipelines. I will step through an example Ansible Playbook to deploy Docker. This playbook can be found here . Let me walk you through the playbook, then we will demonstrate using Semaphore to execute this. Playbook Metadata - name: Install Docker on supported Ubuntu hosts hosts: all become: yes This defines the hosts to run the playbook on (for now, this should just be set to all), and the become option allows it to become root if needed. vars: docker_gpg_path: /etc/apt/keyrings/docker.gpg docker_repo: \"deb [arch=amd64 signed-by={{ docker_gpg_path }}] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable\" This defines the variables of where we will store the Docker GPG Key and the Docker repo We then use Ansible to define some variables and to ensure we are getting the correct Docker release based on the Version of Ubuntu. Define Variables tasks: - name: Ensure required system packages are present apt: name: - apt-transport-https - ca-certificates - curl - gnupg - lsb-release state: present update_cache: yes The next block ensures that the required packages are present on the system. Handle reboots - name: Check if a reboot is required stat: path: /var/run/reboot-required register: reboot_required - name: Reboot the machine if required reboot: msg: \"Reboot initiated by Ansible due to package upgrade.\" pre_reboot_delay: 60 reboot_timeout: 600 post_reboot_delay: 60 when: reboot_required.stat.exists Preps APT and stores GPG Keys - name: Ensure /etc/apt/keyrings directory exists file: path: /etc/apt/keyrings state: directory mode: '0755' - name: Download Docker GPG key in dearmored format shell: | curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o {{ docker_gpg_path }} args: creates: \"{{ docker_gpg_path }}\" - name: Set permissions on Docker GPG key file: path: \"{{ docker_gpg_path }}\" mode: '0644' - name: Set permissions on Docker GPG key file: path: \"{{ docker_gpg_path }}\" mode: '0644' Install Docker and ensure it’s running - name: Install Docker Engine and related packages apt: name: - docker-ce - docker-ce-cli - containerd.io - docker-buildx-plugin - docker-compose-plugin state: latest - name: Ensure Docker service is running and enabled service: name: docker state: started enabled: true Semaphore Concepts So now that we understand the playbook, let’s go over some of the Semaphore concepts Projects First we need a project. A project is used for separating out management activity. This could be as Prod/Test/Dev etc or for managing different systems or applications. To keep everything easy right now I am running everything in a single project. I will likely split this out a bit later. Task Templates The task templates are the actions that we want Sempahore to perform for us. In the example, I will just be using it to de"}]}</script>
+<script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"/#person","name":"Jameskilbycouk","logo":{"@type":"ImageObject","@id":"/#logo","url":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","contentUrl":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","caption":"Jameskilbycouk","inLanguage":"en-GB","width":"1024","height":"1024"},"image":{"@type":"ImageObject","@id":"/#logo","url":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","contentUrl":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","caption":"Jameskilbycouk","inLanguage":"en-GB","width":"1024","height":"1024"},"url":"https://jameskilby.co.uk"},{"@type":"WebSite","@id":"/#website","url":"https://jameskilby.co.uk","name":"Jameskilbycouk","publisher":{"@id":"/#person"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"/wp-content/uploads/2025/07/semaphore.png","url":"/wp-content/uploads/2025/07/semaphore.png","width":"1024","height":"1024","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"/2025/09/managing-my-homelab-with-semaphoreui/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://jameskilby.co.uk","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"/2025/09/managing-my-homelab-with-semaphoreui/","name":"Managing my Homelab with SemaphoreUI"}}]},{"@type":"WebPage","@id":"/2025/09/managing-my-homelab-with-semaphoreui/#webpage","url":"/2025/09/managing-my-homelab-with-semaphoreui/","name":"Managing My Homelab With SemaphoreUI - Jameskilbycouk","datePublished":"2025-09-02T16:01:48+00:00","dateModified":"2025-12-18T00:03:28+00:00","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/wp-content/uploads/2025/07/semaphore.png"},"inLanguage":"en-GB","breadcrumb":{"@id":"/2025/09/managing-my-homelab-with-semaphoreui/#breadcrumb"}},{"@type":"Person","@id":"/author/admin/","name":"James","url":"/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","caption":"James","inLanguage":"en-GB"},"sameAs":["https://wordpress.jameskilby.cloud"]},{"@type":"BlogPosting","headline":"Managing My Homelab With SemaphoreUI - Jameskilbycouk","datePublished":"2025-09-02T16:01:48+00:00","dateModified":"2025-12-18T00:03:28+00:00","author":{"@id":"/author/admin/","name":"James"},"publisher":{"@id":"/#person"},"description":"Learn to manage your homelab using SemaphoreUI with Docker. Follow our guide to streamline your DevOps tools like Ansible and Terraform today!","name":"Managing My Homelab With SemaphoreUI - Jameskilbycouk","@id":"/2025/09/managing-my-homelab-with-semaphoreui/#richSnippet","isPartOf":{"@id":"/2025/09/managing-my-homelab-with-semaphoreui/#webpage"},"image":{"@id":"/wp-content/uploads/2025/07/semaphore.png"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"/2025/09/managing-my-homelab-with-semaphoreui/#webpage"},"wordCount":1576,"timeRequired":"PT8M","articleBody":"I recently stumbled across Semaphore , which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running easily with SemaphoreUI in Docker and use it to execute a basic Ansible playbook to deploy Docker onto an Ubuntu Server. Table of Contents Pre-reqs Somewhere to run your Semaphore server. I chose to use a Docker container on one of my existing hosts. Git Repo. I am using GitHub. My code is all stored in a public repo here so others can follow along. SSH Keys/Authentication into the server to be provisioned. Docker Configuration This is the config that I am using (with some environment variables obscured). If you want to build your own docker run or compose file they have built a website that helps you build your docker configuration. I love this. That is what I used to build the below config. services: semaphore: image: semaphoreui/semaphore:v2.15.12-powershell7.5.0 labels: - \"com.example.description=semaphore\" - \"traefik.enable=true\" - \"traefik.http.routers.semaphore.rule=Host(`semaphore.jameskilby.cloud`)\" - \"traefik.http.routers.semaphore.entrypoints=https\" - \"traefik.http.routers.semaphore.tls=true\" - \"traefik.http.routers.semaphore.tls.certresolver=cloudflare\" - \"traefik.http.services.semaphore.loadbalancer.server.port=3000\" networks: traefik: environment: SEMAPHORE_DB_DIALECT: bolt SEMAPHORE_ADMIN: admin SEMAPHORE_ADMIN_PASSWORD: XXXXXX SEMAPHORE_ADMIN_NAME: James SEMAPHORE_ADMIN_EMAIL: email@jameskilby.cloud SEMAPHORE_RUNNER_REGISTRATION_TOKEN: \"mwsEdFU51pZDjkZsDsmws8yOvfdvdf\" SEMAPHORE_EMAIL_SENDER: \"semaphore@jameskilby.cloud\" SEMAPHORE_EMAIL_HOST: \"mail.jameskilby.cloud\" SEMAPHORE_EMAIL_PORT: \"25\" SEMAPHORE_EMAIL_SECURE: \"True\" volumes: - semaphore_data:/var/lib/semaphore - semaphore_config:/etc/semaphore - semaphore_tmp:/tmp/semaphore volumes: semaphore_data: semaphore_config: semaphore_tmp: networks: traefik: external: true Playbook Walkthrough Once Semaphore is up and running, you can start setting up your automation pipelines. I will step through an example Ansible Playbook to deploy Docker. This playbook can be found here . Let me walk you through the playbook, then we will demonstrate using Semaphore to execute this. Playbook Metadata - name: Install Docker on supported Ubuntu hosts hosts: all become: yes This defines the hosts to run the playbook on (for now, this should just be set to all), and the become option allows it to become root if needed. vars: docker_gpg_path: /etc/apt/keyrings/docker.gpg docker_repo: \"deb [arch=amd64 signed-by={{ docker_gpg_path }}] https://download.docker.com/linux/ubuntu {{ ansible_distribution_release }} stable\" This defines the variables of where we will store the Docker GPG Key and the Docker repo We then use Ansible to define some variables and to ensure we are getting the correct Docker release based on the Version of Ubuntu. Define Variables tasks: - name: Ensure required system packages are present apt: name: - apt-transport-https - ca-certificates - curl - gnupg - lsb-release state: present update_cache: yes The next block ensures that the required packages are present on the system. Handle reboots - name: Check if a reboot is required stat: path: /var/run/reboot-required register: reboot_required - name: Reboot the machine if required reboot: msg: \"Reboot initiated by Ansible due to package upgrade.\" pre_reboot_delay: 60 reboot_timeout: 600 post_reboot_delay: 60 when: reboot_required.stat.exists Preps APT and stores GPG Keys - name: Ensure /etc/apt/keyrings directory exists file: path: /etc/apt/keyrings state: directory mode: '0755' - name: Download Docker GPG key in dearmored format shell: | curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o {{ docker_gpg_path }} args: creates: \"{{ docker_gpg_path }}\" - name: Set permissions on Docker GPG key file: path: \"{{ docker_gpg_path }}\" mode: '0644' - name: Set permissions on Docker GPG key file: path: \"{{ docker_gpg_path }}\" mode: '0644' Install Docker and ensure it’s running - name: Install Docker Engine and related packages apt: name: - docker-ce - docker-ce-cli - containerd.io - docker-buildx-plugin - docker-compose-plugin state: latest - name: Ensure Docker service is running and enabled service: name: docker state: started enabled: true Semaphore Concepts So now that we understand the playbook, let’s go over some of the Semaphore concepts Projects First we need a project. A project is used for separating out management activity. This could be as Prod/Test/Dev etc or for managing different systems or applications. To keep everything easy right now I am running everything in a single project. I will likely split this out a bit later. Task Templates The task templates are the actions that we want Sempahore to perform for us. In the example, I will just be using it to de"}]}</script>
 <!-- /Rank Math WordPress SEO plugin -->
 <link href="/feed/" rel="alternate" title="Jameskilbycouk » Feed" type="application/rss+xml"/>
 <link href="/comments/feed/" rel="alternate" title="Jameskilbycouk » Comments Feed" type="application/rss+xml"/>
@@ -155,11 +155,11 @@
 </div><!-- .entry-taxonomies -->
 <h1 class="entry-title">Managing my Homelab with SemaphoreUI</h1><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-09-02T16:01:48+00:00" itemprop="datePublished">September 2, 2025</time><time class="updated" datetime="2025-10-01T15:22:09+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2025-09-02T16:01:48+00:00" itemprop="datePublished">September 2, 2025</time><time class="updated" datetime="2025-12-18T00:03:28+00:00" itemprop="dateModified">December 18, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><div class="content-freshness-indicator" style="background: #f7fafc; border-left: 4px solid #4299e1; 
             padding: 12px 16px; margin: 20px 0; border-radius: 4px; 
-            font-size: 14px; line-height: 1.6; color: #2d3748;"><span style="font-size: 16px; margin-right: 8px;">📅</span><span><strong>Published: </strong><time datetime="2025-09-02T16:01:48+00:00">September 02, 2025</time><span style="margin: 0 8px; color: #a0aec0;">•</span><strong>Updated: </strong><time datetime="2025-10-01T15:22:09+00:00">October 01, 2025</time></span></div><!-- .entry-header -->
+            font-size: 14px; line-height: 1.6; color: #2d3748;"><span style="font-size: 16px; margin-right: 8px;">📅</span><span><strong>Published: </strong><time datetime="2025-09-02T16:01:48+00:00">September 02, 2025</time><span style="margin: 0 8px; color: #a0aec0;">•</span><strong>Updated: </strong><time datetime="2025-12-18T00:03:28+00:00">December 18, 2025</time></span></div><!-- .entry-header -->
 <div class="entry-content single-content">
 <p>I recently stumbled across <a data-id="https://docs.semaphoreui.com" data-type="link" href="https://docs.semaphoreui.com" rel="noopener" target="_blank">Semaphore</a>, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell.</p>
 <p>It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it.</p>
@@ -202,7 +202,7 @@
 </nav>
 </div>
 <h2 class="wp-block-heading" id="pre-reqs">Pre-reqs</h2>
-<ul>
+<ul class="wp-block-list">
 <li>Somewhere to run your Semaphore server. I chose to use a Docker container on one of my existing hosts.</li>
 <li>Git Repo. I am using GitHub. My code is all stored in a public repo <a href="https://github.com/jameskilbynet/iac/" rel="noopener" target="_blank">here</a> so others can follow along.</li>
 <li>SSH Keys/Authentication into the server to be provisioned.</li>
@@ -355,7 +355,7 @@ networks:
                 cursor: pointer; font-size: 12px; font-family: sans-serif;
                 opacity: 0.8; transition: opacity 0.2s, background 0.2s;
                 z-index: 10;">📋 Copy</button></div>
-
+<p></p>
 <h1 class="wp-block-heading" id="s">Semaphore Concepts</h1>
 <p>So now that we understand the playbook, let’s go over some of the Semaphore concepts</p>
 <h3 class="wp-block-heading" id="projects">Projects</h3>
@@ -366,7 +366,7 @@ networks:
 <p>A schedule is an easy way to run a specified task repeatedly. Fairly self-explanatory, I am using this to run a weekly patching schedule on most of my Ubuntu servers.</p>
 <h3 class="wp-block-heading" id="inventory">Inventory</h3>
 <p>The Inventory specifies hosts to be managed with the appropriate credentials.</p>
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-6979" decoding="async" height="686" loading="lazy" sizes="auto, (max-width: 448px) 100vw, 448px" src="/wp-content/uploads/2025/09/Sempahore-Inventory.png" srcset="/wp-content/uploads/2025/09/Sempahore-Inventory.png 448w, /wp-content/uploads/2025/09/Sempahore-Inventory-196x300.png 196w" width="448"/></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-6979" decoding="async" height="686" loading="eager" sizes="(max-width: 448px) 100vw, 448px" src="/wp-content/uploads/2025/09/Sempahore-Inventory.png" srcset="/wp-content/uploads/2025/09/Sempahore-Inventory.png 448w, /wp-content/uploads/2025/09/Sempahore-Inventory-196x300.png 196w" width="448"/></figure>
 <h3 class="wp-block-heading" id="variable-groups">Variable Groups</h3>
 <p>Variable Groups are used for storing additional variables for an inventory. They must be in the JSON format.</p>
 <p>I am not using these as part of my Docker example.</p>
@@ -374,7 +374,7 @@ networks:
 <p>The key store is for storing all credentials. This is for connecting to remote hosts to execute jobs but also for accessing code repositories. </p>
 <h3 class="wp-block-heading" id="repositaries">Repositories</h3>
 <p>A repository defines where the code that Semaphore executes lives. It’s possible to have multiple repo’s connected. I have a single one defined, and I am using a public repo for two reasons. Firstly, so anyone else can copy the configuration I am using. Secondly to enforce me being more secure and not putting any secrets in any of the code. Something that I sometimes do for speed with my lab.</p>
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-6866" decoding="async" height="80" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2025/07/Semaphore-Repo-1024x80.png" srcset="/wp-content/uploads/2025/07/Semaphore-Repo-1024x80.png 1024w, /wp-content/uploads/2025/07/Semaphore-Repo-300x23.png 300w, /wp-content/uploads/2025/07/Semaphore-Repo-768x60.png 768w, /wp-content/uploads/2025/07/Semaphore-Repo.png 1476w" width="1024"/></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-6866" decoding="async" height="80" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2025/07/Semaphore-Repo-1024x80.png" srcset="/wp-content/uploads/2025/07/Semaphore-Repo-1024x80.png 1024w, /wp-content/uploads/2025/07/Semaphore-Repo-300x23.png 300w, /wp-content/uploads/2025/07/Semaphore-Repo-768x60.png 768w, /wp-content/uploads/2025/07/Semaphore-Repo.png 1476w" width="1024"/></figure>
 <h2 class="wp-block-heading" id="execute">Execute</h2>
 <p>Now that we have gone over the basic concepts.  Let’s deploy Docker using Semaphore.</p>
 <p>For testing, I have spun up a Vanilla Ubuntu 24.04 server to be used as the Docker server and created a new Project to ensure that we are starting from scratch.</p>
@@ -516,7 +516,7 @@ PLAY RECAP *********************************************************************
                 cursor: pointer; font-size: 12px; font-family: sans-serif;
                 opacity: 0.8; transition: opacity 0.2s, background 0.2s;
                 z-index: 10;">📋 Copy</button></div>
-
+<p></p>
 <h2 class="wp-block-heading" id="w-1">Wrap Up</h2>
 <p>I have been really impressed with Sempahore and am migrating more and more of my lab control into it.  I might write some more posts on how I am using it for more complex tasks. The one thing I wish it could do natively is Packer for building templates, but just with Terraform and Ansible, it is making my life so much easier.</p>
 </div><!-- .entry-content -->
@@ -541,10 +541,130 @@ PLAY RECAP *********************************************************************
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4627 post type-post status-publish format-standard has-post-thumbnail hentry category-runecast category-vmware tag-homelab tag-powercli tag-runecast tag-vmware">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6247 post type-post status-publish format-standard has-post-thumbnail hentry category-truenas-scale category-vmware category-vsan-vmware category-vsphere tag-homelab tag-trim tag-unmap tag-vmware tag-zfs">
+<a aria-hidden="true" aria-label="How to Run ZFS on VMware vSphere: Setup Guide and Best Practices" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/12/zfs-on-vmware/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="How to Run ZFS on VMware vSphere: Setup Guide and Best Practices" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="132" loading="lazy" src="/wp-content/uploads/2024/12/ZFS.jpg" width="200"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vsan-vmware" href="/category/vmware/vsan-vmware/" rel="tag">vSAN</a> | <a class="category-link-vsphere" href="/category/vsphere/" rel="tag">vSphere</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2024/12/zfs-on-vmware/" rel="bookmark">How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2024-12-18T17:47:57+00:00" itemprop="datePublished">December 18, 2024</time><time class="updated" datetime="2025-10-01T15:30:55+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>Table of Contents Copy on Write Disk ID’s Trim I have run a number of systems utilising ZFS since the earliest days of my homelab using Nexenta all the way back in 2010. The image below is my lab at the time with an IBM Head unit that I think had 18GB of RAM 6x450GB…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2024/12/zfs-on-vmware/">
+				Read More<span class="screen-reader-text"> How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6392 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-docker category-hosting tag-ai tag-docker tag-hoarder tag-homelab tag-ollama">
+<a aria-hidden="true" aria-label="How I Migrated from Pocket to Hoarder with AI Integration" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="How I Migrated from Pocket to Hoarder with AI Integration" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="411" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png" srcset="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png 768w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-300x160.png 300w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1024x547.png 1024w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1536x821.png 1536w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-2048x1095.png 2048w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-artificial-intelligence" href="/category/artificial-intelligence/" rel="tag">Artificial Intelligence</a> | <a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/" rel="bookmark">How I Migrated from Pocket to Hoarder with AI Integration</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2025-01-29T23:31:56+00:00" itemprop="datePublished">January 29, 2025</time><time class="updated" datetime="2025-12-05T12:49:23+00:00" itemprop="dateModified">December 5, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail, but I have had some successes with other cloud services and a win is a win…….</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/">
+				Read More<span class="screen-reader-text"> How I Migrated from Pocket to Hoarder with AI Integration</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5912 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-docker category-homelab tag-artificial-intelligence tag-homelab tag-nvidia">
+<a aria-hidden="true" aria-label="Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="512" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg" srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg 768w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-300x200.jpg 300w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.jpg 1024w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1536x1024.jpg 1536w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-2048x1365.jpg 2048w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-artificial-intelligence" href="/category/artificial-intelligence/" rel="tag">Artificial Intelligence</a> | <a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/" rel="bookmark">Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2024-10-11T15:03:26+00:00" itemprop="datePublished">October 11, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock price has gone to the moon. So I thought I better get some knowledge and understand some of this. As it’s a huge field and I wasn’t exactly sure…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/">
+				Read More<span class="screen-reader-text"> Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6560 post type-post status-publish format-standard has-post-thumbnail hentry category-docker category-portainer category-synology tag-homelab tag-portainer tag-synology">
+<a aria-hidden="true" aria-label="How to Fix Portainer Agent Not Starting On Synology DSM" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/03/portainer-agent-on-synology-dsm/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="How to Fix Portainer Agent Not Starting On Synology DSM" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="528" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.png" srcset="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.png 768w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-300x206.png 300w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1024x705.png 1024w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1536x1057.png 1536w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-2048x1409.png 2048w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-portainer" href="/category/portainer/" rel="tag">Portainer</a> | <a class="category-link-synology" href="/category/synology/" rel="tag">Synology</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2025/03/portainer-agent-on-synology-dsm/" rel="bookmark">How to Fix Portainer Agent Not Starting On Synology DSM</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2025-03-11T12:06:39+00:00" itemprop="datePublished">March 11, 2025</time><time class="updated" datetime="2025-10-01T15:40:44+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>How to fix Portainer Agent not starting on Synology</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2025/03/portainer-agent-on-synology-dsm/">
+				Read More<span class="screen-reader-text"> How to Fix Portainer Agent Not Starting On Synology DSM</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4627 post type-post status-publish format-standard has-post-thumbnail hentry category-runecast category-vmware tag-homelab tag-powercli tag-runecast tag-vmware">
 <a aria-hidden="true" aria-label="Runecast Remediation Script’s" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/05/runecast-remediation-scripts/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="Runecast Remediation Script’s" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="300" loading="lazy" sizes="(max-width: 571px) 100vw, 571px" src="/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png" srcset="/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png 571w, /wp-content/uploads/2023/05/Runecast-Solutions-Ltd-300x158.png 300w" width="571"/> </div>
+<img alt="Runecast Remediation Script’s" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="300" loading="lazy" sizes="auto, (max-width: 571px) 100vw, 571px" src="/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png" srcset="/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png 571w, /wp-content/uploads/2023/05/Runecast-Solutions-Ltd-300x158.png 300w" width="571"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -571,146 +691,30 @@ PLAY RECAP *********************************************************************
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4898 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware tag-homelab tag-nvidia tag-vgpu">
-<a aria-hidden="true" aria-label="Nvidia Tesla P4 Homelab Setup" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/10/vgpu-setup-in-my-homelab/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5945 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-truenas-scale tag-homelab tag-storage">
+<a aria-hidden="true" aria-label="Can you really squeeze 96TB in 1U ?" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/09/can-you-really-squeeze-96tb-in-1u/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="Nvidia Tesla P4 Homelab Setup" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="403" loading="lazy" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg" srcset="/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg 768w, /wp-content/uploads/2023/10/IMG_1107-768x403-1-300x157.jpg 300w" width="768"/> </div>
+<img alt="Can you really squeeze 96TB in 1U ?" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="435" loading="lazy" sizes="auto, (max-width: 758px) 100vw, 758px" src="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png" srcset="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png 758w, /wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter-300x172.png 300w" width="758"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/10/vgpu-setup-in-my-homelab/" rel="bookmark">Nvidia Tesla P4 Homelab Setup</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2024/09/can-you-really-squeeze-96tb-in-1u/" rel="bookmark">Can you really squeeze 96TB in 1U ?</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-10-23T14:56:58+00:00" itemprop="datePublished">October 23, 2023</time><time class="updated" datetime="2024-07-10T10:54:03+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+<time class="entry-date published" datetime="2024-09-12T12:39:16+00:00" itemprop="datePublished">September 12, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>A little while ago I decided to play with vGPU in my homelab. This was something I had dabbled with in the past but never really had the time or need to get working properly. The first thing that I needed was a GPU. I did have a Dell T20 with an iGPU built into…</p>
+<p>Yes, that’s a clickbait title. But technically it’s possible if I dropped all drive redundancy… I recently saw an advert for a server that was just too good to be true. It promised to bring a huge amount of storage and future options in a quite hard-to-believe 1U. The price it was on offer for…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2023/10/vgpu-setup-in-my-homelab/">
-				Read More<span class="screen-reader-text"> Nvidia Tesla P4 Homelab Setup</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3696 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage tag-nvme tag-ssd tag-truenas tag-truenas-scale">
-<a aria-hidden="true" aria-label="Lab Update – Part 2 Storage Truenas Scale" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/01/lab-update-part-2-storage/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Lab Update – Part 2 Storage Truenas Scale" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="432" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2022/01/maxresdefault-768x432.jpeg" srcset="/wp-content/uploads/2022/01/maxresdefault-768x432.jpeg 768w, /wp-content/uploads/2022/01/maxresdefault-300x169.jpeg 300w, /wp-content/uploads/2022/01/maxresdefault-1024x576.jpeg 1024w, /wp-content/uploads/2022/01/maxresdefault.jpeg 1280w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/01/lab-update-part-2-storage/" rel="bookmark">Lab Update – Part 2 Storage Truenas Scale</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-01-11T22:35:02+00:00" itemprop="datePublished">January 11, 2022</time><time class="updated" datetime="2023-12-11T15:02:10+00:00" itemprop="dateModified">December 11, 2023</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>The HP Z840 has changed its role to a permanent storage box running Truenas Scale. This is in addition to my Synology DS918+ TrueNas is the successor to FreeNas a very popular BSD based StorageOS and TrueNas scale is a fork of this based on Linux. The Synology has been an amazing piece of kit…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2022/01/lab-update-part-2-storage/">
-				Read More<span class="screen-reader-text"> Lab Update – Part 2 Storage Truenas Scale</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3703 post type-post status-publish format-standard hentry category-homelab category-veeam category-vmware tag-desired-state tag-homelab tag-vmware">
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-veeam" href="/category/veeam/" rel="tag">Veeam</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/01/lab-update-part-5-desired-workloads/" rel="bookmark">Lab Update –  Desired Workloads</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-01-06T19:23:11+00:00" itemprop="datePublished">January 6, 2022</time><time class="updated" datetime="2023-11-11T21:15:26+00:00" itemprop="dateModified">November 11, 2023</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>My lab is always undergoing change. Partially as I want to try new things or new ways of doing things. Sometimes because I break things (not always by accident) sometimes it’s a great way to learn…. I decided to list the workloads I am looking to run (some of these are already in place) Infrastucture…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2022/01/lab-update-part-5-desired-workloads/">
-				Read More<span class="screen-reader-text"> Lab Update –  Desired Workloads</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5343 post type-post status-publish format-standard has-post-thumbnail hentry category-vcf category-vmware tag-cpu tag-holodeck tag-homelab tag-vmware">
-<a aria-hidden="true" aria-label="Holodeck CPU Fixes" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/01/holodeck-cpu-fixes/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Holodeck CPU Fixes" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="737" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743-768x737.jpg" srcset="/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743-768x737.jpg 768w, /wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743-300x288.jpg 300w, /wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg 1000w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-vcf" href="/category/vmware/vcf/" rel="tag">VCF</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/01/holodeck-cpu-fixes/" rel="bookmark">Holodeck CPU Fixes</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-01-18T14:37:04+00:00" itemprop="datePublished">January 18, 2024</time><time class="updated" datetime="2024-07-10T07:21:58+00:00" itemprop="dateModified">July 10, 2024</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>How to deploy Holodeck with Legacy CPU’s</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2024/01/holodeck-cpu-fixes/">
-				Read More<span class="screen-reader-text"> Holodeck CPU Fixes</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5786 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-networking tag-dhcp tag-option-43 tag-unifi">
-<a aria-hidden="true" aria-label="Using Unifi DHCP Option 43 in my Network" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/06/unifi-dhcp-option-43/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Using Unifi DHCP Option 43 in my Network" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="512" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-768x512.png" srcset="/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-768x512.png 768w, /wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-300x200.png 300w, /wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-1024x683.png 1024w, /wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-1536x1024.png 1536w, /wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-2048x1365.png 2048w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/06/unifi-dhcp-option-43/" rel="bookmark">Using Unifi DHCP Option 43 in my Network</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-06-26T10:50:17+00:00" itemprop="datePublished">June 26, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>How to configure DHCP Option 43 for UniFi devices </p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2024/06/unifi-dhcp-option-43/">
-				Read More<span class="screen-reader-text"> Using Unifi DHCP Option 43 in my Network</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2024/09/can-you-really-squeeze-96tb-in-1u/">
+				Read More<span class="screen-reader-text"> Can you really squeeze 96TB in 1U ?</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
