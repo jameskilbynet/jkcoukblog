@@ -229,7 +229,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">421</div>
+                <div class="metric-value">424</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -248,7 +248,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2025-12-21</div>
-                <div class="metric-label">18:34:11</div>
+                <div class="metric-label">18:42:17</div>
             </div>
         </div>
         
@@ -287,6 +287,18 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2025-12-21 <span class="change-hash">9ffce6f</span><span class="category-badge badge-fix">Fix</span></div>
+                <div class="change-title">Fix Plausible analytics embed URL and update CSP headers</div>
+                <div class="change-details">- Add plausible.jameskilby.cloud to frame-src CSP directive</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2025-12-21 <span class="change-hash">f65c02e</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Extract Plausible auth token and update stats page data</div>
+                <div class="change-details">Updated generate_stats_page.py to extract only the auth token from the Plausible share link if a full URL is provided. Refreshed stats and metrics in public/stats/index.html to reflect the latest data, and simplified the Plausible embed URL to use just the auth token.</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2025-12-21 <span class="change-hash">76c39e4</span><span class="category-badge badge-other">Other</span></div>
@@ -445,21 +457,10 @@
                 <div class="change-details">- Validate required secrets before running any jobs</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2025-12-18 <span class="change-hash">1e4e9f9</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">Fix critical SEO issue: Add H1 to homepage</div>
-                <div class="change-details">- Automatically converts site-title elements to H1 on homepage</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2025-12-18 <span class="change-hash">657ca18</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">Add comprehensive SEO remaining tasks documentation</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2025-12-21 18:36:16 UTC<br>
+            Page generated: 2025-12-21 18:44:43 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
