@@ -53,7 +53,7 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
-            z-index: 9999;
+            z-index: 0;
             opacity: 0.03;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
         }
@@ -311,7 +311,7 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-icon">📄</div>
-                <div class="stat-value">162</div>
+                <div class="stat-value">163</div>
                 <div class="stat-label">Total Pages</div>
             </div>
             
@@ -329,19 +329,19 @@
             
             <div class="stat-card">
                 <div class="stat-icon">💾</div>
-                <div class="stat-value">60.71</div>
+                <div class="stat-value">60.74</div>
                 <div class="stat-label">Total Size (MB)</div>
             </div>
             
             <div class="stat-card">
                 <div class="stat-icon">🚀</div>
-                <div class="stat-value">440</div>
+                <div class="stat-value">443</div>
                 <div class="stat-label">Deployments</div>
             </div>
             
             <div class="stat-card">
                 <div class="stat-icon">📅</div>
-                <div class="stat-value">315</div>
+                <div class="stat-value">318</div>
                 <div class="stat-label">Updates This Month</div>
             </div>
         </div>
@@ -398,7 +398,7 @@
                 </tr>
                 <tr>
                     <td>Total HTML Pages</td>
-                    <td>162</td>
+                    <td>163</td>
                     <td>All generated pages including posts, archives, and pages</td>
                 </tr>
                 <tr>
@@ -413,7 +413,7 @@
                 </tr>
                 <tr>
                     <td>Total Site Size</td>
-                    <td>60.71 MB</td>
+                    <td>60.74 MB</td>
                     <td>All files in public directory</td>
                 </tr>
                 <tr>
@@ -428,12 +428,12 @@
                 </tr>
                 <tr>
                     <td>Last Deployment</td>
-                    <td>2025-12-23 10:52:00</td>
+                    <td>2025-12-23 11:02:13</td>
                     <td>Most recent static site generation</td>
                 </tr>
                 <tr>
                     <td>Total Deployments</td>
-                    <td>440</td>
+                    <td>443</td>
                     <td>Git commits to main branch</td>
                 </tr>
             </table>
@@ -451,11 +451,7 @@
             </div>
             
             <!-- Plausible Embed -->
-            <iframe class="plausible-embed" 
-                    src="https://plausible.jameskilby.cloud/share/jameskilby.co.uk?auth=byGFDmUkBLettStHbgpQ4&embed=true&theme=light"
-                    scrolling="yes"
-                    frameborder="0"
-                    loading="lazy"></iframe>
+            <div class="info-box"><p><strong>⚠️  Analytics Not Configured:</strong> Set PLAUSIBLE_SHARE_LINK environment variable to display analytics.</p></div>
         </div>
         
         <!-- About This Page -->
@@ -477,7 +473,7 @@
         </div>
         
         <div class="timestamp">
-            Page generated: 2025-12-23 10:54:05 UTC<br>
+            Page generated: 2025-12-23 11:16:27 UTC<br>
             Stats powered by Plausible Analytics, Google Lighthouse, and Git
         </div>
     </div>
