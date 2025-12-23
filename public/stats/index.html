@@ -20,6 +20,16 @@
     <meta name="twitter:description" content="Public statistics and metrics for jameskilby.co.uk">
     
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+        
+        :root {
+            --bg-dark: #0a0a0a;
+            --text-light: #fafafa;
+            --accent-orange: #f6821f;
+            --gray-mid: #404040;
+            --gray-light: #666666;
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -27,47 +37,70 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
-            color: #2d3748;
-            background: #f7fafc;
+            color: var(--text-light);
+            background: var(--bg-dark);
             padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
         }
         
         .container {
             max-width: 1400px;
             margin: 0 auto;
+            position: relative;
+            z-index: 1;
         }
         
         header {
-            background: white;
+            background: rgba(255, 255, 255, 0.02);
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 0;
+            border: 1px solid var(--gray-mid);
             margin-bottom: 30px;
         }
         
         h1 {
-            color: #1a202c;
+            font-family: 'Anton', sans-serif;
+            color: var(--text-light);
             font-size: 2.5em;
             margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
         }
         
         .subtitle {
-            color: #718096;
+            color: var(--gray-light);
             font-size: 1.1em;
         }
         
         .back-link {
             display: inline-block;
-            color: #4299e1;
+            color: var(--accent-orange);
             text-decoration: none;
             margin-bottom: 20px;
             font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.9rem;
         }
         
         .back-link:hover {
             text-decoration: underline;
+            opacity: 0.8;
         }
         
         .stats-grid {
@@ -78,28 +111,28 @@
         }
         
         .stat-card {
-            background: white;
+            background: rgba(255, 255, 255, 0.02);
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 0;
+            border: 1px solid var(--gray-mid);
             text-align: center;
-            transition: transform 0.2s;
+            transition: border-color 0.2s, transform 0.2s;
         }
         
         .stat-card:hover {
+            border-color: var(--accent-orange);
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
         
         .stat-value {
             font-size: 3em;
             font-weight: bold;
-            color: #4299e1;
+            color: var(--accent-orange);
             margin: 10px 0;
         }
         
         .stat-label {
-            color: #718096;
+            color: var(--gray-light);
             font-size: 0.9em;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -112,18 +145,21 @@
         }
         
         .section {
-            background: white;
+            background: rgba(255, 255, 255, 0.02);
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 0;
+            border: 1px solid var(--gray-mid);
             margin-bottom: 30px;
         }
         
         .section h2 {
-            color: #1a202c;
+            font-family: 'Anton', sans-serif;
+            color: var(--text-light);
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #e2e8f0;
+            border-bottom: 2px solid var(--gray-mid);
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
         }
         
         .lighthouse-grid {
@@ -136,8 +172,9 @@
         .score-card {
             text-align: center;
             padding: 20px;
-            background: #f7fafc;
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 0;
+            border: 1px solid var(--gray-mid);
         }
         
         .score-circle {
@@ -150,39 +187,50 @@
             justify-content: center;
             font-size: 2em;
             font-weight: bold;
-            color: white;
+            color: var(--bg-dark);
         }
         
-        .score-excellent { background: #48bb78; }
-        .score-good { background: #ed8936; }
-        .score-poor { background: #f56565; }
+        .score-excellent { background: var(--accent-orange); }
+        .score-good { background: var(--gray-light); }
+        .score-poor { background: var(--gray-mid); }
         
         .score-label {
-            color: #4a5568;
+            color: var(--gray-light);
             font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.85rem;
         }
         
         .metrics-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            border: 1px solid var(--gray-mid);
         }
         
         .metrics-table th,
         .metrics-table td {
             padding: 12px;
             text-align: left;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 1px solid var(--gray-mid);
         }
         
         .metrics-table th {
-            background: #f7fafc;
+            background: rgba(255, 255, 255, 0.05);
             font-weight: 600;
-            color: #4a5568;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.85rem;
+        }
+        
+        .metrics-table td {
+            color: var(--gray-light);
         }
         
         .metrics-table tr:hover {
-            background: #f7fafc;
+            background: rgba(255, 255, 255, 0.02);
         }
         
         .plausible-embed {
@@ -194,25 +242,38 @@
         }
         
         .info-box {
-            background: #ebf8ff;
-            border-left: 4px solid #4299e1;
+            background: rgba(255, 255, 255, 0.02);
+            border-left: 4px solid var(--accent-orange);
             padding: 15px 20px;
-            border-radius: 4px;
+            border-radius: 0;
+            border: 1px solid var(--gray-mid);
+            border-left-width: 4px;
+            border-left-color: var(--accent-orange);
             margin-top: 20px;
         }
         
         .info-box p {
             margin: 5px 0;
-            color: #2c5282;
+            color: var(--gray-light);
+        }
+        
+        .info-box a {
+            color: var(--accent-orange);
+            text-decoration: none;
+        }
+        
+        .info-box a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
         }
         
         .timestamp {
             text-align: center;
-            color: #a0aec0;
+            color: var(--gray-light);
             font-size: 0.85em;
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px solid #e2e8f0;
+            border-top: 1px solid var(--gray-mid);
         }
         
         @media (max-width: 768px) {
@@ -250,7 +311,7 @@
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-icon">📄</div>
-                <div class="stat-value">162</div>
+                <div class="stat-value">163</div>
                 <div class="stat-label">Total Pages</div>
             </div>
             
@@ -268,19 +329,19 @@
             
             <div class="stat-card">
                 <div class="stat-icon">💾</div>
-                <div class="stat-value">60.75</div>
+                <div class="stat-value">60.78</div>
                 <div class="stat-label">Total Size (MB)</div>
             </div>
             
             <div class="stat-card">
                 <div class="stat-icon">🚀</div>
-                <div class="stat-value">436</div>
+                <div class="stat-value">439</div>
                 <div class="stat-label">Deployments</div>
             </div>
             
             <div class="stat-card">
                 <div class="stat-icon">📅</div>
-                <div class="stat-value">311</div>
+                <div class="stat-value">314</div>
                 <div class="stat-label">Updates This Month</div>
             </div>
         </div>
@@ -337,7 +398,7 @@
                 </tr>
                 <tr>
                     <td>Total HTML Pages</td>
-                    <td>162</td>
+                    <td>163</td>
                     <td>All generated pages including posts, archives, and pages</td>
                 </tr>
                 <tr>
@@ -352,12 +413,12 @@
                 </tr>
                 <tr>
                     <td>Total Site Size</td>
-                    <td>60.75 MB</td>
+                    <td>60.78 MB</td>
                     <td>All files in public directory</td>
                 </tr>
                 <tr>
                     <td>Average Page Size</td>
-                    <td>0.38 KB</td>
+                    <td>0.37 KB</td>
                     <td>Total size / number of pages</td>
                 </tr>
                 <tr>
@@ -367,12 +428,12 @@
                 </tr>
                 <tr>
                     <td>Last Deployment</td>
-                    <td>2025-12-23 10:33:05</td>
+                    <td>2025-12-23 10:44:14</td>
                     <td>Most recent static site generation</td>
                 </tr>
                 <tr>
                     <td>Total Deployments</td>
-                    <td>436</td>
+                    <td>439</td>
                     <td>Git commits to main branch</td>
                 </tr>
             </table>
@@ -390,11 +451,7 @@
             </div>
             
             <!-- Plausible Embed -->
-            <iframe class="plausible-embed" 
-                    src="https://plausible.jameskilby.cloud/share/jameskilby.co.uk?auth=byGFDmUkBLettStHbgpQ4&embed=true&theme=light"
-                    scrolling="yes"
-                    frameborder="0"
-                    loading="lazy"></iframe>
+            <div class="info-box"><p><strong>⚠️  Analytics Not Configured:</strong> Set PLAUSIBLE_SHARE_LINK environment variable to display analytics.</p></div>
         </div>
         
         <!-- About This Page -->
@@ -416,7 +473,7 @@
         </div>
         
         <div class="timestamp">
-            Page generated: 2025-12-23 10:34:50 UTC<br>
+            Page generated: 2025-12-23 10:50:41 UTC<br>
             Stats powered by Plausible Analytics, Google Lighthouse, and Git
         </div>
     </div>
