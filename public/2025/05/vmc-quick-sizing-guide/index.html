@@ -66,483 +66,7 @@
 <link href="/?p=6765" rel="shortlink"/>
 <link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2025%2F05%2Fvmc-quick-sizing-guide%2F" rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"/>
 <link href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.jameskilby.cloud%2F2025%2F05%2Fvmc-quick-sizing-guide%2F&amp;format=xml" rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"/>
-<link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#0a0a0a" name="theme-color"/><style id="brutalist-theme">/* Brutalist Dark Theme - Inspired by justfuckingusecloudflare.com */
-
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap');
-
-/* Root variables and noise overlay */
-:root {
-  --bg-dark: #0a0a0a;
-  --text-light: #fafafa;
-  --accent-orange: #f6821f;
-  --gray-mid: #404040;
-  --gray-light: #666666;
-}
-
-/* Apply noise texture to body */
-body {
-  background-color: var(--bg-dark) !important;
-  color: var(--text-light) !important;
-  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-  line-height: 1.6;
-  position: relative;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 9999;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-}
-
-/* Typography */
-h1, h2, h3, h4, h5, h6,
-.site-title,
-.entry-title {
-  font-family: 'Anton', sans-serif !important;
-  font-weight: 400 !important;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--text-light) !important;
-}
-
-h1, .site-title { font-size: 3rem !important; }
-h2, .entry-title { font-size: 2.25rem !important; }
-h3 { font-size: 1.75rem !important; }
-h4 { font-size: 1.5rem !important; }
-
-/* Code blocks */
-code, pre, .wp-block-code {
-  font-family: 'JetBrains Mono', monospace !important;
-  background-color: rgba(255, 255, 255, 0.05) !important;
-  color: var(--accent-orange) !important;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-}
-
-pre {
-  padding: 1.5rem !important;
-  overflow-x: auto;
-  border: 1px solid var(--gray-mid);
-}
-
-/* Links */
-a {
-  color: var(--accent-orange) !important;
-  text-decoration: none !important;
-  transition: opacity 0.2s ease;
-}
-
-a:hover {
-  opacity: 0.8;
-  text-decoration: underline !important;
-}
-
-a:focus {
-  outline: 2px solid var(--accent-orange);
-  outline-offset: 2px;
-}
-
-/* Selection */
-::selection {
-  background-color: var(--accent-orange) !important;
-  color: var(--bg-dark) !important;
-}
-
-::-moz-selection {
-  background-color: var(--accent-orange) !important;
-  color: var(--bg-dark) !important;
-}
-
-/* Header */
-.site-header,
-#masthead {
-  background-color: var(--bg-dark) !important;
-  border-bottom: 2px solid var(--gray-mid);
-}
-
-.site-branding .site-title a,
-.site-title {
-  color: var(--text-light) !important;
-}
-
-/* Navigation */
-.main-navigation a,
-.menu-item a {
-  color: var(--text-light) !important;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-}
-
-.menu-item a:hover {
-  color: var(--accent-orange) !important;
-}
-
-/* Content areas */
-.content-bg,
-.entry,
-article {
-  background-color: rgba(255, 255, 255, 0.02) !important;
-  border: 1px solid var(--gray-mid) !important;
-  border-radius: 0 !important;
-}
-
-/* Post grid */
-.kadence-posts-list.grid-cols {
-  gap: 2rem;
-}
-
-.entry-list-item {
-  background: transparent;
-}
-
-/* Post content */
-.entry-content,
-.entry-summary,
-.entry-header {
-  color: var(--text-light) !important;
-}
-
-.entry-summary p,
-.entry-content p {
-  color: var(--gray-light) !important;
-  line-height: 1.7;
-}
-
-/* Meta information */
-.entry-meta,
-.posted-by,
-.posted-on,
-.category-links,
-.tag-links {
-  color: var(--gray-light) !important;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.entry-meta a {
-  color: var(--gray-light) !important;
-}
-
-.entry-meta a:hover {
-  color: var(--accent-orange) !important;
-}
-
-/* Categories and tags */
-.category-links a,
-.tag-links a {
-  background-color: transparent !important;
-  border: 1px solid var(--gray-mid) !important;
-  color: var(--text-light) !important;
-  padding: 0.25rem 0.75rem;
-  border-radius: 0;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.category-links a:hover,
-.tag-links a:hover {
-  background-color: var(--accent-orange) !important;
-  border-color: var(--accent-orange) !important;
-  color: var(--bg-dark) !important;
-}
-
-/* Buttons */
-.post-more-link,
-button,
-.wp-block-button__link {
-  background-color: transparent !important;
-  color: var(--accent-orange) !important;
-  border: 2px solid var(--accent-orange) !important;
-  padding: 0.75rem 1.5rem !important;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-  font-size: 0.9rem;
-  border-radius: 0 !important;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-.post-more-link:hover,
-button:hover,
-.wp-block-button__link:hover {
-  background-color: var(--accent-orange) !important;
-  color: var(--bg-dark) !important;
-}
-
-/* Images */
-img {
-  border: 1px solid var(--gray-mid);
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-.post-thumbnail img {
-  transition: opacity 0.3s ease;
-}
-
-.post-thumbnail:hover img {
-  opacity: 0.85;
-}
-
-/* Featured/Post thumbnail - keep default positioning */
-.post-thumbnail,
-.article-post-thumbnail {
-  margin-bottom: 0 !important;
-}
-
-.post-thumbnail-inner {
-  background-color: transparent !important;
-}
-
-/* Ensure entry content wrap has proper dark background so text is readable over images */
-.entry-content-wrap {
-  background-color: var(--bg-dark) !important;
-  position: relative !important;
-}
-
-/* Make sure the header has a solid background if it overlaps the image */
-.entry-header,
-.post-title {
-  background-color: var(--bg-dark) !important;
-  padding: 1.5rem !important;
-  margin: 0 !important;
-}
-
-/* Entry content should have proper background */
-.entry-content,
-.single-content {
-  background-color: var(--bg-dark) !important;
-  padding: 1.5rem !important;
-}
-
-/* Footer */
-.site-footer,
-#colophon {
-  background-color: var(--bg-dark) !important;
-  border-top: 2px solid var(--gray-mid);
-  color: var(--gray-light) !important;
-  margin-top: 4rem;
-  padding: 2rem 0;
-}
-
-/* Forms */
-input[type="text"],
-input[type="email"],
-input[type="search"],
-textarea {
-  background-color: rgba(255, 255, 255, 0.05) !important;
-  border: 1px solid var(--gray-mid) !important;
-  color: var(--text-light) !important;
-  padding: 0.75rem;
-  border-radius: 0;
-}
-
-input:focus,
-textarea:focus {
-  outline: 2px solid var(--accent-orange);
-  outline-offset: 2px;
-  border-color: var(--accent-orange) !important;
-}
-
-/* Mobile menu */
-.mobile-toggle-open-container button,
-.menu-toggle-open {
-  background-color: transparent !important;
-  border: 1px solid var(--gray-mid) !important;
-  color: var(--text-light) !important;
-}
-
-/* Pagination */
-.pagination a,
-.page-numbers {
-  background-color: transparent !important;
-  border: 1px solid var(--gray-mid) !important;
-  color: var(--text-light) !important;
-  padding: 0.5rem 1rem;
-  margin: 0 0.25rem;
-}
-
-.pagination a:hover,
-.page-numbers:hover,
-.page-numbers.current {
-  background-color: var(--accent-orange) !important;
-  border-color: var(--accent-orange) !important;
-  color: var(--bg-dark) !important;
-}
-
-/* Post navigation (prev/next) */
-.post-navigation,
-.navigation,
-.nav-links {
-  background-color: transparent !important;
-  padding: 2rem 0 !important;
-  border-top: 1px solid var(--gray-mid) !important;
-  margin-top: 3rem !important;
-}
-
-.post-navigation a,
-.navigation a {
-  background-color: rgba(255, 255, 255, 0.02) !important;
-  border: 1px solid var(--gray-mid) !important;
-  padding: 1.5rem !important;
-  display: block !important;
-  color: var(--text-light) !important;
-}
-
-.post-navigation a:hover,
-.navigation a:hover {
-  background-color: rgba(255, 255, 255, 0.05) !important;
-  border-color: var(--accent-orange) !important;
-}
-
-.post-navigation-sub,
-.nav-previous,
-.nav-next {
-  background-color: transparent !important;
-}
-
-.post-navigation-sub small {
-  color: var(--gray-light) !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  font-size: 0.75rem !important;
-}
-
-/* Blockquotes */
-blockquote {
-  border-left: 4px solid var(--accent-orange) !important;
-  background-color: rgba(255, 255, 255, 0.02) !important;
-  padding: 1rem 1.5rem;
-  margin: 1.5rem 0;
-  color: var(--text-light) !important;
-  font-style: italic;
-}
-
-/* Tables */
-table {
-  border: 1px solid var(--gray-mid) !important;
-  background-color: rgba(255, 255, 255, 0.02) !important;
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid var(--gray-mid) !important;
-  padding: 0.75rem;
-  color: var(--text-light) !important;
-}
-
-th {
-  background-color: rgba(255, 255, 255, 0.05) !important;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.9rem;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  h1, .site-title { font-size: 2rem !important; }
-  h2, .entry-title { font-size: 1.5rem !important; }
-  h3 { font-size: 1.25rem !important; }
-  
-  .kadence-posts-list.grid-cols {
-    gap: 1rem;
-  }
-}
-
-/* Content freshness indicator */
-.content-freshness-indicator {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-left: 4px solid var(--accent-orange) !important;
-  color: var(--text-light) !important;
-  border-radius: 0 !important;
-  padding: 1rem 1.5rem !important;
-  margin: 1.5rem 0 !important;
-}
-
-.content-freshness-indicator strong {
-  color: var(--text-light) !important;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.85rem;
-}
-
-.content-freshness-indicator time {
-  color: var(--gray-light) !important;
-}
-
-.content-freshness-indicator span {
-  color: var(--text-light) !important;
-}
-
-/* Smooth transitions */
-* {
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-/* Override any white backgrounds */
-.wp-site-blocks,
-#wrapper,
-.site,
-.content-area,
-.site-container,
-.site-footer-wrap,
-.site-bottom-footer-wrap,
-.footer-widget-area,
-.site-info,
-footer,
-#colophon,
-.carousel,
-.slider,
-.slick-slider,
-.splide,
-.swiper,
-.wp-block-gallery,
-.blocks-gallery-grid,
-.navigation,
-.post-navigation,
-.pagination-wrap,
-.content-wrap,
-main,
-#main,
-#inner-wrap,
-.wrap {
-  background-color: var(--bg-dark) !important;
-}
-
-/* Ensure all divs and sections have dark background by default */
-div, section, aside, nav {
-  background-color: transparent !important;
-}
-
-/* Specific overrides for white/light colored elements */
-.has-white-background-color,
-.has-white-background,
-[style*="background-color: white"],
-[style*="background-color: #fff"],
-[style*="background-color: #ffffff"],
-[style*="background: white"],
-[style*="background: #fff"],
-[style*="background: #ffffff"] {
-  background-color: var(--bg-dark) !important;
-  background: var(--bg-dark) !important;
-}
-</style><script data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
+<link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#ffffff" name="theme-color"/><script data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
 <body class="wp-singular post-template-default single single-post postid-6765 single-format-standard wp-embed-responsive wp-theme-kadence hide-focus-outline link-style-standard content-title-style-normal content-width-narrow content-style-boxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
 <div class="site wp-site-blocks" id="wrapper">
 <a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
@@ -642,7 +166,7 @@ div, section, aside, nav {
 <p>If you are planning to do a cluster conversion between host types then the management stack size doesn’t change.</p>
 <figure class="wp-block-table"><table><tbody><tr><td>Host Type</td><td>i3</td><td>i3en</td><td>I4i</td><td></td></tr><tr><td>No of Hosts</td><td>i3 (TiB)</td><td>i3en (TiB)</td><td>I4i (TiB)</td><td>FTT in use</td></tr><tr><td>2</td><td>11.2</td><td>41.39</td><td>18.48</td><td>FTT1 RAID1</td></tr><tr><td>3</td><td>16.8</td><td>62.09</td><td>27.71</td><td>FTT1 RAID1</td></tr><tr><td>4</td><td>33.68</td><td>124.49</td><td>55.57</td><td>FTT1 RAID5</td></tr><tr><td>5</td><td>42.1</td><td>155.61</td><td>69.46</td><td>FTT1 RAID5</td></tr><tr><td>6</td><td>44.8</td><td>165.57</td><td>73.9</td><td>FTT2 RAID6</td></tr><tr><td>7</td><td>52.26</td><td>193.17</td><td>86.22</td><td>FTT2 RAID6</td></tr><tr><td>8</td><td>59.73</td><td>220.77</td><td>98.54</td><td>FTT2 RAID6</td></tr><tr><td>9</td><td>67.2</td><td>248.36</td><td>110.85</td><td>FTT2 RAID6</td></tr><tr><td>10</td><td>74.66</td><td>275.96</td><td>123.17</td><td>FTT2 RAID6</td></tr><tr><td>11</td><td>82.13</td><td>303.55</td><td>135.49</td><td>FTT2 RAID6</td></tr><tr><td>12</td><td>89.6</td><td>331.15</td><td>147.8</td><td>FTT2 RAID6</td></tr><tr><td>13</td><td>97.06</td><td>358.74</td><td>160.12</td><td>FTT2 RAID6</td></tr><tr><td>14</td><td>104.53</td><td>386.34</td><td>172.44</td><td>FTT2 RAID6</td></tr><tr><td>15</td><td>112</td><td>413.94</td><td>184.75</td><td>FTT2 RAID6</td></tr><tr><td>16</td><td>119.46</td><td>441.53</td><td>197.07</td><td>FTT2 RAID6</td></tr></tbody></table></figure>
 </div><!-- .entry-content -->
-<div class="comments-area" id="comments"><div class="pb-30"><section id="utterances-comments"><script async="" crossorigin="anonymous" data-cfasync="false" data-issue-term="pathname" data-repo="jameskilbynet/jkcoukblog" data-theme="github-dark" src="https://utteranc.es/client.js"></script></section></div></div><footer class="entry-footer">
+<div class="comments-area" id="comments"><div class="pb-30"><section id="utterances-comments"><script async="" crossorigin="anonymous" data-cfasync="false" data-issue-term="pathname" data-repo="jameskilbynet/jkcoukblog" data-theme="github-light" src="https://utteranc.es/client.js"></script></section></div></div><footer class="entry-footer">
 <div class="entry-tags">
 <span class="tags-links">
 <span class="tags-label screen-reader-text">
@@ -656,17 +180,107 @@ div, section, aside, nav {
 <h2 class="screen-reader-text">Post navigation</h2>
 <div class="nav-links"><div class="nav-previous"><a href="/2025/04/warp-the-intelligent-terminal/" rel="prev"><div class="post-navigation-sub"><small><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-left-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 29 28" width="29" xmlns="http://www.w3.org/2000/svg"><title>Previous</title><path d="M28 12.5v3c0 0.281-0.219 0.5-0.5 0.5h-19.5v3.5c0 0.203-0.109 0.375-0.297 0.453s-0.391 0.047-0.547-0.078l-6-5.469c-0.094-0.094-0.156-0.219-0.156-0.359v0c0-0.141 0.063-0.281 0.156-0.375l6-5.531c0.156-0.141 0.359-0.172 0.547-0.094 0.172 0.078 0.297 0.25 0.297 0.453v3.5h19.5c0.281 0 0.5 0.219 0.5 0.5z"></path>
 </svg></span>Previous</small></div>Warp – The intelligent terminal</a></div><div class="nav-next"><a href="/2025/08/vmc-host-deepdive/" rel="next"><div class="post-navigation-sub"><small>Next<span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span></small></div>VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide</a></div></div>
+</svg></span></small></div>An in-depth look at VMware Cloud on AWS hosts</a></div></div>
 </nav> <div class="entry-related alignfull entry-related-style-wide">
 <div class="entry-related-inner content-container site-container">
 <div class="entry-related-inner-content alignwide">
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4866 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vcf tag-holodeck tag-multihost tag-vcf tag-vmware">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-2922 post type-post status-publish format-standard has-post-thumbnail hentry category-personal category-vmware tag-certifications tag-vmware tag-vsan">
+<a aria-hidden="true" aria-label="VMware Certified Master Specialist HCI 2020" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/09/vmware-certified-master-specialist-hci-2020/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="VMware Certified Master Specialist HCI 2020" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="600" loading="eager" sizes="(max-width: 600px) 100vw, 600px" src="/wp-content/uploads/2020/09/vmware_SP_HCI20.png" srcset="/wp-content/uploads/2020/09/vmware_SP_HCI20.png 600w, /wp-content/uploads/2020/09/vmware_SP_HCI20-300x300.png 300w, /wp-content/uploads/2020/09/vmware_SP_HCI20-150x150.png 150w" width="600"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-personal" href="/category/personal/" rel="tag">Personal</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2020/09/vmware-certified-master-specialist-hci-2020/" rel="bookmark">VMware Certified Master Specialist HCI 2020</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2020-09-13T21:38:48+00:00" itemprop="datePublished">September 13, 2020</time><time class="updated" datetime="2023-11-11T21:18:14+00:00" itemprop="dateModified">November 11, 2023</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2020/09/vmware-certified-master-specialist-hci-2020/">
+				Read More<span class="screen-reader-text"> VMware Certified Master Specialist HCI 2020</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4043 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-networking category-storage category-vmware tag-homelab tag-mikrotik">
+<a aria-hidden="true" aria-label="100Gb/s in my Homelab" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/12/100gb-s-in-my-homelab-sort-of/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="100Gb/s in my Homelab" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="346" loading="lazy" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/04/2157_hi_res-768x346.png" srcset="/wp-content/uploads/2023/04/2157_hi_res-768x346.png 768w, /wp-content/uploads/2023/04/2157_hi_res-300x135.png 300w, /wp-content/uploads/2023/04/2157_hi_res-1024x462.png 1024w, /wp-content/uploads/2023/04/2157_hi_res-1536x693.png 1536w, /wp-content/uploads/2023/04/2157_hi_res.png 1889w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2022/12/100gb-s-in-my-homelab-sort-of/" rel="bookmark">100Gb/s in my Homelab</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2022-12-19T10:09:58+00:00" itemprop="datePublished">December 19, 2022</time><time class="updated" datetime="2023-11-11T20:57:34+00:00" itemprop="dateModified">November 11, 2023</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>For a while, I’ve been looking to update the networking at the core of my homelab. I have had some great results with the current setup utilising a number of DAC’s but there were a couple of things that were annoying me. Then MikroTik dropped the CRS504-4XQ-IN and if the price wasn’t horrendous then that…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2022/12/100gb-s-in-my-homelab-sort-of/">
+				Read More<span class="screen-reader-text"> 100Gb/s in my Homelab</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3229 post type-post status-publish format-standard has-post-thumbnail hentry category-automation category-homelab category-vmware tag-automation tag-hashicorp tag-homelab tag-packer">
+<a aria-hidden="true" aria-label="Template Deployment with Packer" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2021/01/hashicorp-packer/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="Template Deployment with Packer" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="287" loading="lazy" sizes="auto, (max-width: 287px) 100vw, 287px" src="/wp-content/uploads/2021/01/logo_packer.png" srcset="/wp-content/uploads/2021/01/logo_packer.png 287w, /wp-content/uploads/2021/01/logo_packer-150x150.png 150w" width="287"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-automation" href="/category/automation/" rel="tag">Automation</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2021/01/hashicorp-packer/" rel="bookmark">Template Deployment with Packer</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2021-01-21T22:26:10+00:00" itemprop="datePublished">January 21, 2021</time><time class="updated" datetime="2025-12-08T12:50:22+00:00" itemprop="dateModified">December 8, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2021/01/hashicorp-packer/">
+				Read More<span class="screen-reader-text"> Template Deployment with Packer</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4866 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vcf tag-holodeck tag-multihost tag-vcf tag-vmware">
 <a aria-hidden="true" aria-label="MultiHost Holodeck VCF" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/01/multihost-holodeck-vcf/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="MultiHost Holodeck VCF" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="239" loading="eager" sizes="(max-width: 523px) 100vw, 523px" src="/wp-content/uploads/2023/12/Holodeck-Overview.png" srcset="/wp-content/uploads/2023/12/Holodeck-Overview.png 523w, /wp-content/uploads/2023/12/Holodeck-Overview-300x137.png 300w" width="523"/> </div>
+<img alt="MultiHost Holodeck VCF" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="239" loading="lazy" sizes="auto, (max-width: 523px) 100vw, 523px" src="/wp-content/uploads/2023/12/Holodeck-Overview.png" srcset="/wp-content/uploads/2023/12/Holodeck-Overview.png 523w, /wp-content/uploads/2023/12/Holodeck-Overview-300x137.png 300w" width="523"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -687,36 +301,6 @@ div, section, aside, nav {
 <p class="more-link-wrap">
 <a class="post-more-link" href="/2024/01/multihost-holodeck-vcf/">
 				Read More<span class="screen-reader-text"> MultiHost Holodeck VCF</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6895 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-vmware-cloud-on-aws">
-<a aria-hidden="true" aria-label="VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/08/vmc-host-deepdive/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="222" loading="lazy" sizes="(max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/02/Picture-1-768x222.png" srcset="/wp-content/uploads/2025/02/Picture-1-768x222.png 768w, /wp-content/uploads/2025/02/Picture-1-300x87.png 300w, /wp-content/uploads/2025/02/Picture-1.png 967w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/08/vmc-host-deepdive/" rel="bookmark">VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-08-14T12:32:01+00:00" itemprop="datePublished">August 14, 2025</time><time class="updated" datetime="2025-10-01T15:30:40+00:00" itemprop="dateModified">October 1, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3 I3en I4i CPU Processor Name Intel Xeon E5-2686 v4  Intel Xeon Platinum 8175 Intel Xeon 8375c No of…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2025/08/vmc-host-deepdive/">
-				Read More<span class="screen-reader-text"> VMware Cloud on AWS Host Deep Dive: i3, i3en, i4i Comparison Guide</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -753,86 +337,30 @@ div, section, aside, nav {
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4869 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-personal tag-charity tag-epic tag-rnli tag-vmware">
-<a aria-hidden="true" aria-label="VMware – Going out with a Bang!" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/10/going-out-with-a-bang/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4301 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware category-vsphere tag-upgrade tag-vsphere-8">
+<a aria-hidden="true" aria-label="Forcing an Upgrade to vSphere 8" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/12/forcing-an-upgrade-to-vsphere-8/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="VMware – Going out with a Bang!" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="384" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/10/rnli-logo-768x384.png" srcset="/wp-content/uploads/2023/10/rnli-logo-768x384.png 768w, /wp-content/uploads/2023/10/rnli-logo-300x150.png 300w, /wp-content/uploads/2023/10/rnli-logo-1024x512.png 1024w, /wp-content/uploads/2023/10/rnli-logo.png 1200w" width="768"/> </div>
+<img alt="Forcing an Upgrade to vSphere 8" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="166" loading="lazy" sizes="auto, (max-width: 738px) 100vw, 738px" src="/wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23.png" srcset="/wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23.png 738w, /wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23-300x67.png 300w" width="738"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-personal" href="/category/personal/" rel="tag">Personal</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vsphere" href="/category/vsphere/" rel="tag">vSphere</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/10/going-out-with-a-bang/" rel="bookmark">VMware – Going out with a Bang!</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2022/12/forcing-an-upgrade-to-vsphere-8/" rel="bookmark">Forcing an Upgrade to vSphere 8</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-10-07T12:37:14+00:00" itemprop="datePublished">October 7, 2023</time><time class="updated" datetime="2023-11-17T15:22:18+00:00" itemprop="dateModified">November 17, 2023</time> </span>
+<time class="entry-date published" datetime="2022-12-14T21:43:39+00:00" itemprop="datePublished">December 14, 2022</time><time class="updated" datetime="2025-10-01T15:22:13+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>There is a lot of uncertainty with VMware at the moment. This is all due to the pending acquisition by Broadcom. There are a lot of unknowns for the staff and customers about what the company will look like in the future. I certainly have some concerns mainly just with the unknown. However, VMware has…</p>
+<p>I run a reasonably extensive homelab that is of course built around the VMware ecosystem. So with the release of vSphere 8 I was obviously going to upgrade however a few personal things blocked me from doing it until now. The vCenter upgrade was smooth however knowing that some of the hardware I am running…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2023/10/going-out-with-a-bang/">
-				Read More<span class="screen-reader-text"> VMware – Going out with a Bang!</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-7275 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware-cloud-on-aws tag-ntp tag-vmware-cloud-on-aws">
-<a aria-hidden="true" aria-label="Time in a VMC Environment" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/12/time-in-a-vmc-environment/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Time in a VMC Environment" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="222" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/02/Picture-1-768x222.png" srcset="/wp-content/uploads/2025/02/Picture-1-768x222.png 768w, /wp-content/uploads/2025/02/Picture-1-300x87.png 300w, /wp-content/uploads/2025/02/Picture-1.png 967w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/12/time-in-a-vmc-environment/" rel="bookmark">Time in a VMC Environment</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published updated" datetime="2025-12-08T14:03:44+00:00" itemprop="dateModified">December 8, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Time VMC allows you to utilise the Amazon…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2025/12/time-in-a-vmc-environment/">
-				Read More<span class="screen-reader-text"> Time in a VMC Environment</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-1940 post type-post status-publish format-standard hentry category-vmware category-aws category-veeam tag-aws tag-vmc tag-vmware">
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-aws" href="/category/aws/" rel="tag">AWS</a> | <a class="category-link-veeam" href="/category/veeam/" rel="tag">Veeam</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2019/12/monitoring-vmc-part-1/" rel="bookmark">Monitoring VMC – Part 1</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2019-12-17T23:01:27+00:00" itemprop="datePublished">December 17, 2019</time><time class="updated" datetime="2025-10-01T15:22:15+00:00" itemprop="dateModified">October 1, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2019/12/monitoring-vmc-part-1/">
-				Read More<span class="screen-reader-text"> Monitoring VMC – Part 1</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2022/12/forcing-an-upgrade-to-vsphere-8/">
+				Read More<span class="screen-reader-text"> Forcing an Upgrade to vSphere 8</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -859,7 +387,7 @@ div, section, aside, nav {
 <div class="site-footer-bottom-section-1 site-footer-section footer-section-inner-items-1">
 <div class="footer-widget-area site-info site-footer-focus-item content-align-default content-tablet-align-default content-mobile-align-default content-valign-default content-tablet-valign-default content-mobile-valign-default" data-section="kadence_customizer_footer_html">
 <div class="footer-widget-area-inner site-info-inner">
-<div class="footer-html inner-link-style-normal"><div class="footer-html-inner">
+<div class="footer-html inner-link-style-normal"><div class="footer-html-inner"><p>© 2025 Jameskilbycouk - WordPress Theme by <a href="https://www.kadencewp.com/" rel="nofollow noopener">Kadence WP</a></p>
 </div></div> </div>
 </div><!-- .site-info -->
 </div>
@@ -904,6 +432,5 @@ var kadenceConfig = {"screenReader":{"expand":"Child menu","expandOf":"Child men
 var kadenceSlideConfig = {"of":"of","to":"to","slide":"Slide","next":"Next","prev":"Previous"};
 </script>
 <script id="wpo_min-footer-0-js" src="/wp-content/cache/wpo-minify/1766064412/assets/wpo-minify-footer-20ef1812.min.js"></script>
-<script src="/js/search.js" data-cfasync="false"></script>
 </body>
 </html>
