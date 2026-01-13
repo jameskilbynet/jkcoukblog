@@ -8,11 +8,11 @@
 <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
 <!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
 <title>MultiHost Holodeck VCF - Jameskilbycouk</title>
-<meta content="MultiHost Holodeck VCF offers insights on deploying VMware Holodeck across multiple hosts. Learn more about the setup and specifications today!" name="description">
-<meta content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" name="robots">
+<meta content="MultiHost Holodeck VCF offers insights on deploying VMware Holodeck across multiple hosts. Learn more about the setup and specifications today!" name="description"/>
+<meta content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" name="robots"/>
 <link href="/2024/01/multihost-holodeck-vcf/" rel="canonical"/>
-<meta content="en_GB" property="og:locale"/>
-<meta content="article" property="og:type"/>
+<meta content="en_GB" property="og:locale">
+<meta content="article" property="og:type">
 <meta content="MultiHost Holodeck VCF: VMware Deployment Insights" property="og:title"/>
 <meta content="Get the latest on deploying VMware Holodeck on multiple hosts!" property="og:description"/>
 <meta content="/2024/01/multihost-holodeck-vcf/" property="og:url"/>
@@ -62,7 +62,6 @@
 <link href="/wp-content/themes/kadence/assets/css/rankmath.min.css" id="kadence-rankmath-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/cache/wpo-minify/1767949345/assets/wpo-minify-header-60bc1f4e.min.css" id="wpo_min-header-0-css" media="all" rel="stylesheet"/>
 <link href="/wp-json/wp/v2/posts/4866" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
-
 <link href="/?p=4866" rel="shortlink"/>
 <link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#0a0a0a" name="theme-color"/><link href="../../../assets/css/brutalist-theme-96925f5b.min.css" media="all" rel="stylesheet"/><script data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
 <body class="wp-singular post-template-default single single-post postid-4866 single-format-standard wp-embed-responsive wp-theme-kadence hide-focus-outline link-style-standard content-title-style-normal content-width-narrow content-style-boxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
@@ -141,7 +140,7 @@
 <div class="content-wrap">
 <div class="post-thumbnail article-post-thumbnail kadence-thumbnail-position-behind alignwide kadence-thumbnail-ratio-2-3">
 <div class="post-thumbnail-inner">
-<img alt="" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="239" loading="eager" sizes="(max-width: 523px) 100vw, 523px" src="/wp-content/uploads/2023/12/Holodeck-Overview.png" srcset="/wp-content/uploads/2023/12/Holodeck-Overview.png 523w, /wp-content/uploads/2023/12/Holodeck-Overview-300x137.png 300w" width="523"/> </div>
+<picture><source srcset="/wp-content/uploads/2023/12/Holodeck-Overview.avif" type="image/avif"/><img alt="" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="239" loading="eager" sizes="(max-width: 523px) 100vw, 523px" src="/wp-content/uploads/2023/12/Holodeck-Overview.png" srcset="/wp-content/uploads/2023/12/Holodeck-Overview.png 523w, /wp-content/uploads/2023/12/Holodeck-Overview-300x137.png 300w" width="523"/></picture> </div>
 </div><!-- .post-thumbnail -->
 <article class="entry content-bg single-entry post-4866 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vcf tag-holodeck tag-multihost tag-vcf tag-vmware" id="post-4866">
 <div class="entry-content-wrap">
@@ -179,7 +178,6 @@
 <figure class="wp-block-table is-style-stripes">
 <table>
 <thead><tr><th>Minimum Hardware (1 env)</th><th>Recommended Hardware (2 envs)</th><th>Recommended Hardware (3-5 envs)</th></tr></thead><tbody>
-
 <tr>
 <td>VCF Consolidated </td>
 <td>VCF Standard (MGMT + WLD)</td>
@@ -206,8 +204,8 @@
 <p>I was planning to use two of my existing Supermicro hosts that were already connected to my vCenter. They each have 2x Intel Xeon CPU E5-2670 @ 2.60GHz with 192GB of RAM each. The combined resources should be enough to run Holodeck and experiment with other toolsets on top. All of the storage is to be presented by my <a href="/lab/">TrueNas</a> setup.</p>
 <h2 class="wp-block-heading" id="networking">Networking</h2>
 <p>Both hosts were originally connected through a DVSwitch and 2x25Gb/s physical adaptors. To change the configuration for Holodeck I removed one of the adaptors in each host from the DVswitch. I then followed the Holodeck guide and configured the standard switch as required on each host. I then added the unused 25Gb/s adaptor to the standard switch and then physically connected the two hosts with a short DAC cable as seen below.</p>
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-5333" decoding="async" height="996" loading="eager" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/01/IMG_5286-1-1024x996.jpeg" srcset="/wp-content/uploads/2024/01/IMG_5286-1-1024x996.jpeg 1024w, /wp-content/uploads/2024/01/IMG_5286-1-300x292.jpeg 300w, /wp-content/uploads/2024/01/IMG_5286-1-768x747.jpeg 768w, /wp-content/uploads/2024/01/IMG_5286-1.jpeg 1280w" width="1024"/><figcaption class="wp-element-caption">Physical Network</figcaption></figure>
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-5335" decoding="async" height="299" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/01/Standard-Switch-1024x299.png" srcset="/wp-content/uploads/2024/01/Standard-Switch-1024x299.png 1024w, /wp-content/uploads/2024/01/Standard-Switch-300x88.png 300w, /wp-content/uploads/2024/01/Standard-Switch-768x224.png 768w, /wp-content/uploads/2024/01/Standard-Switch-1536x449.png 1536w, /wp-content/uploads/2024/01/Standard-Switch-2048x598.png 2048w" width="1024"/><figcaption class="wp-element-caption">Standard Switch configuration</figcaption></figure>
+<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2024/01/IMG_5286-1-1024x996.avif" type="image/avif"/><img alt="" class="wp-image-5333" decoding="async" height="996" loading="eager" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/01/IMG_5286-1-1024x996.jpeg" srcset="/wp-content/uploads/2024/01/IMG_5286-1-1024x996.jpeg 1024w, /wp-content/uploads/2024/01/IMG_5286-1-300x292.jpeg 300w, /wp-content/uploads/2024/01/IMG_5286-1-768x747.jpeg 768w, /wp-content/uploads/2024/01/IMG_5286-1.jpeg 1280w" width="1024"/></picture><figcaption class="wp-element-caption">Physical Network</figcaption></figure>
+<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2024/01/Standard-Switch-1024x299.avif" type="image/avif"/><img alt="" class="wp-image-5335" decoding="async" height="299" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/01/Standard-Switch-1024x299.png" srcset="/wp-content/uploads/2024/01/Standard-Switch-1024x299.png 1024w, /wp-content/uploads/2024/01/Standard-Switch-300x88.png 300w, /wp-content/uploads/2024/01/Standard-Switch-768x224.png 768w, /wp-content/uploads/2024/01/Standard-Switch-1536x449.png 1536w, /wp-content/uploads/2024/01/Standard-Switch-2048x598.png 2048w" width="1024"/></picture><figcaption class="wp-element-caption">Standard Switch configuration</figcaption></figure>
 <h2 class="wp-block-heading" id="dns">DNS</h2>
 <p>Holodeck can be deployed either directly to an ESX Host or through a vCenter. As my VC and Hosts are part of the jameskilby.cloud domain I needed to ensure that the private IPs were being returned to the Holodeck Console VM for deployment. This can be handled in several ways however I believe the most elegant is to edit the holohosts.txt file on the HoloBuilder VM. This host file is copied over to the HoloConsole VM as part of the deployment and therefore the builder can always resolve the correct IP’s irrespective of the state of the DNS on the CloudBuilder/HoloConsole VM.</p>
 <p>The file is located at</p>
@@ -263,10 +261,10 @@
 <h2 class="wp-block-heading" id="holodeck-deployment">Holodeck deployment</h2>
 <p>With these fixes in place, it was time to run the VLCGui Powershell file.</p>
 <p>As you can see below this was pointed at my VC with the cluster used for deployment highlighted.</p>
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-5396" decoding="async" height="545" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-1024x545.png" srcset="/wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-1024x545.png 1024w, /wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-300x160.png 300w, /wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-768x409.png 768w, /wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-1536x818.png 1536w, /wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1.png 1664w" width="1024"/></figure>
+<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-1024x545.avif" type="image/avif"/><img alt="" class="wp-image-5396" decoding="async" height="545" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-1024x545.png" srcset="/wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-1024x545.png 1024w, /wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-300x160.png 300w, /wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-768x409.png 768w, /wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1-1536x818.png 1536w, /wp-content/uploads/2024/01/Screenshot-2024-01-19-at-09.08.41-1.png 1664w" width="1024"/></picture></figure>
 <h2 class="wp-block-heading" id="success">Success</h2>
 <p>With the above in place the full deployment of the 7 vSphere hosts. NSX managers &amp; Edges plus Tanzu is done in 4hr 11 Mins.</p>
-<figure class="wp-block-image"><img alt="" class="wp-image-5360" decoding="async" height="549" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-1024x549.png" srcset="/wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-1024x549.png 1024w, /wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-300x161.png 300w, /wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-768x412.png 768w, /wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-1536x824.png 1536w, /wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-2048x1099.png 2048w" width="1024"/><figcaption class="wp-element-caption">Successful Deployment</figcaption></figure>
+<figure class="wp-block-image"><picture><source srcset="/wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-1024x549.avif" type="image/avif"/><img alt="" class="wp-image-5360" decoding="async" height="549" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-1024x549.png" srcset="/wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-1024x549.png 1024w, /wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-300x161.png 300w, /wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-768x412.png 768w, /wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-1536x824.png 1536w, /wp-content/uploads/2024/01/Screenshot-2024-01-17-at-15.39.41-2048x1099.png 2048w" width="1024"/></picture><figcaption class="wp-element-caption">Successful Deployment</figcaption></figure>
 <h2 class="wp-block-heading" id="deployment-notes">Deployment Notes</h2>
 <p>A few things that catch people out specifically with Holodeck. The first is if you happen to restart the HoloConsole VM before VCF deployment it loses a route. This is by design. When VCF is stood up all external network access is done through the CloudBuilder VM. To fix this run this at the command line on the HoloConsole VM</p>
 <div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code>route add 0.0.0.0 mask 0.0.0.0 10.0.0.1</code></pre><button aria-label="Copy code to clipboard" class="copy-code-button" style="position: absolute; top: 8px; right: 8px; 
@@ -298,70 +296,40 @@
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4627 post type-post status-publish format-standard has-post-thumbnail hentry category-runecast category-vmware tag-homelab tag-powercli tag-runecast tag-vmware">
-<a aria-hidden="true" aria-label="Runecast Remediation Script’s" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/05/runecast-remediation-scripts/" role="presentation" tabindex="-1">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4043 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-networking category-storage category-vmware tag-homelab tag-mikrotik">
+<a aria-hidden="true" aria-label="100Gb/s in my Homelab" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/12/100gb-s-in-my-homelab-sort-of/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="Runecast Remediation Script’s" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="300" loading="lazy" sizes="auto, (max-width: 571px) 100vw, 571px" src="/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png" srcset="/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png 571w, /wp-content/uploads/2023/05/Runecast-Solutions-Ltd-300x158.png 300w" width="571"/> </div>
+<picture><source srcset="/wp-content/uploads/2023/04/2157_hi_res-768x346.avif" type="image/avif"/><img alt="100Gb/s in my Homelab" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="346" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/04/2157_hi_res-768x346.png" srcset="/wp-content/uploads/2023/04/2157_hi_res-768x346.png 768w, /wp-content/uploads/2023/04/2157_hi_res-300x135.png 300w, /wp-content/uploads/2023/04/2157_hi_res-1024x462.png 1024w, /wp-content/uploads/2023/04/2157_hi_res-1536x693.png 1536w, /wp-content/uploads/2023/04/2157_hi_res.png 1889w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-runecast" href="/category/runecast/" rel="tag">Runecast</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/05/runecast-remediation-scripts/" rel="bookmark">Runecast Remediation Script’s</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2022/12/100gb-s-in-my-homelab-sort-of/" rel="bookmark">100Gb/s in my Homelab</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-05-16T10:38:45+00:00" itemprop="datePublished">May 16, 2023</time><time class="updated" datetime="2023-11-17T15:28:57+00:00" itemprop="dateModified">November 17, 2023</time> </span>
+<time class="entry-date published" datetime="2022-12-19T10:09:58+00:00" itemprop="datePublished">December 19, 2022</time><time class="updated" datetime="2023-11-11T20:57:34+00:00" itemprop="dateModified">November 11, 2023</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>I am a huge fan of the Runecast product and luckily as a vExpert they give out NFR licences for my lab. One of the really cool features I wanted to mention today was the remediation script function. I have been playing with storage a lot in my lab recently as part of a wider…</p>
+<p>For a while, I’ve been looking to update the networking at the core of my homelab. I have had some great results with the current setup utilising a number of DAC’s but there were a couple of things that were annoying me. Then MikroTik dropped the CRS504-4XQ-IN and if the price wasn’t horrendous then that…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2023/05/runecast-remediation-scripts/">
-				Read More<span class="screen-reader-text"> Runecast Remediation Script’s</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2022/12/100gb-s-in-my-homelab-sort-of/">
+				Read More<span class="screen-reader-text"> 100Gb/s in my Homelab</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6247 post type-post status-publish format-standard has-post-thumbnail hentry category-truenas-scale category-vmware category-vsan-vmware category-vsphere tag-homelab tag-trim tag-unmap tag-vmware tag-zfs">
-<a aria-hidden="true" aria-label="How to Run ZFS on VMware vSphere: Setup Guide and Best Practices" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/12/zfs-on-vmware/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3138 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-aws tag-failure tag-sre tag-vmc tag-vmware tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="VMC Host Errors" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/09/vmc-host-errors/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="How to Run ZFS on VMware vSphere: Setup Guide and Best Practices" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="132" loading="lazy" src="/wp-content/uploads/2024/12/ZFS.jpg" width="200"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vsan-vmware" href="/category/vmware/vsan-vmware/" rel="tag">vSAN</a> | <a class="category-link-vsphere" href="/category/vsphere/" rel="tag">vSphere</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/12/zfs-on-vmware/" rel="bookmark">How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-12-18T17:47:57+00:00" itemprop="datePublished">December 18, 2024</time><time class="updated" datetime="2025-12-27T14:46:37+00:00" itemprop="dateModified">December 27, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>Table of Contents Copy-on-Write Disk IDs Trim   I have run a number of systems using ZFS since the earliest days of my homelab using Nexenta, all the way back in 2010. The image below is my lab at the time with an IBM Head unit that I think had 18GB of RAM…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2024/12/zfs-on-vmware/">
-				Read More<span class="screen-reader-text"> How to Run ZFS on VMware vSphere: Setup Guide and Best Practices</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3117 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-vmc tag-vmware-cloud-on-aws">
-<a aria-hidden="true" aria-label="VMC New Host -i3en" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/07/i3en/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="VMC New Host -i3en" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/> </div>
+<picture><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.avif" type="image/avif"/><img alt="VMC Host Errors" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -369,29 +337,29 @@
 <span class="category-links term-links category-style-normal">
 <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2020/07/i3en/" rel="bookmark">VMC New Host -i3en</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2020/09/vmc-host-errors/" rel="bookmark">VMC Host Errors</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2020-07-02T22:01:39+00:00" itemprop="datePublished">July 2, 2020</time><time class="updated" datetime="2024-07-10T09:28:48+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+<time class="entry-date published" datetime="2020-09-15T10:56:32+00:00" itemprop="datePublished">September 15, 2020</time><time class="updated" datetime="2025-10-01T15:22:15+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>VMware Cloud on AWS (VMC) has introduced a new host to its lineup the “i3en”. This is based on the i3en.metal AWS instance. The specifications are certainly impressive packing in 96 logical cores, 768GiB RAM, and approximately 45.84 TiB of NVMe raw storage capacity per host. It’s certainly a monster with a 266% uplift in…</p>
+<p>When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2020/07/i3en/">
-				Read More<span class="screen-reader-text"> VMC New Host -i3en</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2020/09/vmc-host-errors/">
+				Read More<span class="screen-reader-text"> VMC Host Errors</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6765 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-sizing tag-vmc tag-vmware-cloud-on-aws">
-<a aria-hidden="true" aria-label="VMC Quick Sizing Guide" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/05/vmc-quick-sizing-guide/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6895 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="An in-depth look at VMware Cloud on AWS hosts" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/08/vmc-host-deepdive/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="VMC Quick Sizing Guide" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="222" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/02/Picture-1-768x222.png" srcset="/wp-content/uploads/2025/02/Picture-1-768x222.png 768w, /wp-content/uploads/2025/02/Picture-1-300x87.png 300w, /wp-content/uploads/2025/02/Picture-1.png 967w" width="768"/> </div>
+<picture><source srcset="/wp-content/uploads/2025/02/Picture-1-768x222.avif" type="image/avif"/><img alt="An in-depth look at VMware Cloud on AWS hosts" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="222" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2025/02/Picture-1-768x222.png" srcset="/wp-content/uploads/2025/02/Picture-1-768x222.png 768w, /wp-content/uploads/2025/02/Picture-1-300x87.png 300w, /wp-content/uploads/2025/02/Picture-1.png 967w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -399,79 +367,105 @@
 <span class="category-links term-links category-style-normal">
 <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/05/vmc-quick-sizing-guide/" rel="bookmark">VMC Quick Sizing Guide</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2025/08/vmc-host-deepdive/" rel="bookmark">An in-depth look at VMware Cloud on AWS hosts</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-05-21T09:33:04+00:00" itemprop="datePublished">May 21, 2025</time><time class="updated" datetime="2025-07-02T08:39:59+00:00" itemprop="dateModified">July 2, 2025</time> </span>
+<time class="entry-date published" datetime="2025-08-14T12:32:01+00:00" itemprop="datePublished">August 14, 2025</time><time class="updated" datetime="2025-12-24T09:44:16+00:00" itemprop="dateModified">December 24, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>Quick reference guide to the available storage resources that you get in VMware Cloud on AWS</p>
+<p>This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3 I3en I4i CPU Processor Name Intel Xeon E5-2686 v4  Intel Xeon Platinum 8175 Intel Xeon 8375c No of…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2025/05/vmc-quick-sizing-guide/">
-				Read More<span class="screen-reader-text"> VMC Quick Sizing Guide</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2025/08/vmc-host-deepdive/">
+				Read More<span class="screen-reader-text"> An in-depth look at VMware Cloud on AWS hosts</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3573 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware tag-homelab tag-supermicro tag-vmware">
-<a aria-hidden="true" aria-label="Lab Update – Compute" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/01/lab-update-part-1-compute/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-</div>
-</a><!-- .post-thumbnail -->
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3703 post type-post status-publish format-standard hentry category-homelab category-veeam category-vmware tag-desired-state tag-homelab tag-vmware">
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-veeam" href="/category/veeam/" rel="tag">Veeam</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/01/lab-update-part-1-compute/" rel="bookmark">Lab Update – Compute</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2022/01/lab-update-part-5-desired-workloads/" rel="bookmark">Lab Update –  Desired Workloads</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-01-06T11:12:00+00:00" itemprop="datePublished">January 6, 2022</time><time class="updated" datetime="2024-07-10T10:42:27+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+<time class="entry-date published" datetime="2022-01-06T19:23:11+00:00" itemprop="datePublished">January 6, 2022</time><time class="updated" datetime="2023-11-11T21:15:26+00:00" itemprop="dateModified">November 11, 2023</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>Quite a few changes have happened in the lab recently. so I decided to do a multipart blog on the changes. The refresh was triggered by the purchase of a SuperMicro Server (2027TR-H71FRF) chassis with 4x X9DRT Nodes / Blades. This is known as a BigTwin configuration in SuperMicro parlance. This is something I was…</p>
+<p>My lab is always undergoing change. Partially as I want to try new things or new ways of doing things. Sometimes because I break things (not always by accident) sometimes it’s a great way to learn…. I decided to list the workloads I am looking to run (some of these are already in place) Infrastucture…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2022/01/lab-update-part-1-compute/">
-				Read More<span class="screen-reader-text"> Lab Update – Compute</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2022/01/lab-update-part-5-desired-workloads/">
+				Read More<span class="screen-reader-text"> Lab Update –  Desired Workloads</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4898 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware tag-homelab tag-nvidia tag-vgpu">
-<a aria-hidden="true" aria-label="Nvidia Tesla P4 Homelab Setup" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/10/vgpu-setup-in-my-homelab/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5547 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-nutanix category-vmware tag-homelab tag-nutanix tag-vmware">
+<a aria-hidden="true" aria-label="New Nodes" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/07/new-nodes/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<img alt="Nvidia Tesla P4 Homelab Setup" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="403" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg" srcset="/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg 768w, /wp-content/uploads/2023/10/IMG_1107-768x403-1-300x157.jpg 300w" width="768"/> </div>
+<picture><source srcset="/wp-content/uploads/2024/07/IMG_6629-768x149.avif" type="image/avif"/><img alt="New Nodes" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="149" loading="lazy" sizes="auto, (max-width: 768px) 100vw, 768px" src="/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg" srcset="/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg 768w, /wp-content/uploads/2024/07/IMG_6629-300x58.jpeg 300w, /wp-content/uploads/2024/07/IMG_6629-1024x198.jpeg 1024w, /wp-content/uploads/2024/07/IMG_6629-1536x297.jpeg 1536w, /wp-content/uploads/2024/07/IMG_6629-2048x397.jpeg 2048w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-nutanix" href="/category/nutanix/" rel="tag">Nutanix</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/10/vgpu-setup-in-my-homelab/" rel="bookmark">Nvidia Tesla P4 Homelab Setup</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2024/07/new-nodes/" rel="bookmark">New Nodes</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-10-23T14:56:58+00:00" itemprop="datePublished">October 23, 2023</time><time class="updated" datetime="2024-07-10T10:54:03+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+<time class="entry-date published" datetime="2024-07-02T08:01:04+00:00" itemprop="datePublished">July 2, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>A little while ago I decided to play with vGPU in my homelab. This was something I had dabbled with in the past but never really had the time or need to get working properly. The first thing that I needed was a GPU. I did have a Dell T20 with an iGPU built into…</p>
+<p>I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice Bill of Materials Rescue IPMI…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2023/10/vgpu-setup-in-my-homelab/">
-				Read More<span class="screen-reader-text"> Nvidia Tesla P4 Homelab Setup</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2024/07/new-nodes/">
+				Read More<span class="screen-reader-text"> New Nodes</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-2922 post type-post status-publish format-standard has-post-thumbnail hentry category-personal category-vmware tag-certifications tag-vmware tag-vsan">
+<a aria-hidden="true" aria-label="VMware Certified Master Specialist HCI 2020" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/09/vmware-certified-master-specialist-hci-2020/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<picture><source srcset="/wp-content/uploads/2020/09/vmware_SP_HCI20.avif" type="image/avif"/><img alt="VMware Certified Master Specialist HCI 2020" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="600" loading="lazy" sizes="auto, (max-width: 600px) 100vw, 600px" src="/wp-content/uploads/2020/09/vmware_SP_HCI20.png" srcset="/wp-content/uploads/2020/09/vmware_SP_HCI20.png 600w, /wp-content/uploads/2020/09/vmware_SP_HCI20-300x300.png 300w, /wp-content/uploads/2020/09/vmware_SP_HCI20-150x150.png 150w" width="600"/></picture> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-personal" href="/category/personal/" rel="tag">Personal</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2020/09/vmware-certified-master-specialist-hci-2020/" rel="bookmark">VMware Certified Master Specialist HCI 2020</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2020-09-13T21:38:48+00:00" itemprop="datePublished">September 13, 2020</time><time class="updated" datetime="2023-11-11T21:18:14+00:00" itemprop="dateModified">November 11, 2023</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2020/09/vmware-certified-master-specialist-hci-2020/">
+				Read More<span class="screen-reader-text"> VMware Certified Master Specialist HCI 2020</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -607,6 +601,6 @@ var kadenceSlideConfig = {"of":"of","to":"to","slide":"Slide","next":"Next","pre
         });
     });
 })();
-</script><script src="/js/search.js" data-cfasync="false"></script>
+</script><script data-cfasync="false" src="/js/search.js"></script>
 </body>
 </html>
