@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">631</div>
+                <div class="metric-value">636</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-01-14</div>
-                <div class="metric-label">22:20:19</div>
+                <div class="metric-label">22:43:02</div>
             </div>
         </div>
         
@@ -338,6 +338,23 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-14 <span class="change-hash">3679e55</span><span class="category-badge badge-feature">Feature</span></div>
+                <div class="change-title">Add incremental build system and cache management</div>
+                <div class="change-details">Introduces incremental_builder.py for efficient static site generation by only rebuilding changed content, tracked via .build-cache.json. Adds manage_build_cache.py CLI for cache inspection, statistics, and clearing. Updates documentation to describe incremental build workflow, cache management, and integration with CI/CD. Updates .gitignore to optionally track .build-cache.json.</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-14 <span class="change-hash">1aa3866</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-14 <span class="change-hash">668092d</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Enhance search with highlighting and analytics</div>
+                <div class="change-details">Added highlighting of search terms in results and integrated privacy-friendly search analytics tracking. Improved Fuse.js search options for better matching and user experience.</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-01-14 <span class="change-hash">adef65a</span><span class="category-badge badge-other">Other</span></div>
@@ -489,27 +506,10 @@
                 <div class="change-details">The HTML validation step has been relocated to run before image optimization in the deploy-static-site workflow. This ensures that HTML issues are detected earlier in the deployment process.</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-01-13 <span class="change-hash">884104f</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-01-13 <span class="change-hash">5baac18</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">Add HTML and media validation scripts and docs</div>
-                <div class="change-details">Introduces validate_html.py for static site HTML validation (broken links, missing assets, structure checks) and check_missing_media.py for WordPress media asset verification. Updates the deployment workflow to run HTML validation before deployment. Adds documentation: HTML_VALIDATION.md, MEDIA_ASSET_CHECKER.md, and updates WARP.md with validation steps. Also adds verify_avif.py for AVIF image checks.</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-01-13 <span class="change-hash">62bc9ff</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Temporarily disable image optimization cache for troubleshooting</div>
-                <div class="change-details">- Disable _is_cached() to force re-optimization of all images</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-01-14 22:25:04 UTC<br>
+            Page generated: 2026-01-14 22:53:26 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
