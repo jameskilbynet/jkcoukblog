@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">636</div>
+                <div class="metric-value">639</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-01-14</div>
-                <div class="metric-label">22:43:02</div>
+                <div class="metric-label">22:54:47</div>
             </div>
         </div>
         
@@ -338,6 +338,17 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-14 <span class="change-hash">10ba0b7</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-14 <span class="change-hash">2d1cf04</span><span class="category-badge badge-feature">Feature</span></div>
+                <div class="change-title">Add incremental build validation docs and tests</div>
+                <div class="change-details">Introduces docs/INCREMENTAL_BUILD_VALIDATION.md with detailed validation steps for incremental builds, adds test_incremental_build.py for automated testing of the incremental build system, and updates wp_to_static_generator.py to support and report incremental build mode, cache usage, and time savings. Also updates WARP.md to reference the new test script.</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-01-14 <span class="change-hash">3679e55</span><span class="category-badge badge-feature">Feature</span></div>
@@ -494,22 +505,10 @@
                 <div class="change-details">Skip <title> tag warnings for feed files that may not require titles. Also, update CSS URL validation to ignore fragment identifiers (e.g., #id, %23id) in addition to external URLs and data URIs.</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-01-13 <span class="change-hash">b024e15</span><span class="category-badge badge-docs">Docs</span></div>
-                <div class="change-title">Skip protocol-relative URLs in HTML validation</div>
-                <div class="change-details">Updated the HTML validator to skip protocol-relative URLs (e.g., //cdn.example.com) in addition to external URLs. Documentation updated to reflect this behavior.</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-01-13 <span class="change-hash">fc3c0bc</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Move HTML validation step earlier in workflow</div>
-                <div class="change-details">The HTML validation step has been relocated to run before image optimization in the deploy-static-site workflow. This ensures that HTML issues are detected earlier in the deployment process.</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-01-14 22:53:26 UTC<br>
+            Page generated: 2026-01-14 23:00:03 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
