@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">628</div>
+                <div class="metric-value">631</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-01-14</div>
-                <div class="metric-label">22:06:10</div>
+                <div class="metric-label">22:20:19</div>
             </div>
         </div>
         
@@ -338,6 +338,17 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-14 <span class="change-hash">adef65a</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-14 <span class="change-hash">5ddc296</span><span class="category-badge badge-feature">Feature</span></div>
+                <div class="change-title">Add build metrics report and improve theme CSS handling</div>
+                <div class="change-details">Introduces generate_build_report.py to create build metrics and history after each build. Refactors brutalist theme CSS injection to use an external file with cache headers, copying the CSS to the output directory and linking it in HTML. Also adds error count tracking and build metrics reporting to the main generator workflow.</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-01-14 <span class="change-hash">3e97bf9</span><span class="category-badge badge-improvement">Improvement</span></div>
@@ -495,20 +506,10 @@
                 <div class="change-details">- Disable _is_cached() to force re-optimization of all images</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-01-13 <span class="change-hash">a28a0c2</span><span class="category-badge badge-removal">Removal</span></div>
-                <div class="change-title">Remove cache entries for 4 JPG files missing AVIF versions</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-01-13 <span class="change-hash">35d917a</span><span class="category-badge badge-improvement">Improvement</span></div>
-                <div class="change-title">Update optimize_images.py</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-01-14 22:11:39 UTC<br>
+            Page generated: 2026-01-14 22:25:04 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
