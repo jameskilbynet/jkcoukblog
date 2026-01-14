@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">639</div>
+                <div class="metric-value">644</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-01-14</div>
-                <div class="metric-label">22:54:47</div>
+                <div class="metric-label">23:09:09</div>
             </div>
         </div>
         
@@ -338,6 +338,22 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-14 <span class="change-hash">9d66903</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-14 <span class="change-hash">769a375</span><span class="category-badge badge-feature">Feature</span></div>
+                <div class="change-title">Add content quality validation to CI workflow</div>
+                <div class="change-details">Introduces a new non-blocking content quality validation step in the deploy-static-site GitHub Actions workflow. The step runs a Python validator, generates a validation-report.json with errors and warnings, and summarizes results in the workflow output. The report is now also committed if changes are detected. Also updates content_validator.py permissions to be executable.</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-14 <span class="change-hash">74ef2c3</span><span class="category-badge badge-feature">Feature</span></div>
+                <div class="change-title">Add Content Validator</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-01-14 <span class="change-hash">10ba0b7</span><span class="category-badge badge-other">Other</span></div>
@@ -488,27 +504,10 @@
                 <div class="change-details">Make it a non blocking connection</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-01-14 <span class="change-hash">4d78e3a</span><span class="category-badge badge-improvement">Improvement</span></div>
-                <div class="change-title">Update spell-check.yml</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-01-14 <span class="change-hash">5794d99</span><span class="category-badge badge-improvement">Improvement</span></div>
-                <div class="change-title">Update ollama_spell_checker.py</div>
-            </div>
-            <br>
-
-            <div class="change-entry">
-                <div class="change-date">2026-01-13 <span class="change-hash">82b07b0</span><span class="category-badge badge-improvement">Improvement</span></div>
-                <div class="change-title">Improve HTML validation for feeds and CSS URLs</div>
-                <div class="change-details">Skip <title> tag warnings for feed files that may not require titles. Also, update CSS URL validation to ignore fragment identifiers (e.g., #id, %23id) in addition to external URLs and data URIs.</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-01-14 23:00:03 UTC<br>
+            Page generated: 2026-01-14 23:20:56 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
