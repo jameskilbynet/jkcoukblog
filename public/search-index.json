@@ -3,15 +3,8 @@
     "title": "Jameskilbycouk - James Kilby's Technical Blog Covering VMware, Homelab Projects, Cloud Computing, And Infrastructure Automation. Real-world IT Solutions.",
     "url": "https://jameskilby.co.uk/",
     "description": "James Kilby's technical blog covering VMware, homelab projects, cloud computing, and infrastructure automation. Real-world IT solutions.",
-    "content": "Jameskilbycouk - James Kilby's Technical Blog Covering VMware, Homelab Projects, Cloud Computing, And Infrastructure Automation. Real-world IT Solutions. Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026January 15, 2026 • 📖1 min read(55 words) I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had… Ubuntu Ubuntu Disk Expansion Steps ByJames December 15, 2025January 15, 2026 How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps. So I decided to write them down. 1. Rescan for disk size changes sudo tee /sys/class/block/sda/device/rescan 2. Extend the physical partition (i",
+    "content": "Jameskilbycouk - James Kilby's Technical Blog Covering VMware, Homelab Projects, Cloud Computing, And Infrastructure Automation. Real-world IT Solutions. Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most… Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026January 15, 2026 I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of th",
     "categories": [
-      "Cloudflare",
-      "Hosting",
-      "Wordpress",
-      "Ubuntu",
-      "VMware Cloud on AWS",
-      "VMware",
-      "vSAN",
       "Ansible",
       "Artificial Intelligence",
       "Containers",
@@ -19,6 +12,13 @@
       "Homelab",
       "NVIDIA",
       "Traefik",
+      "VMware",
+      "Cloudflare",
+      "Hosting",
+      "Wordpress",
+      "Ubuntu",
+      "VMware Cloud on AWS",
+      "vSAN",
       "Github",
       "Docker",
       "Portainer",
@@ -42,7 +42,7 @@
       "Money"
     ],
     "tags": [],
-    "date": "2026-01-15T15:12:16+00:00"
+    "date": "2026-01-15T21:19:58+00:00"
   },
   {
     "title": "Configure DHCP Option 43 For UniFi Devices To Enable Remote Adoption Across Subnets",
@@ -52,12 +52,11 @@
     "categories": [
       "Homelab",
       "Networking",
-      "Nutanix",
+      "Mikrotik",
+      "Veeam",
       "VMware",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
-      "Automation"
+      "vSphere",
+      "Storage"
     ],
     "tags": [
       "#DHCP",
@@ -76,14 +75,14 @@
       "VMware",
       "vSAN",
       "vSphere",
+      "Personal",
+      "Docker",
       "Homelab",
       "Hosting",
-      "VMware Cloud on AWS",
+      "Kubernetes",
+      "Networking",
       "Storage",
-      "AWS",
-      "Veeam",
-      "Artificial Intelligence",
-      "Docker"
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Homelab",
@@ -103,18 +102,12 @@
       "Artificial Intelligence",
       "Docker",
       "Homelab",
-      "Storage",
-      "TrueNAS Scale",
+      "Automation",
       "VMware",
-      "vSAN",
-      "vSphere",
       "Networking",
-      "Ansible",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik",
-      "Hosting"
+      "Nutanix",
+      "Storage",
+      "vSphere"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -132,14 +125,12 @@
       "Homelab",
       "Storage",
       "TrueNAS Scale",
-      "Artificial Intelligence",
-      "Nutanix",
-      "Docker",
-      "Hosting",
-      "Veeam",
+      "VCF",
       "VMware",
-      "Mikrotik",
-      "Networking"
+      "Networking",
+      "Kubernetes",
+      "Nutanix",
+      "Synology"
     ],
     "tags": [
       "#Homelab",
@@ -156,10 +147,11 @@
       "Mikrotik",
       "Networking",
       "Homelab",
-      "Veeam",
-      "VMware",
       "Storage",
-      "vExpert",
+      "VMware",
+      "Ansible",
+      "VCF",
+      "Veeam",
       "Synology",
       "Nutanix"
     ],
@@ -179,12 +171,15 @@
       "Homelab",
       "Nutanix",
       "VMware",
+      "Artificial Intelligence",
+      "Docker",
+      "Hosting",
+      "VMware Cloud on AWS",
       "Automation",
       "Storage",
       "TrueNAS Scale",
-      "VMware Cloud on AWS",
-      "AWS",
-      "Veeam"
+      "Personal",
+      "vSphere"
     ],
     "tags": [
       "#Homelab",
@@ -201,16 +196,13 @@
     "categories": [
       "VCF",
       "VMware",
-      "Artificial Intelligence",
-      "Homelab",
-      "AWS",
-      "Veeam",
-      "Storage",
-      "TrueNAS Scale",
-      "Networking",
       "VMware Cloud on AWS",
-      "vSAN",
-      "Nutanix"
+      "Docker",
+      "Portainer",
+      "Synology",
+      "Homelab",
+      "Storage",
+      "Networking"
     ],
     "tags": [
       "#CPU",
@@ -228,18 +220,16 @@
     "categories": [
       "VMware",
       "VCF",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "Homelab",
-      "NVIDIA",
-      "Traefik",
+      "VMware Cloud on AWS",
       "vSAN",
+      "Homelab",
+      "Nutanix",
+      "Automation",
       "Storage",
       "vExpert",
-      "VMware Cloud on AWS",
-      "Nutanix"
+      "Personal",
+      "vSphere",
+      "TrueNAS Scale"
     ],
     "tags": [
       "#Holodeck",
@@ -267,19 +257,18 @@
       "VMware",
       "AWS",
       "Veeam",
-      "VCF",
-      "VMware Cloud on AWS",
-      "Automation",
       "Homelab",
-      "TrueNAS Scale",
-      "vSAN",
       "vSphere",
       "Ansible",
       "Artificial Intelligence",
       "Containers",
       "Devops",
       "NVIDIA",
-      "Traefik"
+      "Traefik",
+      "Personal",
+      "VCF",
+      "VMware Cloud on AWS",
+      "Nutanix"
     ],
     "tags": [
       "#AWS",
@@ -297,9 +286,9 @@
       "AWS",
       "Personal",
       "VMware",
-      "Veeam",
       "Hosting",
-      "Consulting",
+      "Cloudflare",
+      "Wordpress",
       "VMware Cloud on AWS",
       "Devops"
     ],
@@ -316,12 +305,13 @@
     "content": "Lab Storage - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Lab Storage ByJames February 10, 2019July 10, 2024 • 📖1 min read(207 words) 📅Published: February 10, 2019•Updated: July 10, 2024 Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology DS918 It’s a very compact unit with a quad-core Intel Celeron & I have left the RAM at 4 GB for now. I have added some of the existing SSD’s that I had giving me about 3TB of usable flash.  I am presenting this back to my VMware hosts using NFS 4.1.   I must have missed the announcement as this is now built into the Synology GUI ( It used to be a command-line-only option) I have verified the VAAI works as expected in this configuration.  At pr",
     "categories": [
       "Homelab",
-      "Networking",
+      "Nutanix",
       "Storage",
-      "VMware",
-      "Runecast",
-      "Synology",
-      "vExpert"
+      "TrueNAS Scale",
+      "Networking",
+      "Mikrotik",
+      "VCF",
+      "VMware"
     ],
     "tags": [
       "#Homelab",
@@ -360,12 +350,11 @@
       "Homelab",
       "Storage",
       "vExpert",
-      "VMware",
-      "Personal",
-      "vSphere",
-      "Automation",
-      "Nutanix",
+      "Networking",
       "Hosting",
+      "Synology",
+      "Ansible",
+      "Docker",
       "Kubernetes",
       "TrueNAS Scale"
     ],
@@ -389,18 +378,14 @@
       "VMware",
       "VMware Cloud on AWS",
       "vSAN",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
       "Homelab",
-      "NVIDIA",
-      "Traefik",
-      "Networking",
       "Storage",
+      "Synology",
+      "Networking",
       "AWS",
       "Veeam",
-      "TrueNAS Scale"
+      "Personal",
+      "vSphere"
     ],
     "tags": [
       "#Storage",
@@ -419,11 +404,14 @@
       "VMware",
       "Personal",
       "vSphere",
-      "Consulting",
       "vSAN",
+      "VCF",
+      "Homelab",
       "Nutanix",
-      "TrueNAS Scale",
-      "Homelab"
+      "Consulting",
+      "Networking",
+      "Storage",
+      "Hosting"
     ],
     "tags": [
       "#Certification",
@@ -440,9 +428,9 @@
     "categories": [
       "Networking",
       "Homelab",
-      "Mikrotik",
       "Storage",
-      "VMware"
+      "VMware",
+      "Mikrotik"
     ],
     "tags": [
       "#City Fibre",
@@ -460,13 +448,10 @@
     "categories": [
       "Hosting",
       "Personal",
-      "Docker",
-      "Homelab",
-      "Kubernetes",
-      "VMware",
-      "vSphere",
+      "AWS",
       "Cloudflare",
-      "Wordpress"
+      "Wordpress",
+      "VMware"
     ],
     "tags": [
       "#Analytics",
@@ -487,14 +472,14 @@
     "categories": [
       "Kubernetes",
       "TrueNAS Scale",
-      "Homelab",
-      "Storage",
-      "Docker",
-      "Hosting",
-      "vExpert",
       "VMware",
       "vSAN",
-      "vSphere"
+      "vSphere",
+      "Homelab",
+      "Storage",
+      "vExpert",
+      "Docker",
+      "Hosting"
     ],
     "tags": [
       "#Reference",
@@ -511,11 +496,11 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
+      "Docker",
+      "Homelab",
+      "Kubernetes",
       "Devops",
       "Github",
-      "Homelab",
-      "Docker",
-      "Kubernetes",
       "AWS",
       "Artificial Intelligence"
     ],
@@ -535,20 +520,14 @@
     "categories": [
       "Runecast",
       "VMware",
-      "Artificial Intelligence",
-      "Docker",
-      "Homelab",
-      "VCF",
-      "Ansible",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik",
-      "vSphere",
+      "VMware Cloud on AWS",
       "Mikrotik",
       "Networking",
-      "TrueNAS Scale",
-      "vSAN"
+      "Homelab",
+      "vSphere",
+      "Docker",
+      "Portainer",
+      "Synology"
     ],
     "tags": [
       "#Homelab",
@@ -567,17 +546,11 @@
       "Homelab",
       "Storage",
       "Nutanix",
-      "Synology",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik",
+      "TrueNAS Scale",
       "VMware",
-      "Docker",
-      "Hosting",
-      "Kubernetes"
+      "Artificial Intelligence",
+      "Synology",
+      "Networking"
     ],
     "tags": [
       "#NAS",
@@ -595,10 +568,14 @@
       "VMware",
       "Personal",
       "Homelab",
-      "VMware Cloud on AWS",
-      "vSAN",
+      "Hosting",
+      "Cloudflare",
+      "Wordpress",
+      "Consulting",
+      "Storage",
+      "vExpert",
       "Devops",
-      "Runecast"
+      "vSphere"
     ],
     "tags": [
       "#Charity",
@@ -616,11 +593,11 @@
     "categories": [
       "Homelab",
       "VMware",
-      "Nutanix",
+      "VCF",
       "Storage",
-      "vExpert",
-      "VMware Cloud on AWS",
-      "Hosting"
+      "Synology",
+      "Personal",
+      "Ansible"
     ],
     "tags": [
       "#Homelab",
@@ -641,6 +618,30 @@
     "date": "2017-05-29T11:49:16+00:00"
   },
   {
+    "title": "Automating The Deployment Of My AI Homelab",
+    "url": "https://jameskilby.co.uk/2026/01/automating-the-deployment-of-my-ai-homelab-and-other-improvements/",
+    "description": "In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in",
+    "content": "Automating The Deployment Of My AI Homelab - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames January 15, 2026 • 📖5 min read(1,031 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most of the steps. This was for a few reasons, firstly I wanted to get better at automating in general. Secondly, I found the setup brittle and wanted to improve the reliability of deployments. I also decided to bite the bullet and update the graphics card I was using to something a bit more modern and capable. After a bit of searching I decided on an Nvidia A10 Here is my write-up, and I will link to my GitHub repo",
+    "categories": [
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "Homelab",
+      "NVIDIA",
+      "Traefik",
+      "VMware",
+      "Personal",
+      "Runecast",
+      "Storage",
+      "Synology",
+      "TrueNAS Scale",
+      "VCF"
+    ],
+    "tags": [],
+    "date": "2026-01-15T21:19:58+00:00"
+  },
+  {
     "title": "Web Development Improvements",
     "url": "https://jameskilby.co.uk/2026/01/web-development-improvements/",
     "description": "I have spent the Christmas break making some improvements to this blog. A lot of these are in \"the backend\" These help improve the performance, Privacy, SEO",
@@ -649,11 +650,12 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Devops",
-      "Personal",
+      "AWS",
+      "Artificial Intelligence",
       "Docker",
-      "Homelab",
-      "Kubernetes"
+      "Devops",
+      "Github",
+      "Personal"
     ],
     "tags": [
       "#Cloudflare",
@@ -667,11 +669,11 @@
     "title": "Nutanix Command Reference Guide",
     "url": "https://jameskilby.co.uk/2018/06/nutanix-command-reference-guide/",
     "description": "Access a comprehensive list of useful Nutanix commands. Enhance your skills and streamline your operations with our handy reference guide.",
-    "content": "Nutanix Command Reference Guide - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Nutanix Nutanix Command Reference Guide ByJames June 5, 2018July 10, 2024 • 📖1 min read(105 words) 📅Published: June 05, 2018•Updated: July 10, 2024 Nutanix Command List This is a list of Nutanix commands I have found useful. Its here as a reference and if i need a command more than a few times ill generally add it here. CLI ncli cluster get-domain-fault-tolerance-status type=node  (Checks if all of the storage components meet the desired replication factor) cvm_shutdown -P now  ( Correct way to shutdown a CVM) ncc health_checks run_all –parallel=4 .  ( 4 is the max number) curator_cli get_under_replication_info summary=true Checks if any objects are not at the desired replication factor curl localhost:2019/prism/leader . Find the leader WEB http://{curator-master-cvm-ip}:2010/master/control ( If you want to invoke a curator scan manually) Similar Posts Nutanix | Personal Nutanix N",
+    "content": "Nutanix Command Reference Guide - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Nutanix Nutanix Command Reference Guide ByJames June 5, 2018July 10, 2024 • 📖1 min read(105 words) 📅Published: June 05, 2018•Updated: July 10, 2024 Nutanix Command List This is a list of Nutanix commands I have found useful. Its here as a reference and if i need a command more than a few times ill generally add it here. CLI ncli cluster get-domain-fault-tolerance-status type=node  (Checks if all of the storage components meet the desired replication factor) cvm_shutdown -P now  ( Correct way to shutdown a CVM) ncc health_checks run_all –parallel=4 .  ( 4 is the max number) curator_cli get_under_replication_info summary=true Checks if any objects are not at the desired replication factor curl localhost:2019/prism/leader . Find the leader WEB http://{curator-master-cvm-ip}:2010/master/control ( If you want to invoke a curator scan manually) Similar Posts Homelab | Nutanix Nutanix CE",
     "categories": [
       "Nutanix",
-      "Personal",
       "Homelab",
+      "Personal",
       "VMware"
     ],
     "tags": [
@@ -684,16 +686,15 @@
     "title": "AWS Status Page - Monitoring Included",
     "url": "https://jameskilby.co.uk/2018/05/aws-status-page-monitoring-included/",
     "description": "LambStatus, Monitoring, AWS, Lambda",
-    "content": "AWS Status Page - Monitoring Included - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 • 📖1 min read(105 words) 📅Published: May 15, 2018•Updated: October 01, 2025 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at effectively zero cost Site Response The guide I followed is very good and is documented in the Git repo here Similar Posts Cloudflare | Hosting | Wordpress WordPress Hosting with Cloudflare Pages ByJames May 14, 2023October 1, 2025 Table o",
+    "content": "AWS Status Page - Monitoring Included - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 • 📖1 min read(105 words) 📅Published: May 15, 2018•Updated: October 01, 2025 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at effectively zero cost Site Response The guide I followed is very good and is documented in the Git repo here Similar Posts VMware | VMware Cloud on AWS VMC Host Errors ByJames September 15, 2020October 1, 2025 When you run a large enough I",
     "categories": [
       "AWS",
       "Hosting",
-      "Cloudflare",
-      "Wordpress",
+      "VMware",
+      "VMware Cloud on AWS",
       "Personal",
-      "Docker",
-      "Homelab",
-      "Kubernetes"
+      "Cloudflare",
+      "Wordpress"
     ],
     "tags": [
       "#AWS",
@@ -723,12 +724,12 @@
     "content": "And Now For Something Completely Different - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Personal And now for something completely different ByJames October 16, 2018July 10, 2024 • 📖1 min read(263 words) 📅Published: October 16, 2018•Updated: July 10, 2024 I have worked for my current employer Zen Internet for  3.5 years.  Over that time I have changed roles from what was originally a customer-focused role into a role with one of the core platform teams.  This has meant looking after the majority of the Internal and customer Virtual platforms.  During this time Zen has undergone several large migration programs and countless smaller ones. Some of the big ones include: Core ISP network refresh Microsegmentation rollout Nutanix integration Backup Consolidation I have been lucky enough to be involved with all of these ( some much more than others)  Although the work is never complete Zen are in a good place. At the same time, my personal circumstances have chan",
     "categories": [
       "Personal",
-      "AWS",
-      "Consulting",
+      "Nutanix",
       "VMware",
-      "vSphere",
+      "Hosting",
       "Devops",
-      "Hosting"
+      "Cloudflare",
+      "Wordpress"
     ],
     "tags": [],
     "date": "2018-10-16T08:22:45+00:00"
@@ -740,11 +741,13 @@
     "content": "Cloudflare Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting Cloudflare ByJames March 27, 2018December 8, 2024 • 📖1 min read(288 words) 📅Published: March 27, 2018•Updated: December 08, 2024 Cloudflare – What is it and why would I care? I have been using Cloudflare for a long time.  It is one of my go-to services and I use it to protect all of the public services I run for myself and other sites/ organizations. The basic premise of what Cloudflare do is that they are a distributed Web Application Firewall (WAF) and CDN but they also offer so much more. Because they have a large number of POP’s they can cache and push content closer to your end users to give them a better experience. This also offloads work from your firewalls, DNS, Web and Database servers.  At present they have 139 sites globally allowing you to host a site anywhere and get good global performance. Cloudflare has an amazing free tier so you can get started easily.   I use this to host all of my public D",
     "categories": [
       "Hosting",
-      "Wordpress",
       "Personal",
-      "Cloudflare",
       "Artificial Intelligence",
-      "Docker"
+      "Docker",
+      "Cloudflare",
+      "Wordpress",
+      "Devops",
+      "Github"
     ],
     "tags": [
       "#Cloudflare"
@@ -760,8 +763,8 @@
       "AWS",
       "Personal",
       "VMware",
-      "VMware Cloud on AWS",
       "Veeam",
+      "VMware Cloud on AWS",
       "Hosting"
     ],
     "tags": [
@@ -778,11 +781,16 @@
     "categories": [
       "Homelab",
       "Nutanix",
-      "Networking",
-      "Automation",
+      "Hosting",
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
       "VMware",
-      "Storage",
-      "TrueNAS Scale"
+      "Docker",
+      "Automation"
     ],
     "tags": [
       "#Nutanix"
@@ -798,17 +806,12 @@
       "Homelab",
       "Storage",
       "Synology",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik",
       "VMware",
-      "Mikrotik",
+      "Runecast",
       "Networking",
-      "VCF",
-      "TrueNAS Scale"
+      "Artificial Intelligence",
+      "Docker",
+      "Hosting"
     ],
     "tags": [
       "#Homelab",
@@ -863,7 +866,7 @@
     "title": "NVIDIA Archives",
     "url": "https://jameskilby.co.uk/category/nvidia/",
     "description": "Browse all NVIDIA Archives articles. In-depth technical content covering NVIDIA Archives topics, best practices, and real-world solutions.",
-    "content": "NVIDIA Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu NVIDIA Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames December 5, 2025January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most…",
+    "content": "NVIDIA Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu NVIDIA Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most…",
     "categories": [
       "Ansible",
       "Artificial Intelligence",
@@ -875,7 +878,7 @@
       "VMware"
     ],
     "tags": [],
-    "date": "2025-12-05T14:26:20+00:00"
+    "date": "2026-01-15T21:19:58+00:00"
   },
   {
     "title": "Storage Archives",
@@ -924,7 +927,7 @@
     "title": "Artificial Intelligence Archives",
     "url": "https://jameskilby.co.uk/category/artificial-intelligence/",
     "description": "Browse all Artificial Intelligence Archives articles. In-depth technical content covering Artificial Intelligence Archives topics, best practices, and real-world solutions.",
-    "content": "Artificial Intelligence Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Artificial Intelligence Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames December 5, 2025January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most… Artificial Intelligence | Homelab Warp – The intelligent terminal ByJames April 11, 2025October 3, 2025 How Warp is helping me run my homelab. Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 27, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission rec",
+    "content": "Artificial Intelligence Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Artificial Intelligence Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most… Artificial Intelligence | Homelab Warp – The intelligent terminal ByJames April 11, 2025October 3, 2025 How Warp is helping me run my homelab. Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 27, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission recently to regain ",
     "categories": [
       "Ansible",
       "Artificial Intelligence",
@@ -938,17 +941,14 @@
       "Hosting"
     ],
     "tags": [],
-    "date": "2025-12-05T14:26:20+00:00"
+    "date": "2026-01-15T21:19:58+00:00"
   },
   {
     "title": "VMware Archives",
     "url": "https://jameskilby.co.uk/category/vmware/",
     "description": "Browse all VMware Archives articles. In-depth technical content covering VMware Archives topics, best practices, and real-world solutions.",
-    "content": "VMware Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025 • 📖1 min read(55 words) One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Time VMC allows you to utilise the Amazon… VMware | vSAN vSAN Cluster Shutdown – orchestration ByJames December 6, 2025December 8, 2025 How to safety shutdown a vSAN Environment Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames December 5, 2025January 15, 2026 In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode",
+    "content": "VMware Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most… VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025 One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Time VMC allows you to utilise the Amazon… VMware | vSAN vSAN Cluster Shutdown – orches",
     "categories": [
-      "VMware Cloud on AWS",
-      "VMware",
-      "vSAN",
       "Ansible",
       "Artificial Intelligence",
       "Containers",
@@ -956,6 +956,9 @@
       "Homelab",
       "NVIDIA",
       "Traefik",
+      "VMware",
+      "VMware Cloud on AWS",
+      "vSAN",
       "TrueNAS Scale",
       "vSphere",
       "Nutanix",
@@ -969,7 +972,7 @@
       "AWS"
     ],
     "tags": [],
-    "date": "2025-12-08T14:03:44+00:00"
+    "date": "2026-01-15T21:19:58+00:00"
   },
   {
     "title": "VCF Archives",
@@ -1040,7 +1043,7 @@
     "title": "Devops Archives",
     "url": "https://jameskilby.co.uk/category/devops/",
     "description": "Browse all Devops Archives articles. In-depth technical content covering Devops Archives topics, best practices, and real-world solutions.",
-    "content": "Devops Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Devops Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames December 5, 2025January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most… Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. T",
+    "content": "Devops Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Devops Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most… Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer",
     "categories": [
       "Ansible",
       "Artificial Intelligence",
@@ -1056,7 +1059,7 @@
       "Personal"
     ],
     "tags": [],
-    "date": "2025-12-05T14:26:20+00:00"
+    "date": "2026-01-15T21:19:58+00:00"
   },
   {
     "title": "Cloudflare Archives",
@@ -1078,7 +1081,7 @@
     "title": "Homelab Archives",
     "url": "https://jameskilby.co.uk/category/homelab/",
     "description": "Browse all Homelab Archives articles. In-depth technical content covering Homelab Archives topics, best practices, and real-world solutions.",
-    "content": "Homelab Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames December 5, 2025January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most… Ansible | Homelab Managing my Homelab with SemaphoreUI ByJames September 2, 2025December 18, 2025 I recently stumbled across Semaphore, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running ea",
+    "content": "Homelab Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most… Ansible | Homelab Managing my Homelab with SemaphoreUI ByJames September 2, 2025December 18, 2025 I recently stumbled across Semaphore, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running easily with… Artif",
     "categories": [
       "Ansible",
       "Artificial Intelligence",
@@ -1102,7 +1105,7 @@
       "Automation"
     ],
     "tags": [],
-    "date": "2025-12-05T14:26:20+00:00"
+    "date": "2026-01-15T21:19:58+00:00"
   },
   {
     "title": "Automation Archives",
@@ -1260,7 +1263,7 @@
     "title": "Traefik Archives",
     "url": "https://jameskilby.co.uk/category/traefik/",
     "description": "Browse all Traefik Archives articles. In-depth technical content covering Traefik Archives topics, best practices, and real-world solutions.",
-    "content": "Traefik Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Traefik Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames December 5, 2025January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most…",
+    "content": "Traefik Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Traefik Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most…",
     "categories": [
       "Ansible",
       "Artificial Intelligence",
@@ -1272,13 +1275,13 @@
       "VMware"
     ],
     "tags": [],
-    "date": "2025-12-05T14:26:20+00:00"
+    "date": "2026-01-15T21:19:58+00:00"
   },
   {
     "title": "Containers Archives",
     "url": "https://jameskilby.co.uk/category/containers/",
     "description": "Browse all Containers Archives articles. In-depth technical content covering Containers Archives topics, best practices, and real-world solutions.",
-    "content": "Containers Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Containers Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames December 5, 2025January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most…",
+    "content": "Containers Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Containers Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most…",
     "categories": [
       "Ansible",
       "Artificial Intelligence",
@@ -1290,13 +1293,13 @@
       "VMware"
     ],
     "tags": [],
-    "date": "2025-12-05T14:26:20+00:00"
+    "date": "2026-01-15T21:19:58+00:00"
   },
   {
     "title": "Ansible Archives",
     "url": "https://jameskilby.co.uk/category/ansible/",
     "description": "Browse all Ansible Archives articles. In-depth technical content covering Ansible Archives topics, best practices, and real-world solutions.",
-    "content": "Ansible Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Ansible Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames December 5, 2025January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most… Ansible | Homelab Managing my Homelab with SemaphoreUI ByJames September 2, 2025December 18, 2025 I recently stumbled across Semaphore, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running ea",
+    "content": "Ansible Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Ansible Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames January 15, 2026 • 📖1 min read(55 words) In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most… Ansible | Homelab Managing my Homelab with SemaphoreUI ByJames September 2, 2025December 18, 2025 I recently stumbled across Semaphore, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running easily with…",
     "categories": [
       "Ansible",
       "Artificial Intelligence",
@@ -1308,7 +1311,7 @@
       "VMware"
     ],
     "tags": [],
-    "date": "2025-12-05T14:26:20+00:00"
+    "date": "2026-01-15T21:19:58+00:00"
   },
   {
     "title": "Consulting Archives",
@@ -1362,13 +1365,11 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "Personal",
-      "VCF",
       "vSAN",
-      "Homelab",
-      "Automation",
-      "Networking",
-      "Storage"
+      "TrueNAS Scale",
+      "vSphere",
+      "Personal",
+      "Homelab"
     ],
     "tags": [
       "#VMware Cloud on AWS"
@@ -1383,10 +1384,11 @@
     "categories": [
       "Artificial Intelligence",
       "Homelab",
-      "Networking",
-      "Mikrotik",
-      "Runecast",
+      "Storage",
+      "vExpert",
+      "VCF",
       "VMware",
+      "Nutanix",
       "Hosting"
     ],
     "tags": [
@@ -1404,18 +1406,11 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "vSAN",
       "Homelab",
-      "Networking",
-      "Storage",
-      "vSphere",
+      "Veeam",
       "Personal",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik"
+      "VCF",
+      "AWS"
     ],
     "tags": [
       "#Sizing",
@@ -1423,31 +1418,6 @@
       "#VMware Cloud on AWS"
     ],
     "date": "2025-05-21T09:33:04+00:00"
-  },
-  {
-    "title": "Automating The Deployment Of My AI Homelab",
-    "url": "https://jameskilby.co.uk/2025/12/automating-the-deployment-of-my-ai-homelab-and-other-improvements/",
-    "description": "In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in",
-    "content": "Automating The Deployment Of My AI Homelab - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my AI Homelab ByJames December 5, 2025January 15, 2026 • 📖5 min read(1,031 words) 📅Published: December 05, 2025•Updated: January 15, 2026 In a previous post, I wrote about using my VMware lab with a NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most of the steps. This was for a few reasons, firstly I wanted to get better at automating in general. Secondly, I found the setup brittle and wanted to improve the reliability of deployments. I also decided to bite the bullet and update the graphics card I was using to something a bit more modern and capable. After a bit of searching I decided",
-    "categories": [
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "Homelab",
-      "NVIDIA",
-      "Traefik",
-      "VMware",
-      "Personal",
-      "vSphere",
-      "VCF",
-      "Hosting",
-      "Storage",
-      "TrueNAS Scale",
-      "VMware Cloud on AWS"
-    ],
-    "tags": [],
-    "date": "2025-12-05T14:26:20+00:00"
   },
   {
     "title": "Time In A VMC Environment",
@@ -1469,16 +1439,15 @@
     "title": "VSAN Cluster Shutdown - Orchestration",
     "url": "https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/",
     "description": "How to safety shutdown a vSAN Environment",
-    "content": "VSAN Cluster Shutdown - Orchestration - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | vSAN vSAN Cluster Shutdown – orchestration ByJames December 6, 2025December 8, 2025 • 📖1 min read(115 words) 📅Published: December 06, 2025•Updated: December 08, 2025 As can be seen on my Lab Overview page. I have a GPU/Management cluster that is usually running 24×7. I also have a 3x Node vSAN cluster that I use when I need more resources (or specifically if I need vSAN to test with) This allows me to See the overview below To shut down a vSAN cluste,r there is a nice workflow built into vCentre that will orchestrate all the required actions for you And there you have it… To restart the cluster, ensure all the hosts are booted. Leave them in maintenance mode and then select “Restart vSAN Services” The workflow will enable them to bring them back into operation. Restart vSAN Services Similar Posts Homelab | Veeam | VMware Lab Update – Desired Workloads ByJames Januar",
+    "content": "VSAN Cluster Shutdown - Orchestration - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | vSAN vSAN Cluster Shutdown – orchestration ByJames December 6, 2025December 8, 2025 • 📖1 min read(115 words) 📅Published: December 06, 2025•Updated: December 08, 2025 As can be seen on my Lab Overview page. I have a GPU/Management cluster that is usually running 24×7. I also have a 3x Node vSAN cluster that I use when I need more resources (or specifically if I need vSAN to test with) This allows me to See the overview below To shut down a vSAN cluste,r there is a nice workflow built into vCentre that will orchestrate all the required actions for you And there you have it… To restart the cluster, ensure all the hosts are booted. Leave them in maintenance mode and then select “Restart vSAN Services” The workflow will enable them to bring them back into operation. Restart vSAN Services Similar Posts Homelab | Nutanix | VMware New Nodes ByJames July 2, 2024October 1, 20",
     "categories": [
       "VMware",
       "vSAN",
       "Homelab",
-      "Veeam",
-      "Runecast",
-      "VMware Cloud on AWS",
-      "Personal",
-      "vSphere"
+      "Nutanix",
+      "Automation",
+      "VCF",
+      "VMware Cloud on AWS"
     ],
     "tags": [],
     "date": "2025-12-06T10:59:14+00:00"
@@ -1536,14 +1505,14 @@
       "Docker",
       "Portainer",
       "Synology",
-      "VCF",
-      "VMware",
       "Homelab",
-      "Veeam",
-      "Runecast",
-      "Ansible",
-      "Networking",
-      "Storage"
+      "Hosting",
+      "Nutanix",
+      "VMware",
+      "VCF",
+      "Artificial Intelligence",
+      "Storage",
+      "vExpert"
     ],
     "tags": [
       "#Homelab",
@@ -1560,15 +1529,14 @@
     "categories": [
       "Ansible",
       "Homelab",
-      "Mikrotik",
-      "Networking",
+      "Runecast",
+      "VMware",
       "Artificial Intelligence",
       "Docker",
+      "Veeam",
       "Storage",
       "TrueNAS Scale",
-      "Synology",
-      "Hosting",
-      "Kubernetes"
+      "Hosting"
     ],
     "tags": [
       "#Ansible",
@@ -1588,18 +1556,13 @@
       "Docker",
       "Hosting",
       "Homelab",
-      "Networking",
-      "Storage",
+      "TrueNAS Scale",
       "VMware",
-      "Nutanix",
-      "Veeam",
-      "Mikrotik",
+      "vSAN",
+      "vSphere",
+      "Portainer",
       "Synology",
-      "Ansible",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik"
+      "Wordpress"
     ],
     "tags": [
       "#AI",
@@ -2302,12 +2265,14 @@
       "Automation",
       "Homelab",
       "VMware",
+      "Docker",
+      "Hosting",
+      "Kubernetes",
       "Storage",
+      "Networking",
+      "Mikrotik",
       "VMware Cloud on AWS",
-      "vSAN",
-      "TrueNAS Scale",
-      "vSphere",
-      "vExpert"
+      "Veeam"
     ],
     "tags": [
       "#Automation",
@@ -2325,12 +2290,13 @@
     "categories": [
       "Personal",
       "Consulting",
-      "VMware",
-      "vSphere",
       "Hosting",
       "Cloudflare",
       "Wordpress",
-      "AWS"
+      "Devops",
+      "VMware",
+      "vSphere",
+      "Nutanix"
     ],
     "tags": [
       "#Homeoffice",
@@ -2373,19 +2339,12 @@
     "categories": [
       "Devops",
       "Personal",
-      "Automation",
-      "Homelab",
-      "VMware",
-      "vSphere",
-      "Hosting",
       "Cloudflare",
-      "Wordpress",
       "Github",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "NVIDIA",
-      "Traefik"
+      "Wordpress",
+      "Hosting",
+      "Nutanix",
+      "AWS"
     ],
     "tags": [
       "#Git",
@@ -2403,11 +2362,11 @@
       "Personal",
       "VMware",
       "Homelab",
-      "Networking",
-      "Storage",
       "VMware Cloud on AWS",
+      "Devops",
       "VCF",
-      "Consulting"
+      "Networking",
+      "Storage"
     ],
     "tags": [
       "#Certifications",
@@ -2424,11 +2383,12 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
+      "vSAN",
       "Homelab",
       "Veeam",
-      "Networking",
-      "Storage",
-      "Personal"
+      "Personal",
+      "vSphere",
+      "VCF"
     ],
     "tags": [
       "#AWS",
@@ -2449,13 +2409,11 @@
       "VMware",
       "VMware Cloud on AWS",
       "Homelab",
-      "Veeam",
+      "Runecast",
       "Personal",
       "vSphere",
-      "TrueNAS Scale",
       "vSAN",
-      "AWS",
-      "Nutanix"
+      "Automation"
     ],
     "tags": [
       "#VMC",
@@ -2471,11 +2429,10 @@
     "categories": [
       "Nutanix",
       "Personal",
-      "Devops",
       "VMware",
-      "Hosting",
       "vSphere",
-      "AWS"
+      "Consulting",
+      "Homelab"
     ],
     "tags": [
       "#Certification",
@@ -2492,13 +2449,14 @@
       "Homelab",
       "Storage",
       "Synology",
-      "Networking",
-      "Automation",
+      "Runecast",
       "VMware",
       "Hosting",
-      "Mikrotik",
+      "TrueNAS Scale",
       "Docker",
-      "Portainer"
+      "Kubernetes",
+      "Portainer",
+      "Automation"
     ],
     "tags": [
       "#Homelab",
@@ -2515,15 +2473,10 @@
       "Homelab",
       "VMware",
       "vSphere",
-      "AWS",
-      "Veeam",
-      "VCF",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik",
+      "Personal",
+      "Storage",
+      "Synology",
+      "TrueNAS Scale",
       "VMware Cloud on AWS"
     ],
     "tags": [
@@ -2542,11 +2495,12 @@
       "Networking",
       "Storage",
       "VMware",
-      "Artificial Intelligence",
       "Docker",
-      "Hosting",
-      "Personal",
-      "VCF"
+      "Portainer",
+      "Synology",
+      "Ansible",
+      "Artificial Intelligence",
+      "VMware Cloud on AWS"
     ],
     "tags": [
       "#Homelab",
@@ -2564,13 +2518,14 @@
       "Homelab",
       "Hosting",
       "Kubernetes",
-      "Artificial Intelligence",
-      "Personal",
-      "Veeam",
+      "Nutanix",
       "VMware",
-      "Runecast",
-      "Cloudflare",
-      "Wordpress"
+      "Storage",
+      "vExpert",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere",
+      "Synology"
     ],
     "tags": [
       "#Containers",
@@ -2587,13 +2542,19 @@
     "categories": [
       "Homelab",
       "Hosting",
-      "Storage",
-      "Synology",
-      "Personal",
-      "vExpert",
+      "Networking",
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "VMware",
+      "Cloudflare",
+      "Wordpress",
       "Docker",
-      "Portainer",
-      "VMware"
+      "Storage",
+      "Synology"
     ],
     "tags": [
       "#Homelab",
@@ -2610,13 +2571,10 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Devops",
-      "Github",
-      "Personal",
       "AWS",
-      "Docker",
-      "Homelab",
-      "Kubernetes"
+      "Personal",
+      "Devops",
+      "Github"
     ],
     "tags": [
       "#Cloudflare",
@@ -2634,16 +2592,15 @@
     "categories": [
       "Homelab",
       "VMware",
+      "VCF",
+      "Artificial Intelligence",
+      "Docker",
+      "Storage",
+      "Networking",
       "TrueNAS Scale",
       "vSAN",
       "vSphere",
-      "Artificial Intelligence",
-      "Docker",
-      "Hosting",
-      "Portainer",
-      "Synology",
-      "VMware Cloud on AWS",
-      "Runecast"
+      "vExpert"
     ],
     "tags": [
       "#Homelab",
@@ -2660,12 +2617,14 @@
     "categories": [
       "Hosting",
       "Wordpress",
+      "Docker",
+      "Homelab",
+      "Kubernetes",
       "Cloudflare",
       "Devops",
       "Github",
-      "Docker",
-      "Homelab",
-      "Kubernetes"
+      "AWS",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Blogging",
@@ -2683,15 +2642,12 @@
       "Homelab",
       "Veeam",
       "VMware",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik",
-      "Networking",
+      "VMware Cloud on AWS",
+      "vSAN",
       "Storage",
-      "Mikrotik"
+      "Synology",
+      "Mikrotik",
+      "Networking"
     ],
     "tags": [
       "#Desired State",
@@ -2708,8 +2664,8 @@
     "categories": [
       "Cloudflare",
       "Hosting",
-      "Personal",
       "Wordpress",
+      "Personal",
       "Devops",
       "Github"
     ],
@@ -2725,18 +2681,22 @@
     "title": "Lab Update - Part 3 Network",
     "url": "https://jameskilby.co.uk/2022/01/lab-update-part-3-network/",
     "description": "Stay updated on our lab's network migration to PFSense. Learn about the benefits of 40Gb/s vMotion and future plans for a 25Gb/s switch.",
-    "content": "Lab Update - Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022October 1, 2025 • 📖1 min read(113 words) 📅Published: January 06, 2022•Updated: October 01, 2025 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. Similar Posts Artificial Intelligence | Docker | Hosting How I Migrated f",
+    "content": "Lab Update - Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022October 1, 2025 • 📖1 min read(113 words) 📅Published: January 06, 2022•Updated: October 01, 2025 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. Similar Posts Automation | Homelab | VMware Template Deployment with Pack",
     "categories": [
       "Homelab",
       "Networking",
+      "Automation",
+      "VMware",
       "Artificial Intelligence",
       "Docker",
-      "Hosting",
+      "Portainer",
+      "Synology",
       "Nutanix",
-      "VMware",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere"
+      "Ansible",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik"
     ],
     "tags": [
       "#Homelab",
@@ -2758,8 +2718,9 @@
       "Docker",
       "Homelab",
       "Kubernetes",
-      "Artificial Intelligence",
-      "Devops"
+      "Nutanix",
+      "VMware",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Cloudflare",
@@ -2775,12 +2736,11 @@
     "categories": [
       "Homelab",
       "Storage",
-      "Artificial Intelligence",
-      "Docker",
-      "TrueNAS Scale",
-      "Synology",
+      "VMware",
+      "Nutanix",
       "Networking",
-      "VMware"
+      "Automation",
+      "Ansible"
     ],
     "tags": [
       "#NVMe",
