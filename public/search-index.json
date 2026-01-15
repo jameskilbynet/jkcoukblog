@@ -3,23 +3,23 @@
     "title": "Jameskilbycouk - James Kilby's Technical Blog Covering VMware, Homelab Projects, Cloud Computing, And Infrastructure Automation. Real-world IT Solutions.",
     "url": "https://jameskilby.co.uk/",
     "description": "James Kilby's technical blog covering VMware, homelab projects, cloud computing, and infrastructure automation. Real-world IT solutions.",
-    "content": "Jameskilbycouk - James Kilby's Technical Blog Covering VMware, Homelab Projects, Cloud Computing, And Infrastructure Automation. Real-world IT Solutions. Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Ubuntu Ubuntu Disk Expansion Steps ByJames December 15, 2025January 15, 2026 • 📖1 min read(55 words) How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps. So I decided to write them down. 1. Rescan for disk size changes sudo tee /sys/class/block/sda/device/rescan 2. Extend the physical partition (if needed) sudo growpart /dev/sda 3 3. Resize the physical… VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025 One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Time",
+    "content": "Jameskilbycouk - James Kilby's Technical Blog Covering VMware, Homelab Projects, Cloud Computing, And Infrastructure Automation. Real-world IT Solutions. Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026 • 📖1 min read(55 words) I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had… Ubuntu Ubuntu Disk Expansion Steps ByJames December 15, 2025January 15, 2026 How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps. So I decided to write them down. 1. Rescan for disk size changes sudo tee /sys/class/block/sda/device/rescan 2. Extend the physical partition (if needed) sudo g",
     "categories": [
+      "Cloudflare",
+      "Hosting",
+      "Wordpress",
       "Ubuntu",
       "VMware Cloud on AWS",
       "VMware",
       "vSAN",
-      "Cloudflare",
       "Devops",
       "Github",
-      "Wordpress",
       "Ansible",
       "Homelab",
       "Artificial Intelligence",
       "Docker",
       "Portainer",
       "Synology",
-      "Hosting",
       "TrueNAS Scale",
       "vSphere",
       "Storage",
@@ -39,7 +39,7 @@
       "Money"
     ],
     "tags": [],
-    "date": "2025-12-15T20:56:40+00:00"
+    "date": "2026-01-15T15:12:16+00:00"
   },
   {
     "title": "Configure DHCP Option 43 For UniFi Devices To Enable Remote Adoption Across Subnets",
@@ -49,14 +49,13 @@
     "categories": [
       "Homelab",
       "Networking",
-      "VMware",
-      "vSphere",
       "Storage",
       "Synology",
-      "Automation",
-      "Docker",
+      "Nutanix",
+      "VMware",
       "Hosting",
-      "Kubernetes"
+      "Artificial Intelligence",
+      "Docker"
     ],
     "tags": [
       "#DHCP",
@@ -78,10 +77,11 @@
       "Homelab",
       "Storage",
       "Synology",
-      "Veeam",
       "VMware Cloud on AWS",
       "Networking",
-      "VCF"
+      "AWS",
+      "Veeam",
+      "Personal"
     ],
     "tags": [
       "#Homelab",
@@ -101,12 +101,12 @@
       "Artificial Intelligence",
       "Docker",
       "Homelab",
-      "Storage",
-      "TrueNAS Scale",
-      "Networking",
-      "VMware",
       "Hosting",
-      "Nutanix"
+      "VMware",
+      "Runecast",
+      "Veeam",
+      "Storage",
+      "TrueNAS Scale"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -124,13 +124,12 @@
       "Homelab",
       "Storage",
       "TrueNAS Scale",
-      "Docker",
-      "Portainer",
-      "Synology",
+      "Mikrotik",
+      "Networking",
+      "Automation",
       "VMware",
-      "vSphere",
-      "Kubernetes",
-      "Veeam"
+      "Hosting",
+      "Synology"
     ],
     "tags": [
       "#Homelab",
@@ -147,13 +146,12 @@
       "Mikrotik",
       "Networking",
       "Homelab",
-      "VMware",
-      "Runecast",
-      "Storage",
-      "vExpert",
       "TrueNAS Scale",
+      "VMware",
       "vSAN",
       "vSphere",
+      "Artificial Intelligence",
+      "Storage",
       "Synology"
     ],
     "tags": [
@@ -173,10 +171,10 @@
       "Nutanix",
       "VMware",
       "Storage",
-      "TrueNAS Scale",
-      "Runecast",
-      "Networking",
-      "VMware Cloud on AWS"
+      "Synology",
+      "VCF",
+      "Personal",
+      "Networking"
     ],
     "tags": [
       "#Homelab",
@@ -193,16 +191,13 @@
     "categories": [
       "VCF",
       "VMware",
-      "Homelab",
-      "Storage",
-      "TrueNAS Scale",
       "Personal",
       "vSphere",
-      "Networking",
-      "Veeam",
-      "Docker",
-      "Portainer",
-      "Synology"
+      "VMware Cloud on AWS",
+      "Homelab",
+      "Storage",
+      "vExpert",
+      "vSAN"
     ],
     "tags": [
       "#CPU",
@@ -220,13 +215,15 @@
     "categories": [
       "VMware",
       "VCF",
-      "Personal",
+      "VMware Cloud on AWS",
+      "vSAN",
       "Homelab",
+      "Nutanix",
       "Storage",
       "vExpert",
+      "AWS",
       "Veeam",
-      "vSphere",
-      "VMware Cloud on AWS"
+      "Networking"
     ],
     "tags": [
       "#Holodeck",
@@ -254,9 +251,13 @@
       "VMware",
       "AWS",
       "Veeam",
+      "Hosting",
       "Homelab",
+      "vSAN",
+      "Personal",
       "VMware Cloud on AWS",
-      "Hosting"
+      "TrueNAS Scale",
+      "vSphere"
     ],
     "tags": [
       "#AWS",
@@ -274,9 +275,8 @@
       "AWS",
       "Personal",
       "VMware",
-      "Veeam",
+      "VMware Cloud on AWS",
       "Nutanix",
-      "vSphere",
       "Hosting"
     ],
     "tags": [
@@ -292,13 +292,14 @@
     "content": "Lab Storage - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Lab Storage ByJames February 10, 2019July 10, 2024 • 📖1 min read(207 words) 📅Published: February 10, 2019•Updated: July 10, 2024 Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology DS918 It’s a very compact unit with a quad-core Intel Celeron & I have left the RAM at 4 GB for now. I have added some of the existing SSD’s that I had giving me about 3TB of usable flash.  I am presenting this back to my VMware hosts using NFS 4.1.   I must have missed the announcement as this is now built into the Synology GUI ( It used to be a command-line-only option) I have verified the VAAI works as expected in this configuration.  At pr",
     "categories": [
       "Homelab",
-      "Storage",
-      "TrueNAS Scale",
-      "Mikrotik",
-      "Networking",
-      "Artificial Intelligence",
+      "Nutanix",
       "VMware",
-      "Docker"
+      "Artificial Intelligence",
+      "Docker",
+      "Hosting",
+      "Storage",
+      "vExpert",
+      "Networking"
     ],
     "tags": [
       "#Homelab",
@@ -337,13 +338,15 @@
       "Homelab",
       "Storage",
       "vExpert",
-      "Networking",
-      "Hosting",
-      "Synology",
       "VMware",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere"
+      "Personal",
+      "Artificial Intelligence",
+      "Docker",
+      "Portainer",
+      "Synology",
+      "Automation",
+      "VCF",
+      "TrueNAS Scale"
     ],
     "tags": [
       "#Homelab",
@@ -365,10 +368,10 @@
       "VMware",
       "VMware Cloud on AWS",
       "vSAN",
-      "VCF",
-      "Personal",
       "Homelab",
-      "Veeam"
+      "vSphere",
+      "Personal",
+      "Automation"
     ],
     "tags": [
       "#Storage",
@@ -391,10 +394,8 @@
       "Homelab",
       "Veeam",
       "Automation",
-      "Hosting",
-      "Cloudflare",
-      "Wordpress",
-      "VMware Cloud on AWS"
+      "Storage",
+      "vExpert"
     ],
     "tags": [
       "#Certification",
@@ -411,9 +412,9 @@
     "categories": [
       "Networking",
       "Homelab",
+      "Mikrotik",
       "Storage",
-      "VMware",
-      "Mikrotik"
+      "VMware"
     ],
     "tags": [
       "#City Fibre",
@@ -431,10 +432,12 @@
     "categories": [
       "Hosting",
       "Personal",
+      "AWS",
       "Cloudflare",
       "Wordpress",
-      "AWS",
-      "VMware"
+      "Devops",
+      "VMware",
+      "Nutanix"
     ],
     "tags": [
       "#Analytics",
@@ -479,11 +482,10 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Docker",
       "Homelab",
-      "Kubernetes",
-      "Personal",
-      "Artificial Intelligence"
+      "AWS",
+      "Devops",
+      "Github"
     ],
     "tags": [
       "#Cloudflare",
@@ -501,15 +503,13 @@
     "categories": [
       "Runecast",
       "VMware",
-      "Personal",
       "Homelab",
-      "Docker",
-      "Portainer",
-      "Synology",
-      "Artificial Intelligence",
       "Storage",
+      "vExpert",
+      "Nutanix",
+      "VCF",
       "Hosting",
-      "Kubernetes"
+      "Personal"
     ],
     "tags": [
       "#Homelab",
@@ -527,13 +527,15 @@
     "categories": [
       "Homelab",
       "Storage",
-      "Artificial Intelligence",
-      "Docker",
-      "Kubernetes",
-      "TrueNAS Scale",
+      "Networking",
+      "Automation",
       "VMware",
-      "vSphere",
-      "Veeam"
+      "Ansible",
+      "Docker",
+      "Hosting",
+      "Kubernetes",
+      "vExpert",
+      "vSphere"
     ],
     "tags": [
       "#NAS",
@@ -550,12 +552,11 @@
     "categories": [
       "VMware",
       "Personal",
-      "Homelab",
       "VMware Cloud on AWS",
-      "Nutanix",
-      "Networking",
-      "Storage",
-      "Devops"
+      "Homelab",
+      "vSphere",
+      "TrueNAS Scale",
+      "vSAN"
     ],
     "tags": [
       "#Charity",
@@ -573,13 +574,14 @@
     "categories": [
       "Homelab",
       "VMware",
-      "VCF",
-      "Storage",
-      "vExpert",
-      "Hosting",
-      "TrueNAS Scale",
+      "Personal",
+      "VMware Cloud on AWS",
       "Mikrotik",
-      "Networking"
+      "Networking",
+      "Ansible",
+      "Docker",
+      "Hosting",
+      "Kubernetes"
     ],
     "tags": [
       "#Homelab",
@@ -600,14 +602,36 @@
     "date": "2017-05-29T11:49:16+00:00"
   },
   {
+    "title": "Web Development Improvements",
+    "url": "https://jameskilby.co.uk/2026/01/web-development-improvements/",
+    "description": "I have spent the Christmas break making some improvements to this blog. A lot of these are in \"the backend\" These help improve the performance, Privacy, SEO",
+    "content": "Web Development Improvements - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026 • 📖8 min read(1,501 words) I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had a HUGE amount of help with some of these steps from a variety of AI tools. However Warp did the bulk of the heavy lifting. The repo behind the content of this site as well as the implementation is public in case you want to look deeper/steal anything. Before we dig into the details it’s probably worth briefly summarising what is going on. Solution Overview Below is a condensed view of what the GitHub runner does. Connect to WordPress REST API Discover all posts, pages, ",
+    "categories": [
+      "Cloudflare",
+      "Hosting",
+      "Wordpress",
+      "Devops",
+      "Personal",
+      "AWS",
+      "Homelab"
+    ],
+    "tags": [
+      "#Cloudflare",
+      "#Cloudflare Pages",
+      "#github",
+      "#Wordpress"
+    ],
+    "date": "2026-01-15T15:12:16+00:00"
+  },
+  {
     "title": "Nutanix Command Reference Guide",
     "url": "https://jameskilby.co.uk/2018/06/nutanix-command-reference-guide/",
     "description": "Access a comprehensive list of useful Nutanix commands. Enhance your skills and streamline your operations with our handy reference guide.",
-    "content": "Nutanix Command Reference Guide - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Nutanix Nutanix Command Reference Guide ByJames June 5, 2018July 10, 2024 • 📖1 min read(105 words) 📅Published: June 05, 2018•Updated: July 10, 2024 Nutanix Command List This is a list of Nutanix commands I have found useful. Its here as a reference and if i need a command more than a few times ill generally add it here. CLI ncli cluster get-domain-fault-tolerance-status type=node  (Checks if all of the storage components meet the desired replication factor) cvm_shutdown -P now  ( Correct way to shutdown a CVM) ncc health_checks run_all –parallel=4 .  ( 4 is the max number) curator_cli get_under_replication_info summary=true Checks if any objects are not at the desired replication factor curl localhost:2019/prism/leader . Find the leader WEB http://{curator-master-cvm-ip}:2010/master/control ( If you want to invoke a curator scan manually) Similar Posts Homelab | Nutanix Nutanix CE",
+    "content": "Nutanix Command Reference Guide - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Nutanix Nutanix Command Reference Guide ByJames June 5, 2018July 10, 2024 • 📖1 min read(105 words) 📅Published: June 05, 2018•Updated: July 10, 2024 Nutanix Command List This is a list of Nutanix commands I have found useful. Its here as a reference and if i need a command more than a few times ill generally add it here. CLI ncli cluster get-domain-fault-tolerance-status type=node  (Checks if all of the storage components meet the desired replication factor) cvm_shutdown -P now  ( Correct way to shutdown a CVM) ncc health_checks run_all –parallel=4 .  ( 4 is the max number) curator_cli get_under_replication_info summary=true Checks if any objects are not at the desired replication factor curl localhost:2019/prism/leader . Find the leader WEB http://{curator-master-cvm-ip}:2010/master/control ( If you want to invoke a curator scan manually) Similar Posts Nutanix | Personal Nutanix N",
     "categories": [
       "Nutanix",
-      "Homelab",
       "Personal",
+      "Homelab",
       "VMware"
     ],
     "tags": [
@@ -620,16 +644,19 @@
     "title": "AWS Status Page - Monitoring Included",
     "url": "https://jameskilby.co.uk/2018/05/aws-status-page-monitoring-included/",
     "description": "LambStatus, Monitoring, AWS, Lambda",
-    "content": "AWS Status Page - Monitoring Included - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 • 📖1 min read(105 words) 📅Published: May 15, 2018•Updated: October 01, 2025 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at effectively zero cost Site Response The guide I followed is very good and is documented in the Git repo here Similar Posts Hosting | Personal Analytics in a privacy focused world ByJames November 10, 2023October 1, 2025 I recently helped m",
+    "content": "AWS Status Page - Monitoring Included - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 • 📖1 min read(105 words) 📅Published: May 15, 2018•Updated: October 01, 2025 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at effectively zero cost Site Response The guide I followed is very good and is documented in the Git repo here Similar Posts Cloudflare | Hosting | Wordpress Static WordPress hosting using Cloudflare ByJames October 20, 2022December 27, 2025",
     "categories": [
       "AWS",
       "Hosting",
-      "Personal",
       "Cloudflare",
       "Wordpress",
-      "Homelab",
+      "Personal",
+      "VMware",
+      "VMware Cloud on AWS",
       "Docker",
-      "Kubernetes"
+      "Homelab",
+      "Kubernetes",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#AWS",
@@ -661,9 +688,9 @@
       "Personal",
       "VMware",
       "vSphere",
-      "Consulting",
-      "AWS",
-      "Nutanix"
+      "Nutanix",
+      "Devops",
+      "Consulting"
     ],
     "tags": [],
     "date": "2018-10-16T08:22:45+00:00"
@@ -675,14 +702,13 @@
     "content": "Cloudflare Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting Cloudflare ByJames March 27, 2018December 8, 2024 • 📖1 min read(288 words) 📅Published: March 27, 2018•Updated: December 08, 2024 Cloudflare – What is it and why would I care? I have been using Cloudflare for a long time.  It is one of my go-to services and I use it to protect all of the public services I run for myself and other sites/ organizations. The basic premise of what Cloudflare do is that they are a distributed Web Application Firewall (WAF) and CDN but they also offer so much more. Because they have a large number of POP’s they can cache and push content closer to your end users to give them a better experience. This also offloads work from your firewalls, DNS, Web and Database servers.  At present they have 139 sites globally allowing you to host a site anywhere and get good global performance. Cloudflare has an amazing free tier so you can get started easily.   I use this to host all of my public D",
     "categories": [
       "Hosting",
+      "AWS",
+      "Artificial Intelligence",
       "Docker",
-      "Homelab",
-      "Kubernetes",
       "Cloudflare",
-      "Devops",
-      "Github",
       "Wordpress",
-      "Personal"
+      "Homelab",
+      "Kubernetes"
     ],
     "tags": [
       "#Cloudflare"
@@ -696,11 +722,11 @@
     "content": "AWS For Beginners - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS AWS for Beginners ByJames March 30, 2018July 10, 2024 • 📖1 min read(202 words) 📅Published: March 30, 2018•Updated: July 10, 2024 AWS for Beginners Part 1 I am hoping to get back into doing some AWS stuff over the next couple of months.  I am a huge fan of some of the tools and technology they have built.  It’s not perfect and it is often not well understood by people lifting and shifting existing infrastructure into “the cloud” My view is firmly if this is what you have done, then you have done it wrong and missed the point…. But if you do want to kick the tyres and see what it’s all about go and set up an account and play Ensure you implement these three recommendations Root Account Security – Ensure you have a strong password on this account then stop using it.  Use IAM to set up another account and then use that. Enable Two Factor Authentication – This is a must,  Sadly AWS don’t appear ",
     "categories": [
       "AWS",
-      "Hosting",
+      "Personal",
       "VMware",
       "Veeam",
-      "Personal",
-      "VMware Cloud on AWS"
+      "VMware Cloud on AWS",
+      "Hosting"
     ],
     "tags": [
       "#Account Setup",
@@ -717,10 +743,12 @@
       "Homelab",
       "Nutanix",
       "Artificial Intelligence",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
-      "Ansible"
+      "VMware",
+      "vSphere",
+      "Storage",
+      "TrueNAS Scale",
+      "Automation",
+      "Docker"
     ],
     "tags": [
       "#Nutanix"
@@ -736,14 +764,12 @@
       "Homelab",
       "Storage",
       "Synology",
-      "Nutanix",
-      "Docker",
-      "Portainer",
-      "TrueNAS Scale",
-      "Networking",
       "VMware",
-      "Hosting",
-      "Kubernetes"
+      "vExpert",
+      "VMware Cloud on AWS",
+      "vSAN",
+      "VCF",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Homelab",
@@ -960,17 +986,17 @@
     "title": "Cloudflare Archives",
     "url": "https://jameskilby.co.uk/category/cloudflare/",
     "description": "Browse all Cloudflare Archives articles. In-depth technical content covering Cloudflare Archives topics, best practices, and real-world solutions.",
-    "content": "Cloudflare Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 • 📖1 min read(55 words) I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Cloudflare | Hosting | Wordpress WordPress Hosting with Cloudflare Pages ByJames May 14, 2023October 1, 2025 Table of Contents The Tooling The Process WordPress Plugin Install GitHub setup Cloudflare setup I have been using Cloudflare to protect my web assets for a really long time. Throughout that time Cloudflare has been improving there capabilities and approximately 2 years ago I decided to move this blog ",
+    "content": "Cloudflare Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026 • 📖1 min read(55 words) I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had… Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Cloudflare | Hos",
     "categories": [
       "Cloudflare",
+      "Hosting",
+      "Wordpress",
       "Devops",
       "Github",
-      "Wordpress",
-      "Hosting",
       "Personal"
     ],
     "tags": [],
-    "date": "2025-10-06T15:57:06+00:00"
+    "date": "2026-01-15T15:12:16+00:00"
   },
   {
     "title": "Homelab Archives",
@@ -1092,17 +1118,17 @@
     "title": "Wordpress Archives",
     "url": "https://jameskilby.co.uk/category/wordpress/",
     "description": "Browse all Wordpress Archives articles. In-depth technical content covering Wordpress Archives topics, best practices, and real-world solutions.",
-    "content": "Wordpress Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Wordpress Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 • 📖1 min read(55 words) I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Cloudflare | Hosting | Wordpress WordPress Hosting with Cloudflare Pages ByJames May 14, 2023October 1, 2025 Table of Contents The Tooling The Process WordPress Plugin Install GitHub setup Cloudflare setup I have been using Cloudflare to protect my web assets for a really long time. Throughout that time Cloudflare has been improving there capabilities and approximately 2 years ago I decided to move this blog in",
+    "content": "Wordpress Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Wordpress Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026 • 📖1 min read(55 words) I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had… Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Cloudflare | Hosti",
     "categories": [
       "Cloudflare",
+      "Hosting",
+      "Wordpress",
       "Devops",
       "Github",
-      "Wordpress",
-      "Hosting",
       "Personal"
     ],
     "tags": [],
-    "date": "2025-10-06T15:57:06+00:00"
+    "date": "2026-01-15T15:12:16+00:00"
   },
   {
     "title": "AWS Archives",
@@ -1191,20 +1217,20 @@
     "title": "Hosting Archives",
     "url": "https://jameskilby.co.uk/category/hosting/",
     "description": "Browse all Hosting Archives articles. In-depth technical content covering Hosting Archives topics, best practices, and real-world solutions.",
-    "content": "Hosting Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 27, 2025 • 📖1 min read(55 words) Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail, but I have had some successes with other cloud services and a win is a win……. Hosting | Personal Analytics in a privacy focused world ByJames November 10, 2023October 1, 2025 I recently helped my friend Dean Lewis @veducate with some hosting issues. As part of the testing of this he kindly gave me a login to his WordPress instance. He has been a pretty prolific blogger over the years pumping out an amazing amount of really good content. It also highlighted to me that I… Cloudflare | Hosting | Wordpress WordPress Host",
+    "content": "Hosting Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026 • 📖1 min read(55 words) I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had… Artificial Intelligence | Docker | Hosting How I Migrated from Pocket to Hoarder with AI Integration ByJames January 29, 2025December 27, 2025 Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail, but I have had some successes with other cloud services and a win is a win……. Hosting | Personal Analytics in a privacy focuse",
     "categories": [
+      "Cloudflare",
+      "Hosting",
+      "Wordpress",
       "Artificial Intelligence",
       "Docker",
-      "Hosting",
       "Personal",
-      "Cloudflare",
-      "Wordpress",
       "Homelab",
       "Kubernetes",
       "AWS"
     ],
     "tags": [],
-    "date": "2025-01-29T23:31:56+00:00"
+    "date": "2026-01-15T15:12:16+00:00"
   },
   {
     "title": "An In-depth Look At VMware Cloud On AWS Hosts",
@@ -1214,12 +1240,11 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "VCF",
-      "Runecast",
+      "Homelab",
       "Personal",
       "vSphere",
-      "Homelab",
-      "Nutanix"
+      "AWS",
+      "Veeam"
     ],
     "tags": [
       "#VMware Cloud on AWS"
@@ -1234,14 +1259,12 @@
     "categories": [
       "Artificial Intelligence",
       "Homelab",
-      "Ansible",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
-      "Runecast",
+      "Nutanix",
       "VMware",
       "Storage",
-      "VCF"
+      "Synology",
+      "Hosting",
+      "Veeam"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -1258,12 +1281,11 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "Personal",
-      "vSphere",
-      "AWS",
-      "Veeam",
-      "VCF",
-      "vSAN"
+      "vSAN",
+      "Homelab",
+      "Networking",
+      "Storage",
+      "Personal"
     ],
     "tags": [
       "#Sizing",
@@ -1292,17 +1314,15 @@
     "title": "VSAN Cluster Shutdown - Orchestration",
     "url": "https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/",
     "description": "How to safety shutdown a vSAN Environment",
-    "content": "VSAN Cluster Shutdown - Orchestration - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | vSAN vSAN Cluster Shutdown – orchestration ByJames December 6, 2025December 8, 2025 • 📖1 min read(115 words) 📅Published: December 06, 2025•Updated: December 08, 2025 As can be seen on my Lab Overview page. I have a GPU/Management cluster that is usually running 24×7. I also have a 3x Node vSAN cluster that I use when I need more resources (or specifically if I need vSAN to test with) This allows me to See the overview below To shut down a vSAN cluste,r there is a nice workflow built into vCentre that will orchestrate all the required actions for you And there you have it… To restart the cluster, ensure all the hosts are booted. Leave them in maintenance mode and then select “Restart vSAN Services” The workflow will enable them to bring them back into operation. Restart vSAN Services Similar Posts Runecast | VMware Runecast Remediation Script’s ByJames May 16, 2023No",
+    "content": "VSAN Cluster Shutdown - Orchestration - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | vSAN vSAN Cluster Shutdown – orchestration ByJames December 6, 2025December 8, 2025 • 📖1 min read(115 words) 📅Published: December 06, 2025•Updated: December 08, 2025 As can be seen on my Lab Overview page. I have a GPU/Management cluster that is usually running 24×7. I also have a 3x Node vSAN cluster that I use when I need more resources (or specifically if I need vSAN to test with) This allows me to See the overview below To shut down a vSAN cluste,r there is a nice workflow built into vCentre that will orchestrate all the required actions for you And there you have it… To restart the cluster, ensure all the hosts are booted. Leave them in maintenance mode and then select “Restart vSAN Services” The workflow will enable them to bring them back into operation. Restart vSAN Services Similar Posts Homelab | Veeam | VMware Lab Update – Desired Workloads ByJames Januar",
     "categories": [
       "VMware",
       "vSAN",
-      "Runecast",
-      "TrueNAS Scale",
-      "vSphere",
-      "VMware Cloud on AWS",
       "Homelab",
-      "Networking",
-      "Storage"
+      "Veeam",
+      "Nutanix",
+      "Personal",
+      "VMware Cloud on AWS"
     ],
     "tags": [],
     "date": "2025-12-06T10:59:14+00:00"
@@ -1353,13 +1373,13 @@
       "Docker",
       "Portainer",
       "Synology",
-      "Artificial Intelligence",
       "Homelab",
-      "Automation",
+      "Storage",
+      "vExpert",
+      "Nutanix",
       "VMware",
-      "Hosting",
-      "Kubernetes",
-      "Storage"
+      "Automation",
+      "Networking"
     ],
     "tags": [
       "#Homelab",
@@ -1376,13 +1396,11 @@
     "categories": [
       "Ansible",
       "Homelab",
-      "Automation",
+      "Nutanix",
       "VMware",
-      "Hosting",
+      "Networking",
       "Storage",
-      "TrueNAS Scale",
-      "Runecast",
-      "VCF"
+      "Synology"
     ],
     "tags": [
       "#Ansible",
@@ -1401,13 +1419,14 @@
       "Artificial Intelligence",
       "Docker",
       "Hosting",
+      "Cloudflare",
+      "Wordpress",
       "Homelab",
-      "Kubernetes",
-      "Automation",
-      "VMware",
       "Networking",
-      "VCF",
-      "Veeam"
+      "Storage",
+      "Synology",
+      "vExpert",
+      "TrueNAS Scale"
     ],
     "tags": [
       "#AI",
@@ -1594,16 +1613,17 @@
     "title": "Github Archives",
     "url": "https://jameskilby.co.uk/tag/github/",
     "description": "Articles tagged with Github Archives. Explore technical guides, tutorials, and insights about Github Archives from James Kilby's blog.",
-    "content": "Github Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu github Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 • 📖1 min read(55 words) I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Devops | Personal My First Pull ByJames December 22, 2020December 8, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….",
+    "content": "Github Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu github Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026 • 📖1 min read(55 words) I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had… Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Devops | Personal My Fir",
     "categories": [
       "Cloudflare",
+      "Hosting",
+      "Wordpress",
       "Devops",
       "Github",
-      "Wordpress",
       "Personal"
     ],
     "tags": [],
-    "date": "2025-10-06T15:57:06+00:00"
+    "date": "2026-01-15T15:12:16+00:00"
   },
   {
     "title": "Disk Expand Archives",
@@ -1720,17 +1740,17 @@
     "title": "Cloudflare Archives",
     "url": "https://jameskilby.co.uk/tag/cloudflare/",
     "description": "Articles tagged with Cloudflare Archives. Explore technical guides, tutorials, and insights about Cloudflare Archives from James Kilby's blog.",
-    "content": "Cloudflare Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 • 📖1 min read(55 words) I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Hosting | Personal Analytics in a privacy focused world ByJames November 10, 2023October 1, 2025 I recently helped my friend Dean Lewis @veducate with some hosting issues. As part of the testing of this he kindly gave me a login to his WordPress instance. He has been a pretty prolific blogger over the years pumping out an amazing amount of really good content. It also highlighted to me that I… Cloudflare | Ho",
+    "content": "Cloudflare Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026 • 📖1 min read(55 words) I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had… Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Hosting | Person",
     "categories": [
       "Cloudflare",
+      "Hosting",
+      "Wordpress",
       "Devops",
       "Github",
-      "Wordpress",
-      "Hosting",
       "Personal"
     ],
     "tags": [],
-    "date": "2025-10-06T15:57:06+00:00"
+    "date": "2026-01-15T15:12:16+00:00"
   },
   {
     "title": "Homelab Archives",
@@ -1883,16 +1903,16 @@
     "title": "Cloudflare Pages Archives",
     "url": "https://jameskilby.co.uk/tag/cloudflare-pages/",
     "description": "Articles tagged with Cloudflare Pages Archives. Explore technical guides, tutorials, and insights about Cloudflare Pages Archives from James Kilby's blog.",
-    "content": "Cloudflare Pages Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare Pages Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 • 📖1 min read(55 words) I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Cloudflare | Hosting | Wordpress WordPress Hosting with Cloudflare Pages ByJames May 14, 2023October 1, 2025 Table of Contents The Tooling The Process WordPress Plugin Install GitHub setup Cloudflare setup I have been using Cloudflare to protect my web assets for a really long time. Throughout that time Cloudflare has been improving there capabilities and approximately 2 years ago I decided to mov",
+    "content": "Cloudflare Pages Archives - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare Pages Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026 • 📖1 min read(55 words) I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had… Cloudflare | Devops | Github | Wordpress How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare ByJames October 6, 2025October 22, 2025 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring… Clou",
     "categories": [
       "Cloudflare",
-      "Devops",
-      "Github",
+      "Hosting",
       "Wordpress",
-      "Hosting"
+      "Devops",
+      "Github"
     ],
     "tags": [],
-    "date": "2025-10-06T15:57:06+00:00"
+    "date": "2026-01-15T15:12:16+00:00"
   },
   {
     "title": "Homeoffice Archives",
@@ -2109,12 +2129,12 @@
       "Automation",
       "Homelab",
       "VMware",
-      "Networking",
-      "Artificial Intelligence",
-      "Nutanix",
+      "Storage",
+      "Synology",
       "VMware Cloud on AWS",
-      "vSAN",
-      "VCF"
+      "Networking",
+      "Runecast",
+      "Nutanix"
     ],
     "tags": [
       "#Automation",
@@ -2133,10 +2153,9 @@
       "Personal",
       "Consulting",
       "VMware",
-      "vSphere",
-      "AWS",
+      "Devops",
       "Hosting",
-      "Nutanix",
+      "AWS",
       "Cloudflare",
       "Wordpress"
     ],
@@ -2163,9 +2182,9 @@
     "content": "VeeamON2020 - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Veeam VeeamON2020 ByJames June 18, 2020April 25, 2023 • 📖1 min read(272 words) 📅Published: June 18, 2020•Updated: April 25, 2023 As everyone knows by now the world has changed possibly forever.  Due to Covid19 working from home has become the new normal.  We are lucky in the IT world that this has been fairly straightforward for most of us.  We are privileged in that it’s possible for us to continue indefinitely.  Organisations still need to move forward, to progress and adapt into the new normal. In the words of Charles Darwin “It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change.” With that most (if not all IT conferences have been postponed or gone online)   Veeam’s annual conference VeeamON is no exception and now it’s here!! As a Veeam Vanguard I was privileged to be given an early briefing on some of the ann",
     "categories": [
       "Veeam",
-      "Homelab",
       "VMware",
-      "AWS"
+      "AWS",
+      "Homelab"
     ],
     "tags": [
       "#Veeam",
@@ -2181,11 +2200,11 @@
     "categories": [
       "Devops",
       "Personal",
-      "VMware",
-      "Hosting",
       "Cloudflare",
+      "Hosting",
       "Wordpress",
-      "Consulting"
+      "Consulting",
+      "VMware"
     ],
     "tags": [
       "#Git",
@@ -2202,13 +2221,13 @@
     "categories": [
       "Personal",
       "VMware",
-      "Homelab",
-      "Veeam",
-      "Nutanix",
-      "Hosting",
       "VMware Cloud on AWS",
-      "Cloudflare",
-      "Wordpress"
+      "Homelab",
+      "Storage",
+      "vExpert",
+      "VCF",
+      "Automation",
+      "vSAN"
     ],
     "tags": [
       "#Certifications",
@@ -2226,11 +2245,9 @@
       "VMware",
       "VMware Cloud on AWS",
       "Homelab",
-      "Networking",
-      "Storage",
-      "vSAN",
+      "Personal",
       "VCF",
-      "vExpert"
+      "vSAN"
     ],
     "tags": [
       "#AWS",
@@ -2250,14 +2267,13 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "VCF",
-      "Runecast",
-      "AWS",
-      "Veeam",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere",
       "Homelab",
-      "Nutanix",
-      "Personal",
-      "vSphere"
+      "Networking",
+      "Storage",
+      "Automation"
     ],
     "tags": [
       "#VMC",
@@ -2273,10 +2289,12 @@
     "categories": [
       "Nutanix",
       "Personal",
-      "Hosting",
       "Homelab",
       "VMware",
-      "Consulting"
+      "Hosting",
+      "Cloudflare",
+      "Wordpress",
+      "Devops"
     ],
     "tags": [
       "#Certification",
@@ -2293,13 +2311,15 @@
       "Homelab",
       "Storage",
       "Synology",
+      "Automation",
       "VMware",
+      "Nutanix",
+      "Mikrotik",
+      "Networking",
+      "Veeam",
       "VMware Cloud on AWS",
       "vSAN",
-      "TrueNAS Scale",
-      "vSphere",
-      "Networking",
-      "Artificial Intelligence"
+      "VCF"
     ],
     "tags": [
       "#Homelab",
@@ -2317,11 +2337,12 @@
       "VMware",
       "vSphere",
       "Personal",
-      "Networking",
-      "AWS",
-      "Veeam",
+      "Artificial Intelligence",
+      "Storage",
+      "vExpert",
+      "TrueNAS Scale",
       "VMware Cloud on AWS",
-      "Runecast"
+      "Networking"
     ],
     "tags": [
       "#Upgrade",
@@ -2339,10 +2360,16 @@
       "Networking",
       "Storage",
       "VMware",
-      "VMware Cloud on AWS",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere",
+      "Ansible",
+      "Artificial Intelligence",
+      "Docker",
       "Hosting",
+      "Synology",
       "Nutanix",
-      "Synology"
+      "VMware Cloud on AWS"
     ],
     "tags": [
       "#Homelab",
@@ -2360,13 +2387,12 @@
       "Homelab",
       "Hosting",
       "Kubernetes",
-      "Networking",
-      "Cloudflare",
-      "Wordpress",
-      "Storage",
-      "Synology",
+      "Artificial Intelligence",
+      "VCF",
       "VMware",
-      "vSphere"
+      "Nutanix",
+      "Cloudflare",
+      "Wordpress"
     ],
     "tags": [
       "#Containers",
@@ -2383,18 +2409,14 @@
     "categories": [
       "Homelab",
       "Hosting",
-      "Cloudflare",
-      "Wordpress",
-      "Runecast",
-      "VMware",
-      "Networking",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere",
       "Automation",
+      "VMware",
       "Docker",
-      "Portainer",
-      "Synology"
+      "Kubernetes",
+      "Storage",
+      "Synology",
+      "Personal",
+      "Networking"
     ],
     "tags": [
       "#Homelab",
@@ -2412,12 +2434,11 @@
       "Hosting",
       "Wordpress",
       "AWS",
-      "Devops",
-      "Github",
-      "Personal",
+      "Artificial Intelligence",
       "Docker",
       "Homelab",
-      "Kubernetes"
+      "Kubernetes",
+      "Personal"
     ],
     "tags": [
       "#Cloudflare",
@@ -2435,14 +2456,13 @@
     "categories": [
       "Homelab",
       "VMware",
-      "Runecast",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
-      "Storage",
-      "Veeam",
+      "Personal",
+      "vSphere",
+      "Automation",
       "VMware Cloud on AWS",
-      "Artificial Intelligence"
+      "Storage",
+      "Synology",
+      "Ansible"
     ],
     "tags": [
       "#Homelab",
@@ -2462,9 +2482,10 @@
       "Cloudflare",
       "Devops",
       "Github",
-      "AWS",
       "Artificial Intelligence",
       "Docker",
+      "AWS",
+      "Homelab",
       "Personal"
     ],
     "tags": [
@@ -2483,14 +2504,15 @@
       "Homelab",
       "Veeam",
       "VMware",
+      "VMware Cloud on AWS",
+      "Nutanix",
       "Artificial Intelligence",
       "Docker",
       "Hosting",
-      "Nutanix",
       "Storage",
-      "vExpert",
+      "Synology",
       "Personal",
-      "VMware Cloud on AWS"
+      "vSphere"
     ],
     "tags": [
       "#Desired State",
@@ -2508,9 +2530,7 @@
       "Cloudflare",
       "Hosting",
       "Personal",
-      "Wordpress",
-      "Devops",
-      "Github"
+      "Wordpress"
     ],
     "tags": [
       "#Cloudflare",
@@ -2524,16 +2544,13 @@
     "title": "Lab Update - Part 3 Network",
     "url": "https://jameskilby.co.uk/2022/01/lab-update-part-3-network/",
     "description": "Stay updated on our lab's network migration to PFSense. Learn about the benefits of 40Gb/s vMotion and future plans for a 25Gb/s switch.",
-    "content": "Lab Update - Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022October 1, 2025 • 📖1 min read(113 words) 📅Published: January 06, 2022•Updated: October 01, 2025 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. Similar Posts Runecast | VMware Runecast Remediation Script’s ByJames May",
+    "content": "Lab Update - Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022October 1, 2025 • 📖1 min read(113 words) 📅Published: January 06, 2022•Updated: October 01, 2025 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. Similar Posts Networking Configuring a Zen Internet and City Fibre connec",
     "categories": [
       "Homelab",
       "Networking",
-      "Runecast",
-      "VMware",
       "Storage",
-      "Veeam",
-      "vExpert",
-      "TrueNAS Scale"
+      "TrueNAS Scale",
+      "VMware"
     ],
     "tags": [
       "#Homelab",
@@ -2551,8 +2568,11 @@
       "Cloudflare",
       "Personal",
       "Wordpress",
-      "Homelab",
-      "VMware"
+      "VMware",
+      "vSphere",
+      "Nutanix",
+      "Devops",
+      "Github"
     ],
     "tags": [
       "#Cloudflare",
@@ -2568,11 +2588,12 @@
     "categories": [
       "Homelab",
       "Storage",
+      "Kubernetes",
       "TrueNAS Scale",
       "Synology",
-      "Networking",
+      "VMware",
       "Hosting",
-      "VMware"
+      "Networking"
     ],
     "tags": [
       "#NVMe",
