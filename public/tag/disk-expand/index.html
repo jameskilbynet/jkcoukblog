@@ -131,11 +131,11 @@
 </div><!-- .entry-taxonomies -->
 <h2 class="entry-title"><a href="/2025/12/ubuntu-disk-expansion-steps/" rel="bookmark">Ubuntu Disk Expansion Steps</a></h2><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-12-15T20:56:40+00:00" itemprop="datePublished">December 15, 2025</time><time class="updated" datetime="2025-12-17T23:59:59+00:00" itemprop="dateModified">December 17, 2025</time> </span>
+<time class="entry-date published" datetime="2025-12-15T20:56:40+00:00" itemprop="datePublished">December 15, 2025</time><time class="updated" datetime="2026-01-15T12:47:09+00:00" itemprop="dateModified">January 15, 2026</time> </span>
 <span class="reading-time" style="color: #718096;"><span> • </span><span style="margin-right: 4px;">📖</span><span>1 min read</span><span style="margin-left: 4px; color: #a0aec0;">(55 words)</span></span></div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps. So I decided to write them down. 1. Rescan for disk size changes echo 1 | sudo tee /sys/class/block/sda/device/rescan 2. Extend the physical partition (if needed) sudo growpart /dev/sda 3 3….</p>
+<p>How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps. So I decided to write them down. 1. Rescan for disk size changes sudo tee /sys/class/block/sda/device/rescan 2. Extend the physical partition (if needed) sudo growpart /dev/sda 3 3. Resize the physical…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
