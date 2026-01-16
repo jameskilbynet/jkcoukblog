@@ -20,6 +20,21 @@
 /search-index*.json
   Cache-Control: public, max-age=3600
 
+# Markdown files - allow CORS for API access
+/markdown/*
+  Content-Type: text/markdown; charset=utf-8
+  Cache-Control: public, max-age=3600
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+
+# API endpoints - JSON with CORS
+/api/*
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=600
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, HEAD, OPTIONS
+  Access-Control-Allow-Headers: Content-Type
+
 # Global security headers
 /*
   # Clickjacking Protection - prevents site from being embedded in iframes
