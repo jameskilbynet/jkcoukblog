@@ -280,13 +280,13 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">665</div>
+                <div class="metric-value">674</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
             <div class="metric-card">
                 <h3>Repository Age</h3>
-                <div class="metric-value">104</div>
+                <div class="metric-value">105</div>
                 <div class="metric-label">Days active</div>
             </div>
             
@@ -298,8 +298,8 @@
             
             <div class="metric-card">
                 <h3>Last Deployment</h3>
-                <div class="metric-value">2026-01-15</div>
-                <div class="metric-label">21:23:22</div>
+                <div class="metric-value">2026-01-16</div>
+                <div class="metric-label">00:02:14</div>
             </div>
         </div>
         
@@ -338,6 +338,53 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-16 <span class="change-hash">05ea187</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Update static site export and API paths in workflow</div>
+                <div class="change-details">Changed the export and API generation paths in the deploy-static-site workflow from './public' to './static-output' to reflect updated output directory structure.</div>
+            </div>
+            <br>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-15 <span class="change-hash">bf2c95e</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Handle empty categories and tags in markdown API</div>
+                <div class="change-details">Added checks to skip None or empty values when processing categories and tags. Updated slugify to return 'untitled' for empty input, preventing invalid slugs and improving robustness.</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-15 <span class="change-hash">0ec0b90</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Improve YAML handling in markdown API and exporter</div>
+                <div class="change-details">Adds error handling for YAML parsing in markdown_api.py and ensures datetime objects are serialized as strings. Also escapes double quotes and backslashes in title and description fields for YAML frontmatter in markdown_exporter.py to prevent formatting issues.</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-15 <span class="change-hash">6709a3c</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Ensure post date is string in index data</div>
+                <div class="change-details">Converts the 'date' field from a datetime object to an ISO 8601 string when adding post metadata to index_data. This prevents serialization issues and ensures consistent date formatting.</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-15 <span class="change-hash">a8687b3</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Update workflow and timestamp formatting</div>
+                <div class="change-details">Changed the GitHub Actions workflow to use 'markdown_api.py' instead of 'generate_markdown_api.py'. Updated the markdown index generation timestamp to use UTC ISO format in 'markdown_exporter.py'.</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-15 <span class="change-hash">935fa1c</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Moved markdown generator</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-15 <span class="change-hash">179f149</span><span class="category-badge badge-feature">Feature</span></div>
+                <div class="change-title">Add Markdown content API and footer links</div>
+                <div class="change-details">Introduces a Markdown API generator script and integrates its execution into the deployment workflow. Updates requirements with html2text and pyyaml dependencies. Enhances static site generator to add Markdown and API links in the footer and configures CORS headers for Markdown and API endpoints.</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-01-15 <span class="change-hash">8daf278</span><span class="category-badge badge-feature">Feature</span></div>
+                <div class="change-title">Added Markdown Generation</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-01-15 <span class="change-hash">ada39b8</span><span class="category-badge badge-other">Other</span></div>
@@ -450,36 +497,10 @@
                 <div class="change-details">- Added https://embed.acast.com to Content-Security-Policy frame-src directive</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-01-14 <span class="change-hash">e43c19c</span><span class="category-badge badge-improvement">Improvement</span></div>
-                <div class="change-title">Updated Spellcheck Whitelist</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-01-14 <span class="change-hash">0271b71</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Restore Theme</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-01-14 <span class="change-hash">c4f7d7b</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-01-14 <span class="change-hash">408fba4</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">Add visible reading time and word count to posts</div>
-                <div class="change-details">- Added add_reading_time_indicator() function to display reading time and word count in entry-meta section</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-01-14 <span class="change-hash">866fdda</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Tidy up Repo</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-01-15 21:28:22 UTC<br>
+            Page generated: 2026-01-16 00:06:03 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
