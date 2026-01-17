@@ -2,7 +2,7 @@
 title: "Time in a VMC Environment"
 description: "One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically"
 date: 2025-12-08T14:03:44+00:00
-modified: 2025-12-08T14:03:44+00:00
+modified: 2026-01-17T08:48:18+00:00
 author: James Kilby
 categories:
   - VMware Cloud on AWS
@@ -21,7 +21,9 @@ image: https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620
 
 # Time in a VMC Environment
 
-By[James](https://jameskilby.co.uk) December 8, 2025 • 📖1 min read(139 words)
+By[James](https://jameskilby.co.uk) December 8, 2025January 17, 2026 • 📖1 min read(139 words)
+
+📅 **Published:** December 08, 2025• **Updated:** January 17, 2026
 
 One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform.
 
@@ -29,7 +31,7 @@ One of the nice things about the VMC Service is that you dont have to worry abou
 
 ## Time
 
-VMC allows you to utilise the[ Amazon Time Sync Service](https://aws.amazon.com/about-aws/whats-new/2017/11/introducing-the-amazon-time-sync-service/) for keeping an accurate and precise time. 
+VMC allows you to utilise the Amazon Time Sync Service for keeping an accurate and precise time.
 
 ## Firewall Config
 
@@ -61,16 +63,6 @@ By[James](https://jameskilby.co.uk) May 21, 2025July 2, 2025
 
 Quick reference guide to the available storage resources that you get in VMware Cloud on AWS
 
-  * [ ![An in-depth look at VMware Cloud on AWS hosts](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png) ](https://jameskilby.co.uk/2025/08/vmc-host-deepdive/)
-
-[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
-
-### [An in-depth look at VMware Cloud on AWS hosts](https://jameskilby.co.uk/2025/08/vmc-host-deepdive/)
-
-By[James](https://jameskilby.co.uk) August 14, 2025December 24, 2025
-
-This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3 I3en I4i CPU Processor Name Intel Xeon E5-2686 v4 Intel Xeon Platinum 8175 Intel Xeon 8375c No of…
-
   * [ ![VMC New Host -i3en](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-768x395.png) ](https://jameskilby.co.uk/2020/07/i3en/)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
@@ -80,6 +72,16 @@ This is single page intended to collate every single feature of the current VMwa
 By[James](https://jameskilby.co.uk) July 2, 2020July 10, 2024
 
 VMware Cloud on AWS (VMC) has introduced a new host to its lineup the “i3en”. This is based on the i3en.metal AWS instance. The specifications are certainly impressive packing in 96 logical cores, 768GiB RAM, and approximately 45.84 TiB of NVMe raw storage capacity per host. It’s certainly a monster with a 266% uplift in…
+
+  * [ ![An in-depth look at VMware Cloud on AWS hosts](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png) ](https://jameskilby.co.uk/2025/08/vmc-host-deepdive/)
+
+[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
+
+### [An in-depth look at VMware Cloud on AWS hosts](https://jameskilby.co.uk/2025/08/vmc-host-deepdive/)
+
+By[James](https://jameskilby.co.uk) August 14, 2025December 24, 2025
+
+This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3 I3en I4i CPU Processor Name Intel Xeon E5-2686 v4 Intel Xeon Platinum 8175 Intel Xeon 8375c No of…
 
   * [ ![VMC Host Errors](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-768x395.png) ](https://jameskilby.co.uk/2020/09/vmc-host-errors/)
 

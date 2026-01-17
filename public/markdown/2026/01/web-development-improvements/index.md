@@ -1,20 +1,17 @@
 ---
 title: "Web Development Improvements"
-description: "I have spent the Christmas break making some improvements to this blog. A lot of these are in \"the backend\" These help improve the performance, Privacy, SEO"
+description: "I have spent the Christmas break making some improvements to this blog. A lot of these are in \"the backend\" These help improve the performance, Privacy, SEO,"
 date: 2026-01-15T15:12:16+00:00
-modified: 2026-01-16T00:11:13+00:00
+modified: 2026-01-17T08:47:32+00:00
 author: James Kilby
 categories:
   - Cloudflare
   - Hosting
   - Wordpress
-  - Docker
   - Homelab
+  - Docker
   - Kubernetes
-  - Artificial Intelligence
-  - AWS
-  - Devops
-  - Github
+  - Personal
 tags:
   - #Cloudflare
   - #Cloudflare Pages
@@ -30,11 +27,11 @@ image: https://jameskilby.co.uk/wp-content/uploads/2026/01/Website-Optimisations
 
 # Web Development Improvements
 
-By[James](https://jameskilby.co.uk) January 15, 2026January 16, 2026 • 📖8 min read(1,599 words)
+By[James](https://jameskilby.co.uk) January 15, 2026January 17, 2026 • 📖8 min read(1,598 words)
 
-📅 **Published:** January 15, 2026• **Updated:** January 16, 2026
+📅 **Published:** January 15, 2026• **Updated:** January 17, 2026
 
-I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices.
+I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO, and I have also added some security best practices.
 
 Most of these changes were done more as an exercise than due to a specific requirement. I also had a HUGE amount of help with some of these steps from a variety of AI tools. However [Warp](https://jameskilby.co.uk/2025/04/warp-the-intelligent-terminal/) did the bulk of the heavy lifting. The repo behind the content of this site as well as the implementation is [public](https://github.com/jameskilbynet/jkcoukblog) in case you want to look deeper/steal anything.
 
@@ -65,7 +62,7 @@ I have split the performance section into two main components. The first is arou
 
 To understand site performance, first you need to measure it. There are great tools like Gtmetrix.com that will generate a [report](https://gtmetrix.com/reports/jameskilby.co.uk/ADjhUqtL/) on your site performance. 
 
-I decided to take this a step further. I have deployed a Github [action](https://github.com/jameskilbynet/jkcoukblog/blob/main/.github/workflows/lighthouse-ci.yml) that watches commits to the underlying repo. When anything changes in the public directory (i.e. the public facing website) the action is triggered. This action waits for 2 minutes for the public site to finish the deployment to Cloudflare Pages. It then runs the [Google Lighthouse](https://developer.chrome.com/docs/lighthouse) performance tests. Grabs the data and populates it in a few locations. This includes a slack message as shown below. It updates the [stats](https://jameskilby.co.uk/stats/) page on the blog. Plus a full detailed report is available in Github. The full report is approximately 18MB and is available for 30 days.
+I decided to take this a step further. I have deployed a GitHub action that watches commits to the underlying repo. When anything changes in the public directory (i.e. the public facing website) the action is triggered. This action waits for 2 minutes for the public site to finish the deployment to Cloudflare Pages. It then runs the Google Lighthouse performance tests. Grabs the data and populates it in a few locations. This includes a slack message as shown below. It updates the stats page on the blog. Plus a full detailed report is available in GitHub. The full report is approximately 18MB and is available for 30 days.
 
 ![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Slack-Lighthouse-Perfomance.png)
 
@@ -133,7 +130,7 @@ One of the steps I did during optimisation is provide one of my AI [tools ](http
 
 ### GitHub Runner Performance Improvements
 
-I have made a number of changes in the runner that GitHub executes the deployment. Some of these are to improve the performance of the deployment run as it had got quite lengthy. At its worst it was taking 24 minutes to fully execute. However with the below changes, this has been brought down to approximately 3-4 mins. This is despite the fact that additional steps have been added.
+I have made a number of changes in the runner that GitHub executes the deployment. Some of these are to improve the performance of the deployment run as it had got quite lengthy. At its worst it was taking 24 minutes to fully execute. However with the below changes, this has been brought down to approximately 3-4 minutes. This is despite the fact that additional steps have been added.
 
 ## Incremental Build
 
@@ -181,7 +178,7 @@ I created a test file and checked it in to Git
 
 ![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Secret-Scanning-Slack-Alert-1024x396.png)
 
-I have configured the gitleaks.toml to exclude the “public” folder within the repo as I may show example usernames/passwords in blog posts.
+I have configured the gitleaks.toml to exclude the “public” folder within the repo as I may show example usernames/passwords in blogposts.
 
 ## Content Improvements
 
@@ -221,7 +218,7 @@ To help with the SEO the runner builds at execution:
 
 ## Markdown
 
-The last thing the runner has been configured to do is to create a markdown version of each post. In the AI world we are living in this makes sense for them to consume in this function. A step is also included to create a link to the Markdown version at the very bottom of each page.
+The last thing the runner has been configured to do is to create a Markdown version of each post. In the AI world we are living in this makes sense for them to consume in this function. A step is also included to create a link to the Markdown version at the very bottom of each page.
 
 ## Change Log and Stats
 
@@ -232,6 +229,36 @@ Lastly we generate the two public pages to give visibility on the above.
 [https://jameskilby.co.uk/change](https://jameskilby.co.uk/changelog)
 
 ## Similar Posts
+
+  * [ ![Cloudflare](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2-768x229.png) ](https://jameskilby.co.uk/2018/03/cloudflare/)
+
+[Hosting](https://jameskilby.co.uk/category/hosting/)
+
+### [Cloudflare](https://jameskilby.co.uk/2018/03/cloudflare/)
+
+By[James](https://jameskilby.co.uk) March 27, 2018December 8, 2024
+
+Cloudflare – What is it and why would I care? I have been using Cloudflare for a long time. It is one of my go-to services and I use it to protect all of the public services I run for myself and other sites/ organizations. The basic premise of what Cloudflare do is that they…
+
+  * [ ![Starlink](https://jameskilby.co.uk/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920-768x432.jpg) ](https://jameskilby.co.uk/2022/10/starlink/)
+
+[Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/)
+
+### [Starlink](https://jameskilby.co.uk/2022/10/starlink/)
+
+By[James](https://jameskilby.co.uk) October 11, 2022October 1, 2025
+
+Since moving to Dorset last year internet connectivity has been the bane of my existence. Currently, I have an ADSL connection provided by my old employer Zen and a 5G connection provided by Three. These are both plumbed into my WatchGuard Firewall with multi-wan configured. Most of the time the usability is ok but there…
+
+  * [ ![Wrangler and Node versions](https://jameskilby.co.uk/wp-content/uploads/2022/01/WranglerCrab-1-768x256.png) ](https://jameskilby.co.uk/2022/01/wrangler-and-node-versions/)
+
+[Cloudflare](https://jameskilby.co.uk/category/cloudflare/)
+
+### [Wrangler and Node versions](https://jameskilby.co.uk/2022/01/wrangler-and-node-versions/)
+
+By[James](https://jameskilby.co.uk) January 15, 2022April 10, 2023
+
+I am a massive fan of the brew package management system for macOS and use it on all of my Mac’s I typically just upgrade everything blindly and have never had an issue….. Until today… I went to push some changes to this site and got the following error message A quick bit of digging…
 
   * [ ![Static WordPress hosting using Cloudflare](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu-768x450.jpeg) ](https://jameskilby.co.uk/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/)
 
@@ -253,42 +280,12 @@ By[James](https://jameskilby.co.uk) December 9, 2022October 1, 2025
 
 Late to the party or not, I have been using containers in my lab more and more and that has led me to Portainer…. I use it for managing the docker containers on my Synology but it can also be used for managing lots of other things. In their own words “Portainer accelerates container adoption….
 
-  * [ ![How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png) ](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/)
+  * [ ![Analytics in a privacy focused world](https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png) ](https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/)
 
-[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Docker](https://jameskilby.co.uk/category/docker/) | [Hosting](https://jameskilby.co.uk/category/hosting/)
+[Hosting](https://jameskilby.co.uk/category/hosting/) | [Personal](https://jameskilby.co.uk/category/personal/)
 
-### [How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/)
+### [Analytics in a privacy focused world](https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/)
 
-By[James](https://jameskilby.co.uk) January 29, 2025December 27, 2025
+By[James](https://jameskilby.co.uk) November 10, 2023October 1, 2025
 
-Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail, but I have had some successes with other cloud services and a win is a win…….
-
-  * [ ![AWS Status Page – Monitoring Included](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-768x307.png) ](https://jameskilby.co.uk/2018/05/aws-status-page-monitoring-included/)
-
-[AWS](https://jameskilby.co.uk/category/aws/) | [Hosting](https://jameskilby.co.uk/category/hosting/)
-
-### [AWS Status Page – Monitoring Included](https://jameskilby.co.uk/2018/05/aws-status-page-monitoring-included/)
-
-By[James](https://jameskilby.co.uk) May 15, 2018October 1, 2025
-
-AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them. As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute…
-
-  * [ ![How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare](https://jameskilby.co.uk/wp-content/uploads/2025/10/Github-Actions.webp) ](https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/)
-
-[Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Devops](https://jameskilby.co.uk/category/devops/) | [Github](https://jameskilby.co.uk/category/github/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)
-
-### [How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare](https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/)
-
-By[James](https://jameskilby.co.uk) October 6, 2025October 22, 2025
-
-I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring…
-
-  * [ ![Cloudflare](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2-768x229.png) ](https://jameskilby.co.uk/2018/03/cloudflare/)
-
-[Hosting](https://jameskilby.co.uk/category/hosting/)
-
-### [Cloudflare](https://jameskilby.co.uk/2018/03/cloudflare/)
-
-By[James](https://jameskilby.co.uk) March 27, 2018December 8, 2024
-
-Cloudflare – What is it and why would I care? I have been using Cloudflare for a long time. It is one of my go-to services and I use it to protect all of the public services I run for myself and other sites/ organizations. The basic premise of what Cloudflare do is that they…
+I recently helped my friend Dean Lewis @veducate with some hosting issues. As part of the testing of this he kindly gave me a login to his WordPress instance. He has been a pretty prolific blogger over the years pumping out an amazing amount of really good content. It also highlighted to me that I…

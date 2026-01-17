@@ -45,9 +45,9 @@ image: https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-
 
 ## [Web Development Improvements](https://jameskilby.co.uk/2026/01/web-development-improvements/)
 
-By[James](https://jameskilby.co.uk) January 15, 2026January 16, 2026 • 📖1 min read(55 words)
+By[James](https://jameskilby.co.uk) January 15, 2026January 17, 2026 • 📖1 min read(55 words)
 
-I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had…
+I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO, and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had…
 
   * [ ![Ubuntu Disk Expansion Steps](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png) ](https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/)
 
@@ -65,7 +65,7 @@ How to expand disks from the command line in Ubuntu. This is something I do fair
 
 ## [Time in a VMC Environment](https://jameskilby.co.uk/2025/12/time-in-a-vmc-environment/)
 
-By[James](https://jameskilby.co.uk) December 8, 2025
+By[James](https://jameskilby.co.uk) December 8, 2025January 17, 2026
 
 One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Time VMC allows you to utilise the Amazon…
 
