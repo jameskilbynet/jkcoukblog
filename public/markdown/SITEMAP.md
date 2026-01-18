@@ -1,6 +1,6 @@
 # Markdown Content Sitemap
 
-Generated: 2026-01-17 09:10:48
+Generated: 2026-01-18 22:33:38
 
 Total Files: 74
 
@@ -27,7 +27,7 @@ Total Files: 74
 - [VMC – vSAN ESA](https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/) - 2023-11-17 11:29:42+00:00
   - Markdown: `/markdown/posts/vsan-esa-and-the-improvements-it-brings-to-vmc.md`
 
-- [vSAN Cluster Shutdown – orchestration](https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/) - 2025-12-06 10:59:14+00:00
+- [vSAN Cluster Shutdown – Orchestration](https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/) - 2025-12-06 10:59:14+00:00
   - Markdown: `/markdown/posts/vsan-cluster-shutdown.md`
 
 - [VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/) - 2020-09-13 21:38:48+00:00

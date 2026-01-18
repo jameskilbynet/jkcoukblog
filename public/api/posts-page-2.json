@@ -14,9 +14,11 @@
         "VMware",
         "VMware Cloud on AWS",
         "VCF",
-        "Runecast",
         "Homelab",
         "Veeam",
+        "TrueNAS Scale",
+        "vSAN",
+        "vSphere",
         "Personal"
       ],
       "tags": [
@@ -35,7 +37,7 @@
       "title": "An in-depth look at VMware Cloud on AWS hosts",
       "description": "Dive into the detailed features of VMware Cloud on AWS hosts. Compare and analyze all available data for informed decisions.",
       "date": "2025-08-14T12:32:01Z",
-      "modified": "2025-12-24T09:44:16Z",
+      "modified": "2026-01-18T21:34:33Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2025/08/vmc-host-deepdive/",
       "markdown_url": "/markdown/posts/vmc-host-deepdive.md",
@@ -43,13 +45,10 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Automation",
         "Homelab",
+        "Automation",
         "Personal",
-        "vSphere",
-        "Networking",
-        "Storage",
-        "VCF"
+        "vSphere"
       ],
       "tags": [
         null
@@ -70,13 +69,14 @@
       "categories": [
         "Homelab",
         "VMware",
-        "VMware Cloud on AWS",
-        "Storage",
-        "TrueNAS Scale",
-        "Ansible",
+        "Networking",
+        "Mikrotik",
+        "Artificial Intelligence",
         "Docker",
-        "Portainer",
-        "Synology"
+        "Nutanix",
+        "Hosting",
+        "Kubernetes",
+        "vSAN"
       ],
       "tags": [
         null,
@@ -98,9 +98,9 @@
       "api_url": "/api/posts/veeamon2020.json",
       "categories": [
         "Veeam",
-        "Homelab",
         "VMware",
-        "AWS"
+        "AWS",
+        "Homelab"
       ],
       "tags": [
         null,
@@ -124,11 +124,17 @@
         "Homelab",
         "Hosting",
         "Kubernetes",
-        "TrueNAS Scale",
-        "Storage",
+        "Mikrotik",
         "Networking",
-        "Nutanix",
-        "vExpert"
+        "TrueNAS Scale",
+        "Runecast",
+        "VMware",
+        "Cloudflare",
+        "Personal",
+        "Wordpress",
+        "Storage",
+        "Synology",
+        "Artificial Intelligence"
       ],
       "tags": [
         null,
@@ -143,7 +149,7 @@
       "title": "Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets",
       "description": "How to Configure DHCP Option 43 for use by my Unifi Devices in my Network",
       "date": "2024-06-26T10:50:17Z",
-      "modified": "2025-12-25T12:16:20Z",
+      "modified": "2026-01-18T21:40:37Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2024/06/unifi-dhcp-option-43/",
       "markdown_url": "/markdown/posts/unifi-dhcp-option-43.md",
@@ -152,9 +158,10 @@
         "Homelab",
         "Networking",
         "Storage",
+        "Synology",
         "vExpert",
-        "TrueNAS Scale",
-        "Synology"
+        "VMware",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -197,14 +204,14 @@
       "categories": [
         "Kubernetes",
         "TrueNAS Scale",
-        "Homelab",
-        "Storage",
-        "Docker",
-        "Hosting",
         "VMware",
         "vSAN",
         "vSphere",
-        "vExpert"
+        "Homelab",
+        "Storage",
+        "vExpert",
+        "Docker",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -248,11 +255,14 @@
       "categories": [
         "Homelab",
         "Hosting",
-        "Personal",
+        "VCF",
+        "VMware",
         "Storage",
+        "TrueNAS Scale",
+        "Veeam",
+        "Cloudflare",
         "Wordpress",
-        "Synology",
-        "Mikrotik",
+        "Automation",
         "Networking"
       ],
       "tags": [
