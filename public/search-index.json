@@ -49,12 +49,12 @@
     "categories": [
       "Homelab",
       "Networking",
+      "Veeam",
       "VMware",
-      "vSphere",
       "Artificial Intelligence",
+      "Automation",
       "Storage",
-      "Synology",
-      "Docker"
+      "Hosting"
     ],
     "tags": [
       "#DHCP",
@@ -73,13 +73,15 @@
       "VMware",
       "vSAN",
       "vSphere",
-      "Homelab",
-      "Hosting",
       "VCF",
-      "Mikrotik",
-      "Networking",
-      "Artificial Intelligence",
-      "Automation"
+      "Personal",
+      "Homelab",
+      "Storage",
+      "Docker",
+      "Hosting",
+      "Kubernetes",
+      "Runecast",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Homelab",
@@ -99,18 +101,13 @@
       "Artificial Intelligence",
       "Docker",
       "Homelab",
-      "Nutanix",
+      "Storage",
       "VMware",
-      "Hosting",
-      "Kubernetes",
+      "vSphere",
+      "Nutanix",
       "Portainer",
       "Synology",
-      "Storage",
-      "Mikrotik",
-      "Networking",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere"
+      "Hosting"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -128,11 +125,12 @@
       "Homelab",
       "Storage",
       "TrueNAS Scale",
+      "Synology",
+      "VCF",
+      "VMware",
       "Artificial Intelligence",
-      "Docker",
-      "Hosting",
-      "vExpert",
-      "Networking"
+      "Veeam",
+      "vSphere"
     ],
     "tags": [
       "#Homelab",
@@ -148,15 +146,15 @@
     "categories": [
       "Mikrotik",
       "Networking",
-      "Homelab",
-      "Storage",
-      "Synology",
-      "VMware",
       "Docker",
+      "Homelab",
       "Hosting",
       "Kubernetes",
-      "TrueNAS Scale",
-      "Veeam"
+      "Storage",
+      "Synology",
+      "VCF",
+      "VMware",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Homelab",
@@ -174,14 +172,11 @@
       "Homelab",
       "Nutanix",
       "VMware",
-      "Networking",
-      "VMware Cloud on AWS",
-      "Automation",
-      "Storage",
-      "Docker",
+      "Veeam",
       "Hosting",
-      "Kubernetes",
-      "Mikrotik"
+      "Storage",
+      "Synology",
+      "Runecast"
     ],
     "tags": [
       "#Homelab",
@@ -199,13 +194,14 @@
       "VCF",
       "VMware",
       "Homelab",
-      "Nutanix",
-      "VMware Cloud on AWS",
-      "Mikrotik",
-      "Networking",
       "Storage",
       "Synology",
-      "Runecast"
+      "Artificial Intelligence",
+      "VMware Cloud on AWS",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere",
+      "Hosting"
     ],
     "tags": [
       "#CPU",
@@ -223,11 +219,14 @@
     "categories": [
       "VMware",
       "VCF",
-      "VMware Cloud on AWS",
       "Homelab",
-      "vSphere",
-      "Personal",
-      "vSAN"
+      "Veeam",
+      "Networking",
+      "Storage",
+      "vExpert",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere"
     ],
     "tags": [
       "#Holodeck",
@@ -255,12 +254,13 @@
       "VMware",
       "AWS",
       "Veeam",
-      "Homelab",
       "Personal",
-      "Runecast",
+      "Homelab",
+      "vSphere",
+      "Nutanix",
+      "VCF",
       "TrueNAS Scale",
-      "vSAN",
-      "vSphere"
+      "vSAN"
     ],
     "tags": [
       "#AWS",
@@ -278,10 +278,11 @@
       "AWS",
       "Personal",
       "Hosting",
-      "Cloudflare",
-      "Wordpress",
       "VMware",
-      "Consulting"
+      "VMware Cloud on AWS",
+      "Veeam",
+      "Cloudflare",
+      "Wordpress"
     ],
     "tags": [
       "#AWS",
@@ -296,15 +297,15 @@
     "content": "Lab Storage - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Lab Storage ByJames February 10, 2019July 10, 2024 • 📖1 min read(207 words) 📅Published: February 10, 2019•Updated: July 10, 2024 Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology DS918 It’s a very compact unit with a quad-core Intel Celeron & I have left the RAM at 4 GB for now. I have added some of the existing SSD’s that I had giving me about 3TB of usable flash.  I am presenting this back to my VMware hosts using NFS 4.1.   I must have missed the announcement as this is now built into the Synology GUI ( It used to be a command-line-only option) I have verified the VAAI works as expected in this configuration.  At pr",
     "categories": [
       "Homelab",
-      "Artificial Intelligence",
+      "Storage",
+      "vExpert",
+      "Networking",
+      "Ansible",
+      "Mikrotik",
       "Docker",
       "Hosting",
-      "Networking",
-      "Storage",
-      "TrueNAS Scale",
-      "VMware",
-      "vSphere",
-      "vSAN"
+      "Kubernetes",
+      "TrueNAS Scale"
     ],
     "tags": [
       "#Homelab",
@@ -343,15 +344,13 @@
       "Homelab",
       "Storage",
       "vExpert",
-      "Automation",
+      "Nutanix",
       "VMware",
-      "Artificial Intelligence",
-      "Docker",
-      "Hosting",
-      "AWS",
-      "Veeam",
-      "Portainer",
+      "Kubernetes",
+      "TrueNAS Scale",
       "Synology",
+      "Docker",
+      "Portainer",
       "VCF"
     ],
     "tags": [
@@ -374,11 +373,11 @@
       "VMware",
       "VMware Cloud on AWS",
       "vSAN",
-      "TrueNAS Scale",
-      "vSphere",
+      "Personal",
       "Homelab",
-      "Veeam",
-      "Personal"
+      "Storage",
+      "Synology",
+      "Networking"
     ],
     "tags": [
       "#Storage",
@@ -397,10 +396,12 @@
       "VMware",
       "Personal",
       "vSphere",
-      "Automation",
       "Homelab",
-      "Nutanix",
-      "VCF"
+      "Storage",
+      "vExpert",
+      "TrueNAS Scale",
+      "vSAN",
+      "VMware Cloud on AWS"
     ],
     "tags": [
       "#Certification",
@@ -417,9 +418,9 @@
     "categories": [
       "Networking",
       "Homelab",
+      "Mikrotik",
       "Storage",
-      "VMware",
-      "Mikrotik"
+      "VMware"
     ],
     "tags": [
       "#City Fibre",
@@ -437,12 +438,13 @@
     "categories": [
       "Hosting",
       "Personal",
+      "AWS",
       "Cloudflare",
       "Wordpress",
-      "Devops",
-      "Github",
-      "VMware",
-      "vSphere"
+      "Docker",
+      "Homelab",
+      "Kubernetes",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Analytics",
@@ -463,14 +465,14 @@
     "categories": [
       "Kubernetes",
       "TrueNAS Scale",
+      "Docker",
       "Homelab",
+      "Hosting",
       "Storage",
       "VMware",
       "vSAN",
       "vSphere",
-      "vExpert",
-      "Docker",
-      "Hosting"
+      "vExpert"
     ],
     "tags": [
       "#Reference",
@@ -487,10 +489,11 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Personal",
+      "AWS",
       "Docker",
       "Homelab",
-      "Kubernetes"
+      "Kubernetes",
+      "Personal"
     ],
     "tags": [
       "#Cloudflare",
@@ -508,15 +511,14 @@
     "categories": [
       "Runecast",
       "VMware",
-      "Homelab",
-      "vSphere",
-      "Storage",
-      "TrueNAS Scale",
+      "AWS",
+      "Veeam",
       "VMware Cloud on AWS",
+      "VCF",
+      "Personal",
+      "Artificial Intelligence",
       "Docker",
-      "Portainer",
-      "Synology",
-      "VCF"
+      "Hosting"
     ],
     "tags": [
       "#Homelab",
@@ -534,11 +536,12 @@
     "categories": [
       "Homelab",
       "Storage",
-      "TrueNAS Scale",
       "VMware",
-      "vSAN",
-      "vSphere",
-      "Synology"
+      "Ansible",
+      "TrueNAS Scale",
+      "Artificial Intelligence",
+      "Hosting",
+      "Veeam"
     ],
     "tags": [
       "#NAS",
@@ -555,12 +558,12 @@
     "categories": [
       "VMware",
       "Personal",
-      "AWS",
-      "Veeam",
+      "VMware Cloud on AWS",
       "VCF",
-      "vSAN",
-      "Nutanix",
-      "Homelab"
+      "Homelab",
+      "Storage",
+      "vExpert",
+      "Runecast"
     ],
     "tags": [
       "#Charity",
@@ -579,14 +582,11 @@
       "Homelab",
       "VMware",
       "vSAN",
-      "VMware Cloud on AWS",
-      "TrueNAS Scale",
-      "vSphere",
-      "Storage",
-      "Synology",
-      "Docker",
-      "Hosting",
-      "Kubernetes"
+      "Artificial Intelligence",
+      "Networking",
+      "Ansible",
+      "VCF",
+      "VMware Cloud on AWS"
     ],
     "tags": [
       "#Homelab",
@@ -615,11 +615,10 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Docker",
-      "Homelab",
-      "Kubernetes",
       "Personal",
-      "Devops"
+      "Homelab",
+      "Docker",
+      "Kubernetes"
     ],
     "tags": [
       "#Cloudflare",
@@ -650,17 +649,16 @@
     "title": "AWS Status Page - Monitoring Included",
     "url": "https://jameskilby.co.uk/2018/05/aws-status-page-monitoring-included/",
     "description": "LambStatus, Monitoring, AWS, Lambda",
-    "content": "AWS Status Page - Monitoring Included - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 • 📖1 min read(105 words) 📅Published: May 15, 2018•Updated: October 01, 2025 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at effectively zero cost Site Response The guide I followed is very good and is documented in the Git repo here Similar Posts VMware | VMware Cloud on AWS VMC Host Errors ByJames September 15, 2020October 1, 2025 When you run a large enough I",
+    "content": "AWS Status Page - Monitoring Included - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS | Hosting AWS Status Page – Monitoring Included ByJames May 15, 2018October 1, 2025 • 📖1 min read(105 words) 📅Published: May 15, 2018•Updated: October 01, 2025 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them.  As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute polling this website and adding the response time into AWS Cloudwatch which Lambstatus is allowed to call.  It has been running without a hitch for nearly a month now at effectively zero cost Site Response The guide I followed is very good and is documented in the Git repo here Similar Posts Hosting | Personal Analytics in a privacy focused world ByJames November 10, 2023October 1, 2025 I recently helped m",
     "categories": [
       "AWS",
       "Hosting",
-      "VMware",
-      "VMware Cloud on AWS",
-      "Artificial Intelligence",
-      "Docker",
       "Personal",
+      "Cloudflare",
+      "Wordpress",
       "Homelab",
-      "Kubernetes"
+      "VMware",
+      "VMware Cloud on AWS"
     ],
     "tags": [
       "#AWS",
@@ -693,9 +691,10 @@
       "Hosting",
       "Cloudflare",
       "Wordpress",
+      "Devops",
       "VMware",
-      "AWS",
-      "vSphere"
+      "Consulting",
+      "Nutanix"
     ],
     "tags": [],
     "date": "2018-10-16T08:22:45+00:00"
@@ -708,11 +707,12 @@
     "categories": [
       "Hosting",
       "Cloudflare",
+      "Wordpress",
+      "Artificial Intelligence",
       "Docker",
       "Homelab",
       "Kubernetes",
-      "Artificial Intelligence",
-      "Wordpress"
+      "Personal"
     ],
     "tags": [
       "#Cloudflare"
@@ -726,11 +726,11 @@
     "content": "AWS For Beginners - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS AWS for Beginners ByJames March 30, 2018July 10, 2024 • 📖1 min read(202 words) 📅Published: March 30, 2018•Updated: July 10, 2024 AWS for Beginners Part 1 I am hoping to get back into doing some AWS stuff over the next couple of months.  I am a huge fan of some of the tools and technology they have built.  It’s not perfect and it is often not well understood by people lifting and shifting existing infrastructure into “the cloud” My view is firmly if this is what you have done, then you have done it wrong and missed the point…. But if you do want to kick the tyres and see what it’s all about go and set up an account and play Ensure you implement these three recommendations Root Account Security – Ensure you have a strong password on this account then stop using it.  Use IAM to set up another account and then use that. Enable Two Factor Authentication – This is a must,  Sadly AWS don’t appear ",
     "categories": [
       "AWS",
-      "VMware",
-      "Veeam",
-      "VMware Cloud on AWS",
       "Personal",
-      "Hosting"
+      "Hosting",
+      "VMware",
+      "VMware Cloud on AWS",
+      "Veeam"
     ],
     "tags": [
       "#Account Setup",
@@ -747,13 +747,11 @@
       "Homelab",
       "Nutanix",
       "Storage",
-      "VMware",
-      "vSphere",
-      "Docker",
+      "Synology",
       "Hosting",
-      "Kubernetes",
-      "TrueNAS Scale",
-      "Automation"
+      "Networking",
+      "Docker",
+      "Kubernetes"
     ],
     "tags": [
       "#Nutanix"
@@ -771,11 +769,11 @@
       "Synology",
       "VMware",
       "vSphere",
-      "VCF",
-      "Hosting",
-      "Nutanix",
-      "Artificial Intelligence",
-      "Docker"
+      "TrueNAS Scale",
+      "Runecast",
+      "VMware Cloud on AWS",
+      "vSAN",
+      "VCF"
     ],
     "tags": [
       "#Homelab",
@@ -1246,12 +1244,9 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "vSAN",
-      "AWS",
-      "Veeam",
       "Homelab",
-      "vSphere",
-      "Nutanix"
+      "Personal",
+      "vSphere"
     ],
     "tags": [
       "#VMware Cloud on AWS"
@@ -1266,13 +1261,12 @@
     "categories": [
       "Artificial Intelligence",
       "Homelab",
-      "Nutanix",
-      "VMware",
-      "vSphere",
       "Storage",
       "Synology",
-      "Ansible",
-      "TrueNAS Scale"
+      "Networking",
+      "Docker",
+      "Portainer",
+      "Hosting"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -1290,9 +1284,12 @@
       "VMware",
       "VMware Cloud on AWS",
       "Personal",
+      "vSphere",
       "Homelab",
-      "Runecast",
-      "VCF"
+      "Networking",
+      "Storage",
+      "VCF",
+      "Veeam"
     ],
     "tags": [
       "#Sizing",
@@ -1321,19 +1318,17 @@
     "title": "VSAN Cluster Shutdown - Orchestration",
     "url": "https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/",
     "description": "How to safety shutdown a vSAN Environment",
-    "content": "VSAN Cluster Shutdown - Orchestration - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | vSAN vSAN Cluster Shutdown – Orchestration ByJames December 6, 2025January 17, 2026 • 📖1 min read(115 words) 📅Published: December 06, 2025•Updated: January 17, 2026 As can be seen on my Lab Overview page. I have a GPU/Management cluster that is usually running 24×7. I also have a 3x Node vSAN cluster that I use when I need more resources (or specifically if I need vSAN to test with) This allows me to See the overview below To shut down a vSAN cluste,r there is a nice workflow built into vCentre that will orchestrate all the required actions for you And there you have it… To restart the cluster, ensure all the hosts are booted. Leave them in maintenance mode and then select “Restart vSAN Services” The workflow will enable them to bring them back into operation. Restart vSAN Services Similar Posts Homelab | Networking | Storage | VMware 100Gb/s in my Homelab ByJames D",
+    "content": "VSAN Cluster Shutdown - Orchestration - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | vSAN vSAN Cluster Shutdown – Orchestration ByJames December 6, 2025January 17, 2026 • 📖1 min read(115 words) 📅Published: December 06, 2025•Updated: January 17, 2026 As can be seen on my Lab Overview page. I have a GPU/Management cluster that is usually running 24×7. I also have a 3x Node vSAN cluster that I use when I need more resources (or specifically if I need vSAN to test with) This allows me to See the overview below To shut down a vSAN cluste,r there is a nice workflow built into vCentre that will orchestrate all the required actions for you And there you have it… To restart the cluster, ensure all the hosts are booted. Leave them in maintenance mode and then select “Restart vSAN Services” The workflow will enable them to bring them back into operation. Restart vSAN Services Similar Posts VCF | VMware Holodeck CPU Fixes ByJames January 18, 2024July 10, 2024 H",
     "categories": [
       "VMware",
       "vSAN",
+      "VCF",
+      "VMware Cloud on AWS",
+      "TrueNAS Scale",
+      "vSphere",
       "Homelab",
       "Networking",
-      "Storage",
-      "VMware Cloud on AWS",
-      "Automation",
-      "VCF",
-      "Personal",
-      "vSphere",
-      "TrueNAS Scale"
+      "Storage"
     ],
     "tags": [],
     "date": "2025-12-06T10:59:14+00:00"
@@ -1384,14 +1379,13 @@
       "Docker",
       "Portainer",
       "Synology",
-      "Automation",
       "Homelab",
+      "Networking",
+      "Veeam",
       "VMware",
       "Nutanix",
-      "Hosting",
-      "Kubernetes",
-      "Artificial Intelligence",
-      "Storage"
+      "Mikrotik",
+      "VCF"
     ],
     "tags": [
       "#Homelab",
@@ -1408,14 +1402,13 @@
     "categories": [
       "Ansible",
       "Homelab",
-      "Hosting",
-      "Docker",
-      "Portainer",
-      "Synology",
       "Storage",
-      "Runecast",
+      "Synology",
+      "VCF",
       "VMware",
-      "Kubernetes"
+      "Artificial Intelligence",
+      "Docker",
+      "Hosting"
     ],
     "tags": [
       "#Ansible",
@@ -1434,13 +1427,14 @@
       "Artificial Intelligence",
       "Docker",
       "Hosting",
-      "Automation",
+      "AWS",
       "Homelab",
-      "VMware",
       "Storage",
-      "vExpert",
-      "Portainer",
       "Synology",
+      "Runecast",
+      "VMware",
+      "vExpert",
+      "Mikrotik",
       "Networking"
     ],
     "tags": [
@@ -2144,15 +2138,15 @@
       "Automation",
       "Homelab",
       "VMware",
-      "vSAN",
+      "Storage",
+      "vExpert",
       "TrueNAS Scale",
+      "vSAN",
       "vSphere",
-      "AWS",
-      "Veeam",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
-      "VMware Cloud on AWS"
+      "VMware Cloud on AWS",
+      "Synology",
+      "Mikrotik",
+      "Networking"
     ],
     "tags": [
       "#Automation",
@@ -2170,13 +2164,13 @@
     "categories": [
       "Personal",
       "Consulting",
-      "Devops",
-      "VMware",
-      "vSphere",
       "Nutanix",
+      "Devops",
       "Hosting",
       "Cloudflare",
-      "Wordpress"
+      "Wordpress",
+      "AWS",
+      "VMware"
     ],
     "tags": [
       "#Homeoffice",
@@ -2219,12 +2213,15 @@
     "categories": [
       "Devops",
       "Personal",
-      "Automation",
-      "Homelab",
+      "Cloudflare",
+      "Github",
+      "Wordpress",
+      "Hosting",
       "VMware",
-      "AWS",
-      "vSphere",
-      "Consulting"
+      "Nutanix",
+      "Consulting",
+      "Automation",
+      "Homelab"
     ],
     "tags": [
       "#Git",
@@ -2241,13 +2238,11 @@
     "categories": [
       "Personal",
       "VMware",
-      "vSAN",
       "Homelab",
-      "Veeam",
+      "Nutanix",
+      "vSphere",
       "AWS",
-      "Automation",
-      "Networking",
-      "Storage"
+      "Veeam"
     ],
     "tags": [
       "#Certifications",
@@ -2264,13 +2259,15 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "VCF",
-      "Personal",
       "Homelab",
-      "vSphere",
-      "TrueNAS Scale",
-      "vSAN",
-      "AWS"
+      "Storage",
+      "vExpert",
+      "Networking",
+      "Runecast",
+      "Veeam",
+      "AWS",
+      "Personal",
+      "VCF"
     ],
     "tags": [
       "#AWS",
@@ -2290,13 +2287,12 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
+      "Personal",
       "VCF",
-      "vSAN",
-      "Automation",
       "Homelab",
-      "AWS",
-      "Veeam",
-      "Personal"
+      "Nutanix",
+      "vSphere",
+      "vSAN"
     ],
     "tags": [
       "#VMC",
@@ -2312,10 +2308,11 @@
     "categories": [
       "Nutanix",
       "Personal",
-      "VMware",
-      "Devops",
       "Homelab",
-      "Consulting"
+      "VMware",
+      "Consulting",
+      "AWS",
+      "Hosting"
     ],
     "tags": [
       "#Certification",
@@ -2332,10 +2329,13 @@
       "Homelab",
       "Storage",
       "Synology",
-      "TrueNAS Scale",
+      "Mikrotik",
+      "Networking",
+      "Veeam",
       "VMware",
-      "Runecast",
-      "Networking"
+      "Hosting",
+      "TrueNAS Scale",
+      "vExpert"
     ],
     "tags": [
       "#Homelab",
@@ -2353,12 +2353,10 @@
       "VMware",
       "vSphere",
       "Storage",
-      "VCF",
-      "Synology",
-      "Artificial Intelligence",
       "VMware Cloud on AWS",
-      "vSAN",
-      "Personal"
+      "Networking",
+      "TrueNAS Scale",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Upgrade",
@@ -2376,12 +2374,13 @@
       "Networking",
       "Storage",
       "VMware",
+      "Personal",
       "Docker",
-      "Hosting",
-      "Kubernetes",
-      "Veeam",
-      "Artificial Intelligence",
-      "VMware Cloud on AWS"
+      "Portainer",
+      "Synology",
+      "Nutanix",
+      "VMware Cloud on AWS",
+      "Ansible"
     ],
     "tags": [
       "#Homelab",
@@ -2399,12 +2398,13 @@
       "Homelab",
       "Hosting",
       "Kubernetes",
-      "Networking",
-      "Storage",
+      "Automation",
       "VMware",
-      "Cloudflare",
-      "Wordpress",
-      "TrueNAS Scale"
+      "Mikrotik",
+      "Networking",
+      "Artificial Intelligence",
+      "Storage",
+      "Wordpress"
     ],
     "tags": [
       "#Containers",
@@ -2421,16 +2421,13 @@
     "categories": [
       "Homelab",
       "Hosting",
-      "Personal",
-      "VCF",
-      "VMware",
-      "Storage",
-      "Synology",
-      "Artificial Intelligence",
-      "Docker",
       "Runecast",
+      "VMware",
       "Cloudflare",
-      "Wordpress"
+      "Wordpress",
+      "Ansible",
+      "Storage",
+      "vExpert"
     ],
     "tags": [
       "#Homelab",
@@ -2447,10 +2444,12 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Personal",
-      "Artificial Intelligence",
+      "Devops",
+      "Github",
       "Docker",
-      "Homelab"
+      "Homelab",
+      "Kubernetes",
+      "Personal"
     ],
     "tags": [
       "#Cloudflare",
@@ -2468,16 +2467,14 @@
     "categories": [
       "Homelab",
       "VMware",
-      "VCF",
+      "VMware Cloud on AWS",
+      "Runecast",
+      "AWS",
+      "Veeam",
+      "vSphere",
       "TrueNAS Scale",
       "vSAN",
-      "vSphere",
-      "Veeam",
-      "Artificial Intelligence",
-      "Personal",
-      "Docker",
-      "Portainer",
-      "Synology"
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Homelab",
@@ -2495,12 +2492,10 @@
       "Hosting",
       "Wordpress",
       "Cloudflare",
-      "Devops",
-      "Github",
-      "AWS",
       "Personal",
-      "Artificial Intelligence",
-      "Docker"
+      "Docker",
+      "Homelab",
+      "Kubernetes"
     ],
     "tags": [
       "#Blogging",
@@ -2519,13 +2514,13 @@
       "Veeam",
       "VMware",
       "Storage",
-      "Synology",
-      "VCF",
-      "Nutanix",
+      "TrueNAS Scale",
       "Personal",
       "vSphere",
-      "Docker",
-      "Portainer"
+      "Ansible",
+      "Hosting",
+      "Mikrotik",
+      "Networking"
     ],
     "tags": [
       "#Desired State",
@@ -2543,8 +2538,6 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Devops",
-      "Github",
       "Personal"
     ],
     "tags": [
@@ -2559,17 +2552,16 @@
     "title": "Lab Update - Part 3 Network",
     "url": "https://jameskilby.co.uk/2022/01/lab-update-part-3-network/",
     "description": "Stay updated on our lab's network migration to PFSense. Learn about the benefits of 40Gb/s vMotion and future plans for a 25Gb/s switch.",
-    "content": "Lab Update - Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022October 1, 2025 • 📖1 min read(113 words) 📅Published: January 06, 2022•Updated: October 01, 2025 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. Similar Posts Homelab | Storage Lab Update – Part 2 Storage Truenas Scale",
+    "content": "Lab Update - Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022October 1, 2025 • 📖1 min read(113 words) 📅Published: January 06, 2022•Updated: October 01, 2025 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. Similar Posts Networking Configuring a Zen Internet and City Fibre connec",
     "categories": [
       "Homelab",
       "Networking",
+      "Artificial Intelligence",
       "Storage",
-      "Synology",
-      "VMware",
       "Docker",
-      "Hosting",
-      "Kubernetes",
-      "Ansible"
+      "Portainer",
+      "Synology",
+      "VMware"
     ],
     "tags": [
       "#Homelab",
@@ -2587,10 +2579,11 @@
       "Cloudflare",
       "Personal",
       "Wordpress",
-      "AWS",
+      "Artificial Intelligence",
+      "Docker",
       "VMware",
-      "Devops",
-      "Github"
+      "Homelab",
+      "Kubernetes"
     ],
     "tags": [
       "#Cloudflare",
@@ -2606,9 +2599,11 @@
     "categories": [
       "Homelab",
       "Storage",
-      "TrueNAS Scale",
+      "Veeam",
+      "VMware",
       "Networking",
-      "VMware"
+      "TrueNAS Scale",
+      "Hosting"
     ],
     "tags": [
       "#NVMe",
