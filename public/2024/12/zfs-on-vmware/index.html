@@ -10,10 +10,10 @@
 <meta content="ZFS,VMware,Best Practices for seamless integration and performance. Learn how to optimize your setup for maximum efficiency and reliability." name="description"/>
 <meta content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" name="robots"/>
 <link href="/2024/12/zfs-on-vmware/" rel="canonical"/>
-<meta content="en_GB" property="og:locale"/>
-<meta content="article" property="og:type"/>
-<meta content="Mastering ZFS On VMware: Key Best Practices" property="og:title">
-<meta content="Unlock the potential of ZFS on VMware. Optimize your setup today!" property="og:description">
+<meta content="en_GB" property="og:locale">
+<meta content="article" property="og:type">
+<meta content="Mastering ZFS On VMware: Key Best Practices" property="og:title"/>
+<meta content="Unlock the potential of ZFS on VMware. Optimize your setup today!" property="og:description"/>
 <meta content="/2024/12/zfs-on-vmware/" property="og:url"/>
 <meta content="Jameskilbycouk" property="og:site_name"/>
 <meta content="Homelab" property="article:tag"/>
@@ -53,7 +53,7 @@
 <link href="/wp-content/cache/wpo-minify/1768639265/assets/wpo-minify-header-60a11f4e.min.css" id="wpo_min-header-0-css" media="all" rel="stylesheet"/>
 <link href="/wp-json/wp/v2/posts/6247" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
 <link href="/?p=6247" rel="shortlink"/>
-<link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#0a0a0a" name="theme-color"/><link href="/favicon.ico" rel="icon" type="image/x-icon"/><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/site.webmanifest" rel="manifest"/><link as="style" href="/assets/css/brutalist-theme.css" rel="preload"/><link href="/assets/css/brutalist-theme.css" media="print" onload="this.media='all'" rel="stylesheet"/><noscript><link href="/assets/css/brutalist-theme.css" rel="stylesheet"/></noscript><script data-cfasync="false" data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
+<link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#0a0a0a" name="theme-color"/><link href="/favicon.ico" rel="icon" type="image/x-icon"/><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/site.webmanifest" rel="manifest"/><script data-cfasync="false" data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
 <body class="wp-singular post-template-default single single-post postid-6247 single-format-standard wp-embed-responsive wp-theme-kadence hide-focus-outline link-style-standard content-title-style-normal content-width-narrow content-style-boxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
 <div class="site wp-site-blocks" id="wrapper">
 <a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
@@ -130,7 +130,7 @@
 <div class="content-wrap">
 <div class="post-thumbnail article-post-thumbnail kadence-thumbnail-position-behind alignwide kadence-thumbnail-ratio-2-3">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2024/12/ZFS.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/ZFS.webp" type="image/webp"/><img alt="" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="132" loading="eager" src="/wp-content/uploads/2024/12/ZFS.jpg" width="200"/></picture> </div>
+<img alt="" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="132" loading="eager" src="/wp-content/uploads/2024/12/ZFS.jpg" width="200"/> </div>
 </div><!-- .post-thumbnail -->
 <article class="entry content-bg single-entry post-6247 post type-post status-publish format-standard has-post-thumbnail hentry category-truenas-scale category-vmware category-vsan-vmware category-vsphere tag-homelab tag-trim tag-unmap tag-vmware tag-zfs" id="post-6247">
 <div class="entry-content-wrap">
@@ -158,7 +158,7 @@
 </nav></div>
 <h2 class="wp-block-heading" id="intro"> </h2>
 <p>I have run a number of systems using ZFS since the earliest days of my homelab using Nexenta, all the way back in 2010. The image below command is my lab at the time with an IBM head unit that I think had 18GB of RAM 6x450GB SAS drives and this was then connected to the Dell PowerVault SCSI Array above it with 14x146GB 10K SAS drives….</p>
-<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.avif 1024w, /wp-content/uploads/2024/12/IMG_20140330_210511-300x247.avif 300w, /wp-content/uploads/2024/12/IMG_20140330_210511-768x634.avif 768w, /wp-content/uploads/2024/12/IMG_20140330_210511-1536x1267.avif 1536w, /wp-content/uploads/2024/12/IMG_20140330_210511-2048x1689.avif 2048w" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.webp 1024w, /wp-content/uploads/2024/12/IMG_20140330_210511-300x247.webp 300w, /wp-content/uploads/2024/12/IMG_20140330_210511-768x634.webp 768w, /wp-content/uploads/2024/12/IMG_20140330_210511-1536x1267.webp 1536w, /wp-content/uploads/2024/12/IMG_20140330_210511-2048x1689.webp 2048w" type="image/webp"/><img alt="" class="wp-image-6289" decoding="async" fetchpriority="high" height="845" loading="eager" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.jpeg" srcset="/wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.jpeg 1024w, /wp-content/uploads/2024/12/IMG_20140330_210511-300x247.jpeg 300w, /wp-content/uploads/2024/12/IMG_20140330_210511-768x634.jpeg 768w, /wp-content/uploads/2024/12/IMG_20140330_210511-1536x1267.jpeg 1536w, /wp-content/uploads/2024/12/IMG_20140330_210511-2048x1689.jpeg 2048w" width="1024"/></picture><figcaption class="wp-element-caption">Original Nexenta Setup</figcaption></figure>
+<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.webp" type="image/webp"/><img alt="" class="wp-image-6289" decoding="async" fetchpriority="high" height="845" loading="eager" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.jpeg" srcset="/wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.jpeg 1024w, /wp-content/uploads/2024/12/IMG_20140330_210511-300x247.jpeg 300w, /wp-content/uploads/2024/12/IMG_20140330_210511-768x634.jpeg 768w, /wp-content/uploads/2024/12/IMG_20140330_210511-1536x1267.jpeg 1536w, /wp-content/uploads/2024/12/IMG_20140330_210511-2048x1689.jpeg 2048w" width="1024"/></picture><figcaption class="wp-element-caption">Original Nexenta Setup</figcaption></figure>
 <p>The number one rule is to ALWAYS give ZFS access to the underlying raw storage. You don’t want a raid controller or anything else interfering with the IO path. This is similar to how vSAN works with VMware.</p>
 <p>But rules are meant to be broken right….. I have virtualized a few copies of TrueNAS Scale and Core which uses ZFS on top of VMware and in these particular instances I specifically DON’T want to pass through the storage in the of an HBA or drives of an HBA or drives. Why would I do this? Mainly of two reasons. This allows me to test upgrades of my physical TrueNAS setup with an easy rollback if needed by not passing the drives or controllers in I can clone and snapshot the VMss just as if it was any other and move it around my lab infrastructure.</p>
 <h2 class="wp-block-heading" id="w">Copy on Write</h2>
@@ -174,7 +174,7 @@
                 opacity: 0.8; transition: opacity 0.2s, background 0.2s;
                 z-index: 10;">📋 Copy</button></div>
 <p>Once this is done when you power the VM’s on you should be able to see unique serials of each disk similar to this screenshot Prior to this change, the serial section is blank.</p>
-<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2024/12/Disk-Serials-1024x125.avif 1024w, /wp-content/uploads/2024/12/Disk-Serials-300x37.avif 300w, /wp-content/uploads/2024/12/Disk-Serials-768x94.avif 768w, /wp-content/uploads/2024/12/Disk-Serials-1536x188.avif 1536w, /wp-content/uploads/2024/12/Disk-Serials-2048x251.avif 2048w" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/Disk-Serials-1024x125.webp 1024w, /wp-content/uploads/2024/12/Disk-Serials-300x37.webp 300w, /wp-content/uploads/2024/12/Disk-Serials-768x94.webp 768w, /wp-content/uploads/2024/12/Disk-Serials-1536x188.webp 1536w, /wp-content/uploads/2024/12/Disk-Serials-2048x251.webp 2048w" type="image/webp"/><img alt="" class="wp-image-6278" decoding="async" height="125" loading="eager" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/12/Disk-Serials-1024x125.png" srcset="/wp-content/uploads/2024/12/Disk-Serials-1024x125.png 1024w, /wp-content/uploads/2024/12/Disk-Serials-300x37.png 300w, /wp-content/uploads/2024/12/Disk-Serials-768x94.png 768w, /wp-content/uploads/2024/12/Disk-Serials-1536x188.png 1536w, /wp-content/uploads/2024/12/Disk-Serials-2048x251.png 2048w" width="1024"/></picture></figure>
+<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2024/12/Disk-Serials-1024x125.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/Disk-Serials-1024x125.webp" type="image/webp"/><img alt="" class="wp-image-6278" decoding="async" height="125" loading="eager" sizes="(max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2024/12/Disk-Serials-1024x125.png" srcset="/wp-content/uploads/2024/12/Disk-Serials-1024x125.png 1024w, /wp-content/uploads/2024/12/Disk-Serials-300x37.png 300w, /wp-content/uploads/2024/12/Disk-Serials-768x94.png 768w, /wp-content/uploads/2024/12/Disk-Serials-1536x188.png 1536w, /wp-content/uploads/2024/12/Disk-Serials-2048x251.png 2048w" width="1024"/></picture></figure>
 <h2 class="wp-block-heading" id="To confirm that trim is working execute the below command command">Trim</h2>
 <p>Once the disks are seen as unique it is possible to enable To confirm that trim is working execute the below command command. ( I have no idea why this is a blocker but it is)</p>
 <p>You can enable auto To confirm that trim is working execute the below command command in the Storage Dashboard under “ZFS Health”</p>
@@ -195,10 +195,10 @@
 <p>If everything is working you will see the To confirm that trim is working execute the below command command command as per below command</p>
 <figure class="wp-block-image size-large"><img alt="" class="wp-image-6280" decoding="async" loading="lazy" src="/wp-content/uploads/2024/12/To confirm that trim is working execute the below command command-1-1024x452.png"/></figure>
 <p>A further validation that this is working is to review the VMss storage used, see the before and after of this VMss</p>
-<figure class="wp-block-image wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex"><picture><source srcset="/wp-content/uploads/2024/12/vm-Before-2.avif 543w, /wp-content/uploads/2024/12/vm-Before-2-267x300.avif 267w" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/vm-Before-2.webp 543w, /wp-content/uploads/2024/12/vm-Before-2-267x300.webp 267w" type="image/webp"/><img alt="" class="wp-image-6263" decoding="async" height="609" loading="lazy" sizes="auto, (max-width: 543px) 100vw, 543px" src="/wp-content/uploads/2024/12/vm-Before-2.png" srcset="/wp-content/uploads/2024/12/vm-Before-2.png 543w, /wp-content/uploads/2024/12/vm-Before-2-267x300.png 267w" width="543"/></picture></figure>
+<figure class="wp-block-image wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex"><picture><source srcset="/wp-content/uploads/2024/12/vm-Before-2.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/vm-Before-2.webp" type="image/webp"/><img alt="" class="wp-image-6263" decoding="async" height="609" loading="lazy" sizes="auto, (max-width: 543px) 100vw, 543px" src="/wp-content/uploads/2024/12/vm-Before-2.png" srcset="/wp-content/uploads/2024/12/vm-Before-2.png 543w, /wp-content/uploads/2024/12/vm-Before-2-267x300.png 267w" width="543"/></picture></figure>
 <p>Additional confirmation can be seen by reviewing the underlying (vSAN consumption in this case). Before and after listed below command</p>
-<figure class="wp-block-image size-full is-resized is-style-default"><picture><source srcset="/wp-content/uploads/2024/12/vSAN-Before.avif 860w, /wp-content/uploads/2024/12/vSAN-Before-300x82.avif 300w, /wp-content/uploads/2024/12/vSAN-Before-768x209.avif 768w" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/vSAN-Before.webp 860w, /wp-content/uploads/2024/12/vSAN-Before-300x82.webp 300w, /wp-content/uploads/2024/12/vSAN-Before-768x209.webp 768w" type="image/webp"/><img alt="" class="wp-image-6275" decoding="async" height="234" loading="lazy" sizes="auto, (max-width: 860px) 100vw, 860px" src="/wp-content/uploads/2024/12/vSAN-Before.png" srcset="/wp-content/uploads/2024/12/vSAN-Before.png 860w, /wp-content/uploads/2024/12/vSAN-Before-300x82.png 300w, /wp-content/uploads/2024/12/vSAN-Before-768x209.png 768w" width="860"/></picture></figure>
-<figure class="wp-block-image size-full is-resized"><picture><source srcset="/wp-content/uploads/2024/12/vSAN-After-1.avif 353w, /wp-content/uploads/2024/12/vSAN-After-1-300x112.avif 300w" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/vSAN-After-1.webp 353w, /wp-content/uploads/2024/12/vSAN-After-1-300x112.webp 300w" type="image/webp"/><img alt="" class="wp-image-6276" decoding="async" height="132" loading="lazy" sizes="auto, (max-width: 353px) 100vw, 353px" src="/wp-content/uploads/2024/12/vSAN-After-1.png" srcset="/wp-content/uploads/2024/12/vSAN-After-1.png 353w, /wp-content/uploads/2024/12/vSAN-After-1-300x112.png 300w" width="353"/></picture></figure>
+<figure class="wp-block-image size-full is-resized is-style-default"><picture><source srcset="/wp-content/uploads/2024/12/vSAN-Before.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/vSAN-Before.webp" type="image/webp"/><img alt="" class="wp-image-6275" decoding="async" height="234" loading="lazy" sizes="auto, (max-width: 860px) 100vw, 860px" src="/wp-content/uploads/2024/12/vSAN-Before.png" srcset="/wp-content/uploads/2024/12/vSAN-Before.png 860w, /wp-content/uploads/2024/12/vSAN-Before-300x82.png 300w, /wp-content/uploads/2024/12/vSAN-Before-768x209.png 768w" width="860"/></picture></figure>
+<figure class="wp-block-image size-full is-resized"><picture><source srcset="/wp-content/uploads/2024/12/vSAN-After-1.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/12/vSAN-After-1.webp" type="image/webp"/><img alt="" class="wp-image-6276" decoding="async" height="132" loading="lazy" sizes="auto, (max-width: 353px) 100vw, 353px" src="/wp-content/uploads/2024/12/vSAN-After-1.png" srcset="/wp-content/uploads/2024/12/vSAN-After-1.png 353w, /wp-content/uploads/2024/12/vSAN-After-1-300x112.png 300w" width="353"/></picture></figure>
 </div><!-- .entry-content -->
 <div class="comments-area" id="comments"><div class="pb-30"><section id="utterances-comments"><script async="" crossorigin="anonymous" data-cfasync="false" data-issue-term="pathname" data-repo="jameskilbynet/jkcoukblog" data-theme="github-dark" src="https://utteranc.es/client.js"></script></section></div></div><footer class="entry-footer">
 <div class="entry-tags">
@@ -221,90 +221,90 @@
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6644 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vsan-vmware">
-<a aria-hidden="true" aria-label="vSAN Cluster Shutdown – Orchestration" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/12/vsan-cluster-shutdown/" role="presentation" tabindex="-1">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5945 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-truenas-scale tag-homelab tag-storage">
+<a aria-hidden="true" aria-label="Can you really squeeze 96TB in 1U ?" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/09/can-you-really-squeeze-96tb-in-1u/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.avif 550w, /wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1-300x177.avif 300w" type="image/avif"/><source srcset="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.webp 550w, /wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1-300x177.webp 300w" type="image/webp"/><img alt="vSAN Cluster Shutdown – Orchestration" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="324" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg" srcset="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg 550w, /wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1-300x177.jpg 300w" width="550"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.webp" type="image/webp"/><img alt="Can you really squeeze 96TB in 1U ?" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="435" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png" srcset="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png 758w, /wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter-300x172.png 300w" width="758"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vsan-vmware" href="/category/vmware/vsan-vmware/" rel="tag">vSAN</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/12/vsan-cluster-shutdown/" rel="bookmark">vSAN Cluster Shutdown – Orchestration</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2024/09/can-you-really-squeeze-96tb-in-1u/" rel="bookmark">Can you really squeeze 96TB in 1U ?</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-12-06T10:59:14+00:00" itemprop="datePublished">December 6, 2025</time><time class="updated" datetime="2026-01-17T09:25:34+00:00" itemprop="dateModified">January 17, 2026</time> </span>
+<time class="entry-date published" datetime="2024-09-12T12:39:16+00:00" itemprop="datePublished">September 12, 2024</time><time class="updated" datetime="2026-01-18T21:38:15+00:00" itemprop="dateModified">January 18, 2026</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>How to safety shutdown a vSAN Environment</p>
+<p>Yes, that’s a clickbait title. But technically it’s possible if I dropped all drive redundancy… I recently saw an advert for a server that was just too good to be true. It promised to bring a huge amount of storage and future options in a quite hard-to-believe 1U. The price it was on offer for…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2025/12/vsan-cluster-shutdown/">
-				Read More<span class="screen-reader-text"> vSAN Cluster Shutdown – Orchestration</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2024/09/can-you-really-squeeze-96tb-in-1u/">
+				Read More<span class="screen-reader-text"> Can you really squeeze 96TB in 1U ?</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4866 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vcf tag-holodeck tag-multihost tag-vcf tag-vmware">
-<a aria-hidden="true" aria-label="MultiHost Holodeck VCF" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/01/multihost-holodeck-vcf/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3138 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-aws tag-failure tag-sre tag-vmc tag-vmware tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="VMC Host Errors" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/09/vmc-host-errors/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2023/12/Holodeck-Overview.avif 523w, /wp-content/uploads/2023/12/Holodeck-Overview-300x137.avif 300w" type="image/avif"/><source srcset="/wp-content/uploads/2023/12/Holodeck-Overview.webp 523w, /wp-content/uploads/2023/12/Holodeck-Overview-300x137.webp 300w" type="image/webp"/><img alt="MultiHost Holodeck VCF" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="239" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/12/Holodeck-Overview.png" srcset="/wp-content/uploads/2023/12/Holodeck-Overview.png 523w, /wp-content/uploads/2023/12/Holodeck-Overview-300x137.png 300w" width="523"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.webp" type="image/webp"/><img alt="VMC Host Errors" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vcf" href="/category/vmware/vcf/" rel="tag">VCF</a> </span>
+<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/01/multihost-holodeck-vcf/" rel="bookmark">MultiHost Holodeck VCF</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2020/09/vmc-host-errors/" rel="bookmark">VMC Host Errors</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-01-17T17:29:38+00:00" itemprop="datePublished">January 17, 2024</time><time class="updated" datetime="2026-01-18T21:41:39+00:00" itemprop="dateModified">January 18, 2026</time> </span>
+<time class="entry-date published" datetime="2020-09-15T10:56:32+00:00" itemprop="datePublished">September 15, 2020</time><time class="updated" datetime="2025-10-01T15:22:15+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>How to Deploy VMware Holodeck on multiple hosts</p>
+<p>When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2024/01/multihost-holodeck-vcf/">
-				Read More<span class="screen-reader-text"> MultiHost Holodeck VCF</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2020/09/vmc-host-errors/">
+				Read More<span class="screen-reader-text"> VMC Host Errors</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-631 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab tag-homelab tag-storage tag-synology">
-<a aria-hidden="true" aria-label="Lab Storage" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2019/02/lab-storage-2/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6710 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-homelab tag-artificial-intelligence tag-homelab tag-warp">
+<a aria-hidden="true" aria-label="Warp – The intelligent terminal" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/04/warp-the-intelligent-terminal/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-768x461.avif 768w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-300x180.avif 300w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-1024x614.avif 1024w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.avif 1500w" type="image/avif"/><source srcset="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-768x461.webp 768w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-300x180.webp 300w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-1024x614.webp 1024w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.webp 1500w" type="image/webp"/><img alt="Lab Storage" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="461" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-768x461.jpg" srcset="/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-768x461.jpg 768w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-300x180.jpg 300w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-1024x614.jpg 1024w, /wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg 1500w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-768x180.avif" type="image/avif"/><source srcset="/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-768x180.webp" type="image/webp"/><img alt="Wa" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="180" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-768x180.png" srcset="/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-768x180.png 768w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-300x70.png 300w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1024x240.png 1024w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1536x360.png 1536w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-2048x480.png 2048w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> </span>
+<a class="category-link-artificial-intelligence" href="/category/artificial-intelligence/" rel="tag">Artificial Intelligence</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2019/02/lab-storage-2/" rel="bookmark">Lab Storage</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2025/04/warp-the-intelligent-terminal/" rel="bookmark">Warp – The intelligent terminal</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2019-02-10T23:59:20+00:00" itemprop="datePublished">February 10, 2019</time><time class="updated" datetime="2024-07-10T09:22:32+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+<time class="entry-date published" datetime="2025-04-11T15:46:23+00:00" itemprop="datePublished">April 11, 2025</time><time class="updated" datetime="2025-10-03T09:15:18+00:00" itemprop="dateModified">October 3, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology…</p>
+<p>How Warp is helping me run my homelab. </p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2019/02/lab-storage-2/">
-				Read More<span class="screen-reader-text"> Lab Storage</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2025/04/warp-the-intelligent-terminal/">
+				Read More<span class="screen-reader-text"> Warp – The intelligent terminal</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -314,7 +314,7 @@
 </li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4357 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage tag-nas tag-truenas-scale tag-zfs">
 <a aria-hidden="true" aria-label="Homelab Storage Refresh (Part 1)" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/05/homelab-storage-refresh-part-1/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.avif 768w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.avif 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.avif 905w" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.webp 768w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.webp 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.webp 905w" type="image/webp"/><img alt="TrueNAS Logo" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="198" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png" srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png 768w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.png 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png 905w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.avif" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.webp" type="image/webp"/><img alt="TrueNAS Logo" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="198" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png" srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png 768w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.png 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png 905w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -341,60 +341,60 @@
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6800 post type-post status-publish format-standard has-post-thumbnail hentry category-ansible category-homelab tag-ansible tag-homelab tag-iac tag-semaphore">
-<a aria-hidden="true" aria-label="Managing my Homelab with SemaphoreUI" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/09/managing-my-homelab-with-semaphoreui/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3229 post type-post status-publish format-standard has-post-thumbnail hentry category-automation category-homelab category-vmware tag-automation tag-hashicorp tag-homelab tag-packer">
+<a aria-hidden="true" aria-label="Template Deployment with Packer" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2021/01/hashicorp-packer/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2025/07/semaphore-768x768.avif 768w, /wp-content/uploads/2025/07/semaphore-300x300.avif 300w, /wp-content/uploads/2025/07/semaphore-150x150.avif 150w, /wp-content/uploads/2025/07/semaphore.avif 1024w" type="image/avif"/><source srcset="/wp-content/uploads/2025/07/semaphore-768x768.webp 768w, /wp-content/uploads/2025/07/semaphore-300x300.webp 300w, /wp-content/uploads/2025/07/semaphore-150x150.webp 150w, /wp-content/uploads/2025/07/semaphore.webp 1024w" type="image/webp"/><img alt="Managing my Homelab with SemaphoreUI" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="768" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2025/07/semaphore-768x768.png" srcset="/wp-content/uploads/2025/07/semaphore-768x768.png 768w, /wp-content/uploads/2025/07/semaphore-300x300.png 300w, /wp-content/uploads/2025/07/semaphore-150x150.png 150w, /wp-content/uploads/2025/07/semaphore.png 1024w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2021/01/logo_packer.avif" type="image/avif"/><source srcset="/wp-content/uploads/2021/01/logo_packer.webp" type="image/webp"/><img alt="Template Deployment with Packer" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="287" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2021/01/logo_packer.png" srcset="/wp-content/uploads/2021/01/logo_packer.png 287w, /wp-content/uploads/2021/01/logo_packer-150x150.png 150w" width="287"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-ansible" href="/category/ansible/" rel="tag">Ansible</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> </span>
+<a class="category-link-automation" href="/category/automation/" rel="tag">Automation</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/09/managing-my-homelab-with-semaphoreui/" rel="bookmark">Managing my Homelab with SemaphoreUI</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2021/01/hashicorp-packer/" rel="bookmark">Template Deployment with Packer</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-09-02T16:01:48+00:00" itemprop="datePublished">September 2, 2025</time><time class="updated" datetime="2025-12-18T00:03:28+00:00" itemprop="dateModified">December 18, 2025</time> </span>
+<time class="entry-date published" datetime="2021-01-21T22:26:10+00:00" itemprop="datePublished">January 21, 2021</time><time class="updated" datetime="2025-12-08T12:50:22+00:00" itemprop="dateModified">December 8, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>I recently stumbled across Semaphore, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running easily with…</p>
+<p>Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2025/09/managing-my-homelab-with-semaphoreui/">
-				Read More<span class="screen-reader-text"> Managing my Homelab with SemaphoreUI</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2021/01/hashicorp-packer/">
+				Read More<span class="screen-reader-text"> Template Deployment with Packer</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5912 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-docker category-homelab tag-artificial-intelligence tag-homelab tag-nvidia">
-<a aria-hidden="true" aria-label="Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6644 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vsan-vmware">
+<a aria-hidden="true" aria-label="vSAN Cluster Shutdown – Orchestration" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/12/vsan-cluster-shutdown/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.avif 768w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-300x200.avif 300w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.avif 1024w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1536x1024.avif 1536w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-2048x1365.avif 2048w" type="image/avif"/><source srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.webp 768w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-300x200.webp 300w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.webp 1024w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1536x1024.webp 1536w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-2048x1365.webp 2048w" type="image/webp"/><img alt="Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="512" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg" srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg 768w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-300x200.jpg 300w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.jpg 1024w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1536x1024.jpg 1536w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-2048x1365.jpg 2048w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.avif" type="image/avif"/><source srcset="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.webp" type="image/webp"/><img alt="vSAN Cluster Shutdown – Orchestration" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="324" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg" srcset="/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg 550w, /wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1-300x177.jpg 300w" width="550"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-artificial-intelligence" href="/category/artificial-intelligence/" rel="tag">Artificial Intelligence</a> | <a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> </span>
+<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vsan-vmware" href="/category/vmware/vsan-vmware/" rel="tag">vSAN</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/" rel="bookmark">Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2025/12/vsan-cluster-shutdown/" rel="bookmark">vSAN Cluster Shutdown – Orchestration</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-10-11T15:03:26+00:00" itemprop="datePublished">October 11, 2024</time><time class="updated" datetime="2025-10-01T15:22:12+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2025-12-06T10:59:14+00:00" itemprop="datePublished">December 6, 2025</time><time class="updated" datetime="2026-01-17T09:25:34+00:00" itemprop="dateModified">January 17, 2026</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock price has gone to the moon. So I thought I better get some knowledge and understand some of this. As it’s a huge field and I wasn’t exactly sure…</p>
+<p>How to safety shutdown a vSAN Environment</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/">
-				Read More<span class="screen-reader-text"> Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2025/12/vsan-cluster-shutdown/">
+				Read More<span class="screen-reader-text"> vSAN Cluster Shutdown – Orchestration</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->

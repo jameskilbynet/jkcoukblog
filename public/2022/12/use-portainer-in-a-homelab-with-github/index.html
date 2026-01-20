@@ -10,10 +10,10 @@
 <meta content="How to use Portainer and Github to manage and deploy docker containers" name="description"/>
 <meta content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" name="robots"/>
 <link href="/2022/12/use-portainer-in-a-homelab-with-github/" rel="canonical"/>
-<meta content="en_GB" property="og:locale"/>
-<meta content="article" property="og:type"/>
-<meta content="Optimize Your Homelab With Portainer &amp; GitHub" property="og:title">
-<meta content="Use Portainer in a Homelab with Github for seamless container management!" property="og:description">
+<meta content="en_GB" property="og:locale">
+<meta content="article" property="og:type">
+<meta content="Optimize Your Homelab With Portainer &amp; GitHub" property="og:title"/>
+<meta content="Use Portainer in a Homelab with Github for seamless container management!" property="og:description"/>
 <meta content="/2022/12/use-portainer-in-a-homelab-with-github/" property="og:url"/>
 <meta content="Jameskilbycouk" property="og:site_name"/>
 <meta content="Containers" property="article:tag"/>
@@ -51,7 +51,7 @@
 <link href="/wp-content/cache/wpo-minify/1768639265/assets/wpo-minify-header-60a11f4e.min.css" id="wpo_min-header-0-css" media="all" rel="stylesheet"/>
 <link href="/wp-json/wp/v2/posts/3883" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
 <link href="/?p=3883" rel="shortlink"/>
-</meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#0a0a0a" name="theme-color"/><link href="/favicon.ico" rel="icon" type="image/x-icon"/><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/site.webmanifest" rel="manifest"/><link as="style" href="/assets/css/brutalist-theme.css" rel="preload"/><link href="/assets/css/brutalist-theme.css" media="print" onload="this.media='all'" rel="stylesheet"/><noscript><link href="/assets/css/brutalist-theme.css" rel="stylesheet"/></noscript><script data-cfasync="false" data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
+</meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#0a0a0a" name="theme-color"/><link href="/favicon.ico" rel="icon" type="image/x-icon"/><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/site.webmanifest" rel="manifest"/><script data-cfasync="false" data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
 <body class="wp-singular post-template-default single single-post postid-3883 single-format-standard wp-embed-responsive wp-theme-kadence hide-focus-outline link-style-standard content-title-style-normal content-width-narrow content-style-boxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
 <div class="site wp-site-blocks" id="wrapper">
 <a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
@@ -128,7 +128,7 @@
 <div class="content-wrap">
 <div class="post-thumbnail article-post-thumbnail kadence-thumbnail-position-behind alignwide kadence-thumbnail-ratio-2-3">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2022/12/22225832.avif 280w, /wp-content/uploads/2022/12/22225832-150x150.avif 150w" type="image/avif"/><source srcset="/wp-content/uploads/2022/12/22225832.webp 280w, /wp-content/uploads/2022/12/22225832-150x150.webp 150w" type="image/webp"/><img alt="" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="280" loading="eager" sizes="(max-width: 280px) 100vw, 280px" src="/wp-content/uploads/2022/12/22225832.png" srcset="/wp-content/uploads/2022/12/22225832.png 280w, /wp-content/uploads/2022/12/22225832-150x150.png 150w" width="280"/></picture> </div>
+<img alt="" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="280" loading="eager" sizes="(max-width: 280px) 100vw, 280px" src="/wp-content/uploads/2022/12/22225832.png" srcset="/wp-content/uploads/2022/12/22225832.png 280w, /wp-content/uploads/2022/12/22225832-150x150.png 150w" width="280"/> </div>
 </div><!-- .post-thumbnail -->
 <article class="entry content-bg single-entry post-3883 post type-post status-publish format-standard has-post-thumbnail hentry category-docker category-homelab category-hosting category-kubernetes tag-containers tag-docker tag-homelab" id="post-3883">
 <div class="entry-content-wrap">
@@ -147,14 +147,14 @@
 <div class="entry-content single-content">
 <p>Late to the party or not, I have been using containers in my lab more and more and that has led me to <a href="https://www.portainer.io" rel="noreferrer noopener" target="_blank">Portainer</a>….</p>
 <p>I use it for managing the docker containers on my Synology but it can also be used for managing lots of other things.  In their own words “Portainer accelerates container adoption. It reduces operational complexity and addresses the security challenges of running containers in Docker, Swarm, Nomad and Kubernetes.”</p>
-<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1024x638.avif 1024w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-300x187.avif 300w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-768x479.avif 768w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1536x957.avif 1536w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13.avif 1678w" type="image/avif"/><source srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1024x638.webp 1024w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-300x187.webp 300w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-768x479.webp 768w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1536x957.webp 1536w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13.webp 1678w" type="image/webp"/><img alt="" class="wp-image-4393" decoding="async" height="638" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1024x638.png" srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1024x638.png 1024w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-300x187.png 300w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-768x479.png 768w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1536x957.png 1536w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13.png 1678w" width="1024"/></picture><figcaption class="wp-element-caption">Portainer Platform</figcaption></figure>
+<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1024x638.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1024x638.webp" type="image/webp"/><img alt="" class="wp-image-4393" decoding="async" height="638" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1024x638.png" srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1024x638.png 1024w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-300x187.png 300w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-768x479.png 768w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13-1536x957.png 1536w, /wp-content/uploads/2022/12/Screenshot-2022-11-21-at-17.36.13.png 1678w" width="1024"/></picture><figcaption class="wp-element-caption">Portainer Platform</figcaption></figure>
 <p>Based on the capabilities shown above I am only scratching the surface but I thought I would showcase one of the key features that I am utilising in deployment and updating containers.</p>
 <h2 class="wp-block-heading">Prerequisites </h2>
 <p>For now, I am going to assume that you have a Synology, Docker Installed and Portainer deployed. Plus have GitHub (or similar) version control system that Portainer can reach. If you don’t have this check out Marius’s great blog with detailed instructions for <a href="https://mariushosting.com/docker/" rel="noreferrer noopener" target="_blank">Docker</a> and <a href="https://mariushosting.com/synology-30-second-portainer-install-using-task-scheduler-docker/" rel="noreferrer noopener" target="_blank">Portainer</a> It’s also important to understand user and user id’s and a great blog on this can be found <a href="https://drfrankenstein.co.uk/step-2-setting-up-a-restricted-docker-user-and-obtaining-ids/" rel="noreferrer noopener" target="_blank">here</a></p>
 <h2 class="wp-block-heading">Container Provision</h2>
 <p>To deploy a container with Portainer I prefer to deploy them in Stacks even if it’s a single container.  </p>
 <p>Navigate to the Stacks section and select “Add Stack”</p>
-<figure class="wp-block-image size-full"><picture><source srcset="/wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31.avif 888w, /wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31-300x70.avif 300w, /wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31-768x178.avif 768w" type="image/avif"/><source srcset="/wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31.webp 888w, /wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31-300x70.webp 300w, /wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31-768x178.webp 768w" type="image/webp"/><img alt="" class="wp-image-4398" decoding="async" height="206" loading="lazy" sizes="auto, (max-width: 888px) 100vw, 888px" src="/wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31.png" srcset="/wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31.png 888w, /wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31-300x70.png 300w, /wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31-768x178.png 768w" width="888"/></picture><figcaption class="wp-element-caption">Add Stack </figcaption></figure>
+<figure class="wp-block-image size-full"><picture><source srcset="/wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31.avif" type="image/avif"/><source srcset="/wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31.webp" type="image/webp"/><img alt="" class="wp-image-4398" decoding="async" height="206" loading="lazy" sizes="auto, (max-width: 888px) 100vw, 888px" src="/wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31.png" srcset="/wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31.png 888w, /wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31-300x70.png 300w, /wp-content/uploads/2023/04/Screenshot-2022-11-21-at-17.59.31-768x178.png 768w" width="888"/></picture><figcaption class="wp-element-caption">Add Stack </figcaption></figure>
 <p>I will show the deployment of a stack to run Grafana as it’s a simple container and popular with homelabbers.  The first step is to name the stack which I have called grafana – note these must be lowercase.</p>
 <p>The YAML code that the container will use is shown below.  This is stored in my private docker repository located at https://github.com/jameskilbynet/docker/grafana</p>
 <div class="code-block-wrapper" style="position: relative; margin: 1em 0;"><pre class="wp-block-code"><code>version: '3.3'
@@ -174,7 +174,7 @@ services:
                 z-index: 10;">📋 Copy</button></div>
 <p>Reviewing the YAML code it’s clear that volume mapping is being used.  This is a feature to expose a file or folder of the underlying Docker Host into the container.   In this case /volume1/docker/grafana Therefore this folder must be created manually.  Docker will then map this folder into var/lib/grafana within the container to the /volume1/docker/grafana folder on my Synology</p>
 <p>Within Portainer to use a git repository change to the Git tab and enter the relevant details. </p>
-<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1024x567.avif 1024w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-300x166.avif 300w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-768x425.avif 768w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1536x850.avif 1536w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1.avif 2048w" type="image/avif"/><source srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1024x567.webp 1024w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-300x166.webp 300w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-768x425.webp 768w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1536x850.webp 1536w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1.webp 2048w" type="image/webp"/><img alt="" class="wp-image-4395" decoding="async" height="567" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1024x567.png" srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1024x567.png 1024w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-300x166.png 300w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-768x425.png 768w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1536x850.png 1536w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1.png 2048w" width="1024"/></picture></figure>
+<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1024x567.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1024x567.webp" type="image/webp"/><img alt="" class="wp-image-4395" decoding="async" height="567" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1024x567.png" srcset="/wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1024x567.png 1024w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-300x166.png 300w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-768x425.png 768w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1-1536x850.png 1536w, /wp-content/uploads/2022/12/Screenshot-2022-11-22-at-11.56.52-2048x1133-1.png 2048w" width="1024"/></picture></figure>
 <p>I am using a private repository and therefore need to enable authentication to allow Portainer to access the private repo.   This requires a Personal Access Token to be created as documented <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" rel="noreferrer noopener" target="_blank">here</a>.</p>
 <p>When all of the relevent settings are input then click “Deploy the Stack”</p>
 <p>Portainer will then instruct docker to fetch the container (if it hasn’t already) and deploy the stack. </p>
@@ -201,120 +201,30 @@ services:
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6695 post type-post status-publish format-standard has-post-thumbnail hentry category-mikrotik category-networking tag-homelab tag-mikrotik tag-networking">
-<a aria-hidden="true" aria-label="Home Network Upgrade" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/09/home-network-upgrade/" role="presentation" tabindex="-1">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-162 post type-post status-publish format-standard has-post-thumbnail hentry category-hosting tag-cloudflare">
+<a aria-hidden="true" aria-label="Cloudflare" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2018/03/cloudflare/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2024/09/s-l1600-768x427.avif 768w, /wp-content/uploads/2024/09/s-l1600-300x167.avif 300w, /wp-content/uploads/2024/09/s-l1600-1024x569.avif 1024w, /wp-content/uploads/2024/09/s-l1600.avif 1280w" type="image/avif"/><source srcset="/wp-content/uploads/2024/09/s-l1600-768x427.webp 768w, /wp-content/uploads/2024/09/s-l1600-300x167.webp 300w, /wp-content/uploads/2024/09/s-l1600-1024x569.webp 1024w, /wp-content/uploads/2024/09/s-l1600.webp 1280w" type="image/webp"/><img alt="CRS-504" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="427" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2024/09/s-l1600-768x427.jpg" srcset="/wp-content/uploads/2024/09/s-l1600-768x427.jpg 768w, /wp-content/uploads/2024/09/s-l1600-300x167.jpg 300w, /wp-content/uploads/2024/09/s-l1600-1024x569.jpg 1024w, /wp-content/uploads/2024/09/s-l1600.jpg 1280w" width="768"/></picture> </div>
+<img alt="Cloudflare" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="229" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2020/06/iu-2-768x229.png" srcset="/wp-content/uploads/2020/06/iu-2-768x229.png 768w, /wp-content/uploads/2020/06/iu-2-300x90.png 300w, /wp-content/uploads/2020/06/iu-2.png 874w" width="768"/> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-mikrotik" href="/category/mikrotik/" rel="tag">Mikrotik</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> </span>
+<a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/09/home-network-upgrade/" rel="bookmark">Home Network Upgrade</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2018/03/cloudflare/" rel="bookmark">Cloudflare</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-09-09T08:25:08+00:00" itemprop="datePublished">September 9, 2024</time><time class="updated" datetime="2025-10-24T14:21:56+00:00" itemprop="dateModified">October 24, 2025</time> </span>
+<time class="entry-date published" datetime="2018-03-27T12:30:48+00:00" itemprop="datePublished">March 27, 2018</time><time class="updated" datetime="2024-12-08T21:43:07+00:00" itemprop="dateModified">December 8, 2024</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>My journey to superfast networking in my homelab</p>
+<p>Cloudflare – What is it and why would I care? I have been using Cloudflare for a long time.  It is one of my go-to services and I use it to protect all of the public services I run for myself and other sites/ organizations. The basic premise of what Cloudflare do is that they…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2024/09/home-network-upgrade/">
-				Read More<span class="screen-reader-text"> Home Network Upgrade</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4301 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware category-vsphere tag-upgrade tag-vsphere-8">
-<a aria-hidden="true" aria-label="Forcing an Upgrade to vSphere 8" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/12/forcing-an-upgrade-to-vsphere-8/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23.avif 738w, /wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23-300x67.avif 300w" type="image/avif"/><source srcset="/wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23.webp 738w, /wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23-300x67.webp 300w" type="image/webp"/><img alt="Forcing an Upgrade to vSphere 8" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="166" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23.png" srcset="/wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23.png 738w, /wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23-300x67.png 300w" width="738"/></picture> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vsphere" href="/category/vsphere/" rel="tag">vSphere</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/12/forcing-an-upgrade-to-vsphere-8/" rel="bookmark">Forcing an Upgrade to vSphere 8</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-12-14T21:43:39+00:00" itemprop="datePublished">December 14, 2022</time><time class="updated" datetime="2025-10-01T15:22:13+00:00" itemprop="dateModified">October 1, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>I run a reasonably extensive homelab that is of course built around the VMware ecosystem. So with the release of vSphere 8 I was obviously going to upgrade however a few personal things blocked me from doing it until now. The vCenter upgrade was smooth however knowing that some of the hardware I am running…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2022/12/forcing-an-upgrade-to-vsphere-8/">
-				Read More<span class="screen-reader-text"> Forcing an Upgrade to vSphere 8</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6710 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-homelab tag-artificial-intelligence tag-homelab tag-warp">
-<a aria-hidden="true" aria-label="Warp – The intelligent terminal" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/04/warp-the-intelligent-terminal/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-768x180.avif 768w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-300x70.avif 300w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1024x240.avif 1024w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1536x360.avif 1536w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-2048x480.avif 2048w" type="image/avif"/><source srcset="/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-768x180.webp 768w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-300x70.webp 300w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1024x240.webp 1024w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1536x360.webp 1536w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-2048x480.webp 2048w" type="image/webp"/><img alt="Wa" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="180" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-768x180.png" srcset="/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-768x180.png 768w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-300x70.png 300w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1024x240.png 1024w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1536x360.png 1536w, /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-2048x480.png 2048w" width="768"/></picture> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-artificial-intelligence" href="/category/artificial-intelligence/" rel="tag">Artificial Intelligence</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/04/warp-the-intelligent-terminal/" rel="bookmark">Warp – The intelligent terminal</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-04-11T15:46:23+00:00" itemprop="datePublished">April 11, 2025</time><time class="updated" datetime="2025-10-03T09:15:18+00:00" itemprop="dateModified">October 3, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>How Warp is helping me run my homelab. </p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2025/04/warp-the-intelligent-terminal/">
-				Read More<span class="screen-reader-text"> Warp – The intelligent terminal</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3696 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage tag-nvme tag-ssd tag-truenas tag-truenas-scale">
-<a aria-hidden="true" aria-label="Lab Update – Part 2 Storage Truenas Scale" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/01/lab-update-part-2-storage/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2022/01/maxresdefault-768x432.avif 768w, /wp-content/uploads/2022/01/maxresdefault-300x169.avif 300w, /wp-content/uploads/2022/01/maxresdefault-1024x576.avif 1024w, /wp-content/uploads/2022/01/maxresdefault.avif 1280w" type="image/avif"/><source srcset="/wp-content/uploads/2022/01/maxresdefault-768x432.webp 768w, /wp-content/uploads/2022/01/maxresdefault-300x169.webp 300w, /wp-content/uploads/2022/01/maxresdefault-1024x576.webp 1024w, /wp-content/uploads/2022/01/maxresdefault.webp 1280w" type="image/webp"/><img alt="Lab Update – Part 2 Storage Truenas Scale" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="432" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/01/maxresdefault-768x432.jpeg" srcset="/wp-content/uploads/2022/01/maxresdefault-768x432.jpeg 768w, /wp-content/uploads/2022/01/maxresdefault-300x169.jpeg 300w, /wp-content/uploads/2022/01/maxresdefault-1024x576.jpeg 1024w, /wp-content/uploads/2022/01/maxresdefault.jpeg 1280w" width="768"/></picture> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/01/lab-update-part-2-storage/" rel="bookmark">Lab Update – Part 2 Storage Truenas Scale</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-01-11T22:35:02+00:00" itemprop="datePublished">January 11, 2022</time><time class="updated" datetime="2023-12-11T15:02:10+00:00" itemprop="dateModified">December 11, 2023</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>The HP Z840 has changed its role to a permanent storage box running Truenas Scale. This is in addition to my Synology DS918+ TrueNas is the successor to FreeNas a very popular BSD based StorageOS and TrueNas scale is a fork of this based on Linux. The Synology has been an amazing piece of kit…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2022/01/lab-update-part-2-storage/">
-				Read More<span class="screen-reader-text"> Lab Update – Part 2 Storage Truenas Scale</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2018/03/cloudflare/">
+				Read More<span class="screen-reader-text"> Cloudflare</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -324,7 +234,7 @@ services:
 </li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6392 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-docker category-hosting tag-ai tag-docker tag-hoarder tag-homelab tag-ollama">
 <a aria-hidden="true" aria-label="How I Migrated from Pocket to Hoarder with AI Integration" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.avif 768w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-300x160.avif 300w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1024x547.avif 1024w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1536x821.avif 1536w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-2048x1095.avif 2048w" type="image/avif"/><source srcset="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.webp 768w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-300x160.webp 300w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1024x547.webp 1024w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1536x821.webp 1536w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-2048x1095.webp 2048w" type="image/webp"/><img alt="How I Migrated from Pocket to Hoarder with AI Integration" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="411" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png" srcset="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png 768w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-300x160.png 300w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1024x547.png 1024w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1536x821.png 1536w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-2048x1095.png 2048w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.avif" type="image/avif"/><source srcset="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.webp" type="image/webp"/><img alt="How I Migrated from Pocket to Hoarder with AI Integration" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="411" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png" srcset="/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png 768w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-300x160.png 300w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1024x547.png 1024w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1536x821.png 1536w, /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-2048x1095.png 2048w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -351,30 +261,120 @@ services:
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4043 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-networking category-storage category-vmware tag-homelab tag-mikrotik">
-<a aria-hidden="true" aria-label="100Gb/s in my Homelab" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/12/100gb-s-in-my-homelab-sort-of/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4357 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage tag-nas tag-truenas-scale tag-zfs">
+<a aria-hidden="true" aria-label="Homelab Storage Refresh (Part 1)" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/05/homelab-storage-refresh-part-1/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2023/04/2157_hi_res-768x346.avif 768w, /wp-content/uploads/2023/04/2157_hi_res-300x135.avif 300w, /wp-content/uploads/2023/04/2157_hi_res-1024x462.avif 1024w, /wp-content/uploads/2023/04/2157_hi_res-1536x693.avif 1536w, /wp-content/uploads/2023/04/2157_hi_res.avif 1889w" type="image/avif"/><source srcset="/wp-content/uploads/2023/04/2157_hi_res-768x346.webp 768w, /wp-content/uploads/2023/04/2157_hi_res-300x135.webp 300w, /wp-content/uploads/2023/04/2157_hi_res-1024x462.webp 1024w, /wp-content/uploads/2023/04/2157_hi_res-1536x693.webp 1536w, /wp-content/uploads/2023/04/2157_hi_res.webp 1889w" type="image/webp"/><img alt="100Gb/s in my Homelab" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="346" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/04/2157_hi_res-768x346.png" srcset="/wp-content/uploads/2023/04/2157_hi_res-768x346.png 768w, /wp-content/uploads/2023/04/2157_hi_res-300x135.png 300w, /wp-content/uploads/2023/04/2157_hi_res-1024x462.png 1024w, /wp-content/uploads/2023/04/2157_hi_res-1536x693.png 1536w, /wp-content/uploads/2023/04/2157_hi_res.png 1889w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.avif" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.webp" type="image/webp"/><img alt="TrueNAS Logo" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="198" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png" srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png 768w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.png 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png 905w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/12/100gb-s-in-my-homelab-sort-of/" rel="bookmark">100Gb/s in my Homelab</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2023/05/homelab-storage-refresh-part-1/" rel="bookmark">Homelab Storage Refresh (Part 1)</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-12-19T10:09:58+00:00" itemprop="datePublished">December 19, 2022</time><time class="updated" datetime="2023-11-11T20:57:34+00:00" itemprop="dateModified">November 11, 2023</time> </span>
+<time class="entry-date published" datetime="2023-05-23T12:07:09+00:00" itemprop="datePublished">May 23, 2023</time><time class="updated" datetime="2025-10-01T15:22:13+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>For a while, I’ve been looking to update the networking at the core of my homelab. I have had some great results with the current setup utilising a number of DAC’s but there were a couple of things that were annoying me. Then MikroTik dropped the CRS504-4XQ-IN and if the price wasn’t horrendous then that…</p>
+<p>Table of Contents Background ZFS Overview Read Cache (ARC and L2ARC) ZIL (ZFS Intent Log) Hardware Background I have just completed the move of all my production and media-based storage/services to TrueNAS Scale. ( I will just refer to this as TrueNAS) This is based on my HP Z840 and I have now retired my…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2022/12/100gb-s-in-my-homelab-sort-of/">
-				Read More<span class="screen-reader-text"> 100Gb/s in my Homelab</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2023/05/homelab-storage-refresh-part-1/">
+				Read More<span class="screen-reader-text"> Homelab Storage Refresh (Part 1)</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3569 post type-post status-publish format-standard has-post-thumbnail hentry category-hosting category-cloudflare category-personal category-wordpress tag-cloudflare tag-hosting">
+<a aria-hidden="true" aria-label="Web Development" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/01/web-development/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="Web Development" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="229" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2020/06/iu-2-768x229.png" srcset="/wp-content/uploads/2020/06/iu-2-768x229.png 768w, /wp-content/uploads/2020/06/iu-2-300x90.png 300w, /wp-content/uploads/2020/06/iu-2.png 874w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> | <a class="category-link-cloudflare" href="/category/cloudflare/" rel="tag">Cloudflare</a> | <a class="category-link-personal" href="/category/personal/" rel="tag">Personal</a> | <a class="category-link-wordpress" href="/category/wordpress/" rel="tag">Wordpress</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2022/01/web-development/" rel="bookmark">Web Development</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2022-01-04T11:27:12+00:00" itemprop="datePublished">January 4, 2022</time><time class="updated" datetime="2025-10-01T15:22:14+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>A while ago I started messing with Cloudflare Workers. I have now moved this site permanently over to them. This is partly related to some issues I have been having with internet access at home. Prior to this, the site ran from within my lab. This means the site is now super fast (hopefully :p)….</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2022/01/web-development/">
+				Read More<span class="screen-reader-text"> Web Development</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3927 post type-post status-publish format-standard has-post-thumbnail hentry category-cloudflare category-hosting category-wordpress tag-cloudflare tag-hosting tag-wordpress tag-workers">
+<a aria-hidden="true" aria-label="Static WordPress hosting using Cloudflare" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<img alt="Static WordPress hosting using Cloudflare" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="450" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/10/iu-768x450.jpeg" srcset="/wp-content/uploads/2022/10/iu-768x450.jpeg 768w, /wp-content/uploads/2022/10/iu-300x176.jpeg 300w, /wp-content/uploads/2022/10/iu.jpeg 1024w" width="768"/> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-cloudflare" href="/category/cloudflare/" rel="tag">Cloudflare</a> | <a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> | <a class="category-link-wordpress" href="/category/wordpress/" rel="tag">Wordpress</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/" rel="bookmark">Static WordPress hosting using Cloudflare</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2022-10-20T15:26:08+00:00" itemprop="datePublished">October 20, 2022</time><time class="updated" datetime="2025-12-27T21:25:38+00:00" itemprop="dateModified">December 27, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>For a while now I have been running this site directly from Cloudflare utilising their excellent worker’s product. I did this originally as a learning exercise but due to the benefits It brought and the ease of use I decided to stick with it. The benefits are several fold: Crazy Web Performance (Typically full page…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/">
+				Read More<span class="screen-reader-text"> Static WordPress hosting using Cloudflare</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4167 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-synology tag-homelab tag-storage">
+<a aria-hidden="true" aria-label="Homelab bad days (almost)" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/11/homelab-bad-days-almost/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<picture><source srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.webp" type="image/webp"/><img alt="Homelab bad days (almost)" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="403" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.jpg" srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.jpg 768w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-300x158.jpg 300w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-1024x538.jpg 1024w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.jpg 1200w" width="768"/></picture> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-synology" href="/category/synology/" rel="tag">Synology</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2022/11/homelab-bad-days-almost/" rel="bookmark">Homelab bad days (almost)</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2022-11-21T15:46:53+00:00" itemprop="datePublished">November 21, 2022</time><time class="updated" datetime="2023-04-08T21:44:28+00:00" itemprop="dateModified">April 8, 2023</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>I recently spent 3 weeks in Ireland with my wife Wendy and our son Nate. This involves driving from the south coast of Dorset up to Scotland and then getting a ferry over to Belfast before travelling west to the Republic. While driving I got a slack notification that one of my SSD’s in my…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2022/11/homelab-bad-days-almost/">
+				Read More<span class="screen-reader-text"> Homelab bad days (almost)</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
