@@ -17,9 +17,9 @@
         "Hosting",
         "Wordpress",
         "Homelab",
-        "Personal",
         "Devops",
-        "Github"
+        "Github",
+        "AWS"
       ],
       "tags": [
         null,
@@ -44,10 +44,10 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Personal",
-        "Homelab",
         "AWS",
-        "Devops"
+        "Devops",
+        "Personal",
+        "Github"
       ],
       "tags": [
         null,
@@ -71,8 +71,8 @@
       "categories": [
         "Cloudflare",
         "Hosting",
-        "Personal",
         "Wordpress",
+        "Personal",
         "Devops",
         "Github"
       ],
@@ -97,14 +97,13 @@
       "api_url": "/api/posts/and-now-for-something-completely-different.json",
       "categories": [
         "Personal",
-        "Consulting",
-        "VMware",
-        "vSphere",
-        "AWS",
-        "Devops",
+        "Nutanix",
         "Hosting",
         "Cloudflare",
-        "Wordpress"
+        "Wordpress",
+        "VMware",
+        "Devops",
+        "AWS"
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/10/fWbXybA7.png)\n\n[Personal](https://jameskilby.co.uk/category/personal/)\n\n# And now for something completely different\n\nBy[James](https://jameskilby.co.uk) October 16, 2018July 10, 2024 • 📖1 min read(263 words)\n\n📅 **Published:** October 16, 2018•..."
@@ -122,12 +121,12 @@
       "categories": [
         "VMware",
         "Personal",
-        "AWS",
+        "vSphere",
         "Devops",
-        "Runecast",
+        "VMware Cloud on AWS",
         "Homelab",
-        "Veeam",
-        "VCF"
+        "Storage",
+        "vExpert"
       ],
       "tags": [
         null,
@@ -137,6 +136,59 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# VMware – Going out with a Bang!\n\nBy[James](https://jameskilby.co.uk) October 7, 2023November 17, 2023 • 📖1 min read..."
+    },
+    {
+      "slug": "cloudflare-workers-limits-of-the-free-tier",
+      "title": "Cloudflare Workers – Limits of the free tier",
+      "description": "Cloudflare Workers highlights the free tier limits. Learn how to manage your usage effectively and avoid 429 errors. Stay informed today!",
+      "date": "2022-01-04T21:11:23Z",
+      "modified": "2023-04-09T08:26:43Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2022/01/cloudflare-workers-limits-of-the-free-tier/",
+      "markdown_url": "/markdown/posts/cloudflare-workers-limits-of-the-free-tier.md",
+      "api_url": "/api/posts/cloudflare-workers-limits-of-the-free-tier.json",
+      "categories": [
+        "Hosting",
+        "Wordpress",
+        "Homelab",
+        "Cloudflare",
+        "Devops",
+        "Github",
+        "Docker",
+        "Kubernetes"
+      ],
+      "tags": [
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)\n\n# Cloudflare Workers – Limits of the free tier\n\nBy[James](https://jameskilby.co.uk) January 4, 2022April 9, 2023 • 📖1 m..."
+    },
+    {
+      "slug": "aws-solution-architect-associate",
+      "title": "AWS Solution Architect – Associate",
+      "description": "Renew your AWS Solution Architect certification today! Stay updated with the latest AWS services and enhance your skills for future challenges.",
+      "date": "2019-12-16T23:46:22Z",
+      "modified": "2025-12-04T01:50:27Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/",
+      "markdown_url": "/markdown/posts/aws-solution-architect-associate.md",
+      "api_url": "/api/posts/aws-solution-architect-associate.json",
+      "categories": [
+        "AWS",
+        "Personal",
+        "Devops",
+        "Consulting",
+        "VMware",
+        "Hosting"
+      ],
+      "tags": [
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png)\n\n[AWS](https://jameskilby.co.uk/category/aws/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# AWS Solution Architect – Associate\n\nBy[James](https://jameskilby.co.uk) December 16, 2019December 4, 20..."
     },
     {
       "slug": "my-first-pull",
@@ -151,16 +203,12 @@
       "categories": [
         "Devops",
         "Personal",
+        "AWS",
+        "Hosting",
+        "VMware",
         "Cloudflare",
         "Github",
-        "Wordpress",
-        "VMware",
-        "vSphere",
-        "Hosting",
-        "Automation",
-        "Homelab",
-        "Consulting",
-        "AWS"
+        "Wordpress"
       ],
       "tags": [
         null,
@@ -184,10 +232,8 @@
         "Nutanix",
         "Personal",
         "Devops",
+        "AWS",
         "Hosting",
-        "Cloudflare",
-        "Wordpress",
-        "Homelab",
         "VMware",
         "Consulting"
       ],
@@ -212,12 +258,13 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Personal",
+        "Homelab",
+        "Docker",
+        "Kubernetes",
         "Devops",
         "Github",
-        "Docker",
-        "Homelab",
-        "Kubernetes"
+        "Personal",
+        "AWS"
       ],
       "tags": [
         null,
@@ -270,11 +317,13 @@
       "categories": [
         "Personal",
         "Consulting",
-        "Hosting",
-        "Nutanix",
-        "Devops",
         "VMware",
-        "vSphere"
+        "vSphere",
+        "AWS",
+        "Devops",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress"
       ],
       "tags": [
         null,
@@ -283,34 +332,6 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-1024x768.jpeg",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1.jpeg)\n\n[Personal](https://jameskilby.co.uk/category/personal/) | [Consulting](https://jameskilby.co.uk/category/consulting/)\n\n# My Home Office Setup & Upgrades\n\nBy[James](https://jameskilby.co.uk) January 5, 2021October 1, 202..."
-    },
-    {
-      "slug": "cloudflare",
-      "title": "Cloudflare",
-      "description": "Learn how Cloudflare's WAF and CDN can protect your site. Start leveraging their free tier for improved global performance today!",
-      "date": "2018-03-27T12:30:48Z",
-      "modified": "2024-12-08T21:43:07Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2018/03/cloudflare/",
-      "markdown_url": "/markdown/posts/cloudflare.md",
-      "api_url": "/api/posts/cloudflare.json",
-      "categories": [
-        "Hosting",
-        "Docker",
-        "Homelab",
-        "Kubernetes",
-        "Cloudflare",
-        "Devops",
-        "Github",
-        "Wordpress",
-        "Personal",
-        "Artificial Intelligence"
-      ],
-      "tags": [
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2.png)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/)\n\n# Cloudflare\n\nBy[James](https://jameskilby.co.uk) March 27, 2018December 8, 2024 • 📖1 min read(288 words)\n\n📅 **Published:** March 27, 2018• **Updated:** December 08, 2024\n\n## Clo..."
     }
   ]
 }
