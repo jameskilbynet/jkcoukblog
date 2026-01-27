@@ -7,12 +7,14 @@ author: James Kilby
 categories:
   - VMware
   - Personal
-  - vSphere
-  - Devops
-  - VMware Cloud on AWS
   - Homelab
-  - Storage
-  - vExpert
+  - Nutanix
+  - VCF
+  - Consulting
+  - VMware Cloud on AWS
+  - Hosting
+  - Cloudflare
+  - Wordpress
 tags:
   - #Charity
   - #EPIC
@@ -44,62 +46,62 @@ VMware also gave all employees $1300 dollars for donation through their foundati
 
 ## Similar Posts
 
-  * [ ![Advanced Deploy VMware vSphere 7.x 3V0-22.21N](https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png) ](https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/)
+  * [ ![New Nodes](https://jameskilby.co.uk/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg) ](https://jameskilby.co.uk/2024/07/new-nodes/)
 
-[VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/) | [vSphere](https://jameskilby.co.uk/category/vsphere/)
+[Homelab](https://jameskilby.co.uk/category/homelab/) | [Nutanix](https://jameskilby.co.uk/category/nutanix/) | [VMware](https://jameskilby.co.uk/category/vmware/)
 
-### [Advanced Deploy VMware vSphere 7.x 3V0-22.21N](https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/)
+### [New Nodes](https://jameskilby.co.uk/2024/07/new-nodes/)
 
-By[James](https://jameskilby.co.uk) November 10, 2023November 17, 2023
+By[James](https://jameskilby.co.uk) July 2, 2024January 18, 2026
 
-Yesterday I sat and passed the above exam. It had been on my todo list for a good number of years. With the current pause in the Broadcom VMware takeover deal. I had some downtime and decided to use one of the three exam vouchers VMware give me each year. This upgrades me to a…
+I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice Bill of Materials Rescue IPMI…
 
-  * [ ![VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png) ](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
+  * [ ![MultiHost Holodeck VCF](https://jameskilby.co.uk/wp-content/uploads/2023/12/Holodeck-Overview.png) ](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
 
-[Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+[VMware](https://jameskilby.co.uk/category/vmware/) | [VCF](https://jameskilby.co.uk/category/vmware/vcf/)
 
-### [VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
+### [MultiHost Holodeck VCF](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
 
-By[James](https://jameskilby.co.uk) September 13, 2020November 11, 2023
+By[James](https://jameskilby.co.uk) January 17, 2024January 18, 2026
 
-I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This…
+How to Deploy VMware Holodeck on multiple hosts
 
-  * [ ![My First Pull](https://jameskilby.co.uk/wp-content/uploads/2020/12/175jvBleoQfAZJc3sgTSPQA.jpg) ](https://jameskilby.co.uk/2020/12/my-first-pull/)
+  * [ ![My Home Office Setup & Upgrades](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-768x576.jpeg) ](https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/)
 
-[Devops](https://jameskilby.co.uk/category/devops/) | [Personal](https://jameskilby.co.uk/category/personal/)
+[Personal](https://jameskilby.co.uk/category/personal/) | [Consulting](https://jameskilby.co.uk/category/consulting/)
 
-### [My First Pull](https://jameskilby.co.uk/2020/12/my-first-pull/)
+### [My Home Office Setup & Upgrades](https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/)
 
-By[James](https://jameskilby.co.uk) December 22, 2020December 8, 2025
+By[James](https://jameskilby.co.uk) January 5, 2021October 1, 2025
 
-I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….
+Given the year that was 2020 and at the time of writing a distinct improvement appears a long way off I decided it was time to up my homeworking game. I bought a beautiful Dell 49″ monitor back in mid-2020 that has been the central focus of my home office. With this setup I always…
 
-  * [ ![VMC Quick Sizing Guide](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png) ](https://jameskilby.co.uk/2025/05/vmc-quick-sizing-guide/)
+  * [ ![Holodeck CPU Fixes](https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743-768x737.jpg) ](https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/)
+
+[VCF](https://jameskilby.co.uk/category/vmware/vcf/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+
+### [Holodeck CPU Fixes](https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/)
+
+By[James](https://jameskilby.co.uk) January 18, 2024July 10, 2024
+
+How to deploy Holodeck with Legacy CPU’s
+
+  * [ ![Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash-768x417.png) ](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
 
-### [VMC Quick Sizing Guide](https://jameskilby.co.uk/2025/05/vmc-quick-sizing-guide/)
+### [Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
 
-By[James](https://jameskilby.co.uk) May 21, 2025July 2, 2025
+By[James](https://jameskilby.co.uk) January 27, 2026January 27, 2026
 
-Quick reference guide to the available storage resources that you get in VMware Cloud on AWS
+How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.
 
-  * [ ![Intel Optane NVMe Homelab](https://jameskilby.co.uk/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png) ](https://jameskilby.co.uk/2023/04/intel-optane/)
+  * [ ![Web Development](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2-768x229.png) ](https://jameskilby.co.uk/2022/01/web-development/)
 
-[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [vExpert](https://jameskilby.co.uk/category/vexpert/)
+[Hosting](https://jameskilby.co.uk/category/hosting/) | [Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Personal](https://jameskilby.co.uk/category/personal/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)
 
-### [Intel Optane NVMe Homelab](https://jameskilby.co.uk/2023/04/intel-optane/)
+### [Web Development](https://jameskilby.co.uk/2022/01/web-development/)
 
-By[James](https://jameskilby.co.uk) April 17, 2023October 1, 2025
+By[James](https://jameskilby.co.uk) January 4, 2022October 1, 2025
 
-I have been a VMware vExpert for many years and it has brought me many many benefits over the years. I don’t think it’s an understatement to say I probably wouldn’t have my current role within VMware without it. One of the best benefits has been access to a huge amount of licences for VMware…
-
-  * [ ![And now for something completely different](https://jameskilby.co.uk/wp-content/uploads/2018/10/fWbXybA7-768x193.png) ](https://jameskilby.co.uk/2018/10/and-now-for-something-completely-different/)
-
-[Personal](https://jameskilby.co.uk/category/personal/)
-
-### [And now for something completely different](https://jameskilby.co.uk/2018/10/and-now-for-something-completely-different/)
-
-By[James](https://jameskilby.co.uk) October 16, 2018July 10, 2024
-
-I have worked for my current employer Zen Internet for 3.5 years. Over that time I have changed roles from what was originally a customer-focused role into a role with one of the core platform teams. This has meant looking after the majority of the Internal and customer Virtual platforms. During this time Zen has undergone…
+A while ago I started messing with Cloudflare Workers. I have now moved this site permanently over to them. This is partly related to some issues I have been having with internet access at home. Prior to this, the site ran from within my lab. This means the site is now super fast (hopefully :p)….

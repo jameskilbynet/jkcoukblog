@@ -3,12 +3,12 @@ title: "Jameskilbycouk - James Kilby's Technical Blog Covering VMware, Homelab P
 description: "James Kilby's technical blog covering VMware, homelab projects, cloud computing, and infrastructure automation. Real-world IT solutions."
 author: James Kilby
 categories:
+  - VMware
+  - VMware Cloud on AWS
   - Cloudflare
   - Hosting
   - Wordpress
   - Ubuntu
-  - VMware Cloud on AWS
-  - VMware
   - vSAN
   - Devops
   - Github
@@ -39,13 +39,23 @@ url: https://jameskilby.co.uk/
 image: https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png
 ---
 
-* [ ![Web Development Improvements](https://jameskilby.co.uk/wp-content/uploads/2026/01/Website-Optimisations-768x560.png) ](https://jameskilby.co.uk/2026/01/web-development-improvements/)
+* [ ![Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash-768x417.png) ](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
+
+[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
+
+## [Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
+
+By[James](https://jameskilby.co.uk) January 27, 2026January 27, 2026 • 📖15 min read(3,021 words)
+
+How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.
+
+  * [ ![Web Development Improvements](https://jameskilby.co.uk/wp-content/uploads/2026/01/Website-Optimisations-768x560.png) ](https://jameskilby.co.uk/2026/01/web-development-improvements/)
 
 [Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)
 
 ## [Web Development Improvements](https://jameskilby.co.uk/2026/01/web-development-improvements/)
 
-By[James](https://jameskilby.co.uk) January 15, 2026January 17, 2026 • 📖1 min read(55 words)
+By[James](https://jameskilby.co.uk) January 15, 2026January 17, 2026
 
 I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO, and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had…
 

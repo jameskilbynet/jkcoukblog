@@ -3,106 +3,6 @@
   "slug": "mikrotik",
   "posts": [
     {
-      "slug": "managing-my-homelab-with-semaphoreui",
-      "title": "Managing my Homelab with SemaphoreUI",
-      "description": "Learn to manage your homelab using SemaphoreUI with Docker. Follow our guide to streamline your DevOps tools like Ansible and Terraform today!",
-      "date": "2025-09-02T16:01:48Z",
-      "modified": "2025-12-18T00:03:28Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2025/09/managing-my-homelab-with-semaphoreui/",
-      "markdown_url": "/markdown/posts/managing-my-homelab-with-semaphoreui.md",
-      "api_url": "/api/posts/managing-my-homelab-with-semaphoreui.json",
-      "categories": [
-        "Ansible",
-        "Homelab",
-        "VMware",
-        "vSphere",
-        "Nutanix",
-        "Mikrotik",
-        "Networking",
-        "TrueNAS Scale",
-        "vSAN",
-        "Storage",
-        "Synology"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/07/semaphore.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/07/semaphore.png)\n\n[Ansible](https://jameskilby.co.uk/category/ansible/) | [Homelab](https://jameskilby.co.uk/category/homelab/)\n\n# Managing my Homelab with SemaphoreUI\n\nBy[James](https://jameskilby.co.uk) September 2, 2025December 18, 2025 • 📖8 m..."
-    },
-    {
-      "slug": "intel-optane",
-      "title": "Intel Optane NVMe Homelab",
-      "description": "vExpert Intel Optane Drives",
-      "date": "2023-04-17T12:20:04Z",
-      "modified": "2025-10-01T15:22:13Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2023/04/intel-optane/",
-      "markdown_url": "/markdown/posts/intel-optane.md",
-      "api_url": "/api/posts/intel-optane.json",
-      "categories": [
-        "Homelab",
-        "Storage",
-        "vExpert",
-        "VMware",
-        "Artificial Intelligence",
-        "Docker",
-        "Hosting",
-        "Automation",
-        "Mikrotik",
-        "Networking",
-        "Nutanix"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [vExpert](https://jameskilby.co.uk/category/vexpert/)\n\n# Intel Optane NVM..."
-    },
-    {
-      "slug": "runecast-remediation-scripts",
-      "title": "Runecast Remediation Script’s",
-      "description": "Using Runecast to autogenerate PowerCLI to remediate discovered issues",
-      "date": "2023-05-16T10:38:45Z",
-      "modified": "2023-11-17T15:28:57Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/",
-      "markdown_url": "/markdown/posts/runecast-remediation-scripts.md",
-      "api_url": "/api/posts/runecast-remediation-scripts.json",
-      "categories": [
-        "Runecast",
-        "VMware",
-        "VMware Cloud on AWS",
-        "vSAN",
-        "VCF",
-        "Mikrotik",
-        "Networking",
-        "Artificial Intelligence",
-        "Docker",
-        "Homelab",
-        "TrueNAS Scale",
-        "vSphere"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png)\n\n[Runecast](https://jameskilby.co.uk/category/runecast/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Runecast Remediation Script’s\n\nBy[James](https://jameskilby.co.uk) May 16, 2023November 17, 2023 • 📖2 ..."
-    },
-    {
       "slug": "portainer-agent-on-synology-dsm",
       "title": "How to Fix Portainer Agent not Starting On Synology DSM",
       "description": "How to Fix Portainer Agent Not Starting on Synology DSM",
@@ -116,17 +16,16 @@
         "Docker",
         "Portainer",
         "Synology",
-        "Artificial Intelligence",
-        "Hosting",
-        "Homelab",
-        "Networking",
-        "Storage",
-        "VMware",
-        "Mikrotik",
-        "Ansible",
         "TrueNAS Scale",
+        "VMware",
         "vSAN",
-        "vSphere"
+        "vSphere",
+        "Homelab",
+        "Storage",
+        "Hosting",
+        "Ansible",
+        "Mikrotik",
+        "Networking"
       ],
       "tags": [
         null,
@@ -135,39 +34,6 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1024x705.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526.png)\n\n[Docker](https://jameskilby.co.uk/category/docker/) | [Portainer](https://jameskilby.co.uk/category/portainer/) | [Synology](https://jameskilby.co.uk/category/synology/)\n\n# How to Fix Portainer Agent not Startin..."
-    },
-    {
-      "slug": "holodeck-cpu-fixes",
-      "title": "Holodeck CPU Fixes",
-      "description": "Holodeck CPU Fixes: Learn how to deploy Holodeck with legacy CPUs. Follow our guide for a smoother setup and troubleshooting tips.",
-      "date": "2024-01-18T14:37:04Z",
-      "modified": "2024-07-10T07:21:58Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/",
-      "markdown_url": "/markdown/posts/holodeck-cpu-fixes.md",
-      "api_url": "/api/posts/holodeck-cpu-fixes.json",
-      "categories": [
-        "VCF",
-        "VMware",
-        "Homelab",
-        "Networking",
-        "Storage",
-        "Mikrotik",
-        "Personal",
-        "vSphere",
-        "Docker",
-        "Hosting",
-        "Kubernetes",
-        "Automation"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg)\n\n[VCF](https://jameskilby.co.uk/category/vmware/vcf/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Holodeck CPU Fixes\n\nBy[James](https://jameskilby.co.uk) January 18, 2024July 10, 2024 • 📖1 min read(..."
     },
     {
       "slug": "home-network-upgrade",
@@ -183,10 +49,17 @@
         "Mikrotik",
         "Networking",
         "Homelab",
-        "Hosting",
-        "Automation",
+        "Storage",
+        "Synology",
+        "TrueNAS Scale",
         "VMware",
-        "Runecast"
+        "vSAN",
+        "vSphere",
+        "Ansible",
+        "Artificial Intelligence",
+        "Docker",
+        "Hosting",
+        "Automation"
       ],
       "tags": [
         null,
@@ -195,6 +68,34 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2024/09/s-l1600.jpg",
       "excerpt": "![CRS-504](https://jameskilby.co.uk/wp-content/uploads/2024/09/s-l1600.jpg)\n\n[Mikrotik](https://jameskilby.co.uk/category/mikrotik/) | [Networking](https://jameskilby.co.uk/category/networking/)\n\n# Home Network Upgrade\n\nBy[James](https://jameskilby.co.uk) September 9, 2024October 24, 2025 • 📖2 min r..."
+    },
+    {
+      "slug": "homelab-bad-days-almost",
+      "title": "Homelab bad days (almost)",
+      "description": "Facing SSD issues in your homelab? Learn about RAID 5 pitfalls and how to protect your data effectively. Read more for essential tips!",
+      "date": "2022-11-21T15:46:53Z",
+      "modified": "2023-04-08T21:44:28Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2022/11/homelab-bad-days-almost/",
+      "markdown_url": "/markdown/posts/homelab-bad-days-almost.md",
+      "api_url": "/api/posts/homelab-bad-days-almost.json",
+      "categories": [
+        "Homelab",
+        "Storage",
+        "Synology",
+        "Mikrotik",
+        "Networking",
+        "Ansible",
+        "Hosting",
+        "vExpert",
+        "VMware"
+      ],
+      "tags": [
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.jpg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [Synology](https://jameskilby.co.uk/category/synology/)\n\n# Homelab bad days (almost)\n\nBy[James](http..."
     },
     {
       "slug": "configuring-a-zen-internet-and-city-fibre-connection-with-a-3rd-party-router",
@@ -208,8 +109,8 @@
       "api_url": "/api/posts/configuring-a-zen-internet-and-city-fibre-connection-with-a-3rd-party-router.json",
       "categories": [
         "Networking",
-        "Mikrotik",
         "Homelab",
+        "Mikrotik",
         "Storage",
         "VMware"
       ],
@@ -221,6 +122,36 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/11/cityfibre-zen-1024x538.jpg",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/cityfibre-zen.jpg)\n\n[Networking](https://jameskilby.co.uk/category/networking/)\n\n# Configuring a Zen Internet and City Fibre connection with a 3rd party router\n\nBy[James](https://jameskilby.co.uk) November 15, 2023January 18, 2026 • 📖2 min read..."
+    },
+    {
+      "slug": "starlink",
+      "title": "Starlink",
+      "description": "Adding Starlink as another internet connection",
+      "date": "2022-10-11T21:40:50Z",
+      "modified": "2025-10-01T15:22:14Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2022/10/starlink/",
+      "markdown_url": "/markdown/posts/starlink.md",
+      "api_url": "/api/posts/starlink.json",
+      "categories": [
+        "Homelab",
+        "Hosting",
+        "Personal",
+        "VMware",
+        "vSphere",
+        "Networking",
+        "Mikrotik",
+        "Cloudflare",
+        "Wordpress",
+        "TrueNAS Scale",
+        "vSAN"
+      ],
+      "tags": [
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920.jpg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/)\n\n# Starlink\n\nBy[James](https://jameskilby.co.uk) October ..."
     }
   ]
 }

@@ -13,14 +13,12 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
+        "AWS",
         "vSAN",
-        "TrueNAS Scale",
-        "vSphere",
-        "VCF",
-        "Personal",
+        "Automation",
         "Homelab",
-        "Networking",
-        "Storage"
+        "Runecast",
+        "Veeam"
       ],
       "tags": [
         null,
@@ -46,11 +44,12 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
+        "Runecast",
+        "Automation",
         "Homelab",
-        "Veeam",
-        "vSAN",
-        "Personal",
-        "vSphere"
+        "vSphere",
+        "TrueNAS Scale",
+        "vSAN"
       ],
       "tags": [
         null
@@ -71,15 +70,16 @@
       "categories": [
         "Homelab",
         "VMware",
-        "Veeam",
-        "Networking",
+        "Storage",
         "TrueNAS Scale",
         "vSAN",
         "vSphere",
-        "Ansible",
-        "Storage",
+        "VMware Cloud on AWS",
+        "Personal",
         "Synology",
-        "VMware Cloud on AWS"
+        "Artificial Intelligence",
+        "Docker",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -113,6 +113,35 @@
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png)\n\n[Veeam](https://jameskilby.co.uk/category/veeam/)\n\n# VeeamON2020\n\nBy[James](https://jameskilby.co.uk) June 18, 2020April 25, 2023 • 📖1 min read(272 words)\n\n📅 **Published:** June 18, 2020• **Updated:** April..."
     },
     {
+      "slug": "using-content-libraries-in-vmc-to-deploy-software-faster",
+      "title": "Using Content Libraries in VMC to deploy software faster",
+      "description": "How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.",
+      "date": "2026-01-27T22:19:39Z",
+      "modified": "2026-01-27T22:23:22Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/",
+      "markdown_url": "/markdown/posts/using-content-libraries-in-vmc-to-deploy-software-faster.md",
+      "api_url": "/api/posts/using-content-libraries-in-vmc-to-deploy-software-faster.json",
+      "categories": [
+        "VMware",
+        "VMware Cloud on AWS",
+        "Homelab",
+        "Nutanix",
+        "vSAN",
+        "Personal",
+        "Veeam",
+        "TrueNAS Scale",
+        "vSphere"
+      ],
+      "tags": [
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# Using Content Libraries in VMC to deploy software faster\n\nBy[James](https:/..."
+    },
+    {
       "slug": "use-portainer-in-a-homelab-with-github",
       "title": "Use Portainer in a Homelab with GitHub",
       "description": "How to use Portainer and Github to manage and deploy docker containers",
@@ -127,12 +156,13 @@
         "Homelab",
         "Hosting",
         "Kubernetes",
-        "Nutanix",
+        "Veeam",
         "VMware",
-        "VCF",
         "Storage",
-        "Wordpress",
-        "Cloudflare"
+        "AWS",
+        "Cloudflare",
+        "Personal",
+        "Wordpress"
       ],
       "tags": [
         null,
@@ -155,12 +185,13 @@
       "categories": [
         "Homelab",
         "Networking",
-        "Nutanix",
-        "Hosting",
         "Artificial Intelligence",
         "Docker",
-        "Veeam",
-        "VMware"
+        "Hosting",
+        "Automation",
+        "VMware",
+        "Storage",
+        "TrueNAS Scale"
       ],
       "tags": [
         null,
@@ -240,40 +271,10 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339.png)\n\n[VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# Time in a VMC Environment\n\nBy[James](https://jameskilby.co.uk) December 8, 2025January 17, 2026 • 📖1 min read(139 words)\n\n📅 *..."
-    },
-    {
-      "slug": "starlink",
-      "title": "Starlink",
-      "description": "Adding Starlink as another internet connection",
-      "date": "2022-10-11T21:40:50Z",
-      "modified": "2025-10-01T15:22:14Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2022/10/starlink/",
-      "markdown_url": "/markdown/posts/starlink.md",
-      "api_url": "/api/posts/starlink.json",
-      "categories": [
-        "Homelab",
-        "Hosting",
-        "Docker",
-        "Kubernetes",
-        "Nutanix",
-        "VMware",
-        "Storage",
-        "Synology",
-        "Automation",
-        "Cloudflare",
-        "Wordpress"
-      ],
-      "tags": [
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920.jpg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/)\n\n# Starlink\n\nBy[James](https://jameskilby.co.uk) October ..."
     }
   ],
   "page": 2,
   "per_page": 10,
-  "total": 65,
+  "total": 66,
   "total_pages": 7
 }

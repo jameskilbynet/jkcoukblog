@@ -1,8 +1,8 @@
 # Markdown Content Sitemap
 
-Generated: 2026-01-24 10:19:36
+Generated: 2026-01-27 22:26:48
 
-Total Files: 74
+Total Files: 75
 
 ## Blog Posts
 
@@ -47,6 +47,9 @@ Total Files: 74
 
 - [VeeamON2020](https://jameskilby.co.uk/2020/06/veeamon2020/) - 2020-06-18 14:42:45+00:00
   - Markdown: `/markdown/posts/veeamon2020.md`
+
+- [Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/) - 2026-01-27 22:19:39+00:00
+  - Markdown: `/markdown/posts/using-content-libraries-in-vmc-to-deploy-software-faster.md`
 
 - [Use Portainer in a Homelab with GitHub](https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/) - 2022-12-09 09:06:37+00:00
   - Markdown: `/markdown/posts/use-portainer-in-a-homelab-with-github.md`
