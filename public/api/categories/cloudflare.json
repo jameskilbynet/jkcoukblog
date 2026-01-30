@@ -16,9 +16,9 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Personal",
         "Artificial Intelligence",
         "Docker",
+        "Personal",
         "AWS",
         "Homelab"
       ],
@@ -44,11 +44,13 @@
       "categories": [
         "Hosting",
         "Personal",
-        "Nutanix",
-        "Homelab",
+        "Consulting",
+        "VMware",
         "Cloudflare",
-        "Devops",
-        "Wordpress"
+        "Wordpress",
+        "Docker",
+        "Homelab",
+        "Kubernetes"
       ],
       "tags": [
         null,
@@ -77,11 +79,9 @@
         "Hosting",
         "Cloudflare",
         "Wordpress",
+        "Personal",
         "Artificial Intelligence",
-        "Docker",
-        "VMware",
-        "Veeam",
-        "Personal"
+        "Docker"
       ],
       "tags": [
         null,
@@ -104,11 +104,13 @@
         "Artificial Intelligence",
         "Docker",
         "Hosting",
-        "Cloudflare",
-        "Personal",
-        "Wordpress",
+        "AWS",
         "Homelab",
-        "Mikrotik",
+        "Cloudflare",
+        "Wordpress",
+        "Portainer",
+        "Synology",
+        "Ansible",
         "Networking"
       ],
       "tags": [
@@ -135,13 +137,10 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "AWS",
         "Personal",
-        "Docker",
-        "Homelab",
-        "Kubernetes",
-        "Devops",
-        "Github"
+        "AWS",
+        "Artificial Intelligence",
+        "Docker"
       ],
       "tags": [
         null,
@@ -164,11 +163,11 @@
       "api_url": "/api/posts/wrangler-and-node-versions.json",
       "categories": [
         "Cloudflare",
+        "Hosting",
+        "Personal",
         "Devops",
         "Github",
-        "Wordpress",
-        "Hosting",
-        "Personal"
+        "Wordpress"
       ],
       "tags": [
         null,
@@ -194,7 +193,10 @@
         "Cloudflare",
         "Personal",
         "Wordpress",
-        "Nutanix"
+        "Devops",
+        "VMware",
+        "vSphere",
+        "AWS"
       ],
       "tags": [
         null,
@@ -202,6 +204,29 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2.png)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Personal](https://jameskilby.co.uk/category/personal/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)..."
+    },
+    {
+      "slug": "and-now-for-something-completely-different",
+      "title": "And now for something completely different",
+      "description": "Join me in my journey at Zen Internet, evolving roles and tackling challenges. Learn more about my experiences and insights in the tech industry.",
+      "date": "2018-10-16T08:22:45Z",
+      "modified": "2024-07-10T09:18:36Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2018/10/and-now-for-something-completely-different/",
+      "markdown_url": "/markdown/posts/and-now-for-something-completely-different.md",
+      "api_url": "/api/posts/and-now-for-something-completely-different.json",
+      "categories": [
+        "Personal",
+        "Nutanix",
+        "Devops",
+        "AWS",
+        "VMware",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress"
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/10/fWbXybA7.png)\n\n[Personal](https://jameskilby.co.uk/category/personal/)\n\n# And now for something completely different\n\nBy[James](https://jameskilby.co.uk) October 16, 2018July 10, 2024 • 📖1 min read(263 words)\n\n📅 **Published:** October 16, 2018•..."
     },
     {
       "slug": "use-portainer-in-a-homelab-with-github",
@@ -218,11 +243,13 @@
         "Homelab",
         "Hosting",
         "Kubernetes",
+        "Storage",
+        "Synology",
+        "Artificial Intelligence",
+        "TrueNAS Scale",
         "Cloudflare",
         "Wordpress",
-        "Personal",
-        "VCF",
-        "VMware"
+        "Portainer"
       ],
       "tags": [
         null,
@@ -231,6 +258,35 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png)\n\n[Docker](https://jameskilby.co.uk/category/docker/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Kubernetes](https://jameskilby.co.uk/category/kubernetes/)\n\n# ..."
+    },
+    {
+      "slug": "going-out-with-a-bang",
+      "title": "VMware – Going out with a Bang!",
+      "description": "VMware is keeping to its EPIC^2 values even as the transition to Broadcom ownership draws near",
+      "date": "2023-10-07T12:37:14Z",
+      "modified": "2023-11-17T15:22:18Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2023/10/going-out-with-a-bang/",
+      "markdown_url": "/markdown/posts/going-out-with-a-bang.md",
+      "api_url": "/api/posts/going-out-with-a-bang.json",
+      "categories": [
+        "VMware",
+        "Personal",
+        "Homelab",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress",
+        "VMware Cloud on AWS",
+        "Nutanix"
+      ],
+      "tags": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# VMware – Going out with a Bang!\n\nBy[James](https://jameskilby.co.uk) October 7, 2023November 17, 2023 • 📖1 min read..."
     },
     {
       "slug": "cloudflare-workers-limits-of-the-free-tier",
@@ -245,8 +301,9 @@
       "categories": [
         "Hosting",
         "Wordpress",
-        "AWS",
         "Cloudflare",
+        "AWS",
+        "Homelab",
         "Devops",
         "Github"
       ],
@@ -271,11 +328,13 @@
       "categories": [
         "AWS",
         "Personal",
+        "VMware",
         "Hosting",
         "Cloudflare",
         "Wordpress",
-        "Devops",
-        "Consulting"
+        "Veeam",
+        "VMware Cloud on AWS",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -297,12 +356,11 @@
       "categories": [
         "Devops",
         "Personal",
-        "Cloudflare",
-        "Github",
-        "Wordpress",
         "VMware",
-        "vSphere",
         "Nutanix",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress",
         "Consulting"
       ],
       "tags": [
@@ -327,12 +385,10 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
+        "AWS",
         "Personal",
         "Devops",
-        "Github",
-        "Docker",
-        "Homelab",
-        "Kubernetes"
+        "Github"
       ],
       "tags": [
         null,
@@ -358,8 +414,8 @@
         "Devops",
         "Github",
         "Wordpress",
-        "Personal",
-        "Hosting"
+        "Hosting",
+        "Personal"
       ],
       "tags": [
         null,
@@ -385,16 +441,14 @@
       "categories": [
         "Homelab",
         "Hosting",
-        "VMware",
-        "vSphere",
+        "Artificial Intelligence",
         "Cloudflare",
         "Personal",
         "Wordpress",
-        "Storage",
-        "Synology",
-        "Artificial Intelligence",
-        "Docker",
-        "Kubernetes"
+        "Ansible",
+        "Nutanix",
+        "Automation",
+        "VMware"
       ],
       "tags": [
         null,
@@ -415,15 +469,12 @@
       "api_url": "/api/posts/cloudflare.json",
       "categories": [
         "Hosting",
-        "Docker",
-        "Homelab",
-        "Kubernetes",
-        "Artificial Intelligence",
-        "Cloudflare",
         "Wordpress",
+        "Cloudflare",
         "Personal",
         "Devops",
-        "Github"
+        "Github",
+        "Homelab"
       ],
       "tags": [
         null
