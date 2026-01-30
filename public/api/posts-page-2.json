@@ -14,12 +14,10 @@
         "VMware",
         "VMware Cloud on AWS",
         "Homelab",
-        "Veeam",
         "vSphere",
-        "VCF",
+        "Veeam",
         "Personal",
-        "TrueNAS Scale",
-        "vSAN"
+        "AWS"
       ],
       "tags": [
         null,
@@ -45,10 +43,10 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
+        "vSAN",
         "Homelab",
-        "Nutanix",
-        "Veeam",
-        "VCF"
+        "vSphere",
+        "Personal"
       ],
       "tags": [
         null
@@ -69,11 +67,15 @@
       "categories": [
         "Homelab",
         "VMware",
+        "Storage",
+        "TrueNAS Scale",
         "AWS",
         "Veeam",
+        "vSAN",
+        "vSphere",
+        "Ansible",
         "VMware Cloud on AWS",
-        "Storage",
-        "vSphere"
+        "Hosting"
       ],
       "tags": [
         null,
@@ -95,9 +97,9 @@
       "api_url": "/api/posts/veeamon2020.json",
       "categories": [
         "Veeam",
-        "Homelab",
         "VMware",
-        "AWS"
+        "AWS",
+        "Homelab"
       ],
       "tags": [
         null,
@@ -119,9 +121,13 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Personal",
-        "VCF",
-        "Homelab"
+        "Homelab",
+        "Networking",
+        "Storage",
+        "vSAN",
+        "AWS",
+        "Veeam",
+        "vExpert"
       ],
       "tags": [
         null,
@@ -147,13 +153,14 @@
         "Homelab",
         "Hosting",
         "Kubernetes",
+        "VCF",
+        "VMware",
         "Cloudflare",
         "Wordpress",
-        "VMware",
         "Storage",
         "Synology",
-        "VCF",
-        "Personal"
+        "Automation",
+        "TrueNAS Scale"
       ],
       "tags": [
         null,
@@ -178,11 +185,9 @@
         "Networking",
         "Storage",
         "Synology",
+        "Mikrotik",
         "VMware",
-        "vSphere",
-        "Docker",
-        "Hosting",
-        "Kubernetes"
+        "Automation"
       ],
       "tags": [
         null,
@@ -225,11 +230,11 @@
       "categories": [
         "Kubernetes",
         "TrueNAS Scale",
+        "Docker",
         "Homelab",
+        "Hosting",
         "Storage",
         "vExpert",
-        "Docker",
-        "Hosting",
         "VMware",
         "vSAN",
         "vSphere"
