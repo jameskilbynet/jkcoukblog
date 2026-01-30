@@ -4,12 +4,10 @@
 # HTML pages - minimal caching for fresh content
 /*.html
   Cache-Control: public, max-age=300, must-revalidate
-  X-Robots-Tag: all
-
+  
 # Root paths - minimal caching
 /
   Cache-Control: public, max-age=300, must-revalidate
-  X-Robots-Tag: all
 
 # Static assets - longer cache with immutable for versioned files
 /wp-content/*
@@ -39,20 +37,17 @@
 
 # Global security headers
 /*
-  # Allow search engine indexing - CRITICAL for SEO
-  X-Robots-Tag: all
-
   # Clickjacking Protection - prevents site from being embedded in iframes
   X-Frame-Options: SAMEORIGIN
-
+  
   # XSS Protection for older browsers
   X-XSS-Protection: 1; mode=block
-
+  
   # Force HTTPS for 1 year (31536000 seconds)
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-
+  
   # Control browser features - deny access to device APIs
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=()
-
+  
   # Content Security Policy - controls what resources can load
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https: cdn.jsdelivr.net plausible.jameskilby.cloud utteranc.es github.com static.cloudflareinsights.com cdn.credly.com cdn.youracclaim.com; style-src 'self' 'unsafe-inline' https: github.com; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https: plausible.jameskilby.cloud; frame-src https://www.youtube.com https://player.vimeo.com https://embed.acast.com https://utteranc.es https://plausible.jameskilby.cloud https://www.credly.com https://www.youracclaim.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'
