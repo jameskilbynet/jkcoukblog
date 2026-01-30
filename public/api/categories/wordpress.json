@@ -16,10 +16,11 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Homelab",
         "Docker",
+        "Homelab",
         "Kubernetes",
-        "Artificial Intelligence"
+        "Artificial Intelligence",
+        "AWS"
       ],
       "tags": [
         null,
@@ -43,13 +44,16 @@
       "categories": [
         "Hosting",
         "Personal",
+        "Consulting",
+        "Cloudflare",
+        "Wordpress",
         "Docker",
         "Homelab",
         "Kubernetes",
-        "AWS",
-        "Cloudflare",
-        "Wordpress",
-        "VMware"
+        "VMware",
+        "vSphere",
+        "Devops",
+        "Github"
       ],
       "tags": [
         null,
@@ -76,14 +80,15 @@
       "categories": [
         "AWS",
         "Hosting",
+        "Wordpress",
         "Cloudflare",
         "Personal",
-        "Wordpress",
-        "VMware",
-        "VMware Cloud on AWS",
-        "Homelab",
         "Docker",
-        "Kubernetes"
+        "Homelab",
+        "Kubernetes",
+        "Artificial Intelligence",
+        "VMware",
+        "Veeam"
       ],
       "tags": [
         null,
@@ -106,14 +111,17 @@
         "Artificial Intelligence",
         "Docker",
         "Hosting",
+        "Homelab",
+        "Storage",
+        "Synology",
+        "Kubernetes",
+        "Wordpress",
         "Mikrotik",
         "Networking",
-        "Homelab",
-        "Nutanix",
+        "Veeam",
         "VMware",
-        "Runecast",
         "Cloudflare",
-        "Wordpress"
+        "Personal"
       ],
       "tags": [
         null,
@@ -139,6 +147,10 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
+        "Artificial Intelligence",
+        "Docker",
+        "Homelab",
+        "AWS",
         "Personal",
         "Devops",
         "Github"
@@ -164,11 +176,11 @@
       "api_url": "/api/posts/wrangler-and-node-versions.json",
       "categories": [
         "Cloudflare",
-        "Hosting",
-        "Personal",
-        "Wordpress",
         "Devops",
-        "Github"
+        "Github",
+        "Wordpress",
+        "Hosting",
+        "Personal"
       ],
       "tags": [
         null,
@@ -194,13 +206,10 @@
         "Cloudflare",
         "Personal",
         "Wordpress",
-        "VMware",
-        "vSphere",
         "AWS",
-        "Artificial Intelligence",
-        "Docker",
-        "Homelab",
-        "Kubernetes"
+        "Consulting",
+        "VMware",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -224,12 +233,12 @@
         "Homelab",
         "Hosting",
         "Kubernetes",
-        "VCF",
-        "VMware",
         "Artificial Intelligence",
-        "Cloudflare",
         "Wordpress",
-        "Veeam"
+        "Ansible",
+        "Personal",
+        "VCF",
+        "VMware"
       ],
       "tags": [
         null,
@@ -238,6 +247,36 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png)\n\n[Docker](https://jameskilby.co.uk/category/docker/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Kubernetes](https://jameskilby.co.uk/category/kubernetes/)\n\n# ..."
+    },
+    {
+      "slug": "going-out-with-a-bang",
+      "title": "VMware – Going out with a Bang!",
+      "description": "VMware is keeping to its EPIC^2 values even as the transition to Broadcom ownership draws near",
+      "date": "2023-10-07T12:37:14Z",
+      "modified": "2023-11-17T15:22:18Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2023/10/going-out-with-a-bang/",
+      "markdown_url": "/markdown/posts/going-out-with-a-bang.md",
+      "api_url": "/api/posts/going-out-with-a-bang.json",
+      "categories": [
+        "VMware",
+        "Personal",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress",
+        "VMware Cloud on AWS",
+        "Homelab",
+        "vSphere",
+        "VCF"
+      ],
+      "tags": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# VMware – Going out with a Bang!\n\nBy[James](https://jameskilby.co.uk) October 7, 2023November 17, 2023 • 📖1 min read..."
     },
     {
       "slug": "cloudflare-workers-limits-of-the-free-tier",
@@ -280,11 +319,10 @@
         "Automation",
         "Homelab",
         "VMware",
+        "Nutanix",
         "Cloudflare",
         "Github",
-        "Wordpress",
-        "AWS",
-        "Hosting"
+        "Wordpress"
       ],
       "tags": [
         null,
@@ -293,6 +331,34 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2020/12/175jvBleoQfAZJc3sgTSPQA.jpg",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/12/175jvBleoQfAZJc3sgTSPQA.jpg)\n\n[Devops](https://jameskilby.co.uk/category/devops/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# My First Pull\n\nBy[James](https://jameskilby.co.uk) December 22, 2020December 8, 2025 • 📖1 min read(18..."
+    },
+    {
+      "slug": "nutanix-ncp",
+      "title": "Nutanix NCP",
+      "description": "Nutanix NCP Experience",
+      "date": "2020-07-02T15:20:30Z",
+      "modified": "2024-07-10T09:27:19Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2020/07/nutanix-ncp/",
+      "markdown_url": "/markdown/posts/nutanix-ncp.md",
+      "api_url": "/api/posts/nutanix-ncp.json",
+      "categories": [
+        "Nutanix",
+        "Personal",
+        "VMware",
+        "vSphere",
+        "Hosting",
+        "AWS",
+        "Homelab",
+        "Cloudflare",
+        "Wordpress"
+      ],
+      "tags": [
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg)\n\n[Nutanix](https://jameskilby.co.uk/category/nutanix/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# Nutanix NCP\n\nBy[James](https://jameskilby.co.uk) July 2, 2020July 10, 2024 • 📖1 min r..."
     },
     {
       "slug": "how-to-take-a-wordpress-site-and-publish-it-as-a-static-site-on-cloudflare-pages",
@@ -308,9 +374,9 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
+        "Personal",
         "Artificial Intelligence",
-        "Docker",
-        "Personal"
+        "Docker"
       ],
       "tags": [
         null,
@@ -363,16 +429,16 @@
       "categories": [
         "Homelab",
         "Hosting",
+        "Docker",
+        "Portainer",
+        "Synology",
         "Runecast",
         "VMware",
+        "Personal",
+        "Kubernetes",
+        "Automation",
         "Cloudflare",
-        "Wordpress",
-        "AWS",
-        "Storage",
-        "vExpert",
-        "TrueNAS Scale",
-        "vSAN",
-        "vSphere"
+        "Wordpress"
       ],
       "tags": [
         null,
@@ -393,12 +459,13 @@
       "api_url": "/api/posts/cloudflare.json",
       "categories": [
         "Hosting",
+        "Wordpress",
+        "Artificial Intelligence",
+        "Docker",
         "Cloudflare",
         "Personal",
-        "Wordpress",
         "Devops",
-        "Github",
-        "AWS"
+        "Github"
       ],
       "tags": [
         null
