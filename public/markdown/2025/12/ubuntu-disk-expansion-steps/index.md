@@ -2,7 +2,7 @@
 title: "Ubuntu Disk Expansion Steps"
 description: "How to expand disks from the command line in Ubuntu."
 date: 2025-12-15T20:56:40+00:00
-modified: 2026-01-15T12:47:09+00:00
+modified: 2026-01-30T14:36:06+00:00
 author: James Kilby
 categories:
   - Ubuntu
@@ -19,9 +19,9 @@ image: https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png
 
 # Ubuntu Disk Expansion Steps
 
-By[James](https://jameskilby.co.uk) December 15, 2025January 15, 2026 • 📖1 min read(91 words)
+By[James](https://jameskilby.co.uk) December 15, 2025January 30, 2026 • 📖1 min read(91 words)
 
-📅 **Published:** December 15, 2025• **Updated:** January 15, 2026
+📅 **Published:** December 15, 2025• **Updated:** January 30, 2026
 
 How to expand disks from the command line in Ubuntu.
 

@@ -3,7 +3,7 @@
   "title": "Ubuntu Disk Expansion Steps",
   "description": "How to expand disks from the command line in Ubuntu.",
   "date": "2025-12-15T20:56:40Z",
-  "modified": "2026-01-15T12:47:09Z",
+  "modified": "2026-01-30T14:36:06Z",
   "author": "James Kilby",
   "url": "https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/",
   "markdown_url": "/markdown/posts/ubuntu-disk-expansion-steps.md",
@@ -16,6 +16,6 @@
     null
   ],
   "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png",
-  "content": "![](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png)\n\n[Ubuntu](https://jameskilby.co.uk/category/ubuntu/)\n\n# Ubuntu Disk Expansion Steps\n\nBy[James](https://jameskilby.co.uk) December 15, 2025January 15, 2026 • 📖1 min read(91 words)\n\n📅 **Published:** December 15, 2025• **Updated:** January 15, 2026\n\nHow to expand disks from the command line in Ubuntu.\n\nThis is something I do fairly frequently, and I can never remember the steps. So I decided to write them down.\n\n## Table of Contents\n\n## 1\\. Rescan for disk size changes\n\nsudo tee /sys/class/block/sda/device/rescan\n\n## 2\\. Extend the physical partition (if needed)\n\nsudo growpart /dev/sda 3\n\n## 3\\. Resize the physical volume\n\nsudo pvresize /dev/sda3\n\n## 4\\. Extend the logical volume to use all available space\n\nsudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv\n\n## 5\\. Resize the filesystem\n\nsudo resize2fs /dev/mapper/ubuntu–vg-ubuntu–lv\n\n## 6\\. Verify the new size\n\ndf -h",
-  "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png)\n\n[Ubuntu](https://jameskilby.co.uk/category/ubuntu/)\n\n# Ubuntu Disk Expansion Steps\n\nBy[James](https://jameskilby.co.uk) December 15, 2025January 15, 2026 • 📖1 min read(91 words)\n\n📅 **Published:** December 15, 2025• **Updated:..."
+  "content": "![](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png)\n\n[Ubuntu](https://jameskilby.co.uk/category/ubuntu/)\n\n# Ubuntu Disk Expansion Steps\n\nBy[James](https://jameskilby.co.uk) December 15, 2025January 30, 2026 • 📖1 min read(91 words)\n\n📅 **Published:** December 15, 2025• **Updated:** January 30, 2026\n\nHow to expand disks from the command line in Ubuntu.\n\nThis is something I do fairly frequently, and I can never remember the steps. So I decided to write them down.\n\n## Table of Contents\n\n## 1\\. Rescan for disk size changes\n\nsudo tee /sys/class/block/sda/device/rescan\n\n## 2\\. Extend the physical partition (if needed)\n\nsudo growpart /dev/sda 3\n\n## 3\\. Resize the physical volume\n\nsudo pvresize /dev/sda3\n\n## 4\\. Extend the logical volume to use all available space\n\nsudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv\n\n## 5\\. Resize the filesystem\n\nsudo resize2fs /dev/mapper/ubuntu–vg-ubuntu–lv\n\n## 6\\. Verify the new size\n\ndf -h",
+  "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png)\n\n[Ubuntu](https://jameskilby.co.uk/category/ubuntu/)\n\n# Ubuntu Disk Expansion Steps\n\nBy[James](https://jameskilby.co.uk) December 15, 2025January 30, 2026 • 📖1 min read(91 words)\n\n📅 **Published:** December 15, 2025• **Updated:..."
 }

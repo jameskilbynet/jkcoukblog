@@ -65,7 +65,7 @@ I have spent the Christmas break making some improvements to this blog. A lot of
 
 ## [Ubuntu Disk Expansion Steps](https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/)
 
-By[James](https://jameskilby.co.uk) December 15, 2025January 15, 2026
+By[James](https://jameskilby.co.uk) December 15, 2025January 30, 2026
 
 How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps. So I decided to write them down. 1. Rescan for disk size changes sudo tee /sys/class/block/sda/device/rescan 2. Extend the physical partition (if needed) sudo growpart /dev/sda 3 3. Resize the physical…
 
