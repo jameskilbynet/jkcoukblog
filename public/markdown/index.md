@@ -45,7 +45,7 @@ image: https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-
 
 ## [Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
 
-By[James](https://jameskilby.co.uk) January 27, 2026January 27, 2026 • 📖15 min read(3,021 words)
+By[James](https://jameskilby.co.uk) January 27, 2026January 30, 2026 • 📖15 min read(3,021 words)
 
 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.
 
