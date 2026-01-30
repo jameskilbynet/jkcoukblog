@@ -44,6 +44,10 @@ Based on the recommendation of [Chris Lewis](https://twitter.com/thecloudxpert) 
 
 Oh and a Tie……
 
+## 📚 Related Posts
+
+  * [My Home Office Setup &#038; Upgrades](https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/)
+
 ## Similar Posts
 
   * [ ![My Home Office Setup & Upgrades](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-768x576.jpeg) ](https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/)

@@ -37,7 +37,6 @@
 <meta content="Time to read" name="twitter:label2"/>
 <meta content="Less than a minute" name="twitter:data2"/>
 <script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[[{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Time","url":"/2025/12/time-in-a-vmc-environment/#t"},{"@context":"https://schema.org","@type":"SiteNavigationElement","@id":"#rank-math-toc","name":"Firewall Config","url":"/2025/12/time-in-a-vmc-environment/#firewall-config"}],{"@type":["Person","Organization"],"@id":"/#person","name":"Jameskilbycouk","logo":{"@type":"ImageObject","@id":"/#logo","url":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","contentUrl":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","caption":"Jameskilbycouk","inLanguage":"en-GB","width":"1024","height":"1024"},"image":{"@type":"ImageObject","@id":"/#logo","url":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","contentUrl":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","caption":"Jameskilbycouk","inLanguage":"en-GB","width":"1024","height":"1024"},"url":"https://jameskilby.co.uk"},{"@type":"WebSite","@id":"/#website","url":"https://jameskilby.co.uk","name":"Jameskilbycouk","publisher":{"@id":"/#person"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"/wp-content/uploads/2025/02/Picture-1-e1768509620339.png","url":"/wp-content/uploads/2025/02/Picture-1-e1768509620339.png","width":"816","height":"205","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"/2025/12/time-in-a-vmc-environment/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://jameskilby.co.uk","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"/2025/12/time-in-a-vmc-environment/","name":"Time in a VMC Environment"}}]},{"@type":"WebPage","@id":"/2025/12/time-in-a-vmc-environment/#webpage","url":"/2025/12/time-in-a-vmc-environment/","name":"Time In A VMC Environment - Jameskilbycouk","datePublished":"2025-12-08T14:03:44+00:00","dateModified":"2026-01-17T08:48:18+00:00","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/wp-content/uploads/2025/02/Picture-1-e1768509620339.png"},"inLanguage":"en-GB","breadcrumb":{"@id":"/2025/12/time-in-a-vmc-environment/#breadcrumb"}},{"@type":"Person","@id":"/author/admin/","name":"James","url":"/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","caption":"James","inLanguage":"en-GB"},"sameAs":["https://wordpress.jameskilby.cloud"]},{"@type":"BlogPosting","headline":"Time In A VMC Environment - Jameskilbycouk","datePublished":"2025-12-08T14:03:44+00:00","dateModified":"2026-01-17T08:48:18+00:00","author":{"@id":"/author/admin/","name":"James"},"publisher":{"@id":"/#person"},"description":"One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically","name":"Time In A VMC Environment - Jameskilbycouk","@id":"/2025/12/time-in-a-vmc-environment/#richSnippet","isPartOf":{"@id":"/2025/12/time-in-a-vmc-environment/#webpage"},"image":{"@id":"/wp-content/uploads/2025/02/Picture-1-e1768509620339.png"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"/2025/12/time-in-a-vmc-environment/#webpage"},"wordCount":139,"timeRequired":"PT1M","articleBody":"One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Table of Contents Time VMC allows you to utilise the Amazon Time Sync Service for keeping an accurate and precise time. Firewall Config To utilise this from a VMC guest perspective, the appropriate NSX firewall rules need to be in place. I.e. on the Compute Gateway, UDP port 123 needs to be available 169.254.169.123 The IP Address is part of the “link local” address range 169.254.0.0/16 and I like that they picked .123 matching the NTP port. Note: This won’t work over a Route-based VPN with the default route to be on-prem."}]}</script>
-<!-- /Rank Math WordPress SEO plugin -->
 <link href="/feed/" rel="alternate" title="Jameskilbycouk » Feed" type="application/rss+xml"/>
 <link href="/comments/feed/" rel="alternate" title="Jameskilbycouk » Comments Feed" type="application/rss+xml"/>
 <script>document.documentElement.classList.remove( 'no-js' );</script>
@@ -49,9 +48,9 @@
 <link href="/wp-content/themes/kadence/assets/css/footer.min.css" id="kadence-footer-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/themes/kadence/assets/css/rankmath.min.css" id="kadence-rankmath-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/cache/wpo-minify/1769613917/assets/wpo-minify-header-60a11f4e.min.css" id="wpo_min-header-0-css" media="all" rel="stylesheet"/>
-<link href="/wp-json/wp/v2/posts/7275" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="/wp-json/wp/v2/posts/7275" rel="alternate" title="JSON" type="application/json"/>
 <link href="/?p=7275" rel="shortlink"/>
-<link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#0a0a0a" name="theme-color"/><link href="/favicon.ico" rel="icon" type="image/x-icon"/><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/site.webmanifest" rel="manifest"/><link as="style" href="/assets/css/brutalist-theme.css" rel="preload"/><link href="/assets/css/brutalist-theme.css" media="print" onload="this.media='all'" rel="stylesheet"/><noscript><link href="/assets/css/brutalist-theme.css" media="all" rel="stylesheet"/></noscript><script data-cfasync="false" data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
+<link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#0a0a0a" name="theme-color"/><link href="/favicon.ico" rel="icon" type="image/x-icon"/><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/site.webmanifest" rel="manifest"/><link as="style" href="/assets/css/brutalist-theme.css" rel="preload"/><link href="/assets/css/brutalist-theme.css" media="print" onload="this.media='all'" rel="stylesheet"/><noscript><link href="/assets/css/brutalist-theme.css" media="all" rel="stylesheet"/></noscript><script data-cfasync="false" data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jameskilby.co.uk"},{"@type":"ListItem","position":2,"name":"VMware Cloud on AWS","item":"/category/vmware/vmware-cloud-on-aws/"},{"@type":"ListItem","position":3,"name":"Time in a VMC Environment","item":"/2025/12/time-in-a-vmc-environment/"}]}</script></head>
 <body class="wp-singular post-template-default single single-post postid-7275 single-format-standard wp-embed-responsive wp-theme-kadence hide-focus-outline link-style-standard content-title-style-normal content-width-narrow content-style-boxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
 <div class="site wp-site-blocks" id="wrapper">
 <a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
@@ -122,7 +121,7 @@
 </div>
 </header><!-- #masthead -->
 <main class="wrap kt-clear" id="inner-wrap" role="main">
-<div class="content-area" id="primary">
+<nav aria-label="Breadcrumb" class="breadcrumb-navigation" style="margin: 20px 0; padding: 12px 0; font-size: 14px; color: #718096;"><ol style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px;"><li style="display: inline-flex; align-items: center;"><a href="https://jameskilby.co.uk" style="color: #4299e1; text-decoration: none; hover: text-decoration: underline;">Home</a></li><li style="display: inline-flex; align-items: center;"><span style="margin-right: 8px; color: #a0aec0;">/</span><a href="/category/vmware/vmware-cloud-on-aws/" style="color: #4299e1; text-decoration: none; hover: text-decoration: underline;">VMware Cloud on AWS</a></li><li style="display: inline-flex; align-items: center;"><span style="margin-right: 8px; color: #a0aec0;">/</span><span aria-current="page" style="color: #2d3748; font-weight: 500;">Time in a VMC Environment</span></li></ol></nav><div class="content-area" id="primary">
 <div class="content-container site-container">
 <div class="site-main" id="main">
 <div class="content-wrap">
@@ -178,37 +177,7 @@
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3117 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-vmc tag-vmware-cloud-on-aws">
-<a aria-hidden="true" aria-label="VMC New Host -i3en" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/07/i3en/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.webp" type="image/webp"/><img alt="VMC New Host -i3en" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" loading="eager" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/></picture> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2020/07/i3en/" rel="bookmark">VMC New Host -i3en</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2020-07-02T22:01:39+00:00" itemprop="datePublished">July 2, 2020</time><time class="updated" datetime="2024-07-10T09:28:48+00:00" itemprop="dateModified">July 10, 2024</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>VMware Cloud on AWS (VMC) has introduced a new host to its lineup the “i3en”. This is based on the i3en.metal AWS instance. The specifications are certainly impressive packing in 96 logical cores, 768GiB RAM, and approximately 45.84 TiB of NVMe raw storage capacity per host. It’s certainly a monster with a 266% uplift in…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2020/07/i3en/">
-				Read More<span class="screen-reader-text"> VMC New Host -i3en</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-7388 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-content-library tag-vmc tag-vmware tag-vmware-cloud-on-aws">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-7388 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-content-library tag-vmc tag-vmware tag-vmware-cloud-on-aws">
 <a aria-hidden="true" aria-label="Using Content Libraries in VMC to deploy software faster" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
 <img alt="Using Content Libraries in VMC to deploy software faster" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="417" loading="eager" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2026/01/Firefly_Gemini-Flash-768x417.png" srcset="/wp-content/uploads/2026/01/Firefly_Gemini-Flash-768x417.png 768w, /wp-content/uploads/2026/01/Firefly_Gemini-Flash-300x163.png 300w, /wp-content/uploads/2026/01/Firefly_Gemini-Flash.png 1009w" width="768"/> </div>
@@ -232,6 +201,36 @@
 <p class="more-link-wrap">
 <a class="post-more-link" href="/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/">
 				Read More<span class="screen-reader-text"> Using Content Libraries in VMC to deploy software faster</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3117 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-vmc tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="VMC New Host -i3en" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/07/i3en/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<picture><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.webp" type="image/webp"/><img alt="VMC New Host -i3en" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" loading="eager" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/></picture> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2020/07/i3en/" rel="bookmark">VMC New Host -i3en</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2020-07-02T22:01:39+00:00" itemprop="datePublished">July 2, 2020</time><time class="updated" datetime="2024-07-10T09:28:48+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>VMware Cloud on AWS (VMC) has introduced a new host to its lineup the “i3en”. This is based on the i3en.metal AWS instance. The specifications are certainly impressive packing in 96 logical cores, 768GiB RAM, and approximately 45.84 TiB of NVMe raw storage capacity per host. It’s certainly a monster with a 266% uplift in…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2020/07/i3en/">
+				Read More<span class="screen-reader-text"> VMC New Host -i3en</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -268,10 +267,10 @@
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6895 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-vmware-cloud-on-aws">
-<a aria-hidden="true" aria-label="An in-depth look at VMware Cloud on AWS hosts" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/08/vmc-host-deepdive/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3138 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-aws tag-failure tag-sre tag-vmc tag-vmware tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="VMC Host Errors" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/09/vmc-host-errors/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.avif" type="image/avif"/><source srcset="/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.webp" type="image/webp"/><img alt="An in-depth look at VMware Cloud on AWS hosts" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="193" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png" srcset="/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png 768w, /wp-content/uploads/2025/02/Picture-1-e1768509620339-300x75.png 300w, /wp-content/uploads/2025/02/Picture-1-e1768509620339.png 816w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.webp" type="image/webp"/><img alt="VMC Host Errors" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -279,19 +278,19 @@
 <span class="category-links term-links category-style-normal">
 <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/08/vmc-host-deepdive/" rel="bookmark">An in-depth look at VMware Cloud on AWS hosts</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2020/09/vmc-host-errors/" rel="bookmark">VMC Host Errors</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-08-14T12:32:01+00:00" itemprop="datePublished">August 14, 2025</time><time class="updated" datetime="2026-01-18T21:34:33+00:00" itemprop="dateModified">January 18, 2026</time> </span>
+<time class="entry-date published" datetime="2020-09-15T10:56:32+00:00" itemprop="datePublished">September 15, 2020</time><time class="updated" datetime="2025-10-01T15:22:15+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3 I3en I4i CPU Processor Name Intel Xeon E5-2686 v4  Intel Xeon Platinum 8175 Intel Xeon 8375c No of…</p>
+<p>When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2025/08/vmc-host-deepdive/">
-				Read More<span class="screen-reader-text"> An in-depth look at VMware Cloud on AWS hosts</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2020/09/vmc-host-errors/">
+				Read More<span class="screen-reader-text"> VMC Host Errors</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -328,10 +327,10 @@
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3138 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-aws tag-failure tag-sre tag-vmc tag-vmware tag-vmware-cloud-on-aws">
-<a aria-hidden="true" aria-label="VMC Host Errors" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2020/09/vmc-host-errors/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6895 post type-post status-publish format-standard has-post-thumbnail hentry category-vmware category-vmware-cloud-on-aws tag-vmware-cloud-on-aws">
+<a aria-hidden="true" aria-label="An in-depth look at VMware Cloud on AWS hosts" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/08/vmc-host-deepdive/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/11/iu-1-768x395.webp" type="image/webp"/><img alt="VMC Host Errors" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="395" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/11/iu-1-768x395.png" srcset="/wp-content/uploads/2022/11/iu-1-768x395.png 768w, /wp-content/uploads/2022/11/iu-1-300x154.png 300w, /wp-content/uploads/2022/11/iu-1-1024x526.png 1024w, /wp-content/uploads/2022/11/iu-1-1536x789.png 1536w, /wp-content/uploads/2022/11/iu-1-2048x1052.png 2048w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.avif" type="image/avif"/><source srcset="/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.webp" type="image/webp"/><img alt="An in-depth look at VMware Cloud on AWS hosts" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="193" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png" srcset="/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png 768w, /wp-content/uploads/2025/02/Picture-1-e1768509620339-300x75.png 300w, /wp-content/uploads/2025/02/Picture-1-e1768509620339.png 816w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -339,19 +338,19 @@
 <span class="category-links term-links category-style-normal">
 <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> | <a class="category-link-vmware-cloud-on-aws" href="/category/vmware/vmware-cloud-on-aws/" rel="tag">VMware Cloud on AWS</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2020/09/vmc-host-errors/" rel="bookmark">VMC Host Errors</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2025/08/vmc-host-deepdive/" rel="bookmark">An in-depth look at VMware Cloud on AWS hosts</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2020-09-15T10:56:32+00:00" itemprop="datePublished">September 15, 2020</time><time class="updated" datetime="2025-10-01T15:22:15+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2025-08-14T12:32:01+00:00" itemprop="datePublished">August 14, 2025</time><time class="updated" datetime="2026-01-18T21:34:33+00:00" itemprop="dateModified">January 18, 2026</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and…</p>
+<p>This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3 I3en I4i CPU Processor Name Intel Xeon E5-2686 v4  Intel Xeon Platinum 8175 Intel Xeon 8375c No of…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2020/09/vmc-host-errors/">
-				Read More<span class="screen-reader-text"> VMC Host Errors</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2025/08/vmc-host-deepdive/">
+				Read More<span class="screen-reader-text"> An in-depth look at VMware Cloud on AWS hosts</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->

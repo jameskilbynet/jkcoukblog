@@ -67,6 +67,10 @@ In the options, you can control the amount of disk space to use it defaults to 1
 
 ![](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2021-02-08-at-12.57.37-1.png)
 
+## 📚 Related Posts
+
+  * [New Laptop](https://jameskilby.co.uk/2018/12/new-laptop/)
+
 ## Similar Posts
 
   * [ ![New Laptop](https://jameskilby.co.uk/wp-content/uploads/2018/12/colorware-768x384.jpg) ](https://jameskilby.co.uk/2018/12/new-laptop/)

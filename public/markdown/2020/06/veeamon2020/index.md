@@ -70,6 +70,11 @@ Last but not least a feature that I have been asking about for over 3 years
 
 Yes Veeam Backup Agent for **MAC**
 
+## 📚 Related Posts
+
+  * [Lab Update &#8211; Desired Workloads](https://jameskilby.co.uk/2022/01/lab-update-part-5-desired-workloads/)
+  * [Monitoring VMC &#8211; Part 1](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
+
 ## Similar Posts
 
   * [Homelab](https://jameskilby.co.uk/category/homelab/) | [Veeam](https://jameskilby.co.uk/category/veeam/) | [VMware](https://jameskilby.co.uk/category/vmware/)

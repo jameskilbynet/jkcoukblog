@@ -30,6 +30,10 @@ This time I went for the retina version with 16Gb of RAM and 512GB PCIe-based SS
 
 I also thought it was time to tidy up and publish my Mac build scripts for anyone else to use. They are available below and hopefully pretty easy for anyone to follow.
 
+## 📚 Related Posts
+
+  * [Apple Content Caching](https://jameskilby.co.uk/2021/02/apple-content-caching/)
+
 ## Similar Posts
 
   * [ ![Apple Content Caching](https://jameskilby.co.uk/wp-content/uploads/2021/02/iu-768x403.png) ](https://jameskilby.co.uk/2021/02/apple-content-caching/)

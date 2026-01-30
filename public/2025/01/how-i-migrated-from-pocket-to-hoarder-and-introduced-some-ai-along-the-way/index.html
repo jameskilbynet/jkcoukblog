@@ -40,7 +40,6 @@
 <meta content="Time to read" name="twitter:label2"/>
 <meta content="5 minutes" name="twitter:data2"/>
 <script class="rank-math-schema" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"/#person","name":"Jameskilbycouk","logo":{"@type":"ImageObject","@id":"/#logo","url":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","contentUrl":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","caption":"Jameskilbycouk","inLanguage":"en-GB","width":"1024","height":"1024"},"image":{"@type":"ImageObject","@id":"/#logo","url":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","contentUrl":"/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png","caption":"Jameskilbycouk","inLanguage":"en-GB","width":"1024","height":"1024"},"url":"https://jameskilby.co.uk"},{"@type":"WebSite","@id":"/#website","url":"https://jameskilby.co.uk","name":"Jameskilbycouk","publisher":{"@id":"/#person"},"inLanguage":"en-GB"},{"@type":"ImageObject","@id":"/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47.png","url":"/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47.png","width":"2054","height":"1098","inLanguage":"en-GB"},{"@type":"BreadcrumbList","@id":"/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://jameskilby.co.uk","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/","name":"How I Migrated from Pocket to Hoarder with AI Integration"}}]},{"@type":"WebPage","@id":"/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/#webpage","url":"/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/","name":"How I Migrated From Pocket To Hoarder With AI Integration - Jameskilbycouk","datePublished":"2025-01-29T23:31:56+00:00","dateModified":"2026-01-18T21:36:03+00:00","isPartOf":{"@id":"/#website"},"primaryImageOfPage":{"@id":"/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47.png"},"inLanguage":"en-GB","breadcrumb":{"@id":"/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/#breadcrumb"}},{"@type":"Person","@id":"/author/admin/","name":"James","url":"/author/admin/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/ef6adff58705e646065437e05c1828dd80a8f03997f0a97cf2b109df4eafd7aa?s=96&amp;d=mm&amp;r=g","caption":"James","inLanguage":"en-GB"},"sameAs":["https://wordpress.jameskilby.cloud"]},{"@type":"BlogPosting","headline":"How I Migrated From Pocket To Hoarder With AI Integration - Jameskilbycouk","keywords":"Hoarder.APP,Bookmark,Management,Hoarder,Karakeep","datePublished":"2025-01-29T23:31:56+00:00","dateModified":"2026-01-18T21:36:03+00:00","author":{"@id":"/author/admin/","name":"James"},"publisher":{"@id":"/#person"},"description":"How I migrated to Hoarder for my Bookmark Management","name":"How I Migrated From Pocket To Hoarder With AI Integration - Jameskilbycouk","@id":"/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/#richSnippet","isPartOf":{"@id":"/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/#webpage"},"image":{"@id":"/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47.png"},"inLanguage":"en-GB","mainEntityOfPage":{"@id":"/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/#webpage"},"wordCount":997,"timeRequired":"PT5M","articleBody":"Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail, but I have had some successes with other cloud services and a win is a win…. One of them is my bookmark manager. Up until now, I used Pocket since way back in the day when it was originally called “Read it Later”. I wanted to bring it away from a cloud service and host it locally. I also had the opportunity to add a little AI magic to go with it. Table of Contents What is Hoarder? Taken from the Hoarder website, it’s an App that can do all of this…. 🔗 Bookmark links, take simple notes and store images and pdfs. ⬇️ Automatic fetching for link titles, descriptions and images. 📋 Sort your bookmarks into lists. 🔎 Full text search of all the content stored. ✨ AI-based (aka chatgpt) automatic tagging. With support for local models using Ollama! 🎆 OCR for extracting text from images. 🔖 Chrome plugin and Firefox addon for quick bookmarking. 📱 An iOS app , and an Android app . 📰 Auto hoarding from RSS feeds. 🔌 REST API. 🌐 Mutli-language support. 🖍️ Mark and store highlights from your hoarded content. 🗄️ Full page archival (using monolith ) to protect against link rot. Auto video archiving using youtube-dl . ☑️ Bulk actions support. 🔐 SSO support. 🌙 Dark mode support. 💾 Self-hosting first. The main use for me is having a website and mobile app for saving pages useful to me that I found when I’m usually down a tech rabbit hole. Hoarder Architecture I have chosen to run this within my home infrastructure and connected it to my existing Ollama setup This means that Hoarder can call Ollama for AI text/image clarification using the setup and models I have already created. The deployment is all within Docker and I have added extracts from my Docker Compose files below. Hoarder Install Snippet from my docker-compose.yml Hoarder hoarder: image: ghcr.io/hoarder-app/hoarder:${HOARDER_VERSION:-release} restart: unless-stopped networks: - traefik volumes: - ./data:/data env_file: - .env environment: MEILI_ADDR: http://meilisearch:7700 BROWSER_WEB_URL: http://chrome:9222 DATA_DIR: /data labels: - \"com.example.description=hoarder\" - \"traefik.enable=true\" - \"traefik.http.routers.hoarder.rule=Host(`hoarder.jameskilby.cloud`)\" - \"traefik.http.routers.hoarder.entrypoints=https\" - \"traefik.http.routers.hoarder.tls=true\" - \"traefik.http.routers.hoarder.tls.certresolver=cloudflare\" - \"traefik.http.services.hoarder.loadbalancer.server.port=3000\" chrome: image: gcr.io/zenika-hub/alpine-chrome:123 restart: unless-stopped networks: - traefik command: - --no-sandbox - --disable-gpu - --disable-dev-shm-usage - --remote-debugging-address=0.0.0.0 - --remote-debugging-port=9222 - --hide-scrollbars meilisearch: image: getmeili/meilisearch:v1.11.1 restart: unless-stopped networks: - traefik env_file: - .env environment: MEILI_NO_ANALYTICS: \"true\" volumes: - ./meilisearch:/meili_data .env snippet file OLLAMA_BASE_URL=http://ollama:11434 INFERENCE_TEXT_MODEL=llama3.1:8b INFERENCE_IMAGE_MODEL=llava Export from Pocket Luckily, Pocket has an export function that will dump all of your saved URL’s and tags into a single file. This can be run by navigating to https://getpocket.com/export when logged in. Import to Hoarder Once you have this file, you can input it straight into Hoarder. This is done by navigating to the user settings section and then selecting import/export. Hoarder supports several file formats from other tools Hoarder In Action When the URLs are loaded. Hoarder passes the URL’s into a headless Chrome to gather the data from that page. It then index’s the contents and then passes the contents to Ollama to apply appropriate tags. AI Prompt You can tweak the AI prompt that is sent over to Ollama. In my case I have just used the default as it looked like a good starting point. The prompt is You are a bot in a read-it-later app and your responsibility is to help with automatic tagging. Please analyze the text between the sentences \"CONTENT START HERE\" and \"CONTENT END HERE\" and suggest relevant tags that describe its key themes, topics, and main ideas. The rules are: - Aim for a variety of tags, including broad categories, specific keywords, and potential sub-genres. - The tags language must be in english. - If it's a famous website you may also include a tag for the website. If the tag is not generic enough, don't include it. - The content can include text for cookie consent and privacy policy, ignore those while tagging. - Aim for 3-5 tags. - If there are no good tags, leave the array empty. CONTENT START HERE <CONTENT_HERE> CONTENT END HERE You must respond in JSON with the key \"tags\" and the value is an array of string tags. The process of gathering all the web pages, indexing them and analysing with AI took around an hour with my setup. I believe that Hoarder has some internal throttles to try and avoid tripping anti-bot tools. You "}]}</script>
-<!-- /Rank Math WordPress SEO plugin -->
 <link href="/feed/" rel="alternate" title="Jameskilbycouk » Feed" type="application/rss+xml"/>
 <link href="/comments/feed/" rel="alternate" title="Jameskilbycouk » Comments Feed" type="application/rss+xml"/>
 <script>document.documentElement.classList.remove( 'no-js' );</script>
@@ -55,9 +54,9 @@
 <link href="/wp-content/themes/kadence/assets/css/footer.min.css" id="kadence-footer-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/themes/kadence/assets/css/rankmath.min.css" id="kadence-rankmath-css" media="all" rel="stylesheet"/>
 <link href="/wp-content/cache/wpo-minify/1769613917/assets/wpo-minify-header-60a11f4e.min.css" id="wpo_min-header-0-css" media="all" rel="stylesheet"/>
-<link href="/wp-json/wp/v2/posts/6392" rel="alternate" title="JSON" type="application/json"/><link href="/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="/wp-json/wp/v2/posts/6392" rel="alternate" title="JSON" type="application/json"/>
 <link href="/?p=6392" rel="shortlink"/>
-<link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#0a0a0a" name="theme-color"/><link href="/favicon.ico" rel="icon" type="image/x-icon"/><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/site.webmanifest" rel="manifest"/><link as="style" href="/assets/css/brutalist-theme.css" rel="preload"/><link href="/assets/css/brutalist-theme.css" media="print" onload="this.media='all'" rel="stylesheet"/><noscript><link href="/assets/css/brutalist-theme.css" media="all" rel="stylesheet"/></noscript><script data-cfasync="false" data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script></head>
+<link href="/xmlrpc.php" rel="pingback"/></meta></meta><meta content="max-age=86400" http-equiv="Cache-Control"/><meta content="WordPress Static Generator 1.0" name="generator"/><meta content="#0a0a0a" name="theme-color"/><link href="/favicon.ico" rel="icon" type="image/x-icon"/><link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/><link href="/site.webmanifest" rel="manifest"/><link as="style" href="/assets/css/brutalist-theme.css" rel="preload"/><link href="/assets/css/brutalist-theme.css" media="print" onload="this.media='all'" rel="stylesheet"/><noscript><link href="/assets/css/brutalist-theme.css" media="all" rel="stylesheet"/></noscript><script data-cfasync="false" data-domain="jameskilby.co.uk" defer="" src="https://plausible.jameskilby.cloud/js/script.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://jameskilby.co.uk"},{"@type":"ListItem","position":2,"name":"Artificial Intelligence","item":"/category/artificial-intelligence/"},{"@type":"ListItem","position":3,"name":"How I Migrated from Pocket to Hoarder with AI Integration","item":"/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/"}]}</script></head>
 <body class="wp-singular post-template-default single single-post postid-6392 single-format-standard wp-embed-responsive wp-theme-kadence hide-focus-outline link-style-standard content-title-style-normal content-width-narrow content-style-boxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header">
 <div class="site wp-site-blocks" id="wrapper">
 <a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
@@ -128,7 +127,7 @@
 </div>
 </header><!-- #masthead -->
 <main class="wrap kt-clear" id="inner-wrap" role="main">
-<div class="content-area" id="primary">
+<nav aria-label="Breadcrumb" class="breadcrumb-navigation" style="margin: 20px 0; padding: 12px 0; font-size: 14px; color: #718096;"><ol style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px;"><li style="display: inline-flex; align-items: center;"><a href="https://jameskilby.co.uk" style="color: #4299e1; text-decoration: none; hover: text-decoration: underline;">Home</a></li><li style="display: inline-flex; align-items: center;"><span style="margin-right: 8px; color: #a0aec0;">/</span><a href="/category/artificial-intelligence/" style="color: #4299e1; text-decoration: none; hover: text-decoration: underline;">Artificial Intelligence</a></li><li style="display: inline-flex; align-items: center;"><span style="margin-right: 8px; color: #a0aec0;">/</span><span aria-current="page" style="color: #2d3748; font-weight: 500;">How I Migrated from Pocket to Hoarder with AI Integration</span></li></ol></nav><div class="content-area" id="primary">
 <div class="content-container site-container">
 <div class="site-main" id="main">
 <div class="content-wrap">
@@ -312,7 +311,7 @@ You must respond in JSON with the key "tags" and the value is an array of string
 <p>I was quite surprised by how many of the links I had were broken links. These were for a few reasons, ranging from company takeovers. To sites being dead. Sadly, in one case the author is no longer with us. In a few cases, the broken link was because the URL I had saved led to a URL shortener that no longer exists. I need to revisit the remaining links in the list and ensure that they point to the end state.</p>
 <p></p>
 </div><!-- .entry-content -->
-<div class="comments-area" id="comments"><div class="pb-30"><section id="utterances-comments"><script async="" crossorigin="anonymous" data-cfasync="false" data-issue-term="pathname" data-repo="jameskilbynet/jkcoukblog" data-theme="github-dark" src="https://utteranc.es/client.js"></script></section></div></div><footer class="entry-footer">
+<section class="related-posts" style="margin: 40px 0; padding: 30px; background: #f7fafc; border-radius: 8px; border-left: 4px solid #4299e1;"><h2 style="margin: 0 0 20px 0; font-size: 24px; color: #2d3748;">📚 Related Posts</h2><ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;"><li style="background: white; padding: 16px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: box-shadow 0.2s;"><a href="/2025/04/warp-the-intelligent-terminal/" style="color: #2d3748; text-decoration: none; display: block; font-weight: 500; hover: color: #4299e1;">Warp &amp;#8211; The intelligent terminal</a></li><li style="background: white; padding: 16px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: box-shadow 0.2s;"><a href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/" style="color: #2d3748; text-decoration: none; display: block; font-weight: 500; hover: color: #4299e1;">Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU</a></li></ul></section><div class="comments-area" id="comments"><div class="pb-30"><section id="utterances-comments"><script async="" crossorigin="anonymous" data-cfasync="false" data-issue-term="pathname" data-repo="jameskilbynet/jkcoukblog" data-theme="github-dark" src="https://utteranc.es/client.js"></script></section></div></div><footer class="entry-footer">
 <div class="entry-tags">
 <span class="tags-links">
 <span class="tags-label screen-reader-text">
@@ -333,70 +332,66 @@ You must respond in JSON with the key "tags" and the value is an array of string
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6560 post type-post status-publish format-standard has-post-thumbnail hentry category-docker category-portainer category-synology tag-homelab tag-portainer tag-synology">
-<a aria-hidden="true" aria-label="How to Fix Portainer Agent not Starting On Synology DSM" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/03/portainer-agent-on-synology-dsm/" role="presentation" tabindex="-1">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5057 post type-post status-publish format-standard has-post-thumbnail hentry category-hosting category-personal tag-analytics tag-cloudflare tag-hosting tag-ingress tag-plausible tag-privacy tag-tunnel">
+<a aria-hidden="true" aria-label="Analytics in a privacy focused world" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/11/analytics-in-a-privacy-focused-world/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.avif" type="image/avif"/><source srcset="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.webp" type="image/webp"/><img alt="How to Fix Portainer Agent not Starting On Synology DSM" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="528" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.png" srcset="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.png 768w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-300x206.png 300w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1024x705.png 1024w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1536x1057.png 1536w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-2048x1409.png 2048w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2023/11/plausible-analytics-icon-top.avif" type="image/avif"/><source srcset="/wp-content/uploads/2023/11/plausible-analytics-icon-top.webp" type="image/webp"/><img alt="Analytics in a privacy focused world" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="399" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/11/plausible-analytics-icon-top.png" srcset="/wp-content/uploads/2023/11/plausible-analytics-icon-top.png 399w, /wp-content/uploads/2023/11/plausible-analytics-icon-top-300x300.png 300w, /wp-content/uploads/2023/11/plausible-analytics-icon-top-150x150.png 150w" width="399"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-portainer" href="/category/portainer/" rel="tag">Portainer</a> | <a class="category-link-synology" href="/category/synology/" rel="tag">Synology</a> </span>
+<a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> | <a class="category-link-personal" href="/category/personal/" rel="tag">Personal</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2025/03/portainer-agent-on-synology-dsm/" rel="bookmark">How to Fix Portainer Agent not Starting On Synology DSM</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2023/11/analytics-in-a-privacy-focused-world/" rel="bookmark">Analytics in a privacy focused world</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2025-03-11T12:06:39+00:00" itemprop="datePublished">March 11, 2025</time><time class="updated" datetime="2025-12-27T14:26:37+00:00" itemprop="dateModified">December 27, 2025</time> </span>
+<time class="entry-date published" datetime="2023-11-10T16:45:03+00:00" itemprop="datePublished">November 10, 2023</time><time class="updated" datetime="2025-10-01T15:22:13+00:00" itemprop="dateModified">October 1, 2025</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>How to fix Portainer Agent no starting on Synology</p>
+<p>I recently helped my friend Dean Lewis @veducate with some hosting issues. As part of the testing of this he kindly gave me a login to his WordPress instance. He has been a pretty prolific blogger over the years pumping out an amazing amount of really good content. It also highlighted to me that I…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2025/03/portainer-agent-on-synology-dsm/">
-				Read More<span class="screen-reader-text"> How to Fix Portainer Agent not Starting On Synology DSM</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2023/11/analytics-in-a-privacy-focused-world/">
+				Read More<span class="screen-reader-text"> Analytics in a privacy focused world</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6695 post type-post status-publish format-standard has-post-thumbnail hentry category-mikrotik category-networking tag-homelab tag-mikrotik tag-networking">
-<a aria-hidden="true" aria-label="Home Network Upgrade" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/09/home-network-upgrade/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2024/09/s-l1600-768x427.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/09/s-l1600-768x427.webp" type="image/webp"/><img alt="CRS-504" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="427" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2024/09/s-l1600-768x427.jpg" srcset="/wp-content/uploads/2024/09/s-l1600-768x427.jpg 768w, /wp-content/uploads/2024/09/s-l1600-300x167.jpg 300w, /wp-content/uploads/2024/09/s-l1600-1024x569.jpg 1024w, /wp-content/uploads/2024/09/s-l1600.jpg 1280w" width="768"/></picture> </div>
-</a><!-- .post-thumbnail -->
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3703 post type-post status-publish format-standard hentry category-homelab category-veeam category-vmware tag-desired-state tag-homelab tag-vmware">
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-mikrotik" href="/category/mikrotik/" rel="tag">Mikrotik</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-veeam" href="/category/veeam/" rel="tag">Veeam</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/09/home-network-upgrade/" rel="bookmark">Home Network Upgrade</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2022/01/lab-update-part-5-desired-workloads/" rel="bookmark">Lab Update –  Desired Workloads</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-09-09T08:25:08+00:00" itemprop="datePublished">September 9, 2024</time><time class="updated" datetime="2025-10-24T14:21:56+00:00" itemprop="dateModified">October 24, 2025</time> </span>
+<time class="entry-date published" datetime="2022-01-06T19:23:11+00:00" itemprop="datePublished">January 6, 2022</time><time class="updated" datetime="2023-11-11T21:15:26+00:00" itemprop="dateModified">November 11, 2023</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>My journey to superfast networking in my homelab</p>
+<p>My lab is always undergoing change. Partially as I want to try new things or new ways of doing things. Sometimes because I break things (not always by accident) sometimes it’s a great way to learn…. I decided to list the workloads I am looking to run (some of these are already in place) Infrastucture…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2024/09/home-network-upgrade/">
-				Read More<span class="screen-reader-text"> Home Network Upgrade</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2022/01/lab-update-part-5-desired-workloads/">
+				Read More<span class="screen-reader-text"> Lab Update –  Desired Workloads</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4659 post type-post status-publish format-standard has-post-thumbnail hentry category-cloudflare category-hosting category-wordpress tag-cloudflare tag-cloudflare-pages tag-free tag-wordpress">
-<a aria-hidden="true" aria-label="WordPress Hosting with Cloudflare  Pages" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/05/how-to-take-a-wordpress-site-and-publish-it-as-a-static-site-on-cloudflare-pages/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-7439 post type-post status-publish format-standard has-post-thumbnail hentry category-cloudflare category-hosting category-wordpress tag-cloudflare tag-cloudflare-pages tag-github tag-wordpress">
+<a aria-hidden="true" aria-label="Web Development Improvements" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2026/01/web-development-improvements/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2023/05/simply-static-logo.avif" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/simply-static-logo.webp" type="image/webp"/><img alt="WordPress Hosting with Cloudflare  Pages" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="143" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/05/simply-static-logo.png" srcset="/wp-content/uploads/2023/05/simply-static-logo.png 600w, /wp-content/uploads/2023/05/simply-static-logo-300x72.png 300w" width="600"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2026/01/Website-Optimisations-768x560.avif" type="image/avif"/><source srcset="/wp-content/uploads/2026/01/Website-Optimisations-768x560.webp" type="image/webp"/><img alt="Web Development Improvements" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="560" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2026/01/Website-Optimisations-768x560.png" srcset="/wp-content/uploads/2026/01/Website-Optimisations-768x560.png 768w, /wp-content/uploads/2026/01/Website-Optimisations-300x219.png 300w, /wp-content/uploads/2026/01/Website-Optimisations-1024x747.png 1024w, /wp-content/uploads/2026/01/Website-Optimisations.png 1184w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -404,79 +399,19 @@ You must respond in JSON with the key "tags" and the value is an array of string
 <span class="category-links term-links category-style-normal">
 <a class="category-link-cloudflare" href="/category/cloudflare/" rel="tag">Cloudflare</a> | <a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> | <a class="category-link-wordpress" href="/category/wordpress/" rel="tag">Wordpress</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/05/how-to-take-a-wordpress-site-and-publish-it-as-a-static-site-on-cloudflare-pages/" rel="bookmark">WordPress Hosting with Cloudflare  Pages</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2026/01/web-development-improvements/" rel="bookmark">Web Development Improvements</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-05-14T07:00:35+00:00" itemprop="datePublished">May 14, 2023</time><time class="updated" datetime="2025-10-01T15:22:13+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+<time class="entry-date published" datetime="2026-01-15T15:12:16+00:00" itemprop="datePublished">January 15, 2026</time><time class="updated" datetime="2026-01-17T08:47:32+00:00" itemprop="dateModified">January 17, 2026</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>Table of Contents The Tooling The Process WordPress Plugin Install GitHub setup Cloudflare setup I have been using Cloudflare to protect my web assets for a really long time. Throughout that time Cloudflare has been improving there capabilities and approximately 2 years ago I decided to move this blog into their worker’s product. This meant…</p>
+<p>I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO, and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2023/05/how-to-take-a-wordpress-site-and-publish-it-as-a-static-site-on-cloudflare-pages/">
-				Read More<span class="screen-reader-text"> WordPress Hosting with Cloudflare  Pages</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4167 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-synology tag-homelab tag-storage">
-<a aria-hidden="true" aria-label="Homelab bad days (almost)" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/11/homelab-bad-days-almost/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.webp" type="image/webp"/><img alt="Homelab bad days (almost)" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="403" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.jpg" srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.jpg 768w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-300x158.jpg 300w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-1024x538.jpg 1024w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.jpg 1200w" width="768"/></picture> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-synology" href="/category/synology/" rel="tag">Synology</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/11/homelab-bad-days-almost/" rel="bookmark">Homelab bad days (almost)</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-11-21T15:46:53+00:00" itemprop="datePublished">November 21, 2022</time><time class="updated" datetime="2023-04-08T21:44:28+00:00" itemprop="dateModified">April 8, 2023</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>I recently spent 3 weeks in Ireland with my wife Wendy and our son Nate. This involves driving from the south coast of Dorset up to Scotland and then getting a ferry over to Belfast before travelling west to the Republic. While driving I got a slack notification that one of my SSD’s in my…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2022/11/homelab-bad-days-almost/">
-				Read More<span class="screen-reader-text"> Homelab bad days (almost)</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3669 post type-post status-publish format-standard has-post-thumbnail hentry category-hosting category-wordpress tag-blogging tag-cloudflare tag-workers">
-<a aria-hidden="true" aria-label="Cloudflare Workers – Limits of the free tier" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/01/cloudflare-workers-limits-of-the-free-tier/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<img alt="Cloudflare Workers – Limits of the free tier" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="450" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/10/iu-768x450.jpeg" srcset="/wp-content/uploads/2022/10/iu-768x450.jpeg 768w, /wp-content/uploads/2022/10/iu-300x176.jpeg 300w, /wp-content/uploads/2022/10/iu.jpeg 1024w" width="768"/> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> | <a class="category-link-wordpress" href="/category/wordpress/" rel="tag">Wordpress</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/01/cloudflare-workers-limits-of-the-free-tier/" rel="bookmark">Cloudflare Workers – Limits of the free tier</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-01-04T21:11:23+00:00" itemprop="datePublished">January 4, 2022</time><time class="updated" datetime="2023-04-09T08:26:43+00:00" itemprop="dateModified">April 9, 2023</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>I have been making several changes (mainly cosmetic to this site over the last day or so) On most changes I have been doing an export and then uploading the site to Cloudflare using Wrangler. After a while I received an email from Cloudflare saying: Hi, You’re 50% of the way to reaching one of…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2022/01/cloudflare-workers-limits-of-the-free-tier/">
-				Read More<span class="screen-reader-text"> Cloudflare Workers – Limits of the free tier</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2026/01/web-development-improvements/">
+				Read More<span class="screen-reader-text"> Web Development Improvements</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -507,6 +442,62 @@ You must respond in JSON with the key "tags" and the value is an array of string
 <p class="more-link-wrap">
 <a class="post-more-link" href="/2022/01/web-development/">
 				Read More<span class="screen-reader-text"> Web Development</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6560 post type-post status-publish format-standard has-post-thumbnail hentry category-docker category-portainer category-synology tag-homelab tag-portainer tag-synology">
+<a aria-hidden="true" aria-label="How to Fix Portainer Agent not Starting On Synology DSM" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2025/03/portainer-agent-on-synology-dsm/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<picture><source srcset="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.avif" type="image/avif"/><source srcset="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.webp" type="image/webp"/><img alt="How to Fix Portainer Agent not Starting On Synology DSM" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="528" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.png" srcset="/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-768x528.png 768w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-300x206.png 300w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1024x705.png 1024w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1536x1057.png 1536w, /wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-2048x1409.png 2048w" width="768"/></picture> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-portainer" href="/category/portainer/" rel="tag">Portainer</a> | <a class="category-link-synology" href="/category/synology/" rel="tag">Synology</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2025/03/portainer-agent-on-synology-dsm/" rel="bookmark">How to Fix Portainer Agent not Starting On Synology DSM</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2025-03-11T12:06:39+00:00" itemprop="datePublished">March 11, 2025</time><time class="updated" datetime="2025-12-27T14:26:37+00:00" itemprop="dateModified">December 27, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>How to fix Portainer Agent no starting on Synology</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2025/03/portainer-agent-on-synology-dsm/">
+				Read More<span class="screen-reader-text"> How to Fix Portainer Agent not Starting On Synology DSM</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-6 post type-post status-publish format-standard hentry category-homelab category-storage category-synology tag-homelab tag-storage">
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-synology" href="/category/synology/" rel="tag">Synology</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2018/01/lab-storage/" rel="bookmark">Lab Storage</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2018-01-06T17:39:20+00:00" itemprop="datePublished">January 6, 2018</time><time class="updated" datetime="2024-07-10T08:56:51+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>I have been meaning to post around some of the lab setup for a while.   Although it changes frequently at present it’s as below.  I will add some pics when I have tidied up the lab/cables My primary lab storage is all contained within an HP Gen8 Microserver. Currently Configured: 1x INTEL Core i3-4130 running at…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2018/01/lab-storage/">
+				Read More<span class="screen-reader-text"> Lab Storage</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
