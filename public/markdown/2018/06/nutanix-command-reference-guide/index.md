@@ -6,9 +6,9 @@ modified: 2024-07-10T09:17:53+00:00
 author: James Kilby
 categories:
   - Nutanix
-  - Personal
   - Homelab
   - VMware
+  - Personal
 tags:
   - #CLI
   - #Nutanix
@@ -50,16 +50,6 @@ This is a list of Nutanix commands I have found useful. Its here as a reference 
 
 ## Similar Posts
 
-  * [ ![Nutanix NCP](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-768x196.jpg) ](https://jameskilby.co.uk/2020/07/nutanix-ncp/)
-
-[Nutanix](https://jameskilby.co.uk/category/nutanix/) | [Personal](https://jameskilby.co.uk/category/personal/)
-
-### [Nutanix NCP](https://jameskilby.co.uk/2020/07/nutanix-ncp/)
-
-By[James](https://jameskilby.co.uk) July 2, 2020July 10, 2024
-
-I saw a tweet a couple of weeks ago mentioning that Nutanix were offering a free go at the Nutanix Certified Professional exam. They are also offering free on-demand training to go with it. In my current role, I haven’t used Nutanix however I have good experience using it as the storage platform with vSphere…
-
   * [ ![New Nodes](https://jameskilby.co.uk/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg) ](https://jameskilby.co.uk/2024/07/new-nodes/)
 
 [Homelab](https://jameskilby.co.uk/category/homelab/) | [Nutanix](https://jameskilby.co.uk/category/nutanix/) | [VMware](https://jameskilby.co.uk/category/vmware/)
@@ -69,6 +59,16 @@ I saw a tweet a couple of weeks ago mentioning that Nutanix were offering a free
 By[James](https://jameskilby.co.uk) July 2, 2024January 18, 2026
 
 I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice Bill of Materials Rescue IPMI…
+
+  * [ ![Nutanix NCP](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-768x196.jpg) ](https://jameskilby.co.uk/2020/07/nutanix-ncp/)
+
+[Nutanix](https://jameskilby.co.uk/category/nutanix/) | [Personal](https://jameskilby.co.uk/category/personal/)
+
+### [Nutanix NCP](https://jameskilby.co.uk/2020/07/nutanix-ncp/)
+
+By[James](https://jameskilby.co.uk) July 2, 2020July 10, 2024
+
+I saw a tweet a couple of weeks ago mentioning that Nutanix were offering a free go at the Nutanix Certified Professional exam. They are also offering free on-demand training to go with it. In my current role, I haven’t used Nutanix however I have good experience using it as the storage platform with vSphere…
 
   * [ ![Nutanix CE](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-768x196.jpg) ](https://jameskilby.co.uk/2018/01/nutanix-ce/)
 
