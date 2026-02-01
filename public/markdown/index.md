@@ -45,7 +45,7 @@ image: https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-
 
 ## [Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
 
-By[James](https://jameskilby.co.uk) January 27, 2026January 30, 2026 • 📖15 min read(3,021 words)
+By[James](https://jameskilby.co.uk) January 27, 2026January 30, 2026 • 📖15 min read(2,978 words)
 
 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.
 
@@ -75,9 +75,9 @@ How to expand disks from the command line in Ubuntu. This is something I do fair
 
 ## [Time in a VMC Environment](https://jameskilby.co.uk/2025/12/time-in-a-vmc-environment/)
 
-By[James](https://jameskilby.co.uk) December 8, 2025January 17, 2026
+By[James](https://jameskilby.co.uk) December 8, 2025February 1, 2026
 
-One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Time VMC allows you to utilise the Amazon…
+How to use the Amazon Time Sync Service in a VMC environment
 
   * [ ![vSAN Cluster Shutdown – Orchestration](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg) ](https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/)
 
