@@ -16,10 +16,10 @@
 <meta content="Optimize your homelab storage with TrueNAS Scale now!" property="og:description"/>
 <meta content="/2023/05/homelab-storage-refresh-part-1/" property="og:url"/>
 <meta content="Jameskilbycouk" property="og:site_name"/>
-<meta content="NAS" property="article:tag"/>
-<meta content="TrueNAS Scale" property="article:tag"/>
-<meta content="ZFS" property="article:tag">
-<meta content="Homelab" property="article:section">
+<meta content="NAS" property="article:tag">
+<meta content="TrueNAS Scale" property="article:tag">
+<meta content="ZFS" property="article:tag"/>
+<meta content="Homelab" property="article:section"/>
 <meta content="2025-10-01T15:22:13+00:00" property="og:updated_time"/>
 <meta content="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png" property="og:image"/>
 <meta content="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png" property="og:image:secure_url"/>
@@ -127,7 +127,7 @@
 <div class="content-wrap">
 <div class="post-thumbnail article-post-thumbnail kadence-thumbnail-position-behind alignwide kadence-thumbnail-ratio-2-3">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.avif 905w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.avif 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.avif 768w" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.webp 905w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.webp 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.webp 768w" type="image/webp"/><img alt="TrueNAS Logo" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="233" loading="eager" sizes="(max-width: 905px) 100vw, 905px" src="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png" srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png 905w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.png 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png 768w" width="905"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.avif" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.webp" type="image/webp"/><img alt="TrueNAS Logo" class="post-top-featured wp-post-image" decoding="async" fetchpriority="high" height="233" loading="eager" sizes="(max-width: 905px) 100vw, 905px" src="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png" srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png 905w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.png 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png 768w" width="905"/></picture> </div>
 </div><!-- .post-thumbnail -->
 <article class="entry content-bg single-entry post-4357 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage tag-nas tag-truenas-scale tag-zfs" id="post-4357">
 <div class="entry-content-wrap">
@@ -205,7 +205,7 @@
 <p>These are capable of reading 550000 IOPS (4K Blocks) and unto 2500MB/s sequentially read and 550000 IOPS (4K Blocks) 2200 MB/s write Some crazy numbers…. The other thing that makes Optanes the best choice for this role is the endurance that they offer.  The spec sheet says they will handle 41 Petabytes being written to them. </p>
 <h2 class="wp-block-heading" id="hardware">Hardware</h2>
 <p>In terms of the setup of TrueNas server, it’s installed on an HP Z840.  This has 2 x Intel Xeon E5-2673 V3 – 12-Core 2.40Ghz  (48 Threads) and 256GB of ram. This is a high-end workstation device and sadly I don’t have the rack mount kit for it. However, it was chosen for its horsepower and ability to run all of the PCIe and storage devices that I needed. This includes having the cooling and electrical capabilities to run all the components. It has an 1125-watt power supply so we should be good. There are currently 19 different drives located within the chassis and it’s a little tight…  See the PCI slots below.</p>
-<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2023/05/IMG_0397-1024x737.avif 1024w, /wp-content/uploads/2023/05/IMG_0397-300x216.avif 300w, /wp-content/uploads/2023/05/IMG_0397-768x553.avif 768w, /wp-content/uploads/2023/05/IMG_0397-1536x1106.avif 1536w, /wp-content/uploads/2023/05/IMG_0397-2048x1474.avif 2048w" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/IMG_0397-1024x737.webp 1024w, /wp-content/uploads/2023/05/IMG_0397-300x216.webp 300w, /wp-content/uploads/2023/05/IMG_0397-768x553.webp 768w, /wp-content/uploads/2023/05/IMG_0397-1536x1106.webp 1536w, /wp-content/uploads/2023/05/IMG_0397-2048x1474.webp 2048w" type="image/webp"/><img alt="Img 0397 1024X737" class="wp-image-4714" decoding="async" fetchpriority="high" height="737" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2023/05/IMG_0397-1024x737.jpeg" srcset="/wp-content/uploads/2023/05/IMG_0397-1024x737.jpeg 1024w, /wp-content/uploads/2023/05/IMG_0397-300x216.jpeg 300w, /wp-content/uploads/2023/05/IMG_0397-768x553.jpeg 768w, /wp-content/uploads/2023/05/IMG_0397-1536x1106.jpeg 1536w, /wp-content/uploads/2023/05/IMG_0397-2048x1474.jpeg 2048w" width="1024"/></picture></figure>
+<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2023/05/IMG_0397-1024x737.avif" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/IMG_0397-1024x737.webp" type="image/webp"/><img alt="Img 0397 1024X737" class="wp-image-4714" decoding="async" fetchpriority="high" height="737" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2023/05/IMG_0397-1024x737.jpeg" srcset="/wp-content/uploads/2023/05/IMG_0397-1024x737.jpeg 1024w, /wp-content/uploads/2023/05/IMG_0397-300x216.jpeg 300w, /wp-content/uploads/2023/05/IMG_0397-768x553.jpeg 768w, /wp-content/uploads/2023/05/IMG_0397-1536x1106.jpeg 1536w, /wp-content/uploads/2023/05/IMG_0397-2048x1474.jpeg 2048w" width="1024"/></picture></figure>
 <p>I have mentioned the ARC Device and the Optanes  (Slots 1,2 + 4) in the above picture. The last thing to mention is the HBA which is an LSI 9300 located in slot 3. All of my other data drives are connected to this.</p>
 <p>The current disk architecture is shown below.  However, this is likely not the final setup and it may change temporarily for testing.</p>
 <figure class="wp-block-table">
@@ -257,9 +257,9 @@
 </table>
 </figure>
 <p>I will do some proper performance testing in my next post and Im sure there optimisations I can make before I do that but until that’s done. I did just run CrystalMark to ensure things are running in the right ballpark.</p>
-<figure class="wp-block-image size-full"><picture><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27.avif 618w, /wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27-300x220.avif 300w" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27.webp 618w, /wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27-300x220.webp 300w" type="image/webp"/><img alt="Screenshot 2023 05 19 At 10.54.27" class="wp-image-4768" decoding="async" height="454" loading="lazy" sizes="auto, (max-width: 618px) 100vw, 618px" src="/wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27.png" srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27.png 618w, /wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27-300x220.png 300w" width="618"/></picture><figcaption class="wp-element-caption">TrueNAS Scale performance </figcaption></figure>
+<figure class="wp-block-image size-full"><picture><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27.avif" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27.webp" type="image/webp"/><img alt="Screenshot 2023 05 19 At 10.54.27" class="wp-image-4768" decoding="async" height="454" loading="lazy" sizes="auto, (max-width: 618px) 100vw, 618px" src="/wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27.png" srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27.png 618w, /wp-content/uploads/2023/05/Screenshot-2023-05-19-at-10.54.27-300x220.png 300w" width="618"/></picture><figcaption class="wp-element-caption">TrueNAS Scale performance </figcaption></figure>
 <p> I dug out some old testing from the Synology. The test isn’t exactly the same but you can see the Read/Write and especially the IOPS are significantly higher.</p>
-<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2022/01/Synology-1024x725.avif 1024w, /wp-content/uploads/2022/01/Synology-300x212.avif 300w, /wp-content/uploads/2022/01/Synology-768x543.avif 768w, /wp-content/uploads/2022/01/Synology.avif 1026w" type="image/avif"/><source srcset="/wp-content/uploads/2022/01/Synology-1024x725.webp 1024w, /wp-content/uploads/2022/01/Synology-300x212.webp 300w, /wp-content/uploads/2022/01/Synology-768x543.webp 768w, /wp-content/uploads/2022/01/Synology.webp 1026w" type="image/webp"/><img alt="Synology 1024X725" class="wp-image-4428" decoding="async" height="725" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2022/01/Synology-1024x725.png" srcset="/wp-content/uploads/2022/01/Synology-1024x725.png 1024w, /wp-content/uploads/2022/01/Synology-300x212.png 300w, /wp-content/uploads/2022/01/Synology-768x543.png 768w, /wp-content/uploads/2022/01/Synology.png 1026w" width="1024"/></picture><figcaption class="wp-element-caption">Synology Performance</figcaption></figure>
+<figure class="wp-block-image size-large"><picture><source srcset="/wp-content/uploads/2022/01/Synology-1024x725.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/01/Synology-1024x725.webp" type="image/webp"/><img alt="Synology 1024X725" class="wp-image-4428" decoding="async" height="725" loading="lazy" sizes="auto, (max-width: 1024px) 100vw, 1024px" src="/wp-content/uploads/2022/01/Synology-1024x725.png" srcset="/wp-content/uploads/2022/01/Synology-1024x725.png 1024w, /wp-content/uploads/2022/01/Synology-300x212.png 300w, /wp-content/uploads/2022/01/Synology-768x543.png 768w, /wp-content/uploads/2022/01/Synology.png 1026w" width="1024"/></picture><figcaption class="wp-element-caption">Synology Performance</figcaption></figure>
 </div><!-- .entry-content -->
 <section class="related-posts" style="margin: 40px 0; padding: 30px; background: #f7fafc; border-radius: 8px; border-left: 4px solid #4299e1;"><h2 style="margin: 0 0 20px 0; font-size: 24px; color: #2d3748;">📚 Related Posts</h2><ul style="list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;"><li style="background: white; padding: 16px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: box-shadow 0.2s;"><a href="/2025/09/managing-my-homelab-with-semaphoreui/" style="color: #2d3748; text-decoration: none; display: block; font-weight: 500; hover: color: #4299e1;">Managing my Homelab with SemaphoreUI</a></li><li style="background: white; padding: 16px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: box-shadow 0.2s;"><a href="/2025/04/warp-the-intelligent-terminal/" style="color: #2d3748; text-decoration: none; display: block; font-weight: 500; hover: color: #4299e1;">Warp &amp;#8211; The intelligent terminal</a></li><li style="background: white; padding: 16px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); transition: box-shadow 0.2s;"><a href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/" style="color: #2d3748; text-decoration: none; display: block; font-weight: 500; hover: color: #4299e1;">Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU</a></li></ul></section><div class="comments-area" id="comments"><div class="pb-30"><section id="utterances-comments"><script async="" crossorigin="anonymous" data-cfasync="false" data-issue-term="pathname" data-repo="jameskilbynet/jkcoukblog" data-theme="github-dark" src="https://utteranc.es/client.js"></script></section></div></div><footer class="entry-footer">
 <div class="entry-tags">
@@ -282,120 +282,30 @@
 <h2 class="entry-related-title" id="related-posts-title">Similar Posts</h2> <div aria-labelledby="related-posts-title" class="entry-related-carousel kadence-slide-init splide" data-columns-md="3" data-columns-sm="2" data-columns-ss="1" data-columns-xl="3" data-columns-xs="2" data-columns-xxl="3" data-slider-anim-speed="400" data-slider-arrows="true" data-slider-auto="false" data-slider-dots="true" data-slider-gutter="40" data-slider-hover-pause="false" data-slider-loop="true" data-slider-next-label="Next" data-slider-prev-label="Previous" data-slider-scroll="1" data-slider-slide-label="Posts" data-slider-speed="7000">
 <div class="splide__track">
 <ul class="splide__list kadence-posts-list grid-cols grid-sm-col-2 grid-lg-col-3">
-<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4167 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-synology tag-homelab tag-storage">
-<a aria-hidden="true" aria-label="Homelab bad days (almost)" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/11/homelab-bad-days-almost/" role="presentation" tabindex="-1">
+<li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5945 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-truenas-scale tag-homelab tag-storage">
+<a aria-hidden="true" aria-label="Can you really squeeze 96TB in 1U ?" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/09/can-you-really-squeeze-96tb-in-1u/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.avif 768w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-300x158.avif 300w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-1024x538.avif 1024w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.avif 1200w" type="image/avif"/><source srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.webp 768w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-300x158.webp 300w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-1024x538.webp 1024w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.webp 1200w" type="image/webp"/><img alt="Homelab bad days (almost)" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="403" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.jpg" srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.jpg 768w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-300x158.jpg 300w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-1024x538.jpg 1024w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.jpg 1200w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.webp" type="image/webp"/><img alt="Can you really squeeze 96TB in 1U ?" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="435" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png" srcset="/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png 758w, /wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter-300x172.png 300w" width="758"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-synology" href="/category/synology/" rel="tag">Synology</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/11/homelab-bad-days-almost/" rel="bookmark">Homelab bad days (almost)</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2024/09/can-you-really-squeeze-96tb-in-1u/" rel="bookmark">Can you really squeeze 96TB in 1U ?</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-11-21T15:46:53+00:00" itemprop="datePublished">November 21, 2022</time><time class="updated" datetime="2023-04-08T21:44:28+00:00" itemprop="dateModified">April 8, 2023</time> </span>
+<time class="entry-date published" datetime="2024-09-12T12:39:16+00:00" itemprop="datePublished">September 12, 2024</time><time class="updated" datetime="2026-01-28T17:47:29+00:00" itemprop="dateModified">January 28, 2026</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>I recently spent 3 weeks in Ireland with my wife Wendy and our son Nate. This involves driving from the south coast of Dorset up to Scotland and then getting a ferry over to Belfast before travelling west to the Republic. While driving I got a slack notification that one of my SSD’s in my…</p>
+<p>Yes, that’s a clickbait title. But technically it’s possible if I dropped all drive redundancy… I recently saw an advert for a server that was just too good to be true. It promised to bring a huge amount of storage and future options in a quite hard-to-believe 1U. The price it was on offer for…</p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2022/11/homelab-bad-days-almost/">
-				Read More<span class="screen-reader-text"> Homelab bad days (almost)</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5162 post type-post status-publish format-standard has-post-thumbnail hentry category-kubernetes category-truenas-scale tag-reference tag-truenas-scale">
-<a aria-hidden="true" aria-label="TrueNAS Scale Useful Commands" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/11/truenas-scale-useful-commands/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.avif 768w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.avif 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.avif 905w" type="image/avif"/><source srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.webp 768w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.webp 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.webp 905w" type="image/webp"/><img alt="TrueNAS Logo" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="198" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png" srcset="/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-768x198.png 768w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21-300x77.png 300w, /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png 905w" width="768"/></picture> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-kubernetes" href="/category/kubernetes/" rel="tag">Kubernetes</a> | <a class="category-link-truenas-scale" href="/category/truenas-scale/" rel="tag">TrueNAS Scale</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2023/11/truenas-scale-useful-commands/" rel="bookmark">TrueNAS Scale Useful Commands</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2023-11-13T14:34:17+00:00" itemprop="datePublished">November 13, 2023</time><time class="updated" datetime="2024-03-08T10:23:33+00:00" itemprop="dateModified">March 8, 2024</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>A list of useful Truenas Scale commands</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2023/11/truenas-scale-useful-commands/">
-				Read More<span class="screen-reader-text"> TrueNAS Scale Useful Commands</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5547 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-nutanix category-vmware tag-homelab tag-nutanix tag-vmware">
-<a aria-hidden="true" aria-label="New Nodes" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/07/new-nodes/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2024/07/IMG_6629-768x149.avif 768w, /wp-content/uploads/2024/07/IMG_6629-300x58.avif 300w, /wp-content/uploads/2024/07/IMG_6629-1024x198.avif 1024w, /wp-content/uploads/2024/07/IMG_6629-1536x297.avif 1536w, /wp-content/uploads/2024/07/IMG_6629-2048x397.avif 2048w" type="image/avif"/><source srcset="/wp-content/uploads/2024/07/IMG_6629-768x149.webp 768w, /wp-content/uploads/2024/07/IMG_6629-300x58.webp 300w, /wp-content/uploads/2024/07/IMG_6629-1024x198.webp 1024w, /wp-content/uploads/2024/07/IMG_6629-1536x297.webp 1536w, /wp-content/uploads/2024/07/IMG_6629-2048x397.webp 2048w" type="image/webp"/><img alt="New Nodes" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="149" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg" srcset="/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg 768w, /wp-content/uploads/2024/07/IMG_6629-300x58.jpeg 300w, /wp-content/uploads/2024/07/IMG_6629-1024x198.jpeg 1024w, /wp-content/uploads/2024/07/IMG_6629-1536x297.jpeg 1536w, /wp-content/uploads/2024/07/IMG_6629-2048x397.jpeg 2048w" width="768"/></picture> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-nutanix" href="/category/nutanix/" rel="tag">Nutanix</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2024/07/new-nodes/" rel="bookmark">New Nodes</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2024-07-02T08:01:04+00:00" itemprop="datePublished">July 2, 2024</time><time class="updated" datetime="2026-01-18T21:39:50+00:00" itemprop="dateModified">January 18, 2026</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice Bill of Materials Rescue IPMI…</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2024/07/new-nodes/">
-				Read More<span class="screen-reader-text"> New Nodes</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
-</svg></span> </a>
-</p>
-</div><!-- .entry-actions -->
-</footer><!-- .entry-footer -->
-</div>
-</article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3883 post type-post status-publish format-standard has-post-thumbnail hentry category-docker category-homelab category-hosting category-kubernetes tag-containers tag-docker tag-homelab">
-<a aria-hidden="true" aria-label="Use Portainer in a Homelab with GitHub" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/12/use-portainer-in-a-homelab-with-github/" role="presentation" tabindex="-1">
-<div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2022/12/22225832.avif 280w, /wp-content/uploads/2022/12/22225832-150x150.avif 150w" type="image/avif"/><source srcset="/wp-content/uploads/2022/12/22225832.webp 280w, /wp-content/uploads/2022/12/22225832-150x150.webp 150w" type="image/webp"/><img alt="Use Portainer in a Homelab with GitHub" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="280" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/12/22225832.png" srcset="/wp-content/uploads/2022/12/22225832.png 280w, /wp-content/uploads/2022/12/22225832-150x150.png 150w" width="280"/></picture> </div>
-</a><!-- .post-thumbnail -->
-<div class="entry-content-wrap">
-<header class="entry-header">
-<div class="entry-taxonomies">
-<span class="category-links term-links category-style-normal">
-<a class="category-link-docker" href="/category/docker/" rel="tag">Docker</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-hosting" href="/category/hosting/" rel="tag">Hosting</a> | <a class="category-link-kubernetes" href="/category/kubernetes/" rel="tag">Kubernetes</a> </span>
-</div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/12/use-portainer-in-a-homelab-with-github/" rel="bookmark">Use Portainer in a Homelab with GitHub</a></h3><div class="entry-meta entry-meta-divider-dot">
-<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-12-09T09:06:37+00:00" itemprop="datePublished">December 9, 2022</time><time class="updated" datetime="2025-10-01T15:22:14+00:00" itemprop="dateModified">October 1, 2025</time> </span>
-</div><!-- .entry-meta -->
-</header><!-- .entry-header -->
-<div class="entry-summary">
-<p>Late to the party or not, I have been using containers in my lab more and more and that has led me to Portainer…. I use it for managing the docker containers on my Synology but it can also be used for managing lots of other things. In their own words “Portainer accelerates container adoption….</p>
-</div><!-- .entry-summary -->
-<footer class="entry-footer">
-<div class="entry-actions">
-<p class="more-link-wrap">
-<a class="post-more-link" href="/2022/12/use-portainer-in-a-homelab-with-github/">
-				Read More<span class="screen-reader-text"> Use Portainer in a Homelab with GitHub</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2024/09/can-you-really-squeeze-96tb-in-1u/">
+				Read More<span class="screen-reader-text"> Can you really squeeze 96TB in 1U ?</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
@@ -405,7 +315,7 @@
 </li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5912 post type-post status-publish format-standard has-post-thumbnail hentry category-artificial-intelligence category-docker category-homelab tag-artificial-intelligence tag-homelab tag-nvidia">
 <a aria-hidden="true" aria-label="Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-<picture><source srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.avif 768w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-300x200.avif 300w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.avif 1024w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1536x1024.avif 1536w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-2048x1365.avif 2048w" type="image/avif"/><source srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.webp 768w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-300x200.webp 300w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.webp 1024w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1536x1024.webp 1536w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-2048x1365.webp 2048w" type="image/webp"/><img alt="Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="512" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg" srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg 768w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-300x200.jpg 300w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.jpg 1024w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1536x1024.jpg 1536w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-2048x1365.jpg 2048w" width="768"/></picture> </div>
+<picture><source srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.webp" type="image/webp"/><img alt="Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="512" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg" srcset="/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg 768w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-300x200.jpg 300w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.jpg 1024w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1536x1024.jpg 1536w, /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-2048x1365.jpg 2048w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
@@ -432,30 +342,120 @@
 </footer><!-- .entry-footer -->
 </div>
 </article>
-</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3573 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-vmware tag-homelab tag-supermicro tag-vmware">
-<a aria-hidden="true" aria-label="Lab Update – Compute" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/01/lab-update-part-1-compute/" role="presentation" tabindex="-1">
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-5786 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-networking tag-dhcp tag-option-43 tag-unifi">
+<a aria-hidden="true" aria-label="Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2024/06/unifi-dhcp-option-43/" role="presentation" tabindex="-1">
 <div class="post-thumbnail-inner">
-</div>
+<picture><source srcset="/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-768x512.avif" type="image/avif"/><source srcset="/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-768x512.webp" type="image/webp"/><img alt="Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="512" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-768x512.png" srcset="/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-768x512.png 768w, /wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-300x200.png 300w, /wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-1024x683.png 1024w, /wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-1536x1024.png 1536w, /wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-2048x1365.png 2048w" width="768"/></picture> </div>
 </a><!-- .post-thumbnail -->
 <div class="entry-content-wrap">
 <header class="entry-header">
 <div class="entry-taxonomies">
 <span class="category-links term-links category-style-normal">
-<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-networking" href="/category/networking/" rel="tag">Networking</a> </span>
 </div><!-- .entry-taxonomies -->
-<h3 class="entry-title"><a href="/2022/01/lab-update-part-1-compute/" rel="bookmark">Lab Update – Compute</a></h3><div class="entry-meta entry-meta-divider-dot">
+<h3 class="entry-title"><a href="/2024/06/unifi-dhcp-option-43/" rel="bookmark">Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets</a></h3><div class="entry-meta entry-meta-divider-dot">
 <span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
-<time class="entry-date published" datetime="2022-01-06T11:12:00+00:00" itemprop="datePublished">January 6, 2022</time><time class="updated" datetime="2024-07-10T10:42:27+00:00" itemprop="dateModified">July 10, 2024</time> </span>
+<time class="entry-date published" datetime="2024-06-26T10:50:17+00:00" itemprop="datePublished">June 26, 2024</time><time class="updated" datetime="2026-01-18T21:40:37+00:00" itemprop="dateModified">January 18, 2026</time> </span>
 </div><!-- .entry-meta -->
 </header><!-- .entry-header -->
 <div class="entry-summary">
-<p>Quite a few changes have happened in the lab recently. so I decided to do a multipart blog on the changes. The refresh was triggered by the purchase of a SuperMicro Server (2027TR-H71FRF) chassis with 4x X9DRT Nodes / Blades. This is known as a BigTwin configuration in SuperMicro parlance. This is something I was…</p>
+<p>How to configure DHCP Option 43 for UniFi devices </p>
 </div><!-- .entry-summary -->
 <footer class="entry-footer">
 <div class="entry-actions">
 <p class="more-link-wrap">
-<a class="post-more-link" href="/2022/01/lab-update-part-1-compute/">
-				Read More<span class="screen-reader-text"> Lab Update – Compute</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+<a class="post-more-link" href="/2024/06/unifi-dhcp-option-43/">
+				Read More<span class="screen-reader-text"> Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-3229 post type-post status-publish format-standard has-post-thumbnail hentry category-automation category-homelab category-vmware tag-automation tag-hashicorp tag-homelab tag-packer">
+<a aria-hidden="true" aria-label="Template Deployment with Packer" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2021/01/hashicorp-packer/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<picture><source srcset="/wp-content/uploads/2021/01/logo_packer.avif" type="image/avif"/><source srcset="/wp-content/uploads/2021/01/logo_packer.webp" type="image/webp"/><img alt="Template Deployment with Packer" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="287" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2021/01/logo_packer.png" srcset="/wp-content/uploads/2021/01/logo_packer.png 287w, /wp-content/uploads/2021/01/logo_packer-150x150.png 150w" width="287"/></picture> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-automation" href="/category/automation/" rel="tag">Automation</a> | <a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-vmware" href="/category/vmware/" rel="tag">VMware</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2021/01/hashicorp-packer/" rel="bookmark">Template Deployment with Packer</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2021-01-21T22:26:10+00:00" itemprop="datePublished">January 21, 2021</time><time class="updated" datetime="2025-12-08T12:50:22+00:00" itemprop="dateModified">December 8, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2021/01/hashicorp-packer/">
+				Read More<span class="screen-reader-text"> Template Deployment with Packer</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4370 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-vexpert tag-homelab tag-intel tag-optane tag-truenas tag-truenas-scale tag-vexpert tag-vmware">
+<a aria-hidden="true" aria-label="Intel Optane NVMe Homelab" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2023/04/intel-optane/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<picture><source srcset="/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.avif" type="image/avif"/><source srcset="/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.webp" type="image/webp"/><img alt="Intel Optane NVMe Homelab" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="665" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png" srcset="/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png 678w, /wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px-300x294.png 300w" width="678"/></picture> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-vexpert" href="/category/vexpert/" rel="tag">vExpert</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2023/04/intel-optane/" rel="bookmark">Intel Optane NVMe Homelab</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2023-04-17T12:20:04+00:00" itemprop="datePublished">April 17, 2023</time><time class="updated" datetime="2025-10-01T15:22:13+00:00" itemprop="dateModified">October 1, 2025</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>I have been a VMware vExpert for many years and it has brought me many many benefits over the years. I don’t think it’s an understatement to say I probably wouldn’t have my current role within VMware without it. One of the best benefits has been access to a huge amount of licences for VMware…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2023/04/intel-optane/">
+				Read More<span class="screen-reader-text"> Intel Optane NVMe Homelab</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+</svg></span> </a>
+</p>
+</div><!-- .entry-actions -->
+</footer><!-- .entry-footer -->
+</div>
+</article>
+</li><li class="entry-list-item carousel-item splide__slide"><article class="entry content-bg loop-entry post-4167 post type-post status-publish format-standard has-post-thumbnail hentry category-homelab category-storage category-synology tag-homelab tag-storage">
+<a aria-hidden="true" aria-label="Homelab bad days (almost)" class="post-thumbnail kadence-thumbnail-ratio-2-3" href="/2022/11/homelab-bad-days-almost/" role="presentation" tabindex="-1">
+<div class="post-thumbnail-inner">
+<picture><source srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.avif" type="image/avif"/><source srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.webp" type="image/webp"/><img alt="Homelab bad days (almost)" class="attachment-medium_large size-medium_large wp-post-image" decoding="async" height="403" loading="lazy" sizes="(max-width: 480px) 95vw, (max-width: 768px) 90vw, 400px" src="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.jpg" srcset="/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.jpg 768w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-300x158.jpg 300w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-1024x538.jpg 1024w, /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.jpg 1200w" width="768"/></picture> </div>
+</a><!-- .post-thumbnail -->
+<div class="entry-content-wrap">
+<header class="entry-header">
+<div class="entry-taxonomies">
+<span class="category-links term-links category-style-normal">
+<a class="category-link-homelab" href="/category/homelab/" rel="tag">Homelab</a> | <a class="category-link-storage" href="/category/storage/" rel="tag">Storage</a> | <a class="category-link-synology" href="/category/synology/" rel="tag">Synology</a> </span>
+</div><!-- .entry-taxonomies -->
+<h3 class="entry-title"><a href="/2022/11/homelab-bad-days-almost/" rel="bookmark">Homelab bad days (almost)</a></h3><div class="entry-meta entry-meta-divider-dot">
+<span class="posted-by"><span class="meta-label">By</span><span class="author vcard"><a class="url fn n" href="https://jameskilby.co.uk">James</a></span></span> <span class="posted-on">
+<time class="entry-date published" datetime="2022-11-21T15:46:53+00:00" itemprop="datePublished">November 21, 2022</time><time class="updated" datetime="2023-04-08T21:44:28+00:00" itemprop="dateModified">April 8, 2023</time> </span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-summary">
+<p>I recently spent 3 weeks in Ireland with my wife Wendy and our son Nate. This involves driving from the south coast of Dorset up to Scotland and then getting a ferry over to Belfast before travelling west to the Republic. While driving I got a slack notification that one of my SSD’s in my…</p>
+</div><!-- .entry-summary -->
+<footer class="entry-footer">
+<div class="entry-actions">
+<p class="more-link-wrap">
+<a class="post-more-link" href="/2022/11/homelab-bad-days-almost/">
+				Read More<span class="screen-reader-text"> Homelab bad days (almost)</span><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" height="28" version="1.1" viewbox="0 0 27 28" width="27" xmlns="http://www.w3.org/2000/svg"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
 </svg></span> </a>
 </p>
 </div><!-- .entry-actions -->
