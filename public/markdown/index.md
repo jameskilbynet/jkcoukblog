@@ -45,7 +45,7 @@ image: https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-
 
 ## [Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
 
-By[James](https://jameskilby.co.uk) January 27, 2026January 30, 2026 • 📖15 min read(2,978 words)
+By[James](https://jameskilby.co.uk) January 27, 2026February 1, 2026 • 📖15 min read(2,934 words)
 
 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.
 
@@ -85,7 +85,7 @@ How to use the Amazon Time Sync Service in a VMC environment
 
 ## [vSAN Cluster Shutdown – Orchestration](https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/)
 
-By[James](https://jameskilby.co.uk) December 6, 2025January 17, 2026
+By[James](https://jameskilby.co.uk) December 6, 2025February 1, 2026
 
 How to safety shutdown a vSAN Environment
 
@@ -95,7 +95,7 @@ How to safety shutdown a vSAN Environment
 
 ## [How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare](https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/)
 
-By[James](https://jameskilby.co.uk) October 6, 2025January 17, 2026
+By[James](https://jameskilby.co.uk) October 6, 2025February 1, 2026
 
 I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring…
 
@@ -105,9 +105,9 @@ I wanted to automate the publishing of my blog from the authoring side to the pu
 
 ## [Managing my Homelab with SemaphoreUI](https://jameskilby.co.uk/2025/09/managing-my-homelab-with-semaphoreui/)
 
-By[James](https://jameskilby.co.uk) September 2, 2025December 18, 2025
+By[James](https://jameskilby.co.uk) September 2, 2025February 1, 2026
 
-I recently stumbled across Semaphore, which is essentially a frontend for managing DevOps tooling, including Ansible, Terraform, OpenTofu, and PowerShell. It’s easy to deploy in Docker, and I am slowly moving more of my homelab management over to it. Introduction This is a guide to show you how to get up and running easily with…
+An intro on how I use SemaphoreUI to manage my Homelab
 
   * [ ![An in-depth look at VMware Cloud on AWS hosts](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png) ](https://jameskilby.co.uk/2025/08/vmc-host-deepdive/)
 
