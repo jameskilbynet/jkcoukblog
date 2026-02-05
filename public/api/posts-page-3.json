@@ -13,14 +13,13 @@
       "categories": [
         "Homelab",
         "Hosting",
-        "Nutanix",
-        "VMware",
         "Cloudflare",
         "Wordpress",
-        "Personal",
-        "VCF",
         "Storage",
-        "Synology"
+        "AWS",
+        "VCF",
+        "VMware",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -43,13 +42,12 @@
         "Artificial Intelligence",
         "Docker",
         "Homelab",
-        "Automation",
+        "Ansible",
         "VMware",
-        "Storage",
-        "TrueNAS Scale",
         "vSphere",
+        "Nutanix",
         "Hosting",
-        "VCF"
+        "Storage"
       ],
       "tags": [
         null,
@@ -72,13 +70,22 @@
       "categories": [
         "Runecast",
         "VMware",
-        "vSAN",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
         "Homelab",
+        "NVIDIA",
+        "Traefik",
         "Veeam",
+        "Mikrotik",
+        "Networking",
+        "VCF",
+        "Docker",
+        "Hosting",
         "TrueNAS Scale",
-        "vSphere",
-        "Personal",
-        "VMware Cloud on AWS"
+        "vSAN",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -103,14 +110,16 @@
         "Docker",
         "Portainer",
         "Synology",
-        "Automation",
         "Homelab",
-        "VMware",
-        "VCF",
-        "Runecast",
         "Storage",
-        "Hosting",
-        "Kubernetes"
+        "vExpert",
+        "TrueNAS Scale",
+        "Runecast",
+        "VMware",
+        "Automation",
+        "Ansible",
+        "Artificial Intelligence",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -134,11 +143,10 @@
         "Nutanix",
         "Personal",
         "AWS",
-        "VMware",
-        "vSphere",
         "Hosting",
         "Cloudflare",
         "Wordpress",
+        "VMware",
         "Homelab"
       ],
       "tags": [
@@ -160,9 +168,9 @@
       "api_url": "/api/posts/nutanix-command-reference-guide.json",
       "categories": [
         "Nutanix",
-        "Personal",
         "Homelab",
-        "VMware"
+        "VMware",
+        "Personal"
       ],
       "tags": [
         null,
@@ -184,11 +192,14 @@
       "categories": [
         "Homelab",
         "Nutanix",
-        "VMware",
-        "Ansible",
-        "Hosting",
+        "Artificial Intelligence",
         "Docker",
-        "Kubernetes"
+        "Hosting",
+        "Kubernetes",
+        "Storage",
+        "vExpert",
+        "Networking",
+        "Ansible"
       ],
       "tags": [
         null
@@ -211,7 +222,10 @@
         "Nutanix",
         "VMware",
         "Personal",
-        "Hosting"
+        "VMware Cloud on AWS",
+        "Veeam",
+        "Mikrotik",
+        "Networking"
       ],
       "tags": [
         null,
@@ -259,6 +273,7 @@
         "Cloudflare",
         "Wordpress",
         "VMware",
+        "vSphere",
         "Nutanix"
       ],
       "tags": [
@@ -272,6 +287,6 @@
   ],
   "page": 3,
   "per_page": 10,
-  "total": 66,
+  "total": 67,
   "total_pages": 7
 }
