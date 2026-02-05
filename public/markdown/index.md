@@ -68,7 +68,7 @@ In a previous post, I wrote about using my VMware lab with an NVIDIA Tesla P4 fo
 
 ## [Web Development Improvements](https://jameskilby.co.uk/2026/01/web-development-improvements/)
 
-By[James](https://jameskilby.co.uk) January 15, 2026February 3, 2026
+By[James](https://jameskilby.co.uk) January 15, 2026February 5, 2026
 
 I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO, and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had…
 
