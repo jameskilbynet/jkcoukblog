@@ -2,7 +2,7 @@
 title: "Automating the deployment of my Homelab AI  Infrastructure"
 description: "In a previous post, I wrote about using my VMware lab with an NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in"
 date: 2026-01-15T21:19:58+00:00
-modified: 2026-02-05T21:53:02+00:00
+modified: 2026-02-05T23:36:32+00:00
 author: James Kilby
 categories:
   - Ansible
@@ -13,12 +13,17 @@ categories:
   - NVIDIA
   - Traefik
   - VMware
+  - Docker
+  - Hosting
+  - Kubernetes
+  - vSAN
+  - VCF
+  - Cloudflare
+  - Github
+  - Wordpress
   - Storage
   - Synology
   - Personal
-  - vSphere
-  - Nutanix
-  - VMware Cloud on AWS
 url: https://jameskilby.co.uk/2026/01/automating-the-deployment-of-my-ai-homelab-and-other-improvements/
 image: https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv.png
 ---
@@ -29,7 +34,7 @@ image: https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_e
 
 # Automating the deployment of my Homelab AI Infrastructure
 
-By[James](https://jameskilby.co.uk) January 15, 2026February 5, 2026 • 📖7 min read(1,479 words)
+By[James](https://jameskilby.co.uk) January 15, 2026February 5, 2026 • 📖8 min read(1,571 words)
 
 📅 **Published:** January 15, 2026• **Updated:** February 05, 2026
 
@@ -53,7 +58,7 @@ There are quite a lot of pre-reqs required to be in place to utilise the attache
 
   * Obviously, you need a vSphere Host and vCentre licensed at least at the enterprise level (I am using Enterprise Plus on 8.0u3)
   * NVIDIA datacenter Graphics card and associated Host and Guest drivers, I am using an A10 and using driver version 535.247.0 
-  * NVIDIA vGPU licence. Trials are available [here](https://www.nvidia.com/en-gb/data-center/resources/vgpu-evaluation/) if needed 
+  * NVIDIA vGPU licence. Trials are available [here](https://www.nvidia.com/en-gb/data-center/resources/vgpu-evaluation/) if needed
   * NFS Server (used for NVIDIA software deployment)
   * Domain hosted with Cloudflare and API [token](http://You can create one at: https://dash.cloudflare.com/profile/api-tokens) with Zone:DNS:Edit permissions.
   * SSH access to the vGPU VM with SUDO permission
@@ -136,7 +141,9 @@ This playbook configures an NFS client on the Ubuntu server and then copies both
 
 A number of parameters need to be defined or amended to run this successfully in your environment.
 
-The following parameters need to be set in SemaphoreUI. Jump to the full Semaphore Instructions at the bottom
+The following parameters need to be set in SemaphoreUI as a variable group. 
+
+Jump to the full Semaphore Instructions at the bottom
 
 Variable| Default| Description  
 ---|---|---  
@@ -159,28 +166,60 @@ Traefik is a reverse proxy/ingress controller. I am using it effectively as a lo
 
 This playbook needs a lot of Variables as can be seen below. In most cases the default is ok.
 
-Variable| Default| Description  
----|---|---  
-`traefik_deploy_test_service`| `true`| Set to `false` to skip test nginx deployment  
-`traefik_healthcheck_poll_retries`| `12`| Number of health check poll attempts  
-`traefik_healthcheck_poll_delay`| `5`| Seconds between health check polls  
-      
+When they are all input to Semaphore it will look something like this.
+
+![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Screenshot-2026-02-05-at-23.01.04-806x1024.png)
+
+Rather than typing all of the values out you can copy the json below and then just tweak what you need to.
     
-    New variables:
-    - traefik_deploy_test_service: Enable/disable test service
-    - traefik_healthcheck_poll_retries: Health check poll attempts (default: 12)
-    - traefik_healthcheck_poll_delay: Seconds between polls (default: 5)
     
+    {
+      "nvidia_vgpu_driver_file": "NVIDIA-Linux-x86_64-535.247.01-grid.run",
+      "nvidia_vgpu_licence_file": "client_configuration_token_04-08-2025-16-54-19.tok",
+      "nvidia_vgpu_driver_path": "/tmp/<driver_file>",
+      "nvidia_nfs_server": "nas.jameskilby.cloud",
+      "nvidia_nfs_export_path": "/mnt/pool1/ISO/nvidia",
+      "nvidia_nfs_mount_point": "/mnt/iso/nvidia",
+      "traefik_deploy_test_service": "true",
+      "traefik_healthcheck_poll_retries": "12",
+      "traefik_healthcheck_poll_delay": "5",
+      "traefik_docker_image": "traefik:v3.6.4",
+      "traefik_name": "traefik",
+      "traefik_config_path": "/etc/traefik",
+      "traefik_acme_path": "/etc/traefik/acme",
+      "traefik_docker_network": "traefik",
+      "traefik_http_port": "80",
+      "traefik_https_port": "443",
+      "acme_dns_delay": "10",
+      "acme_dns_resolvers": "['1.1.1.1:53', '8.8.8.8:53']",
+      "traefik_log_level": "info",
+      "traefik_log_format": "json",
+      "traefik_log_max_size": "10m",
+      "traefik_log_max_files": "3",
+      "traefik_healthcheck_interval": "30s",
+      "traefik_healthcheck_timeout": "10s",
+      "traefik_healthcheck_retries": "3",
+      "traefik_healthcheck_start_period": "30s",
+      "traefik_test_container": "nginx-test",
+      "traefik_test_image": "nginx:alpine",
+      "traefik_test_domain": "test.<wildcard_domain>",
+      "traefik_dashboard_user": "admin"
+    }
 
 📋 Copy
 
-Override Variable| Default| Description  
+## Variable Definitions
+
+Variable| Default| Description  
 ---|---|---  
-`traefik_docker_image`| `traefik:v3.`| Traefik Docker image  
+`traefik_deploy_test_service`| ``true``| Set to `false` to skip test nginx deployment  
+`traefik_healthcheck_poll_retries`| `12`| Number of health check poll attempts  
+`traefik_healthcheck_poll_delay`| `5`| Seconds between health check polls  
+`traefik_docker_image`| `traefik:v3`| Traefik Docker image  
 `traefik_name`| `traefik`| Container name  
 `traefik_config_path`| `/etc/traefik`| Config directory  
 `traefik_acme_path`| `/etc/traefik/acme`| ACME/cert directory  
-`traefik_docker_network`| `traefik-net`| Docker network name  
+`traefik_docker_network`| `traefik`| Docker network name  
 `traefik_http_port`| `80`| HTTP port  
 `traefik_https_port`| `443`| HTTPS port  
 `acme_dns_delay`| `10`| Seconds before DNS check  
@@ -198,11 +237,9 @@ Override Variable| Default| Description
 `traefik_test_domain`| `test.<wildcard_domain>`| Test service domain  
 `traefik_dashboard_user`| `admin`| Dashboard username  
   
-It also needs additional variables that should be classed as secrets
+It also needs additional variables that should be classed as secrets as they are sensitive
 
-dashboard_admin_password_hash
-
-cloudflare_api_token
+These are the Traefik admin dashboard hash and the Cloudflare API token
 
 ## Semaphore Implementation Instructions
 
@@ -246,62 +283,60 @@ Then ensure that the task template is set to use it
 
 ## Similar Posts
 
-  * [ ![Homelab bad days \(almost\)](https://jameskilby.co.uk/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1-768x403.jpg) ](https://jameskilby.co.uk/2022/11/homelab-bad-days-almost/)
+  * [ ![Use Portainer in a Homelab with GitHub](https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png) ](https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/)
 
-[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [Synology](https://jameskilby.co.uk/category/synology/)
+[Docker](https://jameskilby.co.uk/category/docker/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Kubernetes](https://jameskilby.co.uk/category/kubernetes/)
 
-### [Homelab bad days (almost)](https://jameskilby.co.uk/2022/11/homelab-bad-days-almost/)
+### [Use Portainer in a Homelab with GitHub](https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/)
 
-By[James](https://jameskilby.co.uk) November 21, 2022April 8, 2023
+By[James](https://jameskilby.co.uk) December 9, 2022October 1, 2025
 
-I recently spent 3 weeks in Ireland with my wife Wendy and our son Nate. This involves driving from the south coast of Dorset up to Scotland and then getting a ferry over to Belfast before travelling west to the Republic. While driving I got a slack notification that one of my SSD’s in my…
+Late to the party or not, I have been using containers in my lab more and more and that has led me to Portainer…. I use it for managing the docker containers on my Synology but it can also be used for managing lots of other things. In their own words “Portainer accelerates container adoption….
 
-  * [ ![Advanced Deploy VMware vSphere 7.x 3V0-22.21N](https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png) ](https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/)
+  * [ ![vSAN Cluster Shutdown – Orchestration](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg) ](https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/)
 
-[VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/) | [vSphere](https://jameskilby.co.uk/category/vsphere/)
+[VMware](https://jameskilby.co.uk/category/vmware/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/)
 
-### [Advanced Deploy VMware vSphere 7.x 3V0-22.21N](https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/)
+### [vSAN Cluster Shutdown – Orchestration](https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/)
 
-By[James](https://jameskilby.co.uk) November 10, 2023November 17, 2023
+By[James](https://jameskilby.co.uk) December 6, 2025February 1, 2026
 
-Yesterday I sat and passed the above exam. It had been on my todo list for a good number of years. With the current pause in the Broadcom VMware takeover deal. I had some downtime and decided to use one of the three exam vouchers VMware give me each year. This upgrades me to a…
+How to safety shutdown a vSAN Environment
 
-  * [ ![Lab Update – Part 2 Storage Truenas Scale](https://jameskilby.co.uk/wp-content/uploads/2022/01/maxresdefault-768x432.jpeg) ](https://jameskilby.co.uk/2022/01/lab-update-part-2-storage/)
+  * [ ![MultiHost Holodeck VCF](https://jameskilby.co.uk/wp-content/uploads/2023/12/Holodeck-Overview.png) ](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
 
-[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/)
+[VMware](https://jameskilby.co.uk/category/vmware/) | [VCF](https://jameskilby.co.uk/category/vmware/vcf/)
 
-### [Lab Update – Part 2 Storage Truenas Scale](https://jameskilby.co.uk/2022/01/lab-update-part-2-storage/)
+### [MultiHost Holodeck VCF](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
 
-By[James](https://jameskilby.co.uk) January 11, 2022December 11, 2023
+By[James](https://jameskilby.co.uk) January 17, 2024January 18, 2026
 
-The HP Z840 has changed its role to a permanent storage box running Truenas Scale. This is in addition to my Synology DS918+ TrueNas is the successor to FreeNas a very popular BSD based StorageOS and TrueNas scale is a fork of this based on Linux. The Synology has been an amazing piece of kit…
+How to Deploy VMware Holodeck on multiple hosts
 
-  * [ ![New Nodes](https://jameskilby.co.uk/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg) ](https://jameskilby.co.uk/2024/07/new-nodes/)
+  * [ ![How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare](https://jameskilby.co.uk/wp-content/uploads/2025/10/Github-Actions.webp) ](https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/)
 
-[Homelab](https://jameskilby.co.uk/category/homelab/) | [Nutanix](https://jameskilby.co.uk/category/nutanix/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+[Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Devops](https://jameskilby.co.uk/category/devops/) | [Github](https://jameskilby.co.uk/category/github/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)
 
-### [New Nodes](https://jameskilby.co.uk/2024/07/new-nodes/)
+### [How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare](https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/)
 
-By[James](https://jameskilby.co.uk) July 2, 2024January 18, 2026
+By[James](https://jameskilby.co.uk) October 6, 2025February 1, 2026
 
-I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice Bill of Materials Rescue IPMI…
+I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring…
 
-  * [ ![VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png) ](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
+  * [Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [Synology](https://jameskilby.co.uk/category/synology/)
 
-[Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+### [Lab Storage](https://jameskilby.co.uk/2018/01/lab-storage/)
 
-### [VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
+By[James](https://jameskilby.co.uk) January 6, 2018July 10, 2024
 
-By[James](https://jameskilby.co.uk) September 13, 2020November 11, 2023
+I have been meaning to post around some of the lab setup for a while. Although it changes frequently at present it’s as below. I will add some pics when I have tidied up the lab/cables My primary lab storage is all contained within an HP Gen8 Microserver. Currently Configured: 1x INTEL Core i3-4130 running at…
 
-I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This…
+  * [ ![My First Pull](https://jameskilby.co.uk/wp-content/uploads/2020/12/175jvBleoQfAZJc3sgTSPQA.jpg) ](https://jameskilby.co.uk/2020/12/my-first-pull/)
 
-  * [ ![VMC New Host -i3en](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-768x395.png) ](https://jameskilby.co.uk/2020/07/i3en/)
+[Devops](https://jameskilby.co.uk/category/devops/) | [Personal](https://jameskilby.co.uk/category/personal/)
 
-[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
+### [My First Pull](https://jameskilby.co.uk/2020/12/my-first-pull/)
 
-### [VMC New Host -i3en](https://jameskilby.co.uk/2020/07/i3en/)
+By[James](https://jameskilby.co.uk) December 22, 2020December 8, 2025
 
-By[James](https://jameskilby.co.uk) July 2, 2020July 10, 2024
-
-VMware Cloud on AWS (VMC) has introduced a new host to its lineup the “i3en”. This is based on the i3en.metal AWS instance. The specifications are certainly impressive packing in 96 logical cores, 768GiB RAM, and approximately 45.84 TiB of NVMe raw storage capacity per host. It’s certainly a monster with a 266% uplift in…
+I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….
