@@ -58,9 +58,9 @@ How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.
 
 ## [Automating the deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/01/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
 
-By[James](https://jameskilby.co.uk) January 15, 2026February 5, 2026
+By[James](https://jameskilby.co.uk) January 15, 2026February 8, 2026
 
-In a previous post, I wrote about using my VMware lab with an NVIDIA Tesla P4 for running some AI services. However, this deployment was done with the GPU in passthrough mode (I will refer to this a GPU). I wanted to take this to the next level and I also wanted to automate most…
+In a previous post, I wrote about using my VMware lab with an NVIDIA Tesla P4 for running some AI services. This deployment was done with the GPU in walkthrough mode (I will refer to this as GPU). I wanted to take this to the next level. I also wanted to automate most of the…
 
   * [ ![Web Development Improvements](https://jameskilby.co.uk/wp-content/uploads/2026/01/Website-Optimisations-768x560.png) ](https://jameskilby.co.uk/2026/01/web-development-improvements/)
 
