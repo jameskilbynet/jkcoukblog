@@ -1,41 +1,11 @@
 {
   "posts": [
     {
-      "slug": "holodeck-cpu-fixes",
-      "title": "Holodeck CPU Fixes",
-      "description": "Holodeck CPU Fixes: Learn how to deploy Holodeck with legacy CPUs. Follow our guide for a smoother setup and troubleshooting tips.",
-      "date": "2024-01-18T14:37:04Z",
-      "modified": "2024-07-10T07:21:58Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/",
-      "markdown_url": "/markdown/posts/holodeck-cpu-fixes.md",
-      "api_url": "/api/posts/holodeck-cpu-fixes.json",
-      "categories": [
-        "VCF",
-        "VMware",
-        "Runecast",
-        "VMware Cloud on AWS",
-        "vSAN",
-        "Homelab",
-        "Veeam",
-        "AWS",
-        "Nutanix"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg)\n\n[VCF](https://jameskilby.co.uk/category/vmware/vcf/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Holodeck CPU Fixes\n\nBy[James](https://jameskilby.co.uk) January 18, 2024July 10, 2024 • 📖1 min read(..."
-    },
-    {
       "slug": "hashicorp-packer",
       "title": "Template Deployment with Packer",
       "description": "Getting started with HashiCorp packer to build VMware templates",
       "date": "2021-01-21T22:26:10Z",
-      "modified": "2025-12-08T12:50:22Z",
+      "modified": "2026-02-09T21:39:50Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2021/01/hashicorp-packer/",
       "markdown_url": "/markdown/posts/hashicorp-packer.md",
@@ -44,11 +14,13 @@
         "Automation",
         "Homelab",
         "VMware",
-        "Nutanix",
-        "Artificial Intelligence",
-        "Docker",
-        "Hosting",
-        "Runecast"
+        "VMware Cloud on AWS",
+        "Storage",
+        "vExpert",
+        "Synology",
+        "Personal",
+        "vSphere",
+        "Veeam"
       ],
       "tags": [
         null,
@@ -72,13 +44,14 @@
       "categories": [
         "VMware",
         "Personal",
-        "VCF",
-        "TrueNAS Scale",
-        "vSAN",
-        "vSphere",
-        "VMware Cloud on AWS",
         "Homelab",
-        "Automation"
+        "vSphere",
+        "Nutanix",
+        "Runecast",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress",
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,
@@ -103,9 +76,15 @@
         "Homelab",
         "VMware",
         "vSphere",
-        "VMware Cloud on AWS",
-        "VCF",
-        "Personal"
+        "Networking",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Personal",
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,
@@ -152,11 +131,15 @@
       "api_url": "/api/posts/cloudflare.json",
       "categories": [
         "Hosting",
-        "Personal",
-        "Cloudflare",
-        "Wordpress",
         "Artificial Intelligence",
-        "Docker"
+        "Docker",
+        "Cloudflare",
+        "Personal",
+        "Wordpress",
+        "AWS",
+        "Devops",
+        "Github",
+        "Homelab"
       ],
       "tags": [
         null
@@ -177,13 +160,13 @@
       "categories": [
         "Hosting",
         "Wordpress",
-        "Personal",
         "Cloudflare",
         "Devops",
         "Github",
-        "Homelab",
         "Docker",
-        "Kubernetes"
+        "Homelab",
+        "Kubernetes",
+        "Personal"
       ],
       "tags": [
         null,
@@ -207,18 +190,10 @@
         "Homelab",
         "Storage",
         "TrueNAS Scale",
-        "Kubernetes",
-        "Nutanix",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "VMware",
-        "Automation",
         "Networking",
-        "Mikrotik"
+        "Kubernetes",
+        "VMware",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -240,13 +215,11 @@
       "categories": [
         "AWS",
         "Hosting",
-        "Homelab",
         "VMware",
         "VMware Cloud on AWS",
+        "Personal",
         "Cloudflare",
-        "Wordpress",
-        "Artificial Intelligence",
-        "Docker"
+        "Wordpress"
       ],
       "tags": [
         null,
@@ -268,10 +241,10 @@
       "categories": [
         "AWS",
         "Personal",
+        "Hosting",
+        "Devops",
         "VMware",
-        "vSphere",
-        "Consulting",
-        "Nutanix"
+        "vSphere"
       ],
       "tags": [
         null,
@@ -279,10 +252,35 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png)\n\n[AWS](https://jameskilby.co.uk/category/aws/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# AWS Solution Architect – Associate\n\nBy[James](https://jameskilby.co.uk) December 16, 2019December 4, 20..."
+    },
+    {
+      "slug": "aws-for-beginners1",
+      "title": "AWS for Beginners",
+      "description": "Start your AWS journey with our beginner's guide. Learn account setup, security tips, and billing alerts for a smooth experience. Join now!",
+      "date": "2018-03-30T23:13:21Z",
+      "modified": "2024-07-10T09:04:44Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2018/03/aws-for-beginners1/",
+      "markdown_url": "/markdown/posts/aws-for-beginners1.md",
+      "api_url": "/api/posts/aws-for-beginners1.json",
+      "categories": [
+        "AWS",
+        "Hosting",
+        "VMware",
+        "Veeam",
+        "VMware Cloud on AWS",
+        "Personal"
+      ],
+      "tags": [
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2018/03/raf750x1000075t101010_01c5ca27c6.u2.jpg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/03/raf750x1000075t101010_01c5ca27c6.u2.jpg)\n\n[AWS](https://jameskilby.co.uk/category/aws/)\n\n# AWS for Beginners\n\nBy[James](https://jameskilby.co.uk) March 30, 2018July 10, 2024 • 📖1 min read(202 words)\n\n📅 **Published:** March 30, 2018• **Updated:*..."
     }
   ],
   "page": 6,
   "per_page": 10,
-  "total": 67,
+  "total": 66,
   "total_pages": 7
 }

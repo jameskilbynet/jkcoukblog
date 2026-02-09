@@ -3,42 +3,6 @@
   "slug": "vmware",
   "posts": [
     {
-      "slug": "analytics-in-a-privacy-focused-world",
-      "title": "Analytics in a privacy focused world",
-      "description": "Analytics in a privacy focused world: Learn how to implement privacy-friendly analytics solutions for your blog today!",
-      "date": "2023-11-10T16:45:03Z",
-      "modified": "2025-10-01T15:22:13Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/",
-      "markdown_url": "/markdown/posts/analytics-in-a-privacy-focused-world.md",
-      "api_url": "/api/posts/analytics-in-a-privacy-focused-world.json",
-      "categories": [
-        "Hosting",
-        "Personal",
-        "Docker",
-        "Homelab",
-        "Kubernetes",
-        "Cloudflare",
-        "Wordpress",
-        "VMware",
-        "vSphere",
-        "Nutanix",
-        "Devops",
-        "Github"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# Analytics in a privacy focused world\n\nBy[James](https://jameskilby.co.uk) November 10, 2023Oct..."
-    },
-    {
       "slug": "lab-storage-2",
       "title": "Lab Storage",
       "description": "Upgrade your lab storage performance with the Synology DS918. Learn how to enhance your VMware stack and achieve efficient NFS setup.",
@@ -50,15 +14,16 @@
       "api_url": "/api/posts/lab-storage-2.json",
       "categories": [
         "Homelab",
-        "Storage",
-        "vExpert",
-        "Automation",
         "VMware",
+        "vSphere",
         "Artificial Intelligence",
+        "Veeam",
         "Docker",
-        "Hosting",
-        "Networking",
-        "TrueNAS Scale"
+        "Ansible",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik"
       ],
       "tags": [
         null,
@@ -82,18 +47,10 @@
         "VMware",
         "VMware Cloud on AWS",
         "vSAN",
-        "Homelab",
-        "Veeam",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "Storage",
-        "TrueNAS Scale",
+        "Personal",
         "vSphere",
-        "VCF"
+        "Homelab",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -117,13 +74,13 @@
       "categories": [
         "Homelab",
         "Storage",
-        "Veeam",
-        "VMware",
-        "Networking",
-        "Kubernetes",
-        "TrueNAS Scale",
         "Artificial Intelligence",
-        "Docker"
+        "Docker",
+        "TrueNAS Scale",
+        "VMware",
+        "vSAN",
+        "vSphere",
+        "Veeam"
       ],
       "tags": [
         null,
@@ -146,10 +103,9 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Homelab",
-        "AWS",
-        "Veeam",
-        "vSAN"
+        "vSAN",
+        "VCF",
+        "Homelab"
       ],
       "tags": [
         null,
@@ -173,17 +129,14 @@
       "categories": [
         "Homelab",
         "Networking",
-        "Storage",
-        "VMware",
-        "Ansible",
-        "Artificial Intelligence",
-        "Docker",
         "Mikrotik",
-        "vSphere",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik"
+        "Docker",
+        "Hosting",
+        "Kubernetes",
+        "Nutanix",
+        "VMware",
+        "Automation",
+        "Storage"
       ],
       "tags": [
         null,
@@ -207,11 +160,12 @@
         "VMware",
         "vSAN",
         "VMware Cloud on AWS",
-        "VCF",
-        "Runecast",
+        "TrueNAS Scale",
+        "vSphere",
+        "AWS",
+        "Veeam",
         "Personal",
-        "Homelab",
-        "Nutanix"
+        "Homelab"
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/)\n\n# vSAN Cluster Shutdown – Orchestration\n\nBy[James](https://jameskilby.co.uk) December 6,..."
@@ -252,13 +206,11 @@
       "categories": [
         "AWS",
         "Hosting",
-        "Homelab",
         "VMware",
         "VMware Cloud on AWS",
+        "Personal",
         "Cloudflare",
-        "Wordpress",
-        "Artificial Intelligence",
-        "Docker"
+        "Wordpress"
       ],
       "tags": [
         null,
@@ -280,13 +232,10 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
+        "Runecast",
         "Homelab",
-        "Networking",
-        "Storage",
         "Nutanix",
-        "Veeam",
-        "vSphere",
-        "Automation"
+        "VCF"
       ],
       "tags": [
         null
@@ -307,13 +256,14 @@
       "categories": [
         "Ansible",
         "Homelab",
-        "VMware",
-        "Networking",
         "Docker",
-        "Portainer",
-        "Synology",
-        "Nutanix",
-        "VCF"
+        "Hosting",
+        "Kubernetes",
+        "Networking",
+        "Storage",
+        "VMware",
+        "Mikrotik",
+        "Runecast"
       ],
       "tags": [
         null,
@@ -337,16 +287,16 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Homelab",
-        "TrueNAS Scale",
-        "vSAN",
-        "vSphere",
         "Ansible",
         "Artificial Intelligence",
         "Containers",
         "Devops",
+        "Homelab",
         "NVIDIA",
-        "Traefik"
+        "Traefik",
+        "Nutanix",
+        "Personal",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -369,15 +319,14 @@
         "Artificial Intelligence",
         "Docker",
         "Hosting",
-        "Automation",
         "Homelab",
+        "Nutanix",
         "VMware",
-        "Cloudflare",
-        "Wordpress",
-        "Portainer",
-        "Synology",
-        "Storage",
         "TrueNAS Scale",
+        "vSAN",
+        "vSphere",
+        "Mikrotik",
+        "Networking",
         "Kubernetes"
       ],
       "tags": [
@@ -404,9 +353,12 @@
         "Homelab",
         "Networking",
         "Storage",
-        "Synology",
+        "Veeam",
+        "VMware",
         "Mikrotik",
-        "VMware"
+        "TrueNAS Scale",
+        "vSphere",
+        "Runecast"
       ],
       "tags": [
         null,
@@ -428,12 +380,13 @@
       "categories": [
         "Personal",
         "VMware",
-        "VMware Cloud on AWS",
-        "Homelab",
-        "Veeam",
-        "vSphere",
+        "AWS",
+        "VCF",
         "TrueNAS Scale",
         "vSAN",
+        "vSphere",
+        "Homelab",
+        "Networking",
         "Storage",
         "vExpert"
       ],
@@ -444,36 +397,6 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png)\n\n[Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# VMware Certified Master Specialist HCI 2020\n\nBy[James](https://jameskilby.co.uk) September 13, 2020November 1..."
-    },
-    {
-      "slug": "web-development",
-      "title": "Web Development",
-      "description": "My Web-development workflow",
-      "date": "2022-01-04T11:27:12Z",
-      "modified": "2025-10-01T15:22:14Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2022/01/web-development/",
-      "markdown_url": "/markdown/posts/web-development.md",
-      "api_url": "/api/posts/web-development.json",
-      "categories": [
-        "Hosting",
-        "Cloudflare",
-        "Personal",
-        "Wordpress",
-        "Devops",
-        "Nutanix",
-        "Docker",
-        "Homelab",
-        "Kubernetes",
-        "VMware",
-        "Github"
-      ],
-      "tags": [
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2.png)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Personal](https://jameskilby.co.uk/category/personal/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)..."
     },
     {
       "slug": "lab-update-part-2-storage",
@@ -488,13 +411,18 @@
       "categories": [
         "Homelab",
         "Storage",
-        "Kubernetes",
-        "TrueNAS Scale",
+        "VMware",
+        "Ansible",
         "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Synology",
         "Docker",
         "Hosting",
-        "Nutanix",
-        "VMware"
+        "Kubernetes",
+        "Automation"
       ],
       "tags": [
         null,
@@ -517,12 +445,13 @@
       "api_url": "/api/posts/and-now-for-something-completely-different.json",
       "categories": [
         "Personal",
-        "Devops",
         "Hosting",
-        "VMware",
         "Cloudflare",
         "Wordpress",
-        "Nutanix"
+        "VMware",
+        "AWS",
+        "Devops",
+        "vSphere"
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/10/fWbXybA7.png)\n\n[Personal](https://jameskilby.co.uk/category/personal/)\n\n# And now for something completely different\n\nBy[James](https://jameskilby.co.uk) October 16, 2018July 10, 2024 • 📖1 min read(263 words)\n\n📅 **Published:** October 16, 2018•..."
@@ -542,12 +471,15 @@
         "Homelab",
         "Hosting",
         "Kubernetes",
-        "Networking",
-        "Storage",
+        "Personal",
+        "Nutanix",
         "VMware",
+        "Cloudflare",
+        "Wordpress",
+        "Storage",
         "Synology",
-        "Portainer",
-        "Artificial Intelligence"
+        "AWS",
+        "VCF"
       ],
       "tags": [
         null,
@@ -571,9 +503,11 @@
         "VMware",
         "VMware Cloud on AWS",
         "Homelab",
-        "Networking",
-        "Storage",
+        "AWS",
         "Personal",
+        "VCF",
+        "TrueNAS Scale",
+        "vSAN",
         "vSphere"
       ],
       "tags": [
@@ -601,13 +535,10 @@
         "Homelab",
         "Storage",
         "vExpert",
-        "VMware",
         "Personal",
-        "Artificial Intelligence",
-        "Networking",
-        "Kubernetes",
-        "TrueNAS Scale",
-        "Mikrotik"
+        "VMware",
+        "Veeam",
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,
@@ -634,12 +565,12 @@
       "categories": [
         "Artificial Intelligence",
         "Homelab",
-        "Veeam",
-        "VMware",
-        "Automation",
-        "Networking",
         "Storage",
-        "Hosting"
+        "Ansible",
+        "TrueNAS Scale",
+        "Docker",
+        "Runecast",
+        "VMware"
       ],
       "tags": [
         null,
@@ -662,13 +593,14 @@
       "categories": [
         "VMware",
         "Personal",
-        "VCF",
-        "TrueNAS Scale",
-        "vSAN",
-        "vSphere",
-        "VMware Cloud on AWS",
         "Homelab",
-        "Automation"
+        "vSphere",
+        "Nutanix",
+        "Runecast",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress",
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,
@@ -692,18 +624,19 @@
       "categories": [
         "Homelab",
         "VMware",
-        "VMware Cloud on AWS",
-        "Storage",
-        "vSAN",
-        "Ansible",
         "Artificial Intelligence",
+        "Docker",
+        "Hosting",
+        "Veeam",
+        "Ansible",
         "Containers",
         "Devops",
         "NVIDIA",
         "Traefik",
-        "VCF",
-        "Docker",
-        "Hosting"
+        "Storage",
+        "TrueNAS Scale",
+        "VMware Cloud on AWS",
+        "vSAN"
       ],
       "tags": [
         null,
@@ -726,13 +659,10 @@
       "categories": [
         "Homelab",
         "VMware",
-        "Storage",
         "VMware Cloud on AWS",
-        "Personal",
-        "vSphere",
-        "Hosting",
         "Networking",
-        "vSAN"
+        "vSphere",
+        "Storage"
       ],
       "tags": [
         null,
@@ -755,21 +685,15 @@
       "categories": [
         "Runecast",
         "VMware",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "Homelab",
-        "NVIDIA",
-        "Traefik",
-        "Storage",
-        "vExpert",
+        "AWS",
         "Veeam",
-        "Personal",
-        "vSphere",
-        "VMware Cloud on AWS",
+        "Homelab",
+        "Artificial Intelligence",
+        "Docker",
+        "Storage",
         "TrueNAS Scale",
-        "vSAN"
+        "VMware Cloud on AWS",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -817,14 +741,15 @@
         "Networking",
         "Storage",
         "VMware",
-        "AWS",
-        "Veeam",
         "VMware Cloud on AWS",
         "vSAN",
-        "Artificial Intelligence",
-        "Automation",
         "Personal",
-        "vSphere"
+        "vSphere",
+        "vExpert",
+        "Nutanix",
+        "Artificial Intelligence",
+        "Docker",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -846,10 +771,10 @@
       "categories": [
         "AWS",
         "Personal",
+        "Hosting",
+        "Devops",
         "VMware",
-        "vSphere",
-        "Consulting",
-        "Nutanix"
+        "vSphere"
       ],
       "tags": [
         null,
@@ -871,15 +796,19 @@
       "categories": [
         "Devops",
         "Personal",
-        "Cloudflare",
-        "Github",
-        "Wordpress",
+        "Nutanix",
         "Automation",
         "Homelab",
         "VMware",
-        "AWS",
-        "Hosting",
-        "Nutanix"
+        "Cloudflare",
+        "Github",
+        "Wordpress",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "NVIDIA",
+        "Traefik",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -890,41 +819,11 @@
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/12/175jvBleoQfAZJc3sgTSPQA.jpg)\n\n[Devops](https://jameskilby.co.uk/category/devops/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# My First Pull\n\nBy[James](https://jameskilby.co.uk) December 22, 2020December 8, 2025 • 📖1 min read(18..."
     },
     {
-      "slug": "portainer-agent-on-synology-dsm",
-      "title": "How to Fix Portainer Agent not Starting On Synology DSM",
-      "description": "How to Fix Portainer Agent Not Starting on Synology DSM",
-      "date": "2025-03-11T12:06:39Z",
-      "modified": "2025-12-27T14:26:37Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2025/03/portainer-agent-on-synology-dsm/",
-      "markdown_url": "/markdown/posts/portainer-agent-on-synology-dsm.md",
-      "api_url": "/api/posts/portainer-agent-on-synology-dsm.json",
-      "categories": [
-        "Docker",
-        "Portainer",
-        "Synology",
-        "Homelab",
-        "Networking",
-        "Storage",
-        "VMware",
-        "Ansible",
-        "Hosting",
-        "Kubernetes"
-      ],
-      "tags": [
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1024x705.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526.png)\n\n[Docker](https://jameskilby.co.uk/category/docker/) | [Portainer](https://jameskilby.co.uk/category/portainer/) | [Synology](https://jameskilby.co.uk/category/synology/)\n\n# How to Fix Portainer Agent not Startin..."
-    },
-    {
       "slug": "zfs-on-vmware",
       "title": "How to Run ZFS on VMware vSphere: Setup Guide and Best Practices",
       "description": "ZFS,VMware,Best Practices for seamless integration and performance. Learn how to optimize your setup for maximum efficiency and reliability.",
       "date": "2024-12-18T17:47:57Z",
-      "modified": "2026-02-03T17:04:00Z",
+      "modified": "2026-02-09T22:16:17Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2024/12/zfs-on-vmware/",
       "markdown_url": "/markdown/posts/zfs-on-vmware.md",
@@ -935,10 +834,12 @@
         "vSAN",
         "vSphere",
         "Homelab",
-        "Personal",
+        "Hosting",
         "Networking",
-        "Artificial Intelligence",
-        "VMware Cloud on AWS"
+        "Storage",
+        "Personal",
+        "vExpert",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -963,11 +864,14 @@
       "categories": [
         "Nutanix",
         "Personal",
+        "Consulting",
         "VMware",
-        "Homelab",
+        "AWS",
+        "Devops",
         "Hosting",
         "Cloudflare",
-        "Wordpress"
+        "Wordpress",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -990,9 +894,15 @@
         "Homelab",
         "VMware",
         "vSphere",
-        "VMware Cloud on AWS",
-        "VCF",
-        "Personal"
+        "Networking",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Personal",
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,
@@ -1037,10 +947,13 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Homelab",
-        "Personal",
+        "TrueNAS Scale",
+        "vSAN",
+        "vSphere",
         "Automation",
-        "VCF"
+        "Homelab",
+        "Networking",
+        "Storage"
       ],
       "tags": [
         null,
@@ -1063,13 +976,15 @@
       "categories": [
         "VCF",
         "VMware",
-        "Runecast",
-        "VMware Cloud on AWS",
-        "vSAN",
+        "Artificial Intelligence",
+        "Docker",
         "Homelab",
-        "Veeam",
+        "Mikrotik",
+        "Networking",
+        "Personal",
+        "Ansible",
         "AWS",
-        "Nutanix"
+        "Veeam"
       ],
       "tags": [
         null,
@@ -1094,15 +1009,13 @@
         "Mikrotik",
         "Networking",
         "Homelab",
+        "Hosting",
+        "Artificial Intelligence",
+        "Docker",
         "Veeam",
         "VMware",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "Hosting"
+        "Storage",
+        "Synology"
       ],
       "tags": [
         null,
@@ -1126,17 +1039,14 @@
         "VMware",
         "Personal",
         "vSphere",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "Homelab",
-        "NVIDIA",
-        "Traefik",
-        "Consulting",
-        "Networking",
-        "Storage",
-        "Veeam"
+        "TrueNAS Scale",
+        "vSAN",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress",
+        "AWS",
+        "VMware Cloud on AWS",
+        "Devops"
       ],
       "tags": [
         null,
@@ -1159,12 +1069,12 @@
       "categories": [
         "Homelab",
         "Nutanix",
-        "Artificial Intelligence",
         "Networking",
-        "VMware",
         "Storage",
+        "Artificial Intelligence",
         "Synology",
-        "vExpert"
+        "Veeam",
+        "VMware"
       ],
       "tags": [
         null
@@ -1188,10 +1098,16 @@
         "Synology",
         "Artificial Intelligence",
         "Docker",
-        "Ansible",
-        "Networking",
+        "TrueNAS Scale",
         "VMware",
-        "vSphere"
+        "vSAN",
+        "vSphere",
+        "Ansible",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Networking"
       ],
       "tags": [
         null,
@@ -1214,13 +1130,12 @@
         "Homelab",
         "Nutanix",
         "VMware",
-        "Artificial Intelligence",
-        "Docker",
-        "VMware Cloud on AWS",
-        "Hosting",
-        "Kubernetes",
-        "Personal",
-        "Storage"
+        "Storage",
+        "Veeam",
+        "VCF",
+        "vSAN",
+        "TrueNAS Scale",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -1249,10 +1164,14 @@
         "NVIDIA",
         "Traefik",
         "VMware",
-        "Storage",
+        "Nutanix",
         "TrueNAS Scale",
-        "Hosting",
-        "VMware Cloud on AWS"
+        "vSAN",
+        "vSphere",
+        "Storage",
+        "VMware Cloud on AWS",
+        "Personal",
+        "Docker"
       ],
       "tags": [
         null,
@@ -1304,11 +1223,14 @@
         "Artificial Intelligence",
         "Docker",
         "Homelab",
-        "Hosting",
-        "Kubernetes",
-        "VMware",
         "Storage",
-        "Synology"
+        "Mikrotik",
+        "Networking",
+        "Hosting",
+        "Synology",
+        "Nutanix",
+        "Automation",
+        "VMware"
       ],
       "tags": [
         null,
@@ -1333,15 +1255,15 @@
         "Devops",
         "Github",
         "Wordpress",
+        "Hosting",
+        "Personal",
         "Ansible",
         "Artificial Intelligence",
         "Containers",
         "Homelab",
         "NVIDIA",
         "Traefik",
-        "VMware",
-        "Hosting",
-        "Personal"
+        "VMware"
       ],
       "tags": [
         null,
@@ -1367,14 +1289,12 @@
       "categories": [
         "VMware",
         "VCF",
-        "Homelab",
-        "Nutanix",
-        "AWS",
-        "Veeam",
         "VMware Cloud on AWS",
-        "Storage",
-        "vExpert",
-        "Runecast"
+        "Runecast",
+        "vSAN",
+        "Homelab",
+        "Veeam",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -1401,11 +1321,11 @@
         "Homelab",
         "Storage",
         "vExpert",
-        "Docker",
-        "Hosting",
         "VMware",
         "vSAN",
-        "vSphere"
+        "vSphere",
+        "Docker",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -1419,7 +1339,7 @@
       "title": "Template Deployment with Packer",
       "description": "Getting started with HashiCorp packer to build VMware templates",
       "date": "2021-01-21T22:26:10Z",
-      "modified": "2025-12-08T12:50:22Z",
+      "modified": "2026-02-09T21:39:50Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2021/01/hashicorp-packer/",
       "markdown_url": "/markdown/posts/hashicorp-packer.md",
@@ -1428,11 +1348,13 @@
         "Automation",
         "Homelab",
         "VMware",
-        "Nutanix",
-        "Artificial Intelligence",
-        "Docker",
-        "Hosting",
-        "Runecast"
+        "VMware Cloud on AWS",
+        "Storage",
+        "vExpert",
+        "Synology",
+        "Personal",
+        "vSphere",
+        "Veeam"
       ],
       "tags": [
         null,
@@ -1458,10 +1380,7 @@
         "Consulting",
         "Devops",
         "VMware",
-        "AWS",
-        "Hosting",
-        "Cloudflare",
-        "Wordpress"
+        "AWS"
       ],
       "tags": [
         null,
@@ -1485,12 +1404,13 @@
         "Homelab",
         "Veeam",
         "VMware",
-        "VMware Cloud on AWS",
-        "vSAN",
+        "Storage",
+        "TrueNAS Scale",
         "Nutanix",
         "Artificial Intelligence",
         "Docker",
-        "Hosting"
+        "VMware Cloud on AWS",
+        "Networking"
       ],
       "tags": [
         null,
@@ -1514,18 +1434,10 @@
         "Homelab",
         "Storage",
         "TrueNAS Scale",
-        "Kubernetes",
-        "Nutanix",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "VMware",
-        "Automation",
         "Networking",
-        "Mikrotik"
+        "Kubernetes",
+        "VMware",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -1546,11 +1458,11 @@
       "api_url": "/api/posts/aws-for-beginners1.json",
       "categories": [
         "AWS",
-        "Personal",
+        "Hosting",
         "VMware",
         "Veeam",
         "VMware Cloud on AWS",
-        "Hosting"
+        "Personal"
       ],
       "tags": [
         null,
@@ -1573,20 +1485,13 @@
         "Homelab",
         "Storage",
         "Synology",
-        "Veeam",
-        "VMware",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
+        "Mikrotik",
         "Networking",
-        "TrueNAS Scale",
-        "vSAN",
-        "vSphere",
+        "Artificial Intelligence",
         "Docker",
-        "Hosting"
+        "Hosting",
+        "Veeam",
+        "VMware"
       ],
       "tags": [
         null,
@@ -1608,12 +1513,14 @@
       "categories": [
         "Homelab",
         "Hosting",
-        "Networking",
         "Storage",
-        "VMware",
         "Synology",
+        "Automation",
+        "VMware",
         "Artificial Intelligence",
-        "Automation"
+        "Runecast",
+        "Veeam",
+        "Personal"
       ],
       "tags": [
         null,
@@ -1637,11 +1544,10 @@
         "AWS",
         "Veeam",
         "Homelab",
+        "Automation",
         "VMware Cloud on AWS",
-        "VCF",
-        "Personal",
         "vSphere",
-        "vSAN"
+        "Personal"
       ],
       "tags": [
         null,
