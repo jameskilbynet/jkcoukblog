@@ -1,8 +1,8 @@
 # Markdown Content Sitemap
 
-Generated: 2026-02-03 17:08:36
+Generated: 2026-02-09 11:57:12
 
-Total Files: 75
+Total Files: 76
 
 ## Blog Posts
 
@@ -188,6 +188,9 @@ Total Files: 75
 
 - [AWS for Beginners](https://jameskilby.co.uk/2018/03/aws-for-beginners1/) - 2018-03-30 23:13:21+00:00
   - Markdown: `/markdown/posts/aws-for-beginners1.md`
+
+- [Automating the deployment of my Homelab AI  Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/) - 2026-02-09 11:54:54+00:00
+  - Markdown: `/markdown/posts/automating-the-deployment-of-my-ai-homelab-and-other-improvements.md`
 
 - [Apple Content Caching](https://jameskilby.co.uk/2021/02/apple-content-caching/) - 2021-02-08 14:12:23+00:00
   - Markdown: `/markdown/posts/apple-content-caching.md`
