@@ -16,11 +16,10 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Personal",
+        "Artificial Intelligence",
         "Docker",
-        "Homelab",
-        "Kubernetes",
-        "Artificial Intelligence"
+        "Personal",
+        "Homelab"
       ],
       "tags": [
         null,
@@ -44,14 +43,13 @@
       "categories": [
         "Hosting",
         "Personal",
-        "Cloudflare",
-        "Devops",
-        "Github",
-        "Wordpress",
-        "Homelab",
-        "AWS",
         "Docker",
-        "Kubernetes"
+        "Homelab",
+        "Kubernetes",
+        "Cloudflare",
+        "Wordpress",
+        "Artificial Intelligence",
+        "Devops"
       ],
       "tags": [
         null,
@@ -78,10 +76,12 @@
       "categories": [
         "AWS",
         "Hosting",
-        "Homelab",
         "Cloudflare",
+        "Wordpress",
         "Personal",
-        "Wordpress"
+        "Homelab",
+        "Artificial Intelligence",
+        "Docker"
       ],
       "tags": [
         null,
@@ -104,14 +104,15 @@
         "Artificial Intelligence",
         "Docker",
         "Hosting",
-        "Homelab",
-        "Storage",
-        "vExpert",
-        "Synology",
-        "Nutanix",
+        "VCF",
         "VMware",
+        "Homelab",
+        "Nutanix",
         "Cloudflare",
-        "Wordpress"
+        "Personal",
+        "Wordpress",
+        "Storage",
+        "Synology"
       ],
       "tags": [
         null,
@@ -137,10 +138,10 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Personal",
         "Devops",
-        "Artificial Intelligence",
-        "Docker"
+        "Github",
+        "Personal",
+        "Homelab"
       ],
       "tags": [
         null,
@@ -150,36 +151,6 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2026/01/Website-Optimisations.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Website-Optimisations.png)\n\n[Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)\n\n# Web Development Improvements\n\nBy[Jame..."
-    },
-    {
-      "slug": "vmware-certified-master-specialist-hci-2020",
-      "title": "VMware Certified Master Specialist HCI 2020",
-      "description": "VMware Certified Master Specialist HCI 2020: Join me in celebrating passing the HCI Master Specialist exam and enhancing your VMware skills today!",
-      "date": "2020-09-13T21:38:48Z",
-      "modified": "2023-11-11T21:18:14Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/",
-      "markdown_url": "/markdown/posts/vmware-certified-master-specialist-hci-2020.md",
-      "api_url": "/api/posts/vmware-certified-master-specialist-hci-2020.json",
-      "categories": [
-        "Personal",
-        "VMware",
-        "VMware Cloud on AWS",
-        "Homelab",
-        "Networking",
-        "Storage",
-        "Hosting",
-        "Cloudflare",
-        "Wordpress",
-        "Nutanix"
-      ],
-      "tags": [
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png)\n\n[Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# VMware Certified Master Specialist HCI 2020\n\nBy[James](https://jameskilby.co.uk) September 13, 2020November 1..."
     },
     {
       "slug": "wrangler-and-node-versions",
@@ -194,10 +165,8 @@
       "categories": [
         "Cloudflare",
         "Hosting",
-        "Wordpress",
-        "Devops",
-        "Github",
-        "Personal"
+        "Personal",
+        "Wordpress"
       ],
       "tags": [
         null,
@@ -223,10 +192,12 @@
         "Cloudflare",
         "Personal",
         "Wordpress",
-        "AWS",
-        "VMware",
-        "Consulting",
-        "Devops"
+        "Docker",
+        "Homelab",
+        "Kubernetes",
+        "Devops",
+        "Github",
+        "AWS"
       ],
       "tags": [
         null,
@@ -247,16 +218,49 @@
       "api_url": "/api/posts/and-now-for-something-completely-different.json",
       "categories": [
         "Personal",
-        "VMware",
-        "vSphere",
-        "Nutanix",
-        "AWS",
+        "Consulting",
         "Hosting",
         "Cloudflare",
-        "Wordpress"
+        "Wordpress",
+        "VMware",
+        "vSphere",
+        "AWS",
+        "Nutanix"
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/10/fWbXybA7.png)\n\n[Personal](https://jameskilby.co.uk/category/personal/)\n\n# And now for something completely different\n\nBy[James](https://jameskilby.co.uk) October 16, 2018July 10, 2024 • 📖1 min read(263 words)\n\n📅 **Published:** October 16, 2018•..."
+    },
+    {
+      "slug": "use-portainer-in-a-homelab-with-github",
+      "title": "Use Portainer in a Homelab with GitHub",
+      "description": "How to use Portainer and Github to manage and deploy docker containers",
+      "date": "2022-12-09T09:06:37Z",
+      "modified": "2025-10-01T15:22:14Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/",
+      "markdown_url": "/markdown/posts/use-portainer-in-a-homelab-with-github.md",
+      "api_url": "/api/posts/use-portainer-in-a-homelab-with-github.json",
+      "categories": [
+        "Docker",
+        "Homelab",
+        "Hosting",
+        "Kubernetes",
+        "Storage",
+        "vExpert",
+        "Artificial Intelligence",
+        "Runecast",
+        "VMware",
+        "Networking",
+        "Cloudflare",
+        "Wordpress"
+      ],
+      "tags": [
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png)\n\n[Docker](https://jameskilby.co.uk/category/docker/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Kubernetes](https://jameskilby.co.uk/category/kubernetes/)\n\n# ..."
     },
     {
       "slug": "cloudflare-workers-limits-of-the-free-tier",
@@ -271,11 +275,12 @@
       "categories": [
         "Hosting",
         "Wordpress",
-        "Docker",
         "Homelab",
-        "Kubernetes",
-        "AWS",
-        "Cloudflare"
+        "Cloudflare",
+        "Devops",
+        "Github",
+        "Artificial Intelligence",
+        "Docker"
       ],
       "tags": [
         null,
@@ -298,13 +303,11 @@
       "categories": [
         "AWS",
         "Personal",
-        "Nutanix",
         "Hosting",
-        "Cloudflare",
-        "Wordpress",
-        "Consulting",
         "VMware",
-        "Veeam"
+        "Consulting",
+        "Cloudflare",
+        "Wordpress"
       ],
       "tags": [
         null,
@@ -327,17 +330,12 @@
         "Devops",
         "Personal",
         "VMware",
-        "AWS",
+        "vSphere",
         "Cloudflare",
         "Github",
         "Wordpress",
-        "Nutanix",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Homelab",
-        "NVIDIA",
-        "Traefik"
+        "Hosting",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -361,13 +359,11 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Docker",
-        "Homelab",
-        "Kubernetes",
-        "AWS",
         "Devops",
         "Github",
-        "Artificial Intelligence"
+        "AWS",
+        "Personal",
+        "Homelab"
       ],
       "tags": [
         null,
@@ -394,14 +390,7 @@
         "Github",
         "Wordpress",
         "Hosting",
-        "Personal",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Homelab",
-        "NVIDIA",
-        "Traefik",
-        "VMware"
+        "Personal"
       ],
       "tags": [
         null,
@@ -415,31 +404,35 @@
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/10/Github-Actions.webp)\n\n[Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Devops](https://jameskilby.co.uk/category/devops/) | [Github](https://jameskilby.co.uk/category/github/) | [Wordpress](https://jameskilby.co.uk/category/wordpr..."
     },
     {
-      "slug": "my-home-office-setup-upgrades",
-      "title": "My Home Office Setup & Upgrades",
-      "description": "My Home Office",
-      "date": "2021-01-05T12:17:13Z",
-      "modified": "2025-10-01T15:22:15Z",
+      "slug": "starlink",
+      "title": "Starlink",
+      "description": "Adding Starlink as another internet connection",
+      "date": "2022-10-11T21:40:50Z",
+      "modified": "2025-10-01T15:22:14Z",
       "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/",
-      "markdown_url": "/markdown/posts/my-home-office-setup-upgrades.md",
-      "api_url": "/api/posts/my-home-office-setup-upgrades.json",
+      "url": "https://jameskilby.co.uk/2022/10/starlink/",
+      "markdown_url": "/markdown/posts/starlink.md",
+      "api_url": "/api/posts/starlink.json",
       "categories": [
-        "Personal",
-        "Consulting",
+        "Homelab",
         "Hosting",
-        "VMware",
+        "Storage",
         "Cloudflare",
+        "Personal",
         "Wordpress",
-        "vSphere"
+        "TrueNAS Scale",
+        "VMware",
+        "vSAN",
+        "vSphere",
+        "Networking",
+        "Synology"
       ],
       "tags": [
         null,
-        null,
         null
       ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-1024x768.jpeg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1.jpeg)\n\n[Personal](https://jameskilby.co.uk/category/personal/) | [Consulting](https://jameskilby.co.uk/category/consulting/)\n\n# My Home Office Setup & Upgrades\n\nBy[James](https://jameskilby.co.uk) January 5, 2021October 1, 202..."
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920.jpg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/)\n\n# Starlink\n\nBy[James](https://jameskilby.co.uk) October ..."
     },
     {
       "slug": "cloudflare",
@@ -456,10 +449,12 @@
         "Personal",
         "Cloudflare",
         "Wordpress",
+        "AWS",
+        "Artificial Intelligence",
         "Docker",
         "Homelab",
-        "Kubernetes",
-        "Artificial Intelligence"
+        "Devops",
+        "Github"
       ],
       "tags": [
         null

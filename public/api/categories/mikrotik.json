@@ -3,40 +3,91 @@
   "slug": "mikrotik",
   "posts": [
     {
-      "slug": "runecast-remediation-scripts",
-      "title": "Runecast Remediation Script’s",
-      "description": "Using Runecast to autogenerate PowerCLI to remediate discovered issues",
-      "date": "2023-05-16T10:38:45Z",
-      "modified": "2023-11-17T15:28:57Z",
+      "slug": "warp-the-intelligent-terminal",
+      "title": "Warp – The intelligent terminal",
+      "description": "How Warp is helping me run my homelab. Unlock the potential of your terminal and streamline your Linux tools with Warp's intelligent features.",
+      "date": "2025-04-11T15:46:23Z",
+      "modified": "2025-10-03T09:15:18Z",
       "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/",
-      "markdown_url": "/markdown/posts/runecast-remediation-scripts.md",
-      "api_url": "/api/posts/runecast-remediation-scripts.json",
+      "url": "https://jameskilby.co.uk/2025/04/warp-the-intelligent-terminal/",
+      "markdown_url": "/markdown/posts/warp-the-intelligent-terminal.md",
+      "api_url": "/api/posts/warp-the-intelligent-terminal.json",
       "categories": [
-        "Runecast",
+        "Artificial Intelligence",
+        "Homelab",
+        "Veeam",
         "VMware",
-        "VMware Cloud on AWS",
+        "Hosting",
         "Mikrotik",
         "Networking",
-        "Homelab",
-        "Storage",
-        "vExpert",
-        "Docker",
-        "Hosting",
-        "Kubernetes",
-        "TrueNAS Scale",
-        "vSAN",
-        "vSphere",
-        "VCF"
+        "Storage"
       ],
       "tags": [
         null,
         null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1024x240.png",
+      "excerpt": "![Wa](https://jameskilby.co.uk/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21.png)\n\n[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Homelab](https://jameskilby.co.uk/category/homelab/)\n\n# Warp – The intelligent terminal\n\nBy[James](h..."
+    },
+    {
+      "slug": "100gb-s-in-my-homelab-sort-of",
+      "title": "100Gb/s in my Homelab",
+      "description": "100Gb/s in my Homelab: Transform your networking setup with MikroTik's CRS504-4XQ-IN. Learn how to maximize your homelab's potential now!",
+      "date": "2022-12-19T10:09:58Z",
+      "modified": "2023-11-11T20:57:34Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2022/12/100gb-s-in-my-homelab-sort-of/",
+      "markdown_url": "/markdown/posts/100gb-s-in-my-homelab-sort-of.md",
+      "api_url": "/api/posts/100gb-s-in-my-homelab-sort-of.json",
+      "categories": [
+        "Homelab",
+        "Networking",
+        "Storage",
+        "VMware",
+        "Mikrotik",
+        "Hosting",
+        "Nutanix",
+        "Personal",
+        "VMware Cloud on AWS",
+        "Runecast"
+      ],
+      "tags": [
         null,
         null
       ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png)\n\n[Runecast](https://jameskilby.co.uk/category/runecast/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Runecast Remediation Script’s\n\nBy[James](https://jameskilby.co.uk) May 16, 2023November 17, 2023 • 📖2 ..."
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/04/2157_hi_res.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/04/2157_hi_res.png)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/) | [Storage](https://jameskilby.co.uk/category/storage/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n..."
+    },
+    {
+      "slug": "portainer-agent-on-synology-dsm",
+      "title": "How to Fix Portainer Agent not Starting On Synology DSM",
+      "description": "How to Fix Portainer Agent Not Starting on Synology DSM",
+      "date": "2025-03-11T12:06:39Z",
+      "modified": "2025-12-27T14:26:37Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2025/03/portainer-agent-on-synology-dsm/",
+      "markdown_url": "/markdown/posts/portainer-agent-on-synology-dsm.md",
+      "api_url": "/api/posts/portainer-agent-on-synology-dsm.json",
+      "categories": [
+        "Docker",
+        "Portainer",
+        "Synology",
+        "Homelab",
+        "Storage",
+        "Networking",
+        "VMware",
+        "Mikrotik",
+        "Artificial Intelligence",
+        "Hosting"
+      ],
+      "tags": [
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526-1024x705.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/03/Docker-Symbol-1-2199360526.png)\n\n[Docker](https://jameskilby.co.uk/category/docker/) | [Portainer](https://jameskilby.co.uk/category/portainer/) | [Synology](https://jameskilby.co.uk/category/synology/)\n\n# How to Fix Portainer Agent not Startin..."
     },
     {
       "slug": "home-network-upgrade",
@@ -51,13 +102,16 @@
       "categories": [
         "Mikrotik",
         "Networking",
-        "Automation",
-        "Homelab",
+        "TrueNAS Scale",
         "VMware",
-        "Storage",
-        "vExpert",
-        "Synology",
-        "TrueNAS Scale"
+        "vSAN",
+        "vSphere",
+        "Runecast",
+        "VCF",
+        "Homelab",
+        "Docker",
+        "Hosting",
+        "Kubernetes"
       ],
       "tags": [
         null,
@@ -66,43 +120,6 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2024/09/s-l1600.jpg",
       "excerpt": "![CRS-504](https://jameskilby.co.uk/wp-content/uploads/2024/09/s-l1600.jpg)\n\n[Mikrotik](https://jameskilby.co.uk/category/mikrotik/) | [Networking](https://jameskilby.co.uk/category/networking/)\n\n# Home Network Upgrade\n\nBy[James](https://jameskilby.co.uk) September 9, 2024October 24, 2025 • 📖2 min r..."
-    },
-    {
-      "slug": "automating-the-deployment-of-my-ai-homelab-and-other-improvements",
-      "title": "Automating the deployment of my Homelab AI  Infrastructure",
-      "description": "How I use Ansible automation to deploy my AI Infrastucture",
-      "date": "2026-01-15T21:19:58Z",
-      "modified": "2026-02-09T11:38:48Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2026/01/automating-the-deployment-of-my-ai-homelab-and-other-improvements/",
-      "markdown_url": "/markdown/posts/automating-the-deployment-of-my-ai-homelab-and-other-improvements.md",
-      "api_url": "/api/posts/automating-the-deployment-of-my-ai-homelab-and-other-improvements.json",
-      "categories": [
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "Homelab",
-        "NVIDIA",
-        "Traefik",
-        "VMware",
-        "Runecast",
-        "Veeam",
-        "vSphere",
-        "Mikrotik",
-        "Networking",
-        "VMware Cloud on AWS",
-        "vSAN"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv.png)\n\n[Ansible](https://jameskilby.co.uk/category/ansible/) | [Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Containers](https://jameskilby.c..."
     },
     {
       "slug": "configuring-a-zen-internet-and-city-fibre-connection-with-a-3rd-party-router",
@@ -117,9 +134,9 @@
       "categories": [
         "Networking",
         "Homelab",
-        "Mikrotik",
         "Storage",
-        "VMware"
+        "VMware",
+        "Mikrotik"
       ],
       "tags": [
         null,
@@ -131,38 +148,34 @@
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/cityfibre-zen.jpg)\n\n[Networking](https://jameskilby.co.uk/category/networking/)\n\n# Configuring a Zen Internet and City Fibre connection with a 3rd party router\n\nBy[James](https://jameskilby.co.uk) November 15, 2023January 18, 2026 • 📖2 min read..."
     },
     {
-      "slug": "self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu",
-      "title": "Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU",
-      "description": "Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU, Self Hosted solutions for AI enthusiasts. Start your AI journey today!",
-      "date": "2024-10-11T15:03:26Z",
-      "modified": "2025-10-01T15:22:12Z",
+      "slug": "can-you-really-squeeze-96tb-in-1u",
+      "title": "Can you really squeeze 96TB in 1U ?",
+      "description": "Learn how to achieve 96TB in a 1U server without redundancy. Uncover the potential of ultra-dense storage solutions today!",
+      "date": "2024-09-12T12:39:16Z",
+      "modified": "2026-01-28T17:47:29Z",
       "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/",
-      "markdown_url": "/markdown/posts/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu.md",
-      "api_url": "/api/posts/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu.json",
+      "url": "https://jameskilby.co.uk/2024/09/can-you-really-squeeze-96tb-in-1u/",
+      "markdown_url": "/markdown/posts/can-you-really-squeeze-96tb-in-1u.md",
+      "api_url": "/api/posts/can-you-really-squeeze-96tb-in-1u.json",
       "categories": [
-        "Artificial Intelligence",
-        "Docker",
         "Homelab",
-        "Hosting",
-        "Kubernetes",
-        "Mikrotik",
-        "Networking",
+        "Storage",
         "TrueNAS Scale",
         "VMware",
         "vSAN",
         "vSphere",
-        "Storage",
-        "vExpert",
-        "Synology"
+        "Mikrotik",
+        "Networking",
+        "Automation",
+        "Runecast",
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,
-        null,
         null
       ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.jpg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-scaled.jpg)\n\n[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Docker](https://jameskilby.co.uk/category/docker/) | [Homelab](https://jameskilby.co.uk/category/homelab/)\n\n# Sel..."
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [TrueNAS Scale](https://jameskilby.co.uk/category/truenas-scale/)\n\n# Can you really s..."
     }
   ]
 }
