@@ -408,7 +408,7 @@ I recently spent 3 weeks in Ireland with my wife Wendy and our son Nate. This in
 
 ## [Static WordPress hosting using Cloudflare](https://jameskilby.co.uk/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/)
 
-By[James](https://jameskilby.co.uk) October 20, 2022December 27, 2025
+By[James](https://jameskilby.co.uk) October 20, 2022February 9, 2026
 
 For a while now I have been running this site directly from Cloudflare utilising their excellent worker’s product. I did this originally as a learning exercise but due to the benefits It brought and the ease of use I decided to stick with it. The benefits are several fold: Crazy Web Performance (Typically full page…
 
@@ -612,7 +612,7 @@ Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone
 
 ## [Whats in my backpack?](https://jameskilby.co.uk/2019/01/whats-in-my-backpack/)
 
-By[James](https://jameskilby.co.uk) January 10, 2019October 1, 2025
+By[James](https://jameskilby.co.uk) January 10, 2019February 9, 2026
 
 I have seen a few posts online recently about the tools and technology people use on a day to day basis. A few components that I have no one seems to have mentioned yet. So I thought it was probably a good idea to share my list. I will probably do a separate list of…
 

@@ -2,7 +2,7 @@
 title: "Whats in my backpack?"
 description: "Check out the must-have tools and tech I carry daily. Find out what keeps me productive and organized in any situation!"
 date: 2019-01-10T21:48:41+00:00
-modified: 2025-10-01T15:22:16+00:00
+modified: 2026-02-09T17:21:22+00:00
 author: James Kilby
 categories:
   - Consulting
@@ -17,9 +17,9 @@ image: https://jameskilby.co.uk/wp-content/uploads/2019/01/Picture1.png
 
 # Whats in my backpack?
 
-By[James](https://jameskilby.co.uk) January 10, 2019October 1, 2025 • 📖1 min read(250 words)
+By[James](https://jameskilby.co.uk) January 10, 2019February 9, 2026 • 📖1 min read(250 words)
 
-📅 **Published:** January 10, 2019• **Updated:** October 01, 2025
+📅 **Published:** January 10, 2019• **Updated:** February 09, 2026
 
 I have seen a few posts online recently about the tools and technology people use on a day to day basis. A few components that I have no one seems to have mentioned yet. So I thought it was probably a good idea to share my list. I will probably do a separate list of the software I use at some point as well.
 
@@ -40,7 +40,7 @@ Below is a list of the things that I tend to carry in my bag. I don’t always h
   * Dymo portable label printer
   * Trusty vendor supplied notepad and pens.
 
-Based on the recommendation of [Chris Lewis](https://twitter.com/thecloudxpert) I have also added some [Whiteboard](https://amzn.to/2CbHTQW) & [Flipchart](https://amzn.to/2CbHTQW) Pens
+Based on the recommendation of [Chris Lewis](https://x.com/thecloudxpert) I have also added some [Whiteboard](https://amzn.to/2CbHTQW) & [Flipchart](https://amzn.to/2CbHTQW) Pens
 
 Oh and a Tie……
 
