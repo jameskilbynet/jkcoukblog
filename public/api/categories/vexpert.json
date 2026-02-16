@@ -3,6 +3,34 @@
   "slug": "vexpert",
   "posts": [
     {
+      "slug": "lab-update-part-1-compute",
+      "title": "Lab Update – Compute",
+      "description": "Homelab, Supermicro",
+      "date": "2022-01-06T11:12:00Z",
+      "modified": "2024-07-10T10:42:27Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2022/01/lab-update-part-1-compute/",
+      "markdown_url": "/markdown/posts/lab-update-part-1-compute.md",
+      "api_url": "/api/posts/lab-update-part-1-compute.json",
+      "categories": [
+        "Homelab",
+        "VMware",
+        "Storage",
+        "TrueNAS Scale",
+        "Ansible",
+        "vExpert",
+        "Runecast",
+        "VMware Cloud on AWS"
+      ],
+      "tags": [
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/04/IMG_4536-scaled-1-768x1024.jpg",
+      "excerpt": "[Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Lab Update – Compute\n\nBy[James](https://jameskilby.co.uk) January 6, 2022July 10, 2024 • 📖1 min read(223 words)\n\n📅 **Published:** January 06, 2022• **Updated:** July 10, 2024\n\nQuite a few c..."
+    },
+    {
       "slug": "truenas-scale-useful-commands",
       "title": "TrueNAS Scale Useful Commands",
       "description": "TrueNAS Scale Useful Commands: Unlock the power of your storage with essential commands. Enhance your TrueNAS experience today!",
@@ -15,13 +43,13 @@
       "categories": [
         "Kubernetes",
         "TrueNAS Scale",
+        "VMware",
+        "vSAN",
+        "vSphere",
         "Homelab",
         "Storage",
         "Docker",
         "Hosting",
-        "VMware",
-        "vSAN",
-        "vSphere",
         "vExpert"
       ],
       "tags": [
@@ -45,14 +73,15 @@
         "Homelab",
         "Storage",
         "vExpert",
-        "VMware",
-        "VMware Cloud on AWS",
-        "Networking",
-        "Personal",
-        "vSphere",
         "Artificial Intelligence",
+        "Networking",
+        "VMware",
         "Docker",
-        "Hosting"
+        "Hosting",
+        "Kubernetes",
+        "TrueNAS Scale",
+        "vSAN",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -67,95 +96,178 @@
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [vExpert](https://jameskilby.co.uk/category/vexpert/)\n\n# Intel Optane NVM..."
     },
     {
-      "slug": "unifi-dhcp-option-43",
-      "title": "Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets",
-      "description": "How to Configure DHCP Option 43 for use by my Unifi Devices in my Network",
-      "date": "2024-06-26T10:50:17Z",
-      "modified": "2026-01-18T21:40:37Z",
+      "slug": "using-content-libraries-in-vmc-to-deploy-software-faster",
+      "title": "Using Content Libraries in VMC to deploy software faster",
+      "description": "How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.",
+      "date": "2026-01-27T22:19:39Z",
+      "modified": "2026-02-01T10:42:21Z",
       "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2024/06/unifi-dhcp-option-43/",
-      "markdown_url": "/markdown/posts/unifi-dhcp-option-43.md",
-      "api_url": "/api/posts/unifi-dhcp-option-43.json",
+      "url": "https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/",
+      "markdown_url": "/markdown/posts/using-content-libraries-in-vmc-to-deploy-software-faster.md",
+      "api_url": "/api/posts/using-content-libraries-in-vmc-to-deploy-software-faster.json",
       "categories": [
-        "Homelab",
-        "Networking",
-        "Nutanix",
-        "Artificial Intelligence",
-        "Docker",
-        "Storage",
-        "Synology",
-        "vExpert"
-      ],
-      "tags": [
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-1024x683.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_.png)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/)\n\n# Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets\n\nBy[Ja..."
-    },
-    {
-      "slug": "runecast-remediation-scripts",
-      "title": "Runecast Remediation Script’s",
-      "description": "Using Runecast to autogenerate PowerCLI to remediate discovered issues",
-      "date": "2023-05-16T10:38:45Z",
-      "modified": "2023-11-17T15:28:57Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/",
-      "markdown_url": "/markdown/posts/runecast-remediation-scripts.md",
-      "api_url": "/api/posts/runecast-remediation-scripts.json",
-      "categories": [
-        "Runecast",
         "VMware",
-        "Homelab",
-        "Storage",
-        "Synology",
-        "vExpert",
-        "VCF",
         "VMware Cloud on AWS",
-        "Docker",
-        "Hosting",
-        "Kubernetes",
-        "Artificial Intelligence"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png)\n\n[Runecast](https://jameskilby.co.uk/category/runecast/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Runecast Remediation Script’s\n\nBy[James](https://jameskilby.co.uk) May 16, 2023November 17, 2023 • 📖2 ..."
-    },
-    {
-      "slug": "advanced-deploy-vmware-vsphere-7-x-3v0-22-21n",
-      "title": "Advanced Deploy VMware vSphere 7.x 3V0-22.21N",
-      "description": "Advanced Deploy VMware vSphere 7.x and elevate your career. Pass the exam and become a VMware Certified Advanced Professional now!",
-      "date": "2023-11-10T11:34:42Z",
-      "modified": "2023-11-17T15:19:48Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/",
-      "markdown_url": "/markdown/posts/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n.md",
-      "api_url": "/api/posts/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n.json",
-      "categories": [
-        "VMware",
-        "Personal",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "Homelab",
+        "NVIDIA",
+        "Traefik",
         "vSphere",
         "TrueNAS Scale",
         "vSAN",
+        "Storage",
+        "vExpert",
+        "AWS",
+        "Veeam",
+        "Nutanix"
+      ],
+      "tags": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# Using Content Libraries in VMC to deploy software faster\n\nBy[James](https:/..."
+    },
+    {
+      "slug": "going-out-with-a-bang",
+      "title": "VMware – Going out with a Bang!",
+      "description": "VMware is keeping to its EPIC^2 values even as the transition to Broadcom ownership draws near",
+      "date": "2023-10-07T12:37:14Z",
+      "modified": "2023-11-17T15:22:18Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2023/10/going-out-with-a-bang/",
+      "markdown_url": "/markdown/posts/going-out-with-a-bang.md",
+      "api_url": "/api/posts/going-out-with-a-bang.json",
+      "categories": [
+        "VMware",
+        "Personal",
+        "VMware Cloud on AWS",
+        "VCF",
         "Homelab",
         "Storage",
         "vExpert",
-        "VMware Cloud on AWS",
-        "Veeam"
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "AWS",
+        "Veeam",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress"
+      ],
+      "tags": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# VMware – Going out with a Bang!\n\nBy[James](https://jameskilby.co.uk) October 7, 2023November 17, 2023 • 📖1 min read..."
+    },
+    {
+      "slug": "use-portainer-in-a-homelab-with-github",
+      "title": "Use Portainer in a Homelab with GitHub",
+      "description": "How to use Portainer and Github to manage and deploy docker containers",
+      "date": "2022-12-09T09:06:37Z",
+      "modified": "2025-10-01T15:22:14Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/",
+      "markdown_url": "/markdown/posts/use-portainer-in-a-homelab-with-github.md",
+      "api_url": "/api/posts/use-portainer-in-a-homelab-with-github.json",
+      "categories": [
+        "Docker",
+        "Homelab",
+        "Hosting",
+        "Kubernetes",
+        "Storage",
+        "vExpert",
+        "Artificial Intelligence",
+        "Ansible",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "VMware",
+        "Wordpress",
+        "Automation"
       ],
       "tags": [
         null,
         null,
         null
       ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/) | [vSphere](https://jameskilby.co.uk/category/vsphere/)\n\n# Advanced Deploy VMware vSphere 7.x 3V0-22.21N\n\nBy[James](https:..."
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png)\n\n[Docker](https://jameskilby.co.uk/category/docker/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Kubernetes](https://jameskilby.co.uk/category/kubernetes/)\n\n# ..."
+    },
+    {
+      "slug": "hashicorp-packer",
+      "title": "Template Deployment with Packer",
+      "description": "Getting started with HashiCorp packer to build VMware templates",
+      "date": "2021-01-21T22:26:10Z",
+      "modified": "2026-02-09T21:39:50Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2021/01/hashicorp-packer/",
+      "markdown_url": "/markdown/posts/hashicorp-packer.md",
+      "api_url": "/api/posts/hashicorp-packer.json",
+      "categories": [
+        "Automation",
+        "Homelab",
+        "VMware",
+        "Networking",
+        "VCF",
+        "Storage",
+        "vExpert",
+        "vSAN"
+      ],
+      "tags": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png)\n\n[Automation](https://jameskilby.co.uk/category/automation/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Template Deployment with Packer\n\nBy[James](https://ja..."
+    },
+    {
+      "slug": "vmc-host-errors",
+      "title": "VMC Host Errors",
+      "description": "Learn how VMware Cloud on AWS handles host errors seamlessly. Ensure your infrastructure remains resilient and efficient. Get started today!",
+      "date": "2020-09-15T10:56:32Z",
+      "modified": "2026-02-09T19:58:48Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2020/09/vmc-host-errors/",
+      "markdown_url": "/markdown/posts/vmc-host-errors.md",
+      "api_url": "/api/posts/vmc-host-errors.json",
+      "categories": [
+        "VMware",
+        "VMware Cloud on AWS",
+        "Homelab",
+        "Storage",
+        "vExpert",
+        "TrueNAS Scale",
+        "vSAN",
+        "vSphere",
+        "Networking",
+        "VCF"
+      ],
+      "tags": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-1024x526.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# VMC Host Errors\n\nBy[James](https://jameskilby.co.uk) September 15, 2020February 9, 2026 • 📖..."
     }
   ]
 }
