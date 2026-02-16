@@ -3,33 +3,125 @@
   "slug": "runecast",
   "posts": [
     {
-      "slug": "using-content-libraries-in-vmc-to-deploy-software-faster",
-      "title": "Using Content Libraries in VMC to deploy software faster",
-      "description": "How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.",
-      "date": "2026-01-27T22:19:39Z",
-      "modified": "2026-02-01T10:42:21Z",
+      "slug": "lab-storage",
+      "title": "Lab Storage",
+      "description": "Lab Storage setups enhance your workflow. Check out my current configuration and optimize your lab storage today!",
+      "date": "2018-01-06T17:39:20Z",
+      "modified": "2024-07-10T08:56:51Z",
       "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/",
-      "markdown_url": "/markdown/posts/using-content-libraries-in-vmc-to-deploy-software-faster.md",
-      "api_url": "/api/posts/using-content-libraries-in-vmc-to-deploy-software-faster.json",
+      "url": "https://jameskilby.co.uk/2018/01/lab-storage/",
+      "markdown_url": "/markdown/posts/lab-storage.md",
+      "api_url": "/api/posts/lab-storage.json",
       "categories": [
+        "Homelab",
+        "Storage",
+        "Synology",
+        "TrueNAS Scale",
         "VMware",
         "VMware Cloud on AWS",
-        "Homelab",
+        "vSAN",
+        "Artificial Intelligence",
+        "Docker",
+        "Hosting",
+        "Kubernetes",
+        "Runecast"
+      ],
+      "tags": [
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
+      "excerpt": "[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [Synology](https://jameskilby.co.uk/category/synology/)\n\n# Lab Storage\n\nBy[James](https://jameskilby.co.uk) January 6, 2018July 10, 2024 • 📖1 min read(196 words)\n\n📅 **Published:** January ..."
+    },
+    {
+      "slug": "zfs-on-vmware",
+      "title": "How to Run ZFS on VMware vSphere: Setup Guide and Best Practices",
+      "description": "ZFS,VMware,Best Practices for seamless integration and performance. Learn how to optimize your setup for maximum efficiency and reliability.",
+      "date": "2024-12-18T17:47:57Z",
+      "modified": "2026-02-09T22:16:17Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2024/12/zfs-on-vmware/",
+      "markdown_url": "/markdown/posts/zfs-on-vmware.md",
+      "api_url": "/api/posts/zfs-on-vmware.json",
+      "categories": [
+        "TrueNAS Scale",
+        "VMware",
+        "vSAN",
         "vSphere",
-        "Nutanix",
-        "Personal",
-        "Runecast",
-        "Automation"
+        "VMware Cloud on AWS",
+        "Homelab",
+        "Networking",
+        "Storage",
+        "Runecast"
       ],
       "tags": [
         null,
         null,
         null,
+        null,
         null
       ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# Using Content Libraries in VMC to deploy software faster\n\nBy[James](https:/..."
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.jpeg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2024/12/ZFS.jpg)\n\n[TrueNAS Scale](https://jameskilby.co.uk/category/truenas-scale/) | [VMware](https://jameskilby.co.uk/category/vmware/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/) | [vSphere](https://jameskilby.co.uk/category/vsph..."
+    },
+    {
+      "slug": "lab-update-part-1-compute",
+      "title": "Lab Update – Compute",
+      "description": "Homelab, Supermicro",
+      "date": "2022-01-06T11:12:00Z",
+      "modified": "2026-02-16T16:15:03Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2022/01/lab-update-part-1-compute/",
+      "markdown_url": "/markdown/posts/lab-update-part-1-compute.md",
+      "api_url": "/api/posts/lab-update-part-1-compute.json",
+      "categories": [
+        "Homelab",
+        "VMware",
+        "VMware Cloud on AWS",
+        "Mikrotik",
+        "Networking",
+        "Runecast",
+        "Storage",
+        "vSphere",
+        "Synology"
+      ],
+      "tags": [
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/04/IMG_4536-scaled-1-768x1024.jpg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/04/IMG_4536-scaled-1.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Lab Update – Compute\n\nBy[James](https://jameskilby.co.uk) January 6, 2022February 16, 2026 • 📖1 min read(223 ..."
+    },
+    {
+      "slug": "lab-update-part-3-network",
+      "title": "Lab Update – Part 3 Network",
+      "description": "Stay updated on our lab's network migration to PFSense. Learn about the benefits of 40Gb/s vMotion and future plans for a 25Gb/s switch.",
+      "date": "2022-01-06T19:25:40Z",
+      "modified": "2025-10-01T15:22:14Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2022/01/lab-update-part-3-network/",
+      "markdown_url": "/markdown/posts/lab-update-part-3-network.md",
+      "api_url": "/api/posts/lab-update-part-3-network.json",
+      "categories": [
+        "Homelab",
+        "Networking",
+        "Runecast",
+        "VMware",
+        "Ansible",
+        "Storage",
+        "Synology",
+        "Docker",
+        "Hosting",
+        "Kubernetes",
+        "vExpert"
+      ],
+      "tags": [
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
+      "excerpt": "[Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/)\n\n# Lab Update – Part 3 Network\n\nBy[James](https://jameskilby.co.uk) January 6, 2022October 1, 2025 • 📖1 min read(113 words)\n\n📅 **Published:** January 06, 2022• **Updated:** October 01,..."
     },
     {
       "slug": "runecast-remediation-scripts",
@@ -44,14 +136,16 @@
       "categories": [
         "Runecast",
         "VMware",
+        "Docker",
         "Homelab",
         "Hosting",
+        "Kubernetes",
+        "Automation",
         "Storage",
-        "vExpert",
         "Synology",
+        "Personal",
         "TrueNAS Scale",
-        "Nutanix",
-        "VCF"
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,
@@ -63,70 +157,64 @@
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png)\n\n[Runecast](https://jameskilby.co.uk/category/runecast/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Runecast Remediation Script’s\n\nBy[James](https://jameskilby.co.uk) May 16, 2023November 17, 2023 • 📖2 ..."
     },
     {
-      "slug": "advanced-deploy-vmware-vsphere-7-x-3v0-22-21n",
-      "title": "Advanced Deploy VMware vSphere 7.x 3V0-22.21N",
-      "description": "Advanced Deploy VMware vSphere 7.x and elevate your career. Pass the exam and become a VMware Certified Advanced Professional now!",
-      "date": "2023-11-10T11:34:42Z",
-      "modified": "2023-11-17T15:19:48Z",
+      "slug": "going-out-with-a-bang",
+      "title": "VMware – Going out with a Bang!",
+      "description": "VMware is keeping to its EPIC^2 values even as the transition to Broadcom ownership draws near",
+      "date": "2023-10-07T12:37:14Z",
+      "modified": "2023-11-17T15:22:18Z",
       "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/",
-      "markdown_url": "/markdown/posts/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n.md",
-      "api_url": "/api/posts/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n.json",
+      "url": "https://jameskilby.co.uk/2023/10/going-out-with-a-bang/",
+      "markdown_url": "/markdown/posts/going-out-with-a-bang.md",
+      "api_url": "/api/posts/going-out-with-a-bang.json",
       "categories": [
         "VMware",
         "Personal",
-        "vSphere",
-        "AWS",
-        "Runecast",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
+        "vSAN",
+        "Automation",
         "Homelab",
-        "NVIDIA",
-        "Traefik",
         "VMware Cloud on AWS",
-        "Automation"
+        "Runecast",
+        "Consulting"
       ],
       "tags": [
         null,
         null,
+        null,
         null
       ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/) | [vSphere](https://jameskilby.co.uk/category/vsphere/)\n\n# Advanced Deploy VMware vSphere 7.x 3V0-22.21N\n\nBy[James](https:..."
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# VMware – Going out with a Bang!\n\nBy[James](https://jameskilby.co.uk) October 7, 2023November 17, 2023 • 📖1 min read..."
     },
     {
-      "slug": "vmc-host-deepdive",
-      "title": "An in-depth look at VMware Cloud on AWS hosts",
-      "description": "Dive into the detailed features of VMware Cloud on AWS hosts. Compare and analyze all available data for informed decisions.",
-      "date": "2025-08-14T12:32:01Z",
-      "modified": "2026-01-18T21:34:33Z",
+      "slug": "hashicorp-packer",
+      "title": "Template Deployment with Packer",
+      "description": "Getting started with HashiCorp packer to build VMware templates",
+      "date": "2021-01-21T22:26:10Z",
+      "modified": "2026-02-09T21:39:50Z",
       "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2025/08/vmc-host-deepdive/",
-      "markdown_url": "/markdown/posts/vmc-host-deepdive.md",
-      "api_url": "/api/posts/vmc-host-deepdive.json",
+      "url": "https://jameskilby.co.uk/2021/01/hashicorp-packer/",
+      "markdown_url": "/markdown/posts/hashicorp-packer.md",
+      "api_url": "/api/posts/hashicorp-packer.json",
       "categories": [
+        "Automation",
+        "Homelab",
         "VMware",
         "VMware Cloud on AWS",
+        "Storage",
+        "vExpert",
         "Runecast",
-        "Personal",
-        "vSphere",
-        "Ansible",
         "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "Homelab",
-        "NVIDIA",
-        "Traefik",
-        "Networking",
-        "Storage"
+        "Docker",
+        "Hosting"
       ],
       "tags": [
+        null,
+        null,
+        null,
         null
       ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# An in-depth look at VMware Cloud on AWS hosts\n\nBy[James](https://jamesk..."
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png)\n\n[Automation](https://jameskilby.co.uk/category/automation/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Template Deployment with Packer\n\nBy[James](https://ja..."
     }
   ]
 }
