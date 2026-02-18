@@ -3,6 +3,36 @@
   "slug": "vexpert",
   "posts": [
     {
+      "slug": "100gb-s-in-my-homelab-sort-of",
+      "title": "100Gb/s in my Homelab",
+      "description": "100Gb/s in my Homelab: Transform your networking setup with MikroTik's CRS504-4XQ-IN. Learn how to maximize your homelab's potential now!",
+      "date": "2022-12-19T10:09:58Z",
+      "modified": "2023-11-11T20:57:34Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2022/12/100gb-s-in-my-homelab-sort-of/",
+      "markdown_url": "/markdown/posts/100gb-s-in-my-homelab-sort-of.md",
+      "api_url": "/api/posts/100gb-s-in-my-homelab-sort-of.json",
+      "categories": [
+        "Homelab",
+        "Networking",
+        "Storage",
+        "VMware",
+        "Veeam",
+        "Docker",
+        "Hosting",
+        "Kubernetes",
+        "VMware Cloud on AWS",
+        "vSAN",
+        "vExpert"
+      ],
+      "tags": [
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/04/2157_hi_res.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/04/2157_hi_res.png)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/) | [Storage](https://jameskilby.co.uk/category/storage/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n..."
+    },
+    {
       "slug": "truenas-scale-useful-commands",
       "title": "TrueNAS Scale Useful Commands",
       "description": "TrueNAS Scale Useful Commands: Unlock the power of your storage with essential commands. Enhance your TrueNAS experience today!",
@@ -45,12 +75,12 @@
         "Homelab",
         "Storage",
         "vExpert",
-        "Mikrotik",
-        "Networking",
         "VMware",
-        "Nutanix",
-        "VCF",
-        "Personal"
+        "Synology",
+        "Networking",
+        "TrueNAS Scale",
+        "Hosting",
+        "Runecast"
       ],
       "tags": [
         null,
@@ -65,162 +95,92 @@
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [vExpert](https://jameskilby.co.uk/category/vexpert/)\n\n# Intel Optane NVM..."
     },
     {
-      "slug": "lab-update-part-3-network",
-      "title": "Lab Update – Part 3 Network",
-      "description": "Stay updated on our lab's network migration to PFSense. Learn about the benefits of 40Gb/s vMotion and future plans for a 25Gb/s switch.",
-      "date": "2022-01-06T19:25:40Z",
-      "modified": "2025-10-01T15:22:14Z",
+      "slug": "runecast-remediation-scripts",
+      "title": "Runecast Remediation Script’s",
+      "description": "Using Runecast to autogenerate PowerCLI to remediate discovered issues",
+      "date": "2023-05-16T10:38:45Z",
+      "modified": "2023-11-17T15:28:57Z",
       "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2022/01/lab-update-part-3-network/",
-      "markdown_url": "/markdown/posts/lab-update-part-3-network.md",
-      "api_url": "/api/posts/lab-update-part-3-network.json",
+      "url": "https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/",
+      "markdown_url": "/markdown/posts/runecast-remediation-scripts.md",
+      "api_url": "/api/posts/runecast-remediation-scripts.json",
       "categories": [
-        "Homelab",
-        "Networking",
         "Runecast",
         "VMware",
-        "Ansible",
+        "Mikrotik",
+        "Networking",
+        "Homelab",
         "Storage",
-        "Synology",
-        "Docker",
+        "AWS",
+        "Veeam",
         "Hosting",
-        "Kubernetes",
+        "Personal",
         "vExpert"
       ],
       "tags": [
         null,
+        null,
+        null,
         null
       ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
-      "excerpt": "[Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/)\n\n# Lab Update – Part 3 Network\n\nBy[James](https://jameskilby.co.uk) January 6, 2022October 1, 2025 • 📖1 min read(113 words)\n\n📅 **Published:** January 06, 2022• **Updated:** October 01,..."
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png)\n\n[Runecast](https://jameskilby.co.uk/category/runecast/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Runecast Remediation Script’s\n\nBy[James](https://jameskilby.co.uk) May 16, 2023November 17, 2023 • 📖2 ..."
     },
     {
-      "slug": "automating-the-deployment-of-my-ai-homelab-and-other-improvements",
-      "title": "Automating the deployment of my Homelab AI  Infrastructure",
-      "description": "How I use Ansible automation to deploy my AI Infrastucture",
-      "date": "2026-02-09T11:54:54Z",
-      "modified": "2026-02-09T11:54:55Z",
+      "slug": "advanced-deploy-vmware-vsphere-7-x-3v0-22-21n",
+      "title": "Advanced Deploy VMware vSphere 7.x 3V0-22.21N",
+      "description": "Advanced Deploy VMware vSphere 7.x and elevate your career. Pass the exam and become a VMware Certified Advanced Professional now!",
+      "date": "2023-11-10T11:34:42Z",
+      "modified": "2023-11-17T15:19:48Z",
       "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/",
-      "markdown_url": "/markdown/posts/automating-the-deployment-of-my-ai-homelab-and-other-improvements.md",
-      "api_url": "/api/posts/automating-the-deployment-of-my-ai-homelab-and-other-improvements.json",
+      "url": "https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/",
+      "markdown_url": "/markdown/posts/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n.md",
+      "api_url": "/api/posts/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n.json",
       "categories": [
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "Homelab",
-        "NVIDIA",
-        "Traefik",
         "VMware",
-        "Networking",
-        "Mikrotik",
-        "Storage",
-        "vExpert",
         "Personal",
-        "VMware Cloud on AWS"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv.png)\n\n[Ansible](https://jameskilby.co.uk/category/ansible/) | [Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Containers](https://jameskilby.c..."
-    },
-    {
-      "slug": "unifi-dhcp-option-43",
-      "title": "Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets",
-      "description": "How to Configure DHCP Option 43 for use by my Unifi Devices in my Network",
-      "date": "2024-06-26T10:50:17Z",
-      "modified": "2026-01-18T21:40:37Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2024/06/unifi-dhcp-option-43/",
-      "markdown_url": "/markdown/posts/unifi-dhcp-option-43.md",
-      "api_url": "/api/posts/unifi-dhcp-option-43.json",
-      "categories": [
+        "vSphere",
         "Homelab",
         "Networking",
         "Storage",
         "vExpert",
+        "Consulting"
+      ],
+      "tags": [
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/) | [vSphere](https://jameskilby.co.uk/category/vsphere/)\n\n# Advanced Deploy VMware vSphere 7.x 3V0-22.21N\n\nBy[James](https:..."
+    },
+    {
+      "slug": "can-you-really-squeeze-96tb-in-1u",
+      "title": "Can you really squeeze 96TB in 1U ?",
+      "description": "Learn how to achieve 96TB in a 1U server without redundancy. Uncover the potential of ultra-dense storage solutions today!",
+      "date": "2024-09-12T12:39:16Z",
+      "modified": "2026-01-28T17:47:29Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2024/09/can-you-really-squeeze-96tb-in-1u/",
+      "markdown_url": "/markdown/posts/can-you-really-squeeze-96tb-in-1u.md",
+      "api_url": "/api/posts/can-you-really-squeeze-96tb-in-1u.json",
+      "categories": [
+        "Homelab",
+        "Storage",
+        "TrueNAS Scale",
+        "Artificial Intelligence",
+        "vExpert",
+        "VCF",
+        "VMware",
         "Ansible",
-        "VMware",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "Nutanix",
-        "Veeam"
+        "Docker"
       ],
       "tags": [
         null,
-        null,
         null
       ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-1024x683.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_.png)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/)\n\n# Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets\n\nBy[Ja..."
-    },
-    {
-      "slug": "hashicorp-packer",
-      "title": "Template Deployment with Packer",
-      "description": "Getting started with HashiCorp packer to build VMware templates",
-      "date": "2021-01-21T22:26:10Z",
-      "modified": "2026-02-09T21:39:50Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2021/01/hashicorp-packer/",
-      "markdown_url": "/markdown/posts/hashicorp-packer.md",
-      "api_url": "/api/posts/hashicorp-packer.json",
-      "categories": [
-        "Automation",
-        "Homelab",
-        "VMware",
-        "VMware Cloud on AWS",
-        "Storage",
-        "vExpert",
-        "Runecast",
-        "Artificial Intelligence",
-        "Docker",
-        "Hosting"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png)\n\n[Automation](https://jameskilby.co.uk/category/automation/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Template Deployment with Packer\n\nBy[James](https://ja..."
-    },
-    {
-      "slug": "warp-the-intelligent-terminal",
-      "title": "Warp – The intelligent terminal",
-      "description": "How Warp is helping me run my homelab. Unlock the potential of your terminal and streamline your Linux tools with Warp's intelligent features.",
-      "date": "2025-04-11T15:46:23Z",
-      "modified": "2025-10-03T09:15:18Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2025/04/warp-the-intelligent-terminal/",
-      "markdown_url": "/markdown/posts/warp-the-intelligent-terminal.md",
-      "api_url": "/api/posts/warp-the-intelligent-terminal.json",
-      "categories": [
-        "Artificial Intelligence",
-        "Homelab",
-        "VMware",
-        "Networking",
-        "Storage",
-        "Nutanix",
-        "vExpert",
-        "Automation"
-      ],
-      "tags": [
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1024x240.png",
-      "excerpt": "![Wa](https://jameskilby.co.uk/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21.png)\n\n[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Homelab](https://jameskilby.co.uk/category/homelab/)\n\n# Warp – The intelligent terminal\n\nBy[James](h..."
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2024/09/QuantaGrid-SD1Q-1ULH-Front-Three-Quarter.png)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [TrueNAS Scale](https://jameskilby.co.uk/category/truenas-scale/)\n\n# Can you really s..."
     }
   ]
 }
