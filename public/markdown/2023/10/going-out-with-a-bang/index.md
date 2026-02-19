@@ -7,13 +7,13 @@ author: James Kilby
 categories:
   - VMware
   - Personal
-  - vSAN
-  - Runecast
-  - Automation
+  - VCF
   - Homelab
+  - Nutanix
+  - Automation
   - AWS
   - Veeam
-  - VCF
+  - VMware Cloud on AWS
 tags:
   - #Charity
   - #EPIC
@@ -51,25 +51,35 @@ VMware also gave all employees $1300 dollars for donation through their foundati
 
 ## Similar Posts
 
-  * [ ![vSAN Cluster Shutdown – Orchestration](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg) ](https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/)
+  * [ ![MultiHost Holodeck VCF](https://jameskilby.co.uk/wp-content/uploads/2023/12/Holodeck-Overview.png) ](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
 
-[VMware](https://jameskilby.co.uk/category/vmware/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/)
+[VMware](https://jameskilby.co.uk/category/vmware/) | [VCF](https://jameskilby.co.uk/category/vmware/vcf/)
 
-### [vSAN Cluster Shutdown – Orchestration](https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/)
+### [MultiHost Holodeck VCF](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
 
-By[James](https://jameskilby.co.uk) December 6, 2025February 1, 2026
+By[James](https://jameskilby.co.uk) January 17, 2024January 18, 2026
 
-How to safety shutdown a vSAN Environment
+How to Deploy VMware Holodeck on multiple hosts
 
-  * [ ![Runecast Remediation Script’s](https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png) ](https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/)
+  * [ ![New Nodes](https://jameskilby.co.uk/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg) ](https://jameskilby.co.uk/2024/07/new-nodes/)
 
-[Runecast](https://jameskilby.co.uk/category/runecast/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+[Homelab](https://jameskilby.co.uk/category/homelab/) | [Nutanix](https://jameskilby.co.uk/category/nutanix/) | [VMware](https://jameskilby.co.uk/category/vmware/)
 
-### [Runecast Remediation Script’s](https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/)
+### [New Nodes](https://jameskilby.co.uk/2024/07/new-nodes/)
 
-By[James](https://jameskilby.co.uk) May 16, 2023November 17, 2023
+By[James](https://jameskilby.co.uk) July 2, 2024January 18, 2026
 
-I am a huge fan of the Runecast product and luckily as a vExpert they give out NFR licences for my lab. One of the really cool features I wanted to mention today was the remediation script function. I have been playing with storage a lot in my lab recently as part of a wider…
+I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice Bill of Materials Rescue IPMI…
+
+  * [ ![Nutanix NCP](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-768x196.jpg) ](https://jameskilby.co.uk/2020/07/nutanix-ncp/)
+
+[Nutanix](https://jameskilby.co.uk/category/nutanix/) | [Personal](https://jameskilby.co.uk/category/personal/)
+
+### [Nutanix NCP](https://jameskilby.co.uk/2020/07/nutanix-ncp/)
+
+By[James](https://jameskilby.co.uk) July 2, 2020July 10, 2024
+
+I saw a tweet a couple of weeks ago mentioning that Nutanix were offering a free go at the Nutanix Certified Professional exam. They are also offering free on-demand training to go with it. In my current role, I haven’t used Nutanix however I have good experience using it as the storage platform with vSphere…
 
   * [ ![Template Deployment with Packer](https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png) ](https://jameskilby.co.uk/2021/01/hashicorp-packer/)
 
@@ -89,22 +99,12 @@ By[James](https://jameskilby.co.uk) December 17, 2019October 1, 2025
 
 As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams…
 
-  * [ ![MultiHost Holodeck VCF](https://jameskilby.co.uk/wp-content/uploads/2023/12/Holodeck-Overview.png) ](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
+  * [ ![VMC Host Errors](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-768x395.png) ](https://jameskilby.co.uk/2020/09/vmc-host-errors/)
 
-[VMware](https://jameskilby.co.uk/category/vmware/) | [VCF](https://jameskilby.co.uk/category/vmware/vcf/)
+[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
 
-### [MultiHost Holodeck VCF](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
+### [VMC Host Errors](https://jameskilby.co.uk/2020/09/vmc-host-errors/)
 
-By[James](https://jameskilby.co.uk) January 17, 2024January 18, 2026
+By[James](https://jameskilby.co.uk) September 15, 2020February 9, 2026
 
-How to Deploy VMware Holodeck on multiple hosts
-
-  * [ ![VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png) ](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
-
-[Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)
-
-### [VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
-
-By[James](https://jameskilby.co.uk) September 13, 2020November 11, 2023
-
-I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This…
+Lean how host failures are handled within VMC
