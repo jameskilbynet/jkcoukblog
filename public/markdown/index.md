@@ -523,9 +523,9 @@ I was initially going to add in the contents of this post to one that I have bee
 
 ## [VMC Host Errors](https://jameskilby.co.uk/2020/09/vmc-host-errors/)
 
-By[James](https://jameskilby.co.uk) September 15, 2020February 9, 2026
+By[James](https://jameskilby.co.uk) September 15, 2020March 1, 2026
 
-Lean how host failures are handled within VMC
+Learn how host failures are handled within VMC
 
   * [ ![VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png) ](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
 
