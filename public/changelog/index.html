@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">961</div>
+                <div class="metric-value">967</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-03-02</div>
-                <div class="metric-label">00:06:50</div>
+                <div class="metric-label">01:03:26</div>
             </div>
         </div>
         
@@ -338,6 +338,35 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-02 <span class="change-hash">9c746ec</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-02 <span class="change-hash">9b89f1b</span><span class="category-badge badge-docs">Docs</span></div>
+                <div class="change-title">Polish CI spellcheck, cache TTL, and image tweaks</div>
+                <div class="change-details">CI: capture the spell checker exit code into SPELL_EXIT, derive a human-friendly SPELL_STATUS, and append that status to the GitHub step summary (retain non-blocking behavior). Worker: make Cache-Control dynamic by using getTTL(path) instead of a fixed max-age=300. HTML optimizer: refine optimize_images to treat the first image inside <main> or <article> as the LCP candidate (fetchpriority="high"), set loading="lazy" for other images, add decoding="async" for all images, update the docstring, and remove the prior index-based heuristic.</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-02 <span class="change-hash">7036d6f</span><span class="category-badge badge-fix">Fix</span></div>
+                <div class="change-title">Merge origin/main: resolve public/ conflicts (accept remote generated output)</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-02 <span class="change-hash">1f95c82</span><span class="category-badge badge-feature">Feature</span></div>
+                <div class="change-title">Add Gzip fallback, OG image checks, CSS parser</div>
+                <div class="change-details">Add Gzip fallback to the static site compression pipeline and improve HTML/CSS validations and parsing.</div>
+            </div>
+            <br>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-01 <span class="change-hash">d9f62ad</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Make og:image, og:url, og:image:secure_url absolute URLs</div>
+                <div class="change-details">All 164 existing article/page HTML files had relative paths (e.g.</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-03-01 <span class="change-hash">fe2e435</span><span class="category-badge badge-other">Other</span></div>
@@ -477,29 +506,10 @@
                 <div class="change-title">Update Stats</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-02-16 <span class="change-hash">b495fec</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">Add comprehensive post-optimization validation</div>
-                <div class="change-details">Adds validate_deployment.py script with extensive validation:</div>
-            </div>
-            <br>
-
-            <div class="change-entry">
-                <div class="change-date">2026-02-15 <span class="change-hash">defca46</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Move Brotli compression to after all content modifications</div>
-                <div class="change-details">Brotli was running before CSS optimization, SEO fixes, and minification,</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-02-15 <span class="change-hash">ee44162</span><span class="category-badge badge-improvement">Improvement</span></div>
-                <div class="change-title">Optimize GitHub Actions workflow ordering</div>
-                <div class="change-details">- Consolidate system package installation (single apt-get update)</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-03-02 00:24:43 UTC<br>
+            Page generated: 2026-03-02 01:08:04 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>

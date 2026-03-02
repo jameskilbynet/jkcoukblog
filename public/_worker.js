@@ -88,7 +88,7 @@ async function handleKVCache(request, env, path) {
       return new Response(cached.value, {
         headers: {
           'Content-Type': 'text/html; charset=utf-8',
-          'Cache-Control': 'public, max-age=300',
+          'Cache-Control': `public, max-age=${getTTL(path)}`,
           'X-Cache-Status': 'HIT',
           'X-Cache-Views': views.toString(),
           'X-Worker': 'advanced-worker-kv',
@@ -231,7 +231,7 @@ function shouldCache(path) {
       path === '/diagnostic' ||
       path === '/trace' ||
       path === '/test' ||
-      path.match(/\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|json|xml|txt|webp|avif|br)$/)) {
+      path.match(/\.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|json|xml|txt|webp|avif|br|gz)$/)) {
     return false;
   }
   
