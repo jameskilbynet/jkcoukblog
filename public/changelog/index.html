@@ -280,13 +280,13 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">974</div>
+                <div class="metric-value">983</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
             <div class="metric-card">
                 <h3>Repository Age</h3>
-                <div class="metric-value">150</div>
+                <div class="metric-value">151</div>
                 <div class="metric-label">Days active</div>
             </div>
             
@@ -298,8 +298,8 @@
             
             <div class="metric-card">
                 <h3>Last Deployment</h3>
-                <div class="metric-value">2026-03-02</div>
-                <div class="metric-label">15:19:12</div>
+                <div class="metric-value">2026-03-03</div>
+                <div class="metric-label">08:19:40</div>
             </div>
         </div>
         
@@ -338,6 +338,49 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-03 <span class="change-hash">2b24cfd</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Update deploy-static-site.yml</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-03 <span class="change-hash">de6c8c7</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Update deploy-static-site.yml</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-03 <span class="change-hash">079180d</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Refactor worker, CI & asset scripts</div>
+                <div class="change-details">Several improvements across CI, Cloudflare Worker template, and asset tooling:</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-03 <span class="change-hash">bd8d654</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Update Incremental Builder</div>
+            </div>
+            <br>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-02 <span class="change-hash">55bd335</span><span class="category-badge badge-docs">Docs</span></div>
+                <div class="change-title">Remove unneded docs files</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-02 <span class="change-hash">26ed8d7</span><span class="category-badge badge-docs">Docs</span></div>
+                <div class="change-title">Docs Update</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-02 <span class="change-hash">7482d23</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-02 <span class="change-hash">8969b28</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Enhance SEO checks and CSS preload logic</div>
+                <div class="change-details">Add JSON-LD validation in content_validator: warn on missing structured data for article/main pages, detect empty or invalid JSON-LD blocks, ensure @context references schema.org, and require headline/datePublished/author for Article-like types. Refine CSS preload heuristic in enhance_html_performance: only preload stylesheets whose filename matches critical/main/styles (.min optional) to avoid preloading unrelated styles. Improve meta description filler in fix_seo_issues: scope first-paragraph extraction to article/main or common content containers to avoid grabbing nav/footer/sidebar text.</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-03-02 <span class="change-hash">4a8a4a0</span><span class="category-badge badge-other">Other</span></div>
@@ -462,43 +505,10 @@
                 <div class="change-details">The stats page iframe was blocked because CSP only allowed plausible.io</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-02-16 <span class="change-hash">f9787d4</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'claude/bold-diffie'</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-02-16 <span class="change-hash">6e82b36</span><span class="category-badge badge-fix">Fix</span></div>
-                <div class="change-title">Fix WordPress validator for Python 3.10 and simplify API checks</div>
-                <div class="change-details">Fixes:</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-02-16 <span class="change-hash">5196933</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'claude/bold-diffie'</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-02-16 <span class="change-hash">df7fd31</span><span class="category-badge badge-fix">Fix</span></div>
-                <div class="change-title">Fix WordPress source validator API check and deprecation warning</div>
-                <div class="change-details">Fixes:</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-02-16 <span class="change-hash">0d0ba78</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'claude/bold-diffie'</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-02-16 <span class="change-hash">21937ac</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">Add WordPress source health validation script</div>
-                <div class="change-details">Implements comprehensive WordPress source validation BEFORE static site</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-03-02 15:23:46 UTC<br>
+            Page generated: 2026-03-03 08:23:36 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
