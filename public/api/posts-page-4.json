@@ -13,17 +13,17 @@
       "categories": [
         "Devops",
         "Personal",
+        "VMware",
         "Ansible",
         "Artificial Intelligence",
         "Containers",
         "Homelab",
         "NVIDIA",
         "Traefik",
-        "VMware",
-        "Automation",
-        "Hosting",
         "vSphere",
+        "AWS",
         "Cloudflare",
+        "Hosting",
         "Wordpress"
       ],
       "tags": [
@@ -47,15 +47,9 @@
       "categories": [
         "VMware",
         "VCF",
-        "TrueNAS Scale",
-        "vSAN",
-        "vSphere",
         "VMware Cloud on AWS",
         "Personal",
-        "Runecast",
-        "Homelab",
-        "Networking",
-        "Storage"
+        "vSphere"
       ],
       "tags": [
         null,
@@ -80,13 +74,14 @@
         "VMware",
         "AWS",
         "Veeam",
-        "VMware Cloud on AWS",
-        "vSAN",
-        "Hosting",
         "VCF",
         "Homelab",
+        "Personal",
         "vSphere",
-        "Personal"
+        "Storage",
+        "vExpert",
+        "VMware Cloud on AWS",
+        "vSAN"
       ],
       "tags": [
         null,
@@ -125,14 +120,17 @@
       "categories": [
         "Ansible",
         "Homelab",
-        "Nutanix",
-        "Networking",
-        "Storage",
-        "VMware",
-        "Synology",
-        "Artificial Intelligence",
         "Docker",
-        "Hosting"
+        "Hosting",
+        "Kubernetes",
+        "Networking",
+        "VMware",
+        "vSphere",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik"
       ],
       "tags": [
         null,
@@ -157,12 +155,9 @@
         "Homelab",
         "Veeam",
         "VMware",
-        "VCF",
-        "vSphere",
-        "Ansible",
-        "Nutanix",
-        "TrueNAS Scale",
-        "vSAN"
+        "Storage",
+        "Personal",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -175,7 +170,7 @@
     {
       "slug": "lab-update-part-3-network",
       "title": "Lab Update – Part 3 Network",
-      "description": "Homelab networking update: using DACs for vMotion and storage, achieving 40 Gb/s vMotion speeds on onboard NICs, and planning the upgrade to a 25 Gb/s switch.",
+      "description": "Homelab networking upgrade: replacing WatchGuard with pfSense, using DACs for 40Gb/s vMotion and storage traffic, and planning the switch to 25Gb/s.",
       "date": "2022-01-06T19:25:40Z",
       "modified": "2026-03-10T07:57:22Z",
       "author": "James Kilby",
@@ -185,11 +180,12 @@
       "categories": [
         "Homelab",
         "Networking",
-        "VMware",
-        "vSphere",
+        "Artificial Intelligence",
+        "Docker",
         "Storage",
-        "vExpert",
-        "Hosting"
+        "Hosting",
+        "Synology",
+        "VMware"
       ],
       "tags": [
         null,
@@ -211,13 +207,19 @@
       "categories": [
         "Homelab",
         "Storage",
-        "Kubernetes",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "VMware",
+        "Synology",
+        "vExpert",
         "TrueNAS Scale",
         "Docker",
         "Hosting",
-        "Nutanix",
-        "Synology",
-        "Networking"
+        "Kubernetes"
       ],
       "tags": [
         null,
@@ -241,11 +243,13 @@
       "categories": [
         "Homelab",
         "VMware",
-        "Mikrotik",
+        "Docker",
+        "Hosting",
+        "Kubernetes",
         "Networking",
-        "Storage",
-        "Synology",
-        "vExpert"
+        "vSAN",
+        "VMware Cloud on AWS",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -258,7 +262,7 @@
     {
       "slug": "lab-storage",
       "title": "Lab Storage",
-      "description": "Lab Storage setups enhance your workflow. Check out my current configuration and optimize your lab storage today!",
+      "description": "My initial homelab storage build: HP Gen8 Microserver running Xpenology with dual 3TB WD Red drives, Intel SSDs, and NFS for my VMware lab.",
       "date": "2018-01-06T17:39:20Z",
       "modified": "2024-07-10T08:56:51Z",
       "author": "James Kilby",
@@ -271,12 +275,11 @@
         "Synology",
         "Artificial Intelligence",
         "Docker",
-        "Hosting",
         "TrueNAS Scale",
-        "VCF",
         "VMware",
-        "vExpert",
-        "Veeam"
+        "vSAN",
+        "vSphere",
+        "Networking"
       ],
       "tags": [
         null,

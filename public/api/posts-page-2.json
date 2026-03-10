@@ -13,12 +13,15 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
         "Homelab",
-        "Veeam",
-        "Runecast",
-        "vSphere",
+        "NVIDIA",
+        "Traefik",
         "Personal",
-        "Automation"
+        "vSphere"
       ],
       "tags": [
         null,
@@ -44,11 +47,13 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Runecast",
-        "Personal",
         "Homelab",
-        "Veeam",
-        "vSAN"
+        "Networking",
+        "Storage",
+        "vSAN",
+        "Personal",
+        "vSphere",
+        "VCF"
       ],
       "tags": [
         null
@@ -69,16 +74,17 @@
       "categories": [
         "Homelab",
         "VMware",
-        "Personal",
-        "vSphere",
-        "VMware Cloud on AWS",
-        "vSAN",
-        "Ansible",
         "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik"
+        "Docker",
+        "Hosting",
+        "Personal",
+        "VMware Cloud on AWS",
+        "Automation",
+        "TrueNAS Scale",
+        "vSAN",
+        "vSphere",
+        "Storage",
+        "Synology"
       ],
       "tags": [
         null,
@@ -100,9 +106,9 @@
       "api_url": "/api/posts/veeamon2020.json",
       "categories": [
         "Veeam",
+        "Homelab",
         "VMware",
-        "AWS",
-        "Homelab"
+        "AWS"
       ],
       "tags": [
         null,
@@ -125,15 +131,12 @@
         "VMware",
         "VMware Cloud on AWS",
         "Homelab",
-        "Nutanix",
         "Storage",
         "vExpert",
-        "AWS",
-        "Veeam",
-        "Runecast",
+        "Personal",
+        "vSphere",
         "TrueNAS Scale",
-        "vSAN",
-        "vSphere"
+        "vSAN"
       ],
       "tags": [
         null,
@@ -147,7 +150,7 @@
     {
       "slug": "use-portainer-in-a-homelab-with-github",
       "title": "Use Portainer in a Homelab with GitHub",
-      "description": "How to use Portainer with GitHub to manage and deploy Docker containers in your homelab — covers stack provisioning, Synology setup, and version-controlled deployments.",
+      "description": "How to use Portainer with GitHub to manage Docker containers in your homelab — covers stack provisioning, Synology setup, and version-controlled deployments.",
       "date": "2022-12-09T09:06:37Z",
       "modified": "2026-03-10T07:57:23Z",
       "author": "James Kilby",
@@ -159,14 +162,13 @@
         "Homelab",
         "Hosting",
         "Kubernetes",
-        "Automation",
+        "Artificial Intelligence",
+        "Veeam",
         "VMware",
+        "Networking",
         "Storage",
         "TrueNAS Scale",
-        "vSAN",
-        "vSphere",
-        "Artificial Intelligence",
-        "Veeam"
+        "VCF"
       ],
       "tags": [
         null,
@@ -189,12 +191,12 @@
       "categories": [
         "Homelab",
         "Networking",
-        "Artificial Intelligence",
-        "Docker",
         "Storage",
-        "VMware",
-        "Automation",
-        "Ansible"
+        "TrueNAS Scale",
+        "vExpert",
+        "Hosting",
+        "Synology",
+        "Artificial Intelligence"
       ],
       "tags": [
         null,
@@ -207,7 +209,7 @@
     {
       "slug": "ubuntu-disk-expansion-steps",
       "title": "Ubuntu Disk Expansion Steps",
-      "description": "How to expand disks from the command line in Ubuntu.",
+      "description": "Step-by-step guide to expanding disk space in Ubuntu using growpart, pvresize, and lvextend for LVM volumes — commands I always forget and keep here for reference.",
       "date": "2025-12-15T20:56:40Z",
       "modified": "2026-01-30T14:36:06Z",
       "author": "James Kilby",
@@ -237,14 +239,14 @@
       "categories": [
         "Kubernetes",
         "TrueNAS Scale",
-        "VMware",
-        "vSAN",
-        "vSphere",
         "Homelab",
         "Storage",
+        "vExpert",
         "Docker",
         "Hosting",
-        "vExpert"
+        "VMware",
+        "vSAN",
+        "vSphere"
       ],
       "tags": [
         null,

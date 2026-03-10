@@ -3,7 +3,7 @@
     {
       "slug": "aws-for-beginners1",
       "title": "AWS for Beginners",
-      "description": "A beginner's guide to getting started with AWS. Covers root account security, IAM user setup, two-factor authentication, and billing alerts to avoid surprise bills.",
+      "description": "A beginner's guide to AWS: root account security, IAM user setup, two-factor authentication, and billing alerts to avoid surprise bills.",
       "date": "2018-03-30T23:13:21Z",
       "modified": "2026-03-10T07:57:20Z",
       "author": "James Kilby",
@@ -12,11 +12,11 @@
       "api_url": "/api/posts/aws-for-beginners1.json",
       "categories": [
         "AWS",
-        "Personal",
         "VMware",
         "Veeam",
-        "Hosting",
-        "VMware Cloud on AWS"
+        "VMware Cloud on AWS",
+        "Personal",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -44,14 +44,12 @@
         "NVIDIA",
         "Traefik",
         "VMware",
-        "Networking",
-        "VMware Cloud on AWS",
-        "VCF",
-        "Storage",
-        "TrueNAS Scale",
+        "Veeam",
         "Personal",
-        "vSphere",
-        "vSAN"
+        "Docker",
+        "Hosting",
+        "vSAN",
+        "AWS"
       ],
       "tags": [
         null,
@@ -95,12 +93,12 @@
       "api_url": "/api/posts/and-now-for-something-completely-different.json",
       "categories": [
         "Personal",
+        "Nutanix",
         "VMware",
         "vSphere",
-        "Nutanix",
-        "Consulting",
         "Devops",
-        "Hosting"
+        "Consulting",
+        "AWS"
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/10/fWbXybA7.png)\n\n[Personal](https://jameskilby.co.uk/category/personal/)\n\n# And now for something completely different\n\nBy[James](https://jameskilby.co.uk) October 16, 2018July 10, 2024 • 📖1 min read(263 words)\n\n📅 **Published:** October 16, 2018•..."
@@ -119,11 +117,12 @@
         "Hosting",
         "Personal",
         "VMware",
-        "Artificial Intelligence",
-        "Docker",
         "Cloudflare",
         "Wordpress",
+        "AWS",
         "Nutanix",
+        "Devops",
+        "Github",
         "Consulting"
       ],
       "tags": [
@@ -152,15 +151,12 @@
         "VMware",
         "Personal",
         "vSphere",
-        "Devops",
-        "vSAN",
-        "Homelab",
-        "Storage",
-        "vExpert",
         "VMware Cloud on AWS",
-        "Hosting",
+        "VCF",
+        "Homelab",
         "AWS",
-        "Veeam"
+        "Veeam",
+        "Devops"
       ],
       "tags": [
         null,
@@ -173,7 +169,7 @@
     {
       "slug": "100gb-s-in-my-homelab-sort-of",
       "title": "100Gb/s in my Homelab",
-      "description": "How I added 100 Gb/s networking to my homelab using the MikroTik CRS504-4XQ-IN — splitting 4×100 Gb ports into 16×25 Gb connections for TrueNAS and Supermicro nodes.",
+      "description": "How I added 100Gb/s networking to my homelab using the MikroTik CRS504-4XQ-IN — splitting 4 ports into 16x25Gb connections for TrueNAS and Supermicro nodes.",
       "date": "2022-12-19T10:09:58Z",
       "modified": "2026-03-10T07:57:22Z",
       "author": "James Kilby",
@@ -185,15 +181,13 @@
         "Networking",
         "Storage",
         "VMware",
-        "Mikrotik",
-        "Nutanix",
-        "Runecast",
-        "VCF",
-        "TrueNAS Scale",
+        "Synology",
+        "Veeam",
+        "VMware Cloud on AWS",
         "vSAN",
-        "vSphere",
         "Artificial Intelligence",
-        "Docker"
+        "Docker",
+        "Hosting"
       ],
       "tags": [
         null,

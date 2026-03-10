@@ -14,11 +14,12 @@
         "VCF",
         "VMware",
         "VMware Cloud on AWS",
-        "Docker",
         "Homelab",
         "Hosting",
-        "Kubernetes",
-        "vSphere"
+        "Personal",
+        "vSphere",
+        "Ansible",
+        "vSAN"
       ],
       "tags": [
         null,
@@ -43,11 +44,16 @@
         "Automation",
         "Homelab",
         "VMware",
-        "Runecast",
+        "Networking",
+        "Storage",
+        "VMware Cloud on AWS",
+        "Ansible",
         "Artificial Intelligence",
-        "Docker",
-        "vSAN",
-        "Storage"
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -72,12 +78,10 @@
         "VMware",
         "Personal",
         "VMware Cloud on AWS",
+        "vSAN",
         "Homelab",
         "vSphere",
-        "Devops",
-        "Consulting",
-        "TrueNAS Scale",
-        "vSAN"
+        "Veeam"
       ],
       "tags": [
         null,
@@ -102,12 +106,17 @@
         "Homelab",
         "VMware",
         "vSphere",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Personal",
         "VMware Cloud on AWS",
+        "Hosting",
         "Storage",
-        "vExpert",
-        "Synology",
-        "TrueNAS Scale",
-        "vSAN"
+        "Synology"
       ],
       "tags": [
         null,
@@ -145,7 +154,7 @@
     {
       "slug": "cloudflare",
       "title": "Cloudflare",
-      "description": "How Cloudflare works as a distributed WAF and CDN — free tier setup, DNS configuration, global PoP caching, and how to protect and accelerate your web server.",
+      "description": "How Cloudflare works as a WAF and CDN — free tier setup, DNS configuration, global PoP caching, and how to protect and accelerate your web server.",
       "date": "2018-03-27T12:30:48Z",
       "modified": "2026-03-10T07:57:22Z",
       "author": "James Kilby",
@@ -154,16 +163,16 @@
       "api_url": "/api/posts/cloudflare.json",
       "categories": [
         "Hosting",
-        "Cloudflare",
-        "Wordpress",
-        "Devops",
-        "Github",
-        "Personal",
         "Docker",
         "Homelab",
         "Kubernetes",
+        "Personal",
         "AWS",
-        "Artificial Intelligence"
+        "Artificial Intelligence",
+        "Cloudflare",
+        "Wordpress",
+        "Devops",
+        "Github"
       ],
       "tags": [
         null
@@ -184,13 +193,10 @@
       "categories": [
         "Hosting",
         "Wordpress",
-        "Cloudflare",
-        "Docker",
         "Homelab",
-        "Kubernetes",
-        "Devops",
-        "Github",
-        "AWS"
+        "Cloudflare",
+        "Artificial Intelligence",
+        "Docker"
       ],
       "tags": [
         null,
@@ -214,18 +220,13 @@
         "Homelab",
         "Storage",
         "TrueNAS Scale",
-        "Nutanix",
+        "Automation",
         "VMware",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "Mikrotik",
-        "Networking",
+        "Kubernetes",
+        "VCF",
         "VMware Cloud on AWS",
-        "vSAN"
+        "vSAN",
+        "Artificial Intelligence"
       ],
       "tags": [
         null,
@@ -248,10 +249,13 @@
         "AWS",
         "Hosting",
         "Personal",
+        "VMware",
+        "VMware Cloud on AWS",
         "Cloudflare",
         "Wordpress",
-        "Artificial Intelligence",
-        "Docker"
+        "Docker",
+        "Homelab",
+        "Kubernetes"
       ],
       "tags": [
         null,
@@ -273,10 +277,10 @@
       "categories": [
         "AWS",
         "Personal",
+        "Hosting",
+        "Consulting",
         "VMware",
-        "Nutanix",
-        "Devops",
-        "Consulting"
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,

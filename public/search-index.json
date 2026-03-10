@@ -102,21 +102,19 @@
     "date": ""
   },
   {
-    "title": "New Nodes",
+    "title": "New Homelab Nodes: SuperMicro BigTwin For VMware & Nutanix",
     "url": "https://jameskilby.co.uk/2024/07/new-nodes/",
     "description": "Nutanix Homelab,New Nodes: Learn how I upgraded my setup with cost-effective Nutanix nodes. Get insights on configuration and setup now!",
-    "content": "New Nodes - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Nutanix | VMware New Nodes ByJames July 2, 2024March 10, 2026 • 📖7 min read(1,482 words) 📅Published: July 02, 2024•Updated: March 10, 2026 I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice I have been very happy with the Supermicro Twin concept having run this for a few years. So I decided I would stick with it/ For anyone not familiar you get upto 4 compute nodes running in a 2U setup. It’s a very dense format and as a number of components are shared I believe it’s very power efficient. Looking at the available nodes on eBay and second hand marketplaces I spotted several Nutanix nodes at a decent price. I ended up buying a 3 node NX-1365-G4 setup. These came with CPU, Memory and ",
+    "content": "New Homelab Nodes: SuperMicro BigTwin For VMware & Nutanix Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Nutanix | VMware New Nodes ByJames July 2, 2024March 10, 2026 • 📖7 min read(1,482 words) 📅Published: July 02, 2024•Updated: March 10, 2026 I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice I have been very happy with the Supermicro Twin concept having run this for a few years. So I decided I would stick with it/ For anyone not familiar you get upto 4 compute nodes running in a 2U setup. It’s a very dense format and as a number of components are shared I believe it’s very power efficient. Looking at the available nodes on eBay and second hand marketplaces I spotted several Nutanix nodes at a decent price. I ended up buying a 3 node NX-1365-G4 setup. ",
     "categories": [
       "Homelab",
       "Nutanix",
       "VMware",
-      "VMware Cloud on AWS",
+      "Ansible",
       "Storage",
-      "vExpert",
-      "TrueNAS Scale",
-      "vSAN",
+      "Synology",
       "vSphere",
-      "Personal"
+      "VCF"
     ],
     "tags": [
       "#Homelab",
@@ -126,19 +124,20 @@
     "date": "2024-07-02T08:01:04+00:00"
   },
   {
-    "title": "Holodeck CPU Fixes",
+    "title": "VMware Holodeck On Older CPUs: Fixing Compatibility Issues",
     "url": "https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/",
     "description": "Holodeck CPU Fixes: Learn how to deploy Holodeck with legacy CPUs. Follow our guide for a smoother setup and troubleshooting tips.",
-    "content": "Holodeck CPU Fixes - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VCF | VMware Holodeck CPU Fixes ByJames January 18, 2024March 10, 2026 • 📖1 min read(268 words) 📅Published: January 18, 2024•Updated: March 10, 2026 Disclaimer: This is not a supported configuration by the Holodeck team please don’t reach out to them for help. No support will be given for running cpu’s without the required feature sets. Table of Contents In my previous post about my Holodeck experience, I mentioned that I had some issues due to the age of the Physical CPU’s in the hosts that I was using to run Holodeck. This error will manifest itself in three places during the deployment. Nested ESX Power On vCLS machine deployment NSX Edge deployment Nested ESX Power On Obviously, my CPU’s are not supported for ESXi 8.0.1 and when the host is powered on you will see the image below. Just like with a physical host, it is possible to override this. This is done by adding --ignoreprereqwarnings",
+    "content": "VMware Holodeck On Older CPUs: Fixing Compatibility Issues Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VCF | VMware Holodeck CPU Fixes ByJames January 18, 2024March 10, 2026 • 📖1 min read(268 words) 📅Published: January 18, 2024•Updated: March 10, 2026 Disclaimer: This is not a supported configuration by the Holodeck team please don’t reach out to them for help. No support will be given for running cpu’s without the required feature sets. Table of Contents In my previous post about my Holodeck experience, I mentioned that I had some issues due to the age of the Physical CPU’s in the hosts that I was using to run Holodeck. This error will manifest itself in three places during the deployment. Nested ESX Power On vCLS machine deployment NSX Edge deployment Nested ESX Power On Obviously, my CPU’s are not supported for ESXi 8.0.1 and when the host is powered on you will see the image below. Just like with a physical host, it is possible to override this. This is done by adding",
     "categories": [
       "VCF",
       "VMware",
       "VMware Cloud on AWS",
-      "Docker",
       "Homelab",
       "Hosting",
-      "Kubernetes",
-      "vSphere"
+      "Personal",
+      "vSphere",
+      "Ansible",
+      "vSAN"
     ],
     "tags": [
       "#CPU",
@@ -149,22 +148,16 @@
     "date": "2024-01-18T14:37:04+00:00"
   },
   {
-    "title": "MultiHost Holodeck VCF",
+    "title": "VMware Holodeck Multi-Host VCF: Lab Setup & Configuration",
     "url": "https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/",
     "description": "MultiHost Holodeck VCF offers insights on deploying VMware Holodeck across multiple hosts. Learn more about the setup and specifications today!",
-    "content": "MultiHost Holodeck VCF - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | VCF MultiHost Holodeck VCF ByJames January 17, 2024March 10, 2026 • 📖4 min read(891 words) 📅Published: January 17, 2024•Updated: March 10, 2026 Disclaimer: This is not a supported configuration by the Holodeck team please don’t reach out to them for help. As of today the only way to run Holodeck and receive support is to do it on a single compute node. Table of Contents The VCF Holodeck toolkit is an excellent tool for learning not just VCF but a lot of technology that can be run on top of it. e.g. HCX, Tanzu vRA etc. Several guides have been written to assist with that. However, the downside is that you need a single large fast vSphere host to run it on. The minimum specs are listed below for a few different configuration options. This shouldn’t be a challenge for a company or partner to provide but as a homelab enthusiast, this was always going to be a challenge. Many folks I kn",
+    "content": "VMware Holodeck Multi-Host VCF: Lab Setup & Configuration Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | VCF MultiHost Holodeck VCF ByJames January 17, 2024March 10, 2026 • 📖4 min read(891 words) 📅Published: January 17, 2024•Updated: March 10, 2026 Disclaimer: This is not a supported configuration by the Holodeck team please don’t reach out to them for help. As of today the only way to run Holodeck and receive support is to do it on a single compute node. Table of Contents The VCF Holodeck toolkit is an excellent tool for learning not just VCF but a lot of technology that can be run on top of it. e.g. HCX, Tanzu vRA etc. Several guides have been written to assist with that. However, the downside is that you need a single large fast vSphere host to run it on. The minimum specs are listed below for a few different configuration options. This shouldn’t be a challenge for a company or partner to provide but as a homelab enthusiast, this was always going to be a challeng",
     "categories": [
       "VMware",
       "VCF",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere",
       "VMware Cloud on AWS",
       "Personal",
-      "Runecast",
-      "Homelab",
-      "Networking",
-      "Storage"
+      "vSphere"
     ],
     "tags": [
       "#Holodeck",
@@ -175,27 +168,22 @@
     "date": "2024-01-17T17:29:38+00:00"
   },
   {
-    "title": "Home Network Upgrade",
+    "title": "Home Network Upgrade To 25Gb/s With MikroTik Switching",
     "url": "https://jameskilby.co.uk/2024/09/home-network-upgrade/",
     "description": "Home Network Upgrade,100Gb Homelab. Transform your home networking with 25Gb/s solutions for a future-proof setup. Learn more about my journey!",
-    "content": "Home Network Upgrade - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Mikrotik | Networking Home Network Upgrade ByJames September 9, 2024October 24, 2025 • 📖2 min read(454 words) 📅Published: September 09, 2024•Updated: October 24, 2025 I have recently moved over to Mikrotik Switching for all of my Home environment as part of my home network upgrade. What started life as a move away from gigabit networking had some serious scope creep. As I needed new switches, network adaptors and cabling I evaluated the obvious choice of just upgrading to 10Gb/s. However, when looking at the price comparison to upgrade to 25Gb/s I felt the cost uplift was justified and certainly better future-proofed. This became the baseline for the majority of my server workloads. The Access switch layer has basically stayed gigabit but with 10Gb/s uplinks. Table of Contents The decision to go to Mikrotik was predominantly based on the huge performance available for limited costs. So far I",
+    "content": "Home Network Upgrade To 25Gb/s With MikroTik Switching Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Mikrotik | Networking Home Network Upgrade ByJames September 9, 2024October 24, 2025 • 📖2 min read(454 words) 📅Published: September 09, 2024•Updated: October 24, 2025 I have recently moved over to Mikrotik Switching for all of my Home environment as part of my home network upgrade. What started life as a move away from gigabit networking had some serious scope creep. As I needed new switches, network adaptors and cabling I evaluated the obvious choice of just upgrading to 10Gb/s. However, when looking at the price comparison to upgrade to 25Gb/s I felt the cost uplift was justified and certainly better future-proofed. This became the baseline for the majority of my server workloads. The Access switch layer has basically stayed gigabit but with 10Gb/s uplinks. Table of Contents The decision to go to Mikrotik was predominantly based on the huge performance available for limite",
     "categories": [
       "Mikrotik",
       "Networking",
       "Artificial Intelligence",
-      "Docker",
       "Homelab",
-      "Ansible",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik",
+      "Veeam",
       "VMware",
-      "Runecast",
+      "Docker",
+      "Hosting",
       "Storage",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere"
+      "Synology",
+      "Automation"
     ],
     "tags": [
       "#Homelab",
@@ -213,18 +201,13 @@
       "Homelab",
       "Storage",
       "TrueNAS Scale",
-      "Nutanix",
+      "Automation",
       "VMware",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik",
-      "Mikrotik",
-      "Networking",
+      "Kubernetes",
+      "VCF",
       "VMware Cloud on AWS",
-      "vSAN"
+      "vSAN",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Homelab",
@@ -241,14 +224,12 @@
       "Artificial Intelligence",
       "Docker",
       "Homelab",
-      "Networking",
-      "VCF",
+      "Ansible",
+      "Veeam",
       "VMware",
       "Storage",
       "Synology",
-      "vExpert",
-      "Veeam",
-      "Runecast"
+      "VCF"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -265,12 +246,12 @@
     "categories": [
       "Homelab",
       "Networking",
-      "Artificial Intelligence",
-      "Docker",
       "Storage",
-      "VMware",
-      "Automation",
-      "Ansible"
+      "TrueNAS Scale",
+      "vExpert",
+      "Hosting",
+      "Synology",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#DHCP",
@@ -289,16 +270,15 @@
       "VMware",
       "vSAN",
       "vSphere",
-      "Mikrotik",
-      "Networking",
-      "Homelab",
-      "Storage",
-      "vExpert",
-      "VMware Cloud on AWS",
-      "Runecast",
-      "Artificial Intelligence",
       "Docker",
-      "Hosting"
+      "Homelab",
+      "Hosting",
+      "Kubernetes",
+      "Storage",
+      "Synology",
+      "Artificial Intelligence",
+      "VMware Cloud on AWS",
+      "Automation"
     ],
     "tags": [
       "#Homelab",
@@ -310,21 +290,21 @@
     "date": "2024-12-18T17:47:57+00:00"
   },
   {
-    "title": "TrueNAS Scale Useful Commands",
+    "title": "TrueNAS Scale CLI Reference: Storage & Kubernetes Commands",
     "url": "https://jameskilby.co.uk/2023/11/truenas-scale-useful-commands/",
     "description": "TrueNAS Scale Useful Commands: Unlock the power of your storage with essential commands. Enhance your TrueNAS experience today!",
-    "content": "TrueNAS Scale Useful Commands - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Kubernetes | TrueNAS Scale TrueNAS Scale Useful Commands ByJames November 13, 2023March 8, 2024 • 📖1 min read(221 words) 📅Published: November 13, 2023•Updated: March 08, 2024 Table of Contents I have very much fallen down the rabbit hole with TrueNAS and although the GUI is very good occasionally I need to jump to the command line. This is a list of the commands that I might need to use. I will update this page with anything else I find useful. General Storage Get the compression ratio of each Pool sudo zfs get compressratio $PoolName📋 Copy Application Install HeavyScript curl -s https://raw.githubusercontent.com/Heavybullets8/heavy_script/main/functions/deploy.sh | bash && source \"$HOME/.bashrc\" 2>/dev/null && source \"$HOME/.zshrc\" 2>/dev/null📋 Copy View the size of each application zfs list $(cli -c 'app kubernetes config' | grep -E \"pool\\s\\|\" | awk -F '|' '{print $3}' | tr -d \" \\",
+    "content": "TrueNAS Scale CLI Reference: Storage & Kubernetes Commands Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Kubernetes | TrueNAS Scale TrueNAS Scale Useful Commands ByJames November 13, 2023March 8, 2024 • 📖1 min read(221 words) 📅Published: November 13, 2023•Updated: March 08, 2024 Table of Contents I have very much fallen down the rabbit hole with TrueNAS and although the GUI is very good occasionally I need to jump to the command line. This is a list of the commands that I might need to use. I will update this page with anything else I find useful. General Storage Get the compression ratio of each Pool sudo zfs get compressratio $PoolName📋 Copy Application Install HeavyScript curl -s https://raw.githubusercontent.com/Heavybullets8/heavy_script/main/functions/deploy.sh | bash && source \"$HOME/.bashrc\" 2>/dev/null && source \"$HOME/.zshrc\" 2>/dev/null📋 Copy View the size of each application zfs list $(cli -c 'app kubernetes config' | grep -E \"pool\\s\\|\" | awk -F '|' '{print $3}'",
     "categories": [
       "Kubernetes",
       "TrueNAS Scale",
-      "VMware",
-      "vSAN",
-      "vSphere",
       "Homelab",
       "Storage",
+      "vExpert",
       "Docker",
       "Hosting",
-      "vExpert"
+      "VMware",
+      "vSAN",
+      "vSphere"
     ],
     "tags": [
       "#Reference",
@@ -333,25 +313,25 @@
     "date": "2023-11-13T14:34:17+00:00"
   },
   {
-    "title": "VMC - VSAN ESA",
+    "title": "VSAN ESA In VMware Cloud On AWS: What Changed In VMC M24",
     "url": "https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/",
     "description": "The benefits of vSAN ESA in VMware Cloud on AWS",
-    "content": "VMC - VSAN ESA - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | VMware Cloud on AWS | vSAN VMC – vSAN ESA ByJames November 17, 2023March 10, 2026 • 📖4 min read(851 words) 📅Published: November 17, 2023•Updated: March 10, 2026 Table of Contents vSAN Express Storage Architecture (ESA) was announced at VMware Explore last year (2022) and while it’s been available for our on-premise customers for nearly a year it hasn’t been available in VMC until now…. With the release of the M24 version of VMC. It is now an option for newly provisioned SDDC’s So why is this such an important change? to answer that we need a history lesson on vSAN vSAN first came to market in 2014, and the typical hardware of the day from a storage perspective was dominated by spindles. Flash had arrived on the scene but was VERY expensive and datacenter networking was in the transition from 1Gb/s to 10Gb/s. As a result of this and other factors design decisions were made in the original ",
+    "content": "VSAN ESA In VMware Cloud On AWS: What Changed In VMC M24 Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | VMware Cloud on AWS | vSAN VMC – vSAN ESA ByJames November 17, 2023March 10, 2026 • 📖4 min read(851 words) 📅Published: November 17, 2023•Updated: March 10, 2026 Table of Contents vSAN Express Storage Architecture (ESA) was announced at VMware Explore last year (2022) and while it’s been available for our on-premise customers for nearly a year it hasn’t been available in VMC until now…. With the release of the M24 version of VMC. It is now an option for newly provisioned SDDC’s So why is this such an important change? to answer that we need a history lesson on vSAN vSAN first came to market in 2014, and the typical hardware of the day from a storage perspective was dominated by spindles. Flash had arrived on the scene but was VERY expensive and datacenter networking was in the transition from 1Gb/s to 10Gb/s. As a result of this and other factors design decisions w",
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
       "vSAN",
+      "Personal",
       "Homelab",
-      "Storage",
-      "Synology",
-      "Automation",
-      "Runecast",
+      "Nutanix",
       "Ansible",
       "Artificial Intelligence",
       "Containers",
       "Devops",
       "NVIDIA",
-      "Traefik"
+      "Traefik",
+      "vSphere",
+      "Automation"
     ],
     "tags": [
       "#Storage",
@@ -370,15 +350,12 @@
       "VMware",
       "Personal",
       "vSphere",
-      "Devops",
-      "vSAN",
-      "Homelab",
-      "Storage",
-      "vExpert",
       "VMware Cloud on AWS",
-      "Hosting",
+      "VCF",
+      "Homelab",
       "AWS",
-      "Veeam"
+      "Veeam",
+      "Devops"
     ],
     "tags": [
       "#Certification",
@@ -416,11 +393,12 @@
       "Hosting",
       "Personal",
       "VMware",
-      "Artificial Intelligence",
-      "Docker",
       "Cloudflare",
       "Wordpress",
+      "AWS",
       "Nutanix",
+      "Devops",
+      "Github",
       "Consulting"
     ],
     "tags": [
@@ -443,12 +421,10 @@
       "VMware",
       "Personal",
       "VMware Cloud on AWS",
+      "vSAN",
       "Homelab",
       "vSphere",
-      "Devops",
-      "Consulting",
-      "TrueNAS Scale",
-      "vSAN"
+      "Veeam"
     ],
     "tags": [
       "#Charity",
@@ -459,23 +435,24 @@
     "date": "2023-10-07T12:37:14+00:00"
   },
   {
-    "title": "Nvidia Tesla P4 Homelab Setup",
+    "title": "Nvidia Tesla P4 VGPU Setup In VMware Homelab: Full Guide",
     "url": "https://jameskilby.co.uk/2023/10/vgpu-setup-in-my-homelab/",
     "description": "vGPU Setup in my Homelab using a Nvidia Tesla P4",
-    "content": "Nvidia Tesla P4 Homelab Setup - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | VMware Nvidia Tesla P4 Homelab Setup ByJames October 23, 2023March 10, 2026 • 📖4 min read(863 words) 📅Published: October 23, 2023•Updated: March 10, 2026 Table of Contents A little while ago I decided to play with vGPU in my homelab. This was something I had dabbled with in the past but never really had the time or need to get working properly. The first thing that I needed was a GPU. I did have a Dell T20 with an iGPU built into the CPU but I wanted a more enterprise card for my testing. I therefore decided to pick up a Nvidia Tesla P4 from eBay for the princely sum of £185. The card stats are not impressive by modern standards but it was good enough for what I needed combined with the fact that it was a single-width PCIe 3.0 x16 card and didn’t require external power. An important note is that this is a passively cooled card so if it’s not located in a server with a reas",
+    "content": "Nvidia Tesla P4 VGPU Setup In VMware Homelab: Full Guide Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | VMware Nvidia Tesla P4 Homelab Setup ByJames October 23, 2023March 10, 2026 • 📖4 min read(863 words) 📅Published: October 23, 2023•Updated: March 10, 2026 Table of Contents A little while ago I decided to play with vGPU in my homelab. This was something I had dabbled with in the past but never really had the time or need to get working properly. The first thing that I needed was a GPU. I did have a Dell T20 with an iGPU built into the CPU but I wanted a more enterprise card for my testing. I therefore decided to pick up a Nvidia Tesla P4 from eBay for the princely sum of £185. The card stats are not impressive by modern standards but it was good enough for what I needed combined with the fact that it was a single-width PCIe 3.0 x16 card and didn’t require external power. An important note is that this is a passively cooled card so if it’s not located in a server w",
     "categories": [
       "Homelab",
       "VMware",
-      "Personal",
-      "vSphere",
-      "VMware Cloud on AWS",
-      "vSAN",
-      "Ansible",
       "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik"
+      "Docker",
+      "Hosting",
+      "Personal",
+      "VMware Cloud on AWS",
+      "Automation",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere",
+      "Storage",
+      "Synology"
     ],
     "tags": [
       "#Homelab",
@@ -485,21 +462,20 @@
     "date": "2023-10-23T14:56:58+00:00"
   },
   {
-    "title": "Intel Optane NVMe Homelab",
+    "title": "Using Intel Optane NVMe In A VMware Homelab: Setup & Results",
     "url": "https://jameskilby.co.uk/2023/04/intel-optane/",
     "description": "vExpert Intel Optane Drives",
-    "content": "Intel Optane NVMe Homelab - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Storage | vExpert Intel Optane NVMe Homelab ByJames April 17, 2023October 1, 2025 • 📖2 min read(317 words) 📅Published: April 17, 2023•Updated: October 01, 2025 I have been a VMware vExpert for many years and it has brought me many many benefits over the years. I don’t think it’s an understatement to say I probably wouldn’t have my current role within VMware without it. One of the best benefits has been access to a huge amount of licences for VMware software to use in my lab. Some third parties have also recognised the award and given licences for their software. Two that I have probably made the most use of is Runecast and Devolutions Remote Desktop Manager. However recently a few bits of hardware have become available and one piece in particular peeked my interest in particular some Optane drives thanks to the very generous folks at Intel. I was lucky enough to get some toget",
+    "content": "Using Intel Optane NVMe In A VMware Homelab: Setup & Results Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Storage | vExpert Intel Optane NVMe Homelab ByJames April 17, 2023October 1, 2025 • 📖2 min read(317 words) 📅Published: April 17, 2023•Updated: October 01, 2025 I have been a VMware vExpert for many years and it has brought me many many benefits over the years. I don’t think it’s an understatement to say I probably wouldn’t have my current role within VMware without it. One of the best benefits has been access to a huge amount of licences for VMware software to use in my lab. Some third parties have also recognised the award and given licences for their software. Two that I have probably made the most use of is Runecast and Devolutions Remote Desktop Manager. However recently a few bits of hardware have become available and one piece in particular peeked my interest in particular some Optane drives thanks to the very generous folks at Intel. I was lucky enough",
     "categories": [
       "Homelab",
       "Storage",
       "vExpert",
-      "Personal",
       "VMware",
+      "AWS",
+      "Veeam",
+      "Networking",
       "TrueNAS Scale",
-      "vSphere",
-      "Nutanix",
-      "Kubernetes",
-      "Networking"
+      "Kubernetes"
     ],
     "tags": [
       "#Homelab",
@@ -520,13 +496,15 @@
     "categories": [
       "Homelab",
       "Storage",
+      "Nutanix",
+      "Hosting",
+      "Artificial Intelligence",
+      "Docker",
       "Automation",
       "VMware",
-      "Networking",
       "TrueNAS Scale",
       "vSAN",
-      "vSphere",
-      "Nutanix"
+      "vSphere"
     ],
     "tags": [
       "#NAS",
@@ -544,11 +522,12 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Artificial Intelligence",
-      "Docker",
+      "Personal",
       "Devops",
       "Github",
-      "Personal"
+      "Docker",
+      "Homelab",
+      "Kubernetes"
     ],
     "tags": [
       "#Cloudflare",
@@ -559,18 +538,22 @@
     "date": "2023-05-14T07:00:35+00:00"
   },
   {
-    "title": "Runecast Remediation Script's",
+    "title": "Runecast Remediation Scripts: Auto-Fix VMware Storage Issues",
     "url": "https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/",
     "description": "Using Runecast to autogenerate PowerCLI to remediate discovered issues",
-    "content": "Runecast Remediation Script's - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Runecast | VMware Runecast Remediation Script’s ByJames May 16, 2023March 10, 2026 • 📖2 min read(442 words) 📅Published: May 16, 2023•Updated: March 10, 2026 I am a huge fan of the Runecast product and luckily as a vExpert they give out NFR licences for my lab. One of the really cool features I wanted to mention today was the remediation script function. I have been playing with storage a lot in my lab recently as part of a wider storage migration piece but also as part of testing Intel Optane drives. Runecast flagged up that I didn’t have Storage I/O Control enabled for these data stores. It gave a great overview of what that issue means: It is a good practice to enable SIOC, especially in environments where storage is overutilized. SIOC monitors the latency of I/Os to data stores at each ESX host sharing that device. When the average normalized datastore latency exceeds a set thres",
+    "content": "Runecast Remediation Scripts: Auto-Fix VMware Storage Issues Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Runecast | VMware Runecast Remediation Script’s ByJames May 16, 2023March 10, 2026 • 📖2 min read(442 words) 📅Published: May 16, 2023•Updated: March 10, 2026 I am a huge fan of the Runecast product and luckily as a vExpert they give out NFR licences for my lab. One of the really cool features I wanted to mention today was the remediation script function. I have been playing with storage a lot in my lab recently as part of a wider storage migration piece but also as part of testing Intel Optane drives. Runecast flagged up that I didn’t have Storage I/O Control enabled for these data stores. It gave a great overview of what that issue means: It is a good practice to enable SIOC, especially in environments where storage is overutilized. SIOC monitors the latency of I/Os to data stores at each ESX host sharing that device. When the average normalized datastore latency excee",
     "categories": [
       "Runecast",
       "VMware",
-      "VMware Cloud on AWS",
-      "vSAN",
+      "AWS",
+      "Veeam",
       "Homelab",
-      "Nutanix",
-      "Automation"
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere",
+      "Networking",
+      "Storage",
+      "VMware Cloud on AWS"
     ],
     "tags": [
       "#Homelab",
@@ -1117,22 +1100,22 @@
     "date": "2025-12-06T10:59:14+00:00"
   },
   {
-    "title": "Cloudflare",
+    "title": "What Is Cloudflare? Free CDN, WAF & DDoS Protection Explained",
     "url": "https://jameskilby.co.uk/2018/03/cloudflare/",
-    "description": "How Cloudflare works as a distributed WAF and CDN — free tier setup, DNS configuration, global PoP caching, and how to protect and accelerate your web server.",
-    "content": "Cloudflare Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting Cloudflare ByJames March 27, 2018March 10, 2026 • 📖1 min read(288 words) 📅Published: March 27, 2018•Updated: March 10, 2026 Cloudflare – What is it and why would I care? I have been using Cloudflare for a long time.  It is one of my go-to services and I use it to protect all of the public services I run for myself and other sites/ organizations. The basic premise of what Cloudflare do is that they are a distributed Web Application Firewall (WAF) and CDN but they also offer so much more. Because they have a large number of POP’s they can cache and push content closer to your end users to give them a better experience. This also offloads work from your firewalls, DNS, Web and Database servers.  At present they have 139 sites globally allowing you to host a site anywhere and get good global performance. Cloudflare has an amazing free tier so you can get started easily.   I use this to host all of my public DNS re",
+    "description": "How Cloudflare works as a WAF and CDN — free tier setup, DNS configuration, global PoP caching, and how to protect and accelerate your web server.",
+    "content": "What Is Cloudflare? Free CDN, WAF & DDoS Protection Explained Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting Cloudflare ByJames March 27, 2018March 10, 2026 • 📖1 min read(288 words) 📅Published: March 27, 2018•Updated: March 10, 2026 Cloudflare – What is it and why would I care? I have been using Cloudflare for a long time.  It is one of my go-to services and I use it to protect all of the public services I run for myself and other sites/ organizations. The basic premise of what Cloudflare do is that they are a distributed Web Application Firewall (WAF) and CDN but they also offer so much more. Because they have a large number of POP’s they can cache and push content closer to your end users to give them a better experience. This also offloads work from your firewalls, DNS, Web and Database servers.  At present they have 139 sites globally allowing you to host a site anywhere and get good global performance. Cloudflare has an amazing free tier so you can get started e",
     "categories": [
       "Hosting",
-      "Cloudflare",
-      "Wordpress",
-      "Devops",
-      "Github",
-      "Personal",
       "Docker",
       "Homelab",
       "Kubernetes",
+      "Personal",
       "AWS",
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "Cloudflare",
+      "Wordpress",
+      "Devops",
+      "Github"
     ],
     "tags": [
       "#Cloudflare"
@@ -1140,17 +1123,17 @@
     "date": "2018-03-27T12:30:48+00:00"
   },
   {
-    "title": "AWS For Beginners",
+    "title": "AWS For Beginners: IAM Setup, Root Security & Billing Alerts",
     "url": "https://jameskilby.co.uk/2018/03/aws-for-beginners1/",
-    "description": "A beginner's guide to getting started with AWS. Covers root account security, IAM user setup, two-factor authentication, and billing alerts to avoid surprise bills.",
-    "content": "AWS For Beginners - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS AWS for Beginners ByJames March 30, 2018March 10, 2026 • 📖1 min read(202 words) 📅Published: March 30, 2018•Updated: March 10, 2026 AWS for Beginners Part 1 I am hoping to get back into doing some AWS stuff over the next couple of months.  I am a huge fan of some of the tools and technology they have built.  It’s not perfect and it is often not well understood by people lifting and shifting existing infrastructure into “the cloud” My view is firmly if this is what you have done, then you have done it wrong and missed the point…. But if you do want to kick the tyres and see what it’s all about go and set up an account and play Ensure you implement these three recommendations Root Account Security – Ensure you have a strong password on this account then stop using it.  Use IAM to set up another account and then use that. Enable Two Factor Authentication – This is a must,  Sadly AWS don’t appea",
+    "description": "A beginner's guide to AWS: root account security, IAM user setup, two-factor authentication, and billing alerts to avoid surprise bills.",
+    "content": "AWS For Beginners: IAM Setup, Root Security & Billing Alerts Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu AWS AWS for Beginners ByJames March 30, 2018March 10, 2026 • 📖1 min read(202 words) 📅Published: March 30, 2018•Updated: March 10, 2026 AWS for Beginners Part 1 I am hoping to get back into doing some AWS stuff over the next couple of months.  I am a huge fan of some of the tools and technology they have built.  It’s not perfect and it is often not well understood by people lifting and shifting existing infrastructure into “the cloud” My view is firmly if this is what you have done, then you have done it wrong and missed the point…. But if you do want to kick the tyres and see what it’s all about go and set up an account and play Ensure you implement these three recommendations Root Account Security – Ensure you have a strong password on this account then stop using it.  Use IAM to set up another account and then use that. Enable Two Factor Authentication – This is a mu",
     "categories": [
       "AWS",
-      "Personal",
       "VMware",
       "Veeam",
-      "Hosting",
-      "VMware Cloud on AWS"
+      "VMware Cloud on AWS",
+      "Personal",
+      "Hosting"
     ],
     "tags": [
       "#Account Setup",
@@ -1159,22 +1142,21 @@
     "date": "2018-03-30T23:13:21+00:00"
   },
   {
-    "title": "Lab Storage",
+    "title": "My First Homelab Storage Setup: HP Gen8 & Xpenology",
     "url": "https://jameskilby.co.uk/2018/01/lab-storage/",
-    "description": "Lab Storage setups enhance your workflow. Check out my current configuration and optimize your lab storage today!",
-    "content": "Lab Storage - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Storage | Synology Lab Storage ByJames January 6, 2018July 10, 2024 • 📖1 min read(196 words) 📅Published: January 06, 2018•Updated: July 10, 2024 I have been meaning to post around some of the lab setup for a while.   Although it changes frequently at present it’s as below.  I will add some pics when I have tidied up the lab/cables My primary lab storage is all contained within an HP Gen8 Microserver. Currently Configured: 1x INTEL Core i3-4130 running at 2.3Ghz 16Gb of RAM 4x 1Gb/s NIC 2x 3TB WD Red 2x Intel SSD 320 Series 80GB,  25nm MLC This is running Xpenology. I have the 4 Nics split into two LACP bonds.   One for the management traffic and one for pure NFS traffic. The 2xWD Red’s are in an SHR configuration with the SSDs running as a SSD read-write cache This gives me 2.6TB Useable which is plenty to lab and store photos and media and with the RW cache, the perf is pretty dam good. I ",
+    "description": "My initial homelab storage build: HP Gen8 Microserver running Xpenology with dual 3TB WD Red drives, Intel SSDs, and NFS for my VMware lab.",
+    "content": "My First Homelab Storage Setup: HP Gen8 & Xpenology Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Storage | Synology Lab Storage ByJames January 6, 2018July 10, 2024 • 📖1 min read(196 words) 📅Published: January 06, 2018•Updated: July 10, 2024 I have been meaning to post around some of the lab setup for a while.   Although it changes frequently at present it’s as below.  I will add some pics when I have tidied up the lab/cables My primary lab storage is all contained within an HP Gen8 Microserver. Currently Configured: 1x INTEL Core i3-4130 running at 2.3Ghz 16Gb of RAM 4x 1Gb/s NIC 2x 3TB WD Red 2x Intel SSD 320 Series 80GB,  25nm MLC This is running Xpenology. I have the 4 Nics split into two LACP bonds.   One for the management traffic and one for pure NFS traffic. The 2xWD Red’s are in an SHR configuration with the SSDs running as a SSD read-write cache This gives me 2.6TB Useable which is plenty to lab and store photos and media and with the RW cache, the perf",
     "categories": [
       "Homelab",
       "Storage",
       "Synology",
       "Artificial Intelligence",
       "Docker",
-      "Hosting",
       "TrueNAS Scale",
-      "VCF",
       "VMware",
-      "vExpert",
-      "Veeam"
+      "vSAN",
+      "vSphere",
+      "Networking"
     ],
     "tags": [
       "#Homelab",
@@ -1183,26 +1165,20 @@
     "date": "2018-01-06T17:39:20+00:00"
   },
   {
-    "title": "Nutanix CE",
+    "title": "Running Nutanix CE At Home: AHV Setup & First Impressions",
     "url": "https://jameskilby.co.uk/2018/01/nutanix-ce/",
     "description": "Learn about running Nutanix CE on a home server. Check out my setup, installation process, and updates on virtual machines and storage sharing.",
-    "content": "Nutanix CE - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Nutanix Nutanix CE ByJames January 6, 2018July 10, 2024 • 📖1 min read(190 words) 📅Published: January 06, 2018•Updated: July 10, 2024 I ran a Nutanix CE server at home for a little while when it first came out.  However, due to the fairly high requirements, it didn’t make sense to me to continue running it at home.  This was compounded by the fact that I have many clusters to play with at work.   These all run my Hypervisor of choice vSphere so I thought it was about time to see what was new with AHV and Nutanix CE I downloaded the latest copy of CE from the Nutanix site and extracted it to a USB stick with Rufus.   (This took about 30 mins) The server that I chose to run this on was the same server I ran initially.  a Dell T20 with the Xeon processor 32GB of RAM 1x240GB SSD and 1x3TB WD Red.  The installation is pretty straightforward and covered a lot elsewhere. I am just kicking the tyres ",
+    "content": "Running Nutanix CE At Home: AHV Setup & First Impressions Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Nutanix Nutanix CE ByJames January 6, 2018July 10, 2024 • 📖1 min read(190 words) 📅Published: January 06, 2018•Updated: July 10, 2024 I ran a Nutanix CE server at home for a little while when it first came out.  However, due to the fairly high requirements, it didn’t make sense to me to continue running it at home.  This was compounded by the fact that I have many clusters to play with at work.   These all run my Hypervisor of choice vSphere so I thought it was about time to see what was new with AHV and Nutanix CE I downloaded the latest copy of CE from the Nutanix site and extracted it to a USB stick with Rufus.   (This took about 30 mins) The server that I chose to run this on was the same server I ran initially.  a Dell T20 with the Xeon processor 32GB of RAM 1x240GB SSD and 1x3TB WD Red.  The installation is pretty straightforward and covered a lot elsewhere",
     "categories": [
       "Homelab",
       "Nutanix",
+      "Networking",
+      "Storage",
       "VMware",
       "Docker",
       "Hosting",
       "Kubernetes",
-      "Networking",
-      "Storage",
-      "Synology",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik"
+      "vSphere"
     ],
     "tags": [
       "#Nutanix"
@@ -1216,12 +1192,12 @@
     "content": "And Now For Something Completely Different - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Personal And now for something completely different ByJames October 16, 2018July 10, 2024 • 📖1 min read(263 words) 📅Published: October 16, 2018•Updated: July 10, 2024 I have worked for my current employer Zen Internet for  3.5 years.  Over that time I have changed roles from what was originally a customer-focused role into a role with one of the core platform teams.  This has meant looking after the majority of the Internal and customer Virtual platforms.  During this time Zen has undergone several large migration programs and countless smaller ones. Some of the big ones include: Core ISP network refresh Microsegmentation rollout Nutanix integration Backup Consolidation I have been lucky enough to be involved with all of these ( some much more than others)  Although the work is never complete Zen are in a good place. At the same time, my personal circumstances have chan",
     "categories": [
       "Personal",
+      "Nutanix",
       "VMware",
       "vSphere",
-      "Nutanix",
-      "Consulting",
       "Devops",
-      "Hosting"
+      "Consulting",
+      "AWS"
     ],
     "tags": [],
     "date": "2018-10-16T08:22:45+00:00"
@@ -1233,9 +1209,9 @@
     "content": "Nutanix Command Reference Guide - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Nutanix Nutanix Command Reference Guide ByJames June 5, 2018July 10, 2024 • 📖1 min read(105 words) 📅Published: June 05, 2018•Updated: July 10, 2024 Nutanix Command List This is a list of Nutanix commands I have found useful. Its here as a reference and if i need a command more than a few times ill generally add it here. CLI ncli cluster get-domain-fault-tolerance-status type=node  (Checks if all of the storage components meet the desired replication factor) cvm_shutdown -P now  ( Correct way to shutdown a CVM) ncc health_checks run_all –parallel=4 .  ( 4 is the max number) curator_cli get_under_replication_info summary=true Checks if any objects are not at the desired replication factor curl localhost:2019/prism/leader . Find the leader WEB http://{curator-master-cvm-ip}:2010/master/control ( If you want to invoke a curator scan manually) 📚 Related PostsNew NodesNutanix NCPNutanix",
     "categories": [
       "Nutanix",
+      "Personal",
       "Homelab",
-      "VMware",
-      "Personal"
+      "VMware"
     ],
     "tags": [
       "#CLI",
@@ -1244,10 +1220,10 @@
     "date": "2018-06-05T20:59:24+00:00"
   },
   {
-    "title": "New Laptop",
+    "title": "MacBook Air 2018 Retina Review: My Setup & Build Scripts",
     "url": "https://jameskilby.co.uk/2018/12/new-laptop/",
     "description": "Replace your old MacBook with the new MacBook Air. Check out my review and Mac build scripts to enhance your experience today!",
-    "content": "New Laptop - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Apple New Laptop ByJames December 4, 2018October 1, 2025 • 📖1 min read(138 words) 📅Published: December 04, 2018•Updated: October 01, 2025 I decided it was about time I replaced my trusted MacBook Air that I purchased back in 2011.   After waiting and watching the Apple announcements over the last couple of years I decided the MacBook Pro’s weren’t worth it.   So I have replaced my Air with yes you guessed it another MacBook Air. This time I went for the retina version with 16Gb of RAM and  512GB PCIe-based SSD.  The spec was certainly good enough for 99% of my needs yet still being lighter and with better battery life than a MacBook Pro. It also has the security benefits of the T2 Security chip I also thought it was time to tidy up and publish my Mac build scripts for anyone else to use.  They are available below and hopefully pretty easy for anyone to follow. 📚 Related PostsApple Content Caching Conn",
+    "content": "MacBook Air 2018 Retina Review: My Setup & Build Scripts Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Apple New Laptop ByJames December 4, 2018October 1, 2025 • 📖1 min read(138 words) 📅Published: December 04, 2018•Updated: October 01, 2025 I decided it was about time I replaced my trusted MacBook Air that I purchased back in 2011.   After waiting and watching the Apple announcements over the last couple of years I decided the MacBook Pro’s weren’t worth it.   So I have replaced my Air with yes you guessed it another MacBook Air. This time I went for the retina version with 16Gb of RAM and  512GB PCIe-based SSD.  The spec was certainly good enough for 99% of my needs yet still being lighter and with better battery life than a MacBook Pro. It also has the security benefits of the T2 Security chip I also thought it was time to tidy up and publish my Mac build scripts for anyone else to use.  They are available below and hopefully pretty easy for anyone to follow. 📚 Related Po",
     "categories": [
       "Apple"
     ],
@@ -1267,10 +1243,13 @@
       "AWS",
       "Hosting",
       "Personal",
+      "VMware",
+      "VMware Cloud on AWS",
       "Cloudflare",
       "Wordpress",
-      "Artificial Intelligence",
-      "Docker"
+      "Docker",
+      "Homelab",
+      "Kubernetes"
     ],
     "tags": [
       "#AWS",
@@ -1279,16 +1258,18 @@
     "date": "2018-05-15T21:41:14+00:00"
   },
   {
-    "title": "Nutanix NCP",
+    "title": "Passing The Nutanix NCP Exam: Free Training & My Experience",
     "url": "https://jameskilby.co.uk/2020/07/nutanix-ncp/",
     "description": "Nutanix NCP Experience",
-    "content": "Nutanix NCP - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Nutanix | Personal Nutanix NCP ByJames July 2, 2020July 10, 2024 • 📖1 min read(230 words) 📅Published: July 02, 2020•Updated: July 10, 2024 I saw a tweet a couple of weeks ago mentioning that Nutanix were offering a free go at the Nutanix Certified Professional exam. They are also offering free on-demand training to go with it. In my current role, I haven’t used Nutanix however I have good experience using it as the storage platform with vSphere and have also run the Nutanix CE software both physically and nested to give me a better overview of the AHV platform. The online training is delivered over a pretty modern platform and is done in a way to keep you engaged. The Labs aren’t super complicated but are buried in the training as opposed to a separate task. I think I prefer this approach. This was the first online proctored exam for me so the experience was a bit different. I initially had some issu",
+    "content": "Passing The Nutanix NCP Exam: Free Training & My Experience Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Nutanix | Personal Nutanix NCP ByJames July 2, 2020July 10, 2024 • 📖1 min read(230 words) 📅Published: July 02, 2020•Updated: July 10, 2024 I saw a tweet a couple of weeks ago mentioning that Nutanix were offering a free go at the Nutanix Certified Professional exam. They are also offering free on-demand training to go with it. In my current role, I haven’t used Nutanix however I have good experience using it as the storage platform with vSphere and have also run the Nutanix CE software both physically and nested to give me a better overview of the AHV platform. The online training is delivered over a pretty modern platform and is done in a way to keep you engaged. The Labs aren’t super complicated but are buried in the training as opposed to a separate task. I think I prefer this approach. This was the first online proctored exam for me so the experience was a bit diffe",
     "categories": [
       "Nutanix",
       "Personal",
-      "Homelab",
-      "VMware",
+      "Devops",
+      "AWS",
       "Hosting",
+      "VMware",
+      "vSphere",
       "Consulting"
     ],
     "tags": [
@@ -1298,16 +1279,25 @@
     "date": "2020-07-02T15:20:30+00:00"
   },
   {
-    "title": "VMC New Host -i3en",
+    "title": "VMware Cloud On AWS I3en Host: Specs, Storage & Performance",
     "url": "https://jameskilby.co.uk/2020/07/i3en/",
     "description": "VMC on AWS, I3en host the",
-    "content": "VMC New Host -i3en - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | VMware Cloud on AWS VMC New Host -i3en ByJames July 2, 2020July 10, 2024 • 📖2 min read(413 words) 📅Published: July 02, 2020•Updated: July 10, 2024 VMware Cloud on AWS (VMC) has introduced a new host to its lineup the “i3en”. This is based on the i3en.metal AWS instance. The specifications are certainly impressive packing in 96 logical cores, 768GiB RAM, and approximately 45.84 TiB of NVMe raw storage capacity per host. It’s certainly a monster with a 266% uplift in CPU, a 50% increase in RAM and a whopping 440% increase in raw storage per host compared to the i3. Most of the engagements I have worked on so far have discovered that they are storage limited requiring extra hosts to handle the required storage footprint. With such a big uplift in Storage capacity hopefully, this will trend towards filling up CPU, RAM & Storage at the same time. This is the panacea of Hyperconvergence. Th",
+    "content": "VMware Cloud On AWS I3en Host: Specs, Storage & Performance Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | VMware Cloud on AWS VMC New Host -i3en ByJames July 2, 2020July 10, 2024 • 📖2 min read(413 words) 📅Published: July 02, 2020•Updated: July 10, 2024 VMware Cloud on AWS (VMC) has introduced a new host to its lineup the “i3en”. This is based on the i3en.metal AWS instance. The specifications are certainly impressive packing in 96 logical cores, 768GiB RAM, and approximately 45.84 TiB of NVMe raw storage capacity per host. It’s certainly a monster with a 266% uplift in CPU, a 50% increase in RAM and a whopping 440% increase in raw storage per host compared to the i3. Most of the engagements I have worked on so far have discovered that they are storage limited requiring extra hosts to handle the required storage footprint. With such a big uplift in Storage capacity hopefully, this will trend towards filling up CPU, RAM & Storage at the same time. This is the panacea",
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "Homelab",
+      "Personal",
       "vSphere",
-      "VCF"
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "Homelab",
+      "NVIDIA",
+      "Traefik",
+      "vSAN",
+      "TrueNAS Scale",
+      "Veeam"
     ],
     "tags": [
       "#VMC",
@@ -1323,14 +1313,9 @@
     "categories": [
       "Personal",
       "VMware",
-      "Runecast",
       "VMware Cloud on AWS",
-      "Consulting",
-      "Homelab",
-      "Networking",
-      "Storage",
-      "Veeam",
-      "Devops"
+      "Devops",
+      "vSphere"
     ],
     "tags": [
       "#Certifications",
@@ -1340,19 +1325,22 @@
     "date": "2020-09-13T21:38:48+00:00"
   },
   {
-    "title": "VMC Host Errors",
+    "title": "How VMware Cloud On AWS Handles Host Failures Automatically",
     "url": "https://jameskilby.co.uk/2020/09/vmc-host-errors/",
     "description": "Learn how VMware Cloud on AWS handles host errors seamlessly. Ensure your infrastructure remains resilient and efficient. Get started today!",
-    "content": "VMC Host Errors - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | VMware Cloud on AWS VMC Host Errors ByJames September 15, 2020March 10, 2026 • 📖1 min read(174 words) 📅Published: September 15, 2020•Updated: March 10, 2026 When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and failure operations. I’m not sure lucky is the right word but I did witness a host issue with a customer I was working with. True to the marketing It was picked up and automatically remediated. Looking at the log extract above a new host was being provisioned the same minute the issue was identified. Obviously, this needed to boot and join the VMware/vSAN cluster before a full data evacuation takes place on the faulty host and fina",
+    "content": "How VMware Cloud On AWS Handles Host Failures Automatically Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | VMware Cloud on AWS VMC Host Errors ByJames September 15, 2020March 10, 2026 • 📖1 min read(174 words) 📅Published: September 15, 2020•Updated: March 10, 2026 When you run a large enough Infrastructure failure is inevitable. How you handle that can be a big differentiator. With VMware Cloud on AWS, the hosts are monitored 24×7 by VMware/AWS Support all as part of the service. If you pay for X number of hosts you should have X. That includes during maintenance and failure operations. I’m not sure lucky is the right word but I did witness a host issue with a customer I was working with. True to the marketing It was picked up and automatically remediated. Looking at the log extract above a new host was being provisioned the same minute the issue was identified. Obviously, this needed to boot and join the VMware/vSAN cluster before a full data evacuation takes place ",
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
       "Homelab",
-      "Veeam",
-      "Runecast",
-      "vSphere",
+      "NVIDIA",
+      "Traefik",
       "Personal",
-      "Automation"
+      "vSphere"
     ],
     "tags": [
       "#AWS",
@@ -1365,15 +1353,15 @@
     "date": "2020-09-15T10:56:32+00:00"
   },
   {
-    "title": "VeeamON2020",
+    "title": "VeeamON 2020: Highlights From Veeam's Virtual Conference",
     "url": "https://jameskilby.co.uk/2020/06/veeamon2020/",
     "description": "Join VeeamON 2020 to learn about the latest IT innovations. Sign up now for exclusive sessions and insights into the future of IT solutions.",
-    "content": "VeeamON2020 - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Veeam VeeamON2020 ByJames June 18, 2020April 25, 2023 • 📖1 min read(272 words) 📅Published: June 18, 2020•Updated: April 25, 2023 As everyone knows by now the world has changed possibly forever.  Due to Covid19 working from home has become the new normal.  We are lucky in the IT world that this has been fairly straightforward for most of us.  We are privileged in that it’s possible for us to continue indefinitely.  Organisations still need to move forward, to progress and adapt into the new normal. In the words of Charles Darwin “It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change.” With that most (if not all IT conferences have been postponed or gone online)   Veeam’s annual conference VeeamON is no exception and now it’s here!! As a Veeam Vanguard I was privileged to be given an early briefing on some of the ann",
+    "content": "VeeamON 2020: Highlights From Veeam's Virtual Conference Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Veeam VeeamON2020 ByJames June 18, 2020April 25, 2023 • 📖1 min read(272 words) 📅Published: June 18, 2020•Updated: April 25, 2023 As everyone knows by now the world has changed possibly forever.  Due to Covid19 working from home has become the new normal.  We are lucky in the IT world that this has been fairly straightforward for most of us.  We are privileged in that it’s possible for us to continue indefinitely.  Organisations still need to move forward, to progress and adapt into the new normal. In the words of Charles Darwin “It is not the strongest of the species that survives, nor the most intelligent that survives. It is the one that is most adaptable to change.” With that most (if not all IT conferences have been postponed or gone online)   Veeam’s annual conference VeeamON is no exception and now it’s here!! As a Veeam Vanguard I was privileged to be given an early",
     "categories": [
       "Veeam",
+      "Homelab",
       "VMware",
-      "AWS",
-      "Homelab"
+      "AWS"
     ],
     "tags": [
       "#Veeam",
@@ -1382,24 +1370,24 @@
     "date": "2020-06-18T14:42:45+00:00"
   },
   {
-    "title": "My First Pull",
+    "title": "My First GitHub Pull Request: Contributing To Open Source",
     "url": "https://jameskilby.co.uk/2020/12/my-first-pull/",
     "description": "My First Pull Request",
-    "content": "My First Pull - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Devops | Personal My First Pull ByJames December 22, 2020December 8, 2025 • 📖1 min read(187 words) 📅Published: December 22, 2020•Updated: December 08, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest. I have worked in IT for over 10 years now but the opportunity to make suggestions to someone else’s codebase hadn’t popped up so I was keen to rectify that. Although I had used Git/GitHub before it was typically for my own uses as a code storage location. I, therefore, needed to sanity check the process of a “pull request” so off to YouTube I went. The above video seemed to clarify the process the best and with that knowledge, the reques",
+    "content": "My First GitHub Pull Request: Contributing To Open Source Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Devops | Personal My First Pull ByJames December 22, 2020December 8, 2025 • 📖1 min read(187 words) 📅Published: December 22, 2020•Updated: December 08, 2025 I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest. I have worked in IT for over 10 years now but the opportunity to make suggestions to someone else’s codebase hadn’t popped up so I was keen to rectify that. Although I had used Git/GitHub before it was typically for my own uses as a code storage location. I, therefore, needed to sanity check the process of a “pull request” so off to YouTube I went. The above video seemed to clarify the process the best and with",
     "categories": [
       "Devops",
       "Personal",
+      "VMware",
       "Ansible",
       "Artificial Intelligence",
       "Containers",
       "Homelab",
       "NVIDIA",
       "Traefik",
-      "VMware",
-      "Automation",
-      "Hosting",
       "vSphere",
+      "AWS",
       "Cloudflare",
+      "Hosting",
       "Wordpress"
     ],
     "tags": [
@@ -1417,13 +1405,9 @@
     "categories": [
       "Personal",
       "Consulting",
-      "Hosting",
-      "Cloudflare",
-      "Wordpress",
-      "AWS",
-      "Devops",
       "VMware",
-      "vSphere"
+      "Hosting",
+      "AWS"
     ],
     "tags": [
       "#Homeoffice",
@@ -1441,11 +1425,16 @@
       "Automation",
       "Homelab",
       "VMware",
-      "Runecast",
+      "Networking",
+      "Storage",
+      "VMware Cloud on AWS",
+      "Ansible",
       "Artificial Intelligence",
-      "Docker",
-      "vSAN",
-      "Storage"
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "Nutanix"
     ],
     "tags": [
       "#Automation",
@@ -1456,10 +1445,10 @@
     "date": "2021-01-21T22:26:10+00:00"
   },
   {
-    "title": "Apple Content Caching",
+    "title": "How Apple Content Caching Works: Speed Up IOS & Mac Updates",
     "url": "https://jameskilby.co.uk/2021/02/apple-content-caching/",
     "description": "Utilising MacOS Cache Caching to Save Internet Bandwidth",
-    "content": "Apple Content Caching - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Apple Apple Content Caching ByJames February 8, 2021March 10, 2026 • 📖2 min read(313 words) 📅Published: February 08, 2021•Updated: March 10, 2026 I have slowly morphed into an Apple fanboy over the last decade or so collecting a large number of devices ever since my first MacBook Air back in 2011. When you’re in the ecosystem additional devices just make sense….. I currently have: Mac Mini M1 Macbook Air 2018 iPhone XS Ipad Pro 9.7 Apple Watch 4 iPhone 7 ( Work Phone) My Wife also has MacBook Air Ipad iPhone Xs All in all a lot of apple devices need Software & Application updates etc. Christian Mohn mentioned a while back that MacOS can do content caching and it’s very easy to implement. If only WSUS was as straightforward…. I turned it on on my Mac M1 last year and I’ve been pleasantly surprised with the results. Cache Results after 30 days Over the last 30 days, all of the devices have pu",
+    "content": "How Apple Content Caching Works: Speed Up IOS & Mac Updates Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Apple Apple Content Caching ByJames February 8, 2021March 10, 2026 • 📖2 min read(313 words) 📅Published: February 08, 2021•Updated: March 10, 2026 I have slowly morphed into an Apple fanboy over the last decade or so collecting a large number of devices ever since my first MacBook Air back in 2011. When you’re in the ecosystem additional devices just make sense….. I currently have: Mac Mini M1 Macbook Air 2018 iPhone XS Ipad Pro 9.7 Apple Watch 4 iPhone 7 ( Work Phone) My Wife also has MacBook Air Ipad iPhone Xs All in all a lot of apple devices need Software & Application updates etc. Christian Mohn mentioned a while back that MacOS can do content caching and it’s very easy to implement. If only WSUS was as straightforward…. I turned it on on my Mac M1 last year and I’ve been pleasantly surprised with the results. Cache Results after 30 days Over the last 30 days, all o",
     "categories": [
       "Apple"
     ],
@@ -1470,10 +1459,10 @@
     "date": "2021-02-08T14:12:23+00:00"
   },
   {
-    "title": "Money Saving ( UK Version)",
+    "title": "UK Money Saving Tips: Banking, Rewards & Travel Cards",
     "url": "https://jameskilby.co.uk/2017/05/money-saving-uk-version/",
     "description": "Learn how to save money on UK banking and maximize rewards. Start optimizing your finances today with practical tips and insights.",
-    "content": "Money Saving ( UK Version) - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Money Money Saving ( UK Version) ByJames May 29, 2017October 1, 2025 • 📖4 min read(779 words) 📅Published: May 29, 2017•Updated: October 01, 2025 I recently got back from an amazing conference in New Orleans. This was the VeeamON conference and I was invited as part of the Veeam Vanguard program that I am part of. A lot of the UK Vanguards all travelled out together and after numerous discussions, it became clear that a lot of them were paying more for UK and international banking. They were also not capitalising on the deals available for getting rewards where they did need to spend. I will detail below what I currently do; who I bank with etc.  The deals I am on may not be available or right for you.   YMMV I have split this across three posts as it’s very text heavy: 1. UK banking and rewards 2. Maximising credit card deals 3. Minimising costs when travelling UK banking and rewards I",
+    "content": "UK Money Saving Tips: Banking, Rewards & Travel Cards Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Money Money Saving ( UK Version) ByJames May 29, 2017October 1, 2025 • 📖4 min read(779 words) 📅Published: May 29, 2017•Updated: October 01, 2025 I recently got back from an amazing conference in New Orleans. This was the VeeamON conference and I was invited as part of the Veeam Vanguard program that I am part of. A lot of the UK Vanguards all travelled out together and after numerous discussions, it became clear that a lot of them were paying more for UK and international banking. They were also not capitalising on the deals available for getting rewards where they did need to spend. I will detail below what I currently do; who I bank with etc.  The deals I am on may not be available or right for you.   YMMV I have split this across three posts as it’s very text heavy: 1. UK banking and rewards 2. Maximising credit card deals 3. Minimising costs when travelling UK banking and",
     "categories": [
       "Money"
     ],
@@ -2219,19 +2208,18 @@
     "date": "2026-02-09T11:54:54+00:00"
   },
   {
-    "title": "Homelab Bad Days (almost)",
+    "title": "Homelab SSD Failure: How Synology RAID Saved My Data",
     "url": "https://jameskilby.co.uk/2022/11/homelab-bad-days-almost/",
     "description": "Facing SSD issues in your homelab? Learn about RAID 5 pitfalls and how to protect your data effectively. Read more for essential tips!",
-    "content": "Homelab Bad Days (almost) - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Storage | Synology Homelab bad days (almost) ByJames November 21, 2022March 10, 2026 • 📖2 min read(363 words) 📅Published: November 21, 2022•Updated: March 10, 2026 I recently spent 3 weeks in Ireland with my wife Wendy and our son Nate. This involves driving from the south coast of Dorset up to Scotland and then getting a ferry over to Belfast before travelling west to the Republic. While driving I got a slack notification that one of my SSD’s in my Synology DS918+ was in a bad way. (You do have notifications set up right? ) The timing could not have been worse. Now for years anyone that I have talked to at VMUG’s around data protection etc, I have advocating never using RAID 5. The reasons for this are well known. But when it’s your homelab and your wallet is in the line corners sometimes need to be cut. When I got to Ireland I logged into the Synology it was pretty obvious i",
+    "content": "Homelab SSD Failure: How Synology RAID Saved My Data Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Storage | Synology Homelab bad days (almost) ByJames November 21, 2022March 10, 2026 • 📖2 min read(363 words) 📅Published: November 21, 2022•Updated: March 10, 2026 I recently spent 3 weeks in Ireland with my wife Wendy and our son Nate. This involves driving from the south coast of Dorset up to Scotland and then getting a ferry over to Belfast before travelling west to the Republic. While driving I got a slack notification that one of my SSD’s in my Synology DS918+ was in a bad way. (You do have notifications set up right? ) The timing could not have been worse. Now for years anyone that I have talked to at VMUG’s around data protection etc, I have advocating never using RAID 5. The reasons for this are well known. But when it’s your homelab and your wallet is in the line corners sometimes need to be cut. When I got to Ireland I logged into the Synology it was pretty",
     "categories": [
       "Homelab",
       "Storage",
       "Synology",
-      "Hosting",
       "Nutanix",
-      "VMware",
-      "TrueNAS Scale",
-      "vExpert"
+      "Networking",
+      "Runecast",
+      "VMware"
     ],
     "tags": [
       "#Homelab",
@@ -2240,18 +2228,20 @@
     "date": "2022-11-21T15:46:53+00:00"
   },
   {
-    "title": "Lab Update - Compute",
+    "title": "Homelab Compute Upgrade: SuperMicro BigTwin & VSphere Setup",
     "url": "https://jameskilby.co.uk/2022/01/lab-update-part-1-compute/",
     "description": "Homelab, Supermicro",
-    "content": "Lab Update - Compute - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | VMware Lab Update – Compute ByJames January 6, 2022February 16, 2026 • 📖1 min read(223 words) 📅Published: January 06, 2022•Updated: February 16, 2026 Quite a few changes have happened in the lab recently. so I decided to do a multipart blog on the changes. The refresh was triggered by the purchase of a SuperMicro Server (2027TR-H71FRF) chassis with 4x X9DRT Nodes / Blades. This is known as a BigTwin configuration in SuperMicro parlance. This is something I was very familiar with as most of the Nutanix nodes that we deployed at Zen were of this design. Each node has 2x Intel Xeon CPU E5-2670 @ 2.60GHz 3 Nodes have 192GB of RAM and 1 has 128GB giving a combined 64c/128t and 704GB of RAM. Quite an amount to be squeezed into 2U. This is a huge uplift in compute resources so is more than welcome. I also decided to put what I could in a proper rack and purchased a Startech 25U rack to mo",
+    "content": "Homelab Compute Upgrade: SuperMicro BigTwin & VSphere Setup Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | VMware Lab Update – Compute ByJames January 6, 2022February 16, 2026 • 📖1 min read(223 words) 📅Published: January 06, 2022•Updated: February 16, 2026 Quite a few changes have happened in the lab recently. so I decided to do a multipart blog on the changes. The refresh was triggered by the purchase of a SuperMicro Server (2027TR-H71FRF) chassis with 4x X9DRT Nodes / Blades. This is known as a BigTwin configuration in SuperMicro parlance. This is something I was very familiar with as most of the Nutanix nodes that we deployed at Zen were of this design. Each node has 2x Intel Xeon CPU E5-2670 @ 2.60GHz 3 Nodes have 192GB of RAM and 1 has 128GB giving a combined 64c/128t and 704GB of RAM. Quite an amount to be squeezed into 2U. This is a huge uplift in compute resources so is more than welcome. I also decided to put what I could in a proper rack and purchased a S",
     "categories": [
       "Homelab",
       "VMware",
-      "Mikrotik",
+      "Docker",
+      "Hosting",
+      "Kubernetes",
       "Networking",
-      "Storage",
-      "Synology",
-      "vExpert"
+      "vSAN",
+      "VMware Cloud on AWS",
+      "vSphere"
     ],
     "tags": [
       "#Homelab",
@@ -2269,12 +2259,9 @@
       "Homelab",
       "Veeam",
       "VMware",
-      "VCF",
-      "vSphere",
-      "Ansible",
-      "Nutanix",
-      "TrueNAS Scale",
-      "vSAN"
+      "Storage",
+      "Personal",
+      "vSphere"
     ],
     "tags": [
       "#Desired State",
@@ -2284,18 +2271,19 @@
     "date": "2022-01-06T19:23:11+00:00"
   },
   {
-    "title": "Lab Update - Part 3 Network",
+    "title": "Homelab Network Upgrade: DACs, 40Gb/s VMotion & PfSense",
     "url": "https://jameskilby.co.uk/2022/01/lab-update-part-3-network/",
-    "description": "Homelab networking update: using DACs for vMotion and storage, achieving 40 Gb/s vMotion speeds on onboard NICs, and planning the upgrade to a 25 Gb/s switch.",
-    "content": "Lab Update - Part 3 Network - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022March 10, 2026 • 📖1 min read(113 words) 📅Published: January 06, 2022•Updated: March 10, 2026 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. 📚 Related PostsAutomating the deployment of my Homelab AI InfrastructureMana",
+    "description": "Homelab networking upgrade: replacing WatchGuard with pfSense, using DACs for 40Gb/s vMotion and storage traffic, and planning the switch to 25Gb/s.",
+    "content": "Homelab Network Upgrade: DACs, 40Gb/s VMotion & PfSense Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking Lab Update – Part 3 Network ByJames January 6, 2022March 10, 2026 • 📖1 min read(113 words) 📅Published: January 06, 2022•Updated: March 10, 2026 I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over 1Gb/s networking. This is working incredibly well. Due to the onboard network cards I am able to vMotion at 40Gb/s which for a home lab is game-changing. Storage is currently over 25Gb/s and the long-term plan is to get a 25Gb/s switch. The contenders at the moment are a Used Dell enterprise switch or possibly a QNAP box. 📚 Related PostsAutomating the deployment of my Homelab AI Infrast",
     "categories": [
       "Homelab",
       "Networking",
-      "VMware",
-      "vSphere",
+      "Artificial Intelligence",
+      "Docker",
       "Storage",
-      "vExpert",
-      "Hosting"
+      "Hosting",
+      "Synology",
+      "VMware"
     ],
     "tags": [
       "#Homelab",
@@ -2311,13 +2299,19 @@
     "categories": [
       "Homelab",
       "Storage",
-      "Kubernetes",
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "VMware",
+      "Synology",
+      "vExpert",
       "TrueNAS Scale",
       "Docker",
       "Hosting",
-      "Nutanix",
-      "Synology",
-      "Networking"
+      "Kubernetes"
     ],
     "tags": [
       "#NVMe",
@@ -2328,17 +2322,17 @@
     "date": "2022-01-11T22:35:02+00:00"
   },
   {
-    "title": "Wrangler And Node Versions",
+    "title": "Fixing Wrangler Node.js Version Conflicts After Brew Upgrade",
     "url": "https://jameskilby.co.uk/2022/01/wrangler-and-node-versions/",
     "description": "Wrangler fails to publish - exited with exit status: 9",
-    "content": "Wrangler And Node Versions - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare Wrangler and Node versions ByJames January 15, 2022April 10, 2023 • 📖1 min read(217 words) 📅Published: January 15, 2022•Updated: April 10, 2023 I am a massive fan of the brew package management system for macOS and use it on all of my Mac’s I typically just upgrade everything blindly and have never had an issue….. Until today… I went to push some changes to this site and got the following error message wrangler publish --env production /usr/local/bin/node: bad option: --openssl-legacy-provider Error: failed to execute `\"/usr/local/bin/node\" \"--openssl-legacy-provider\" \"/Users/jameskilby/Library/Caches/.wrangler/wranglerjs-1.19.6\" \"--output-file=/var/folders/89/z9t99sg16h9cw3t86wp920jr0000gn/T/.wranglerjs_outputGBCY9\" \"--wasm-binding=WASM_MODULE\" \"--no-webpack-config=1\" \"--use-entry=/Users/jameskilby/jameskilbycouk/workers-site/index.js\"`: exited with exit status: 9📋 Copy A q",
+    "content": "Fixing Wrangler Node.js Version Conflicts After Brew Upgrade Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare Wrangler and Node versions ByJames January 15, 2022April 10, 2023 • 📖1 min read(217 words) 📅Published: January 15, 2022•Updated: April 10, 2023 I am a massive fan of the brew package management system for macOS and use it on all of my Mac’s I typically just upgrade everything blindly and have never had an issue….. Until today… I went to push some changes to this site and got the following error message wrangler publish --env production /usr/local/bin/node: bad option: --openssl-legacy-provider Error: failed to execute `\"/usr/local/bin/node\" \"--openssl-legacy-provider\" \"/Users/jameskilby/Library/Caches/.wrangler/wranglerjs-1.19.6\" \"--output-file=/var/folders/89/z9t99sg16h9cw3t86wp920jr0000gn/T/.wranglerjs_outputGBCY9\" \"--wasm-binding=WASM_MODULE\" \"--no-webpack-config=1\" \"--use-entry=/Users/jameskilby/jameskilbycouk/workers-site/index.js\"`: exited with exit st",
     "categories": [
       "Cloudflare",
       "Hosting",
       "Wordpress",
+      "Personal",
       "Devops",
-      "Github",
-      "Personal"
+      "Github"
     ],
     "tags": [
       "#Cloudflare",
@@ -2356,13 +2350,10 @@
     "categories": [
       "Hosting",
       "Wordpress",
-      "Cloudflare",
-      "Docker",
       "Homelab",
-      "Kubernetes",
-      "Devops",
-      "Github",
-      "AWS"
+      "Cloudflare",
+      "Artificial Intelligence",
+      "Docker"
     ],
     "tags": [
       "#Blogging",
@@ -2372,20 +2363,22 @@
     "date": "2022-01-04T21:11:23+00:00"
   },
   {
-    "title": "Web Development",
+    "title": "Hosting This Blog On Cloudflare Workers: Why & How I Did It",
     "url": "https://jameskilby.co.uk/2022/01/web-development/",
     "description": "My Web-development workflow",
-    "content": "Web Development - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting | Cloudflare | Personal | Wordpress Web Development ByJames January 4, 2022October 1, 2025 • 📖1 min read(211 words) 📅Published: January 04, 2022•Updated: October 01, 2025 A while ago I started messing with Cloudflare Workers. I have now moved this site permanently over to them. This is partly related to some issues I have been having with internet access at home. Prior to this, the site ran from within my lab. This means the site is now super fast (hopefully :p). It was cached by Cloudflare previously and now it’s served entirely from within their network. The speed report looks good To enable this workflow I have retained a WordPress instance running within a docker instance on my Synology. I have also set up Cloudflare teams to access this. This allows me to have the convenience of utilising WordPress as a CMS without having to worry about the security aspect as all public content is st",
+    "content": "Hosting This Blog On Cloudflare Workers: Why & How I Did It Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Hosting | Cloudflare | Personal | Wordpress Web Development ByJames January 4, 2022October 1, 2025 • 📖1 min read(211 words) 📅Published: January 04, 2022•Updated: October 01, 2025 A while ago I started messing with Cloudflare Workers. I have now moved this site permanently over to them. This is partly related to some issues I have been having with internet access at home. Prior to this, the site ran from within my lab. This means the site is now super fast (hopefully :p). It was cached by Cloudflare previously and now it’s served entirely from within their network. The speed report looks good To enable this workflow I have retained a WordPress instance running within a docker instance on my Synology. I have also set up Cloudflare teams to access this. This allows me to have the convenience of utilising WordPress as a CMS without having to worry about the security aspect ",
     "categories": [
       "Hosting",
       "Cloudflare",
       "Personal",
       "Wordpress",
+      "Artificial Intelligence",
+      "Docker",
+      "Consulting",
+      "Homelab",
+      "Kubernetes",
       "Devops",
-      "Github",
-      "VMware",
-      "vSphere",
-      "Nutanix"
+      "Github"
     ],
     "tags": [
       "#Cloudflare",
@@ -2405,9 +2398,9 @@
       "Docker",
       "Homelab",
       "Kubernetes",
+      "Personal",
       "AWS",
-      "Devops",
-      "Github"
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Cloudflare",
@@ -2418,23 +2411,21 @@
     "date": "2022-10-20T15:26:08+00:00"
   },
   {
-    "title": "Starlink",
+    "title": "Starlink Satellite Internet Review: Rural Broadband Solution",
     "url": "https://jameskilby.co.uk/2022/10/starlink/",
     "description": "Adding Starlink as another internet connection",
-    "content": "Starlink - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Hosting Starlink ByJames October 11, 2022February 19, 2026 • 📖4 min read(747 words) 📅Published: October 11, 2022•Updated: February 19, 2026 Since moving to Dorset last year internet connectivity has been the bane of my existence. Currently, I have an ADSL connection provided by my old employer Zen and a 5G connection provided by Three. These are both plumbed into my WatchGuard Firewall with multi-wan configured. Most of the time the usability is ok but there are multiple times a day when latency or packet loss is not acceptable. From living at previous locations where I had multiple companies that would deliver Gigabit Internet connections it was far from ideal. My job at VMware involves numerous calls with customers every day, typically presenting things to them and often with video on. Even a small interruption can leave a bad impression. VMware sells an SDWan product (Velocloud) and enables",
+    "content": "Starlink Satellite Internet Review: Rural Broadband Solution Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Hosting Starlink ByJames October 11, 2022February 19, 2026 • 📖4 min read(747 words) 📅Published: October 11, 2022•Updated: February 19, 2026 Since moving to Dorset last year internet connectivity has been the bane of my existence. Currently, I have an ADSL connection provided by my old employer Zen and a 5G connection provided by Three. These are both plumbed into my WatchGuard Firewall with multi-wan configured. Most of the time the usability is ok but there are multiple times a day when latency or packet loss is not acceptable. From living at previous locations where I had multiple companies that would deliver Gigabit Internet connections it was far from ideal. My job at VMware involves numerous calls with customers every day, typically presenting things to them and often with video on. Even a small interruption can leave a bad impression. VMware sells an SD",
     "categories": [
       "Homelab",
       "Hosting",
       "Cloudflare",
       "Personal",
       "Wordpress",
-      "VMware",
-      "Mikrotik",
-      "Networking",
       "Artificial Intelligence",
       "Docker",
-      "Storage",
-      "vExpert"
+      "AWS",
+      "Mikrotik",
+      "Networking"
     ],
     "tags": [
       "#Homelab",
@@ -2451,12 +2442,17 @@
       "Homelab",
       "VMware",
       "vSphere",
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "Personal",
       "VMware Cloud on AWS",
+      "Hosting",
       "Storage",
-      "vExpert",
-      "Synology",
-      "TrueNAS Scale",
-      "vSAN"
+      "Synology"
     ],
     "tags": [
       "#Upgrade",
@@ -2467,21 +2463,20 @@
   {
     "title": "Use Portainer In A Homelab With GitHub",
     "url": "https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/",
-    "description": "How to use Portainer with GitHub to manage and deploy Docker containers in your homelab — covers stack provisioning, Synology setup, and version-controlled deployments.",
+    "description": "How to use Portainer with GitHub to manage Docker containers in your homelab — covers stack provisioning, Synology setup, and version-controlled deployments.",
     "content": "Use Portainer In A Homelab With GitHub - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Docker | Homelab | Hosting | Kubernetes Use Portainer in a Homelab with GitHub ByJames December 9, 2022March 10, 2026 • 📖2 min read(458 words) 📅Published: December 09, 2022•Updated: March 10, 2026 Late to the party or not, I have been using containers in my lab more and more and that has led me to Portainer…. I use it for managing the docker containers on my Synology but it can also be used for managing lots of other things. In their own words “Portainer accelerates container adoption. It reduces operational complexity and addresses the security challenges of running containers in Docker, Swarm, Nomad and Kubernetes.” Portainer Platform Based on the capabilities shown above I am only scratching the surface but I thought I would showcase one of the key features that I am utilising in deployment and updating containers. Prerequisites For now, I am going to assume that you hav",
     "categories": [
       "Docker",
       "Homelab",
       "Hosting",
       "Kubernetes",
-      "Automation",
+      "Artificial Intelligence",
+      "Veeam",
       "VMware",
+      "Networking",
       "Storage",
       "TrueNAS Scale",
-      "vSAN",
-      "vSphere",
-      "Artificial Intelligence",
-      "Veeam"
+      "VCF"
     ],
     "tags": [
       "#Containers",
@@ -2491,24 +2486,22 @@
     "date": "2022-12-09T09:06:37+00:00"
   },
   {
-    "title": "100Gb/s In My Homelab",
+    "title": "MikroTik CRS504 Review: 100Gb/s Networking In My Homelab",
     "url": "https://jameskilby.co.uk/2022/12/100gb-s-in-my-homelab-sort-of/",
-    "description": "How I added 100 Gb/s networking to my homelab using the MikroTik CRS504-4XQ-IN — splitting 4×100 Gb ports into 16×25 Gb connections for TrueNAS and Supermicro nodes.",
-    "content": "100Gb/s In My Homelab - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking | Storage | VMware 100Gb/s in my Homelab ByJames December 19, 2022March 10, 2026 • 📖2 min read(304 words) 📅Published: December 19, 2022•Updated: March 10, 2026 For a while, I’ve been looking to update the networking at the core of my homelab. I have had some great results with the current setup utilising a number of DAC’s but there were a couple of things that were annoying me. Then MikroTik dropped the CRS504-4XQ-IN and if the price wasn’t horrendous then that was the route I was going to go to alleviate these issues. Yes, it’s 100Gb/s and only has 4 ports but that should be all I need… I managed to locate one in stock for £587 plus Vat As you can see the switch has redundant power not often found at this price point. It actually has 4 ways to power it. 2 AC supplies, A DC input and then strangest of all it can be powered by POE in. This last point showcases how power ",
+    "description": "How I added 100Gb/s networking to my homelab using the MikroTik CRS504-4XQ-IN — splitting 4 ports into 16x25Gb connections for TrueNAS and Supermicro nodes.",
+    "content": "MikroTik CRS504 Review: 100Gb/s Networking In My Homelab Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab | Networking | Storage | VMware 100Gb/s in my Homelab ByJames December 19, 2022March 10, 2026 • 📖2 min read(304 words) 📅Published: December 19, 2022•Updated: March 10, 2026 For a while, I’ve been looking to update the networking at the core of my homelab. I have had some great results with the current setup utilising a number of DAC’s but there were a couple of things that were annoying me. Then MikroTik dropped the CRS504-4XQ-IN and if the price wasn’t horrendous then that was the route I was going to go to alleviate these issues. Yes, it’s 100Gb/s and only has 4 ports but that should be all I need… I managed to locate one in stock for £587 plus Vat As you can see the switch has redundant power not often found at this price point. It actually has 4 ways to power it. 2 AC supplies, A DC input and then strangest of all it can be powered by POE in. This last point sh",
     "categories": [
       "Homelab",
       "Networking",
       "Storage",
       "VMware",
-      "Mikrotik",
-      "Nutanix",
-      "Runecast",
-      "VCF",
-      "TrueNAS Scale",
+      "Synology",
+      "Veeam",
+      "VMware Cloud on AWS",
       "vSAN",
-      "vSphere",
       "Artificial Intelligence",
-      "Docker"
+      "Docker",
+      "Hosting"
     ],
     "tags": [
       "#Homelab",
@@ -2524,15 +2517,15 @@
     "categories": [
       "Artificial Intelligence",
       "Automation",
+      "Homelab",
+      "VMware",
+      "Docker",
+      "Hosting",
       "Ansible",
       "Containers",
       "Devops",
-      "Homelab",
       "NVIDIA",
-      "Traefik",
-      "VMware",
-      "Docker",
-      "Hosting"
+      "Traefik"
     ],
     "tags": [
       "#Energy",
@@ -2542,19 +2535,18 @@
     "date": "2026-03-09T23:39:37+00:00"
   },
   {
-    "title": "Web Development Improvements",
+    "title": "Blog Performance & SEO Improvements: Cloudflare, Privacy & More",
     "url": "https://jameskilby.co.uk/2026/01/web-development-improvements/",
     "description": "I have spent the Christmas break making some improvements to this blog. A lot of these are in \"the backend\" These help improve the performance, Privacy, SEO,",
-    "content": "Web Development Improvements - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026March 10, 2026 • 📖8 min read(1,598 words) 📅Published: January 15, 2026•Updated: March 10, 2026 I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO, and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had a HUGE amount of help with some of these steps from a variety of AI tools. However Warp did the bulk of the heavy lifting. The repo behind the content of this site as well as the implementation is public in case you want to look deeper/steal anything. Before we dig into the details it’s probably worth briefly summarising what is going on. Solution Overview Below is a condensed view of what the GitHub ru",
+    "content": "Blog Performance & SEO Improvements: Cloudflare, Privacy & More Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Cloudflare | Hosting | Wordpress Web Development Improvements ByJames January 15, 2026March 10, 2026 • 📖8 min read(1,598 words) 📅Published: January 15, 2026•Updated: March 10, 2026 I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO, and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had a HUGE amount of help with some of these steps from a variety of AI tools. However Warp did the bulk of the heavy lifting. The repo behind the content of this site as well as the implementation is public in case you want to look deeper/steal anything. Before we dig into the details it’s probably worth briefly summarising what is going on. Solution Overview Below is a condensed view of ",
     "categories": [
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Artificial Intelligence",
-      "Docker",
+      "Homelab",
       "Devops",
-      "Personal",
-      "Homelab"
+      "Github",
+      "Personal"
     ],
     "tags": [
       "#Cloudflare",
@@ -2573,15 +2565,12 @@
       "VMware",
       "VMware Cloud on AWS",
       "Homelab",
-      "Nutanix",
       "Storage",
       "vExpert",
-      "AWS",
-      "Veeam",
-      "Runecast",
+      "Personal",
+      "vSphere",
       "TrueNAS Scale",
-      "vSAN",
-      "vSphere"
+      "vSAN"
     ],
     "tags": [
       "#Content Library",
@@ -2605,14 +2594,12 @@
       "NVIDIA",
       "Traefik",
       "VMware",
-      "Networking",
-      "VMware Cloud on AWS",
-      "VCF",
-      "Storage",
-      "TrueNAS Scale",
+      "Veeam",
       "Personal",
-      "vSphere",
-      "vSAN"
+      "Docker",
+      "Hosting",
+      "vSAN",
+      "AWS"
     ],
     "tags": [
       "#AI",
@@ -2632,12 +2619,11 @@
       "Artificial Intelligence",
       "Docker",
       "Hosting",
-      "Wordpress",
       "Homelab",
-      "Networking",
-      "Personal",
+      "Wordpress",
+      "Cloudflare",
       "Storage",
-      "VMware"
+      "vExpert"
     ],
     "tags": [
       "#AI",
@@ -2656,14 +2642,17 @@
     "categories": [
       "Ansible",
       "Homelab",
-      "Nutanix",
-      "Networking",
-      "Storage",
-      "VMware",
-      "Synology",
-      "Artificial Intelligence",
       "Docker",
-      "Hosting"
+      "Hosting",
+      "Kubernetes",
+      "Networking",
+      "VMware",
+      "vSphere",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik"
     ],
     "tags": [
       "#Ansible",
@@ -2681,11 +2670,13 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "Runecast",
-      "Personal",
       "Homelab",
-      "Veeam",
-      "vSAN"
+      "Networking",
+      "Storage",
+      "vSAN",
+      "Personal",
+      "vSphere",
+      "VCF"
     ],
     "tags": [
       "#VMware Cloud on AWS"
@@ -2702,6 +2693,7 @@
       "Devops",
       "Github",
       "Wordpress",
+      "Hosting",
       "Ansible",
       "Artificial Intelligence",
       "Containers",
@@ -2709,7 +2701,6 @@
       "NVIDIA",
       "Traefik",
       "VMware",
-      "Hosting",
       "Personal"
     ],
     "tags": [
@@ -2730,21 +2721,26 @@
     "categories": [
       "VMware",
       "vSAN",
-      "VCF",
-      "Personal",
-      "VMware Cloud on AWS",
+      "Automation",
       "Homelab",
-      "Networking",
-      "Storage"
+      "VMware Cloud on AWS",
+      "vSphere",
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "VCF"
     ],
     "tags": [],
     "date": "2025-12-06T10:59:14+00:00"
   },
   {
-    "title": "Time In A VMC Environment",
+    "title": "NTP & Time Sync In VMware Cloud On AWS (VMC) Explained",
     "url": "https://jameskilby.co.uk/2025/12/time-in-a-vmc-environment/",
     "description": "How to use the Amazon Time Sync Service in a VMC environment",
-    "content": "Time In A VMC Environment - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025February 1, 2026 • 📖1 min read(139 words) 📅Published: December 08, 2025•Updated: February 01, 2026 One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Table of Contents Time VMC allows you to utilise the Amazon Time Sync Service for keeping an accurate and precise time. Firewall Config To utilise this from a VMC guest perspective, the appropriate NSX firewall rules need to be in place. I.e. on the Compute Gateway, UDP port 123 needs to be available 169.254.169.123 The IP Address is part of the “link local” address range 169.254.0.0/16 and I like that they picked .123 matching the NTP port. Note: ",
+    "content": "NTP & Time Sync In VMware Cloud On AWS (VMC) Explained Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025February 1, 2026 • 📖1 min read(139 words) 📅Published: December 08, 2025•Updated: February 01, 2026 One of the nice things about the VMC Service is that you dont have to worry about a number of the traditional infrastructure services that you typically obsess over when your running your own infrastructure. One of those is Time…. A key requirement for any enterprise platform. Table of Contents Time VMC allows you to utilise the Amazon Time Sync Service for keeping an accurate and precise time. Firewall Config To utilise this from a VMC guest perspective, the appropriate NSX firewall rules need to be in place. I.e. on the Compute Gateway, UDP port 123 needs to be available 169.254.169.123 The IP Address is part of the “link local” address range 169.254.0.0/16 and I like that they picked .123 matching the NTP ",
     "categories": [
       "VMware Cloud on AWS",
       "VMware",
@@ -2757,10 +2753,10 @@
     "date": "2025-12-08T14:03:44+00:00"
   },
   {
-    "title": "Ubuntu Disk Expansion Steps",
+    "title": "How To Expand Ubuntu Disk Space: LVM Pvresize Step-by-Step",
     "url": "https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/",
-    "description": "How to expand disks from the command line in Ubuntu.",
-    "content": "Ubuntu Disk Expansion Steps - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Ubuntu Ubuntu Disk Expansion Steps ByJames December 15, 2025January 30, 2026 • 📖1 min read(91 words) 📅Published: December 15, 2025•Updated: January 30, 2026 How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps. So I decided to write them down. Table of Contents 1. Rescan for disk size changes sudo tee /sys/class/block/sda/device/rescan 2. Extend the physical partition (if needed) sudo growpart /dev/sda 3 3. Resize the physical volume sudo pvresize /dev/sda3 4. Extend the logical volume to use all available space sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv 5. Resize the filesystem sudo resize2fs /dev/mapper/ubuntu–vg-ubuntu–lv 6. Verify the new size df -h Connect with me:GitHubTwitterLinkedIn",
+    "description": "Step-by-step guide to expanding disk space in Ubuntu using growpart, pvresize, and lvextend for LVM volumes — commands I always forget and keep here for reference.",
+    "content": "How To Expand Ubuntu Disk Space: LVM Pvresize Step-by-Step Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Ubuntu Ubuntu Disk Expansion Steps ByJames December 15, 2025January 30, 2026 • 📖1 min read(91 words) 📅Published: December 15, 2025•Updated: January 30, 2026 How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps. So I decided to write them down. Table of Contents 1. Rescan for disk size changes sudo tee /sys/class/block/sda/device/rescan 2. Extend the physical partition (if needed) sudo growpart /dev/sda 3 3. Resize the physical volume sudo pvresize /dev/sda3 4. Extend the logical volume to use all available space sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv 5. Resize the filesystem sudo resize2fs /dev/mapper/ubuntu–vg-ubuntu–lv 6. Verify the new size df -h Connect with me:GitHubTwitterLinkedIn",
     "categories": [
       "Ubuntu"
     ],
@@ -2778,12 +2774,19 @@
     "categories": [
       "Artificial Intelligence",
       "Homelab",
-      "Veeam",
-      "VMware",
+      "Storage",
+      "vExpert",
       "Hosting",
       "Networking",
-      "Storage",
-      "vExpert"
+      "Ansible",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "VMware",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -2793,25 +2796,19 @@
     "date": "2025-04-11T15:46:23+00:00"
   },
   {
-    "title": "VMC Quick Sizing Guide",
+    "title": "VMware Cloud On AWS Storage Sizing Quick Reference Guide",
     "url": "https://jameskilby.co.uk/2025/05/vmc-quick-sizing-guide/",
     "description": "Get essential insights on storage resources in VMware Cloud on AWS. Use our quick sizing guide for efficient planning and management.",
-    "content": "VMC Quick Sizing Guide - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | VMware Cloud on AWS VMC Quick Sizing Guide ByJames May 21, 2025July 2, 2025 • 📖1 min read(199 words) 📅Published: May 21, 2025•Updated: July 02, 2025 This is a quick reference guide to the available storage resources that you get in VMware Cloud on AWS depending on the host type in use. For up to date info always use the official sizing tool located here This is based on vSAN OSA and excluding the management overhead (Ie valid for secondary clusters) It also uses the most efficient storage policy that is supported based on the number of hosts available. If you are planning to do a cluster conversion between host types then the management stack size doesn’t change. Host Typei3i3enI4iNo of Hostsi3 (TiB)i3en (TiB)I4i (TiB)FTT in use211.241.3918.48FTT1 RAID1316.862.0927.71FTT1 RAID1433.68124.4955.57FTT1 RAID5542.1155.6169.46FTT1 RAID5644.8165.5773.9FTT2 RAID6752.26193.1786.22FTT2 RAID6",
+    "content": "VMware Cloud On AWS Storage Sizing Quick Reference Guide Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | VMware Cloud on AWS VMC Quick Sizing Guide ByJames May 21, 2025July 2, 2025 • 📖1 min read(199 words) 📅Published: May 21, 2025•Updated: July 02, 2025 This is a quick reference guide to the available storage resources that you get in VMware Cloud on AWS depending on the host type in use. For up to date info always use the official sizing tool located here This is based on vSAN OSA and excluding the management overhead (Ie valid for secondary clusters) It also uses the most efficient storage policy that is supported based on the number of hosts available. If you are planning to do a cluster conversion between host types then the management stack size doesn’t change. Host Typei3i3enI4iNo of Hostsi3 (TiB)i3en (TiB)I4i (TiB)FTT in use211.241.3918.48FTT1 RAID1316.862.0927.71FTT1 RAID1433.68124.4955.57FTT1 RAID5542.1155.6169.46FTT1 RAID5644.8165.5773.9FTT2 RAID6752.26193.",
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "vSAN",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
+      "VCF",
+      "Personal",
+      "Automation",
       "Homelab",
-      "NVIDIA",
-      "Traefik",
-      "Nutanix",
-      "Runecast",
-      "TrueNAS Scale",
-      "vSphere"
+      "Networking",
+      "Storage"
     ],
     "tags": [
       "#Sizing",
@@ -2821,10 +2818,10 @@
     "date": "2025-05-21T09:33:04+00:00"
   },
   {
-    "title": "Whats In My Backpack?",
+    "title": "What's In My Tech Bag? Everyday Carry For IT Consultants",
     "url": "https://jameskilby.co.uk/2019/01/whats-in-my-backpack/",
     "description": "Check out the must-have tools and tech I carry daily. Find out what keeps me productive and organized in any situation!",
-    "content": "Whats In My Backpack? - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Consulting Whats in my backpack? ByJames January 10, 2019February 9, 2026 • 📖1 min read(250 words) 📅Published: January 10, 2019•Updated: February 09, 2026 I have seen a few posts online recently about the tools and technology people use on a day to day basis.   A few components that I have no one seems to have mentioned yet.  So I thought it was probably a good idea to share my list. I will probably do a separate list of the software I use at some point as well. Below is a list of the things that I tend to carry in my bag.  I don’t always have all of them with me but I typically swap out what I need as appropriate depending on if need to go to a datacenter or just a meeting/onsite client work. Macbook Air 2018 ( My goto machine) iPad Pro 9.7  & Apple Pencil allows for quick sketching but also used as a presentation remote. Anker Powercore 20100 ( Huge battery for keeping iPhone/iPad charged",
+    "content": "What's In My Tech Bag? Everyday Carry For IT Consultants Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Consulting Whats in my backpack? ByJames January 10, 2019February 9, 2026 • 📖1 min read(250 words) 📅Published: January 10, 2019•Updated: February 09, 2026 I have seen a few posts online recently about the tools and technology people use on a day to day basis.   A few components that I have no one seems to have mentioned yet.  So I thought it was probably a good idea to share my list. I will probably do a separate list of the software I use at some point as well. Below is a list of the things that I tend to carry in my bag.  I don’t always have all of them with me but I typically swap out what I need as appropriate depending on if need to go to a datacenter or just a meeting/onsite client work. Macbook Air 2018 ( My goto machine) iPad Pro 9.7  & Apple Pencil allows for quick sketching but also used as a presentation remote. Anker Powercore 20100 ( Huge battery for keeping i",
     "categories": [
       "Consulting",
       "Personal"
@@ -2833,22 +2830,18 @@
     "date": "2019-01-10T21:48:41+00:00"
   },
   {
-    "title": "Lab Storage",
+    "title": "Homelab Storage Upgrade: Synology DS918 For VMware & NFS",
     "url": "https://jameskilby.co.uk/2019/02/lab-storage-2/",
     "description": "Upgrade your lab storage performance with the Synology DS918. Learn how to enhance your VMware stack and achieve efficient NFS setup.",
-    "content": "Lab Storage - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Lab Storage ByJames February 10, 2019March 10, 2026 • 📖1 min read(207 words) 📅Published: February 10, 2019•Updated: March 10, 2026 Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology DS918 It’s a very compact unit with a quad-core Intel Celeron & I have left the RAM at 4 GB for now. I have added some of the existing SSD’s that I had giving me about 3TB of usable flash.  I am presenting this back to my VMware hosts using NFS 4.1.   I must have missed the announcement as this is now built into the Synology GUI ( It used to be a command-line-only option) I have verified the VAAI works as expected in this configuration.  At ",
+    "content": "Homelab Storage Upgrade: Synology DS918 For VMware & NFS Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu Homelab Lab Storage ByJames February 10, 2019March 10, 2026 • 📖1 min read(207 words) 📅Published: February 10, 2019•Updated: March 10, 2026 Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology DS918 It’s a very compact unit with a quad-core Intel Celeron & I have left the RAM at 4 GB for now. I have added some of the existing SSD’s that I had giving me about 3TB of usable flash.  I am presenting this back to my VMware hosts using NFS 4.1.   I must have missed the announcement as this is now built into the Synology GUI ( It used to be a command-line-only option) I have verified the VAAI works as expected",
     "categories": [
       "Homelab",
-      "Ansible",
-      "Mikrotik",
-      "Networking",
       "VMware",
-      "VMware Cloud on AWS",
-      "vSAN",
-      "Runecast",
-      "Artificial Intelligence",
-      "Docker",
-      "VCF"
+      "Storage",
+      "vExpert",
+      "TrueNAS Scale",
+      "Mikrotik",
+      "Networking"
     ],
     "tags": [
       "#Homelab",
@@ -2865,10 +2858,10 @@
     "categories": [
       "AWS",
       "Personal",
+      "Hosting",
+      "Consulting",
       "VMware",
-      "Nutanix",
-      "Devops",
-      "Consulting"
+      "VMware Cloud on AWS"
     ],
     "tags": [
       "#AWS",
@@ -2877,21 +2870,22 @@
     "date": "2019-12-16T23:46:22+00:00"
   },
   {
-    "title": "Monitoring VMC - Part 1",
+    "title": "Monitoring VMware Cloud On AWS: Tools & Approaches (Part 1)",
     "url": "https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/",
     "description": "Learn essential monitoring techniques for VMware Cloud on AWS. Optimize your VMs and reduce costs with the right tools. Start monitoring today!",
-    "content": "Monitoring VMC - Part 1 - Jameskilbycouk Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | AWS | Veeam Monitoring VMC – Part 1 ByJames December 17, 2019October 1, 2025 • 📖2 min read(470 words) 📅Published: December 17, 2019•Updated: October 01, 2025 As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams will be monitoring all of the infrastructure components, however, you still need to monitor your Virtual Machines. If it was me I would still want some monitoring of the Infrastructure and I see two different reasons why you would want to do this: Firstly I want to check that the VMware Cloud on AWS service is doing what I am paying for. Secondly, I still need to monitor my VMs to ensure they are all behaving prope",
+    "content": "Monitoring VMware Cloud On AWS: Tools & Approaches (Part 1) Skip to content Jameskilbycouk Jameskilbycouk Toggle Menu VMware | AWS | Veeam Monitoring VMC – Part 1 ByJames December 17, 2019October 1, 2025 • 📖2 min read(470 words) 📅Published: December 17, 2019•Updated: October 01, 2025 As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams will be monitoring all of the infrastructure components, however, you still need to monitor your Virtual Machines. If it was me I would still want some monitoring of the Infrastructure and I see two different reasons why you would want to do this: Firstly I want to check that the VMware Cloud on AWS service is doing what I am paying for. Secondly, I still need to monitor my VMs to ensure they are",
     "categories": [
       "VMware",
       "AWS",
       "Veeam",
-      "VMware Cloud on AWS",
-      "vSAN",
-      "Hosting",
       "VCF",
       "Homelab",
+      "Personal",
       "vSphere",
-      "Personal"
+      "Storage",
+      "vExpert",
+      "VMware Cloud on AWS",
+      "vSAN"
     ],
     "tags": [
       "#AWS",
