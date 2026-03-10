@@ -13,14 +13,14 @@
       "categories": [
         "Homelab",
         "Hosting",
+        "Runecast",
+        "VMware",
+        "Nutanix",
         "Cloudflare",
-        "Personal",
         "Wordpress",
-        "Artificial Intelligence",
-        "Docker",
-        "AWS",
         "Mikrotik",
-        "Networking"
+        "Networking",
+        "Personal"
       ],
       "tags": [
         null,
@@ -34,7 +34,7 @@
       "title": "Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU",
       "description": "Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU, Self Hosted solutions for AI enthusiasts. Start your AI journey today!",
       "date": "2024-10-11T15:03:26Z",
-      "modified": "2025-10-01T15:22:12Z",
+      "modified": "2026-03-10T20:35:14Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/",
       "markdown_url": "/markdown/posts/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu.md",
@@ -43,12 +43,15 @@
         "Artificial Intelligence",
         "Docker",
         "Homelab",
-        "Ansible",
-        "Veeam",
+        "Hosting",
+        "Runecast",
         "VMware",
+        "Mikrotik",
+        "Networking",
+        "Kubernetes",
+        "VCF",
         "Storage",
-        "Synology",
-        "VCF"
+        "TrueNAS Scale"
       ],
       "tags": [
         null,
@@ -71,15 +74,12 @@
       "categories": [
         "Runecast",
         "VMware",
-        "AWS",
-        "Veeam",
         "Homelab",
-        "TrueNAS Scale",
-        "vSAN",
-        "vSphere",
-        "Networking",
         "Storage",
-        "VMware Cloud on AWS"
+        "Synology",
+        "VMware Cloud on AWS",
+        "vSphere",
+        "Ansible"
       ],
       "tags": [
         null,
@@ -95,7 +95,7 @@
       "title": "Octopus Agile Battery & Solar Calculator",
       "description": "A free Octopus Agile battery calculator using your real usage data to show if a home battery or solar is worth the investment. Tests 5 UK batteries.",
       "date": "2026-03-09T23:39:37Z",
-      "modified": "2026-03-10T11:21:48Z",
+      "modified": "2026-03-10T20:35:10Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/",
       "markdown_url": "/markdown/posts/octopus-agile-battery-solar-calculator.md",
@@ -103,10 +103,10 @@
       "categories": [
         "Artificial Intelligence",
         "Automation",
-        "Homelab",
-        "VMware",
         "Docker",
         "Hosting",
+        "Homelab",
+        "VMware",
         "Ansible",
         "Containers",
         "Devops",
@@ -124,7 +124,7 @@
     {
       "slug": "nutanix-ncp",
       "title": "Nutanix NCP",
-      "description": "Nutanix NCP Experience",
+      "description": "A first-hand account of sitting the Nutanix Certified Professional (NCP) exam, including free training resources, exam tips, and hands-on Nutanix experience.",
       "date": "2020-07-02T15:20:30Z",
       "modified": "2024-07-10T09:27:19Z",
       "author": "James Kilby",
@@ -134,12 +134,11 @@
       "categories": [
         "Nutanix",
         "Personal",
-        "Devops",
-        "AWS",
         "Hosting",
+        "Cloudflare",
+        "Wordpress",
         "VMware",
-        "vSphere",
-        "Consulting"
+        "vSphere"
       ],
       "tags": [
         null,
@@ -153,7 +152,7 @@
       "title": "Nutanix Command Reference Guide",
       "description": "Access a comprehensive list of useful Nutanix commands. Enhance your skills and streamline your operations with our handy reference guide.",
       "date": "2018-06-05T20:59:24Z",
-      "modified": "2024-07-10T09:17:53Z",
+      "modified": "2026-03-10T20:35:15Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2018/06/nutanix-command-reference-guide/",
       "markdown_url": "/markdown/posts/nutanix-command-reference-guide.md",
@@ -169,7 +168,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg)\n\n[Nutanix](https://jameskilby.co.uk/category/nutanix/)\n\n# Nutanix Command Reference Guide\n\nBy[James](https://jameskilby.co.uk) June 5, 2018July 10, 2024 • 📖1 min read(105 words)\n\n📅 **Published:** June ..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg)\n\n[Nutanix](https://jameskilby.co.uk/category/nutanix/)\n\n# Nutanix Command Reference Guide\n\nBy[James](https://jameskilby.co.uk) June 5, 2018March 10, 2026 • 📖1 min read(105 words)\n\n📅 **Published:** June..."
     },
     {
       "slug": "nutanix-ce",
@@ -186,11 +185,10 @@
         "Nutanix",
         "Networking",
         "Storage",
+        "Synology",
         "VMware",
-        "Docker",
-        "Hosting",
-        "Kubernetes",
-        "vSphere"
+        "Veeam",
+        "Artificial Intelligence"
       ],
       "tags": [
         null
@@ -212,11 +210,22 @@
         "Homelab",
         "Nutanix",
         "VMware",
-        "Ansible",
+        "Networking",
         "Storage",
-        "Synology",
+        "AWS",
+        "Veeam",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "TrueNAS Scale",
+        "vSAN",
         "vSphere",
-        "VCF"
+        "Docker",
+        "Hosting",
+        "Kubernetes"
       ],
       "tags": [
         null,
@@ -250,9 +259,9 @@
     {
       "slug": "my-home-office-setup-upgrades",
       "title": "My Home Office Setup & Upgrades",
-      "description": "My Home Office",
+      "description": "Upgrading my home office in 2020 with a Dell 49-inch ultrawide monitor, improved video call setup, and ergonomic changes to boost remote working productivity.",
       "date": "2021-01-05T12:17:13Z",
-      "modified": "2025-10-01T15:22:15Z",
+      "modified": "2026-03-10T20:35:14Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/",
       "markdown_url": "/markdown/posts/my-home-office-setup-upgrades.md",
@@ -260,9 +269,11 @@
       "categories": [
         "Personal",
         "Consulting",
-        "VMware",
+        "Devops",
         "Hosting",
-        "AWS"
+        "VMware",
+        "Nutanix",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -270,7 +281,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-1024x768.jpeg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1.jpeg)\n\n[Personal](https://jameskilby.co.uk/category/personal/) | [Consulting](https://jameskilby.co.uk/category/consulting/)\n\n# My Home Office Setup & Upgrades\n\nBy[James](https://jameskilby.co.uk) January 5, 2021October 1, 202..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1.jpeg)\n\n[Personal](https://jameskilby.co.uk/category/personal/) | [Consulting](https://jameskilby.co.uk/category/consulting/)\n\n# My Home Office Setup & Upgrades\n\nBy[James](https://jameskilby.co.uk) January 5, 2021March 10, 2026..."
     }
   ],
   "page": 3,

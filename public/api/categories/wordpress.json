@@ -5,7 +5,7 @@
     {
       "slug": "web-development-improvements",
       "title": "Web Development Improvements",
-      "description": "I have spent the Christmas break making some improvements to this blog. A lot of these are in \"the backend\" These help improve the performance, Privacy, SEO,",
+      "description": "A roundup of performance, SEO, privacy, and security improvements made to this WordPress blog over the Christmas break, including backend optimisations and best practices.",
       "date": "2026-01-15T15:12:16Z",
       "modified": "2026-03-10T06:47:55Z",
       "author": "James Kilby",
@@ -16,10 +16,12 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Homelab",
         "Devops",
-        "Github",
-        "Personal"
+        "Personal",
+        "AWS",
+        "Docker",
+        "Homelab",
+        "Kubernetes"
       ],
       "tags": [
         null,
@@ -43,14 +45,14 @@
       "categories": [
         "Homelab",
         "Hosting",
+        "Runecast",
+        "VMware",
+        "Nutanix",
         "Cloudflare",
-        "Personal",
         "Wordpress",
-        "Artificial Intelligence",
-        "Docker",
-        "AWS",
         "Mikrotik",
-        "Networking"
+        "Networking",
+        "Personal"
       ],
       "tags": [
         null,
@@ -64,7 +66,7 @@
       "title": "How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare",
       "description": "Learn how to automate your blog with GitHub Actions and Cloudflare for seamless publishing. Check out my steps to improve your setup today!",
       "date": "2025-10-06T15:57:06Z",
-      "modified": "2026-03-10T06:47:55Z",
+      "modified": "2026-03-10T20:35:15Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/",
       "markdown_url": "/markdown/posts/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare.md",
@@ -75,13 +77,6 @@
         "Github",
         "Wordpress",
         "Hosting",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Homelab",
-        "NVIDIA",
-        "Traefik",
-        "VMware",
         "Personal"
       ],
       "tags": [
@@ -109,9 +104,9 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Personal",
         "Devops",
-        "Github"
+        "Github",
+        "Personal"
       ],
       "tags": [
         null,
@@ -127,7 +122,7 @@
       "title": "How I Migrated from Pocket to Hoarder with AI Integration",
       "description": "How I migrated to Hoarder for my Bookmark Management",
       "date": "2025-01-29T23:31:56Z",
-      "modified": "2026-03-10T06:47:56Z",
+      "modified": "2026-03-10T20:35:11Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/",
       "markdown_url": "/markdown/posts/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way.md",
@@ -136,11 +131,14 @@
         "Artificial Intelligence",
         "Docker",
         "Hosting",
-        "Homelab",
-        "Wordpress",
         "Cloudflare",
+        "Wordpress",
+        "Homelab",
+        "VMware",
+        "Automation",
+        "Personal",
         "Storage",
-        "vExpert"
+        "TrueNAS Scale"
       ],
       "tags": [
         null,
@@ -155,7 +153,7 @@
     {
       "slug": "my-first-pull",
       "title": "My First Pull",
-      "description": "My First Pull Request",
+      "description": "A personal account of submitting my first open source pull request — spotting bugs in a HashiCorp Packer project and contributing improvements to the codebase on GitHub.",
       "date": "2020-12-22T16:38:11Z",
       "modified": "2025-12-08T12:48:16Z",
       "author": "James Kilby",
@@ -166,17 +164,17 @@
         "Devops",
         "Personal",
         "VMware",
+        "vSphere",
         "Ansible",
         "Artificial Intelligence",
         "Containers",
         "Homelab",
         "NVIDIA",
         "Traefik",
-        "vSphere",
-        "AWS",
         "Cloudflare",
         "Hosting",
-        "Wordpress"
+        "Wordpress",
+        "AWS"
       ],
       "tags": [
         null,
@@ -189,7 +187,7 @@
     {
       "slug": "web-development",
       "title": "Web Development",
-      "description": "My Web-development workflow",
+      "description": "How I migrated my WordPress blog to Cloudflare Workers to serve it globally from Cloudflare's edge network, dramatically improving page load speed and performance.",
       "date": "2022-01-04T11:27:12Z",
       "modified": "2025-10-01T15:22:14Z",
       "author": "James Kilby",
@@ -201,13 +199,12 @@
         "Cloudflare",
         "Personal",
         "Wordpress",
-        "Artificial Intelligence",
         "Docker",
-        "Consulting",
         "Homelab",
         "Kubernetes",
-        "Devops",
-        "Github"
+        "VMware",
+        "AWS",
+        "Consulting"
       ],
       "tags": [
         null,
@@ -228,16 +225,12 @@
       "api_url": "/api/posts/cloudflare.json",
       "categories": [
         "Hosting",
+        "Cloudflare",
+        "Wordpress",
         "Docker",
         "Homelab",
         "Kubernetes",
-        "Personal",
-        "AWS",
-        "Artificial Intelligence",
-        "Cloudflare",
-        "Wordpress",
-        "Devops",
-        "Github"
+        "Personal"
       ],
       "tags": [
         null
@@ -250,7 +243,7 @@
       "title": "WordPress Hosting with Cloudflare  Pages",
       "description": "WordPress Hosting with Cloudflare Pages offers unmatched performance and security. Start enhancing your site today with our easy setup guide!",
       "date": "2023-05-14T07:00:35Z",
-      "modified": "2025-10-01T15:22:13Z",
+      "modified": "2026-03-10T20:35:13Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2023/05/how-to-take-a-wordpress-site-and-publish-it-as-a-static-site-on-cloudflare-pages/",
       "markdown_url": "/markdown/posts/how-to-take-a-wordpress-site-and-publish-it-as-a-static-site-on-cloudflare-pages.md",
@@ -260,11 +253,12 @@
         "Hosting",
         "Wordpress",
         "Personal",
-        "Devops",
-        "Github",
         "Docker",
         "Homelab",
-        "Kubernetes"
+        "Kubernetes",
+        "Devops",
+        "Github",
+        "AWS"
       ],
       "tags": [
         null,
@@ -276,11 +270,37 @@
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/simply-static-logo.png)\n\n[Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)\n\n# WordPress Hosting with Cloudflare Pages\n..."
     },
     {
+      "slug": "nutanix-ncp",
+      "title": "Nutanix NCP",
+      "description": "A first-hand account of sitting the Nutanix Certified Professional (NCP) exam, including free training resources, exam tips, and hands-on Nutanix experience.",
+      "date": "2020-07-02T15:20:30Z",
+      "modified": "2024-07-10T09:27:19Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2020/07/nutanix-ncp/",
+      "markdown_url": "/markdown/posts/nutanix-ncp.md",
+      "api_url": "/api/posts/nutanix-ncp.json",
+      "categories": [
+        "Nutanix",
+        "Personal",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress",
+        "VMware",
+        "vSphere"
+      ],
+      "tags": [
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg)\n\n[Nutanix](https://jameskilby.co.uk/category/nutanix/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# Nutanix NCP\n\nBy[James](https://jameskilby.co.uk) July 2, 2020July 10, 2024 • 📖1 min r..."
+    },
+    {
       "slug": "aws-status-page-monitoring-included",
       "title": "AWS Status Page – Monitoring Included",
-      "description": "LambStatus, Monitoring, AWS, Lambda",
+      "description": "Learn how to deploy LambStatus with AWS CloudWatch metrics to build a custom status page that tracks site response times using AWS Lambda functions.",
       "date": "2018-05-15T21:41:14Z",
-      "modified": "2025-10-01T15:22:16Z",
+      "modified": "2026-03-10T20:35:14Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2018/05/aws-status-page-monitoring-included/",
       "markdown_url": "/markdown/posts/aws-status-page-monitoring-included.md",
@@ -288,28 +308,27 @@
       "categories": [
         "AWS",
         "Hosting",
-        "Personal",
         "VMware",
         "VMware Cloud on AWS",
+        "Personal",
         "Cloudflare",
         "Wordpress",
-        "Docker",
         "Homelab",
-        "Kubernetes"
+        "Veeam"
       ],
       "tags": [
         null,
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png)\n\n[AWS](https://jameskilby.co.uk/category/aws/) | [Hosting](https://jameskilby.co.uk/category/hosting/)\n\n# AWS Status Page – Monitoring Included\n\nBy[James](https://jameskilby.co.uk) May 15, 2018October 1, 2025 • ..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png)\n\n[AWS](https://jameskilby.co.uk/category/aws/) | [Hosting](https://jameskilby.co.uk/category/hosting/)\n\n# AWS Status Page – Monitoring Included\n\nBy[James](https://jameskilby.co.uk) May 15, 2018March 10, 2026 • 📖..."
     },
     {
       "slug": "cloudflare-workers-limits-of-the-free-tier",
       "title": "Cloudflare Workers – Limits of the free tier",
       "description": "Cloudflare Workers highlights the free tier limits. Learn how to manage your usage effectively and avoid 429 errors. Stay informed today!",
       "date": "2022-01-04T21:11:23Z",
-      "modified": "2023-04-09T08:26:43Z",
+      "modified": "2026-03-10T20:35:15Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/01/cloudflare-workers-limits-of-the-free-tier/",
       "markdown_url": "/markdown/posts/cloudflare-workers-limits-of-the-free-tier.md",
@@ -317,10 +336,13 @@
       "categories": [
         "Hosting",
         "Wordpress",
-        "Homelab",
         "Cloudflare",
         "Artificial Intelligence",
-        "Docker"
+        "Docker",
+        "AWS",
+        "Homelab",
+        "Kubernetes",
+        "Personal"
       ],
       "tags": [
         null,
@@ -328,14 +350,14 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)\n\n# Cloudflare Workers – Limits of the free tier\n\nBy[James](https://jameskilby.co.uk) January 4, 2022April 9, 2023 • 📖1 m..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)\n\n# Cloudflare Workers – Limits of the free tier\n\nBy[James](https://jameskilby.co.uk) January 4, 2022March 10, 2026 • 📖1 ..."
     },
     {
       "slug": "how-i-moved-my-wordpress-site-to-cloudflare-pages",
       "title": "Static WordPress hosting using Cloudflare",
       "description": "How I moved my Wordpress Blog to Cloudflare Pages",
       "date": "2022-10-20T15:26:08Z",
-      "modified": "2026-03-10T06:47:58Z",
+      "modified": "2026-03-10T20:35:13Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/",
       "markdown_url": "/markdown/posts/how-i-moved-my-wordpress-site-to-cloudflare-pages.md",
@@ -347,9 +369,10 @@
         "Docker",
         "Homelab",
         "Kubernetes",
+        "Devops",
+        "Github",
         "Personal",
-        "AWS",
-        "Artificial Intelligence"
+        "AWS"
       ],
       "tags": [
         null,
@@ -361,11 +384,40 @@
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)\n\n[Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)\n\n# Static WordPress hosting using Cloudflare\n\nBy[James](ht..."
     },
     {
+      "slug": "vmware-certified-master-specialist-hci-2020",
+      "title": "VMware Certified Master Specialist HCI 2020",
+      "description": "VMware Certified Master Specialist HCI 2020: Join me in celebrating passing the HCI Master Specialist exam and enhancing your VMware skills today!",
+      "date": "2020-09-13T21:38:48Z",
+      "modified": "2026-03-10T20:35:14Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/",
+      "markdown_url": "/markdown/posts/vmware-certified-master-specialist-hci-2020.md",
+      "api_url": "/api/posts/vmware-certified-master-specialist-hci-2020.json",
+      "categories": [
+        "Personal",
+        "VMware",
+        "VMware Cloud on AWS",
+        "Devops",
+        "Hosting",
+        "Cloudflare",
+        "Wordpress",
+        "vSAN",
+        "VCF"
+      ],
+      "tags": [
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png)\n\n[Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# VMware Certified Master Specialist HCI 2020\n\nBy[James](https://jameskilby.co.uk) September 13, 2020March 10, ..."
+    },
+    {
       "slug": "analytics-in-a-privacy-focused-world",
       "title": "Analytics in a privacy focused world",
       "description": "Analytics in a privacy focused world: Learn how to implement privacy-friendly analytics solutions for your blog today!",
       "date": "2023-11-10T16:45:03Z",
-      "modified": "2025-10-01T15:22:13Z",
+      "modified": "2026-03-10T20:35:12Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/",
       "markdown_url": "/markdown/posts/analytics-in-a-privacy-focused-world.md",
@@ -373,14 +425,12 @@
       "categories": [
         "Hosting",
         "Personal",
-        "VMware",
         "Cloudflare",
         "Wordpress",
-        "AWS",
-        "Nutanix",
-        "Devops",
-        "Github",
-        "Consulting"
+        "Consulting",
+        "VMware",
+        "vSphere",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -392,7 +442,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# Analytics in a privacy focused world\n\nBy[James](https://jameskilby.co.uk) November 10, 2023Oct..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# Analytics in a privacy focused world\n\nBy[James](https://jameskilby.co.uk) November 10, 2023Mar..."
     }
   ]
 }

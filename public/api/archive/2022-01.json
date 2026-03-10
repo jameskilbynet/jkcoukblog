@@ -8,7 +8,7 @@
       "title": "Lab Update – Part 2 Storage Truenas Scale",
       "description": "Synology to TrueNas storage move and increase in performance",
       "date": "2022-01-11T22:35:02Z",
-      "modified": "2026-03-10T06:47:59Z",
+      "modified": "2026-03-10T20:35:15Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/01/lab-update-part-2-storage/",
       "markdown_url": "/markdown/posts/lab-update-part-2-storage.md",
@@ -16,19 +16,12 @@
       "categories": [
         "Homelab",
         "Storage",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "VMware",
         "Synology",
-        "vExpert",
+        "Kubernetes",
         "TrueNAS Scale",
-        "Docker",
-        "Hosting",
-        "Kubernetes"
+        "VMware",
+        "Veeam",
+        "Automation"
       ],
       "tags": [
         null,
@@ -53,9 +46,9 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Personal",
         "Devops",
-        "Github"
+        "Github",
+        "Personal"
       ],
       "tags": [
         null,
@@ -69,7 +62,7 @@
     {
       "slug": "web-development",
       "title": "Web Development",
-      "description": "My Web-development workflow",
+      "description": "How I migrated my WordPress blog to Cloudflare Workers to serve it globally from Cloudflare's edge network, dramatically improving page load speed and performance.",
       "date": "2022-01-04T11:27:12Z",
       "modified": "2025-10-01T15:22:14Z",
       "author": "James Kilby",
@@ -81,13 +74,12 @@
         "Cloudflare",
         "Personal",
         "Wordpress",
-        "Artificial Intelligence",
         "Docker",
-        "Consulting",
         "Homelab",
         "Kubernetes",
-        "Devops",
-        "Github"
+        "VMware",
+        "AWS",
+        "Consulting"
       ],
       "tags": [
         null,
@@ -99,7 +91,7 @@
     {
       "slug": "lab-update-part-1-compute",
       "title": "Lab Update – Compute",
-      "description": "Homelab, Supermicro",
+      "description": "Part 1 of my homelab compute refresh: adding a SuperMicro BigTwin chassis (2027TR-H71FRF) with four X9DRT nodes for high-density virtualisation at home.",
       "date": "2022-01-06T11:12:00Z",
       "modified": "2026-02-16T16:15:03Z",
       "author": "James Kilby",
@@ -109,13 +101,11 @@
       "categories": [
         "Homelab",
         "VMware",
-        "Docker",
-        "Hosting",
-        "Kubernetes",
-        "Networking",
-        "vSAN",
+        "Ansible",
+        "Nutanix",
+        "Runecast",
         "VMware Cloud on AWS",
-        "vSphere"
+        "VCF"
       ],
       "tags": [
         null,
@@ -138,12 +128,17 @@
       "categories": [
         "Homelab",
         "Networking",
-        "Artificial Intelligence",
-        "Docker",
         "Storage",
-        "Hosting",
         "Synology",
-        "VMware"
+        "Artificial Intelligence",
+        "VMware",
+        "vSphere",
+        "Ansible",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -157,7 +152,7 @@
       "title": "Lab Update –  Desired Workloads",
       "description": "Lab Update - Desired Workloads: Stay informed about the latest workloads in my lab. Check out what’s running and what’s coming next!",
       "date": "2022-01-06T19:23:11Z",
-      "modified": "2023-11-11T21:15:26Z",
+      "modified": "2026-03-10T20:35:13Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/01/lab-update-part-5-desired-workloads/",
       "markdown_url": "/markdown/posts/lab-update-part-5-desired-workloads.md",
@@ -166,9 +161,15 @@
         "Homelab",
         "Veeam",
         "VMware",
-        "Storage",
-        "Personal",
-        "vSphere"
+        "TrueNAS Scale",
+        "vSAN",
+        "vSphere",
+        "Artificial Intelligence",
+        "Docker",
+        "Hosting",
+        "Networking",
+        "Automation",
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,
@@ -176,14 +177,14 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
-      "excerpt": "[Homelab](https://jameskilby.co.uk/category/homelab/) | [Veeam](https://jameskilby.co.uk/category/veeam/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Lab Update – Desired Workloads\n\nBy[James](https://jameskilby.co.uk) January 6, 2022November 11, 2023 • 📖1 min read(139 words)\n\n📅 **Publis..."
+      "excerpt": "[Homelab](https://jameskilby.co.uk/category/homelab/) | [Veeam](https://jameskilby.co.uk/category/veeam/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Lab Update – Desired Workloads\n\nBy[James](https://jameskilby.co.uk) January 6, 2022March 10, 2026 • 📖1 min read(139 words)\n\n📅 **Published..."
     },
     {
       "slug": "cloudflare-workers-limits-of-the-free-tier",
       "title": "Cloudflare Workers – Limits of the free tier",
       "description": "Cloudflare Workers highlights the free tier limits. Learn how to manage your usage effectively and avoid 429 errors. Stay informed today!",
       "date": "2022-01-04T21:11:23Z",
-      "modified": "2023-04-09T08:26:43Z",
+      "modified": "2026-03-10T20:35:15Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/01/cloudflare-workers-limits-of-the-free-tier/",
       "markdown_url": "/markdown/posts/cloudflare-workers-limits-of-the-free-tier.md",
@@ -191,10 +192,13 @@
       "categories": [
         "Hosting",
         "Wordpress",
-        "Homelab",
         "Cloudflare",
         "Artificial Intelligence",
-        "Docker"
+        "Docker",
+        "AWS",
+        "Homelab",
+        "Kubernetes",
+        "Personal"
       ],
       "tags": [
         null,
@@ -202,7 +206,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)\n\n# Cloudflare Workers – Limits of the free tier\n\nBy[James](https://jameskilby.co.uk) January 4, 2022April 9, 2023 • 📖1 m..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)\n\n# Cloudflare Workers – Limits of the free tier\n\nBy[James](https://jameskilby.co.uk) January 4, 2022March 10, 2026 • 📖1 ..."
     }
   ]
 }

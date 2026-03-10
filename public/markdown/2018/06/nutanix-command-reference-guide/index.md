@@ -2,7 +2,7 @@
 title: "Nutanix Command Reference Guide"
 description: "Access a comprehensive list of useful Nutanix commands. Enhance your skills and streamline your operations with our handy reference guide."
 date: 2018-06-05T20:59:24+00:00
-modified: 2024-07-10T09:17:53+00:00
+modified: 2026-03-10T20:35:15+00:00
 author: James Kilby
 categories:
   - Nutanix
@@ -22,9 +22,9 @@ image: https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_r
 
 # Nutanix Command Reference Guide
 
-By[James](https://jameskilby.co.uk) June 5, 2018July 10, 2024 • 📖1 min read(105 words)
+By[James](https://jameskilby.co.uk) June 5, 2018March 10, 2026 • 📖1 min read(105 words)
 
-📅 **Published:** June 05, 2018• **Updated:** July 10, 2024
+📅 **Published:** June 05, 2018• **Updated:** March 10, 2026
 
 ## Nutanix Command List
 

@@ -5,7 +5,7 @@
       "title": "How to Run ZFS on VMware vSphere: Setup Guide and Best Practices",
       "description": "ZFS,VMware,Best Practices for seamless integration and performance. Learn how to optimize your setup for maximum efficiency and reliability.",
       "date": "2024-12-18T17:47:57Z",
-      "modified": "2026-03-10T06:47:56Z",
+      "modified": "2026-03-10T20:35:14Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2024/12/zfs-on-vmware/",
       "markdown_url": "/markdown/posts/zfs-on-vmware.md",
@@ -15,15 +15,13 @@
         "VMware",
         "vSAN",
         "vSphere",
-        "Docker",
         "Homelab",
-        "Hosting",
-        "Kubernetes",
-        "Storage",
-        "Synology",
-        "Artificial Intelligence",
+        "Veeam",
+        "Ansible",
         "VMware Cloud on AWS",
-        "Automation"
+        "Nutanix",
+        "Automation",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -49,9 +47,9 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Personal",
         "Devops",
-        "Github"
+        "Github",
+        "Personal"
       ],
       "tags": [
         null,
@@ -82,7 +80,7 @@
     {
       "slug": "web-development",
       "title": "Web Development",
-      "description": "My Web-development workflow",
+      "description": "How I migrated my WordPress blog to Cloudflare Workers to serve it globally from Cloudflare's edge network, dramatically improving page load speed and performance.",
       "date": "2022-01-04T11:27:12Z",
       "modified": "2025-10-01T15:22:14Z",
       "author": "James Kilby",
@@ -94,13 +92,12 @@
         "Cloudflare",
         "Personal",
         "Wordpress",
-        "Artificial Intelligence",
         "Docker",
-        "Consulting",
         "Homelab",
         "Kubernetes",
-        "Devops",
-        "Github"
+        "VMware",
+        "AWS",
+        "Consulting"
       ],
       "tags": [
         null,
@@ -112,7 +109,7 @@
     {
       "slug": "web-development-improvements",
       "title": "Web Development Improvements",
-      "description": "I have spent the Christmas break making some improvements to this blog. A lot of these are in \"the backend\" These help improve the performance, Privacy, SEO,",
+      "description": "A roundup of performance, SEO, privacy, and security improvements made to this WordPress blog over the Christmas break, including backend optimisations and best practices.",
       "date": "2026-01-15T15:12:16Z",
       "modified": "2026-03-10T06:47:55Z",
       "author": "James Kilby",
@@ -123,10 +120,12 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Homelab",
         "Devops",
-        "Github",
-        "Personal"
+        "Personal",
+        "AWS",
+        "Docker",
+        "Homelab",
+        "Kubernetes"
       ],
       "tags": [
         null,
@@ -142,7 +141,7 @@
       "title": "Warp – The intelligent terminal",
       "description": "How Warp is helping me run my homelab. Unlock the potential of your terminal and streamline your Linux tools with Warp's intelligent features.",
       "date": "2025-04-11T15:46:23Z",
-      "modified": "2025-10-03T09:15:18Z",
+      "modified": "2026-03-10T20:35:11Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2025/04/warp-the-intelligent-terminal/",
       "markdown_url": "/markdown/posts/warp-the-intelligent-terminal.md",
@@ -151,18 +150,13 @@
         "Artificial Intelligence",
         "Homelab",
         "Storage",
-        "vExpert",
-        "Hosting",
-        "Networking",
-        "Ansible",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "VMware",
         "TrueNAS Scale",
-        "vSAN",
-        "vSphere"
+        "Ansible",
+        "Nutanix",
+        "VMware",
+        "Automation",
+        "VCF",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -187,16 +181,10 @@
         "VMware Cloud on AWS",
         "vSAN",
         "Personal",
-        "Homelab",
-        "Nutanix",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
         "vSphere",
-        "Automation"
+        "VCF",
+        "Homelab",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -210,9 +198,9 @@
     {
       "slug": "vsan-cluster-shutdown",
       "title": "vSAN Cluster Shutdown – Orchestration",
-      "description": "How to safety shutdown a vSAN Environment",
+      "description": "Step-by-step guide to safely shutting down a vSAN cluster: the correct orchestration order for powering off VMs, hosts, and witness appliances without data loss.",
       "date": "2025-12-06T10:59:14Z",
-      "modified": "2026-03-10T06:47:55Z",
+      "modified": "2026-03-10T20:35:15Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/",
       "markdown_url": "/markdown/posts/vsan-cluster-shutdown.md",
@@ -220,17 +208,10 @@
       "categories": [
         "VMware",
         "vSAN",
-        "Automation",
+        "Runecast",
+        "Personal",
         "Homelab",
-        "VMware Cloud on AWS",
-        "vSphere",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "VCF"
+        "VMware Cloud on AWS"
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/)\n\n# vSAN Cluster Shutdown – Orchestration\n\nBy[James](https://jameskilby.co.uk) December 6,..."
@@ -240,7 +221,7 @@
       "title": "VMware Certified Master Specialist HCI 2020",
       "description": "VMware Certified Master Specialist HCI 2020: Join me in celebrating passing the HCI Master Specialist exam and enhancing your VMware skills today!",
       "date": "2020-09-13T21:38:48Z",
-      "modified": "2023-11-11T21:18:14Z",
+      "modified": "2026-03-10T20:35:14Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/",
       "markdown_url": "/markdown/posts/vmware-certified-master-specialist-hci-2020.md",
@@ -250,7 +231,11 @@
         "VMware",
         "VMware Cloud on AWS",
         "Devops",
-        "vSphere"
+        "Hosting",
+        "Cloudflare",
+        "Wordpress",
+        "vSAN",
+        "VCF"
       ],
       "tags": [
         null,
@@ -258,7 +243,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png)\n\n[Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# VMware Certified Master Specialist HCI 2020\n\nBy[James](https://jameskilby.co.uk) September 13, 2020November 1..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png)\n\n[Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# VMware Certified Master Specialist HCI 2020\n\nBy[James](https://jameskilby.co.uk) September 13, 2020March 10, ..."
     },
     {
       "slug": "vmc-quick-sizing-guide",
@@ -273,12 +258,11 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "VCF",
-        "Personal",
-        "Automation",
+        "vSAN",
         "Homelab",
-        "Networking",
-        "Storage"
+        "Nutanix",
+        "Personal",
+        "vSphere"
       ],
       "tags": [
         null,

@@ -13,13 +13,15 @@
       "categories": [
         "VCF",
         "VMware",
-        "VMware Cloud on AWS",
+        "Runecast",
+        "Docker",
         "Homelab",
         "Hosting",
-        "Personal",
-        "vSphere",
-        "Ansible",
-        "vSAN"
+        "Kubernetes",
+        "Automation",
+        "VMware Cloud on AWS",
+        "Artificial Intelligence",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -35,7 +37,7 @@
       "title": "Template Deployment with Packer",
       "description": "Getting started with HashiCorp packer to build VMware templates",
       "date": "2021-01-21T22:26:10Z",
-      "modified": "2026-02-09T21:39:50Z",
+      "modified": "2026-03-10T20:35:14Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2021/01/hashicorp-packer/",
       "markdown_url": "/markdown/posts/hashicorp-packer.md",
@@ -44,16 +46,12 @@
         "Automation",
         "Homelab",
         "VMware",
-        "Networking",
-        "Storage",
         "VMware Cloud on AWS",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "Nutanix"
+        "Storage",
+        "Networking",
+        "AWS",
+        "Veeam",
+        "Personal"
       ],
       "tags": [
         null,
@@ -69,7 +67,7 @@
       "title": "VMware – Going out with a Bang!",
       "description": "VMware is keeping to its EPIC^2 values even as the transition to Broadcom ownership draws near",
       "date": "2023-10-07T12:37:14Z",
-      "modified": "2026-03-10T06:47:58Z",
+      "modified": "2026-03-10T20:35:12Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2023/10/going-out-with-a-bang/",
       "markdown_url": "/markdown/posts/going-out-with-a-bang.md",
@@ -77,11 +75,12 @@
       "categories": [
         "VMware",
         "Personal",
-        "VMware Cloud on AWS",
+        "Devops",
+        "Hosting",
         "vSAN",
-        "Homelab",
-        "vSphere",
-        "Veeam"
+        "AWS",
+        "VMware Cloud on AWS",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -97,7 +96,7 @@
       "title": "Forcing an Upgrade to vSphere 8",
       "description": "Forcing an Upgrade to vSphere 8? Learn the essential steps and tips for a smooth transition in your VMware homelab setup. Get started now!",
       "date": "2022-12-14T21:43:39Z",
-      "modified": "2025-10-01T15:22:13Z",
+      "modified": "2026-03-10T20:35:13Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/12/forcing-an-upgrade-to-vsphere-8/",
       "markdown_url": "/markdown/posts/forcing-an-upgrade-to-vsphere-8.md",
@@ -106,17 +105,12 @@
         "Homelab",
         "VMware",
         "vSphere",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
         "Personal",
+        "Nutanix",
+        "Veeam",
         "VMware Cloud on AWS",
-        "Hosting",
-        "Storage",
-        "Synology"
+        "TrueNAS Scale",
+        "vSAN"
       ],
       "tags": [
         null,
@@ -130,7 +124,7 @@
       "title": "Configuring a Zen Internet and City Fibre connection with a 3rd party router",
       "description": "Learn how to configure your Zen Internet connection with City Fibre using a 3rd party router. Get better speed and lower costs today!",
       "date": "2023-11-15T19:27:48Z",
-      "modified": "2026-03-10T06:47:57Z",
+      "modified": "2026-03-10T20:35:12Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2023/11/configuring-a-zen-internet-and-city-fibre-connection-with-a-3rd-party-router/",
       "markdown_url": "/markdown/posts/configuring-a-zen-internet-and-city-fibre-connection-with-a-3rd-party-router.md",
@@ -138,9 +132,9 @@
       "categories": [
         "Networking",
         "Homelab",
-        "Mikrotik",
         "Storage",
-        "VMware"
+        "VMware",
+        "Mikrotik"
       ],
       "tags": [
         null,
@@ -163,16 +157,12 @@
       "api_url": "/api/posts/cloudflare.json",
       "categories": [
         "Hosting",
+        "Cloudflare",
+        "Wordpress",
         "Docker",
         "Homelab",
         "Kubernetes",
-        "Personal",
-        "AWS",
-        "Artificial Intelligence",
-        "Cloudflare",
-        "Wordpress",
-        "Devops",
-        "Github"
+        "Personal"
       ],
       "tags": [
         null
@@ -185,7 +175,7 @@
       "title": "Cloudflare Workers – Limits of the free tier",
       "description": "Cloudflare Workers highlights the free tier limits. Learn how to manage your usage effectively and avoid 429 errors. Stay informed today!",
       "date": "2022-01-04T21:11:23Z",
-      "modified": "2023-04-09T08:26:43Z",
+      "modified": "2026-03-10T20:35:15Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/01/cloudflare-workers-limits-of-the-free-tier/",
       "markdown_url": "/markdown/posts/cloudflare-workers-limits-of-the-free-tier.md",
@@ -193,10 +183,13 @@
       "categories": [
         "Hosting",
         "Wordpress",
-        "Homelab",
         "Cloudflare",
         "Artificial Intelligence",
-        "Docker"
+        "Docker",
+        "AWS",
+        "Homelab",
+        "Kubernetes",
+        "Personal"
       ],
       "tags": [
         null,
@@ -204,14 +197,14 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)\n\n# Cloudflare Workers – Limits of the free tier\n\nBy[James](https://jameskilby.co.uk) January 4, 2022April 9, 2023 • 📖1 m..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)\n\n[Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)\n\n# Cloudflare Workers – Limits of the free tier\n\nBy[James](https://jameskilby.co.uk) January 4, 2022March 10, 2026 • 📖1 ..."
     },
     {
       "slug": "can-you-really-squeeze-96tb-in-1u",
       "title": "Can you really squeeze 96TB in 1U ?",
       "description": "Learn how to achieve 96TB in a 1U server without redundancy. Uncover the potential of ultra-dense storage solutions today!",
       "date": "2024-09-12T12:39:16Z",
-      "modified": "2026-03-10T06:47:56Z",
+      "modified": "2026-03-10T20:35:12Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2024/09/can-you-really-squeeze-96tb-in-1u/",
       "markdown_url": "/markdown/posts/can-you-really-squeeze-96tb-in-1u.md",
@@ -220,13 +213,13 @@
         "Homelab",
         "Storage",
         "TrueNAS Scale",
-        "Automation",
-        "VMware",
-        "Kubernetes",
+        "Artificial Intelligence",
+        "Docker",
         "VCF",
+        "VMware",
         "VMware Cloud on AWS",
         "vSAN",
-        "Artificial Intelligence"
+        "vSphere"
       ],
       "tags": [
         null,
@@ -238,9 +231,9 @@
     {
       "slug": "aws-status-page-monitoring-included",
       "title": "AWS Status Page – Monitoring Included",
-      "description": "LambStatus, Monitoring, AWS, Lambda",
+      "description": "Learn how to deploy LambStatus with AWS CloudWatch metrics to build a custom status page that tracks site response times using AWS Lambda functions.",
       "date": "2018-05-15T21:41:14Z",
-      "modified": "2025-10-01T15:22:16Z",
+      "modified": "2026-03-10T20:35:14Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2018/05/aws-status-page-monitoring-included/",
       "markdown_url": "/markdown/posts/aws-status-page-monitoring-included.md",
@@ -248,28 +241,27 @@
       "categories": [
         "AWS",
         "Hosting",
-        "Personal",
         "VMware",
         "VMware Cloud on AWS",
+        "Personal",
         "Cloudflare",
         "Wordpress",
-        "Docker",
         "Homelab",
-        "Kubernetes"
+        "Veeam"
       ],
       "tags": [
         null,
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png)\n\n[AWS](https://jameskilby.co.uk/category/aws/) | [Hosting](https://jameskilby.co.uk/category/hosting/)\n\n# AWS Status Page – Monitoring Included\n\nBy[James](https://jameskilby.co.uk) May 15, 2018October 1, 2025 • ..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png)\n\n[AWS](https://jameskilby.co.uk/category/aws/) | [Hosting](https://jameskilby.co.uk/category/hosting/)\n\n# AWS Status Page – Monitoring Included\n\nBy[James](https://jameskilby.co.uk) May 15, 2018March 10, 2026 • 📖..."
     },
     {
       "slug": "aws-solution-architect-associate",
       "title": "AWS Solution Architect – Associate",
       "description": "Renew your AWS Solution Architect certification today! Stay updated with the latest AWS services and enhance your skills for future challenges.",
       "date": "2019-12-16T23:46:22Z",
-      "modified": "2025-12-04T01:50:27Z",
+      "modified": "2026-03-10T20:35:16Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/",
       "markdown_url": "/markdown/posts/aws-solution-architect-associate.md",
@@ -277,17 +269,17 @@
       "categories": [
         "AWS",
         "Personal",
-        "Hosting",
+        "Nutanix",
         "Consulting",
         "VMware",
-        "VMware Cloud on AWS"
+        "Devops"
       ],
       "tags": [
         null,
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png)\n\n[AWS](https://jameskilby.co.uk/category/aws/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# AWS Solution Architect – Associate\n\nBy[James](https://jameskilby.co.uk) December 16, 2019December 4, 20..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png)\n\n[AWS](https://jameskilby.co.uk/category/aws/) | [Personal](https://jameskilby.co.uk/category/personal/)\n\n# AWS Solution Architect – Associate\n\nBy[James](https://jameskilby.co.uk) December 16, 2019March 10, 2026..."
     }
   ],
   "page": 6,

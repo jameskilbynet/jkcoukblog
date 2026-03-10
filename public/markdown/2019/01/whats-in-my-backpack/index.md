@@ -56,6 +56,6 @@ Oh and a Tie……
 
 ### [My Home Office Setup & Upgrades](https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/)
 
-By[James](https://jameskilby.co.uk) January 5, 2021October 1, 2025
+By[James](https://jameskilby.co.uk) January 5, 2021March 10, 2026
 
 Given the year that was 2020 and at the time of writing a distinct improvement appears a long way off I decided it was time to up my homeworking game. I bought a beautiful Dell 49″ monitor back in mid-2020 that has been the central focus of my home office. With this setup I always…

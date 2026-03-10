@@ -6,9 +6,9 @@
     {
       "slug": "time-in-a-vmc-environment",
       "title": "Time in a VMC Environment",
-      "description": "How to use the Amazon Time Sync Service in a VMC environment",
+      "description": "How VMware Cloud on AWS handles time sync NTP via the Amazon Time Sync Service. Configure NSX firewall rules for UDP port 123 on VMC guest workloads.",
       "date": "2025-12-08T14:03:44Z",
-      "modified": "2026-02-01T10:38:13Z",
+      "modified": "2026-03-10T21:01:17Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2025/12/time-in-a-vmc-environment/",
       "markdown_url": "/markdown/posts/time-in-a-vmc-environment.md",
@@ -23,14 +23,14 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339.png)\n\n[VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# Time in a VMC Environment\n\nBy[James](https://jameskilby.co.uk) December 8, 2025February 1, 2026 • 📖1 min read(139 words)\n\n📅 *..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339.png)\n\n[VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# Time in a VMC Environment\n\nBy[James](https://jameskilby.co.uk) December 8, 2025March 10, 2026 • 📖4 min read(738 words)\n\n📅 **P..."
     },
     {
       "slug": "vsan-cluster-shutdown",
       "title": "vSAN Cluster Shutdown – Orchestration",
-      "description": "How to safety shutdown a vSAN Environment",
+      "description": "Step-by-step guide to safely shutting down a vSAN cluster: the correct orchestration order for powering off VMs, hosts, and witness appliances without data loss.",
       "date": "2025-12-06T10:59:14Z",
-      "modified": "2026-03-10T06:47:55Z",
+      "modified": "2026-03-10T20:35:15Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/",
       "markdown_url": "/markdown/posts/vsan-cluster-shutdown.md",
@@ -38,17 +38,10 @@
       "categories": [
         "VMware",
         "vSAN",
-        "Automation",
+        "Runecast",
+        "Personal",
         "Homelab",
-        "VMware Cloud on AWS",
-        "vSphere",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "VCF"
+        "VMware Cloud on AWS"
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/)\n\n# vSAN Cluster Shutdown – Orchestration\n\nBy[James](https://jameskilby.co.uk) December 6,..."
