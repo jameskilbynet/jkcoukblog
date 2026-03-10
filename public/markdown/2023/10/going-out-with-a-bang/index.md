@@ -7,19 +7,13 @@ author: James Kilby
 categories:
   - VMware
   - Personal
-  - Ansible
-  - Artificial Intelligence
-  - Containers
-  - Devops
-  - Homelab
-  - NVIDIA
-  - Traefik
-  - Networking
-  - Storage
   - VMware Cloud on AWS
+  - Homelab
+  - vSphere
+  - Devops
+  - Consulting
+  - TrueNAS Scale
   - vSAN
-  - VCF
-  - Automation
 tags:
   - #Charity
   - #EPIC
@@ -57,62 +51,62 @@ VMware also gave all employees $1300 dollars for donation through their foundati
 
 ## Similar Posts
 
-  * [ ![Automating the deployment of my Homelab AI  Infrastructure](https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv-768x432.png) ](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
-
-[Ansible](https://jameskilby.co.uk/category/ansible/) | [Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Containers](https://jameskilby.co.uk/category/containers/) | [Devops](https://jameskilby.co.uk/category/devops/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [NVIDIA](https://jameskilby.co.uk/category/nvidia/) | [Traefik](https://jameskilby.co.uk/category/traefik/) | [VMware](https://jameskilby.co.uk/category/vmware/)
-
-### [Automating the deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
-
-By[James](https://jameskilby.co.uk) February 9, 2026March 10, 2026
-
-Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere
-
-  * [ ![100Gb/s in my Homelab](https://jameskilby.co.uk/wp-content/uploads/2023/04/2157_hi_res-768x346.png) ](https://jameskilby.co.uk/2022/12/100gb-s-in-my-homelab-sort-of/)
-
-[Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/) | [Storage](https://jameskilby.co.uk/category/storage/) | [VMware](https://jameskilby.co.uk/category/vmware/)
-
-### [100Gb/s in my Homelab](https://jameskilby.co.uk/2022/12/100gb-s-in-my-homelab-sort-of/)
-
-By[James](https://jameskilby.co.uk) December 19, 2022March 10, 2026
-
-For a while, I’ve been looking to update the networking at the core of my homelab. I have had some great results with the current setup utilising a number of DAC’s but there were a couple of things that were annoying me. Then MikroTik dropped the CRS504-4XQ-IN and if the price wasn’t horrendous then that…
-
-  * [ ![VMC Host Errors](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-768x395.png) ](https://jameskilby.co.uk/2020/09/vmc-host-errors/)
+  * [ ![VMC Quick Sizing Guide](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png) ](https://jameskilby.co.uk/2025/05/vmc-quick-sizing-guide/)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
 
-### [VMC Host Errors](https://jameskilby.co.uk/2020/09/vmc-host-errors/)
+### [VMC Quick Sizing Guide](https://jameskilby.co.uk/2025/05/vmc-quick-sizing-guide/)
 
-By[James](https://jameskilby.co.uk) September 15, 2020March 10, 2026
+By[James](https://jameskilby.co.uk) May 21, 2025July 2, 2025
 
-Learn how host failures are handled within VMC
+Quick reference guide to the available storage resources that you get in VMware Cloud on AWS
 
-  * [ ![VMC – vSAN ESA](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg) ](https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/)
+  * [ ![Forcing an Upgrade to vSphere 8](https://jameskilby.co.uk/wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23.png) ](https://jameskilby.co.uk/2022/12/forcing-an-upgrade-to-vsphere-8/)
 
-[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/)
+[Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/) | [vSphere](https://jameskilby.co.uk/category/vsphere/)
 
-### [VMC – vSAN ESA](https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/)
+### [Forcing an Upgrade to vSphere 8](https://jameskilby.co.uk/2022/12/forcing-an-upgrade-to-vsphere-8/)
 
-By[James](https://jameskilby.co.uk) November 17, 2023March 10, 2026
+By[James](https://jameskilby.co.uk) December 14, 2022October 1, 2025
 
-An Overview of vSAN ESA in VMC 
+I run a reasonably extensive homelab that is of course built around the VMware ecosystem. So with the release of vSphere 8 I was obviously going to upgrade however a few personal things blocked me from doing it until now. The vCenter upgrade was smooth however knowing that some of the hardware I am running…
 
-  * [ ![MultiHost Holodeck VCF](https://jameskilby.co.uk/wp-content/uploads/2023/12/Holodeck-Overview.png) ](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
+  * [ ![My First Pull](https://jameskilby.co.uk/wp-content/uploads/2020/12/175jvBleoQfAZJc3sgTSPQA.jpg) ](https://jameskilby.co.uk/2020/12/my-first-pull/)
 
-[VMware](https://jameskilby.co.uk/category/vmware/) | [VCF](https://jameskilby.co.uk/category/vmware/vcf/)
+[Devops](https://jameskilby.co.uk/category/devops/) | [Personal](https://jameskilby.co.uk/category/personal/)
 
-### [MultiHost Holodeck VCF](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
+### [My First Pull](https://jameskilby.co.uk/2020/12/my-first-pull/)
 
-By[James](https://jameskilby.co.uk) January 17, 2024March 10, 2026
+By[James](https://jameskilby.co.uk) December 22, 2020December 8, 2025
 
-How to Deploy VMware Holodeck on multiple hosts
+I was initially going to add in the contents of this post to one that I have been writing about my exploits with HashiCorp Packer but I decided it probably warranted being separated out. While working with the following awesome project I noticed a couple of minor errors and Improvements that I wanted to suggest….
 
-  * [ ![Template Deployment with Packer](https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png) ](https://jameskilby.co.uk/2021/01/hashicorp-packer/)
+  * [ ![My Home Office Setup & Upgrades](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-768x576.jpeg) ](https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/)
 
-[Automation](https://jameskilby.co.uk/category/automation/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+[Personal](https://jameskilby.co.uk/category/personal/) | [Consulting](https://jameskilby.co.uk/category/consulting/)
 
-### [Template Deployment with Packer](https://jameskilby.co.uk/2021/01/hashicorp-packer/)
+### [My Home Office Setup & Upgrades](https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/)
 
-By[James](https://jameskilby.co.uk) January 21, 2021February 9, 2026
+By[James](https://jameskilby.co.uk) January 5, 2021October 1, 2025
 
-Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…
+Given the year that was 2020 and at the time of writing a distinct improvement appears a long way off I decided it was time to up my homeworking game. I bought a beautiful Dell 49″ monitor back in mid-2020 that has been the central focus of my home office. With this setup I always…
+
+  * [ ![Time in a VMC Environment](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png) ](https://jameskilby.co.uk/2025/12/time-in-a-vmc-environment/)
+
+[VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
+
+### [Time in a VMC Environment](https://jameskilby.co.uk/2025/12/time-in-a-vmc-environment/)
+
+By[James](https://jameskilby.co.uk) December 8, 2025February 1, 2026
+
+How to use the Amazon Time Sync Service in a VMC environment
+
+  * [ ![How to Run ZFS on VMware vSphere: Setup Guide and Best Practices](https://jameskilby.co.uk/wp-content/uploads/2024/12/ZFS.jpg) ](https://jameskilby.co.uk/2024/12/zfs-on-vmware/)
+
+[TrueNAS Scale](https://jameskilby.co.uk/category/truenas-scale/) | [VMware](https://jameskilby.co.uk/category/vmware/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/) | [vSphere](https://jameskilby.co.uk/category/vsphere/)
+
+### [How to Run ZFS on VMware vSphere: Setup Guide and Best Practices](https://jameskilby.co.uk/2024/12/zfs-on-vmware/)
+
+By[James](https://jameskilby.co.uk) December 18, 2024March 10, 2026
+
+ZFS on VMware Best Practices

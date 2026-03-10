@@ -6,11 +6,11 @@ modified: 2026-03-10T07:57:20+00:00
 author: James Kilby
 categories:
   - AWS
+  - Personal
   - VMware
-  - VMware Cloud on AWS
   - Veeam
   - Hosting
-  - Personal
+  - VMware Cloud on AWS
 tags:
   - #Account Setup
   - #AWS
@@ -54,15 +54,15 @@ Update: AWS now does support Yubikey. Wahoo.
 
 ## Similar Posts
 
-  * [ ![VMC Host Errors](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-768x395.png) ](https://jameskilby.co.uk/2020/09/vmc-host-errors/)
+  * [ ![AWS Solution Architect – Associate](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-768x307.png) ](https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/)
 
-[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
+[AWS](https://jameskilby.co.uk/category/aws/) | [Personal](https://jameskilby.co.uk/category/personal/)
 
-### [VMC Host Errors](https://jameskilby.co.uk/2020/09/vmc-host-errors/)
+### [AWS Solution Architect – Associate](https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/)
 
-By[James](https://jameskilby.co.uk) September 15, 2020March 10, 2026
+By[James](https://jameskilby.co.uk) December 16, 2019December 4, 2025
 
-Learn how host failures are handled within VMC
+Today was a good day. I renewed my AWS Solution Architect certification. Although my work is primarily in and around the VMware ecosystem I have been working a lot with VMware Cloud on AWS recently with a number of our customers. Having a good foundation of the core AWS services has…
 
   * [VMware](https://jameskilby.co.uk/category/vmware/) | [AWS](https://jameskilby.co.uk/category/aws/) | [Veeam](https://jameskilby.co.uk/category/veeam/)
 
@@ -82,12 +82,12 @@ By[James](https://jameskilby.co.uk) May 15, 2018October 1, 2025
 
 AWS Status Page – Enhancements The tool I deployed lambstatus supports pulling metrics from AWS Cloudwatch and displaying them. As part of my personal development, I thought I would include this on my status page. I managed to get this working as can be seen here. This is a lambda function running once a minute…
 
-  * [ ![AWS Solution Architect – Associate](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-768x307.png) ](https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/)
+  * [ ![VMC Host Errors](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-768x395.png) ](https://jameskilby.co.uk/2020/09/vmc-host-errors/)
 
-[AWS](https://jameskilby.co.uk/category/aws/) | [Personal](https://jameskilby.co.uk/category/personal/)
+[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
 
-### [AWS Solution Architect – Associate](https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/)
+### [VMC Host Errors](https://jameskilby.co.uk/2020/09/vmc-host-errors/)
 
-By[James](https://jameskilby.co.uk) December 16, 2019December 4, 2025
+By[James](https://jameskilby.co.uk) September 15, 2020March 10, 2026
 
-Today was a good day. I renewed my AWS Solution Architect certification. Although my work is primarily in and around the VMware ecosystem I have been working a lot with VMware Cloud on AWS recently with a number of our customers. Having a good foundation of the core AWS services has…
+Learn how host failures are handled within VMC
