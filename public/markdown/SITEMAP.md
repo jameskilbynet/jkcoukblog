@@ -1,6 +1,6 @@
 # Markdown Content Sitemap
 
-Generated: 2026-03-10 06:56:33
+Generated: 2026-03-10 10:39:18
 
 Total Files: 76
 
@@ -75,7 +75,7 @@ Total Files: 76
 - [Runecast Remediation Script’s](https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/) - 2023-05-16 10:38:45+00:00
   - Markdown: `/markdown/posts/runecast-remediation-scripts.md`
 
-- [Agile Battery & Solar Calculator](https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/) - 2026-03-09 23:39:37+00:00
+- [Octopus Agile Battery & Solar Calculator](https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/) - 2026-03-09 23:39:37+00:00
   - Markdown: `/markdown/posts/octopus-agile-battery-solar-calculator.md`
 
 - [Nutanix NCP](https://jameskilby.co.uk/2020/07/nutanix-ncp/) - 2020-07-02 15:20:30+00:00

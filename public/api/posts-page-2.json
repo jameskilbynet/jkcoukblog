@@ -13,12 +13,13 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
+        "vSAN",
         "Homelab",
+        "TrueNAS Scale",
         "vSphere",
-        "Nutanix",
+        "Runecast",
         "AWS",
-        "Personal",
-        "Veeam"
+        "Personal"
       ],
       "tags": [
         null,
@@ -44,12 +45,11 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "vSAN",
-        "VCF",
-        "Homelab",
+        "Personal",
         "vSphere",
-        "Networking",
-        "Storage"
+        "VCF",
+        "vSAN",
+        "Homelab"
       ],
       "tags": [
         null
@@ -70,11 +70,18 @@
       "categories": [
         "Homelab",
         "VMware",
-        "Networking",
-        "VMware Cloud on AWS",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Docker",
+        "Hosting",
         "Storage",
-        "Runecast",
-        "Automation"
+        "Synology",
+        "vExpert",
+        "Personal"
       ],
       "tags": [
         null,
@@ -120,9 +127,18 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "vSAN",
+        "AWS",
+        "Veeam",
+        "Homelab",
         "VCF",
-        "Homelab"
+        "Runecast",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Personal"
       ],
       "tags": [
         null,
@@ -136,9 +152,9 @@
     {
       "slug": "use-portainer-in-a-homelab-with-github",
       "title": "Use Portainer in a Homelab with GitHub",
-      "description": "How to use Portainer and Github to manage and deploy docker containers",
+      "description": "How to use Portainer with GitHub to manage and deploy Docker containers in your homelab — covers stack provisioning, Synology setup, and version-controlled deployments.",
       "date": "2022-12-09T09:06:37Z",
-      "modified": "2025-10-01T15:22:14Z",
+      "modified": "2026-03-10T07:57:23Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/",
       "markdown_url": "/markdown/posts/use-portainer-in-a-homelab-with-github.md",
@@ -148,15 +164,14 @@
         "Homelab",
         "Hosting",
         "Kubernetes",
+        "Storage",
         "TrueNAS Scale",
+        "Artificial Intelligence",
+        "Nutanix",
+        "Networking",
         "VMware",
-        "vSAN",
-        "vSphere",
-        "VCF",
-        "Ansible",
-        "Cloudflare",
-        "Wordpress",
-        "Artificial Intelligence"
+        "Personal",
+        "Synology"
       ],
       "tags": [
         null,
@@ -179,13 +194,16 @@
       "categories": [
         "Homelab",
         "Networking",
-        "Docker",
-        "Hosting",
-        "Kubernetes",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "VMware",
+        "Automation",
         "Storage",
-        "Synology",
-        "vExpert",
-        "VMware"
+        "vExpert"
       ],
       "tags": [
         null,
@@ -230,12 +248,12 @@
         "TrueNAS Scale",
         "Homelab",
         "Storage",
-        "vExpert",
         "Docker",
         "Hosting",
         "VMware",
         "vSAN",
-        "vSphere"
+        "vSphere",
+        "vExpert"
       ],
       "tags": [
         null,

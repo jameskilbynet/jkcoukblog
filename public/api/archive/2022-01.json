@@ -16,12 +16,16 @@
       "categories": [
         "Homelab",
         "Storage",
-        "Veeam",
-        "VMware",
+        "Ansible",
         "Artificial Intelligence",
-        "Synology",
-        "vSphere",
-        "Docker"
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "VMware",
+        "Networking",
+        "Nutanix",
+        "vExpert"
       ],
       "tags": [
         null,
@@ -44,11 +48,11 @@
       "api_url": "/api/posts/wrangler-and-node-versions.json",
       "categories": [
         "Cloudflare",
-        "Devops",
-        "Github",
-        "Wordpress",
         "Hosting",
-        "Personal"
+        "Wordpress",
+        "Personal",
+        "Devops",
+        "Github"
       ],
       "tags": [
         null,
@@ -74,11 +78,13 @@
         "Cloudflare",
         "Personal",
         "Wordpress",
-        "Homelab",
-        "Devops",
-        "Github",
+        "AWS",
+        "Nutanix",
+        "Artificial Intelligence",
+        "Docker",
         "VMware",
-        "vSphere"
+        "vSphere",
+        "Homelab"
       ],
       "tags": [
         null,
@@ -100,14 +106,16 @@
       "categories": [
         "Homelab",
         "VMware",
-        "Artificial Intelligence",
+        "VMware Cloud on AWS",
+        "vSAN",
+        "Networking",
         "Docker",
         "Hosting",
-        "Networking",
+        "Kubernetes",
+        "TrueNAS Scale",
+        "vSphere",
         "Storage",
-        "Runecast",
-        "Synology",
-        "VCF"
+        "Runecast"
       ],
       "tags": [
         null,
@@ -120,9 +128,9 @@
     {
       "slug": "lab-update-part-3-network",
       "title": "Lab Update – Part 3 Network",
-      "description": "Stay updated on our lab's network migration to PFSense. Learn about the benefits of 40Gb/s vMotion and future plans for a 25Gb/s switch.",
+      "description": "Homelab networking update: using DACs for vMotion and storage, achieving 40 Gb/s vMotion speeds on onboard NICs, and planning the upgrade to a 25 Gb/s switch.",
       "date": "2022-01-06T19:25:40Z",
-      "modified": "2025-10-01T15:22:14Z",
+      "modified": "2026-03-10T07:57:22Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/01/lab-update-part-3-network/",
       "markdown_url": "/markdown/posts/lab-update-part-3-network.md",
@@ -130,23 +138,21 @@
       "categories": [
         "Homelab",
         "Networking",
-        "Artificial Intelligence",
-        "Docker",
+        "Storage",
+        "Synology",
         "Veeam",
         "VMware",
-        "Nutanix",
-        "Ansible",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik"
+        "vExpert",
+        "Artificial Intelligence",
+        "Docker",
+        "Hosting"
       ],
       "tags": [
         null,
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
-      "excerpt": "[Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/)\n\n# Lab Update – Part 3 Network\n\nBy[James](https://jameskilby.co.uk) January 6, 2022October 1, 2025 • 📖1 min read(113 words)\n\n📅 **Published:** January 06, 2022• **Updated:** October 01,..."
+      "excerpt": "[Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/)\n\n# Lab Update – Part 3 Network\n\nBy[James](https://jameskilby.co.uk) January 6, 2022March 10, 2026 • 📖1 min read(113 words)\n\n📅 **Published:** January 06, 2022• **Updated:** March 10, 20..."
     },
     {
       "slug": "lab-update-part-5-desired-workloads",
@@ -172,8 +178,9 @@
         "Devops",
         "NVIDIA",
         "Traefik",
-        "Storage",
-        "vExpert"
+        "VCF",
+        "Personal",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -197,9 +204,10 @@
         "Hosting",
         "Wordpress",
         "Cloudflare",
+        "AWS",
+        "Personal",
         "Devops",
-        "Github",
-        "Homelab"
+        "Github"
       ],
       "tags": [
         null,
