@@ -5,7 +5,7 @@
       "title": "How to Run ZFS on VMware vSphere: Setup Guide and Best Practices",
       "description": "ZFS,VMware,Best Practices for seamless integration and performance. Learn how to optimize your setup for maximum efficiency and reliability.",
       "date": "2024-12-18T17:47:57Z",
-      "modified": "2026-02-09T22:16:17Z",
+      "modified": "2026-03-10T06:47:56Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2024/12/zfs-on-vmware/",
       "markdown_url": "/markdown/posts/zfs-on-vmware.md",
@@ -15,11 +15,13 @@
         "VMware",
         "vSAN",
         "vSphere",
+        "VMware Cloud on AWS",
         "Homelab",
-        "Hosting",
-        "Artificial Intelligence",
+        "Storage",
+        "Personal",
         "Docker",
-        "VCF"
+        "Hosting",
+        "Kubernetes"
       ],
       "tags": [
         null,
@@ -43,10 +45,11 @@
       "api_url": "/api/posts/wrangler-and-node-versions.json",
       "categories": [
         "Cloudflare",
-        "Hosting",
-        "Wordpress",
         "Devops",
-        "Github"
+        "Github",
+        "Wordpress",
+        "Hosting",
+        "Personal"
       ],
       "tags": [
         null,
@@ -89,10 +92,11 @@
         "Cloudflare",
         "Personal",
         "Wordpress",
-        "VMware",
-        "vSphere",
+        "Homelab",
         "Devops",
-        "Github"
+        "Github",
+        "VMware",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -106,7 +110,7 @@
       "title": "Web Development Improvements",
       "description": "I have spent the Christmas break making some improvements to this blog. A lot of these are in \"the backend\" These help improve the performance, Privacy, SEO,",
       "date": "2026-01-15T15:12:16Z",
-      "modified": "2026-02-09T17:23:02Z",
+      "modified": "2026-03-10T06:47:55Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2026/01/web-development-improvements/",
       "markdown_url": "/markdown/posts/web-development-improvements.md",
@@ -118,6 +122,8 @@
         "Docker",
         "Homelab",
         "Kubernetes",
+        "Devops",
+        "Personal",
         "Artificial Intelligence"
       ],
       "tags": [
@@ -142,14 +148,13 @@
       "categories": [
         "Artificial Intelligence",
         "Homelab",
-        "TrueNAS Scale",
+        "Veeam",
         "VMware",
-        "vSAN",
+        "Hosting",
+        "Docker",
         "vSphere",
-        "Nutanix",
         "Storage",
-        "Synology",
-        "Networking",
+        "vExpert",
         "Automation"
       ],
       "tags": [
@@ -165,7 +170,7 @@
       "title": "VMC – vSAN ESA",
       "description": "The benefits of vSAN ESA in VMware Cloud on AWS",
       "date": "2023-11-17T11:29:42Z",
-      "modified": "2024-07-10T10:40:28Z",
+      "modified": "2026-03-10T06:47:57Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/",
       "markdown_url": "/markdown/posts/vsan-esa-and-the-improvements-it-brings-to-vmc.md",
@@ -174,12 +179,18 @@
         "VMware",
         "VMware Cloud on AWS",
         "vSAN",
+        "Runecast",
+        "AWS",
+        "Veeam",
         "Homelab",
-        "Networking",
         "Storage",
-        "VCF",
-        "Personal",
-        "vSphere"
+        "Synology",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik"
       ],
       "tags": [
         null,
@@ -195,7 +206,7 @@
       "title": "vSAN Cluster Shutdown – Orchestration",
       "description": "How to safety shutdown a vSAN Environment",
       "date": "2025-12-06T10:59:14Z",
-      "modified": "2026-02-01T10:43:52Z",
+      "modified": "2026-03-10T06:47:55Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/",
       "markdown_url": "/markdown/posts/vsan-cluster-shutdown.md",
@@ -203,11 +214,13 @@
       "categories": [
         "VMware",
         "vSAN",
-        "Personal",
+        "Homelab",
+        "Veeam",
+        "VCF",
+        "TrueNAS Scale",
         "vSphere",
         "VMware Cloud on AWS",
-        "Homelab",
-        "VCF"
+        "Personal"
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/)\n\n# vSAN Cluster Shutdown – Orchestration\n\nBy[James](https://jameskilby.co.uk) December 6,..."
@@ -225,13 +238,12 @@
       "categories": [
         "Personal",
         "VMware",
-        "Homelab",
-        "Networking",
-        "Storage",
-        "vExpert",
-        "VCF",
         "VMware Cloud on AWS",
-        "vSphere"
+        "vSAN",
+        "vSphere",
+        "Homelab",
+        "Veeam",
+        "VCF"
       ],
       "tags": [
         null,
@@ -254,12 +266,16 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Homelab",
-        "Networking",
-        "Storage",
         "Personal",
+        "Homelab",
         "vSphere",
-        "VCF"
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Nutanix"
       ],
       "tags": [
         null,

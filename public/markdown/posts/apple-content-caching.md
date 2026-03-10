@@ -2,7 +2,7 @@
 title: "Apple Content Caching"
 description: "Utilising MacOS Cache Caching to Save Internet Bandwidth"
 date: 2021-02-08T14:12:23+00:00
-modified: 2023-11-10T14:50:29+00:00
+modified: 2026-03-10T06:48:45+00:00
 author: James Kilby
 categories:
   - Apple
@@ -19,9 +19,9 @@ image: https://jameskilby.co.uk/wp-content/uploads/2021/02/iu.png
 
 # Apple Content Caching
 
-By[James](https://jameskilby.co.uk) February 8, 2021November 10, 2023 • 📖2 min read(313 words)
+By[James](https://jameskilby.co.uk) February 8, 2021March 10, 2026 • 📖2 min read(313 words)
 
-📅 **Published:** February 08, 2021• **Updated:** November 10, 2023
+📅 **Published:** February 08, 2021• **Updated:** March 10, 2026
 
 I have slowly morphed into an Apple fanboy over the last decade or so collecting a large number of devices ever since my first MacBook Air back in 2011. When you’re in the ecosystem additional devices just make sense….. I currently have: 
 
@@ -48,9 +48,9 @@ Over the last 30 days, all of the devices have pulled down nearly 100GB of data.
 
 To enable it is very straightforward
 
-Go to the Apple menu ![](https://help.apple.com/assets/5FCA9DF4094622AC2BC6F94E/5FCA9E00094622AC2BC6F96C/en_GB/2f77cc85238452e25cb517130188bf99.png) > System Preferences, click Sharing then select Content Caching.
+Go to the Apple menu ![Apple Content Caching Screenshot](https://help.apple.com/assets/5FCA9DF4094622AC2BC6F94E/5FCA9E00094622AC2BC6F96C/en_GB/2f77cc85238452e25cb517130188bf99.png) > System Preferences, click Sharing then select Content Caching.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2021-02-08-at-12.56.43.png) ![](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2021-02-08-at-12.57.20-2-1020x1024.png)
+![Apple Content Caching Screenshot](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2021-02-08-at-12.56.43.png) ![Apple Content Caching Screenshot](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2021-02-08-at-12.57.20-2-1020x1024.png)
 
 Click the popup menu and choose the content to be shared. I have mine set to All Content. This includes
 
@@ -61,11 +61,11 @@ Click the popup menu and choose the content to be shared. I have mine set to All
   * iOS apps, Apple TV apps and app updates
   * watchOS apps and app updates
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2021-02-08-at-12.57.46-1024x827.png)
+![Apple Content Caching Screenshot](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2021-02-08-at-12.57.46-1024x827.png)
 
 In the options, you can control the amount of disk space to use it defaults to 10%. Clients will need to be restarted to find the server.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2021-02-08-at-12.57.37-1.png)
+![Apple Content Caching Screenshot](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2021-02-08-at-12.57.37-1.png)
 
 ## 📚 Related Posts
 

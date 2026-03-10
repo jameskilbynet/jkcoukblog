@@ -5,28 +5,20 @@
       "title": "Lab Storage",
       "description": "Upgrade your lab storage performance with the Synology DS918. Learn how to enhance your VMware stack and achieve efficient NFS setup.",
       "date": "2019-02-10T23:59:20Z",
-      "modified": "2024-07-10T09:22:32Z",
+      "modified": "2026-03-10T06:47:59Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2019/02/lab-storage-2/",
       "markdown_url": "/markdown/posts/lab-storage-2.md",
       "api_url": "/api/posts/lab-storage-2.json",
       "categories": [
         "Homelab",
-        "Veeam",
+        "TrueNAS Scale",
         "VMware",
-        "Automation",
-        "Docker",
-        "Hosting",
-        "Kubernetes",
-        "Networking",
+        "vSAN",
+        "vSphere",
         "Storage",
-        "vExpert",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik"
+        "Hosting",
+        "Networking"
       ],
       "tags": [
         null,
@@ -34,7 +26,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/)\n\n# Lab Storage\n\nBy[James](https://jameskilby.co.uk) February 10, 2019July 10, 2024 • 📖1 min read(207 words)\n\n📅 **Published:** February 10, 2019• **Updated:** July ..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/)\n\n# Lab Storage\n\nBy[James](https://jameskilby.co.uk) February 10, 2019March 10, 2026 • 📖1 min read(207 words)\n\n📅 **Published:** February 10, 2019• **Updated:** Marc..."
     },
     {
       "slug": "intel-optane",
@@ -51,14 +43,10 @@
         "Storage",
         "vExpert",
         "VMware",
+        "vSphere",
         "VMware Cloud on AWS",
-        "Synology",
-        "AWS",
-        "Veeam",
-        "Kubernetes",
-        "TrueNAS Scale",
-        "Docker",
-        "Hosting"
+        "Ansible",
+        "Synology"
       ],
       "tags": [
         null,
@@ -85,17 +73,18 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Homelab",
-        "Veeam",
-        "AWS",
-        "Personal",
-        "vSphere",
         "Ansible",
         "Artificial Intelligence",
         "Containers",
         "Devops",
+        "Homelab",
         "NVIDIA",
-        "Traefik"
+        "Traefik",
+        "vSAN",
+        "Networking",
+        "Storage",
+        "Veeam",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -118,10 +107,12 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
+        "Devops",
+        "Github",
         "Homelab",
-        "Personal",
-        "Artificial Intelligence",
-        "Docker"
+        "AWS",
+        "Docker",
+        "Kubernetes"
       ],
       "tags": [
         null,
@@ -137,7 +128,7 @@
       "title": "Static WordPress hosting using Cloudflare",
       "description": "How I moved my Wordpress Blog to Cloudflare Pages",
       "date": "2022-10-20T15:26:08Z",
-      "modified": "2026-02-09T17:22:48Z",
+      "modified": "2026-03-10T06:47:58Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/",
       "markdown_url": "/markdown/posts/how-i-moved-my-wordpress-site-to-cloudflare-pages.md",
@@ -146,11 +137,10 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Devops",
-        "Github",
         "Homelab",
         "AWS",
-        "Personal"
+        "Docker",
+        "Kubernetes"
       ],
       "tags": [
         null,
@@ -166,7 +156,7 @@
       "title": "How I Migrated from Pocket to Hoarder with AI Integration",
       "description": "How I migrated to Hoarder for my Bookmark Management",
       "date": "2025-01-29T23:31:56Z",
-      "modified": "2026-01-18T21:36:03Z",
+      "modified": "2026-03-10T06:47:56Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/",
       "markdown_url": "/markdown/posts/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way.md",
@@ -175,11 +165,13 @@
         "Artificial Intelligence",
         "Docker",
         "Hosting",
+        "Cloudflare",
         "Wordpress",
+        "Ansible",
         "Homelab",
         "Storage",
         "vExpert",
-        "Automation",
+        "VCF",
         "VMware"
       ],
       "tags": [
@@ -197,7 +189,7 @@
       "title": "How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare",
       "description": "Learn how to automate your blog with GitHub Actions and Cloudflare for seamless publishing. Check out my steps to improve your setup today!",
       "date": "2025-10-06T15:57:06Z",
-      "modified": "2026-02-01T10:44:55Z",
+      "modified": "2026-03-10T06:47:55Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/",
       "markdown_url": "/markdown/posts/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare.md",
@@ -208,7 +200,14 @@
         "Github",
         "Wordpress",
         "Hosting",
-        "Personal"
+        "Personal",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Homelab",
+        "NVIDIA",
+        "Traefik",
+        "VMware"
       ],
       "tags": [
         null,
@@ -235,16 +234,9 @@
         "Homelab",
         "Storage",
         "Nutanix",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
         "VMware",
-        "Synology",
         "Networking",
-        "vExpert"
+        "Synology"
       ],
       "tags": [
         null,
@@ -259,7 +251,7 @@
       "title": "Homelab bad days (almost)",
       "description": "Facing SSD issues in your homelab? Learn about RAID 5 pitfalls and how to protect your data effectively. Read more for essential tips!",
       "date": "2022-11-21T15:46:53Z",
-      "modified": "2023-04-08T21:44:28Z",
+      "modified": "2026-03-10T06:47:58Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2022/11/homelab-bad-days-almost/",
       "markdown_url": "/markdown/posts/homelab-bad-days-almost.md",
@@ -268,16 +260,12 @@
         "Homelab",
         "Storage",
         "Synology",
-        "Nutanix",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
+        "Networking",
+        "VCF",
         "VMware",
-        "Mikrotik",
-        "Networking"
+        "Automation",
+        "Ansible",
+        "Runecast"
       ],
       "tags": [
         null,
@@ -300,11 +288,13 @@
         "Mikrotik",
         "Networking",
         "Homelab",
-        "Storage",
-        "vExpert",
+        "Automation",
         "VMware",
-        "Synology",
-        "Nutanix"
+        "Hosting",
+        "Storage",
+        "TrueNAS Scale",
+        "Artificial Intelligence",
+        "Synology"
       ],
       "tags": [
         null,

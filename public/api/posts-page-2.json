@@ -5,7 +5,7 @@
       "title": "VMC Host Errors",
       "description": "Learn how VMware Cloud on AWS handles host errors seamlessly. Ensure your infrastructure remains resilient and efficient. Get started today!",
       "date": "2020-09-15T10:56:32Z",
-      "modified": "2026-03-01T21:23:04Z",
+      "modified": "2026-03-10T06:47:59Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2020/09/vmc-host-errors/",
       "markdown_url": "/markdown/posts/vmc-host-errors.md",
@@ -13,15 +13,12 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "AWS",
-        "Veeam",
-        "VCF",
         "Homelab",
-        "Storage",
-        "vExpert",
-        "Personal",
         "vSphere",
-        "Runecast"
+        "Nutanix",
+        "AWS",
+        "Personal",
+        "Veeam"
       ],
       "tags": [
         null,
@@ -32,7 +29,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-1024x526.png",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# VMC Host Errors\n\nBy[James](https://jameskilby.co.uk) September 15, 2020March 1, 2026 • 📖1 m..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1.png)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# VMC Host Errors\n\nBy[James](https://jameskilby.co.uk) September 15, 2020March 10, 2026 • 📖1 ..."
     },
     {
       "slug": "vmc-host-deepdive",
@@ -47,14 +44,12 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
+        "vSAN",
+        "VCF",
         "Homelab",
-        "NVIDIA",
-        "Traefik",
-        "Personal"
+        "vSphere",
+        "Networking",
+        "Storage"
       ],
       "tags": [
         null
@@ -67,7 +62,7 @@
       "title": "Nvidia Tesla P4 Homelab Setup",
       "description": "vGPU Setup in my Homelab using a Nvidia Tesla P4",
       "date": "2023-10-23T14:56:58Z",
-      "modified": "2024-07-10T10:54:03Z",
+      "modified": "2026-03-10T06:47:57Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2023/10/vgpu-setup-in-my-homelab/",
       "markdown_url": "/markdown/posts/vgpu-setup-in-my-homelab.md",
@@ -75,16 +70,11 @@
       "categories": [
         "Homelab",
         "VMware",
-        "Ansible",
-        "Hosting",
-        "Nutanix",
-        "Storage",
         "Networking",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik"
+        "VMware Cloud on AWS",
+        "Storage",
+        "Runecast",
+        "Automation"
       ],
       "tags": [
         null,
@@ -92,7 +82,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Nvidia Tesla P4 Homelab Setup\n\nBy[James](https://jameskilby.co.uk) October 23, 2023July 10, 2024 • 📖4 min re..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Nvidia Tesla P4 Homelab Setup\n\nBy[James](https://jameskilby.co.uk) October 23, 2023March 10, 2026 • 📖4 min r..."
     },
     {
       "slug": "veeamon2020",
@@ -106,9 +96,9 @@
       "api_url": "/api/posts/veeamon2020.json",
       "categories": [
         "Veeam",
-        "Homelab",
         "VMware",
-        "AWS"
+        "AWS",
+        "Homelab"
       ],
       "tags": [
         null,
@@ -122,7 +112,7 @@
       "title": "Using Content Libraries in VMC to deploy software faster",
       "description": "How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.",
       "date": "2026-01-27T22:19:39Z",
-      "modified": "2026-02-01T10:42:21Z",
+      "modified": "2026-03-10T06:47:55Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/",
       "markdown_url": "/markdown/posts/using-content-libraries-in-vmc-to-deploy-software-faster.md",
@@ -130,9 +120,9 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Homelab",
-        "Veeam",
-        "Runecast"
+        "vSAN",
+        "VCF",
+        "Homelab"
       ],
       "tags": [
         null,
@@ -158,13 +148,15 @@
         "Homelab",
         "Hosting",
         "Kubernetes",
-        "VMware",
         "TrueNAS Scale",
-        "Mikrotik",
-        "Networking",
-        "Runecast",
-        "Storage",
-        "vExpert"
+        "VMware",
+        "vSAN",
+        "vSphere",
+        "VCF",
+        "Ansible",
+        "Cloudflare",
+        "Wordpress",
+        "Artificial Intelligence"
       ],
       "tags": [
         null,
@@ -187,15 +179,13 @@
       "categories": [
         "Homelab",
         "Networking",
-        "Nutanix",
-        "VMware",
-        "vSphere",
         "Docker",
         "Hosting",
         "Kubernetes",
         "Storage",
         "Synology",
-        "Automation"
+        "vExpert",
+        "VMware"
       ],
       "tags": [
         null,
@@ -238,14 +228,14 @@
       "categories": [
         "Kubernetes",
         "TrueNAS Scale",
-        "VMware",
-        "vSAN",
-        "vSphere",
         "Homelab",
         "Storage",
+        "vExpert",
         "Docker",
         "Hosting",
-        "vExpert"
+        "VMware",
+        "vSAN",
+        "vSphere"
       ],
       "tags": [
         null,

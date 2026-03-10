@@ -2,20 +2,20 @@
 title: "Agile Battery & Solar Calculator"
 description: "A free Octopus Agile battery calculator using your real usage data to show if a home battery or solar is worth the investment. Tests 5 UK batteries."
 date: 2026-03-09T23:39:37+00:00
-modified: 2026-03-10T00:15:31+00:00
+modified: 2026-03-10T06:51:08+00:00
 author: James Kilby
 categories:
   - Artificial Intelligence
   - Automation
   - Homelab
+  - Docker
+  - Hosting
+  - VMware
   - Ansible
   - Containers
   - Devops
   - NVIDIA
   - Traefik
-  - VMware
-  - Docker
-  - Hosting
 tags:
   - #Energy
   - #Octopus
@@ -30,7 +30,7 @@ image: https://jameskilby.co.uk/wp-content/uploads/2026/03/Octopus-Energy-logo.j
 
 # Agile Battery & Solar Calculator
 
-By[James](https://jameskilby.co.uk) March 9, 2026March 10, 2026 • 📖5 min read(918 words)
+By[James](https://jameskilby.co.uk) March 9, 2026March 10, 2026 • 📖5 min read(957 words)
 
 📅 **Published:** March 09, 2026• **Updated:** March 10, 2026
 
@@ -46,7 +46,7 @@ I have often wondered if I can make a household battery make financial sense. A 
 
 Below is the typical profile taken from today’s rates. Although the price changes based on demand and generation, typically windy and sunny days are the best. The typical cost profile follows this shape. Generally cheaper electricity most of the day and an expensive period between 4 and 7pm. At the time of writing the Middle East conflict has just started so the prices are higher than typical and the range between the lower and higher rate is narrower than usual.
 
-![Octopus Agile tariff rate profile showing 30-minute electricity pricing throughout the day](https://jameskilby.co.uk/wp-content/uploads/2026/03/Screenshot-2026-03-07-at-07.30.35-1024x713.png)
+![Agile Rate Profile](https://jameskilby.co.uk/wp-content/uploads/2026/03/Screenshot-2026-03-07-at-07.30.35-1024x713.png)
 
 ## Code
 
@@ -67,13 +67,13 @@ I have also included a diagnostic script in the repo for troubleshooting API iss
 
 ### Usage Summary
 
-![Octopus Agile battery calculator usage summary showing 9,615kWh annual electricity consumption](https://jameskilby.co.uk/wp-content/uploads/2026/03/Agile-usage-Summary-1024x247.png)
+![Agile Usage Summary](https://jameskilby.co.uk/wp-content/uploads/2026/03/Agile-usage-Summary-1024x247.png)
 
 This is my usage report, and as can be seen I used 9,615kWh over the last year. For someone with gas heating and no electric cars this is quite high. I could also see this usage increasing. It also shows I had 164 hours at 0 or where Octopus paid me a small amount to use energy. The report then goes into a bit more consumption detail which is fairly self-explanatory.
 
 ### Agile Rate Distribution
 
-![Octopus Agile electricity rate distribution histogram showing frequency of 30-minute pricing slots](https://jameskilby.co.uk/wp-content/uploads/2026/03/Agile-Rate-Distribution-1024x347.png)
+![Agile Rate Distribution](https://jameskilby.co.uk/wp-content/uploads/2026/03/Agile-Rate-Distribution-1024x347.png)
 
 The distribution is important to understand so we can see if we can push our usage to the left with a battery. 
 
@@ -85,7 +85,7 @@ The report has details of five of the most common batteries in the UK. Powerwall
 
 Based on my usage the payback is never and the 15yr return on investment is very negative. This was disappointing. 
 
-![Octopus Agile battery calculator recommendation comparing five UK home battery systems with payback analysis](https://jameskilby.co.uk/wp-content/uploads/2026/03/BatteryRecomendation--1024x447.png)
+![Battery Recommendation](https://jameskilby.co.uk/wp-content/uploads/2026/03/BatteryRecomendation--1024x447.png)
 
 ### What If Calculator
 
@@ -95,7 +95,7 @@ I decided to see if I could improve by simulating some what-if scenarios so I ad
 
 OK so what if I was to add solar to the mix? This brings another factor to consider as effectively it leads to three strategies, Solar only, Battery only or Solar and Battery. The report will showcase some typical solar installs and calculate the solar generation where the energy would be consumed by my home first and then being exported. It will model several typical solar setups 3, 4 and 6kW and ultimately recommend the most cost effective setup.I was surprised by the answer to this where a 4kW solar system without a battery is what is ultimately recommended. However this still looks like a poor investment for me personally.
 
-![Solar and battery combination comparison output from the Octopus Agile calculator showing best setup recommendation](https://jameskilby.co.uk/wp-content/uploads/2026/03/Best-Combination-1024x375.png)
+![Best Solar and Battery Combination](https://jameskilby.co.uk/wp-content/uploads/2026/03/Best-Combination-1024x375.png)
 
 #### SEG – Smart Export Guarantee
 
@@ -104,6 +104,8 @@ The calculator will also include earnings for any unused solar energy. This is a
 ## Conclusion
 
 For my current usage neither a battery nor solar panels make a good investment however, I will be reviewing this periodically as the benefits and the price of both solar and battery have changed dramatically in the last couple of years. Hopefully you have a better output from the calculator.
+
+I am also incredibly impressed with Claude’s ability to build this with limited prompting from me. The results look interesting although the script has gone through limited testing due to me only having access to two accounts with Octopus.
 
 ## 📚 Related Posts
 
@@ -123,25 +125,15 @@ By[James](https://jameskilby.co.uk) April 11, 2025October 3, 2025
 
 How Warp is helping me run my homelab. 
 
-  * [ ![Automating the deployment of my Homelab AI  Infrastructure](https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv-768x432.png) ](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
+  * [ ![How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png) ](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/)
 
-[Ansible](https://jameskilby.co.uk/category/ansible/) | [Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Containers](https://jameskilby.co.uk/category/containers/) | [Devops](https://jameskilby.co.uk/category/devops/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [NVIDIA](https://jameskilby.co.uk/category/nvidia/) | [Traefik](https://jameskilby.co.uk/category/traefik/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Docker](https://jameskilby.co.uk/category/docker/) | [Hosting](https://jameskilby.co.uk/category/hosting/)
 
-### [Automating the deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
+### [How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/)
 
-By[James](https://jameskilby.co.uk) February 9, 2026February 25, 2026
+By[James](https://jameskilby.co.uk) January 29, 2025March 10, 2026
 
-Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere
-
-  * [ ![Template Deployment with Packer](https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png) ](https://jameskilby.co.uk/2021/01/hashicorp-packer/)
-
-[Automation](https://jameskilby.co.uk/category/automation/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)
-
-### [Template Deployment with Packer](https://jameskilby.co.uk/2021/01/hashicorp-packer/)
-
-By[James](https://jameskilby.co.uk) January 21, 2021February 9, 2026
-
-Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…
+Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail, but I have had some successes with other cloud services and a win is a win…….
 
   * [ ![Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU](https://jameskilby.co.uk/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg) ](https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/)
 
@@ -153,12 +145,22 @@ By[James](https://jameskilby.co.uk) October 11, 2024October 1, 2025
 
 Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock price has gone to the moon. So I thought I better get some knowledge and understand some of this. As it’s a huge field and I wasn’t exactly sure…
 
-  * [ ![How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png) ](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/)
+  * [ ![Template Deployment with Packer](https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png) ](https://jameskilby.co.uk/2021/01/hashicorp-packer/)
 
-[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Docker](https://jameskilby.co.uk/category/docker/) | [Hosting](https://jameskilby.co.uk/category/hosting/)
+[Automation](https://jameskilby.co.uk/category/automation/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)
 
-### [How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/)
+### [Template Deployment with Packer](https://jameskilby.co.uk/2021/01/hashicorp-packer/)
 
-By[James](https://jameskilby.co.uk) January 29, 2025January 18, 2026
+By[James](https://jameskilby.co.uk) January 21, 2021February 9, 2026
 
-Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail, but I have had some successes with other cloud services and a win is a win…….
+Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…
+
+  * [ ![Automating the deployment of my Homelab AI  Infrastructure](https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv-768x432.png) ](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
+
+[Ansible](https://jameskilby.co.uk/category/ansible/) | [Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Containers](https://jameskilby.co.uk/category/containers/) | [Devops](https://jameskilby.co.uk/category/devops/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [NVIDIA](https://jameskilby.co.uk/category/nvidia/) | [Traefik](https://jameskilby.co.uk/category/traefik/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+
+### [Automating the deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
+
+By[James](https://jameskilby.co.uk) February 9, 2026March 10, 2026
+
+Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere

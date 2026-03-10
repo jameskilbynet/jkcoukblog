@@ -42,6 +42,6 @@ I also thought it was time to tidy up and publish my Mac build scripts for anyon
 
 ### [Apple Content Caching](https://jameskilby.co.uk/2021/02/apple-content-caching/)
 
-By[James](https://jameskilby.co.uk) February 8, 2021November 10, 2023
+By[James](https://jameskilby.co.uk) February 8, 2021March 10, 2026
 
 I have slowly morphed into an Apple fanboy over the last decade or so collecting a large number of devices ever since my first MacBook Air back in 2011. When you’re in the ecosystem additional devices just make sense….. I currently have: My Wife also has All in all a lot of apple devices need…

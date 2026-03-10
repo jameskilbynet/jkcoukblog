@@ -2,7 +2,7 @@
 title: "Automating the deployment of my Homelab AI  Infrastructure"
 description: "How I use Ansible automation to deploy my AI Infrastucture"
 date: 2026-02-09T11:54:54+00:00
-modified: 2026-02-25T16:41:25+00:00
+modified: 2026-03-10T06:47:54+00:00
 author: James Kilby
 categories:
   - Ansible
@@ -13,13 +13,15 @@ categories:
   - NVIDIA
   - Traefik
   - VMware
-  - Veeam
-  - TrueNAS Scale
-  - vSAN
-  - vSphere
-  - Nutanix
-  - Personal
   - VMware Cloud on AWS
+  - Cloudflare
+  - Github
+  - Wordpress
+  - Networking
+  - Docker
+  - Hosting
+  - Personal
+  - vSphere
 tags:
   - #AI
   - #Docker
@@ -36,9 +38,9 @@ image: https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_e
 
 # Automating the deployment of my Homelab AI Infrastructure
 
-By[James](https://jameskilby.co.uk) February 9, 2026February 25, 2026 • 📖17 min read(3,360 words)
+By[James](https://jameskilby.co.uk) February 9, 2026March 10, 2026 • 📖17 min read(3,360 words)
 
-📅 **Published:** February 09, 2026• **Updated:** February 25, 2026
+📅 **Published:** February 09, 2026• **Updated:** March 10, 2026
 
 In a previous [post](https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/), I wrote about using my VMware lab with an NVIDIA Tesla P4 for running some AI services. This deployment was done with the P4 GPU in passthrough mode where the entire PCI card was presented into the VM. (I will refer to this as GPU mode). I wanted to take this to the next level. I also wanted to automate most of the steps. This was for a few reasons; firstly, I wanted to get better at automation in general. Secondly, I found the setup brittle and wanted to improve the reliability of deployments. This post will be about using automation to deploy the VM infrastructure required to be able to run AI Workloads. This is something I presented on with my good friend [Gareth](https://www.virtualisedfruit.co.uk/) at the London VMUG. Check out the recording of that [here.](https://youtu.be/Dt6m9JdsrIM) Like there, we both discussed how there are quite a few layers to getting the infrastructure right and doing it in an Enterprise level is tricky. Fundamentally, that’s why products like VMware Private AI Foundation [exist](https://www.vmware.com/solutions/cloud-infrastructure/private-ai).
 
@@ -121,11 +123,11 @@ Once the host has restarted, ssh into it and validate that the driver is talking
 
 If everything is working correctly, you should now be able to see the vGPU profiles in vCentre. Select the VM you want to present the NVIDIA card to. Edit the VM settings and select add PCI device.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Add-PCI-Device-1-402x1024.png)
+![Add PCI Device](https://jameskilby.co.uk/wp-content/uploads/2026/01/Add-PCI-Device-1-402x1024.png)
 
 You should then be presented with the available profiles from the NVIDIA GPU
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/GPU-Profiles-1024x397.png)
+![GPU Profiles](https://jameskilby.co.uk/wp-content/uploads/2026/01/GPU-Profiles-1024x397.png)
 
 As can be seen, the NVIDIA A10 supports 18 different profiles. The nvidia_a10 part specifies the card (in case you have multiple), and the suffix determines how much vGPU RAM is allocated to the vGPU instance, along with the features that are exposed with it. I typically use either the a10-24q profile to allow the use of larger AI models. Although I do step this down to the 12q profile to allow support of multiple vm’s for testing etc.
 
@@ -263,7 +265,7 @@ No additional parameters need to be set to execute it.
 
 Below is the expected output showcasing nvidia-smi running from within a Docker container.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/nvidia-smi-1024x654.png)
+![Nvidia Smi](https://jameskilby.co.uk/wp-content/uploads/2026/01/nvidia-smi-1024x654.png)
 
 #### 4\. Install Traefik
 
@@ -288,17 +290,17 @@ With the above labels added to my OpenWebUI container, Traefik will request a ce
 
 I could probably do a whole post just on my setup of Traefik but for now here is an overview diagram.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2025/01/Traefik-Docker-Setup-2-1024x342.png)
+![Traefik Docker Setup](https://jameskilby.co.uk/wp-content/uploads/2025/01/Traefik-Docker-Setup-2-1024x342.png)
 
 As part of the included playbook, I have added the option to deploy a simple nginx web server using this principle. If everything is configured correctly, you should be able to connect to this container post deployment and it will have a fully trusted certificate as seen below. (You may need to wait 1-2 minutes or so after deployment for this process to complete)
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/nginx-cert-1024x997.png)
+![Nginx Cert](https://jameskilby.co.uk/wp-content/uploads/2026/01/nginx-cert-1024x997.png)
 
 #### Traefik Dashboard
 
 Traefik also has a nice dashboard that is very useful in troubleshooting.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/TraefikDashboard-1024x478.png)
+![Traefik Dashboard](https://jameskilby.co.uk/wp-content/uploads/2026/01/TraefikDashboard-1024x478.png)
 
 This is the dashboard from my testing configuration. My main server has over 40 “Routers”
 
@@ -306,7 +308,7 @@ This is the dashboard from my testing configuration. My main server has over 40 
 
 Before running this playbook a lot of variables need to be configured as can be seen below. In most cases, the default is OK. I have just extended the vGPU Variable group to do this. When they are all input into Semaphore, it will look something like this.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Traefik-Variables-804x1024.png)
+![Traefik Variables](https://jameskilby.co.uk/wp-content/uploads/2026/01/Traefik-Variables-804x1024.png)
 
 Rather than typing all of the values out you can copy the JSON below and then just tweak what you need to.
     
@@ -380,7 +382,7 @@ wildcard_domain| jameskilby.cloud| Traefik Wildcard Domain
 
 The playbook also needs two values that should be considered sensitive. These can be added to Semaphore as secrets. The two secrets are the Cloudflare API Token and the second is a hash of a password for the admin account used to access the Traefik dashboard. The Traefik dashboard is very useful for troubleshooting any SSL/connectivity issues.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/SemaphoreSecrets-1024x262.png)
+![Semaphore Secrets](https://jameskilby.co.uk/wp-content/uploads/2026/01/SemaphoreSecrets-1024x262.png)
 
 The Cloudflare Token needs to be generated in the Cloudflare dashboard. 
 
@@ -393,7 +395,7 @@ To generate the hash for the admin dashboard password, the easiest way is with D
 
 It will download and execute the httpd container. The last line is the hash that you need.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/httpd-1024x383.png)
+![Httpd](https://jameskilby.co.uk/wp-content/uploads/2026/01/httpd-1024x383.png)
 
 In this case, the hash is: $2y$05$nkQGI2UxnRY.7O.6k14naOJPjslbqOT5vpqZPmXMu4knhBOH1EUAq take the output from this output and add it to the Semaphore secure variable for “dashboard_admin_password_hash”
 
@@ -405,17 +407,17 @@ Assuming you are going to use SemaphoreUI to execute the playbooks, these are th
 
 The first step is to point Semaphore at the Git repository. This is the location where the playbooks will be executed from. As my Git repo is public no authentication is required. You also need to specify the branch; in this case, I am using main.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Semaphore_repo.png)
+![Semaphore Repo](https://jameskilby.co.uk/wp-content/uploads/2026/01/Semaphore_repo.png)
 
 ### Key Store
 
 The next step is to add the Key Store items. This is used to define the authentication from Semaphore to the target workload or other systems. I do this in two parts. The first is standard authentication, which I do with an SSH key. The second part is defining the become password to allow Semaphore to execute SUDO commands. I do this with a password stored in the Key Store. I have called these two methods KeyAuth and PassAuth
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/NewKey-802x1024.png)
+![New Key](https://jameskilby.co.uk/wp-content/uploads/2026/01/NewKey-802x1024.png)
 
 Once the Key authentication is added, the next step is to add a different key store item for when the playbook needs to “Become”
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/PassAuth.png)
+![Pass Auth](https://jameskilby.co.uk/wp-content/uploads/2026/01/PassAuth.png)
 
 An Alternative approach is to allow your user to elevate without confirmation.
 
@@ -427,7 +429,7 @@ I have created a new Inventory item called “vGPU’ set the User credentials t
 
 I’ve then added the specific VM in the inventory. For testing, I have called this blogtest.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/blogtest_ansible_inventory-670x1024.png)
+![Blogtest Ansible Inventory](https://jameskilby.co.uk/wp-content/uploads/2026/01/blogtest_ansible_inventory-670x1024.png)
 
 ### Variable Group
 
@@ -435,7 +437,7 @@ The next step is to create a variable group and the required variables.
 
 Review the variable table above and set it to match your environment. This is what mine looks like:
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/VariableGroup-813x1024.png)
+![Variable Group](https://jameskilby.co.uk/wp-content/uploads/2026/01/VariableGroup-813x1024.png)
 
 ### Task Templates
 
@@ -443,11 +445,11 @@ The final step is to create the four task templates. These are the actual action
 
 Select New Template from the “Task Templates” view. Ensure it is set to Ansible and configure as per below.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/Variable-Group-1024x547.png)
+![Variable Group](https://jameskilby.co.uk/wp-content/uploads/2026/01/Variable-Group-1024x547.png)
 
 You should end up with something looking like this
 
-![](https://jameskilby.co.uk/wp-content/uploads/2026/01/TaskTemplates-1024x263.png)
+![Task Templates](https://jameskilby.co.uk/wp-content/uploads/2026/01/TaskTemplates-1024x263.png)
 
 When they are all configured, press the play button to execute each of the given tasks against your inventory item. Semaphore will check out the Ansible playbook and execute it, showing the results in the window.
 
@@ -466,43 +468,53 @@ This is now ready for you to start deploying Docker-based AI workloads onto.
 
 ## Similar Posts
 
-  * [Homelab](https://jameskilby.co.uk/category/homelab/) | [Veeam](https://jameskilby.co.uk/category/veeam/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+  * [ ![An in-depth look at VMware Cloud on AWS hosts](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png) ](https://jameskilby.co.uk/2025/08/vmc-host-deepdive/)
 
-### [Lab Update – Desired Workloads](https://jameskilby.co.uk/2022/01/lab-update-part-5-desired-workloads/)
+[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
 
-By[James](https://jameskilby.co.uk) January 6, 2022November 11, 2023
+### [An in-depth look at VMware Cloud on AWS hosts](https://jameskilby.co.uk/2025/08/vmc-host-deepdive/)
 
-My lab is always undergoing change. Partially as I want to try new things or new ways of doing things. Sometimes because I break things (not always by accident) sometimes it’s a great way to learn…. I decided to list the workloads I am looking to run (some of these are already in place) Infrastucture…
+By[James](https://jameskilby.co.uk) August 14, 2025March 3, 2026
 
-  * [ ![How to Run ZFS on VMware vSphere: Setup Guide and Best Practices](https://jameskilby.co.uk/wp-content/uploads/2024/12/ZFS.jpg) ](https://jameskilby.co.uk/2024/12/zfs-on-vmware/)
+This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3.metal I3en.metal I4i.metal CPU Processor Name Intel Xeon E5-2686 v4 Intel Xeon Platinum 8175 Intel Xeon 8375c No of…
 
-[TrueNAS Scale](https://jameskilby.co.uk/category/truenas-scale/) | [VMware](https://jameskilby.co.uk/category/vmware/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/) | [vSphere](https://jameskilby.co.uk/category/vsphere/)
+  * [ ![How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare](https://jameskilby.co.uk/wp-content/uploads/2025/10/Github-Actions.webp) ](https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/)
 
-### [How to Run ZFS on VMware vSphere: Setup Guide and Best Practices](https://jameskilby.co.uk/2024/12/zfs-on-vmware/)
+[Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Devops](https://jameskilby.co.uk/category/devops/) | [Github](https://jameskilby.co.uk/category/github/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)
 
-By[James](https://jameskilby.co.uk) December 18, 2024February 9, 2026
+### [How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare](https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/)
 
-ZFS on VMware Best Practices
+By[James](https://jameskilby.co.uk) October 6, 2025March 10, 2026
 
-  * [ ![New Nodes](https://jameskilby.co.uk/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg) ](https://jameskilby.co.uk/2024/07/new-nodes/)
+I wanted to automate the publishing of my blog from the authoring side to the public side. These are some of the improvements I made. What I started with My previous setup, involved a locally hosted WordPress instance. This runs in my homelab in an Ubuntu VM. This I will refer to as the authoring…
 
-[Homelab](https://jameskilby.co.uk/category/homelab/) | [Nutanix](https://jameskilby.co.uk/category/nutanix/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+  * [ ![Managing my Homelab with SemaphoreUI](https://jameskilby.co.uk/wp-content/uploads/2025/07/semaphore-768x768.png) ](https://jameskilby.co.uk/2025/09/managing-my-homelab-with-semaphoreui/)
 
-### [New Nodes](https://jameskilby.co.uk/2024/07/new-nodes/)
+[Ansible](https://jameskilby.co.uk/category/ansible/) | [Homelab](https://jameskilby.co.uk/category/homelab/)
 
-By[James](https://jameskilby.co.uk) July 2, 2024January 18, 2026
+### [Managing my Homelab with SemaphoreUI](https://jameskilby.co.uk/2025/09/managing-my-homelab-with-semaphoreui/)
 
-I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice Bill of Materials Rescue IPMI…
+By[James](https://jameskilby.co.uk) September 2, 2025March 10, 2026
 
-  * [ ![VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png) ](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
+An intro on how I use SemaphoreUI to manage my Homelab
 
-[Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+  * [Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/)
 
-### [VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
+### [Lab Update – Part 3 Network](https://jameskilby.co.uk/2022/01/lab-update-part-3-network/)
 
-By[James](https://jameskilby.co.uk) September 13, 2020November 11, 2023
+By[James](https://jameskilby.co.uk) January 6, 2022October 1, 2025
 
-I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This…
+I have retired the WatchGuard Devices with the migration to PFSense running bare-metal in one of the Supermicro Nodes. I will likely virtualise this in the future. In terms of network/switching I have moved to an intermediate step here vMotion and Storage are running over DAC’s while VMware management and VM traffic is still over…
+
+  * [ ![How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png) ](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/)
+
+[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Docker](https://jameskilby.co.uk/category/docker/) | [Hosting](https://jameskilby.co.uk/category/hosting/)
+
+### [How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/)
+
+By[James](https://jameskilby.co.uk) January 29, 2025March 10, 2026
+
+Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail, but I have had some successes with other cloud services and a win is a win…….
 
   * [ ![Advanced Deploy VMware vSphere 7.x 3V0-22.21N](https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png) ](https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/)
 
@@ -513,13 +525,3 @@ I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I 
 By[James](https://jameskilby.co.uk) November 10, 2023November 17, 2023
 
 Yesterday I sat and passed the above exam. It had been on my todo list for a good number of years. With the current pause in the Broadcom VMware takeover deal. I had some downtime and decided to use one of the three exam vouchers VMware give me each year. This upgrades me to a…
-
-  * [ ![VMC – vSAN ESA](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg) ](https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/)
-
-[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/)
-
-### [VMC – vSAN ESA](https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/)
-
-By[James](https://jameskilby.co.uk) November 17, 2023July 10, 2024
-
-An Overview of vSAN ESA in VMC
