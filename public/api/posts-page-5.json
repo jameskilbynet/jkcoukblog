@@ -1,6 +1,39 @@
 {
   "posts": [
     {
+      "slug": "lab-storage-2",
+      "title": "Lab Storage",
+      "description": "Upgrade your lab storage performance with the Synology DS918. Learn how to enhance your VMware stack and achieve efficient NFS setup.",
+      "date": "2019-02-10T23:59:20Z",
+      "modified": "2024-07-10T09:22:32Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2019/02/lab-storage-2/",
+      "markdown_url": "/markdown/posts/lab-storage-2.md",
+      "api_url": "/api/posts/lab-storage-2.json",
+      "categories": [
+        "Homelab",
+        "Artificial Intelligence",
+        "Docker",
+        "Hosting",
+        "VCF",
+        "VMware",
+        "vSphere",
+        "Ansible",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik",
+        "Networking"
+      ],
+      "tags": [
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/)\n\n# Lab Storage\n\nBy[James](https://jameskilby.co.uk) February 10, 2019July 10, 2024 • 📖1 min read(207 words)\n\n📅 **Published:** February 10, 2019• **Updated:** July ..."
+    },
+    {
       "slug": "intel-optane",
       "title": "Intel Optane NVMe Homelab",
       "description": "vExpert Intel Optane Drives",
@@ -17,12 +50,11 @@
         "Docker",
         "Hosting",
         "Kubernetes",
-        "Nutanix",
-        "Automation",
-        "VMware",
         "Synology",
-        "AWS",
-        "Veeam"
+        "VMware",
+        "Personal",
+        "Automation",
+        "Runecast"
       ],
       "tags": [
         null,
@@ -49,13 +81,11 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "Homelab",
-        "Networking",
-        "Storage",
         "Runecast",
         "Personal",
         "vSphere",
-        "vSAN"
+        "vSAN",
+        "TrueNAS Scale"
       ],
       "tags": [
         null,
@@ -79,10 +109,8 @@
         "Hosting",
         "Wordpress",
         "AWS",
-        "Homelab",
-        "Artificial Intelligence",
-        "Docker",
-        "Personal"
+        "Personal",
+        "Homelab"
       ],
       "tags": [
         null,
@@ -107,11 +135,7 @@
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "Devops",
-        "Github",
-        "Docker",
-        "Homelab",
-        "Kubernetes",
+        "AWS",
         "Personal"
       ],
       "tags": [
@@ -137,18 +161,14 @@
         "Artificial Intelligence",
         "Docker",
         "Hosting",
+        "Homelab",
+        "VMware",
         "Cloudflare",
         "Wordpress",
-        "Homelab",
-        "Networking",
+        "Automation",
         "Storage",
-        "VMware",
-        "Kubernetes",
-        "Ansible",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik"
+        "TrueNAS Scale",
+        "Veeam"
       ],
       "tags": [
         null,
@@ -176,14 +196,14 @@
         "Github",
         "Wordpress",
         "Hosting",
-        "Personal",
         "Ansible",
         "Artificial Intelligence",
         "Containers",
         "Homelab",
         "NVIDIA",
         "Traefik",
-        "VMware"
+        "VMware",
+        "Personal"
       ],
       "tags": [
         null,
@@ -209,11 +229,13 @@
       "categories": [
         "Homelab",
         "Storage",
-        "vExpert",
-        "Nutanix",
+        "Docker",
+        "Hosting",
+        "Kubernetes",
         "VMware",
-        "Synology",
-        "Networking"
+        "Ansible",
+        "Networking",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -237,12 +259,12 @@
         "Homelab",
         "Storage",
         "Synology",
+        "Artificial Intelligence",
+        "Docker",
         "VCF",
         "VMware",
-        "Runecast",
-        "vSphere",
-        "Artificial Intelligence",
-        "Nutanix"
+        "Networking",
+        "Runecast"
       ],
       "tags": [
         null,
@@ -265,14 +287,12 @@
         "Mikrotik",
         "Networking",
         "Homelab",
-        "Storage",
-        "Synology",
-        "VCF",
+        "Nutanix",
         "VMware",
-        "Artificial Intelligence",
         "Docker",
         "Hosting",
-        "Ansible"
+        "Kubernetes",
+        "VCF"
       ],
       "tags": [
         null,
@@ -281,42 +301,10 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2024/09/s-l1600.jpg",
       "excerpt": "![CRS-504](https://jameskilby.co.uk/wp-content/uploads/2024/09/s-l1600.jpg)\n\n[Mikrotik](https://jameskilby.co.uk/category/mikrotik/) | [Networking](https://jameskilby.co.uk/category/networking/)\n\n# Home Network Upgrade\n\nBy[James](https://jameskilby.co.uk) September 9, 2024October 24, 2025 • 📖2 min r..."
-    },
-    {
-      "slug": "holodeck-cpu-fixes",
-      "title": "Holodeck CPU Fixes",
-      "description": "Holodeck CPU Fixes: Learn how to deploy Holodeck with legacy CPUs. Follow our guide for a smoother setup and troubleshooting tips.",
-      "date": "2024-01-18T14:37:04Z",
-      "modified": "2024-07-10T07:21:58Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/",
-      "markdown_url": "/markdown/posts/holodeck-cpu-fixes.md",
-      "api_url": "/api/posts/holodeck-cpu-fixes.json",
-      "categories": [
-        "VCF",
-        "VMware",
-        "AWS",
-        "Veeam",
-        "Automation",
-        "Homelab",
-        "Artificial Intelligence",
-        "Docker",
-        "Runecast",
-        "Mikrotik",
-        "Networking"
-      ],
-      "tags": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg",
-      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg)\n\n[VCF](https://jameskilby.co.uk/category/vmware/vcf/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Holodeck CPU Fixes\n\nBy[James](https://jameskilby.co.uk) January 18, 2024July 10, 2024 • 📖1 min read(..."
     }
   ],
   "page": 5,
   "per_page": 10,
-  "total": 66,
+  "total": 67,
   "total_pages": 7
 }
