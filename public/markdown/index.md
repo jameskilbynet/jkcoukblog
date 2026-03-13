@@ -47,7 +47,7 @@ image: https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-
 
 ## [Octopus Agile Battery & Solar Calculator](https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/)
 
-By[James](https://jameskilby.co.uk) March 9, 2026March 10, 2026
+By[James](https://jameskilby.co.uk) March 9, 2026March 12, 2026
 
 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my…
 
@@ -67,7 +67,7 @@ Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI 
 
 ## [Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
 
-By[James](https://jameskilby.co.uk) January 27, 2026March 10, 2026
+By[James](https://jameskilby.co.uk) January 27, 2026March 12, 2026
 
 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.
 

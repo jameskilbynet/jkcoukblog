@@ -2,19 +2,16 @@
 title: "Using Content Libraries in VMC to deploy software faster"
 description: "Learn how to use VMware Content Libraries in VMware Cloud on AWS (VMC) to speed up template and VM deployments, reducing manual steps and improving consistency."
 date: 2026-01-27T22:19:39+00:00
-modified: 2026-03-10T20:35:11+00:00
+modified: 2026-03-12T21:52:11+00:00
 author: James Kilby
 categories:
   - VMware
   - VMware Cloud on AWS
-  - Homelab
-  - Networking
-  - Storage
-  - Runecast
-  - vSphere
-  - Veeam
-  - vSAN
   - Personal
+  - Homelab
+  - vSphere
+  - Nutanix
+  - vSAN
 tags:
   - #Content Library
   - #VMC
@@ -30,9 +27,9 @@ image: https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash.
 
 # Using Content Libraries in VMC to deploy software faster
 
-By[James](https://jameskilby.co.uk) January 27, 2026March 10, 2026 • 📖3 min read(640 words)
+By[James](https://jameskilby.co.uk) January 27, 2026March 12, 2026 • 📖5 min read(975 words)
 
-📅 **Published:** January 27, 2026• **Updated:** March 10, 2026
+📅 **Published:** January 27, 2026• **Updated:** March 12, 2026
 
 As part of my role spinning up new SDDC’s to test things is quite a common occurrence. This is both a blessing and a curse. The new SDDC is 100% Vanilla and perfectly self contained. Therefore you can do the testing required, knowing that you won’t impact anything else and you’re not inheriting a legacy setting from previous testing.
 
@@ -41,6 +38,15 @@ However the downside is you need to get the configuration and the software you r
 William Lam has previously [written ](https://williamlam.com/2018/07/creating-a-vsphere-content-library-directly-on-amazon-s3.html#google_vignette)about ways of doing this by utilising AWS S3 as the backend
 
 ## Table of Contents
+
+## Prerequisites
+
+  * **On-premises vCenter** — a local vCenter instance to act as the publishing source. Any version supporting Content Library publish/subscribe (vSphere 6.0+) will work.
+  * **VMware Cloud on AWS SDDC** — the destination environment. The subscribing Content Library is created here.
+  * **Network connectivity between source and destination** — on-premises vCenter must be able to reach the VMC management network over HTTPS (TCP 443). Typically achieved via a Direct Connect or VPN connection to the VMC Management CIDR.
+  * **Firewall rules** — outbound TCP 443 from on-prem vCenter to the VMC vCenter IP, and the reverse for subscription synchronisation. Check your NSX gateway firewall in the VMC SDDC.
+  * **Storage capacity in VMC** — the Content Library occupies space on the VMC datastore. Factor in the size of your ISOs and OVF templates before enabling immediate sync.
+  * **vCenter credentials** — a user account with the _Content Library > Create local library_ and _Content Library > Create subscribed library_ privileges on both vCenter instances.
 
 ## Introduction
 
@@ -100,6 +106,14 @@ We need to repeat the procedure in VMC however now we need to create a Subscribe
 
 There are two options for how you want the Subscribed Content Library to behave on first connection/new content. The first is to synchronise the content as soon as possible. This is what I use. However if you have a large catalogue and not all items are required in the VMC vCentre an option to save storage would be to only download content on demand. The downside to this option is that deployed would take longer, waiting for the item to synchronise before it can be used. 
 
+## Conclusion
+
+Content Libraries are one of those VMware features that solve a real operational pain point without much ceremony. Once the publishing/subscribing relationship is established between your on-premises vCenter and VMC, getting ISOs and OVF templates into a fresh SDDC drops from a manual upload process to a few clicks — or nothing at all if you enable immediate synchronisation.
+
+The main trade-off to consider is storage vs. speed. Immediate sync keeps everything local and ready to deploy instantly, but it consumes datastore space even for templates you may never use in a given SDDC. On-demand download is more storage-efficient and works well when you spin up SDDCs infrequently, though the first deployment of any template will wait for the download to complete. For testing environments where time matters, I lean towards immediate sync for the templates I know I’ll use frequently, and on-demand for everything else.
+
+If you’re already using Content Libraries on-premises, adding VMC as a subscriber takes under ten minutes. If you’re not using them yet, this is a good reason to start.
+
 ## 📚 Related Posts
 
   * [Automating the deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
@@ -108,25 +122,25 @@ There are two options for how you want the Subscribed Content Library to behave 
 
 ## Similar Posts
 
-  * [ ![100Gb/s in my Homelab](https://jameskilby.co.uk/wp-content/uploads/2023/04/2157_hi_res-768x346.png) ](https://jameskilby.co.uk/2022/12/100gb-s-in-my-homelab-sort-of/)
+  * [ ![VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png) ](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
 
-[Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/) | [Storage](https://jameskilby.co.uk/category/storage/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+[Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)
 
-### [100Gb/s in my Homelab](https://jameskilby.co.uk/2022/12/100gb-s-in-my-homelab-sort-of/)
+### [VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
 
-By[James](https://jameskilby.co.uk) December 19, 2022March 10, 2026
+By[James](https://jameskilby.co.uk) September 13, 2020March 10, 2026
 
-For a while, I’ve been looking to update the networking at the core of my homelab. I have had some great results with the current setup utilising a number of DAC’s but there were a couple of things that were annoying me. Then MikroTik dropped the CRS504-4XQ-IN and if the price wasn’t horrendous then that…
+I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This…
 
-  * [ ![Runecast Remediation Script’s](https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png) ](https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/)
+  * [ ![An in-depth look at VMware Cloud on AWS hosts](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png) ](https://jameskilby.co.uk/2025/08/vmc-host-deepdive/)
 
-[Runecast](https://jameskilby.co.uk/category/runecast/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
 
-### [Runecast Remediation Script’s](https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/)
+### [An in-depth look at VMware Cloud on AWS hosts](https://jameskilby.co.uk/2025/08/vmc-host-deepdive/)
 
-By[James](https://jameskilby.co.uk) May 16, 2023March 10, 2026
+By[James](https://jameskilby.co.uk) August 14, 2025March 10, 2026
 
-I am a huge fan of the Runecast product and luckily as a vExpert they give out NFR licences for my lab. One of the really cool features I wanted to mention today was the remediation script function. I have been playing with storage a lot in my lab recently as part of a wider…
+This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3.metal I3en.metal I4i.metal CPU Processor Name Intel Xeon E5-2686 v4 Intel Xeon Platinum 8175 Intel Xeon 8375c No of…
 
   * [ ![Forcing an Upgrade to vSphere 8](https://jameskilby.co.uk/wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23.png) ](https://jameskilby.co.uk/2022/12/forcing-an-upgrade-to-vsphere-8/)
 
@@ -138,13 +152,15 @@ By[James](https://jameskilby.co.uk) December 14, 2022March 10, 2026
 
 I run a reasonably extensive homelab that is of course built around the VMware ecosystem. So with the release of vSphere 8 I was obviously going to upgrade however a few personal things blocked me from doing it until now. The vCenter upgrade was smooth however knowing that some of the hardware I am running…
 
-  * [Homelab](https://jameskilby.co.uk/category/homelab/) | [Veeam](https://jameskilby.co.uk/category/veeam/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+  * [ ![New Nodes](https://jameskilby.co.uk/wp-content/uploads/2024/07/IMG_6629-768x149.jpeg) ](https://jameskilby.co.uk/2024/07/new-nodes/)
 
-### [Lab Update – Desired Workloads](https://jameskilby.co.uk/2022/01/lab-update-part-5-desired-workloads/)
+[Homelab](https://jameskilby.co.uk/category/homelab/) | [Nutanix](https://jameskilby.co.uk/category/nutanix/) | [VMware](https://jameskilby.co.uk/category/vmware/)
 
-By[James](https://jameskilby.co.uk) January 6, 2022March 10, 2026
+### [New Nodes](https://jameskilby.co.uk/2024/07/new-nodes/)
 
-My lab is always undergoing change. Partially as I want to try new things or new ways of doing things. Sometimes because I break things (not always by accident) sometimes it’s a great way to learn…. I decided to list the workloads I am looking to run (some of these are already in place) Infrastucture…
+By[James](https://jameskilby.co.uk) July 2, 2024March 10, 2026
+
+I recently decided to update some of my homelab hosts and I managed to do this at very little cost by offloading 2 of my Supermicro e200’s to fellow vExpert Paul. The below post describes what I bought why and how I have configured it. Table of Contents Node Choice Bill of Materials Rescue IPMI…
 
   * [ ![VMC – vSAN ESA](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg) ](https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/)
 

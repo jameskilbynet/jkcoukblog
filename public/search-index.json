@@ -3,7 +3,7 @@
     "title": "James Kilby - James Kilby's technical blog covering VMware, homelab projects, cloud computing, and infrastructure automation. Real-world IT solutions.",
     "url": "https://jameskilby.co.uk/",
     "description": "Expert guides on VMware vSphere, homelab infrastructure, AI setup, and cloud computing. Real-world technical tutorials by a VMware vExpert.",
-    "content": "James Kilby - James Kilby's technical blog covering VMware, homelab projects, cloud computing, and infrastructure automation. Real-world IT solutions. Skip to content James Kilby James Kilby Toggle Menu Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 10, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my… Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my Homelab AI Infrastructure ByJames February 9, 2026March 10, 2026 Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, ",
+    "content": "James Kilby - James Kilby's technical blog covering VMware, homelab projects, cloud computing, and infrastructure automation. Real-world IT solutions. Skip to content James Kilby James Kilby Toggle Menu Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 12, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my… Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my Homelab AI Infrastructure ByJames February 9, 2026March 10, 2026 Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, ",
     "categories": [
       "Artificial Intelligence",
       "Automation",
@@ -85,10 +85,10 @@
     "title": "HomeLab - Software - James Kilby",
     "url": "https://jameskilby.co.uk/homelab-software/",
     "description": "HomeLab - Software offers a comprehensive suite of applications for media, AI, security, and more. Optimize your digital environment today.",
-    "content": "HomeLab - Software - James Kilby Skip to content James Kilby James Kilby Toggle Menu HomeLab – Software 📅Published: November 11, 2023•Updated: February 15, 2026 Table of Contents This page will be updated but as a start here is a list of the applications The Hardware page is pretty accurate VMware Stack. – Constant work in progress Docker Container Stack Media Apps Plex Tdarr Tautulli Sonarr Radarr Lidarr YTDLP AI Apps Ollama N8n Open WebUI Searxng Security Photography Immich Hosting WordPress Plausible IT tools Cyberchef PHPIpam Jdownloader excalidraw SemaphoreUI Network Cloudflared Traefik Storage Home/Life Management Home Assistant Paperless Hoarder NextCloud Airtrail Authentik Beszel DarkTable DeepStack Firefly Grafana Guacamole Hammon HomePage Minio Netdata NextCloud Observium OBS Pihole Prometheus Truecommand TubeSync Unifi Uptime Kuma VSCode Connect with me:GitHubTwitterLinkedIn",
+    "content": "HomeLab - Software - James Kilby Skip to content James Kilby James Kilby Toggle Menu HomeLab – Software 📅Published: November 11, 2023•Updated: March 12, 2026 My homelab runs a broad software stack spanning media, AI, monitoring, networking, and self-hosted productivity. Everything below runs as Docker containers unless noted otherwise. For the hardware this runs on, see the Homelab Hardware page → This page will continue to grow — config posts and write-ups are linked where they exist. Media Plex — media server for streaming my film, TV, and music library to any device. Tautulli — Plex monitoring and statistics: who’s watching, what, and when. AI & Automation Ollama — run large language models locally; backed by the Ampere A10 GPU on the Z840. Open WebUI — polished browser-based chat interface for Ollama and other LLM backends. n8n — self-hosted workflow automation; connects services without needing to write full code. SearXNG — privacy-respecting meta search engine that aggregates res",
     "categories": [],
     "tags": [
-      "SemaphoreUI"
+      "See related posts →"
     ],
     "date": ""
   },
@@ -105,7 +105,7 @@
     "title": "Homelab - Hardware - James Kilby",
     "url": "https://jameskilby.co.uk/lab/",
     "description": "An upto date inventory of the things running in my lab",
-    "content": "Homelab - Hardware - James Kilby Skip to content James Kilby James Kilby Toggle Menu Homelab – Hardware 📅Published: June 27, 2020•Updated: February 16, 2026 My lab is constantly changing. I will try to keep this page up to date with the tech I’m running. My setup is spread across the local stuff running in my “server room” and the cloud, a Mix of AWS and Cloudflare. Table of Contents Obviously, with homelab’s everyone has different requirements and also opinions. My lab has grown organically over the last 10 years. Some kit has been purchased new, a lot has been bought off eBay or secondhand, and some has been donated. If I were starting from scratch it would look quite different I think. I suspect the replacement cost of what I’m running currently would be in the £15-20k mark I have several requirements some of them are hard requirements and others I try to meet if possible. Must be able to run vSphere (HCL preferred) IPMI/Remote management preferred Rack Mount Preferred Ability to ac",
+    "content": "Homelab - Hardware - James Kilby Skip to content James Kilby James Kilby Toggle Menu Homelab – Hardware 📅Published: June 27, 2020•Updated: February 16, 2026 My homelab is a constantly evolving platform for learning, self-hosting, and running serious workloads — from VMware vSphere clusters and AI inference to network automation and cloud integration. It lives in a dedicated server room, built around a StarTech 25U open-frame rack, and extends into the cloud via AWS and Cloudflare. See also: Homelab Software → Table of Contents At a Glance Compute NodesTotal RAMUsable StorageNetwork Uplinks 4 (3× NX-1365-G4 + HP Z840)1,280 GB95.9 TB25 GbE I would estimate the replacement value sits somewhere around £15–20k. This has been accumulated over the years through a mix of enterprise surplus finds and deliberate upgrades. My hardware choices are driven by a consistent set of design principles — some are non-negotiable, others are strong preferences: vSphere compatibility — HCL-listed hardware wh",
     "categories": [],
     "tags": [],
     "date": ""
@@ -119,22 +119,17 @@
       "Homelab",
       "Nutanix",
       "VMware",
+      "TrueNAS Scale",
+      "vSAN",
+      "vSphere",
       "Networking",
-      "Storage",
-      "AWS",
-      "Veeam",
       "Ansible",
       "Artificial Intelligence",
       "Containers",
       "Devops",
       "NVIDIA",
       "Traefik",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere",
-      "Docker",
-      "Hosting",
-      "Kubernetes"
+      "VMware Cloud on AWS"
     ],
     "tags": [
       "#Homelab",
@@ -151,15 +146,12 @@
     "categories": [
       "VCF",
       "VMware",
-      "Runecast",
-      "Docker",
-      "Homelab",
-      "Hosting",
-      "Kubernetes",
-      "Automation",
       "VMware Cloud on AWS",
+      "Homelab",
+      "Networking",
+      "Storage",
       "Artificial Intelligence",
-      "Nutanix"
+      "Ansible"
     ],
     "tags": [
       "#CPU",
@@ -177,13 +169,12 @@
     "categories": [
       "VMware",
       "VCF",
-      "TrueNAS Scale",
-      "vSAN",
-      "vSphere",
       "Homelab",
       "Storage",
       "vExpert",
-      "VMware Cloud on AWS"
+      "Veeam",
+      "Nutanix",
+      "Automation"
     ],
     "tags": [
       "#Holodeck",
@@ -201,15 +192,13 @@
     "categories": [
       "Mikrotik",
       "Networking",
+      "Ansible",
       "Homelab",
-      "Storage",
-      "vExpert",
-      "Veeam",
+      "Hosting",
+      "Runecast",
       "VMware",
-      "VCF",
-      "Artificial Intelligence",
-      "Docker",
-      "Hosting"
+      "Storage",
+      "Synology"
     ],
     "tags": [
       "#Homelab",
@@ -227,13 +216,11 @@
       "Homelab",
       "Storage",
       "TrueNAS Scale",
-      "Artificial Intelligence",
-      "Docker",
-      "VCF",
       "VMware",
-      "VMware Cloud on AWS",
-      "vSAN",
-      "vSphere"
+      "Hosting",
+      "Runecast",
+      "Kubernetes",
+      "Nutanix"
     ],
     "tags": [
       "#Homelab",
@@ -250,15 +237,15 @@
       "Artificial Intelligence",
       "Docker",
       "Homelab",
-      "Hosting",
+      "Storage",
+      "TrueNAS Scale",
       "Runecast",
       "VMware",
+      "Synology",
       "Mikrotik",
       "Networking",
-      "Kubernetes",
-      "VCF",
-      "Storage",
-      "TrueNAS Scale"
+      "vSAN",
+      "vSphere"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -275,12 +262,18 @@
     "categories": [
       "Homelab",
       "Networking",
-      "Artificial Intelligence",
       "Storage",
-      "Veeam",
+      "Synology",
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
       "VMware",
-      "Nutanix",
-      "vExpert"
+      "Mikrotik",
+      "vExpert",
+      "Nutanix"
     ],
     "tags": [
       "#DHCP",
@@ -299,13 +292,9 @@
       "VMware",
       "vSAN",
       "vSphere",
-      "Homelab",
-      "Veeam",
-      "Ansible",
+      "Personal",
       "VMware Cloud on AWS",
-      "Nutanix",
-      "Automation",
-      "Hosting"
+      "Homelab"
     ],
     "tags": [
       "#Homelab",
@@ -324,14 +313,14 @@
     "categories": [
       "Kubernetes",
       "TrueNAS Scale",
-      "Homelab",
-      "Storage",
       "Docker",
+      "Homelab",
       "Hosting",
-      "vExpert",
+      "Storage",
       "VMware",
       "vSAN",
-      "vSphere"
+      "vSphere",
+      "vExpert"
     ],
     "tags": [
       "#Reference",
@@ -348,11 +337,14 @@
       "VMware",
       "VMware Cloud on AWS",
       "vSAN",
-      "Personal",
-      "vSphere",
-      "VCF",
       "Homelab",
-      "Nutanix"
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "Veeam"
     ],
     "tags": [
       "#Storage",
@@ -371,11 +363,13 @@
       "VMware",
       "Personal",
       "vSphere",
-      "Nutanix",
-      "Runecast",
+      "Devops",
+      "Hosting",
+      "Cloudflare",
+      "Wordpress",
       "Homelab",
-      "VCF",
-      "Consulting"
+      "AWS",
+      "Nutanix"
     ],
     "tags": [
       "#Certification",
@@ -392,9 +386,9 @@
     "categories": [
       "Networking",
       "Homelab",
+      "Mikrotik",
       "Storage",
-      "VMware",
-      "Mikrotik"
+      "VMware"
     ],
     "tags": [
       "#City Fibre",
@@ -412,12 +406,12 @@
     "categories": [
       "Hosting",
       "Personal",
+      "Nutanix",
+      "Devops",
+      "Homelab",
       "Cloudflare",
       "Wordpress",
-      "Consulting",
-      "VMware",
-      "vSphere",
-      "Nutanix"
+      "VMware"
     ],
     "tags": [
       "#Analytics",
@@ -438,12 +432,11 @@
     "categories": [
       "VMware",
       "Personal",
-      "Devops",
-      "Hosting",
-      "vSAN",
-      "AWS",
+      "VCF",
       "VMware Cloud on AWS",
-      "Nutanix"
+      "Homelab",
+      "vSphere",
+      "Devops"
     ],
     "tags": [
       "#Charity",
@@ -461,13 +454,14 @@
     "categories": [
       "Homelab",
       "VMware",
-      "Networking",
+      "Artificial Intelligence",
+      "Docker",
       "Storage",
       "Synology",
-      "AWS",
-      "Veeam",
-      "Personal",
-      "Nutanix"
+      "Networking",
+      "Hosting",
+      "Kubernetes",
+      "TrueNAS Scale"
     ],
     "tags": [
       "#Homelab",
@@ -486,12 +480,11 @@
       "Storage",
       "vExpert",
       "VMware",
-      "VCF",
+      "Personal",
+      "vSphere",
       "Networking",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
-      "Veeam"
+      "Artificial Intelligence",
+      "Docker"
     ],
     "tags": [
       "#Homelab",
@@ -512,17 +505,10 @@
     "categories": [
       "Homelab",
       "Storage",
+      "Automation",
       "VMware",
-      "Ansible",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
-      "vExpert",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik"
+      "Networking",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#NAS",
@@ -540,13 +526,13 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Personal",
+      "Artificial Intelligence",
       "Docker",
       "Homelab",
       "Kubernetes",
+      "Personal",
       "Devops",
-      "Github",
-      "AWS"
+      "Github"
     ],
     "tags": [
       "#Cloudflare",
@@ -567,9 +553,11 @@
       "Homelab",
       "Storage",
       "Synology",
+      "Personal",
+      "Artificial Intelligence",
       "VMware Cloud on AWS",
-      "vSphere",
-      "Ansible"
+      "vSAN",
+      "Networking"
     ],
     "tags": [
       "#Homelab",
@@ -615,7 +603,7 @@
     "title": "Artificial Intelligence Archives - James Kilby",
     "url": "https://jameskilby.co.uk/category/artificial-intelligence/",
     "description": "Browse all Artificial Intelligence Archives articles. In-depth technical content covering Artificial Intelligence Archives topics, best practices, and real-world solutions.",
-    "content": "Artificial Intelligence Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu Artificial Intelligence Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 10, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my… Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my Homelab AI Infrastructure ByJames February 9, 2026March 10, 2026 Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere Artificial Intelligence | Homelab Warp – The intelligent terminal ByJames April 11, 2025March 10, 2026 How Warp is helping me run my homelab. Artificial Intelligence | Docker | Hosting H",
+    "content": "Artificial Intelligence Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu Artificial Intelligence Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 12, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my… Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my Homelab AI Infrastructure ByJames February 9, 2026March 10, 2026 Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere Artificial Intelligence | Homelab Warp – The intelligent terminal ByJames April 11, 2025March 10, 2026 How Warp is helping me run my homelab. Artificial Intelligence | Docker | Hosting H",
     "categories": [
       "Artificial Intelligence",
       "Automation",
@@ -711,7 +699,7 @@
     "title": "Automation Archives - James Kilby",
     "url": "https://jameskilby.co.uk/category/automation/",
     "description": "Browse all Automation Archives articles. In-depth technical content covering Automation Archives topics, best practices, and real-world solutions.",
-    "content": "Automation Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu Automation Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 10, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my… Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021March 10, 2026 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…",
+    "content": "Automation Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu Automation Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 12, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my… Automation | Homelab | VMware Template Deployment with Packer ByJames January 21, 2021March 10, 2026 Packer is one of those tools I have heard about, and some of the cool people on Twitter that I follow have been using it for a while. But until now I had never played with it. That was until I saw the below tweet by the legend that is William Lam That was the…",
     "categories": [
       "Artificial Intelligence",
       "Automation",
@@ -738,7 +726,7 @@
     "title": "VMware Archives - James Kilby",
     "url": "https://jameskilby.co.uk/category/vmware/",
     "description": "Browse all VMware Archives articles. In-depth technical content covering VMware Archives topics, best practices, and real-world solutions.",
-    "content": "VMware Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my Homelab AI Infrastructure ByJames February 9, 2026March 10, 2026 Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 10, 2026 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster. VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025March 10, 2026 How to use the Amazon Time Sync Service in a VMC environment VMware | vSAN vSAN Cluster Shutdown – Orchestration ByJames December 6, 2025March 10, 2026 How to safety shutdown a vSAN Environment VMware | VMware Cloud on AWS An in-depth look at VMware Cloud on AWS hosts ByJames August 14, 2025March 10, 2026 This is single page inten",
+    "content": "VMware Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my Homelab AI Infrastructure ByJames February 9, 2026March 10, 2026 Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 12, 2026 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster. VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025March 10, 2026 How to use the Amazon Time Sync Service in a VMC environment VMware | vSAN vSAN Cluster Shutdown – Orchestration ByJames December 6, 2025March 10, 2026 How to safety shutdown a vSAN Environment VMware | VMware Cloud on AWS An in-depth look at VMware Cloud on AWS hosts ByJames August 14, 2025March 10, 2026 This is single page inten",
     "categories": [
       "Ansible",
       "Artificial Intelligence",
@@ -1079,7 +1067,7 @@
     "title": "VMware Cloud on AWS Archives - James Kilby",
     "url": "https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/",
     "description": "Browse all VMware Cloud on AWS Archives articles. In-depth technical content covering VMware Cloud on AWS Archives topics, best practices, and real-world solutions.",
-    "content": "VMware Cloud on AWS Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware Cloud on AWS VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 10, 2026 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster. VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025March 10, 2026 How to use the Amazon Time Sync Service in a VMC environment VMware | VMware Cloud on AWS An in-depth look at VMware Cloud on AWS hosts ByJames August 14, 2025March 10, 2026 This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3.metal I3en.metal I4i.metal CPU Processor Name Intel Xeon E5-2686 v4  Intel Xeon Platinum 8175 Intel Xeon 8375c No of… VMware | VMware Cloud on AWS VMC Quick Sizing Guide ByJames May 21, 2025July 2, 2025 Quick reference",
+    "content": "VMware Cloud on AWS Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware Cloud on AWS VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 12, 2026 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster. VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025March 10, 2026 How to use the Amazon Time Sync Service in a VMC environment VMware | VMware Cloud on AWS An in-depth look at VMware Cloud on AWS hosts ByJames August 14, 2025March 10, 2026 This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3.metal I3en.metal I4i.metal CPU Processor Name Intel Xeon E5-2686 v4  Intel Xeon Platinum 8175 Intel Xeon 8375c No of… VMware | VMware Cloud on AWS VMC Quick Sizing Guide ByJames May 21, 2025July 2, 2025 Quick reference",
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
@@ -1123,11 +1111,12 @@
     "categories": [
       "Hosting",
       "Cloudflare",
+      "Devops",
+      "Github",
       "Wordpress",
-      "Docker",
       "Homelab",
-      "Kubernetes",
-      "Personal"
+      "Personal",
+      "AWS"
     ],
     "tags": [
       "#Cloudflare"
@@ -1143,9 +1132,9 @@
       "AWS",
       "Personal",
       "VMware",
+      "VMware Cloud on AWS",
       "Veeam",
-      "Hosting",
-      "VMware Cloud on AWS"
+      "Hosting"
     ],
     "tags": [
       "#Account Setup",
@@ -1162,14 +1151,17 @@
       "Homelab",
       "Storage",
       "Synology",
-      "Veeam",
       "VMware",
+      "vSphere",
+      "TrueNAS Scale",
+      "vSAN",
       "Ansible",
-      "VCF",
-      "Docker",
-      "Hosting",
-      "Kubernetes",
-      "Networking"
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "vExpert"
     ],
     "tags": [
       "#Homelab",
@@ -1188,9 +1180,15 @@
       "Networking",
       "Storage",
       "Synology",
+      "TrueNAS Scale",
+      "Artificial Intelligence",
       "VMware",
-      "Veeam",
-      "Artificial Intelligence"
+      "vSphere",
+      "Ansible",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik"
     ],
     "tags": [
       "#Nutanix"
@@ -1204,11 +1202,14 @@
     "content": "And now for something completely different - James Kilby Skip to content James Kilby James Kilby Toggle Menu Personal And now for something completely different ByJames October 16, 2018March 10, 2026 • 📖1 min read(263 words) 📅Published: October 16, 2018•Updated: March 10, 2026 I have worked for my current employer Zen Internet for  3.5 years.  Over that time I have changed roles from what was originally a customer-focused role into a role with one of the core platform teams.  This has meant looking after the majority of the Internal and customer Virtual platforms.  During this time Zen has undergone several large migration programs and countless smaller ones. Some of the big ones include: Core ISP network refresh Microsegmentation rollout Nutanix integration Backup Consolidation I have been lucky enough to be involved with all of these ( some much more than others)  Although the work is never complete Zen are in a good place. At the same time, my personal circumstances have changed som",
     "categories": [
       "Personal",
-      "Hosting",
-      "Nutanix",
       "VMware",
+      "vSphere",
       "Consulting",
-      "AWS"
+      "Nutanix",
+      "AWS",
+      "Hosting",
+      "Cloudflare",
+      "Wordpress"
     ],
     "tags": [],
     "date": "2018-10-16T08:22:45+00:00"
@@ -1220,9 +1221,9 @@
     "content": "Nutanix Command Reference Guide - James Kilby Skip to content James Kilby James Kilby Toggle Menu Nutanix Nutanix Command Reference Guide ByJames June 5, 2018March 10, 2026 • 📖1 min read(105 words) 📅Published: June 05, 2018•Updated: March 10, 2026 Nutanix Command List This is a list of Nutanix commands I have found useful. Its here as a reference and if i need a command more than a few times ill generally add it here. CLI ncli cluster get-domain-fault-tolerance-status type=node  (Checks if all of the storage components meet the desired replication factor) cvm_shutdown -P now  ( Correct way to shutdown a CVM) ncc health_checks run_all –parallel=4 .  ( 4 is the max number) curator_cli get_under_replication_info summary=true Checks if any objects are not at the desired replication factor curl localhost:2019/prism/leader . Find the leader WEB http://{curator-master-cvm-ip}:2010/master/control ( If you want to invoke a curator scan manually) 📚 Related PostsNew NodesNutanix NCPNutanix CE Con",
     "categories": [
       "Nutanix",
-      "Personal",
       "Homelab",
-      "VMware"
+      "VMware",
+      "Personal"
     ],
     "tags": [
       "#CLI",
@@ -1255,11 +1256,12 @@
       "Hosting",
       "VMware",
       "VMware Cloud on AWS",
-      "Personal",
+      "Docker",
+      "Homelab",
+      "Kubernetes",
       "Cloudflare",
       "Wordpress",
-      "Homelab",
-      "Veeam"
+      "Artificial Intelligence"
     ],
     "tags": [
       "#AWS",
@@ -1275,11 +1277,13 @@
     "categories": [
       "Nutanix",
       "Personal",
+      "Homelab",
+      "VMware",
+      "AWS",
       "Hosting",
       "Cloudflare",
       "Wordpress",
-      "VMware",
-      "vSphere"
+      "Devops"
     ],
     "tags": [
       "#Certification",
@@ -1295,12 +1299,15 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "AWS",
-      "Veeam",
+      "Homelab",
+      "Personal",
       "VCF",
-      "vSAN",
-      "Automation",
-      "Homelab"
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik"
     ],
     "tags": [
       "#VMC",
@@ -1316,13 +1323,14 @@
     "categories": [
       "Personal",
       "VMware",
+      "AWS",
+      "Veeam",
       "VMware Cloud on AWS",
-      "Devops",
+      "Homelab",
+      "vSphere",
       "Hosting",
-      "Cloudflare",
-      "Wordpress",
-      "vSAN",
-      "VCF"
+      "TrueNAS Scale",
+      "vSAN"
     ],
     "tags": [
       "#Certifications",
@@ -1339,11 +1347,12 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "Personal",
       "Homelab",
-      "vSphere",
-      "VCF",
-      "AWS"
+      "AWS",
+      "Personal",
+      "vSAN",
+      "Runecast",
+      "Nutanix"
     ],
     "tags": [
       "#AWS",
@@ -1380,18 +1389,11 @@
     "categories": [
       "Devops",
       "Personal",
-      "VMware",
-      "vSphere",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Homelab",
-      "NVIDIA",
-      "Traefik",
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "AWS"
+      "VMware",
+      "Github"
     ],
     "tags": [
       "#Git",
@@ -1408,9 +1410,8 @@
     "categories": [
       "Personal",
       "Consulting",
-      "Devops",
-      "Hosting",
       "VMware",
+      "AWS",
       "Nutanix",
       "vSphere"
     ],
@@ -1431,11 +1432,18 @@
       "Homelab",
       "VMware",
       "VMware Cloud on AWS",
+      "vSAN",
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "TrueNAS Scale",
+      "vSphere",
       "Storage",
-      "Networking",
-      "AWS",
-      "Veeam",
-      "Personal"
+      "vExpert",
+      "Synology"
     ],
     "tags": [
       "#Automation",
@@ -1520,7 +1528,7 @@
     "title": "Octopus Archives - James Kilby",
     "url": "https://jameskilby.co.uk/tag/octopus/",
     "description": "Articles tagged with Octopus Archives. Explore technical guides, tutorials, and insights about Octopus Archives from James Kilby's blog.",
-    "content": "Octopus Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu Octopus Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 10, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my…",
+    "content": "Octopus Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu Octopus Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 12, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my…",
     "categories": [
       "Artificial Intelligence",
       "Automation"
@@ -1797,7 +1805,7 @@
     "title": "Energy Archives - James Kilby",
     "url": "https://jameskilby.co.uk/tag/energy/",
     "description": "Articles tagged with Energy Archives. Explore technical guides, tutorials, and insights about Energy Archives from James Kilby's blog.",
-    "content": "Energy Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu Energy Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 10, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my…",
+    "content": "Energy Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu Energy Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 12, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my…",
     "categories": [
       "Artificial Intelligence",
       "Automation"
@@ -2189,7 +2197,7 @@
     "title": "Content Library Archives - James Kilby",
     "url": "https://jameskilby.co.uk/tag/content-library/",
     "description": "Articles tagged with Content Library Archives. Explore technical guides, tutorials, and insights about Content Library Archives from James Kilby's blog.",
-    "content": "Content Library Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu Content Library VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 10, 2026 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.",
+    "content": "Content Library Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu Content Library VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 12, 2026 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.",
     "categories": [
       "VMware",
       "VMware Cloud on AWS"
@@ -2232,10 +2240,11 @@
       "Storage",
       "Synology",
       "Nutanix",
+      "VCF",
       "VMware",
+      "Ansible",
       "Runecast",
-      "Automation",
-      "Networking"
+      "vSphere"
     ],
     "tags": [
       "#Homelab",
@@ -2251,11 +2260,15 @@
     "categories": [
       "Homelab",
       "VMware",
+      "Networking",
       "Ansible",
-      "Nutanix",
-      "Runecast",
-      "VMware Cloud on AWS",
-      "VCF"
+      "Automation",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "Nutanix"
     ],
     "tags": [
       "#Homelab",
@@ -2273,15 +2286,12 @@
       "Homelab",
       "Veeam",
       "VMware",
-      "TrueNAS Scale",
+      "Runecast",
       "vSAN",
-      "vSphere",
-      "Artificial Intelligence",
-      "Docker",
-      "Hosting",
+      "VMware Cloud on AWS",
       "Networking",
-      "Automation",
-      "VMware Cloud on AWS"
+      "Storage",
+      "Synology"
     ],
     "tags": [
       "#Desired State",
@@ -2299,16 +2309,11 @@
       "Homelab",
       "Networking",
       "Storage",
-      "Synology",
-      "Artificial Intelligence",
+      "vExpert",
+      "Nutanix",
+      "Veeam",
       "VMware",
-      "vSphere",
-      "Ansible",
-      "Containers",
-      "Devops",
-      "NVIDIA",
-      "Traefik",
-      "Hosting"
+      "TrueNAS Scale"
     ],
     "tags": [
       "#Homelab",
@@ -2324,12 +2329,12 @@
     "categories": [
       "Homelab",
       "Storage",
-      "Synology",
-      "Kubernetes",
-      "TrueNAS Scale",
+      "Automation",
       "VMware",
+      "Networking",
       "Veeam",
-      "Automation"
+      "Nutanix",
+      "vSphere"
     ],
     "tags": [
       "#NVMe",
@@ -2348,9 +2353,9 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
+      "Personal",
       "Devops",
-      "Github",
-      "Personal"
+      "Github"
     ],
     "tags": [
       "#Cloudflare",
@@ -2369,12 +2374,10 @@
       "Hosting",
       "Wordpress",
       "Cloudflare",
-      "Artificial Intelligence",
-      "Docker",
-      "AWS",
       "Homelab",
-      "Kubernetes",
-      "Personal"
+      "Personal",
+      "Docker",
+      "Kubernetes"
     ],
     "tags": [
       "#Blogging",
@@ -2393,12 +2396,10 @@
       "Cloudflare",
       "Personal",
       "Wordpress",
-      "Docker",
-      "Homelab",
-      "Kubernetes",
-      "VMware",
+      "Devops",
       "AWS",
-      "Consulting"
+      "Nutanix",
+      "Github"
     ],
     "tags": [
       "#Cloudflare",
@@ -2415,13 +2416,11 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
+      "Artificial Intelligence",
       "Docker",
       "Homelab",
-      "Kubernetes",
-      "Devops",
-      "Github",
-      "Personal",
-      "AWS"
+      "AWS",
+      "Personal"
     ],
     "tags": [
       "#Cloudflare",
@@ -2439,14 +2438,21 @@
     "categories": [
       "Homelab",
       "Hosting",
-      "Runecast",
+      "TrueNAS Scale",
       "VMware",
-      "Nutanix",
+      "vSAN",
+      "vSphere",
+      "Automation",
+      "Ansible",
       "Cloudflare",
+      "Personal",
       "Wordpress",
-      "Mikrotik",
-      "Networking",
-      "Personal"
+      "VCF",
+      "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik"
     ],
     "tags": [
       "#Homelab",
@@ -2463,12 +2469,14 @@
       "Homelab",
       "VMware",
       "vSphere",
-      "Personal",
-      "Nutanix",
-      "Veeam",
-      "VMware Cloud on AWS",
+      "Runecast",
       "TrueNAS Scale",
-      "vSAN"
+      "vSAN",
+      "Storage",
+      "Synology",
+      "Artificial Intelligence",
+      "vExpert",
+      "Ansible"
     ],
     "tags": [
       "#Upgrade",
@@ -2486,10 +2494,11 @@
       "Homelab",
       "Hosting",
       "Kubernetes",
-      "Artificial Intelligence",
-      "Nutanix",
+      "Veeam",
       "VMware",
-      "Runecast"
+      "Artificial Intelligence",
+      "Wordpress",
+      "AWS"
     ],
     "tags": [
       "#Containers",
@@ -2508,8 +2517,16 @@
       "Networking",
       "Storage",
       "VMware",
+      "Ansible",
       "Artificial Intelligence",
+      "Containers",
+      "Devops",
+      "NVIDIA",
+      "Traefik",
+      "VMware Cloud on AWS",
       "Docker",
+      "Hosting",
+      "Kubernetes",
       "VCF"
     ],
     "tags": [
@@ -2522,19 +2539,19 @@
     "title": "Free Octopus Agile Battery & Solar Calculator: 5 Batteries Tested",
     "url": "https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/",
     "description": "A free Octopus Agile battery calculator using your real usage data to show if a home battery or solar is worth the investment. Tests 5 UK batteries.",
-    "content": "Free Octopus Agile Battery & Solar Calculator: 5 Batteries Tested Skip to content James Kilby James Kilby Toggle Menu Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 10, 2026 • 📖5 min read(979 words) 📅Published: March 09, 2026•Updated: March 10, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Table of Contents Problem Sadly my roof isn’t an ideal candidate for solar panels as the south facing part isn’t huge and has some shade, therefore I was looking at other options. I have been an Octopus Energy customer for a number of years, they have become one of the larger suppliers in the UK by offering a wide range of interesting tariffs and good customer support. I am on the “Agile Tariff” which means the price of e",
+    "content": "Free Octopus Agile Battery & Solar Calculator: 5 Batteries Tested Skip to content James Kilby James Kilby Toggle Menu Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 12, 2026 • 📖5 min read(979 words) 📅Published: March 09, 2026•Updated: March 12, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Table of Contents Problem Sadly my roof isn’t an ideal candidate for solar panels as the south facing part isn’t huge and has some shade, therefore I was looking at other options. I have been an Octopus Energy customer for a number of years, they have become one of the larger suppliers in the UK by offering a wide range of interesting tariffs and good customer support. I am on the “Agile Tariff” which means the price of e",
     "categories": [
       "Artificial Intelligence",
       "Automation",
-      "Docker",
-      "Hosting",
       "Homelab",
       "VMware",
       "Ansible",
       "Containers",
       "Devops",
       "NVIDIA",
-      "Traefik"
+      "Traefik",
+      "Docker",
+      "Hosting"
     ],
     "tags": [
       "#Energy",
@@ -2552,12 +2569,12 @@
       "Cloudflare",
       "Hosting",
       "Wordpress",
-      "Devops",
-      "Personal",
-      "AWS",
       "Docker",
       "Homelab",
-      "Kubernetes"
+      "Kubernetes",
+      "AWS",
+      "Personal",
+      "Artificial Intelligence"
     ],
     "tags": [
       "#Cloudflare",
@@ -2571,18 +2588,15 @@
     "title": "Using Content Libraries in VMC to deploy software faster - James Kilby",
     "url": "https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/",
     "description": "Learn how to use VMware Content Libraries in VMware Cloud on AWS (VMC) to speed up template and VM deployments, reducing manual steps and improving consistency.",
-    "content": "Using Content Libraries in VMC to deploy software faster - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 10, 2026 • 📖3 min read(640 words) 📅Published: January 27, 2026•Updated: March 10, 2026 As part of my role spinning up new SDDC’s to test things is quite a common occurrence. This is both a blessing and a curse. The new SDDC is 100% Vanilla and perfectly self contained. Therefore you can do the testing required, knowing that you won’t impact anything else and you’re not inheriting a legacy setting from previous testing. However the downside is you need to get the configuration and the software you require into the SDDC. This can take some time. For configuration it’s possible to use IAC tools like Terraform. To speed up the process of deploying software I decided to leverage Content Library specifically for this task. This is a much faster and more rel",
+    "content": "Using Content Libraries in VMC to deploy software faster - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 12, 2026 • 📖5 min read(975 words) 📅Published: January 27, 2026•Updated: March 12, 2026 As part of my role spinning up new SDDC’s to test things is quite a common occurrence. This is both a blessing and a curse. The new SDDC is 100% Vanilla and perfectly self contained. Therefore you can do the testing required, knowing that you won’t impact anything else and you’re not inheriting a legacy setting from previous testing. However the downside is you need to get the configuration and the software you require into the SDDC. This can take some time. For configuration it’s possible to use IAC tools like Terraform. To speed up the process of deploying software I decided to leverage Content Library specifically for this task. This is a much faster and more rel",
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
+      "Personal",
       "Homelab",
-      "Networking",
-      "Storage",
-      "Runecast",
       "vSphere",
-      "Veeam",
-      "vSAN",
-      "Personal"
+      "Nutanix",
+      "vSAN"
     ],
     "tags": [
       "#Content Library",
@@ -2607,12 +2621,12 @@
       "Traefik",
       "VMware",
       "VMware Cloud on AWS",
-      "vSAN",
-      "VCF",
       "Storage",
-      "TrueNAS Scale",
+      "vSAN",
+      "AWS",
       "Veeam",
-      "Personal"
+      "Automation",
+      "Networking"
     ],
     "tags": [
       "#AI",
@@ -2634,12 +2648,11 @@
       "Hosting",
       "Cloudflare",
       "Wordpress",
-      "Homelab",
-      "VMware",
       "Automation",
-      "Personal",
-      "Storage",
-      "TrueNAS Scale"
+      "VCF",
+      "VMware",
+      "Homelab",
+      "Ansible"
     ],
     "tags": [
       "#AI",
@@ -2658,19 +2671,17 @@
     "categories": [
       "Ansible",
       "Homelab",
-      "Storage",
-      "TrueNAS Scale",
+      "VMware",
+      "Hosting",
       "Artificial Intelligence",
       "Containers",
       "Devops",
       "NVIDIA",
       "Traefik",
-      "VMware",
-      "vExpert",
-      "Hosting",
-      "Networking",
-      "vSAN",
-      "vSphere"
+      "Automation",
+      "Storage",
+      "Synology",
+      "TrueNAS Scale"
     ],
     "tags": [
       "#Ansible",
@@ -2688,17 +2699,11 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "Runecast",
-      "Ansible",
-      "Artificial Intelligence",
-      "Containers",
-      "Devops",
       "Homelab",
-      "NVIDIA",
-      "Traefik",
-      "Personal",
-      "VCF",
-      "Automation"
+      "vSAN",
+      "Runecast",
+      "AWS",
+      "Veeam"
     ],
     "tags": [
       "#VMware Cloud on AWS"
@@ -2715,6 +2720,13 @@
       "Devops",
       "Github",
       "Wordpress",
+      "Ansible",
+      "Artificial Intelligence",
+      "Containers",
+      "Homelab",
+      "NVIDIA",
+      "Traefik",
+      "VMware",
       "Hosting",
       "Personal"
     ],
@@ -2736,10 +2748,12 @@
     "categories": [
       "VMware",
       "vSAN",
+      "Homelab",
       "Runecast",
       "Personal",
-      "Homelab",
-      "VMware Cloud on AWS"
+      "vSphere",
+      "VMware Cloud on AWS",
+      "Veeam"
     ],
     "tags": [],
     "date": "2025-12-06T10:59:14+00:00"
@@ -2782,14 +2796,15 @@
     "categories": [
       "Artificial Intelligence",
       "Homelab",
-      "Storage",
-      "TrueNAS Scale",
       "Ansible",
-      "Nutanix",
+      "Storage",
+      "Synology",
       "VMware",
-      "Automation",
-      "VCF",
-      "Hosting"
+      "Hosting",
+      "Docker",
+      "Kubernetes",
+      "Mikrotik",
+      "Networking"
     ],
     "tags": [
       "#Artificial Intelligence",
@@ -2806,11 +2821,11 @@
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
-      "vSAN",
-      "Homelab",
-      "Nutanix",
       "Personal",
-      "vSphere"
+      "vSphere",
+      "Homelab",
+      "vSAN",
+      "VCF"
     ],
     "tags": [
       "#Sizing",
@@ -2838,15 +2853,17 @@
     "content": "Homelab Storage Upgrade: Synology DS918 for VMware & NFS Skip to content James Kilby James Kilby Toggle Menu Homelab Lab Storage ByJames February 10, 2019March 10, 2026 • 📖1 min read(207 words) 📅Published: February 10, 2019•Updated: March 10, 2026 Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes.  At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance.  With that in mind, I purchased a new Synology DS918 It’s a very compact unit with a quad-core Intel Celeron & I have left the RAM at 4 GB for now. I have added some of the existing SSD’s that I had giving me about 3TB of usable flash.  I am presenting this back to my VMware hosts using NFS 4.1.   I must have missed the announcement as this is now built into the Synology GUI ( It used to be a command-line-only option) I have verified the VAAI works as expected in th",
     "categories": [
       "Homelab",
+      "Artificial Intelligence",
       "VMware",
-      "vSphere",
+      "VMware Cloud on AWS",
+      "vSAN",
       "Nutanix",
-      "Runecast",
-      "Mikrotik",
-      "Networking",
+      "Docker",
+      "Hosting",
+      "Kubernetes",
       "Storage",
-      "TrueNAS Scale",
-      "Veeam"
+      "Synology",
+      "Networking"
     ],
     "tags": [
       "#Homelab",
@@ -2863,10 +2880,11 @@
     "categories": [
       "AWS",
       "Personal",
-      "Nutanix",
-      "Consulting",
       "VMware",
-      "Devops"
+      "Hosting",
+      "Cloudflare",
+      "Wordpress",
+      "VMware Cloud on AWS"
     ],
     "tags": [
       "#AWS",
@@ -2883,10 +2901,11 @@
       "VMware",
       "AWS",
       "Veeam",
-      "Homelab",
-      "vSphere",
       "Runecast",
-      "VCF",
+      "VMware Cloud on AWS",
+      "Hosting",
+      "vSAN",
+      "Homelab",
       "Networking",
       "Storage"
     ],
