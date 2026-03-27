@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1012</div>
+                <div class="metric-value">1016</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-03-27</div>
-                <div class="metric-label">12:08:44</div>
+                <div class="metric-label">15:18:17</div>
             </div>
         </div>
         
@@ -338,6 +338,18 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-27 <span class="change-hash">53b2c4f</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-27 <span class="change-hash">33d39e5</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Purge changed HTML from Cloudflare</div>
+                <div class="change-details">Add a GitHub Actions step to purge changed HTML pages from the Cloudflare CDN cache. The step finds changed public/*.html files (git diff HEAD~1 HEAD), converts paths to site URLs, batches up to 30 URLs per request and calls the Cloudflare purge_cache API. It records results in the workflow summary and is guarded by CLOUDFLARE_ZONE_ID / CLOUDFLARE_API_TOKEN (continue-on-error).</div>
+            </div>
+            <br>
 
             <div class="change-entry">
                 <div class="change-date">2026-03-20 <span class="change-hash">1a32447</span><span class="category-badge badge-removal">Removal</span></div>
@@ -478,27 +490,10 @@
                 <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-03-02 <span class="change-hash">9b89f1b</span><span class="category-badge badge-docs">Docs</span></div>
-                <div class="change-title">Polish CI spellcheck, cache TTL, and image tweaks</div>
-                <div class="change-details">CI: capture the spell checker exit code into SPELL_EXIT, derive a human-friendly SPELL_STATUS, and append that status to the GitHub step summary (retain non-blocking behavior). Worker: make Cache-Control dynamic by using getTTL(path) instead of a fixed max-age=300. HTML optimizer: refine optimize_images to treat the first image inside <main> or <article> as the LCP candidate (fetchpriority="high"), set loading="lazy" for other images, add decoding="async" for all images, update the docstring, and remove the prior index-based heuristic.</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-03-02 <span class="change-hash">7036d6f</span><span class="category-badge badge-fix">Fix</span></div>
-                <div class="change-title">Merge origin/main: resolve public/ conflicts (accept remote generated output)</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-03-02 <span class="change-hash">1f95c82</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">Add Gzip fallback, OG image checks, CSS parser</div>
-                <div class="change-details">Add Gzip fallback to the static site compression pipeline and improve HTML/CSS validations and parsing.</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-03-27 14:43:04 UTC<br>
+            Page generated: 2026-03-27 15:42:13 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
