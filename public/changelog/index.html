@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1016</div>
+                <div class="metric-value">1019</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-03-27</div>
-                <div class="metric-label">15:18:17</div>
+                <div class="metric-label">16:45:25</div>
             </div>
         </div>
         
@@ -338,6 +338,17 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-27 <span class="change-hash">ba5ac29</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-27 <span class="change-hash">140cccb</span><span class="category-badge badge-docs">Docs</span></div>
+                <div class="change-title">Always insert Utterances after article content</div>
+                <div class="change-details">Simplify comments insertion: remove the replace-or-insert branching and the insert_before variable. If an existing #comments div is present it is decomposed, then the code finds article > .entry-content (falling back to the article) and inserts the Utterances comments block immediately after. Unifies insertion path and logging.</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-03-27 <span class="change-hash">53b2c4f</span><span class="category-badge badge-other">Other</span></div>
@@ -480,20 +491,10 @@
                 <div class="change-details">Workflow: bump image build-cache key to v3, include .build-cache.json in cache, and add human-friendly cache status output. Add a cleanup step to remove ./static-output after failed builds to avoid stale artifacts.</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-03-02 <span class="change-hash">df8b900</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Tweak deploy</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-03-02 <span class="change-hash">9c746ec</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-03-27 15:42:13 UTC<br>
+            Page generated: 2026-03-27 16:53:29 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
