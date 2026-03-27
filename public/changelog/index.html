@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1024</div>
+                <div class="metric-value">1029</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-03-27</div>
-                <div class="metric-label">22:35:00</div>
+                <div class="metric-label">23:10:42</div>
             </div>
         </div>
         
@@ -338,6 +338,29 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-27 <span class="change-hash">b7c7ac1</span><span class="category-badge badge-feature">Feature</span></div>
+                <div class="change-title">Add Makefile, CODEOWNERS, CONTRIBUTING.md; consolidate CSP tests</div>
+                <div class="change-details">- Consolidate 3 CSP test scripts (test_csp_utterances.py, test_csp_credly.py,</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-27 <span class="change-hash">b4307de</span><span class="category-badge badge-removal">Removal</span></div>
+                <div class="change-title">Remove old spellcheck workflows and theme files</div>
+                <div class="change-details">Delete legacy spellcheck workflow files and obsolete styles, and archive worker scripts. Removed: .github/workflows/{CONSOLIDATION_SUMMARY.md,apply-spell-corrections-manual.yml,spell-check-and-fix.yml,spell-check.yml,verify-spell-corrections.yml}, brutalist-theme.css, and critical-mobile.css. Renamed/moved two worker scripts into archive: workers/html-cache.js → workers/archive/html-cache.js and workers/slack-notification-handler-improved.js → workers/archive/slack-notification-handler-improved.js. These removals reflect consolidation of multiple spell-check workflows into a single consolidated workflow and cleanup of unused theme assets.</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-27 <span class="change-hash">9a65234</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-03-27 <span class="change-hash">1c292a9</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Repo cleanup: archive, gitignore, and remove redundant files</div>
+                <div class="change-details">- Archive enable_cloudflare_indexing.py to scripts/archive/ (one-time setup, already run)</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-03-27 <span class="change-hash">f19166f</span><span class="category-badge badge-docs">Docs</span></div>
@@ -474,33 +497,11 @@
                 <div class="change-date">2026-03-03 <span class="change-hash">bd8d654</span><span class="category-badge badge-improvement">Improvement</span></div>
                 <div class="change-title">Update Incremental Builder</div>
             </div>
-            <br>
-
-            <div class="change-entry">
-                <div class="change-date">2026-03-02 <span class="change-hash">55bd335</span><span class="category-badge badge-docs">Docs</span></div>
-                <div class="change-title">Remove unneded docs files</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-03-02 <span class="change-hash">26ed8d7</span><span class="category-badge badge-docs">Docs</span></div>
-                <div class="change-title">Docs Update</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-03-02 <span class="change-hash">7482d23</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-03-02 <span class="change-hash">8969b28</span><span class="category-badge badge-improvement">Improvement</span></div>
-                <div class="change-title">Enhance SEO checks and CSS preload logic</div>
-                <div class="change-details">Add JSON-LD validation in content_validator: warn on missing structured data for article/main pages, detect empty or invalid JSON-LD blocks, ensure @context references schema.org, and require headline/datePublished/author for Article-like types. Refine CSS preload heuristic in enhance_html_performance: only preload stylesheets whose filename matches critical/main/styles (.min optional) to avoid preloading unrelated styles. Improve meta description filler in fix_seo_issues: scope first-paragraph extraction to article/main or common content containers to avoid grabbing nav/footer/sidebar text.</div>
-            </div>
 
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-03-27 22:47:55 UTC<br>
+            Page generated: 2026-03-27 23:16:45 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
