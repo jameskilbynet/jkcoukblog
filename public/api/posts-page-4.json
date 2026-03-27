@@ -1,6 +1,33 @@
 {
   "posts": [
     {
+      "slug": "my-home-office-setup-upgrades",
+      "title": "My Home Office Setup & Upgrades",
+      "description": "Upgrading my home office in 2020 with a Dell 49-inch ultrawide monitor, improved video call setup, and ergonomic changes to boost remote working productivity.",
+      "date": "2021-01-05T12:17:13Z",
+      "modified": "2026-03-10T20:35:14Z",
+      "author": "James Kilby",
+      "url": "https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/",
+      "markdown_url": "/markdown/posts/my-home-office-setup-upgrades.md",
+      "api_url": "/api/posts/my-home-office-setup-upgrades.json",
+      "categories": [
+        "Personal",
+        "Consulting",
+        "Devops",
+        "AWS",
+        "Nutanix",
+        "VMware",
+        "vSphere"
+      ],
+      "tags": [
+        null,
+        null,
+        null
+      ],
+      "image": "https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-1024x768.jpeg",
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1.jpeg)\n\n[Personal](https://jameskilby.co.uk/category/personal/) | [Consulting](https://jameskilby.co.uk/category/consulting/)\n\n# My Home Office Setup & Upgrades\n\nBy[James](https://jameskilby.co.uk) January 5, 2021March 10, 2026..."
+    },
+    {
       "slug": "my-first-pull",
       "title": "My First Pull",
       "description": "A personal account of submitting my first open source pull request — spotting bugs in a HashiCorp Packer project and contributing improvements to the codebase on GitHub.",
@@ -13,11 +40,20 @@
       "categories": [
         "Devops",
         "Personal",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Homelab",
+        "NVIDIA",
+        "Traefik",
+        "VMware",
+        "Automation",
+        "Nutanix",
         "Cloudflare",
         "Hosting",
         "Wordpress",
-        "VMware",
-        "Github"
+        "AWS",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -40,12 +76,15 @@
       "categories": [
         "VMware",
         "VCF",
+        "VMware Cloud on AWS",
+        "Ansible",
+        "Artificial Intelligence",
+        "Containers",
+        "Devops",
         "Homelab",
-        "Storage",
-        "vExpert",
-        "Veeam",
-        "Nutanix",
-        "Automation"
+        "NVIDIA",
+        "Traefik",
+        "vSphere"
       ],
       "tags": [
         null,
@@ -70,13 +109,12 @@
         "VMware",
         "AWS",
         "Veeam",
-        "Runecast",
         "VMware Cloud on AWS",
-        "Hosting",
-        "vSAN",
+        "Personal",
         "Homelab",
         "Networking",
-        "Storage"
+        "Storage",
+        "Nutanix"
       ],
       "tags": [
         null,
@@ -115,17 +153,15 @@
       "categories": [
         "Ansible",
         "Homelab",
+        "Nutanix",
         "VMware",
-        "Hosting",
         "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "Automation",
+        "Mikrotik",
+        "Networking",
         "Storage",
-        "Synology",
-        "TrueNAS Scale"
+        "vExpert",
+        "Docker",
+        "Hosting"
       ],
       "tags": [
         null,
@@ -150,12 +186,17 @@
         "Homelab",
         "Veeam",
         "VMware",
-        "Runecast",
-        "vSAN",
-        "VMware Cloud on AWS",
-        "Networking",
+        "Artificial Intelligence",
+        "Automation",
+        "Docker",
+        "NVIDIA",
+        "Traefik",
+        "Personal",
         "Storage",
-        "Synology"
+        "Nutanix",
+        "Ansible",
+        "Containers",
+        "Devops"
       ],
       "tags": [
         null,
@@ -178,12 +219,13 @@
       "categories": [
         "Homelab",
         "Networking",
+        "VMware",
         "Storage",
         "vExpert",
-        "Nutanix",
-        "Veeam",
-        "VMware",
-        "TrueNAS Scale"
+        "Mikrotik",
+        "VCF",
+        "Synology",
+        "Runecast"
       ],
       "tags": [
         null,
@@ -205,12 +247,17 @@
       "categories": [
         "Homelab",
         "Storage",
-        "Automation",
         "VMware",
-        "Networking",
-        "Veeam",
-        "Nutanix",
-        "vSphere"
+        "vSphere",
+        "TrueNAS Scale",
+        "Artificial Intelligence",
+        "Docker",
+        "Hosting",
+        "Ansible",
+        "Containers",
+        "Devops",
+        "NVIDIA",
+        "Traefik"
       ],
       "tags": [
         null,
@@ -234,15 +281,12 @@
       "categories": [
         "Homelab",
         "VMware",
-        "Networking",
-        "Ansible",
-        "Automation",
+        "Storage",
+        "Hosting",
         "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "Nutanix"
+        "Docker",
+        "Networking",
+        "vSAN"
       ],
       "tags": [
         null,
@@ -251,43 +295,10 @@
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2023/04/IMG_4536-scaled-1-768x1024.jpg",
       "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2023/04/IMG_4536-scaled-1.jpg)\n\n[Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)\n\n# Lab Update – Compute\n\nBy[James](https://jameskilby.co.uk) January 6, 2022February 16, 2026 • 📖1 min read(223 ..."
-    },
-    {
-      "slug": "lab-storage",
-      "title": "Lab Storage",
-      "description": "My initial homelab storage build: HP Gen8 Microserver running Xpenology with dual 3TB WD Red drives, Intel SSDs, and NFS for my VMware lab.",
-      "date": "2018-01-06T17:39:20Z",
-      "modified": "2024-07-10T08:56:51Z",
-      "author": "James Kilby",
-      "url": "https://jameskilby.co.uk/2018/01/lab-storage/",
-      "markdown_url": "/markdown/posts/lab-storage.md",
-      "api_url": "/api/posts/lab-storage.json",
-      "categories": [
-        "Homelab",
-        "Storage",
-        "Synology",
-        "VMware",
-        "vSphere",
-        "TrueNAS Scale",
-        "vSAN",
-        "Ansible",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Traefik",
-        "vExpert"
-      ],
-      "tags": [
-        null,
-        null
-      ],
-      "image": "https://jameskilby.co.uk/wp-content/uploads/2025/12/ChatGPT-Image-Dec-17-2025-at-09_03_10-PM.png",
-      "excerpt": "[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [Synology](https://jameskilby.co.uk/category/synology/)\n\n# Lab Storage\n\nBy[James](https://jameskilby.co.uk) January 6, 2018July 10, 2024 • 📖1 min read(196 words)\n\n📅 **Published:** January ..."
     }
   ],
   "page": 4,
   "per_page": 10,
-  "total": 67,
+  "total": 68,
   "total_pages": 7
 }
