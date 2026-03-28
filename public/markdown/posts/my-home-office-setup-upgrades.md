@@ -18,16 +18,16 @@ tags:
   - #WFH
   - #Zoom
 url: https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/
-image: https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-1024x768.jpeg
+image: /wp-content/uploads/2023/05/IMG_7017-scaled-1-1024x768.jpeg
 ---
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1.jpeg)
+![Img 7017 Scaled 1](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1.jpeg)
 
 [Personal](https://jameskilby.co.uk/category/personal/) | [Consulting](https://jameskilby.co.uk/category/consulting/)
 
 # My Home Office Setup & Upgrades
 
-By[James](https://jameskilby.co.uk) January 5, 2021March 10, 2026 • 📖8 min read(1,568 words)
+By[James](https://jameskilby.co.uk)January 5, 2021March 10, 2026 • 📖8 min read(1,568 words)
 
 📅 **Published:** January 05, 2021• **Updated:** March 10, 2026
 
@@ -43,26 +43,26 @@ I’ll start with the BOM. I have attached a link to where they can be obtained 
 
 Item | Cost £| Link  
 ---|---|---  
-Standing Desk | 500 | [Ikea](https://www.ikea.com/gb/en/p/idasen-desk-sit-stand-brown-beige-s89280969/)  
-Headphone Stand | 22.90 | [Amazon](https://amzn.to/2XQYvsp)  
-Laptop Stand | 19.99 | [Amazon](https://amzn.to/2XPNVli)  
-Apple Macbook Air 2018 13″ | 1779 | [Apple](https://www.apple.com/uk/shop/buy-mac/macbook-air)  
-Apple iPad Pro 9.7″ | 599.39 | [Apple](https://www.apple.com/uk/shop/buy-ipad/ipad-pro)  
-Apple Pencil  | 99.99 | [Amazon](https://amzn.to/2Kd0vYC)  
-Dell 49″ Monitor | 1100 | [Dell](https://www.dell.com/en-uk/shop/dell-ultrasharp-49-curved-monitor-u4919dw/apd/210-argk/monitors-monitor-accessories)  
-Ergotron MX | 119.76 | [Amazon](https://amzn.to/2Lz46RI)  
-Elgato Ring Light | 189.95 | [Amazon](https://amzn.to/38PI0mM)  
-Canon EOS 5D Mk IV | 2799 | [Amazon](https://amzn.to/39J1jgx)  
-Canon 17-40MM F4 Lens + Hoya UV Filter | 573 | [Amazon](https://amzn.to/38PI0mM)  
-Blackmagic Design Atem Mini | 303 | [Amazon](https://amzn.to/38PI0mM)  
-Shure MV7 + Stand | 289 | [Amazon](https://amzn.to/2KHOvPf)  
-Anker USB-C Charger | 29.99 | [Amazon](https://amzn.to/3iE2LoC)  
-Amazon Echo Show 5 | 29.99 | [Amazon](https://amzn.to/2Kd0vYC)  
-Yubikey 4 | 39.99 | [Amazon](https://amzn.to/3ifPHp7)  
-Beats Solo Pro* | 169.99 | [Amazon](https://amzn.to/3qwVsC2)  
-Knobsound Amp | 41.99 | [Amazon](https://amzn.to/3sByXxx)  
-Assorted Cables | 100 | N/A  
-**Total** | **8306.93** |   
+Standing Desk| 500| [Ikea](https://www.ikea.com/gb/en/p/idasen-desk-sit-stand-brown-beige-s89280969/)  
+Headphone Stand| 22.90| [Amazon](https://amzn.to/2XQYvsp)  
+Laptop Stand| 19.99| [Amazon](https://amzn.to/2XPNVli)  
+Apple Macbook Air 2018 13″| 1779| [Apple](https://www.apple.com/uk/shop/buy-mac/macbook-air)  
+Apple iPad Pro 9.7″| 599.39| [Apple](https://www.apple.com/uk/shop/buy-ipad/ipad-pro)  
+Apple Pencil | 99.99| [Amazon](https://amzn.to/2Kd0vYC)  
+Dell 49″ Monitor| 1100| [Dell](https://www.dell.com/en-uk/shop/dell-ultrasharp-49-curved-monitor-u4919dw/apd/210-argk/monitors-monitor-accessories)  
+Ergotron MX| 119.76| [Amazon](https://amzn.to/2Lz46RI)  
+Elgato Ring Light| 189.95| [Amazon](https://amzn.to/38PI0mM)  
+Canon EOS 5D Mk IV| 2799| [Amazon](https://amzn.to/39J1jgx)  
+Canon 17-40MM F4 Lens + Hoya UV Filter| 573| [Amazon](https://amzn.to/38PI0mM)  
+Blackmagic Design Atem Mini| 303| [Amazon](https://amzn.to/38PI0mM)  
+Shure MV7 + Stand| 289| [Amazon](https://amzn.to/2KHOvPf)  
+Anker USB-C Charger| 29.99| [Amazon](https://amzn.to/3iE2LoC)  
+Amazon Echo Show 5| 29.99| [Amazon](https://amzn.to/2Kd0vYC)  
+Yubikey 4| 39.99| [Amazon](https://amzn.to/3ifPHp7)  
+Beats Solo Pro*| 169.99| [Amazon](https://amzn.to/3qwVsC2)  
+Knobsound Amp| 41.99| [Amazon](https://amzn.to/3sByXxx)  
+Assorted Cables| 100| N/A  
+ **Total**|  **8306.93**|   
   
 ## Desk – Ikea Idasen Sit/Stand 160
 
@@ -70,7 +70,7 @@ The desk is the focal point of a home office and therefore it’s an important c
 
 The choice of a standing desk makes everything else a bit harder as everything needs to move with the desk while remaining stable. It also means you need to be careful with cable length’s and mounting things. I have 3 cables running to the desk. A single power lead and two Cat 5e’s one for my Macbook Air and one for my Atem Mini. 
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-1024x768.jpeg)Desk Setup
+![Img 7017 Scaled 1 1024X768](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-1024x768.jpeg)Desk Setup
 
 ## Monitor – Dell UltraSharp 49 Curved U4919DW
 
@@ -86,33 +86,33 @@ I settled on the MX from Ergotron and its perfect. The springs did need tighteni
 
 I have had a variety of Canon SLR’s over the last 14 years and the 5D is certainly the best, It is an exceptional piece of kit. It offers a number of key features that I can utilise. One of the advantages is that it has a clean HDMI output. This is fed directly into the Atem Mini. It has excellent focus capabilities using the Dual Pixel CMOS and this combined with AF subject tracking allows me to always be in focus.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7021-scaled-1-1-1024x768.jpeg)
+![Img 7021 Scaled 1 1 1024X768](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7021-scaled-1-1-1024x768.jpeg)
 
 The 5D also has WIFI control capabilities allowing me to both preview or amend any of the settings from an app on my iPhone. This is useful for amending the audio gain or exposure options if needed. This is a bit of a pain to do without the app so its a big advantage. Coupled to the front of the 5D I have a Canon 17-40 F4 L lens. I tend to have this wide open to throw the background out of focus a bit. 
 
 A sample image is below.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/05/Screenshot-2021-01-15-at-00.09.45-1024x567.png)
+![Screenshot 2021 01 15 At 00.09.45 1024X567](https://jameskilby.co.uk/wp-content/uploads/2023/05/Screenshot-2021-01-15-at-00.09.45-1024x567.png)
 
 ## Lighting – Elgato Ring Light
 
 The Canon 5D is mounted in the centre of an Elgato Ring light. This is clipped to the back of the centre of my desk. I have it set to 5700K in the above picture which seems to be the colour temperature that’s most neutral. A picture of what it looks like from my point of view is below.
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7021-scaled-1-1024x768.jpeg)
+![Img 7021 Scaled 1 1024X768](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7021-scaled-1-1024x768.jpeg)
 
 ## Sound – Shure MV7
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7023-scaled-1-1024x768.jpeg)
+![Img 7023 Scaled 1 1024X768](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7023-scaled-1-1024x768.jpeg)
 
 Shure are probably the most famous name in microphones, the MV7 is a slight departure from the professional-grade microphones like the SM58 that they are famous for. This is because the MV7 is a dual output mic with a USB-C as well as a standard XLR output. It’s also capable of outputting to both at the same time. This gives me the flexibility of recording directly to my Macbook if needed or my prefered route into the 5D. This is prefered as it removes any possible sync issues between audio and video plus has the added benefit of being capable of being recording within the 5D as well as on my Macbook via the ATEM.
 
 ## Video – Blackmagic Design Atem Mini
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7022-scaled-1-1024x768.jpeg)
+![Img 7022 Scaled 1 1024X768](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7022-scaled-1-1024x768.jpeg)
 
 The ATEM Mini is the centrepiece of the media part of my setup. It controls all of the inputs and outputs. Although its the most basic in the ATEM range its got a pretty advanced feature set. It has 4 HDMI inputs and I typically use 3 of these. They are for the 5D, Macbook Air and iPad Pro. The mixer then has two distinct outputs. One is HDMI and the other is USB-C which is plugged back into my Mac. The connection into the Mac signals as a USB Webcam. This makes it easy to use in any application. It also does a very neat trick that John Nicholson pointed out to me. As well as pretending to be a webcam it also shows up as an external monitor. Where this becomes insanely useful is for apps like PowerPoint. Powerpoint detects the second monitor and presents the full screen to the Mini that the audience see. But I retain the presenter view on-screen with presenter notes timings etc. 
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/05/Screenshot-2021-01-15-at-02.06.47.png)
+![Screenshot 2021 01 15 At 02.06.47](https://jameskilby.co.uk/wp-content/uploads/2023/05/Screenshot-2021-01-15-at-02.06.47.png)
 
 The ATEM also has upstream and downstream capabilities, allowing for the mixing of multiple video screens.
 
@@ -146,62 +146,62 @@ When travel was a thing I was lucky enough to visit a number of customers in the
 
 ## Similar Posts
 
-  * [ ![VMware – Going out with a Bang!](https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo-768x384.png) ](https://jameskilby.co.uk/2023/10/going-out-with-a-bang/)
+  * [![VMware – Going out with a Bang!](https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo-768x384.png)](https://jameskilby.co.uk/2023/10/going-out-with-a-bang/)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/)
 
 ### [VMware – Going out with a Bang!](https://jameskilby.co.uk/2023/10/going-out-with-a-bang/)
 
-By[James](https://jameskilby.co.uk) October 7, 2023March 10, 2026
+By[James](https://jameskilby.co.uk)October 7, 2023March 10, 2026
 
 There is a lot of uncertainty with VMware at the moment. This is all due to the pending acquisition by Broadcom. There are a lot of unknowns for the staff and customers about what the company will look like in the future. I certainly have some concerns mainly just with the unknown. However, VMware has…
 
-  * [ ![VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png) ](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
+  * [![VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png)](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
 
 [Personal](https://jameskilby.co.uk/category/personal/) | [VMware](https://jameskilby.co.uk/category/vmware/)
 
 ### [VMware Certified Master Specialist HCI 2020](https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/)
 
-By[James](https://jameskilby.co.uk) September 13, 2020March 10, 2026
+By[James](https://jameskilby.co.uk)September 13, 2020March 10, 2026
 
 I recently sat (and passed the VMware HCI Master Specialist exam (5V0-21.20). I won’t go into any details of the contents but I will comment that I felt the questions were fair and that there wasn’t anything in it to trip you up. The required knowledge was certainly wider than the vSAN specialist exam. This…
 
-  * [ ![Analytics in a privacy focused world](https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png) ](https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/)
+  * [![Analytics in a privacy focused world](https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png)](https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/)
 
 [Hosting](https://jameskilby.co.uk/category/hosting/) | [Personal](https://jameskilby.co.uk/category/personal/)
 
 ### [Analytics in a privacy focused world](https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/)
 
-By[James](https://jameskilby.co.uk) November 10, 2023March 10, 2026
+By[James](https://jameskilby.co.uk)November 10, 2023March 10, 2026
 
 I recently helped my friend Dean Lewis @veducate with some hosting issues. As part of the testing of this he kindly gave me a login to his WordPress instance. He has been a pretty prolific blogger over the years pumping out an amazing amount of really good content. It also highlighted to me that I…
 
-  * [ ![AWS Solution Architect – Associate](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-768x307.png) ](https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/)
+  * [![AWS Solution Architect – Associate](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_-768x307.png)](https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/)
 
 [AWS](https://jameskilby.co.uk/category/aws/) | [Personal](https://jameskilby.co.uk/category/personal/)
 
 ### [AWS Solution Architect – Associate](https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/)
 
-By[James](https://jameskilby.co.uk) December 16, 2019March 10, 2026
+By[James](https://jameskilby.co.uk)December 16, 2019March 10, 2026
 
 Today was a good day. I renewed my AWS Solution Architect certification. Although my work is primarily in and around the VMware ecosystem I have been working a lot with VMware Cloud on AWS recently with a number of our customers. Having a good foundation of the core AWS services has…
 
-  * [ ![Web Development](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2-768x229.png) ](https://jameskilby.co.uk/2022/01/web-development/)
+  * [![Web Development](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2-768x229.png)](https://jameskilby.co.uk/2022/01/web-development/)
 
 [Hosting](https://jameskilby.co.uk/category/hosting/) | [Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Personal](https://jameskilby.co.uk/category/personal/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)
 
 ### [Web Development](https://jameskilby.co.uk/2022/01/web-development/)
 
-By[James](https://jameskilby.co.uk) January 4, 2022October 1, 2025
+By[James](https://jameskilby.co.uk)January 4, 2022October 1, 2025
 
 A while ago I started messing with Cloudflare Workers. I have now moved this site permanently over to them. This is partly related to some issues I have been having with internet access at home. Prior to this, the site ran from within my lab. This means the site is now super fast (hopefully :p)….
 
-  * [ ![Nutanix NCP](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-768x196.jpg) ](https://jameskilby.co.uk/2020/07/nutanix-ncp/)
+  * [![Nutanix NCP](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier-768x196.jpg)](https://jameskilby.co.uk/2020/07/nutanix-ncp/)
 
 [Nutanix](https://jameskilby.co.uk/category/nutanix/) | [Personal](https://jameskilby.co.uk/category/personal/)
 
 ### [Nutanix NCP](https://jameskilby.co.uk/2020/07/nutanix-ncp/)
 
-By[James](https://jameskilby.co.uk) July 2, 2020July 10, 2024
+By[James](https://jameskilby.co.uk)July 2, 2020July 10, 2024
 
 I saw a tweet a couple of weeks ago mentioning that Nutanix were offering a free go at the Nutanix Certified Professional exam. They are also offering free on-demand training to go with it. In my current role, I haven’t used Nutanix however I have good experience using it as the storage platform with vSphere…

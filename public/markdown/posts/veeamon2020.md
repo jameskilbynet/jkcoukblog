@@ -13,16 +13,16 @@ tags:
   - #Veeam
   - #VeeamON
 url: https://jameskilby.co.uk/2020/06/veeamon2020/
-image: https://jameskilby.co.uk/wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png
+image: /wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png
 ---
 
-![](https://jameskilby.co.uk/wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png)
+![Veeam Logo New Large 1934042827](https://jameskilby.co.uk/wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png)
 
 [Veeam](https://jameskilby.co.uk/category/veeam/)
 
 # VeeamON2020
 
-By[James](https://jameskilby.co.uk) June 18, 2020April 25, 2023 • 📖1 min read(272 words)
+By[James](https://jameskilby.co.uk)June 18, 2020April 25, 2023 • 📖1 min read(272 words)
 
 📅 **Published:** June 18, 2020• **Updated:** April 25, 2023
 
@@ -77,13 +77,13 @@ Yes Veeam Backup Agent for **MAC**
 
 ## Similar Posts
 
-  * [ ![Monitoring VMC – Part 1](https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp) ](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
+  * [![Monitoring VMC – Part 1](https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp)](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [AWS](https://jameskilby.co.uk/category/aws/) | [Veeam](https://jameskilby.co.uk/category/veeam/)
 
 ### [Monitoring VMC – Part 1](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
 
-By[James](https://jameskilby.co.uk) December 17, 2019March 27, 2026
+By[James](https://jameskilby.co.uk)December 17, 2019March 27, 2026
 
 As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams…
 
@@ -91,6 +91,6 @@ As previously mentioned I have been working a lot with VMware Cloud on AWS and o
 
 ### [Lab Update – Desired Workloads](https://jameskilby.co.uk/2022/01/lab-update-part-5-desired-workloads/)
 
-By[James](https://jameskilby.co.uk) January 6, 2022March 10, 2026
+By[James](https://jameskilby.co.uk)January 6, 2022March 10, 2026
 
 My lab is always undergoing change. Partially as I want to try new things or new ways of doing things. Sometimes because I break things (not always by accident) sometimes it’s a great way to learn…. I decided to list the workloads I am looking to run (some of these are already in place) Infrastucture…

@@ -1,6 +1,6 @@
 ---
 title: "Static WordPress hosting using Cloudflare"
-description: "How I moved my Wordpress Blog to Cloudflare Pages"
+description: "For a while now I have been running this site directly from Cloudflare utilising their excellent worker’s product. I did this originally as a learning exerci..."
 date: 2022-10-20T15:26:08+00:00
 modified: 2026-03-10T20:35:13+00:00
 author: James Kilby
@@ -18,27 +18,27 @@ tags:
   - #Wordpress
   - #Workers
 url: https://jameskilby.co.uk/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/
-image: https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg
+image: /wp-content/uploads/2022/10/iu.jpeg
 ---
 
-![](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)
+![Iu](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)
 
 [Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)
 
 # Static WordPress hosting using Cloudflare
 
-By[James](https://jameskilby.co.uk) October 20, 2022March 10, 2026 • 📖4 min read(851 words)
+By[James](https://jameskilby.co.uk)October 20, 2022March 10, 2026 • 📖4 min read(851 words)
 
 📅 **Published:** October 20, 2022• **Updated:** March 10, 2026
 
-For a while now I have been running this site directly from [Cloudflare](http:// <p>For a while now I have been running this site directly from Cloudflare utilising their workers product.   This has brought several benefits:</p>    <p>Crazy Web Performance</p>    <p>High Availability </p>    <p>Zero attack surface</p>    <p>A couple of people have asked me about the setup so I thought I would try and document it.</p>    <p>Firstly although this is effectively Serverless, I still have a copy of WordPress running. It lives in some docker containers on my NAS and it is not currently published to the outside world.  This hugely reduces the attack surface. Editing and contributing content works in exactly the same way however publishing is where the difference is seen.</p>    <p>At a very high level I have a WordPress plugin that generates the static content, This is then pushed into a GitHub Repo and from there its pushed to Cloudflare Pages.</p> ) utilising their excellent worker’s product. I did this originally as a learning exercise but due to the benefits It brought and the ease of use I decided to stick with it. The benefits are several fold:
+For a while now I have been running this site directly from [Cloudflare](http:// <p>For a while now I have been running this site directly from Cloudflare utilising their workers product. This has brought several benefits:</p>   <p>Crazy Web Performance</p>   <p>High Availability </p>   <p>Zero attack surface</p>   <p>A couple of people have asked me about the setup so I thought I would try and document it.</p>   <p>Firstly although this is effectively Serverless, I still have a copy of WordPress running. It lives in some docker containers on my NAS and it is not currently published to the outside world. This hugely reduces the attack surface. Editing and contributing content works in exactly the same way however publishing is where the difference is seen.</p>   <p>At a very high level I have a WordPress plugin that generates the static content, This is then pushed into a GitHub Repo and from there its pushed to Cloudflare Pages.</p> ) utilising their excellent worker’s product. I did this originally as a learning exercise but due to the benefits It brought and the ease of use I decided to stick with it. The benefits are several fold:
 
   * Crazy Web Performance (Typically full page load in less than 500ms see below)
   * High Availability globally
   * Zero attack surface
   * ~Zero hosting costs
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2022-10-19-at-23.02.09-2048x860-1-1024x430.png) Gtmetrix Speed Test
+![Screenshot 2022 10 19 At 23.02.09 2048X860 1 1024X430](https://jameskilby.co.uk/wp-content/uploads/2023/04/Screenshot-2022-10-19-at-23.02.09-2048x860-1-1024x430.png)Gtmetrix Speed Test
 
 A couple of people have asked me about the setup so I thought I would try and document an overview.
 
@@ -109,13 +109,13 @@ If your site is more popular then you may require one of the paid plans that sta
 
 The free tier gives you:
 
-**Workers Bundled (Workers Compute time)**
+ **Workers Bundled (Workers Compute time)**
 
   * Up to 10ms CPU time per request
   * Lowest latency after the first request
   * Up to 100,000 requests per day (UTC+0)
 
-**KV (Key Value Storage)**
+ **KV (Key Value Storage)**
 
   * Global low-latency key-value edge storage
   * Up to 100,000 read operations per day
@@ -133,62 +133,62 @@ For more like this why not follow me on [Twitter](https://x.com/jameskilbynet)
 
 ## Similar Posts
 
-  * [ ![Wrangler and Node versions](https://jameskilby.co.uk/wp-content/uploads/2022/01/WranglerCrab-1-768x256.png) ](https://jameskilby.co.uk/2022/01/wrangler-and-node-versions/)
+  * [![Wrangler and Node versions](https://jameskilby.co.uk/wp-content/uploads/2022/01/WranglerCrab-1-768x256.png)](https://jameskilby.co.uk/2022/01/wrangler-and-node-versions/)
 
 [Cloudflare](https://jameskilby.co.uk/category/cloudflare/)
 
 ### [Wrangler and Node versions](https://jameskilby.co.uk/2022/01/wrangler-and-node-versions/)
 
-By[James](https://jameskilby.co.uk) January 15, 2022April 10, 2023
+By[James](https://jameskilby.co.uk)January 15, 2022April 10, 2023
 
 I am a massive fan of the brew package management system for macOS and use it on all of my Mac’s I typically just upgrade everything blindly and have never had an issue….. Until today… I went to push some changes to this site and got the following error message A quick bit of digging…
 
-  * [ ![Starlink](https://jameskilby.co.uk/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920-768x432.jpg) ](https://jameskilby.co.uk/2022/10/starlink/)
+  * [![Starlink](https://jameskilby.co.uk/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920-768x432.jpg)](https://jameskilby.co.uk/2022/10/starlink/)
 
 [Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/)
 
 ### [Starlink](https://jameskilby.co.uk/2022/10/starlink/)
 
-By[James](https://jameskilby.co.uk) October 11, 2022February 19, 2026
+By[James](https://jameskilby.co.uk)October 11, 2022February 19, 2026
 
 Since moving to Dorset last year internet connectivity has been the bane of my existence. Currently, I have an ADSL connection provided by my old employer Zen and a 5G connection provided by Three. These are both plumbed into my WatchGuard Firewall with multi-wan configured. Most of the time the usability is ok but there…
 
-  * [ ![Web Development](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2-768x229.png) ](https://jameskilby.co.uk/2022/01/web-development/)
+  * [![Web Development](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2-768x229.png)](https://jameskilby.co.uk/2022/01/web-development/)
 
 [Hosting](https://jameskilby.co.uk/category/hosting/) | [Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Personal](https://jameskilby.co.uk/category/personal/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)
 
 ### [Web Development](https://jameskilby.co.uk/2022/01/web-development/)
 
-By[James](https://jameskilby.co.uk) January 4, 2022October 1, 2025
+By[James](https://jameskilby.co.uk)January 4, 2022October 1, 2025
 
 A while ago I started messing with Cloudflare Workers. I have now moved this site permanently over to them. This is partly related to some issues I have been having with internet access at home. Prior to this, the site ran from within my lab. This means the site is now super fast (hopefully :p)….
 
-  * [ ![Use Portainer in a Homelab with GitHub](https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png) ](https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/)
+  * [![Use Portainer in a Homelab with GitHub](https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png)](https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/)
 
 [Docker](https://jameskilby.co.uk/category/docker/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Kubernetes](https://jameskilby.co.uk/category/kubernetes/)
 
 ### [Use Portainer in a Homelab with GitHub](https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/)
 
-By[James](https://jameskilby.co.uk) December 9, 2022March 10, 2026
+By[James](https://jameskilby.co.uk)December 9, 2022March 10, 2026
 
 Late to the party or not, I have been using containers in my lab more and more and that has led me to Portainer…. I use it for managing the docker containers on my Synology but it can also be used for managing lots of other things. In their own words “Portainer accelerates container adoption….
 
-  * [ ![Web Development Improvements](https://jameskilby.co.uk/wp-content/uploads/2026/01/Website-Optimisations-768x560.png) ](https://jameskilby.co.uk/2026/01/web-development-improvements/)
+  * [![Web Development Improvements](https://jameskilby.co.uk/wp-content/uploads/2026/01/Website-Optimisations-768x560.png)](https://jameskilby.co.uk/2026/01/web-development-improvements/)
 
 [Cloudflare](https://jameskilby.co.uk/category/cloudflare/) | [Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)
 
 ### [Web Development Improvements](https://jameskilby.co.uk/2026/01/web-development-improvements/)
 
-By[James](https://jameskilby.co.uk) January 15, 2026March 10, 2026
+By[James](https://jameskilby.co.uk)January 15, 2026March 10, 2026
 
 I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO, and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had…
 
-  * [ ![Cloudflare Workers – Limits of the free tier](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu-768x450.jpeg) ](https://jameskilby.co.uk/2022/01/cloudflare-workers-limits-of-the-free-tier/)
+  * [![Cloudflare Workers – Limits of the free tier](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu-768x450.jpeg)](https://jameskilby.co.uk/2022/01/cloudflare-workers-limits-of-the-free-tier/)
 
 [Hosting](https://jameskilby.co.uk/category/hosting/) | [Wordpress](https://jameskilby.co.uk/category/wordpress/)
 
 ### [Cloudflare Workers – Limits of the free tier](https://jameskilby.co.uk/2022/01/cloudflare-workers-limits-of-the-free-tier/)
 
-By[James](https://jameskilby.co.uk) January 4, 2022March 10, 2026
+By[James](https://jameskilby.co.uk)January 4, 2022March 10, 2026
 
 I have been making several changes (mainly cosmetic to this site over the last day or so) On most changes I have been doing an export and then uploading the site to Cloudflare using Wrangler. After a while I received an email from Cloudflare saying: Hi, You’re 50% of the way to reaching one of…

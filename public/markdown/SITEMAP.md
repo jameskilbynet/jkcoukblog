@@ -1,8 +1,8 @@
 # Markdown Content Sitemap
 
-Generated: 2026-03-28 11:05:51
+Generated: 2026-03-28 16:51:09
 
-Total Files: 77
+Total Files: 79
 
 ## Blog Posts
 
@@ -114,7 +114,7 @@ Total Files: 77
 - [Managing my Homelab with SemaphoreUI](https://jameskilby.co.uk/2025/09/managing-my-homelab-with-semaphoreui/) - 2025-09-02 16:01:48+00:00
   - Markdown: `/markdown/posts/managing-my-homelab-with-semaphoreui.md`
 
-- [Lab Update –  Desired Workloads](https://jameskilby.co.uk/2022/01/lab-update-part-5-desired-workloads/) - 2022-01-06 19:23:11+00:00
+- [Lab Update – Desired Workloads](https://jameskilby.co.uk/2022/01/lab-update-part-5-desired-workloads/) - 2022-01-06 19:23:11+00:00
   - Markdown: `/markdown/posts/lab-update-part-5-desired-workloads.md`
 
 - [Lab Update – Part 3 Network](https://jameskilby.co.uk/2022/01/lab-update-part-3-network/) - 2022-01-06 19:25:40+00:00
@@ -138,7 +138,7 @@ Total Files: 77
 - [VMC New Host -i3en](https://jameskilby.co.uk/2020/07/i3en/) - 2020-07-02 22:01:39+00:00
   - Markdown: `/markdown/posts/i3en.md`
 
-- [WordPress Hosting with Cloudflare  Pages](https://jameskilby.co.uk/2023/05/how-to-take-a-wordpress-site-and-publish-it-as-a-static-site-on-cloudflare-pages/) - 2023-05-14 07:00:35+00:00
+- [WordPress Hosting with Cloudflare Pages](https://jameskilby.co.uk/2023/05/how-to-take-a-wordpress-site-and-publish-it-as-a-static-site-on-cloudflare-pages/) - 2023-05-14 07:00:35+00:00
   - Markdown: `/markdown/posts/how-to-take-a-wordpress-site-and-publish-it-as-a-static-site-on-cloudflare-pages.md`
 
 - [Static WordPress hosting using Cloudflare](https://jameskilby.co.uk/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/) - 2022-10-20 15:26:08+00:00
@@ -147,7 +147,7 @@ Total Files: 77
 - [How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/) - 2025-01-29 23:31:56+00:00
   - Markdown: `/markdown/posts/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way.md`
 
-- [How I upgraded my blog as a  Static Website with GitHub Actions and Cloudflare](https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/) - 2025-10-06 15:57:06+00:00
+- [How I upgraded my blog as a Static Website with GitHub Actions and Cloudflare](https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/) - 2025-10-06 15:57:06+00:00
   - Markdown: `/markdown/posts/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare.md`
 
 - [Homelab Storage Refresh (Part 1)](https://jameskilby.co.uk/2023/05/homelab-storage-refresh-part-1/) - 2023-05-23 12:07:09+00:00
@@ -192,7 +192,7 @@ Total Files: 77
 - [AWS for Beginners](https://jameskilby.co.uk/2018/03/aws-for-beginners1/) - 2018-03-30 23:13:21+00:00
   - Markdown: `/markdown/posts/aws-for-beginners1.md`
 
-- [Automating the deployment of my Homelab AI  Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/) - 2026-02-09 11:54:54+00:00
+- [Automating the deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/) - 2026-02-09 11:54:54+00:00
   - Markdown: `/markdown/posts/automating-the-deployment-of-my-ai-homelab-and-other-improvements.md`
 
 - [Apple Content Caching](https://jameskilby.co.uk/2021/02/apple-content-caching/) - 2021-02-08 14:12:23+00:00
