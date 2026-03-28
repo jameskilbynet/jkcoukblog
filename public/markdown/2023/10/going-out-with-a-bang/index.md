@@ -1,6 +1,6 @@
 ---
 title: "VMware – Going out with a Bang!"
-description: "VMware is keeping to its EPIC^2 values even as the transition to Broadcom ownership draws near"
+description: "There is a lot of uncertainty with VMware at the moment. This is all due to the pending acquisition by Broadcom. There are a lot of unknowns for the staff an..."
 date: 2023-10-07T12:37:14+00:00
 modified: 2026-03-10T20:35:12+00:00
 author: James Kilby
@@ -29,7 +29,7 @@ url: https://jameskilby.co.uk/2023/10/going-out-with-a-bang/
 image: /wp-content/uploads/2023/10/rnli-logo.png
 ---
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png)
+![Rnli Logo](https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [Personal](https://jameskilby.co.uk/category/personal/)
 

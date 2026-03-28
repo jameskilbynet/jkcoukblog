@@ -1,6 +1,6 @@
 ---
 title: "Nvidia Tesla P4 Homelab Setup"
-description: "vGPU Setup in my Homelab using a Nvidia Tesla P4"
+description: "A little while ago I decided to play with vGPU in my homelab. This was something I had dabbled with in the past but never really had the time or need to get ..."
 date: 2023-10-23T14:56:58+00:00
 modified: 2026-03-10T06:47:57+00:00
 author: James Kilby
@@ -22,7 +22,7 @@ url: https://jameskilby.co.uk/2023/10/vgpu-setup-in-my-homelab/
 image: /wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg
 ---
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg)
+![Img 1107 768X403 1](https://jameskilby.co.uk/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg)
 
 [Homelab](https://jameskilby.co.uk/category/homelab/) | [VMware](https://jameskilby.co.uk/category/vmware/)
 

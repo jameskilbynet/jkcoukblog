@@ -1,6 +1,6 @@
 ---
 title: "Analytics in a privacy focused world"
-description: "Analytics in a privacy focused world: Learn how to implement privacy-friendly analytics solutions for your blog today!"
+description: "I recently helped my friend Dean Lewis @veducate with some hosting issues. As part of the testing of this he kindly gave me a login to his WordPress instance..."
 date: 2023-11-10T16:45:03+00:00
 modified: 2026-03-10T20:35:12+00:00
 author: James Kilby
@@ -25,7 +25,7 @@ url: https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/
 image: /wp-content/uploads/2023/11/plausible-analytics-icon-top.png
 ---
 
-![](https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png)
+![Plausible Analytics Icon Top](https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png)
 
 [Hosting](https://jameskilby.co.uk/category/hosting/) | [Personal](https://jameskilby.co.uk/category/personal/)
 

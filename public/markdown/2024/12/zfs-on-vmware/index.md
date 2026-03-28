@@ -31,7 +31,7 @@ url: https://jameskilby.co.uk/2024/12/zfs-on-vmware/
 image: /wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.jpeg
 ---
 
-![](https://jameskilby.co.uk/wp-content/uploads/2024/12/ZFS.jpg)
+![Zfs](https://jameskilby.co.uk/wp-content/uploads/2024/12/ZFS.jpg)
 
 [TrueNAS Scale](https://jameskilby.co.uk/category/truenas-scale/) | [VMware](https://jameskilby.co.uk/category/vmware/) | [vSAN](https://jameskilby.co.uk/category/vmware/vsan-vmware/) | [vSphere](https://jameskilby.co.uk/category/vsphere/)
 

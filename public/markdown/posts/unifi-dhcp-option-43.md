@@ -1,6 +1,6 @@
 ---
 title: "Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets"
-description: "How to Configure DHCP Option 43 for use by my Unifi Devices in my Network"
+description: "I have recently juggled some of my homelab services around, which involved moving my UniFi server to a different subnet. This meant that new UniFi devices co..."
 date: 2024-06-26T10:50:17+00:00
 modified: 2026-03-10T20:35:12+00:00
 author: James Kilby
@@ -28,7 +28,7 @@ url: https://jameskilby.co.uk/2024/06/unifi-dhcp-option-43/
 image: /wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-1024x683.png
 ---
 
-![](https://jameskilby.co.uk/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_.png)
+![Ubiquiti Networks Logo.Wine ](https://jameskilby.co.uk/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_.png)
 
 [Homelab](https://jameskilby.co.uk/category/homelab/) | [Networking](https://jameskilby.co.uk/category/networking/)
 

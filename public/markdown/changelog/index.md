@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1054
+1057
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-03-28
 
-11:02:56
+16:42:21
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,18 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-03-28 74ca4f9Fix
+
+fix: move inline Python to script to fix YAML syntax error in workflow
+
+The previous commit embedded Python code directly inside a `run: |` YAML
+
+2026-03-28 96420fdFix
+
+fix: restore absolute URLs in seeded HTML so incremental build passes link validation
+
+When seeding ./static-output/ from public/, the HTML files have already been
 
 2026-03-28 01eb73fFeature
 
@@ -195,5 +207,5 @@ Add a GitHub Actions step to purge changed HTML pages from the Cloudflare CDN ca
 
 remove redundant files
 
-Page generated: 2026-03-28 11:07:19 UTC  
+Page generated: 2026-03-28 16:52:45 UTC  
 Changelog powered by Git history and Lighthouse CI
