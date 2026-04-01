@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1065
+1068
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-01
 
-20:09:01
+20:31:04
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,16 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-01 b00031fOther
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-01 0dfcc4bFix
+
+Upgrade BlogPosting to TechArticle, fix BreadcrumbList URLs/positions, fix Person name
+
+\- Add item to JSON-LD URL_KEYS so BreadcrumbList standalone script item
 
 2026-04-01 489e75eOther
 
