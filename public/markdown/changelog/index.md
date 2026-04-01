@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1070
+1075
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-01
 
-20:01:03
+22:39:57
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,24 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-01 7c4a90bOther
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-01 ad6bf93Other
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-01 f634605Other
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-01 4bf3150Fix
+
+Fix relative canonical URLs and manifest name
+
+\- Add fix_canonical_url method to fix_seo_issues.py: converts relative
 
 2026-04-01 b00031fOther
 
