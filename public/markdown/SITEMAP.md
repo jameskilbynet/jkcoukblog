@@ -1,8 +1,8 @@
 # Markdown Content Sitemap
 
-Generated: 2026-04-01 19:58:44
+Generated: 2026-04-01 21:13:27
 
-Total Files: 79
+Total Files: 80
 
 ## Blog Posts
 
@@ -86,6 +86,9 @@ Total Files: 79
 
 - [Nutanix CE](https://jameskilby.co.uk/2018/01/nutanix-ce/) - 2018-01-06 17:28:56+00:00
   - Markdown: `/markdown/posts/nutanix-ce.md`
+
+- [New VMC Host i7i.metal-24xl](https://jameskilby.co.uk/2026/04/new-vmc-host-i7i-metal-24xl/) - 2026-04-01 08:06:00+00:00
+  - Markdown: `/markdown/posts/new-vmc-host-i7i-metal-24xl.md`
 
 - [New Nodes](https://jameskilby.co.uk/2024/07/new-nodes/) - 2024-07-02 08:01:04+00:00
   - Markdown: `/markdown/posts/new-nodes.md`
