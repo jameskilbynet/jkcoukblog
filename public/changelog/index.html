@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1060</div>
+                <div class="metric-value">1062</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -298,8 +298,8 @@
             
             <div class="metric-card">
                 <h3>Last Deployment</h3>
-                <div class="metric-value">2026-03-29</div>
-                <div class="metric-label">09:27:39</div>
+                <div class="metric-value">2026-04-01</div>
+                <div class="metric-label">16:54:49</div>
             </div>
         </div>
         
@@ -338,6 +338,13 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-01 <span class="change-hash">6a2c7d3</span><span class="category-badge badge-fix">Fix</span></div>
+                <div class="change-title">Fix JSON-LD absolute URLs and update workflow</div>
+                <div class="change-details">Add JSON-LD URL fixer to scripts/fix_seo_issues.py and call it from the CI workflow after convert_to_staging.py. The new fix_jsonld_absolute_ids() method walks <script type="application/ld+json"> blocks and restores absolute @id/url-like fields that were converted to root-relative paths by convert_to_staging.py. The workflow now re-applies the SEO fixes post-conversion (non-blocking on failure). Also add .gitleaks-iac.toml to provide an IaC-focused gitleaks allowlist and exclusions for known false positives and common lock/state files.</div>
+            </div>
+            <br>
 
             <div class="change-entry">
                 <div class="change-date">2026-03-28 <span class="change-hash">74ca4f9</span><span class="category-badge badge-fix">Fix</span></div>
@@ -485,17 +492,11 @@
                 <div class="change-title">Purge changed HTML from Cloudflare</div>
                 <div class="change-details">Add a GitHub Actions step to purge changed HTML pages from the Cloudflare CDN cache. The step finds changed public/*.html files (git diff HEAD~1 HEAD), converts paths to site URLs, batches up to 30 URLs per request and calls the Cloudflare purge_cache API. It records results in the workflow summary and is guarded by CLOUDFLARE_ZONE_ID / CLOUDFLARE_API_TOKEN (continue-on-error).</div>
             </div>
-            <br>
-
-            <div class="change-entry">
-                <div class="change-date">2026-03-20 <span class="change-hash">1a32447</span><span class="category-badge badge-removal">Removal</span></div>
-                <div class="change-title">remove redundant files</div>
-            </div>
 
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-04-01 15:19:14 UTC<br>
+            Page generated: 2026-04-01 16:00:32 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
