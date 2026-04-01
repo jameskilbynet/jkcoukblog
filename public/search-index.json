@@ -3,19 +3,19 @@
     "title": "James Kilby - James Kilby's technical blog covering VMware, homelab projects, cloud computing, and infrastructure automation. Real-world IT solutions.",
     "url": "https://jameskilby.co.uk/",
     "description": "Expert guides on VMware vSphere, homelab infrastructure, AI setup, and cloud computing. Real-world technical tutorials by a VMware vExpert.",
-    "content": "James Kilby - James Kilby's technical blog covering VMware, homelab projects, cloud computing, and infrastructure automation. Real-world IT solutions. Skip to content James Kilby James Kilby Toggle Menu Artificial Intelligence | Automation | Docker | Homelab | NVIDIA | Traefik | VMware My Self-Hosted AI Stack: Architecture Overview (Part 1) ByJames March 27, 2026March 27, 2026 A walkthrough of my self-hosted AI stack: Ollama, Open WebUI, ComfyUI, Whishper, n8n, Qdrant, SearxNG, and a full observability layer — all running on my own hardware with Docker Compose. Artificial Intelligence | Automation Octopus Agile Battery & Solar Calculator ByJames March 9, 2026March 12, 2026 I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my… Ansible | Artificial Intelligence",
+    "content": "James Kilby - James Kilby's technical blog covering VMware, homelab projects, cloud computing, and infrastructure automation. Real-world IT solutions. Skip to content James Kilby James Kilby Toggle Menu VMware | VMware Cloud on AWS New VMC Host i7i.metal-24xl ByJames April 1, 2026April 1, 2026 We’ve expanded the VMC fleet with the new i7i (i7i.24xlarge) host type. Powered by Intel Emerald Rapids processors with PCIe Gen5 connectivity, it delivers the fleet’s highest single-core performance and memory bandwidth, making it well suited for latency-sensitive workloads and high-performance vSAN configurations. Key Technical Specs: This host brings a blend of usable options to… Artificial Intelligence | Automation | Docker | Homelab | NVIDIA | Traefik | VMware My Self-Hosted AI Stack: Architecture Overview (Part 1) ByJames March 27, 2026March 27, 2026 A walkthrough of my self-hosted AI stack: Ollama, Open WebUI, ComfyUI, Whishper, n8n, Qdrant, SearxNG, and a full observability layer — all ru",
     "categories": [
+      "VMware",
+      "VMware Cloud on AWS",
       "Artificial Intelligence",
       "Automation",
       "Docker",
       "Homelab",
       "NVIDIA",
       "Traefik",
-      "VMware",
       "Ansible",
       "Containers",
       "Devops",
-      "VMware Cloud on AWS",
       "Cloudflare",
       "Hosting",
       "Wordpress",
@@ -41,7 +41,7 @@
       "Money"
     ],
     "tags": [],
-    "date": "2026-03-27T11:56:33+00:00"
+    "date": "2026-04-01T08:06:00+00:00"
   },
   {
     "title": "VMC - James Kilby",
@@ -85,7 +85,7 @@
     "title": "Site Statistics",
     "url": "https://jameskilby.co.uk/stats/",
     "description": "Public statistics and metrics for James Kilby's technical blog including performance scores, traffic data, and build information.",
-    "content": "Site Statistics - Jameskilbycouk ← Back to Home 📊 Site Statistics Public metrics, performance scores, and analytics for jameskilby.co.uk 📄 170 Total Pages 📝 68 Blog Posts 🖼️ 3034 Images 💾 167.39 Total Size (MB) 🚀 1062 Deployments 📅 106 Updates This Month 🚀 Lighthouse Performance Scores Latest scores from 2026-04-01 deployment 95 Performance 95 Accessibility 100 Best Practices 100 SEO 📈 Performance Tracking: Scores are automatically measured on every deployment and stored in the changelog history. 🎯 Target: Maintaining 90+ scores across all categories for optimal user experience. 🔧 Build Metrics Metric Value Notes Total HTML Pages 170 All generated pages including posts, archives, and pages Blog Posts 68 Articles in dated directories (YYYY/MM/slug) Total Images 3034 Optimized images (PNG, JPG, WebP, SVG) Total Site Size 167.39 MB All files in public directory Average Page Size 0.98 KB Total size / number of pages Images per Post 44.6 Average images per blog post Last Deployment 2026-04-",
+    "content": "Site Statistics - Jameskilbycouk ← Back to Home 📊 Site Statistics Public metrics, performance scores, and analytics for jameskilby.co.uk 📄 170 Total Pages 📝 68 Blog Posts 🖼️ 3034 Images 💾 168.12 Total Size (MB) 🚀 1069 Deployments 📅 113 Updates This Month 🚀 Lighthouse Performance Scores Latest scores from 2026-04-01 deployment 95 Performance 95 Accessibility 100 Best Practices 100 SEO 📈 Performance Tracking: Scores are automatically measured on every deployment and stored in the changelog history. 🎯 Target: Maintaining 90+ scores across all categories for optimal user experience. 🔧 Build Metrics Metric Value Notes Total HTML Pages 170 All generated pages including posts, archives, and pages Blog Posts 68 Articles in dated directories (YYYY/MM/slug) Total Images 3034 Optimized images (PNG, JPG, WebP, SVG) Total Site Size 168.12 MB All files in public directory Average Page Size 0.99 KB Total size / number of pages Images per Post 44.6 Average images per blog post Last Deployment 2026-04-",
     "categories": [],
     "tags": [],
     "date": ""
@@ -105,7 +105,7 @@
     "title": "Changelog",
     "url": "https://jameskilby.co.uk/changelog/",
     "description": "Site improvements, deployments, and performance metrics for James Kilby's technical blog.",
-    "content": "Changelog - Jameskilbycouk ← Back to Home 📋 Changelog Site improvements, deployments, and performance metrics Total Deployments 1062 Git commits Repository Age 180 Days active Contributors 3 Active contributors Last Deployment 2026-04-01 16:54:49 🚀 Lighthouse Performance Scores Last checked: Estimated 95 Performance 95 Accessibility 100 Best Practices 100 SEO Recent Changes 2026-04-01 6a2c7d3Fix Fix JSON-LD absolute URLs and update workflow Add JSON-LD URL fixer to scripts/fix_seo_issues.py and call it from the CI workflow after convert_to_staging.py. The new fix_jsonld_absolute_ids() method walks",
+    "content": "Changelog - Jameskilbycouk ← Back to Home 📋 Changelog Site improvements, deployments, and performance metrics Total Deployments 1069 Git commits Repository Age 180 Days active Contributors 3 Active contributors Last Deployment 2026-04-01 19:35:56 🚀 Lighthouse Performance Scores Last checked: Estimated 95 Performance 95 Accessibility 100 Best Practices 100 SEO Recent Changes 2026-04-01 b00031fOther Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog 2026-04-01 0dfcc4bFix Upgrade BlogPosting to TechArticle, fix BreadcrumbList URLs/positions, fix Person name - Add item to JSON-LD URL_KEYS so BreadcrumbList standalone script item 2026-04-01 489e75eOther Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog 2026-04-01 be382c2Other Absolutify only string URL keys; always recurse Guard URL absolution to only operate on string values (avoid treating lists/objects as strings) and ensure the fixer always recurses into nested dicts/lists. This fixes cases where keys li",
     "categories": [],
     "tags": [],
     "date": ""
@@ -769,19 +769,19 @@
     "title": "VMware Archives - James Kilby",
     "url": "https://jameskilby.co.uk/category/vmware/",
     "description": "Browse all VMware Archives articles. In-depth technical content covering VMware Archives topics, best practices, and real-world solutions.",
-    "content": "VMware Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware Artificial Intelligence | Automation | Docker | Homelab | NVIDIA | Traefik | VMware My Self-Hosted AI Stack: Architecture Overview (Part 1) ByJames March 27, 2026March 27, 2026 A walkthrough of my self-hosted AI stack: Ollama, Open WebUI, ComfyUI, Whishper, n8n, Qdrant, SearxNG, and a full observability layer — all running on my own hardware with Docker Compose. Ansible | Artificial Intelligence | Containers | Devops | Homelab | NVIDIA | Traefik | VMware Automating the deployment of my Homelab AI Infrastructure ByJames February 9, 2026March 15, 2026 Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 12, 2026 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster. VMware Cloud on AWS Time in a VMC Environment ByJame",
+    "content": "VMware Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware VMware | VMware Cloud on AWS New VMC Host i7i.metal-24xl ByJames April 1, 2026April 1, 2026 We’ve expanded the VMC fleet with the new i7i (i7i.24xlarge) host type. Powered by Intel Emerald Rapids processors with PCIe Gen5 connectivity, it delivers the fleet’s highest single-core performance and memory bandwidth, making it well suited for latency-sensitive workloads and high-performance vSAN configurations. Key Technical Specs: This host brings a blend of usable options to… Artificial Intelligence | Automation | Docker | Homelab | NVIDIA | Traefik | VMware My Self-Hosted AI Stack: Architecture Overview (Part 1) ByJames March 27, 2026March 27, 2026 A walkthrough of my self-hosted AI stack: Ollama, Open WebUI, ComfyUI, Whishper, n8n, Qdrant, SearxNG, and a full observability layer — all running on my own hardware with Docker Compose. Ansible | Artificial Intelligence | Containers | Devops | Homelab | ",
     "categories": [
+      "VMware",
+      "VMware Cloud on AWS",
       "Artificial Intelligence",
       "Automation",
       "Docker",
       "Homelab",
       "NVIDIA",
       "Traefik",
-      "VMware",
       "Ansible",
       "Containers",
       "Devops",
-      "VMware Cloud on AWS",
       "vSAN",
       "TrueNAS Scale",
       "vSphere",
@@ -795,7 +795,7 @@
       "AWS"
     ],
     "tags": [],
-    "date": "2026-03-27T11:56:33+00:00"
+    "date": "2026-04-01T08:06:00+00:00"
   },
   {
     "title": "Veeam Archives - James Kilby",
@@ -1117,14 +1117,14 @@
     "title": "VMware Cloud on AWS Archives - James Kilby",
     "url": "https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/",
     "description": "Browse all VMware Cloud on AWS Archives articles. In-depth technical content covering VMware Cloud on AWS Archives topics, best practices, and real-world solutions.",
-    "content": "VMware Cloud on AWS Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware Cloud on AWS VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 12, 2026 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster. VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025March 10, 2026 How to use the Amazon Time Sync Service in a VMC environment VMware | VMware Cloud on AWS An in-depth look at VMware Cloud on AWS hosts ByJames August 14, 2025March 10, 2026 This is single page intended to collate every single feature of the current VMware Cloud on AWS hosts for easy comparison. All of this data Is publicly available. I have just collated into a single page I3.metal I3en.metal I4i.metal CPU Processor Name Intel Xeon E5-2686 v4  Intel Xeon Platinum 8175 Intel Xeon 8375c No of… VMware | VMware Cloud on AWS VMC Quick Sizing Guide ByJames May 21, 2025July 2, 2025 Quick reference",
+    "content": "VMware Cloud on AWS Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware Cloud on AWS VMware | VMware Cloud on AWS New VMC Host i7i.metal-24xl ByJames April 1, 2026April 1, 2026 We’ve expanded the VMC fleet with the new i7i (i7i.24xlarge) host type. Powered by Intel Emerald Rapids processors with PCIe Gen5 connectivity, it delivers the fleet’s highest single-core performance and memory bandwidth, making it well suited for latency-sensitive workloads and high-performance vSAN configurations. Key Technical Specs: This host brings a blend of usable options to… VMware | VMware Cloud on AWS Using Content Libraries in VMC to deploy software faster ByJames January 27, 2026March 12, 2026 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster. VMware Cloud on AWS Time in a VMC Environment ByJames December 8, 2025March 10, 2026 How to use the Amazon Time Sync Service in a VMC environment VMware | VMware Cloud on AWS An in-depth look at VMware Clo",
     "categories": [
       "VMware",
       "VMware Cloud on AWS",
       "vSAN"
     ],
     "tags": [],
-    "date": "2026-01-27T22:19:39+00:00"
+    "date": "2026-04-01T08:06:00+00:00"
   },
   {
     "title": "VCF Archives - James Kilby",
@@ -2241,6 +2241,20 @@
     "date": "2026-03-27T11:56:33+00:00"
   },
   {
+    "title": "I7i Archives - James Kilby",
+    "url": "https://jameskilby.co.uk/tag/i7i/",
+    "description": "Articles tagged with I7i Archives. Explore technical guides, tutorials, and insights about I7i Archives from James Kilby's blog.",
+    "content": "I7i Archives - James Kilby Skip to content James Kilby James Kilby Toggle Menu I7i VMware | VMware Cloud on AWS New VMC Host i7i.metal-24xl ByJames April 1, 2026April 1, 2026 We’ve expanded the VMC fleet with the new i7i (i7i.24xlarge) host type. Powered by Intel Emerald Rapids processors with PCIe Gen5 connectivity, it delivers the fleet’s highest single-core performance and memory bandwidth, making it well suited for latency-sensitive workloads and high-performance vSAN configurations. Key Technical Specs: This host brings a blend of usable options to…",
+    "categories": [
+      "VMware",
+      "VMware Cloud on AWS"
+    ],
+    "tags": [
+      "Tags"
+    ],
+    "date": "2026-04-01T08:06:00+00:00"
+  },
+  {
     "title": "Content Library Archives - James Kilby",
     "url": "https://jameskilby.co.uk/tag/content-library/",
     "description": "Articles tagged with Content Library Archives. Explore technical guides, tutorials, and insights about Content Library Archives from James Kilby's blog.",
@@ -2753,6 +2767,27 @@
       "#Semaphore"
     ],
     "date": "2026-02-09T11:54:54+00:00"
+  },
+  {
+    "title": "New VMC Host i7i.metal-24xl - James Kilby",
+    "url": "https://jameskilby.co.uk/2026/04/new-vmc-host-i7i-metal-24xl/",
+    "description": "We’ve expanded the VMC fleet with the new i7i (i7i.24xlarge) host type. Powered by Intel Emerald Rapids processors with PCIe Gen5 connectivity, it delivers",
+    "content": "New VMC Host i7i.metal-24xl - James Kilby Skip to content James Kilby James Kilby Toggle Menu VMware | VMware Cloud on AWS New VMC Host i7i.metal-24xl ByJames April 1, 2026April 1, 2026 • 📖2 min read(384 words) We’ve expanded the VMC fleet with the new i7i (i7i.24xlarge) host type. Powered by Intel Emerald Rapids processors with PCIe Gen5 connectivity, it delivers the fleet’s highest single-core performance and memory bandwidth, making it well suited for latency-sensitive workloads and high-performance vSAN configurations. Key Technical Specs: Performance: Intel Emerald Rapids CPUs + PCIe Gen5, offering the fleet’s highest clock speeds and memory bandwidth. Storage: Optimized for vSAN with the fastest available NVMe devices. Support for both vSAN OSA and ESA Security: Enhanced security based on Intel Total Memory Encryption This host brings a blend of usable options to complement the existing VMC fleet ranging from bleeding edge performance for tier one applications. It also supports e",
+    "categories": [
+      "VMware",
+      "VMware Cloud on AWS",
+      "Homelab",
+      "Veeam",
+      "VCF",
+      "Personal",
+      "Automation"
+    ],
+    "tags": [
+      "#I7i",
+      "#VMware",
+      "#VMware Cloud on AWS"
+    ],
+    "date": "2026-04-01T08:06:00+00:00"
   },
   {
     "title": "How I Migrated from Pocket to Hoarder with AI Integration...",
