@@ -15,7 +15,7 @@ tags:
   - #Account Setup
   - #AWS
 url: https://jameskilby.co.uk/2018/03/aws-for-beginners1/
-image: /wp-content/uploads/2018/03/raf750x1000075t101010_01c5ca27c6.u2.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2018/03/raf750x1000075t101010_01c5ca27c6.u2.jpg
 ---
 
 ![Raf750X1000075T101010 01C5Ca27C6.U2](https://jameskilby.co.uk/wp-content/uploads/2018/03/raf750x1000075t101010_01c5ca27c6.u2.jpg)

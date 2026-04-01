@@ -18,7 +18,7 @@ tags:
   - #WFH
   - #Zoom
 url: https://jameskilby.co.uk/2021/01/my-home-office-setup-upgrades/
-image: /wp-content/uploads/2023/05/IMG_7017-scaled-1-1024x768.jpeg
+image: https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1-1024x768.jpeg
 ---
 
 ![Img 7017 Scaled 1](https://jameskilby.co.uk/wp-content/uploads/2023/05/IMG_7017-scaled-1.jpeg)

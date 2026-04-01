@@ -12,7 +12,7 @@ tags:
   - #NTP
   - #VMware Cloud on AWS
 url: https://jameskilby.co.uk/2025/12/time-in-a-vmc-environment/
-image: /wp-content/uploads/2025/02/Picture-1-e1768509620339.png
+image: https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339.png
 ---
 
 ![Picture 1 E1768509620339](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339.png)

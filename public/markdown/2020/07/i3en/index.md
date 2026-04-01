@@ -22,7 +22,7 @@ tags:
   - #VMC
   - #VMware Cloud on AWS
 url: https://jameskilby.co.uk/2020/07/i3en/
-image: /wp-content/uploads/2022/11/iu-1-1024x526.png
+image: https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-1024x526.png
 ---
 
 ![Iu 1](https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1.png)

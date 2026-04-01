@@ -28,7 +28,7 @@ tags:
   - #VMware
   - #ZFS
 url: https://jameskilby.co.uk/2024/12/zfs-on-vmware/
-image: /wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.jpeg
+image: https://jameskilby.co.uk/wp-content/uploads/2024/12/IMG_20140330_210511-1024x845.jpeg
 ---
 
 ![Zfs](https://jameskilby.co.uk/wp-content/uploads/2024/12/ZFS.jpg)

@@ -17,7 +17,7 @@ tags:
   - #Node
   - #Workers
 url: https://jameskilby.co.uk/2022/01/wrangler-and-node-versions/
-image: /wp-content/uploads/2022/01/WranglerCrab-1.png
+image: https://jameskilby.co.uk/wp-content/uploads/2022/01/WranglerCrab-1.png
 ---
 
 ![Wranglercrab 1](https://jameskilby.co.uk/wp-content/uploads/2022/01/WranglerCrab-1.png)

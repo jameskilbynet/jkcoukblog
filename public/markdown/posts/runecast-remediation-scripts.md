@@ -21,7 +21,7 @@ tags:
   - #Runecast
   - #VMware
 url: https://jameskilby.co.uk/2023/05/runecast-remediation-scripts/
-image: /wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png
+image: https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png
 ---
 
 ![Runecast Solutions Ltd](https://jameskilby.co.uk/wp-content/uploads/2023/05/Runecast-Solutions-Ltd.png)

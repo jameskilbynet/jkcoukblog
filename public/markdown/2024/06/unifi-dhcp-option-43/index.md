@@ -25,7 +25,7 @@ tags:
   - #Option 43
   - #Unifi
 url: https://jameskilby.co.uk/2024/06/unifi-dhcp-option-43/
-image: /wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-1024x683.png
+image: https://jameskilby.co.uk/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_-1024x683.png
 ---
 
 ![Ubiquiti Networks Logo.Wine ](https://jameskilby.co.uk/wp-content/uploads/2024/06/Ubiquiti_Networks-Logo.wine_.png)

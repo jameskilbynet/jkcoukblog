@@ -24,7 +24,7 @@ tags:
   - #Homelab
   - #Mikrotik
 url: https://jameskilby.co.uk/2022/12/100gb-s-in-my-homelab-sort-of/
-image: /wp-content/uploads/2023/04/2157_hi_res.png
+image: https://jameskilby.co.uk/wp-content/uploads/2023/04/2157_hi_res.png
 ---
 
 ![2157 Hi Res](https://jameskilby.co.uk/wp-content/uploads/2023/04/2157_hi_res.png)

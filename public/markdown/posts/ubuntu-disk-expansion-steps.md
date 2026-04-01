@@ -10,7 +10,7 @@ tags:
   - #Disk Expand
   - #Ubuntu
 url: https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/
-image: /wp-content/uploads/2025/12/UbuntuExpand.png
+image: https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png
 ---
 
 ![Ubuntuexpand](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png)

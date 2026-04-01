@@ -18,7 +18,7 @@ tags:
   - #Homelab
   - #Storage
 url: https://jameskilby.co.uk/2022/11/homelab-bad-days-almost/
-image: /wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.jpg
 ---
 
 ![Brokenharddive 1200X630 1](https://jameskilby.co.uk/wp-content/uploads/2022/11/BrokenHardDive-1200x630-1.jpg)

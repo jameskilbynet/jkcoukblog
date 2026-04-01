@@ -7,7 +7,7 @@ author: James Kilby
 categories:
   - Patrick Kremer
 url: https://jameskilby.co.uk/vmc/
-image: /wp-content/uploads/2022/11/iu-1-1024x526.png
+image: https://jameskilby.co.uk/wp-content/uploads/2022/11/iu-1-1024x526.png
 ---
 
 📅 **Published:** March 18, 2025• **Updated:** March 02, 2026

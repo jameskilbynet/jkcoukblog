@@ -10,7 +10,7 @@ tags:
   - #Apple
   - #Cache
 url: https://jameskilby.co.uk/2021/02/apple-content-caching/
-image: /wp-content/uploads/2021/02/iu.png
+image: https://jameskilby.co.uk/wp-content/uploads/2021/02/iu.png
 ---
 
 ![Iu](https://jameskilby.co.uk/wp-content/uploads/2021/02/iu.png)

@@ -16,7 +16,7 @@ tags:
   - #AWS
   - #Certification
 url: https://jameskilby.co.uk/2019/12/aws-solution-architect-associate/
-image: /wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png
+image: https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png
 ---
 
 ![Amazonwebservices Logo.Svg ](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png)

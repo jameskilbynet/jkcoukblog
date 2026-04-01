@@ -23,7 +23,7 @@ tags:
   - #IAC
   - #Semaphore
 url: https://jameskilby.co.uk/2025/09/managing-my-homelab-with-semaphoreui/
-image: /wp-content/uploads/2025/07/semaphore.png
+image: https://jameskilby.co.uk/wp-content/uploads/2025/07/semaphore.png
 ---
 
 ![Semaphore](https://jameskilby.co.uk/wp-content/uploads/2025/07/semaphore.png)

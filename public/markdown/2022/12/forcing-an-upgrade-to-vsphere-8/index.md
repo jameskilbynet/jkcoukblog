@@ -18,7 +18,7 @@ tags:
   - #Upgrade
   - #vSphere 8
 url: https://jameskilby.co.uk/2022/12/forcing-an-upgrade-to-vsphere-8/
-image: /wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.24.32.png
+image: https://jameskilby.co.uk/wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.24.32.png
 ---
 
 ![Screenshot 2022 12 14 At 21.45.23](https://jameskilby.co.uk/wp-content/uploads/2022/12/Screenshot-2022-12-14-at-21.45.23.png)

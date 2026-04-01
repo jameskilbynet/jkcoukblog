@@ -19,7 +19,7 @@ tags:
   - #github
   - #packer
 url: https://jameskilby.co.uk/2020/12/my-first-pull/
-image: /wp-content/uploads/2020/12/175jvBleoQfAZJc3sgTSPQA.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2020/12/175jvBleoQfAZJc3sgTSPQA.jpg
 ---
 
 ![175Jvbleoqfazjc3Sgtspqa](https://jameskilby.co.uk/wp-content/uploads/2020/12/175jvBleoQfAZJc3sgTSPQA.jpg)

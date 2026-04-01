@@ -25,7 +25,7 @@ tags:
   - #VMware
   - #VMware Cloud on AWS
 url: https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/
-image: /wp-content/uploads/2026/01/Firefly_Gemini-Flash.png
+image: https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash.png
 ---
 
 ![Firefly Gemini Flash](https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash.png)

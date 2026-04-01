@@ -22,7 +22,7 @@ tags:
   - #VMware
   - #vSAN
 url: https://jameskilby.co.uk/2020/09/vmware-certified-master-specialist-hci-2020/
-image: /wp-content/uploads/2020/09/vmware_SP_HCI20.png
+image: https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png
 ---
 
 ![Vmware Sp Hci20](https://jameskilby.co.uk/wp-content/uploads/2020/09/vmware_SP_HCI20.png)

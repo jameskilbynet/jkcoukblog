@@ -17,7 +17,7 @@ tags:
   - #github
   - #Wordpress
 url: https://jameskilby.co.uk/2026/01/web-development-improvements/
-image: /wp-content/uploads/2026/01/Website-Optimisations.png
+image: https://jameskilby.co.uk/wp-content/uploads/2026/01/Website-Optimisations.png
 ---
 
 ![Website Optimisations](https://jameskilby.co.uk/wp-content/uploads/2026/01/Website-Optimisations.png)

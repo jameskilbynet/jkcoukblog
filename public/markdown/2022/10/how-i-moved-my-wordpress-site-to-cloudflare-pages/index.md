@@ -18,7 +18,7 @@ tags:
   - #Wordpress
   - #Workers
 url: https://jameskilby.co.uk/2022/10/how-i-moved-my-wordpress-site-to-cloudflare-pages/
-image: /wp-content/uploads/2022/10/iu.jpeg
+image: https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg
 ---
 
 ![Iu](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)

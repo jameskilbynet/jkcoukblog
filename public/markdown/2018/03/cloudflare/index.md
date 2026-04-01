@@ -16,7 +16,7 @@ categories:
 tags:
   - #Cloudflare
 url: https://jameskilby.co.uk/2018/03/cloudflare/
-image: /wp-content/uploads/2020/06/iu-2.png
+image: https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2.png
 ---
 
 ![Iu 2](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2.png)

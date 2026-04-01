@@ -26,7 +26,7 @@ tags:
   - #RNLI
   - #VMware
 url: https://jameskilby.co.uk/2023/10/going-out-with-a-bang/
-image: /wp-content/uploads/2023/10/rnli-logo.png
+image: https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png
 ---
 
 ![Rnli Logo](https://jameskilby.co.uk/wp-content/uploads/2023/10/rnli-logo.png)

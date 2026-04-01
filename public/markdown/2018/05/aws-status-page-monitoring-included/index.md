@@ -19,7 +19,7 @@ tags:
   - #AWS
   - #Lambda
 url: https://jameskilby.co.uk/2018/05/aws-status-page-monitoring-included/
-image: /wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png
+image: https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png
 ---
 
 ![Amazonwebservices Logo.Svg ](https://jameskilby.co.uk/wp-content/uploads/2018/05/AmazonWebservices_Logo.svg_.png)

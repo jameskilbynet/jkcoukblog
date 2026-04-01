@@ -24,7 +24,7 @@ tags:
   - #Docker
   - #Homelab
 url: https://jameskilby.co.uk/2022/12/use-portainer-in-a-homelab-with-github/
-image: /wp-content/uploads/2022/12/22225832.png
+image: https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png
 ---
 
 ![22225832](https://jameskilby.co.uk/wp-content/uploads/2022/12/22225832.png)

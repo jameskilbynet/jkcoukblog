@@ -18,7 +18,7 @@ categories:
   - NVIDIA
   - Traefik
 url: https://jameskilby.co.uk/2025/12/vsan-cluster-shutdown/
-image: /wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg
 ---
 
 ![Origionalpoweredbyvsan 550X324 1](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg)

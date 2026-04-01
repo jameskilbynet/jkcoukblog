@@ -11,7 +11,7 @@ tags:
   - #Brew
   - #Macbook Air
 url: https://jameskilby.co.uk/2018/12/new-laptop/
-image: /wp-content/uploads/2018/12/colorware.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2018/12/colorware.jpg
 ---
 
 ![Colorware](https://jameskilby.co.uk/wp-content/uploads/2018/12/colorware.jpg)

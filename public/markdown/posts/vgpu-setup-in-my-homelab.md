@@ -19,7 +19,7 @@ tags:
   - #Nvidia
   - #vGPU
 url: https://jameskilby.co.uk/2023/10/vgpu-setup-in-my-homelab/
-image: /wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg
 ---
 
 ![Img 1107 768X403 1](https://jameskilby.co.uk/wp-content/uploads/2023/10/IMG_1107-768x403-1.jpg)
