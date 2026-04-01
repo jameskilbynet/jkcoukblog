@@ -5,8 +5,16 @@
     <link>https://jameskilby.co.uk/</link>
     <description>VMware and cloud infrastructure tutorials, homelab guides, and DevOps insights</description>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 01 Apr 2026 19:10:19 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 21:12:04 +0000</lastBuildDate>
     <atom:link href="https://jameskilby.co.uk/feed/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New VMC Host i7i.metal-24xl</title>
+      <link>https://jameskilby.co.uk/2026/04/new-vmc-host-i7i-metal-24xl/</link>
+      <description>We’ve expanded the VMC fleet with the new i7i (i7i.24xlarge) host type. Powered by Intel Emerald Rapids processors with PCIe Gen5 connectivity, it delivers</description>
+      <author>James</author>
+      <guid isPermaLink="true">https://jameskilby.co.uk/2026/04/new-vmc-host-i7i-metal-24xl/</guid>
+      <pubDate>Wed, 01 Apr 2026 08:06:00 +0000</pubDate>
+    </item>
     <item>
       <title>Octopus Agile Battery &amp; Solar Calculator</title>
       <link>https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/</link>
@@ -158,14 +166,6 @@
       <author>James</author>
       <guid isPermaLink="true">https://jameskilby.co.uk/2024/07/new-nodes/</guid>
       <pubDate>Tue, 02 Jul 2024 08:01:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>Configure DHCP Option 43 for UniFi devices to enable remote adoption across subnets</title>
-      <link>https://jameskilby.co.uk/2024/06/unifi-dhcp-option-43/</link>
-      <description>I have recently juggled some of my homelab services around, which involved moving my UniFi server to a different subnet. This meant that new UniFi devices co...</description>
-      <author>James</author>
-      <guid isPermaLink="true">https://jameskilby.co.uk/2024/06/unifi-dhcp-option-43/</guid>
-      <pubDate>Wed, 26 Jun 2024 10:50:17 +0000</pubDate>
     </item>
   </channel>
 </rss>
