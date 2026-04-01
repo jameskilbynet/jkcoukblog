@@ -19,7 +19,7 @@ tags:
   - #Runners
   - #Wordpress
 url: https://jameskilby.co.uk/2025/10/how-i-deploy-my-blog-as-a-static-website-with-github-actions-and-cloudflare/
-image: /wp-content/uploads/2025/10/Github-Actions.webp
+image: https://jameskilby.co.uk/wp-content/uploads/2025/10/Github-Actions.webp
 ---
 
 ![Github Actions](https://jameskilby.co.uk/wp-content/uploads/2025/10/Github-Actions.webp)

@@ -22,7 +22,7 @@ tags:
   - #Privacy
   - #Tunnel
 url: https://jameskilby.co.uk/2023/11/analytics-in-a-privacy-focused-world/
-image: /wp-content/uploads/2023/11/plausible-analytics-icon-top.png
+image: https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png
 ---
 
 ![Plausible Analytics Icon Top](https://jameskilby.co.uk/wp-content/uploads/2023/11/plausible-analytics-icon-top.png)

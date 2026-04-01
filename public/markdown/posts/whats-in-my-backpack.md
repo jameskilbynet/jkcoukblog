@@ -8,7 +8,7 @@ categories:
   - Consulting
   - Personal
 url: https://jameskilby.co.uk/2019/01/whats-in-my-backpack/
-image: /wp-content/uploads/2019/01/Picture1.png
+image: https://jameskilby.co.uk/wp-content/uploads/2019/01/Picture1.png
 ---
 
 ![Picture1](https://jameskilby.co.uk/wp-content/uploads/2019/01/Picture1.png)

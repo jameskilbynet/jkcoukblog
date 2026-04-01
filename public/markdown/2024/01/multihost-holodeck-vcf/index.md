@@ -21,7 +21,7 @@ tags:
   - #VCF
   - #VMware
 url: https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/
-image: /wp-content/uploads/2023/12/Holodeck-Overview.png
+image: https://jameskilby.co.uk/wp-content/uploads/2023/12/Holodeck-Overview.png
 ---
 
 ![Holodeck Overview](https://jameskilby.co.uk/wp-content/uploads/2023/12/Holodeck-Overview.png)

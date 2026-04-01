@@ -17,7 +17,7 @@ tags:
   - #Certification
   - #Nutanix
 url: https://jameskilby.co.uk/2020/07/nutanix-ncp/
-image: /wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg
 ---
 
 ![Nutanix Logo Hi Rez Reverse W Carrier](https://jameskilby.co.uk/wp-content/uploads/2020/07/nutanix-logo-HI-REZ_reverse-w-carrier.jpg)

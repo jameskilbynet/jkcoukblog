@@ -18,7 +18,7 @@ tags:
   - #Mikrotik
   - #Networking
 url: https://jameskilby.co.uk/2024/09/home-network-upgrade/
-image: /wp-content/uploads/2024/09/s-l1600.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2024/09/s-l1600.jpg
 ---
 
 ![CRS-504](https://jameskilby.co.uk/wp-content/uploads/2024/09/s-l1600.jpg)

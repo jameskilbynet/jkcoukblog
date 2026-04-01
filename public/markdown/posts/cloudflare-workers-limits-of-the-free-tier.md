@@ -18,7 +18,7 @@ tags:
   - #Cloudflare
   - #Workers
 url: https://jameskilby.co.uk/2022/01/cloudflare-workers-limits-of-the-free-tier/
-image: /wp-content/uploads/2022/10/iu.jpeg
+image: https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg
 ---
 
 ![Iu](https://jameskilby.co.uk/wp-content/uploads/2022/10/iu.jpeg)

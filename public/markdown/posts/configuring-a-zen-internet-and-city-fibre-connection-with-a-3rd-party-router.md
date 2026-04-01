@@ -16,7 +16,7 @@ tags:
   - #Watchguard
   - #Zen Internet
 url: https://jameskilby.co.uk/2023/11/configuring-a-zen-internet-and-city-fibre-connection-with-a-3rd-party-router/
-image: /wp-content/uploads/2023/11/cityfibre-zen-1024x538.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2023/11/cityfibre-zen-1024x538.jpg
 ---
 
 ![Cityfibre Zen](https://jameskilby.co.uk/wp-content/uploads/2023/11/cityfibre-zen.jpg)

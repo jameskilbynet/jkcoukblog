@@ -21,7 +21,7 @@ tags:
   - #Truenas
   - #TrueNAS Scale
 url: https://jameskilby.co.uk/2022/01/lab-update-part-2-storage/
-image: /wp-content/uploads/2022/01/maxresdefault.jpeg
+image: https://jameskilby.co.uk/wp-content/uploads/2022/01/maxresdefault.jpeg
 ---
 
 ![Maxresdefault](https://jameskilby.co.uk/wp-content/uploads/2022/01/maxresdefault.jpeg)

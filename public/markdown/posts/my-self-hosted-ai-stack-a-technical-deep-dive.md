@@ -33,7 +33,7 @@ tags:
   - #Self-Hosted
   - #Traefik
 url: https://jameskilby.co.uk/2026/03/my-self-hosted-ai-stack-a-technical-deep-dive/
-image: /wp-content/uploads/2026/03/ai-stack-featured.png
+image: https://jameskilby.co.uk/wp-content/uploads/2026/03/ai-stack-featured.png
 ---
 
 ![Ai Stack Featured](https://jameskilby.co.uk/wp-content/uploads/2026/03/ai-stack-featured.png)

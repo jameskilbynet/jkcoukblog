@@ -21,7 +21,7 @@ tags:
   - #Homelab
   - #VMware
 url: https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/
-image: /wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg
 ---
 
 ![40Ood8Iippvtrpjs 1198788743](https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743.jpg)

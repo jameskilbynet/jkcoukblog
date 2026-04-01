@@ -19,7 +19,7 @@ tags:
   - #Homelab
   - #Warp
 url: https://jameskilby.co.uk/2025/04/warp-the-intelligent-terminal/
-image: /wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1024x240.png
+image: https://jameskilby.co.uk/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21-1024x240.png
 ---
 
 ![Wa](https://jameskilby.co.uk/wp-content/uploads/2025/04/210902461-012e7273-413a-4ec7-be44-e854347f5a21.png)

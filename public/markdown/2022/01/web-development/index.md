@@ -20,7 +20,7 @@ tags:
   - #Cloudflare
   - #Hosting
 url: https://jameskilby.co.uk/2022/01/web-development/
-image: /wp-content/uploads/2020/06/iu-2.png
+image: https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2.png
 ---
 
 ![Iu 2](https://jameskilby.co.uk/wp-content/uploads/2020/06/iu-2.png)

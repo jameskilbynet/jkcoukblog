@@ -24,7 +24,7 @@ tags:
   - #Homelab
   - #Nvidia
 url: https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/
-image: /wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-1024x683.jpg
 ---
 
 ![Pexels Tara Winstead 8386440 Scaled](https://jameskilby.co.uk/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-scaled.jpg)

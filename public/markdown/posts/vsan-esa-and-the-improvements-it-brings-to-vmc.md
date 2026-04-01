@@ -20,7 +20,7 @@ tags:
   - #vSAN
   - #vSAN ESA
 url: https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/
-image: /wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg
 ---
 
 ![Origionalpoweredbyvsan 550X324 1](https://jameskilby.co.uk/wp-content/uploads/2023/11/OrigionalPoweredByvSAN-550x324-1.jpg)

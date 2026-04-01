@@ -18,7 +18,7 @@ tags:
   - #Free
   - #Wordpress
 url: https://jameskilby.co.uk/2023/05/how-to-take-a-wordpress-site-and-publish-it-as-a-static-site-on-cloudflare-pages/
-image: /wp-content/uploads/2023/05/Screenshot-2023-05-13-at-10.31.30.png
+image: https://jameskilby.co.uk/wp-content/uploads/2023/05/Screenshot-2023-05-13-at-10.31.30.png
 ---
 
 ![Simply Static Logo](https://jameskilby.co.uk/wp-content/uploads/2023/05/simply-static-logo.png)

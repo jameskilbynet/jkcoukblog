@@ -26,7 +26,7 @@ tags:
   - #VMC
   - #VMware
 url: https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/
-image: /wp-content/uploads/2026/03/VMConAWS.png.webp
+image: https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp
 ---
 
 ![Vmconaws.Png](https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp)

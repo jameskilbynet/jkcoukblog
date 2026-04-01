@@ -19,7 +19,7 @@ tags:
   - #Reference
   - #TrueNAS Scale
 url: https://jameskilby.co.uk/2023/11/truenas-scale-useful-commands/
-image: /wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png
+image: https://jameskilby.co.uk/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png
 ---
 
 ![TrueNAS Logo](https://jameskilby.co.uk/wp-content/uploads/2023/05/Screenshot-2023-05-22-at-18.49.21.png)

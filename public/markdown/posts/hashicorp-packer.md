@@ -21,7 +21,7 @@ tags:
   - #Homelab
   - #packer
 url: https://jameskilby.co.uk/2021/01/hashicorp-packer/
-image: /wp-content/uploads/2021/01/logo_packer.png
+image: https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png
 ---
 
 ![Logo Packer](https://jameskilby.co.uk/wp-content/uploads/2021/01/logo_packer.png)

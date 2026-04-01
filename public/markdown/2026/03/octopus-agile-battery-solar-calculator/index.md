@@ -21,7 +21,7 @@ tags:
   - #Octopus
   - #Smart Home
 url: https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/
-image: /wp-content/uploads/2026/03/Octopus-Energy-logo.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2026/03/Octopus-Energy-logo.jpg
 ---
 
 ![Octopus Energy Logo](https://jameskilby.co.uk/wp-content/uploads/2026/03/Octopus-Energy-logo.jpg)

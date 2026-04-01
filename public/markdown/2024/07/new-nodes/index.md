@@ -22,7 +22,7 @@ tags:
   - #Nutanix
   - #VMware
 url: https://jameskilby.co.uk/2024/07/new-nodes/
-image: /wp-content/uploads/2024/04/Screenshot-2024-04-06-at-22.50.57.png
+image: https://jameskilby.co.uk/wp-content/uploads/2024/04/Screenshot-2024-04-06-at-22.50.57.png
 ---
 
 ![Img 6629 Scaled](https://jameskilby.co.uk/wp-content/uploads/2024/07/IMG_6629-scaled.jpeg)

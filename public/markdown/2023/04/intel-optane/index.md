@@ -25,7 +25,7 @@ tags:
   - #vExpert
   - #VMware
 url: https://jameskilby.co.uk/2023/04/intel-optane/
-image: /wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png
+image: https://jameskilby.co.uk/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png
 ---
 
 ![Intel Optane Ssd 900P Series Aic Right Angle 575Px](https://jameskilby.co.uk/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png)

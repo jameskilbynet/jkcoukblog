@@ -13,7 +13,7 @@ tags:
   - #Veeam
   - #VeeamON
 url: https://jameskilby.co.uk/2020/06/veeamon2020/
-image: /wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png
+image: https://jameskilby.co.uk/wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png
 ---
 
 ![Veeam Logo New Large 1934042827](https://jameskilby.co.uk/wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png)

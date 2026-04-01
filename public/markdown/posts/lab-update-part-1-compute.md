@@ -20,7 +20,7 @@ tags:
   - #Supermicro
   - #VMware
 url: https://jameskilby.co.uk/2022/01/lab-update-part-1-compute/
-image: /wp-content/uploads/2023/04/IMG_4536-scaled-1-768x1024.jpg
+image: https://jameskilby.co.uk/wp-content/uploads/2023/04/IMG_4536-scaled-1-768x1024.jpg
 ---
 
 ![Img 4536 Scaled 1](https://jameskilby.co.uk/wp-content/uploads/2023/04/IMG_4536-scaled-1.jpg)

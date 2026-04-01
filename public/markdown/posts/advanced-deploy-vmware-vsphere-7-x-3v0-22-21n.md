@@ -19,7 +19,7 @@ tags:
   - #VCAP
   - #VMware
 url: https://jameskilby.co.uk/2023/11/advanced-deploy-vmware-vsphere-7-x-3v0-22-21n/
-image: /wp-content/uploads/2023/11/image.png
+image: https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png
 ---
 
 ![Image](https://jameskilby.co.uk/wp-content/uploads/2023/11/image.png)

@@ -22,7 +22,7 @@ tags:
   - #Homelab
   - #Ollama
 url: https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/
-image: /wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1024x547.png
+image: https://jameskilby.co.uk/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-1024x547.png
 ---
 
 ![Screenshot 2025 01 29 At 23.30.47](https://jameskilby.co.uk/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47.png)
