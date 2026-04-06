@@ -1,8 +1,8 @@
 # Markdown Content Sitemap
 
-Generated: 2026-04-02 19:54:34
+Generated: 2026-04-06 16:07:07
 
-Total Files: 80
+Total Files: 81
 
 ## Blog Posts
 
@@ -95,6 +95,9 @@ Total Files: 80
 
 - [New Laptop](https://jameskilby.co.uk/2018/12/new-laptop/) - 2018-12-04 21:44:30+00:00
   - Markdown: `/markdown/posts/new-laptop.md`
+
+- [My Self-Hosted AI Stack: Infrastructure Deep Dive (Part 2)](https://jameskilby.co.uk/2026/04/my-self-hosted-ai-stack-infrastructure-deep-dive-part-2/) - 2026-04-04 21:39:21+00:00
+  - Markdown: `/markdown/posts/my-self-hosted-ai-stack-infrastructure-deep-dive-part-2.md`
 
 - [My Self-Hosted AI Stack: Architecture Overview (Part 1)](https://jameskilby.co.uk/2026/03/my-self-hosted-ai-stack-a-technical-deep-dive/) - 2026-03-27 11:56:33+00:00
   - Markdown: `/markdown/posts/my-self-hosted-ai-stack-a-technical-deep-dive.md`
