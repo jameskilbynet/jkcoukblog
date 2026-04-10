@@ -1,6 +1,6 @@
 ---
 title: "Ubuntu Disk Expansion Steps"
-description: "Step-by-step guide to expanding disk space in Ubuntu using growpart, pvresize, and lvextend for LVM volumes — commands I always forget and keep here for reference."
+description: "Step-by-step guide to expanding disk space in Ubuntu using growpart, pvresize, and lvextend for LVM volumes — commands I always forget and keep here for refe..."
 date: 2025-12-15T20:56:40+00:00
 modified: 2026-04-09T20:37:54+00:00
 author: James Kilby
@@ -13,13 +13,13 @@ url: https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/
 image: https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png
 ---
 
-![](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png)
+![Ubuntuexpand](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png)
 
 [Ubuntu](https://jameskilby.co.uk/category/ubuntu/)
 
 # Ubuntu Disk Expansion Steps
 
-By[James](https://jameskilby.co.uk) December 15, 2025April 9, 2026 • 📖1 min read(91 words)
+By[James](https://jameskilby.co.uk)December 15, 2025April 9, 2026 • 📖1 min read(91 words)
 
 📅 **Published:** December 15, 2025• **Updated:** April 09, 2026
 
