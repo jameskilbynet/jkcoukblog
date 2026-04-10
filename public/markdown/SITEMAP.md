@@ -1,8 +1,8 @@
 # Markdown Content Sitemap
 
-Generated: 2026-04-06 16:07:07
+Generated: 2026-04-10 15:28:39
 
-Total Files: 81
+Total Files: 82
 
 ## Blog Posts
 
@@ -200,6 +200,9 @@ Total Files: 81
 
 - [Automating the deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/) - 2026-02-09 11:54:54+00:00
   - Markdown: `/markdown/posts/automating-the-deployment-of-my-ai-homelab-and-other-improvements.md`
+
+- [Automated VCF 9 Offline Depot](https://jameskilby.co.uk/2026/04/automated-vcf-9-offline-depot/) - 2026-04-10 11:36:03+00:00
+  - Markdown: `/markdown/posts/automated-vcf-9-offline-depot.md`
 
 - [Apple Content Caching](https://jameskilby.co.uk/2021/02/apple-content-caching/) - 2021-02-08 14:12:23+00:00
   - Markdown: `/markdown/posts/apple-content-caching.md`

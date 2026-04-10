@@ -2,7 +2,7 @@
 title: "Ubuntu Disk Expansion Steps"
 description: "Step-by-step guide to expanding disk space in Ubuntu using growpart, pvresize, and lvextend for LVM volumes — commands I always forget and keep here for refe..."
 date: 2025-12-15T20:56:40+00:00
-modified: 2026-01-30T14:36:06+00:00
+modified: 2026-04-09T20:37:54+00:00
 author: James Kilby
 categories:
   - Ubuntu
@@ -19,9 +19,9 @@ image: https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png
 
 # Ubuntu Disk Expansion Steps
 
-By[James](https://jameskilby.co.uk)December 15, 2025January 30, 2026 • 📖1 min read(91 words)
+By[James](https://jameskilby.co.uk)December 15, 2025April 9, 2026 • 📖1 min read(91 words)
 
-📅 **Published:** December 15, 2025• **Updated:** January 30, 2026
+📅 **Published:** December 15, 2025• **Updated:** April 09, 2026
 
 How to expand disks from the command line in Ubuntu.
 
@@ -47,7 +47,7 @@ sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
 
 ## 5\. Resize the filesystem
 
-sudo resize2fs /dev/mapper/ubuntu–vg-ubuntu–lv
+sudo resize2fs /dev/ubuntu-vg/ubuntu-lv
 
 ## 6\. Verify the new size
 
