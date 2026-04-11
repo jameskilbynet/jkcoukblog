@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1103
+1106
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-11
 
-11:38:57
+20:06:27
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,18 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-11 236d8e3Fix
+
+fix: resolve noscript tag explosion from non-idempotent CSS preload conversion
+
+Root cause: _convert_css_to_preload() matched fallback links inside existing
+
+2026-04-11 bae7ac9Feature
+
+feat: add Google image sitemap support
+
+Extends create_sitemap() to emit  entries for each post/page
 
 2026-04-11 3649944Other
 

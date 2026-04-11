@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1106</div>
+                <div class="metric-value">1107</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-04-11</div>
-                <div class="metric-label">20:06:27</div>
+                <div class="metric-label">19:14:26</div>
             </div>
         </div>
         
@@ -456,18 +456,11 @@
                 <div class="change-title">Fix JSON-LD absolute URLs and update workflow</div>
                 <div class="change-details">Add JSON-LD URL fixer to scripts/fix_seo_issues.py and call it from the CI workflow after convert_to_staging.py. The new fix_jsonld_absolute_ids() method walks <script type="application/ld+json"> blocks and restores absolute @id/url-like fields that were converted to root-relative paths by convert_to_staging.py. The workflow now re-applies the SEO fixes post-conversion (non-blocking on failure). Also add .gitleaks-iac.toml to provide an IaC-focused gitleaks allowlist and exclusions for known false positives and common lock/state files.</div>
             </div>
-            <br>
-
-            <div class="change-entry">
-                <div class="change-date">2026-03-28 <span class="change-hash">74ca4f9</span><span class="category-badge badge-fix">Fix</span></div>
-                <div class="change-title">fix: move inline Python to script to fix YAML syntax error in workflow</div>
-                <div class="change-details">The previous commit embedded Python code directly inside a `run: |` YAML</div>
-            </div>
 
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-04-11 19:14:22 UTC<br>
+            Page generated: 2026-04-11 19:50:49 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
