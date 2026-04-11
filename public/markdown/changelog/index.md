@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1099
+1102
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-11
 
-10:38:43
+12:32:47
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,16 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-11 3649944Other
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-11 e4a85efFeature
+
+Add www→non-www redirect to worker
+
+Add a 301 www→non-www redirect at the start of _worker.template.js and public/_worker.js so cross-domain canonical redirects run in Advanced Mode Workers (which ignore _redirects). Remove the corresponding rule from public/_redirects and add a comment pointing to the worker. This ensures a single-hop canonical redirect and fixes Google Search Console crawl errors for www.jameskilby.co.uk.
 
 2026-04-11 75e0c59Other
 
