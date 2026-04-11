@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelog - Jameskilbycouk</title>
+    <title>Changelog - James Kilby</title>
     <meta name="description" content="Site improvements, deployments, and performance metrics for James Kilby's technical blog.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://jameskilby.co.uk/changelog/">
@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1096</div>
+                <div class="metric-value">1099</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-04-11</div>
-                <div class="metric-label">08:20:28</div>
+                <div class="metric-label">10:38:43</div>
             </div>
         </div>
         
@@ -338,6 +338,17 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-11 <span class="change-hash">75e0c59</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-11 <span class="change-hash">751046c</span><span class="category-badge badge-docs">Docs</span></div>
+                <div class="change-title">Preview noindex, CDN purge, sitemap priority</div>
+                <div class="change-details">Add preview-domain noindex and propagate hostname to cache handlers in the Cloudflare worker (serve disallow-all robots.txt for jkcoukblog.pages.dev and add X-Robots-Tag). Update getSecurityHeaders to conditionally set X-Robots-Tag and pass hostname through KV/CacheAPI handlers. Add grep check to .claude settings and two docs to .gitignore. Rename page titles in stats/changelog generators to “James Kilby”. Extend purge_html_kv_cache.py with a purge_cdn_cache() function, --skip-cdn flag, CLOUDFLARE_ZONE_ID support, and improved docs/dry-run output. Enhance wp_to_static_generator.py to emit <priority> in sitemap entries and compute priorities based on URL patterns and post age.</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-11 <span class="change-hash">21bab28</span><span class="category-badge badge-feature">Feature</span></div>
@@ -454,16 +465,10 @@
                 <div class="change-details">1. Parallelise post-processing: Run CSS optimization, SEO fixes, and</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-03-28 <span class="change-hash">0a28918</span><span class="category-badge badge-fix">Fix</span></div>
-                <div class="change-title">Fix Splide pagination dot sizing with higher specificity</div>
-                <div class="change-details">Splide's default CSS overrides our dot styles. Use higher-specificity</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-04-11 09:22:40 UTC<br>
+            Page generated: 2026-04-11 09:45:07 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
