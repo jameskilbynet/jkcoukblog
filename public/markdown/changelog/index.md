@@ -13,13 +13,13 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1093
+1095
 
 Git commits
 
 ### Repository Age
 
-189
+190
 
 Days active
 
@@ -31,9 +31,9 @@ Active contributors
 
 ### Last Deployment
 
-2026-04-10
+2026-04-11
 
-19:27:48
+09:14:37
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,12 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-11 21bab28Feature
+
+fix(seo): inject canonical tags when absent, add KV cache bulk-purge
+
+  
 
 2026-04-10 7e855d9Other
 
