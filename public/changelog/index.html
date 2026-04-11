@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1103</div>
+                <div class="metric-value">1106</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-04-11</div>
-                <div class="metric-label">11:38:57</div>
+                <div class="metric-label">20:06:27</div>
             </div>
         </div>
         
@@ -338,6 +338,18 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-11 <span class="change-hash">236d8e3</span><span class="category-badge badge-fix">Fix</span></div>
+                <div class="change-title">fix: resolve noscript tag explosion from non-idempotent CSS preload conversion</div>
+                <div class="change-details">Root cause: _convert_css_to_preload() matched fallback links inside existing</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-11 <span class="change-hash">bae7ac9</span><span class="category-badge badge-feature">Feature</span></div>
+                <div class="change-title">feat: add Google image sitemap support</div>
+                <div class="change-details">Extends create_sitemap() to emit <image:image> entries for each post/page</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-11 <span class="change-hash">3649944</span><span class="category-badge badge-other">Other</span></div>
@@ -452,22 +464,10 @@
                 <div class="change-details">The previous commit embedded Python code directly inside a `run: |` YAML</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-03-28 <span class="change-hash">96420fd</span><span class="category-badge badge-fix">Fix</span></div>
-                <div class="change-title">fix: restore absolute URLs in seeded HTML so incremental build passes link validation</div>
-                <div class="change-details">When seeding ./static-output/ from public/, the HTML files have already been</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-03-28 <span class="change-hash">01eb73f</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">fix: always run generator in incremental mode so .build-cache.json is created on first run</div>
-                <div class="change-details">When --no-incremental is passed, IncrementalBuilder is disabled and never</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-04-11 11:56:44 UTC<br>
+            Page generated: 2026-04-11 19:14:22 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
