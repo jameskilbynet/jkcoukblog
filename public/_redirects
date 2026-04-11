@@ -1,7 +1,4 @@
-# Redirect www to non-www (canonical URL)
-# Note: Cloudflare's 'Always Use HTTPS' runs first, so HTTP www gets 2 hops
-# This is normal and acceptable for the rare HTTP www case
-www.jameskilby.co.uk/* jameskilby.co.uk/:splat 301
+# www → non-www is handled in _worker.js — Advanced Mode Worker ignores _redirects for cross-domain rules
 
 # Automatic redirects for spelling corrections
 /2025/04/warp-the-inteligent-terminal/ /2025/04/warp-the-intelligent-terminal/ 301
