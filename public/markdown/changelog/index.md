@@ -1,5 +1,5 @@
 ---
-title: "Changelog"
+title: "Changelog - James Kilby"
 description: "Site improvements, deployments, and performance metrics for James Kilby's technical blog."
 author: James Kilby
 url: https://jameskilby.co.uk/changelog/
@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1096
+1099
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-11
 
-08:20:28
+10:38:43
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,16 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-11 75e0c59Other
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-11 751046cDocs
+
+Preview noindex, CDN purge, sitemap priority
+
+Add preview-domain noindex and propagate hostname to cache handlers in the Cloudflare worker (serve disallow-all robots.txt for jkcoukblog.pages.dev and add X-Robots-Tag). Update getSecurityHeaders to conditionally set X-Robots-Tag and pass hostname through KV/CacheAPI handlers. Add grep check to .claude settings and two docs to .gitignore. Rename page titles in stats/changelog generators to “James Kilby”. Extend purge_html_kv_cache.py with a purge_cdn_cache() function, --skip-cdn flag, CLOUDFLARE_ZONE_ID support, and improved docs/dry-run output. Enhance wp_to_static_generator.py to emit  in sitemap entries and compute priorities based on URL patterns and post age.
 
 2026-04-11 21bab28Feature
 
