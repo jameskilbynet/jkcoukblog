@@ -1,11 +1,18 @@
 ---
-title: "Ubuntu Disk Expansion Steps"
-description: "Step-by-step guide to expanding disk space in Ubuntu using growpart, pvresize, and lvextend for LVM volumes — commands I always forget and keep here for refe..."
+title: "How to Expand Ubuntu Disk Space: LVM pvresize Step-by-Step"
+description: "Step-by-step guide to expanding disk space in Ubuntu using growpart, pvresize, and lvextend for LVM volumes — commands I always forget and keep here for reference."
 date: 2025-12-15T20:56:40+00:00
-modified: 2026-04-09T20:37:54+00:00
+modified: 2026-04-11T09:00:47+00:00
 author: James Kilby
 categories:
   - Ubuntu
+  - Ansible
+  - Automation
+  - Docker
+  - Homelab
+  - Traefik
+  - VCF
+  - VMware
 tags:
   - #Disk Expand
   - #Ubuntu
@@ -13,15 +20,15 @@ url: https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/
 image: https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png
 ---
 
-![Ubuntuexpand](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png)
+![](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png)
 
 [Ubuntu](https://jameskilby.co.uk/category/ubuntu/)
 
-# Ubuntu Disk Expansion Steps
+# How to Expand Ubuntu Disk Space: LVM pvresize Step-by-Step
 
-By[James](https://jameskilby.co.uk)December 15, 2025April 9, 2026 • 📖1 min read(91 words)
+By[James](https://jameskilby.co.uk) December 15, 2025April 11, 2026 • 📖1 min read(91 words)
 
-📅 **Published:** December 15, 2025• **Updated:** April 09, 2026
+📅 **Published:** December 15, 2025• **Updated:** April 11, 2026
 
 How to expand disks from the command line in Ubuntu.
 
@@ -52,3 +59,15 @@ sudo resize2fs /dev/ubuntu-vg/ubuntu-lv
 ## 6\. Verify the new size
 
 df -h
+
+## Similar Posts
+
+  * [ ![Automated VCF 9 Offline Depot architecture diagram showing Traefik reverse proxy and Nginx file server stack](https://jameskilby.co.uk/wp-content/uploads/2026/04/offlinedepot.png) ](https://jameskilby.co.uk/2026/04/automated-vcf-9-offline-depot/)
+
+[Ansible](https://jameskilby.co.uk/category/ansible/) | [Automation](https://jameskilby.co.uk/category/automation/) | [Docker](https://jameskilby.co.uk/category/docker/) | [Homelab](https://jameskilby.co.uk/category/homelab/) | [Traefik](https://jameskilby.co.uk/category/traefik/) | [VCF](https://jameskilby.co.uk/category/vmware/vcf/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+
+### [Automated VCF 9 Offline Depot](https://jameskilby.co.uk/2026/04/automated-vcf-9-offline-depot/)
+
+By[James](https://jameskilby.co.uk) April 10, 2026April 10, 2026
+
+One Bash script turns a fresh Ubuntu VM into a VCF 9 Offline Depot: Traefik, Nginx, basic auth, and Let’s Encrypt wildcard certs via Cloudflare DNS.
