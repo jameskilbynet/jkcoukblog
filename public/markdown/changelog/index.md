@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1089
+1093
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-10
 
-15:17:49
+19:27:48
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,24 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-10 7e855d9Other
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-10 8d96835Fix
+
+fix(worker): pass ctx to KV cache helpers so HIT path stops throwing
+
+handleKVCache and handleCacheAPI are module-top-level functions, but
+
+2026-04-10 3c0c679Feature
+
+chore: remove dead Pages Function + route Worker layers, add HTTP timeout
+
+Cleanup driven by a code review of the cache layers.
+
+  
 
 2026-04-02 15be50dOther
 
