@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1118
+1121
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-12
 
-09:37:50
+11:16:29
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,16 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-12 f405ac7Other
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-12 ef66c3eDocs
+
+Improve taxonomy name extraction from title
+
+Refine the regex used to extract taxonomy names from page titles. Use a non-greedy match for patterns like "Docker Archives - James Kilby" and add a fallback to the previous pattern when the 'Archives' token isn't present. Also update the comment/example. This prevents incorrect captures for taxonomy names that include hyphens or other characters.
 
 2026-04-12 39c71d5Other
 
@@ -181,5 +191,5 @@ Fix relative canonical URLs and manifest name
 
 \- Add fix_canonical_url method to fix_seo_issues.py: converts relative
 
-Page generated: 2026-04-12 10:04:16 UTC  
+Page generated: 2026-04-12 10:21:38 UTC  
 Changelog powered by Git history and Lighthouse CI
