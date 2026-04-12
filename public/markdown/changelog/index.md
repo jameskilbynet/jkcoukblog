@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1107
+1110
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-11
 
-19:14:26
+21:53:32
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,16 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-11 f10e886Other
+
+Deduplicate head links and robust CSS preload
+
+Add a pre-parse cleanup that strips accumulated  fallbacks and deduplicates  tags in 
+
+2026-04-11 6e4b9d0Fix
+
+fix: eliminate noscript accumulation and fix image sitemap parser
 
 2026-04-11 236d8e3Fix
 
