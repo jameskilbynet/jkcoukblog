@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1114
+1117
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-12
 
-09:14:13
+10:32:31
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,16 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-12 39c71d5Other
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-12 09703e2Other
+
+Deduplicate meta descriptions on paginated pages
+
+Add fix_pagination_meta_description to detect /page/N/ URLs and append " - Page N" to meta description, og:description and twitter:description to avoid duplicate SEO content. The method strips trailing periods, truncates content to keep it within ~160 characters (adding ellipses if needed), and logs a brief message per modified page. Also call this new method during page processing so paginated archive pages get unique descriptions.
 
 2026-04-12 5dd077cFix
 
@@ -175,15 +185,5 @@ Fix relative canonical URLs and manifest name
 
 Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
 
-2026-04-01 0dfcc4bFix
-
-Upgrade BlogPosting to TechArticle, fix BreadcrumbList URLs/positions, fix Person name
-
-\- Add item to JSON-LD URL_KEYS so BreadcrumbList standalone script item
-
-2026-04-01 489e75eOther
-
-Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
-
-Page generated: 2026-04-12 08:19:52 UTC  
+Page generated: 2026-04-12 09:37:46 UTC  
 Changelog powered by Git history and Lighthouse CI
