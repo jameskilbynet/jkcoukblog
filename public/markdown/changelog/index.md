@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1121
+1122
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-12
 
-11:16:29
+10:21:43
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -185,11 +185,5 @@ Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
 
 Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
 
-2026-04-01 4bf3150Fix
-
-Fix relative canonical URLs and manifest name
-
-\- Add fix_canonical_url method to fix_seo_issues.py: converts relative
-
-Page generated: 2026-04-12 10:21:38 UTC  
+Page generated: 2026-04-12 10:37:35 UTC  
 Changelog powered by Git history and Lighthouse CI
