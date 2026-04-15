@@ -13,13 +13,13 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1122
+1124
 
 Git commits
 
 ### Repository Age
 
-191
+193
 
 Days active
 
@@ -31,9 +31,9 @@ Active contributors
 
 ### Last Deployment
 
-2026-04-12
+2026-04-14
 
-10:21:43
+00:18:24
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,14 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-14 cf71416Feature
+
+Add 'purge all' KV cache support
+
+Replace selective file-based purge with a purge-all workflow step that POSTs /.purge?all=true and requires CACHE_PURGE_TOKEN; step name and GitHub summary fields updated and response count parsed with jq. Update worker handler to support the all=true query: iterate HTML_CACHE.list to delete KV keys and corresponding Cache API entries, return JSON with purged count and timestamp, and improve missing-parameter error and cache request origin handling.
+
+  
 
 2026-04-12 f405ac7Other
 
@@ -177,13 +185,5 @@ fix pagination
 
 Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
 
-2026-04-01 ad6bf93Other
-
-Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
-
-2026-04-01 f634605Other
-
-Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
-
-Page generated: 2026-04-12 10:37:35 UTC  
+Page generated: 2026-04-14 11:41:24 UTC  
 Changelog powered by Git history and Lighthouse CI
