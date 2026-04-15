@@ -280,13 +280,13 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1124</div>
+                <div class="metric-value">1128</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
             <div class="metric-card">
                 <h3>Repository Age</h3>
-                <div class="metric-value">193</div>
+                <div class="metric-value">194</div>
                 <div class="metric-label">Days active</div>
             </div>
             
@@ -298,8 +298,8 @@
             
             <div class="metric-card">
                 <h3>Last Deployment</h3>
-                <div class="metric-value">2026-04-14</div>
-                <div class="metric-label">00:18:24</div>
+                <div class="metric-value">2026-04-15</div>
+                <div class="metric-label">07:36:51</div>
             </div>
         </div>
         
@@ -338,6 +338,24 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-15 <span class="change-hash">51da4e0</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Use single-pass HTML transformer; update CI & Makefile</div>
+                <div class="change-details">Add a new scripts/html_transformer.py that performs SEO fixes, image-to-<picture> conversion, performance hints, critical CSS extraction/inlining, head deduplication and HTML minification in a single parse cycle per file. Update .github/workflows/deploy-static-site.yml to wait for dpkg locks during apt operations and to replace the previous multi-step image/SEO/perf/CSS/HTML pipeline with a streamlined CSS optimization step and a single-pass HTML transformer step. Simplify Makefile targets to call the new transformer and to consolidate the CSS pipeline (remove separate critical extraction step). These changes reduce repeated HTML parsing, simplify CI steps, and add robustness to runner package installs.</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-15 <span class="change-hash">1e365ca</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Refactor deploy workflow and staging URL handling</div>
+                <div class="change-details">Rework the GitHub Actions deploy flow and staging URL conversion:</div>
+            </div>
+            <br>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-14 <span class="change-hash">a3debda</span><span class="category-badge badge-docs">Docs</span></div>
+                <div class="change-title">Updated Readme</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-14 <span class="change-hash">cf71416</span><span class="category-badge badge-feature">Feature</span></div>
@@ -460,22 +478,11 @@
                 <div class="change-date">2026-04-02 <span class="change-hash">15be50d</span><span class="category-badge badge-other">Other</span></div>
                 <div class="change-title">Theme tweak</div>
             </div>
-            <br>
-
-            <div class="change-entry">
-                <div class="change-date">2026-04-01 <span class="change-hash">c2f5a97</span><span class="category-badge badge-fix">Fix</span></div>
-                <div class="change-title">fix pagination</div>
-            </div>
-
-            <div class="change-entry">
-                <div class="change-date">2026-04-01 <span class="change-hash">7c4a90b</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
-            </div>
 
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-04-14 11:41:24 UTC<br>
+            Page generated: 2026-04-15 06:42:04 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
