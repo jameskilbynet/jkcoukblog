@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1128
+1133
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-15
 
-07:36:51
+08:28:28
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -57,11 +57,29 @@ SEO
 
 ## Recent Changes
 
+2026-04-15 7e61095Improvement
+
+Update validate_deployment.py
+
+2026-04-15 6b0c3dfOther
+
+Escape HTML in changelog commit messages
+
+2026-04-15 2af65f3Other
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-15 9b6dcf3Other
+
+Exclude consolidated-inline-styles from critical CSS
+
+Add 'consolidated-inline-styles' to the EXCLUDED tuple in scripts/extract_critical_css.py to prevent double-counting of inline noscript styles during critical CSS extraction, matching the handling of other excluded assets like 'brutalist-theme' and 'fonts.css'.
+
 2026-04-15 51da4e0Improvement
 
 Use single-pass HTML transformer; update CI & Makefile
 
-Add a new scripts/html_transformer.py that performs SEO fixes, image-to- conversion, performance hints, critical CSS extraction/inlining, head deduplication and HTML minification in a single parse cycle per file. Update .github/workflows/deploy-static-site.yml to wait for dpkg locks during apt operations and to replace the previous multi-step image/SEO/perf/CSS/HTML pipeline with a streamlined CSS optimization step and a single-pass HTML transformer step. Simplify Makefile targets to call the new transformer and to consolidate the CSS pipeline (remove separate critical extraction step). These changes reduce repeated HTML parsing, simplify CI steps, and add robustness to runner package installs.
+Add a new scripts/html_transformer.py that performs SEO fixes, image-to-<picture> conversion, performance hints, critical CSS extraction/inlining, head deduplication and HTML minification in a single parse cycle per file. Update .github/workflows/deploy-static-site.yml to wait for dpkg locks during apt operations and to replace the previous multi-step image/SEO/perf/CSS/HTML pipeline with a streamlined CSS optimization step and a single-pass HTML transformer step. Simplify Makefile targets to call the new transformer and to consolidate the CSS pipeline (remove separate critical extraction step). These changes reduce repeated HTML parsing, simplify CI steps, and add robustness to runner package installs.
 
 2026-04-15 1e365caImprovement
 
@@ -127,7 +145,7 @@ Workflow: improve reuse of previously-optimized assets by rsync-ing AVIF/WebP fr
 
 Deduplicate head links and robust CSS preload
 
-Add a pre-parse cleanup that strips accumulated  fallbacks and deduplicates  tags in 
+Add a pre-parse cleanup that strips accumulated <noscript> fallbacks and deduplicates <link> tags in <head> (_dedup_head_links), preventing runaway duplication on repeated pipeline runs. Make CSS externalization idempotent and self-healing: convert stylesheets to preload+onload safely, skip critical files (brutalist-theme, fonts.css), and add exactly one noscript fallback per preload link. Also adjust insertion order for the generated stylesheet link. Finally, switch BeautifulSoup usage in wp_to_static_generator.py from 'lxml' to 'html.parser' to improve parsing robustness.
 
 2026-04-11 6e4b9d0Fix
 
@@ -143,7 +161,7 @@ Root cause: _convert_css_to_preload() matched fallback links inside existing
 
 feat: add Google image sitemap support
 
-Extends create_sitemap() to emit  entries for each post/page
+Extends create_sitemap() to emit <image:image> entries for each post/page
 
 2026-04-11 3649944Other
 
@@ -163,7 +181,7 @@ Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
 
 Preview noindex, CDN purge, sitemap priority
 
-Add preview-domain noindex and propagate hostname to cache handlers in the Cloudflare worker (serve disallow-all robots.txt for jkcoukblog.pages.dev and add X-Robots-Tag). Update getSecurityHeaders to conditionally set X-Robots-Tag and pass hostname through KV/CacheAPI handlers. Add grep check to .claude settings and two docs to .gitignore. Rename page titles in stats/changelog generators to “James Kilby”. Extend purge_html_kv_cache.py with a purge_cdn_cache() function, --skip-cdn flag, CLOUDFLARE_ZONE_ID support, and improved docs/dry-run output. Enhance wp_to_static_generator.py to emit  in sitemap entries and compute priorities based on URL patterns and post age.
+Add preview-domain noindex and propagate hostname to cache handlers in the Cloudflare worker (serve disallow-all robots.txt for jkcoukblog.pages.dev and add X-Robots-Tag). Update getSecurityHeaders to conditionally set X-Robots-Tag and pass hostname through KV/CacheAPI handlers. Add grep check to .claude settings and two docs to .gitignore. Rename page titles in stats/changelog generators to “James Kilby”. Extend purge_html_kv_cache.py with a purge_cdn_cache() function, --skip-cdn flag, CLOUDFLARE_ZONE_ID support, and improved docs/dry-run output. Enhance wp_to_static_generator.py to emit <priority> in sitemap entries and compute priorities based on URL patterns and post age.
 
 2026-04-11 21bab28Feature
 
@@ -187,11 +205,5 @@ chore: remove dead Pages Function + route Worker layers, add HTTP timeout
 
 Cleanup driven by a code review of the cache layers.
 
-  
-
-2026-04-02 15be50dOther
-
-Theme tweak
-
-Page generated: 2026-04-15 06:42:04 UTC  
+Page generated: 2026-04-15 07:33:46 UTC  
 Changelog powered by Git history and Lighthouse CI
