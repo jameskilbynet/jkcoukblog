@@ -13,13 +13,13 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1124
+1128
 
 Git commits
 
 ### Repository Age
 
-193
+194
 
 Days active
 
@@ -31,9 +31,9 @@ Active contributors
 
 ### Last Deployment
 
-2026-04-14
+2026-04-15
 
-00:18:24
+07:36:51
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,24 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-15 51da4e0Improvement
+
+Use single-pass HTML transformer; update CI & Makefile
+
+Add a new scripts/html_transformer.py that performs SEO fixes, image-to- conversion, performance hints, critical CSS extraction/inlining, head deduplication and HTML minification in a single parse cycle per file. Update .github/workflows/deploy-static-site.yml to wait for dpkg locks during apt operations and to replace the previous multi-step image/SEO/perf/CSS/HTML pipeline with a streamlined CSS optimization step and a single-pass HTML transformer step. Simplify Makefile targets to call the new transformer and to consolidate the CSS pipeline (remove separate critical extraction step). These changes reduce repeated HTML parsing, simplify CI steps, and add robustness to runner package installs.
+
+2026-04-15 1e365caImprovement
+
+Refactor deploy workflow and staging URL handling
+
+Rework the GitHub Actions deploy flow and staging URL conversion:
+
+  
+
+2026-04-14 a3debdaDocs
+
+Updated Readme
 
 2026-04-14 cf71416Feature
 
@@ -175,15 +193,5 @@ Cleanup driven by a code review of the cache layers.
 
 Theme tweak
 
-  
-
-2026-04-01 c2f5a97Fix
-
-fix pagination
-
-2026-04-01 7c4a90bOther
-
-Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
-
-Page generated: 2026-04-14 11:41:24 UTC  
+Page generated: 2026-04-15 06:42:04 UTC  
 Changelog powered by Git history and Lighthouse CI
