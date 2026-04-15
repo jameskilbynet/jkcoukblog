@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1133
+1136
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-15
 
-08:28:28
+09:16:13
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,14 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-15 5ea7e91Other
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-15 864fb0dImprovement
+
+Update html_transformer.py
 
 2026-04-15 7e61095Improvement
 
@@ -205,5 +213,5 @@ chore: remove dead Pages Function + route Worker layers, add HTTP timeout
 
 Cleanup driven by a code review of the cache layers.
 
-Page generated: 2026-04-15 07:33:46 UTC  
+Page generated: 2026-04-15 08:20:43 UTC  
 Changelog powered by Git history and Lighthouse CI

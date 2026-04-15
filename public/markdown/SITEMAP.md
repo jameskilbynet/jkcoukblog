@@ -1,8 +1,8 @@
 # Markdown Content Sitemap
 
-Generated: 2026-04-15 08:18:37
+Generated: 2026-04-15 21:41:12
 
-Total Files: 82
+Total Files: 83
 
 ## Blog Posts
 
@@ -23,6 +23,9 @@ Total Files: 82
 
 - [Warp – The intelligent terminal](https://jameskilby.co.uk/2025/04/warp-the-intelligent-terminal/) - 2025-04-11 15:46:23+00:00
   - Markdown: `/markdown/posts/warp-the-intelligent-terminal.md`
+
+- [Automating vSphere Power Management driven by Ansible and SemaphoreUI](https://jameskilby.co.uk/2026/04/vsphere-power-management-driven-by-ansible/) - 2026-04-15 21:36:41+00:00
+  - Markdown: `/markdown/posts/vsphere-power-management-driven-by-ansible.md`
 
 - [vSAN ESA in VMware Cloud on AWS: What Changed in VMC M24](https://jameskilby.co.uk/2023/11/vsan-esa-and-the-improvements-it-brings-to-vmc/) - 2023-11-17 11:29:42+00:00
   - Markdown: `/markdown/posts/vsan-esa-and-the-improvements-it-brings-to-vmc.md`
