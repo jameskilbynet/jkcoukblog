@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1128</div>
+                <div class="metric-value">1133</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-04-15</div>
-                <div class="metric-label">07:36:51</div>
+                <div class="metric-label">08:28:28</div>
             </div>
         </div>
         
@@ -340,9 +340,30 @@
             <h2>Recent Changes</h2>
 
             <div class="change-entry">
+                <div class="change-date">2026-04-15 <span class="change-hash">7e61095</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Update validate_deployment.py</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-15 <span class="change-hash">6b0c3df</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Escape HTML in changelog commit messages</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-15 <span class="change-hash">2af65f3</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Merge branch &#x27;main&#x27; of https://github.com/jameskilbynet/jkcoukblog</div>
+            </div>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-15 <span class="change-hash">9b6dcf3</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Exclude consolidated-inline-styles from critical CSS</div>
+                <div class="change-details">Add &#x27;consolidated-inline-styles&#x27; to the EXCLUDED tuple in scripts/extract_critical_css.py to prevent double-counting of inline noscript styles during critical CSS extraction, matching the handling of other excluded assets like &#x27;brutalist-theme&#x27; and &#x27;fonts.css&#x27;.</div>
+            </div>
+
+            <div class="change-entry">
                 <div class="change-date">2026-04-15 <span class="change-hash">51da4e0</span><span class="category-badge badge-improvement">Improvement</span></div>
-                <div class="change-title">Use single-pass HTML transformer; update CI & Makefile</div>
-                <div class="change-details">Add a new scripts/html_transformer.py that performs SEO fixes, image-to-<picture> conversion, performance hints, critical CSS extraction/inlining, head deduplication and HTML minification in a single parse cycle per file. Update .github/workflows/deploy-static-site.yml to wait for dpkg locks during apt operations and to replace the previous multi-step image/SEO/perf/CSS/HTML pipeline with a streamlined CSS optimization step and a single-pass HTML transformer step. Simplify Makefile targets to call the new transformer and to consolidate the CSS pipeline (remove separate critical extraction step). These changes reduce repeated HTML parsing, simplify CI steps, and add robustness to runner package installs.</div>
+                <div class="change-title">Use single-pass HTML transformer; update CI &amp; Makefile</div>
+                <div class="change-details">Add a new scripts/html_transformer.py that performs SEO fixes, image-to-&lt;picture&gt; conversion, performance hints, critical CSS extraction/inlining, head deduplication and HTML minification in a single parse cycle per file. Update .github/workflows/deploy-static-site.yml to wait for dpkg locks during apt operations and to replace the previous multi-step image/SEO/perf/CSS/HTML pipeline with a streamlined CSS optimization step and a single-pass HTML transformer step. Simplify Makefile targets to call the new transformer and to consolidate the CSS pipeline (remove separate critical extraction step). These changes reduce repeated HTML parsing, simplify CI steps, and add robustness to runner package installs.</div>
             </div>
 
             <div class="change-entry">
@@ -359,31 +380,31 @@
 
             <div class="change-entry">
                 <div class="change-date">2026-04-14 <span class="change-hash">cf71416</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">Add 'purge all' KV cache support</div>
+                <div class="change-title">Add &#x27;purge all&#x27; KV cache support</div>
                 <div class="change-details">Replace selective file-based purge with a purge-all workflow step that POSTs /.purge?all=true and requires CACHE_PURGE_TOKEN; step name and GitHub summary fields updated and response count parsed with jq. Update worker handler to support the all=true query: iterate HTML_CACHE.list to delete KV keys and corresponding Cache API entries, return JSON with purged count and timestamp, and improve missing-parameter error and cache request origin handling.</div>
             </div>
             <br>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-12 <span class="change-hash">f405ac7</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+                <div class="change-title">Merge branch &#x27;main&#x27; of https://github.com/jameskilbynet/jkcoukblog</div>
             </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-12 <span class="change-hash">ef66c3e</span><span class="category-badge badge-docs">Docs</span></div>
                 <div class="change-title">Improve taxonomy name extraction from title</div>
-                <div class="change-details">Refine the regex used to extract taxonomy names from page titles. Use a non-greedy match for patterns like "Docker Archives - James Kilby" and add a fallback to the previous pattern when the 'Archives' token isn't present. Also update the comment/example. This prevents incorrect captures for taxonomy names that include hyphens or other characters.</div>
+                <div class="change-details">Refine the regex used to extract taxonomy names from page titles. Use a non-greedy match for patterns like &quot;Docker Archives - James Kilby&quot; and add a fallback to the previous pattern when the &#x27;Archives&#x27; token isn&#x27;t present. Also update the comment/example. This prevents incorrect captures for taxonomy names that include hyphens or other characters.</div>
             </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-12 <span class="change-hash">39c71d5</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+                <div class="change-title">Merge branch &#x27;main&#x27; of https://github.com/jameskilbynet/jkcoukblog</div>
             </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-12 <span class="change-hash">09703e2</span><span class="category-badge badge-other">Other</span></div>
                 <div class="change-title">Deduplicate meta descriptions on paginated pages</div>
-                <div class="change-details">Add fix_pagination_meta_description to detect /page/N/ URLs and append " - Page N" to meta description, og:description and twitter:description to avoid duplicate SEO content. The method strips trailing periods, truncates content to keep it within ~160 characters (adding ellipses if needed), and logs a brief message per modified page. Also call this new method during page processing so paginated archive pages get unique descriptions.</div>
+                <div class="change-details">Add fix_pagination_meta_description to detect /page/N/ URLs and append &quot; - Page N&quot; to meta description, og:description and twitter:description to avoid duplicate SEO content. The method strips trailing periods, truncates content to keep it within ~160 characters (adding ellipses if needed), and logs a brief message per modified page. Also call this new method during page processing so paginated archive pages get unique descriptions.</div>
             </div>
 
             <div class="change-entry">
@@ -408,7 +429,7 @@
             <div class="change-entry">
                 <div class="change-date">2026-04-11 <span class="change-hash">f10e886</span><span class="category-badge badge-other">Other</span></div>
                 <div class="change-title">Deduplicate head links and robust CSS preload</div>
-                <div class="change-details">Add a pre-parse cleanup that strips accumulated <noscript> fallbacks and deduplicates <link> tags in <head> (_dedup_head_links), preventing runaway duplication on repeated pipeline runs. Make CSS externalization idempotent and self-healing: convert stylesheets to preload+onload safely, skip critical files (brutalist-theme, fonts.css), and add exactly one noscript fallback per preload link. Also adjust insertion order for the generated stylesheet link. Finally, switch BeautifulSoup usage in wp_to_static_generator.py from 'lxml' to 'html.parser' to improve parsing robustness.</div>
+                <div class="change-details">Add a pre-parse cleanup that strips accumulated &lt;noscript&gt; fallbacks and deduplicates &lt;link&gt; tags in &lt;head&gt; (_dedup_head_links), preventing runaway duplication on repeated pipeline runs. Make CSS externalization idempotent and self-healing: convert stylesheets to preload+onload safely, skip critical files (brutalist-theme, fonts.css), and add exactly one noscript fallback per preload link. Also adjust insertion order for the generated stylesheet link. Finally, switch BeautifulSoup usage in wp_to_static_generator.py from &#x27;lxml&#x27; to &#x27;html.parser&#x27; to improve parsing robustness.</div>
             </div>
 
             <div class="change-entry">
@@ -425,12 +446,12 @@
             <div class="change-entry">
                 <div class="change-date">2026-04-11 <span class="change-hash">bae7ac9</span><span class="category-badge badge-feature">Feature</span></div>
                 <div class="change-title">feat: add Google image sitemap support</div>
-                <div class="change-details">Extends create_sitemap() to emit <image:image> entries for each post/page</div>
+                <div class="change-details">Extends create_sitemap() to emit &lt;image:image&gt; entries for each post/page</div>
             </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-11 <span class="change-hash">3649944</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+                <div class="change-title">Merge branch &#x27;main&#x27; of https://github.com/jameskilbynet/jkcoukblog</div>
             </div>
 
             <div class="change-entry">
@@ -441,13 +462,13 @@
 
             <div class="change-entry">
                 <div class="change-date">2026-04-11 <span class="change-hash">75e0c59</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+                <div class="change-title">Merge branch &#x27;main&#x27; of https://github.com/jameskilbynet/jkcoukblog</div>
             </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-11 <span class="change-hash">751046c</span><span class="category-badge badge-docs">Docs</span></div>
                 <div class="change-title">Preview noindex, CDN purge, sitemap priority</div>
-                <div class="change-details">Add preview-domain noindex and propagate hostname to cache handlers in the Cloudflare worker (serve disallow-all robots.txt for jkcoukblog.pages.dev and add X-Robots-Tag). Update getSecurityHeaders to conditionally set X-Robots-Tag and pass hostname through KV/CacheAPI handlers. Add grep check to .claude settings and two docs to .gitignore. Rename page titles in stats/changelog generators to “James Kilby”. Extend purge_html_kv_cache.py with a purge_cdn_cache() function, --skip-cdn flag, CLOUDFLARE_ZONE_ID support, and improved docs/dry-run output. Enhance wp_to_static_generator.py to emit <priority> in sitemap entries and compute priorities based on URL patterns and post age.</div>
+                <div class="change-details">Add preview-domain noindex and propagate hostname to cache handlers in the Cloudflare worker (serve disallow-all robots.txt for jkcoukblog.pages.dev and add X-Robots-Tag). Update getSecurityHeaders to conditionally set X-Robots-Tag and pass hostname through KV/CacheAPI handlers. Add grep check to .claude settings and two docs to .gitignore. Rename page titles in stats/changelog generators to “James Kilby”. Extend purge_html_kv_cache.py with a purge_cdn_cache() function, --skip-cdn flag, CLOUDFLARE_ZONE_ID support, and improved docs/dry-run output. Enhance wp_to_static_generator.py to emit &lt;priority&gt; in sitemap entries and compute priorities based on URL patterns and post age.</div>
             </div>
 
             <div class="change-entry">
@@ -458,7 +479,7 @@
 
             <div class="change-entry">
                 <div class="change-date">2026-04-10 <span class="change-hash">7e855d9</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog</div>
+                <div class="change-title">Merge branch &#x27;main&#x27; of https://github.com/jameskilbynet/jkcoukblog</div>
             </div>
 
             <div class="change-entry">
@@ -472,17 +493,11 @@
                 <div class="change-title">chore: remove dead Pages Function + route Worker layers, add HTTP timeout</div>
                 <div class="change-details">Cleanup driven by a code review of the cache layers.</div>
             </div>
-            <br>
-
-            <div class="change-entry">
-                <div class="change-date">2026-04-02 <span class="change-hash">15be50d</span><span class="category-badge badge-other">Other</span></div>
-                <div class="change-title">Theme tweak</div>
-            </div>
 
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-04-15 06:42:04 UTC<br>
+            Page generated: 2026-04-15 07:33:46 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>
