@@ -1,6 +1,6 @@
 # Markdown Content Sitemap
 
-Generated: 2026-04-16 21:55:42
+Generated: 2026-04-16 22:07:31
 
 Total Files: 83
 
@@ -90,7 +90,7 @@ Total Files: 83
 - [Running Nutanix CE at Home: AHV Setup & First Impressions](https://jameskilby.co.uk/2018/01/nutanix-ce/) - 2018-01-06 17:28:56+00:00
   - Markdown: `/markdown/posts/nutanix-ce.md`
 
-- [New VMC Host i7i.metal-24xl](https://jameskilby.co.uk/2026/04/new-vmc-host-i7i-metal-24xl/) - 2026-04-01 08:06:00+00:00
+- [New VMware Cloud on AWS Host: i7i.metal-24xl](https://jameskilby.co.uk/2026/04/new-vmc-host-i7i-metal-24xl/) - 2026-04-01 08:06:00+00:00
   - Markdown: `/markdown/posts/new-vmc-host-i7i-metal-24xl.md`
 
 - [New Homelab Nodes: SuperMicro BigTwin for VMware & Nutanix](https://jameskilby.co.uk/2024/07/new-nodes/) - 2024-07-02 08:01:04+00:00

@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1149</div>
+                <div class="metric-value">1151</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-04-16</div>
-                <div class="metric-label">21:08:06</div>
+                <div class="metric-label">23:01:16</div>
             </div>
         </div>
         
@@ -338,6 +338,12 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-16 <span class="change-hash">ba60ef5</span><span class="category-badge badge-other">Other</span></div>
+                <div class="change-title">Only install missing system dependencies</div>
+                <div class="change-details">Change the workflow to probe for required system binaries and Python modules first, accumulating any missing packages into MISSING_PKGS. If nothing is missing, skip apt entirely; otherwise run apt-get update/install only for the missing items. This avoids unnecessary dpkg lock waits on long-lived self-hosted runners and speeds up the job startup. The script checks jq, bc, avifenc, optipng, jpegoptim, cwebp, python3-pip and python3-venv and still prints versions after installation.</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-16 <span class="change-hash">b4dc9dd</span><span class="category-badge badge-improvement">Improvement</span></div>
@@ -494,16 +500,10 @@
                 <div class="change-title">Merge branch &#x27;main&#x27; of https://github.com/jameskilbynet/jkcoukblog</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-04-11 <span class="change-hash">e4a85ef</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">Add www→non-www redirect to worker</div>
-                <div class="change-details">Add a 301 www→non-www redirect at the start of _worker.template.js and public/_worker.js so cross-domain canonical redirects run in Advanced Mode Workers (which ignore _redirects). Remove the corresponding rule from public/_redirects and add a comment pointing to the worker. This ensures a single-hop canonical redirect and fixes Google Search Console crawl errors for www.jameskilby.co.uk.</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-04-16 21:57:51 UTC<br>
+            Page generated: 2026-04-16 22:09:36 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>

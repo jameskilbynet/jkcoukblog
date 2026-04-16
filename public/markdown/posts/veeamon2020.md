@@ -1,8 +1,8 @@
 ---
 title: "VeeamON 2020: Highlights From Veeam’s Virtual Conference"
-description: "Join VeeamON 2020 to learn about the latest IT innovations. Sign up now for exclusive sessions and insights into the future of IT solutions."
+description: "As everyone knows by now the world has changed possibly forever. Due to Covid19 working from home has become the new normal."
 date: 2020-06-18T14:42:45+00:00
-modified: 2026-04-11T09:00:42+00:00
+modified: 2026-04-16T22:02:00+00:00
 author: James Kilby
 categories:
   - Veeam
@@ -16,15 +16,15 @@ url: https://jameskilby.co.uk/2020/06/veeamon2020/
 image: https://jameskilby.co.uk/wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png
 ---
 
-![Veeam Logo New Large 1934042827](https://jameskilby.co.uk/wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png)
+![](https://jameskilby.co.uk/wp-content/uploads/2020/06/veeam-logo-new-large-1934042827.png)
 
 [Veeam](https://jameskilby.co.uk/category/veeam/)
 
 # VeeamON 2020: Highlights From Veeam’s Virtual Conference
 
-By[James](https://jameskilby.co.uk)June 18, 2020April 11, 2026 • 📖1 min read(272 words)
+By[James](https://jameskilby.co.uk) June 18, 2020April 16, 2026 • 📖1 min read(272 words)
 
-📅 **Published:** June 18, 2020• **Updated:** April 11, 2026
+📅 **Published:** June 18, 2020• **Updated:** April 16, 2026
 
 As everyone knows by now the world has changed possibly forever. Due to Covid19 working from home has become the new normal. We are lucky in the IT world that this has been fairly straightforward for most of us. We are privileged in that it’s possible for us to continue indefinitely. Organisations still need to move forward, to progress and adapt into the new normal.
 
@@ -81,16 +81,16 @@ Yes Veeam Backup Agent for **MAC**
 
 ### [Lab Update – Desired Workloads](https://jameskilby.co.uk/2022/01/lab-update-part-5-desired-workloads/)
 
-By[James](https://jameskilby.co.uk)January 6, 2022March 10, 2026
+By[James](https://jameskilby.co.uk) January 6, 2022April 16, 2026
 
-My lab is always undergoing change. Partially as I want to try new things or new ways of doing things. Sometimes because I break things (not always by accident) sometimes it’s a great way to learn…. I decided to list the workloads I am looking to run (some of these are already in place) Infrastucture…
+My lab is always undergoing change. Partially as I want to try new things or new ways of doing things.
 
-  * [![Monitoring VMware Cloud on AWS: Tools & Approaches \(Part 1\)](https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp)](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
+  * [ ![Monitoring VMware Cloud on AWS: Tools & Approaches \(Part 1\)](https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp) ](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [AWS](https://jameskilby.co.uk/category/aws/) | [Veeam](https://jameskilby.co.uk/category/veeam/)
 
 ### [Monitoring VMware Cloud on AWS: Tools & Approaches (Part 1)](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
 
-By[James](https://jameskilby.co.uk)December 17, 2019April 11, 2026
+By[James](https://jameskilby.co.uk) December 17, 2019April 16, 2026
 
-As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams…
+As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring.

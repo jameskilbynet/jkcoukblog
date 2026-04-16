@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1148
+1149
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-16
 
-20:22:55
+21:08:06
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -211,9 +211,5 @@ Add www→non-www redirect to worker
 
 Add a 301 www→non-www redirect at the start of _worker.template.js and public/_worker.js so cross-domain canonical redirects run in Advanced Mode Workers (which ignore _redirects). Remove the corresponding rule from public/_redirects and add a comment pointing to the worker. This ensures a single-hop canonical redirect and fixes Google Search Console crawl errors for www.jameskilby.co.uk.
 
-2026-04-11 75e0c59Other
-
-Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
-
-Page generated: 2026-04-16 21:08:01 UTC  
+Page generated: 2026-04-16 21:57:51 UTC  
 Changelog powered by Git history and Lighthouse CI

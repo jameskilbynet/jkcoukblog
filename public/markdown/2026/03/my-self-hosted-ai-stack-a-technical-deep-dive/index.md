@@ -1,6 +1,6 @@
 ---
 title: "My Self-Hosted AI Stack: Architecture Overview (Part 1)"
-description: "Build a fully private AI stack on your own hardware with Ollama, Open WebUI, n8n, ComfyUI, Qdrant & SearxNG on Docker Compose. Full technical deep dive with configs and observability."
+description: "Build a fully private AI stack on your own hardware with Ollama, Open WebUI, n8n, ComfyUI, Qdrant & SearxNG on Docker Compose. Full technical deep dive with ..."
 date: 2026-03-27T11:56:33+00:00
 modified: 2026-04-16T21:48:23+00:00
 author: James Kilby
@@ -40,7 +40,7 @@ image: https://jameskilby.co.uk/wp-content/uploads/2026/03/ai-stack-featured.png
 
 # My Self-Hosted AI Stack: Architecture Overview (Part 1)
 
-By[James](https://jameskilby.co.uk) March 27, 2026April 16, 2026 • 📖14 min read(2,817 words)
+By[James](https://jameskilby.co.uk)March 27, 2026April 16, 2026 • 📖14 min read(2,817 words)
 
 📅 **Published:** March 27, 2026• **Updated:** April 16, 2026
 
@@ -176,12 +176,12 @@ It works with any OpenAI-compatible client, so a wide range of tools can connect
 
 A few features worth calling out from the config:
 
-  * **VRAM-aware routing** — it monitors GPU VRAM and can automatically unload models using an LRU strategy when memory gets tight, then load the right model for the next request.
-  * **Response caching** — a 500-entry cache with a 1-hour TTL avoids redundant inference on repeated or similar prompts.
-  * **Signature injection** — responses are annotated with the model that actually handled them (`Model: {model}`), which is useful for debugging and understanding routing decisions.
-  * **SQLite-backed routing state** — profiles and cache persist across restarts in a named volume.
-  * **Automated backups for PostgreSQL** — the Open WebUI backup sidecar pattern works well and I’d like to extend it to pg_dump snapshots for the Langfuse, n8n, and Grafana databases.
-  * **LiteLLM as a unified gateway** to front both local Ollama models and external APIs (OpenAI, Anthropic) behind a single endpoint, with spend tracking and per-user rate limits.
+  *  **VRAM-aware routing** — it monitors GPU VRAM and can automatically unload models using an LRU strategy when memory gets tight, then load the right model for the next request.
+  *  **Response caching** — a 500-entry cache with a 1-hour TTL avoids redundant inference on repeated or similar prompts.
+  *  **Signature injection** — responses are annotated with the model that actually handled them (`Model: {model}`), which is useful for debugging and understanding routing decisions.
+  *  **SQLite-backed routing state** — profiles and cache persist across restarts in a named volume.
+  *  **Automated backups for PostgreSQL** — the Open WebUI backup sidecar pattern works well and I’d like to extend it to pg_dump snapshots for the Langfuse, n8n, and Grafana databases.
+  *  **LiteLLM as a unified gateway** to front both local Ollama models and external APIs (OpenAI, Anthropic) behind a single endpoint, with spend tracking and per-user rate limits.
 
 The practical result is that you can send any prompt to a single endpoint and let the router decide whether it warrants a heavyweight model or whether something smaller and faster will do. For a homelab running a single GPU, this kind of intelligent load management makes a real difference.
     
@@ -256,62 +256,62 @@ This post is Part 1 of a multi-part series. The architecture overview above cove
 
 ## Similar Posts
 
-  * [ ![VMware Holodeck Multi-Host VCF: Lab Setup & Configuration](https://jameskilby.co.uk/wp-content/uploads/2023/12/Holodeck-Overview.png) ](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
+  * [![VMware Holodeck Multi-Host VCF: Lab Setup & Configuration](https://jameskilby.co.uk/wp-content/uploads/2023/12/Holodeck-Overview.png)](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [VCF](https://jameskilby.co.uk/category/vmware/vcf/)
 
 ### [VMware Holodeck Multi-Host VCF: Lab Setup & Configuration](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
 
-By[James](https://jameskilby.co.uk) January 17, 2024April 11, 2026
+By[James](https://jameskilby.co.uk)January 17, 2024April 11, 2026
 
 How to Deploy VMware Holodeck on multiple hosts
 
-  * [ ![Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU](https://jameskilby.co.uk/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg) ](https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/)
+  * [![Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU](https://jameskilby.co.uk/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg)](https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/)
 
 [Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Docker](https://jameskilby.co.uk/category/docker/) | [Homelab](https://jameskilby.co.uk/category/homelab/)
 
 ### [Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU](https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/)
 
-By[James](https://jameskilby.co.uk) October 11, 2024March 10, 2026
+By[James](https://jameskilby.co.uk)October 11, 2024March 10, 2026
 
 Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock price has gone to the moon. So I thought I better get some knowledge and understand some of this. As it’s a huge field and I wasn’t exactly sure…
 
-  * [ ![VMware Holodeck on Older CPUs: Fixing Compatibility Issues](https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743-768x737.jpg) ](https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/)
+  * [![VMware Holodeck on Older CPUs: Fixing Compatibility Issues](https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743-768x737.jpg)](https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/)
 
 [VCF](https://jameskilby.co.uk/category/vmware/vcf/) | [VMware](https://jameskilby.co.uk/category/vmware/)
 
 ### [VMware Holodeck on Older CPUs: Fixing Compatibility Issues](https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/)
 
-By[James](https://jameskilby.co.uk) January 18, 2024April 11, 2026
+By[James](https://jameskilby.co.uk)January 18, 2024April 11, 2026
 
 How to deploy Holodeck with Legacy CPU’s
 
-  * [ ![Monitoring VMware Cloud on AWS: Tools & Approaches \(Part 1\)](https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp) ](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
+  * [![Monitoring VMware Cloud on AWS: Tools & Approaches \(Part 1\)](https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp)](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [AWS](https://jameskilby.co.uk/category/aws/) | [Veeam](https://jameskilby.co.uk/category/veeam/)
 
 ### [Monitoring VMware Cloud on AWS: Tools & Approaches (Part 1)](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
 
-By[James](https://jameskilby.co.uk) December 17, 2019April 11, 2026
+By[James](https://jameskilby.co.uk)December 17, 2019April 11, 2026
 
 As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams…
 
-  * [ ![Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash-768x417.png) ](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
+  * [![Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash-768x417.png)](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
 
 ### [Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
 
-By[James](https://jameskilby.co.uk) January 27, 2026March 12, 2026
+By[James](https://jameskilby.co.uk)January 27, 2026March 12, 2026
 
 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.
 
-  * [ ![Homelab Storage Upgrade: Synology DS918 for VMware & NFS](https://jameskilby.co.uk/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-768x461.jpg) ](https://jameskilby.co.uk/2019/02/lab-storage-2/)
+  * [![Homelab Storage Upgrade: Synology DS918 for VMware & NFS](https://jameskilby.co.uk/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-768x461.jpg)](https://jameskilby.co.uk/2019/02/lab-storage-2/)
 
 [Homelab](https://jameskilby.co.uk/category/homelab/)
 
 ### [Homelab Storage Upgrade: Synology DS918 for VMware & NFS](https://jameskilby.co.uk/2019/02/lab-storage-2/)
 
-By[James](https://jameskilby.co.uk) February 10, 2019April 11, 2026
+By[James](https://jameskilby.co.uk)February 10, 2019April 11, 2026
 
 Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes. At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance. With that in mind, I purchased a new Synology…

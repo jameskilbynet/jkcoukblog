@@ -40,7 +40,7 @@ In this post I’ll walk through how I use vSphere Power Management driven by An
 
 ## [Automated VCF 9 Offline Depot](https://jameskilby.co.uk/2026/04/automated-vcf-9-offline-depot/)
 
-By[James](https://jameskilby.co.uk) April 10, 2026April 10, 2026
+By[James](https://jameskilby.co.uk) April 10, 2026April 16, 2026
 
 One Bash script turns a fresh Ubuntu VM into a VCF 9 Offline Depot: Traefik, Nginx, basic auth, and Let’s Encrypt wildcard certs via Cloudflare DNS.
 
@@ -50,7 +50,7 @@ One Bash script turns a fresh Ubuntu VM into a VCF 9 Offline Depot: Traefik, Ngi
 
 ## [My Self-Hosted AI Stack: Infrastructure Deep Dive (Part 2)](https://jameskilby.co.uk/2026/04/my-self-hosted-ai-stack-infrastructure-deep-dive-part-2/)
 
-By[James](https://jameskilby.co.uk) April 4, 2026April 6, 2026
+By[James](https://jameskilby.co.uk) April 4, 2026April 16, 2026
 
 Part 2 of my self-hosted AI stack series. I cover container resource sizing, dual-network isolation via Traefik and Cloudflare Tunnels, and every database powering the stack — PostgreSQL, ClickHouse, Redis, Qdrant, MinIO, MongoDB, SQLite, Prometheus, and Jaeger — plus the backup strategy for each.
 
@@ -60,9 +60,9 @@ Part 2 of my self-hosted AI stack series. I cover container resource sizing, dua
 
 ## [New VMware Cloud on AWS Host: i7i.metal-24xl](https://jameskilby.co.uk/2026/04/new-vmc-host-i7i-metal-24xl/)
 
-By[James](https://jameskilby.co.uk) April 1, 2026April 10, 2026
+By[James](https://jameskilby.co.uk) April 1, 2026April 16, 2026
 
-We’ve expanded the VMC fleet with the new i7i (i7i.24xlarge) host type. Powered by Intel Emerald Rapids processors with PCIe Gen5 connectivity, it delivers the fleet’s highest single-core performance and memory bandwidth, making it well suited for latency-sensitive workloads and high-performance vSAN configurations. Key Technical Specs: This host brings a blend of usable options to…
+We’ve expanded the VMC fleet with the new i7i (i7i.
 
   * [ ![Self-hosted AI stack operations architecture — Ansible automation, Uptime Kuma monitoring, Open WebUI backup, and container orchestration with Docker and Traefik](https://jameskilby.co.uk/wp-content/uploads/2026/03/ai-stack-featured-768x403.png) ](https://jameskilby.co.uk/2026/03/my-self-hosted-ai-stack-a-technical-deep-dive/)
 
@@ -80,9 +80,9 @@ A walkthrough of my self-hosted AI stack: Ollama, Open WebUI, ComfyUI, Whishper,
 
 ## [Free Octopus Agile Battery & Solar Calculator: 5 Batteries Tested](https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/)
 
-By[James](https://jameskilby.co.uk) March 9, 2026April 11, 2026
+By[James](https://jameskilby.co.uk) March 9, 2026April 16, 2026
 
-I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my…
+I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying.
 
   * [ ![Automating the Deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv-768x432.png) ](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
 
@@ -110,9 +110,9 @@ How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.
 
 ## [Blog Performance & SEO Improvements: Cloudflare, Privacy & More](https://jameskilby.co.uk/2026/01/web-development-improvements/)
 
-By[James](https://jameskilby.co.uk) January 15, 2026April 11, 2026
+By[James](https://jameskilby.co.uk) January 15, 2026April 16, 2026
 
-I have spent the Christmas break making some improvements to this blog. A lot of these are in “the backend” These help improve the performance, Privacy, SEO, and I have also added some security best practices. Most of these changes were done more as an exercise than due to a specific requirement. I also had…
+I have spent the Christmas break making some improvements to this blog.
 
   * [ ![How to Expand Ubuntu Disk Space: LVM pvresize Step-by-Step](https://jameskilby.co.uk/wp-content/uploads/2025/12/UbuntuExpand.png) ](https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/)
 
@@ -120,9 +120,9 @@ I have spent the Christmas break making some improvements to this blog. A lot of
 
 ## [How to Expand Ubuntu Disk Space: LVM pvresize Step-by-Step](https://jameskilby.co.uk/2025/12/ubuntu-disk-expansion-steps/)
 
-By[James](https://jameskilby.co.uk) December 15, 2025April 11, 2026
+By[James](https://jameskilby.co.uk) December 15, 2025April 16, 2026
 
-How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps. So I decided to write them down. 1. Rescan for disk size changes sudo tee /sys/class/block/sda/device/rescan 2. Extend the physical partition (if needed) sudo growpart /dev/sda 3 3. Resize the physical…
+How to expand disks from the command line in Ubuntu. This is something I do fairly frequently, and I can never remember the steps.
 
   * [ ![VMware Cloud on AWS Time Sync & NTP Configuration](https://jameskilby.co.uk/wp-content/uploads/2025/02/Picture-1-e1768509620339-768x193.png) ](https://jameskilby.co.uk/2025/12/time-in-a-vmc-environment/)
 

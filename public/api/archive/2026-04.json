@@ -6,9 +6,9 @@
     {
       "slug": "automated-vcf-9-offline-depot",
       "title": "Automated VCF 9 Offline Depot",
-      "description": "Automated VCF 9 Offline Depot: one Bash script gives you Traefik, Nginx, basic auth, and Let's Encrypt wildcard certs via Cloudflare DNS.",
+      "description": "One Bash script turns a fresh Ubuntu VM into a VCF 9 Offline Depot: Traefik, Nginx, basic auth, and Let's Encrypt wildcard certs via Cloudflare DNS.",
       "date": "2026-04-10T11:36:03Z",
-      "modified": "2026-04-10T15:24:29Z",
+      "modified": "2026-04-16T22:01:37Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2026/04/automated-vcf-9-offline-depot/",
       "markdown_url": "/markdown/posts/automated-vcf-9-offline-depot.md",
@@ -21,18 +21,16 @@
         "Traefik",
         "VCF",
         "VMware",
+        "Hosting",
+        "Cloudflare",
+        "Personal",
+        "Wordpress",
         "TrueNAS Scale",
         "vSAN",
         "vSphere",
         "VMware Cloud on AWS",
-        "Artificial Intelligence",
-        "Containers",
-        "Devops",
-        "NVIDIA",
-        "Personal",
-        "Hosting",
-        "Cloudflare",
-        "Wordpress"
+        "Networking",
+        "Storage"
       ],
       "tags": [
         null,
@@ -57,9 +55,9 @@
     {
       "slug": "my-self-hosted-ai-stack-infrastructure-deep-dive-part-2",
       "title": "My Self-Hosted AI Stack: Infrastructure Deep Dive (Part 2)",
-      "description": "Part 2 of my self-hosted AI stack series. I cover container resource sizing, dual-network isolation via Traefik and Cloudflare Tunnels, and every database po...",
+      "description": "Part 2 of my self-hosted AI stack series. I cover container resource sizing, dual-network isolation via Traefik and Cloudflare Tunnels, and every database",
       "date": "2026-04-04T21:39:21Z",
-      "modified": "2026-04-06T16:03:45Z",
+      "modified": "2026-04-16T22:01:37Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2026/04/my-self-hosted-ai-stack-infrastructure-deep-dive-part-2/",
       "markdown_url": "/markdown/posts/my-self-hosted-ai-stack-infrastructure-deep-dive-part-2.md",
@@ -72,12 +70,15 @@
         "NVIDIA",
         "Traefik",
         "VMware",
-        "TrueNAS Scale",
-        "vSAN",
-        "vSphere",
-        "VMware Cloud on AWS",
+        "Ansible",
+        "Containers",
+        "Devops",
+        "Networking",
+        "Storage",
         "Hosting",
-        "Personal"
+        "vSAN",
+        "VCF",
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,
@@ -97,7 +98,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2026/03/ai-stack-featured.png",
-      "excerpt": "![Architecture diagram of a self-hosted AI stack showing containerised services, network topology, and infrastructure components](https://jameskilby.co.uk/wp-content/uploads/2026/03/ai-stack-featured.png)\n\n[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Autom..."
+      "excerpt": "![Self-hosted AI stack operations architecture — Ansible automation, Uptime Kuma monitoring, Open WebUI backup, and container orchestration with Docker and Traefik](https://jameskilby.co.uk/wp-content/uploads/2026/03/ai-stack-featured.png)\n\n[Artificial Intelligence](https://jameskilby.co.uk/category..."
     },
     {
       "slug": "vsphere-power-management-driven-by-ansible",
@@ -132,10 +133,10 @@
     },
     {
       "slug": "new-vmc-host-i7i-metal-24xl",
-      "title": "New VMC Host i7i.metal-24xl",
-      "description": "We’ve expanded the VMC fleet with the new i7i (i7i.24xlarge) host type. Powered by Intel Emerald Rapids processors with PCIe Gen5 connectivity, it delivers",
+      "title": "New VMware Cloud on AWS Host: i7i.metal-24xl",
+      "description": "We’ve expanded the VMC fleet with the new i7i (i7i.",
       "date": "2026-04-01T08:06:00Z",
-      "modified": "2026-04-02T08:52:56Z",
+      "modified": "2026-04-16T22:01:38Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2026/04/new-vmc-host-i7i-metal-24xl/",
       "markdown_url": "/markdown/posts/new-vmc-host-i7i-metal-24xl.md",
@@ -143,10 +144,18 @@
       "categories": [
         "VMware",
         "VMware Cloud on AWS",
-        "vSAN",
-        "TrueNAS Scale",
+        "Personal",
         "vSphere",
-        "Personal"
+        "Artificial Intelligence",
+        "Automation",
+        "Docker",
+        "Homelab",
+        "NVIDIA",
+        "Traefik",
+        "TrueNAS Scale",
+        "vSAN",
+        "VCF",
+        "Ansible"
       ],
       "tags": [
         null,
@@ -154,7 +163,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp",
-      "excerpt": "![Vmconaws.Png](https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# New VMC Host i7i.metal-24xl\n\nBy[James](https://jameskilby.co.uk)April ..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp)\n\n[VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)\n\n# New VMware Cloud on AWS Host: i7i.metal-24xl\n\nBy[James](https://jameskilby.co.uk) ..."
     }
   ]
 }
