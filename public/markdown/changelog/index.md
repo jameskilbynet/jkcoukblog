@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1140
+1144
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-16
 
-10:37:04
+16:14:21
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,22 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-16 3a9b5caFeature
+
+Add IndexNow keyLocation and WebFetch entry
+
+Include a keyLocation field in IndexNow submission payload so the API knows where the verification key is hosted (scripts/submit_indexnow.py). Also add WebFetch(domain:www.indexnow.org) to local Claude settings to allow fetching IndexNow resources during analysis (.claude/settings.local.json).
+
+2026-04-16 ba1761cOther
+
+Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
+
+2026-04-16 35fe94dFeature
+
+Bump GitHub Action versions and add gh checks
+
+Upgrade action usages across workflows to newer releases (actions/cache -> v5, actions/cache/restore/save -> v5, actions/upload-artifact/download-artifact -> v7, actions/setup-node -> v6, slackapi/slack-github-action -> v3.0.1) to keep CI tooling up-to-date and compatible. Also add Bash patterns for gh run/api to .claude/settings.local.json to include gh CLI checks in local scans.
 
 2026-04-16 8c89ec4Other
 
@@ -203,23 +219,5 @@ Add preview-domain noindex and propagate hostname to cache handlers in the Cloud
 
 fix(seo): inject canonical tags when absent, add KV cache bulk-purge
 
-  
-
-2026-04-10 7e855d9Other
-
-Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
-
-2026-04-10 8d96835Fix
-
-fix(worker): pass ctx to KV cache helpers so HIT path stops throwing
-
-handleKVCache and handleCacheAPI are module-top-level functions, but
-
-2026-04-10 3c0c679Feature
-
-chore: remove dead Pages Function + route Worker layers, add HTTP timeout
-
-Cleanup driven by a code review of the cache layers.
-
-Page generated: 2026-04-16 10:54:42 UTC  
+Page generated: 2026-04-16 15:24:04 UTC  
 Changelog powered by Git history and Lighthouse CI

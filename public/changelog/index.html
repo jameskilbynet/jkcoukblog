@@ -280,7 +280,7 @@
         <div class="metrics">
             <div class="metric-card">
                 <h3>Total Deployments</h3>
-                <div class="metric-value">1144</div>
+                <div class="metric-value">1146</div>
                 <div class="metric-label">Git commits</div>
             </div>
             
@@ -299,7 +299,7 @@
             <div class="metric-card">
                 <h3>Last Deployment</h3>
                 <div class="metric-value">2026-04-16</div>
-                <div class="metric-label">16:14:21</div>
+                <div class="metric-label">18:08:05</div>
             </div>
         </div>
         
@@ -338,6 +338,12 @@
         
         <div class="changelog-section">
             <h2>Recent Changes</h2>
+
+            <div class="change-entry">
+                <div class="change-date">2026-04-16 <span class="change-hash">b4dc9dd</span><span class="category-badge badge-improvement">Improvement</span></div>
+                <div class="change-title">Update Claude settings and rotate indexnow key</div>
+                <div class="change-details">Add new probes to .claude/settings.local.json (Bash(xxd) and WebFetch for www.bing.com) and update the stored IndexNow key in .indexnow_key (key rotated). These changes enable additional local checks and refresh the indexing key without altering other configuration.</div>
+            </div>
 
             <div class="change-entry">
                 <div class="change-date">2026-04-16 <span class="change-hash">3a9b5ca</span><span class="category-badge badge-feature">Feature</span></div>
@@ -505,15 +511,10 @@
                 <div class="change-details">Add preview-domain noindex and propagate hostname to cache handlers in the Cloudflare worker (serve disallow-all robots.txt for jkcoukblog.pages.dev and add X-Robots-Tag). Update getSecurityHeaders to conditionally set X-Robots-Tag and pass hostname through KV/CacheAPI handlers. Add grep check to .claude settings and two docs to .gitignore. Rename page titles in stats/changelog generators to “James Kilby”. Extend purge_html_kv_cache.py with a purge_cdn_cache() function, --skip-cdn flag, CLOUDFLARE_ZONE_ID support, and improved docs/dry-run output. Enhance wp_to_static_generator.py to emit &lt;priority&gt; in sitemap entries and compute priorities based on URL patterns and post age.</div>
             </div>
 
-            <div class="change-entry">
-                <div class="change-date">2026-04-11 <span class="change-hash">21bab28</span><span class="category-badge badge-feature">Feature</span></div>
-                <div class="change-title">fix(seo): inject canonical tags when absent, add KV cache bulk-purge</div>
-            </div>
-
         </div>
         
         <div class="timestamp">
-            Page generated: 2026-04-16 15:24:04 UTC<br>
+            Page generated: 2026-04-16 17:15:45 UTC<br>
             Changelog powered by Git history and Lighthouse CI
         </div>
     </div>

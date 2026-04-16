@@ -25,25 +25,25 @@ Blog Posts
 
 🖼️
 
-3188
+3194
 
 Images
 
 💾
 
-178.5
+178.75
 
 Total Size (MB)
 
 🚀
 
-1140
+1144
 
 Deployments
 
 📅
 
-130
+134
 
 Updates This Month
 
@@ -77,12 +77,12 @@ Metric | Value | Notes
 ---|---|---  
 Total HTML Pages | 187 | All generated pages including posts, archives, and pages  
 Blog Posts | 72 | Articles in dated directories (YYYY/MM/slug)  
-Total Images | 3188 | Optimized images (PNG, JPG, WebP, SVG)  
-Total Site Size | 178.5 MB | All files in public directory  
-Average Page Size | 0.95 KB | Total size / number of pages  
-Images per Post | 44.3 | Average images per blog post  
-Last Deployment | 2026-04-16 10:37:04 | Most recent static site generation  
-Total Deployments | 1140 | Git commits to main branch  
+Total Images | 3194 | Optimized images (PNG, JPG, WebP, SVG)  
+Total Site Size | 178.75 MB | All files in public directory  
+Average Page Size | 0.96 KB | Total size / number of pages  
+Images per Post | 44.4 | Average images per blog post  
+Last Deployment | 2026-04-16 16:14:21 | Most recent static site generation  
+Total Deployments | 1144 | Git commits to main branch  
   
 ## 📊 Traffic Analytics (Plausible)
 
@@ -109,5 +109,5 @@ This statistics page is automatically generated on every deployment and includes
 
 **💻 Open Source:** Check the [GitHub repository](https://github.com/jameskilbynet/jkcoukblog) to see how this works
 
-Page generated: 2026-04-16 10:54:43 UTC  
+Page generated: 2026-04-16 15:24:05 UTC  
 Stats powered by Plausible Analytics, Google Lighthouse, and Git
