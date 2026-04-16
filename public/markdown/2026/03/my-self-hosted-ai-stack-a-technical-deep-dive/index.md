@@ -1,8 +1,8 @@
 ---
 title: "My Self-Hosted AI Stack: Architecture Overview (Part 1)"
-description: "Build a fully private AI stack on your own hardware with Ollama, Open WebUI, n8n, ComfyUI, Qdrant & SearxNG on Docker Compose. Full technical deep dive with ..."
+description: "Build a fully private AI stack on your own hardware with Ollama, Open WebUI, n8n, ComfyUI, Qdrant & SearxNG on Docker Compose. Full technical deep dive with configs and observability."
 date: 2026-03-27T11:56:33+00:00
-modified: 2026-04-10T22:04:27+00:00
+modified: 2026-04-16T21:48:23+00:00
 author: James Kilby
 categories:
   - Artificial Intelligence
@@ -12,11 +12,10 @@ categories:
   - NVIDIA
   - Traefik
   - VMware
-  - Storage
-  - vExpert
-  - Hosting
-  - VMware Cloud on AWS
+  - VCF
+  - AWS
   - Veeam
+  - VMware Cloud on AWS
 tags:
   - #AI
   - #Architecture
@@ -41,11 +40,11 @@ image: https://jameskilby.co.uk/wp-content/uploads/2026/03/ai-stack-featured.png
 
 # My Self-Hosted AI Stack: Architecture Overview (Part 1)
 
-By[James](https://jameskilby.co.uk)March 27, 2026April 10, 2026 • 📖14 min read(2,818 words)
+By[James](https://jameskilby.co.uk) March 27, 2026April 16, 2026 • 📖14 min read(2,817 words)
 
-📅 **Published:** March 27, 2026• **Updated:** April 10, 2026
+📅 **Published:** March 27, 2026• **Updated:** April 16, 2026
 
-I’ve been building out my self-hosted AI stack over the past eighteen months. It’s been quite a journey for me personally and I have learnt a huge amount. Everything runs on my own [hardware](https://jameskilby.co.uk/lab/). All the containers sit behind Traefik, with public access done via Cloudflare Tunnels. The containers are orchestrated with Docker Compose driven by Portainer. The intention is to have no SaaS subscriptions, no data leaving the house unless I explicitly choose it. I have previously written about the underlying [Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/). This post goes into the AI stack itself. I will Also publish added a sanitised version of my Docker Compose and Ansible playbook to allow you to get up and running. I have previously spoken around this journey at [VMUG](https://youtu.be/Dt6m9JdsrIM). Although I haven’t fully moved away from commercial hosted AI tools I have significantly reduced their usage.
+I’ve been building out my self-hosted AI stack over the past eighteen months. It’s been quite a journey for me personally and I have learnt a huge amount. Everything runs on my own [hardware](https://jameskilby.co.uk/lab/). All the containers sit behind Traefik, with public access done via Cloudflare Tunnels. The containers are orchestrated with Docker Compose driven by Portainer. The intention is to have no SaaS subscriptions, no data leaving the house unless I explicitly choose it. I have previously written about the underlying [Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/). This post goes into the AI stack itself. I will also publish a sanitised version of my Docker Compose and Ansible playbook to allow you to get up and running. I have previously spoken around this journey at [VMUG](https://youtu.be/Dt6m9JdsrIM). Although I haven’t fully moved away from commercial hosted AI tools I have significantly reduced their usage.
 
 ## Table of Contents
 
@@ -147,7 +146,7 @@ This gives Langfuse richer data than the native OpenTelemetry tracing alone — 
 
 ## Routing Layer
 
-![Ai request routing](https://jameskilby.co.uk/wp-content/uploads/2026/03/AI-Cutdown-1024x371.png)
+![AI request routing diagram showing SmarterRouter directing traffic across the self-hosted AI stack](https://jameskilby.co.uk/wp-content/uploads/2026/03/AI-Cutdown-1024x371.png)
 
 ### SmarterRouter
 
@@ -177,12 +176,12 @@ It works with any OpenAI-compatible client, so a wide range of tools can connect
 
 A few features worth calling out from the config:
 
-  *  **VRAM-aware routing** — it monitors GPU VRAM and can automatically unload models using an LRU strategy when memory gets tight, then load the right model for the next request.
-  *  **Response caching** — a 500-entry cache with a 1-hour TTL avoids redundant inference on repeated or similar prompts.
-  *  **Signature injection** — responses are annotated with the model that actually handled them (`Model: {model}`), which is useful for debugging and understanding routing decisions.
-  *  **SQLite-backed routing state** — profiles and cache persist across restarts in a named volume.
-  *  **Automated backups for PostgreSQL** — the Open WebUI backup sidecar pattern works well and I’d like to extend it to pg_dump snapshots for the Langfuse, n8n, and Grafana databases.
-  *  **LiteLLM as a unified gateway** to front both local Ollama models and external APIs (OpenAI, Anthropic) behind a single endpoint, with spend tracking and per-user rate limits.
+  * **VRAM-aware routing** — it monitors GPU VRAM and can automatically unload models using an LRU strategy when memory gets tight, then load the right model for the next request.
+  * **Response caching** — a 500-entry cache with a 1-hour TTL avoids redundant inference on repeated or similar prompts.
+  * **Signature injection** — responses are annotated with the model that actually handled them (`Model: {model}`), which is useful for debugging and understanding routing decisions.
+  * **SQLite-backed routing state** — profiles and cache persist across restarts in a named volume.
+  * **Automated backups for PostgreSQL** — the Open WebUI backup sidecar pattern works well and I’d like to extend it to pg_dump snapshots for the Langfuse, n8n, and Grafana databases.
+  * **LiteLLM as a unified gateway** to front both local Ollama models and external APIs (OpenAI, Anthropic) behind a single endpoint, with spend tracking and per-user rate limits.
 
 The practical result is that you can send any prompt to a single endpoint and let the router decide whether it warrants a heavyweight model or whether something smaller and faster will do. For a homelab running a single GPU, this kind of intelligent load management makes a real difference.
     
@@ -252,65 +251,67 @@ This post is Part 1 of a multi-part series. The architecture overview above cove
 ## 📚 Related Posts
 
   * [My Self-Hosted AI Stack: Infrastructure Deep Dive (Part 2)](https://jameskilby.co.uk/2026/04/my-self-hosted-ai-stack-infrastructure-deep-dive-part-2/)
-  * [Octopus Agile Battery &amp; Solar Calculator](https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/)
-  * [Automating the deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
+  * [Free Octopus Agile Battery &#038; Solar Calculator: 5 Batteries Tested](https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/)
+  * [Automating the Deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
 
 ## Similar Posts
 
-  * [![Intel Optane NVMe Homelab](https://jameskilby.co.uk/wp-content/uploads/2023/04/intel_optane_ssd_900p_series_aic_-_right_angle_575px.png)](https://jameskilby.co.uk/2023/04/intel-optane/)
+  * [ ![VMware Holodeck Multi-Host VCF: Lab Setup & Configuration](https://jameskilby.co.uk/wp-content/uploads/2023/12/Holodeck-Overview.png) ](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
 
-[Homelab](https://jameskilby.co.uk/category/homelab/) | [Storage](https://jameskilby.co.uk/category/storage/) | [vExpert](https://jameskilby.co.uk/category/vexpert/)
+[VMware](https://jameskilby.co.uk/category/vmware/) | [VCF](https://jameskilby.co.uk/category/vmware/vcf/)
 
-### [Intel Optane NVMe Homelab](https://jameskilby.co.uk/2023/04/intel-optane/)
+### [VMware Holodeck Multi-Host VCF: Lab Setup & Configuration](https://jameskilby.co.uk/2024/01/multihost-holodeck-vcf/)
 
-By[James](https://jameskilby.co.uk)April 17, 2023October 1, 2025
+By[James](https://jameskilby.co.uk) January 17, 2024April 11, 2026
 
-I have been a VMware vExpert for many years and it has brought me many many benefits over the years. I don’t think it’s an understatement to say I probably wouldn’t have my current role within VMware without it. One of the best benefits has been access to a huge amount of licences for VMware…
+How to Deploy VMware Holodeck on multiple hosts
 
-  * [![Starlink](https://jameskilby.co.uk/wp-content/uploads/2022/10/spacexs-starlink-to-supply-free-satellite-internet-to-famili_u44u.1920-768x432.jpg)](https://jameskilby.co.uk/2022/10/starlink/)
+  * [ ![Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU](https://jameskilby.co.uk/wp-content/uploads/2024/10/pexels-tara-winstead-8386440-768x512.jpg) ](https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/)
 
-[Homelab](https://jameskilby.co.uk/category/homelab/) | [Hosting](https://jameskilby.co.uk/category/hosting/)
+[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Docker](https://jameskilby.co.uk/category/docker/) | [Homelab](https://jameskilby.co.uk/category/homelab/)
 
-### [Starlink](https://jameskilby.co.uk/2022/10/starlink/)
+### [Self Hosting AI Stack using vSphere, Docker and NVIDIA GPU](https://jameskilby.co.uk/2024/10/self-hosting-ai-stack-using-vsphere-docker-and-nvidia-gpu/)
 
-By[James](https://jameskilby.co.uk)October 11, 2022February 19, 2026
+By[James](https://jameskilby.co.uk) October 11, 2024March 10, 2026
 
-Since moving to Dorset last year internet connectivity has been the bane of my existence. Currently, I have an ADSL connection provided by my old employer Zen and a 5G connection provided by Three. These are both plumbed into my WatchGuard Firewall with multi-wan configured. Most of the time the usability is ok but there…
+Artificial intelligence is all the rage at the moment, It’s getting included in every product announcement from pretty much every vendor under the sun. Nvidia’s stock price has gone to the moon. So I thought I better get some knowledge and understand some of this. As it’s a huge field and I wasn’t exactly sure…
 
-  * [![Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash-768x417.png)](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
+  * [ ![VMware Holodeck on Older CPUs: Fixing Compatibility Issues](https://jameskilby.co.uk/wp-content/uploads/2024/01/40oOd8IipPvtrPJs-1198788743-768x737.jpg) ](https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/)
+
+[VCF](https://jameskilby.co.uk/category/vmware/vcf/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+
+### [VMware Holodeck on Older CPUs: Fixing Compatibility Issues](https://jameskilby.co.uk/2024/01/holodeck-cpu-fixes/)
+
+By[James](https://jameskilby.co.uk) January 18, 2024April 11, 2026
+
+How to deploy Holodeck with Legacy CPU’s
+
+  * [ ![Monitoring VMware Cloud on AWS: Tools & Approaches \(Part 1\)](https://jameskilby.co.uk/wp-content/uploads/2026/03/VMConAWS.png.webp) ](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
+
+[VMware](https://jameskilby.co.uk/category/vmware/) | [AWS](https://jameskilby.co.uk/category/aws/) | [Veeam](https://jameskilby.co.uk/category/veeam/)
+
+### [Monitoring VMware Cloud on AWS: Tools & Approaches (Part 1)](https://jameskilby.co.uk/2019/12/monitoring-vmc-part-1/)
+
+By[James](https://jameskilby.co.uk) December 17, 2019April 11, 2026
+
+As previously mentioned I have been working a lot with VMware Cloud on AWS and one of the questions that often crops up is around an approach to monitoring. This is an interesting topic as VMC is technically “as a service” therefore the monitoring approach is a bit different. Technically AWS and VMware’s SRE teams…
+
+  * [ ![Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/wp-content/uploads/2026/01/Firefly_Gemini-Flash-768x417.png) ](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
 
 [VMware](https://jameskilby.co.uk/category/vmware/) | [VMware Cloud on AWS](https://jameskilby.co.uk/category/vmware/vmware-cloud-on-aws/)
 
 ### [Using Content Libraries in VMC to deploy software faster](https://jameskilby.co.uk/2026/01/using-content-libraries-in-vmc-to-deploy-software-faster/)
 
-By[James](https://jameskilby.co.uk)January 27, 2026March 12, 2026
+By[James](https://jameskilby.co.uk) January 27, 2026March 12, 2026
 
 How to leverage Content Libraries to deploy into VMware Cloud on AWS faster.
 
-  * [Homelab](https://jameskilby.co.uk/category/homelab/) | [Veeam](https://jameskilby.co.uk/category/veeam/) | [VMware](https://jameskilby.co.uk/category/vmware/)
+  * [ ![Homelab Storage Upgrade: Synology DS918 for VMware & NFS](https://jameskilby.co.uk/wp-content/uploads/2023/04/81-ZoEW24UL._SL1500_-768x461.jpg) ](https://jameskilby.co.uk/2019/02/lab-storage-2/)
 
-### [Lab Update – Desired Workloads](https://jameskilby.co.uk/2022/01/lab-update-part-5-desired-workloads/)
+[Homelab](https://jameskilby.co.uk/category/homelab/)
 
-By[James](https://jameskilby.co.uk)January 6, 2022March 10, 2026
+### [Homelab Storage Upgrade: Synology DS918 for VMware & NFS](https://jameskilby.co.uk/2019/02/lab-storage-2/)
 
-My lab is always undergoing change. Partially as I want to try new things or new ways of doing things. Sometimes because I break things (not always by accident) sometimes it’s a great way to learn…. I decided to list the workloads I am looking to run (some of these are already in place) Infrastucture…
+By[James](https://jameskilby.co.uk) February 10, 2019April 11, 2026
 
-  * [![How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/wp-content/uploads/2025/01/Screenshot-2025-01-29-at-23.30.47-768x411.png)](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/)
-
-[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Docker](https://jameskilby.co.uk/category/docker/) | [Hosting](https://jameskilby.co.uk/category/hosting/)
-
-### [How I Migrated from Pocket to Hoarder with AI Integration](https://jameskilby.co.uk/2025/01/how-i-migrated-from-pocket-to-hoarder-and-introduced-some-ai-along-the-way/)
-
-By[James](https://jameskilby.co.uk)January 29, 2025March 10, 2026
-
-Update: Hoarder has now been renamed to Karakeep due to a trademark issue I’ve been on a mission recently to regain control of my data. I haven’t yet faced the humongous task of moving my main email from Gmail, but I have had some successes with other cloud services and a win is a win…….
-
-  * [![Octopus Agile Battery & Solar Calculator](https://jameskilby.co.uk/wp-content/uploads/2026/03/Octopus-Energy-logo.jpg)](https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/)
-
-[Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Automation](https://jameskilby.co.uk/category/automation/)
-
-### [Octopus Agile Battery & Solar Calculator](https://jameskilby.co.uk/2026/03/octopus-agile-battery-solar-calculator/)
-
-By[James](https://jameskilby.co.uk)March 9, 2026March 12, 2026
-
-I am quite a heavy consumer of electricity at home. This is primarily driven by my lab but having a young son and two golden retrievers means more washing and drying. As a result I am always looking to try and reduce the electrical costs as it’s not cheap in the UK. Problem Sadly my…
+Lab Storage Update. Since starting my new role with Xtravirt my Homelab has gone through several fairly significant changes. At the moment it’s very much focused on the VMware stack and one of the things I needed was some more storage and especially some more storage performance. With that in mind, I purchased a new Synology…

@@ -1,8 +1,8 @@
 ---
-title: "VMware Cloud on AWS (VMC) Resources & Documentation Hub"
+title: "VMware Cloud on AWS (VMC) – Links & Resources"
 description: "Curated VMware Cloud on AWS (VMC) resources: official docs, release notes, HCX, networking, automation, Aria integration and hands-on blogs."
 date: 2025-03-18T12:20:48+00:00
-modified: 2026-04-16T20:14:26+00:00
+modified: 2026-04-16T21:45:03+00:00
 author: James Kilby
 categories:
   - Patrick Kremer

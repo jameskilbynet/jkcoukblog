@@ -968,32 +968,32 @@
   </url>
   <url>
     <loc>https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/Add-PCI-Device-1-402x1024.png</image:loc>
-      <image:title>Add PCI Device</image:title>
-      <image:caption>Add PCI Device</image:caption>
+      <image:title>Adding a PCI device for NVIDIA GPU passthrough in vSphere VM settings</image:title>
+      <image:caption>Adding a PCI device for NVIDIA GPU passthrough in vSphere VM settings</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/GPU-Profiles-1024x397.png</image:loc>
-      <image:title>GPU Profiles</image:title>
-      <image:caption>GPU Profiles</image:caption>
+      <image:title>NVIDIA vGPU profile selection in vSphere for AI homelab workloads</image:title>
+      <image:caption>NVIDIA vGPU profile selection in vSphere for AI homelab workloads</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/nvidia-smi-1024x654.png</image:loc>
-      <image:title>Nvidia Smi</image:title>
-      <image:caption>Nvidia Smi</image:caption>
+      <image:title>nvidia-smi output confirming GPU is detected inside the Ubuntu homelab VM</image:title>
+      <image:caption>nvidia-smi output confirming GPU is detected inside the Ubuntu homelab VM</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2025/01/Traefik-Docker-Setup-2-1024x342.png</image:loc>
-      <image:title>Traefik Docker Setup</image:title>
-      <image:caption>Traefik Docker Setup</image:caption>
+      <image:title>Ansible playbook configuring Traefik and Docker on the homelab AI VM</image:title>
+      <image:caption>Ansible playbook configuring Traefik and Docker on the homelab AI VM</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/nginx-cert-1024x997.png</image:loc>
-      <image:title>Nginx Cert</image:title>
-      <image:caption>Nginx Cert</image:caption>
+      <image:title>Nginx TLS certificate verification via Traefik in the homelab setup</image:title>
+      <image:caption>Nginx TLS certificate verification via Traefik in the homelab setup</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/TraefikDashboard-1024x478.png</image:loc>
@@ -1002,58 +1002,58 @@
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/Traefik-Variables-804x1024.png</image:loc>
-      <image:title>Traefik Variables</image:title>
-      <image:caption>Traefik Variables</image:caption>
+      <image:title>Traefik variable definitions in the Ansible playbook for the AI homelab</image:title>
+      <image:caption>Traefik variable definitions in the Ansible playbook for the AI homelab</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/SemaphoreSecrets-1024x262.png</image:loc>
-      <image:title>Semaphore Secrets</image:title>
-      <image:caption>Semaphore Secrets</image:caption>
+      <image:title>Ansible secrets configuration in Semaphore for secure homelab automation</image:title>
+      <image:caption>Ansible secrets configuration in Semaphore for secure homelab automation</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/httpd-1024x383.png</image:loc>
-      <image:title>Httpd</image:title>
-      <image:caption>Httpd</image:caption>
+      <image:title>Apache httpd test response confirming Docker and Traefik are running correctly</image:title>
+      <image:caption>Apache httpd test response confirming Docker and Traefik are running correctly</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/Semaphore_repo.png</image:loc>
-      <image:title>Semaphore Repo</image:title>
-      <image:caption>Semaphore Repo</image:caption>
+      <image:title>Adding a Git repository to Semaphore for Ansible homelab automation</image:title>
+      <image:caption>Adding a Git repository to Semaphore for Ansible homelab automation</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/NewKey-802x1024.png</image:loc>
-      <image:title>New Key</image:title>
-      <image:caption>New Key</image:caption>
+      <image:title>Creating a new SSH key in Semaphore for Ansible authentication</image:title>
+      <image:caption>Creating a new SSH key in Semaphore for Ansible authentication</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/PassAuth.png</image:loc>
-      <image:title>Pass Auth</image:title>
-      <image:caption>Pass Auth</image:caption>
+      <image:title>Semaphore password authentication configuration for Ansible inventory access</image:title>
+      <image:caption>Semaphore password authentication configuration for Ansible inventory access</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/blogtest_ansible_inventory-670x1024.png</image:loc>
-      <image:title>Blogtest Ansible Inventory</image:title>
-      <image:caption>Blogtest Ansible Inventory</image:caption>
+      <image:title>Ansible inventory file showing homelab host configuration in Semaphore</image:title>
+      <image:caption>Ansible inventory file showing homelab host configuration in Semaphore</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/VariableGroup-813x1024.png</image:loc>
-      <image:title>Variable Group</image:title>
-      <image:caption>Variable Group</image:caption>
+      <image:title>Semaphore variable group configuration for Ansible homelab automation</image:title>
+      <image:caption>Semaphore variable group configuration for Ansible homelab automation</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/Variable-Group-1024x547.png</image:loc>
-      <image:title>Variable Group</image:title>
-      <image:caption>Variable Group</image:caption>
+      <image:title>Expanded Semaphore variable group showing all Ansible environment variables</image:title>
+      <image:caption>Expanded Semaphore variable group showing all Ansible environment variables</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/01/TaskTemplates-1024x263.png</image:loc>
-      <image:title>Task Templates</image:title>
-      <image:caption>Task Templates</image:caption>
+      <image:title>Semaphore task templates for running Ansible playbooks in the homelab</image:title>
+      <image:caption>Semaphore task templates for running Ansible playbooks in the homelab</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://jameskilby.co.uk/2026/03/my-self-hosted-ai-stack-a-technical-deep-dive/</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/03/ai-stack-featured-1024x538.png</image:loc>
@@ -1062,8 +1062,8 @@
     </image:image>
     <image:image>
       <image:loc>https://jameskilby.co.uk/wp-content/uploads/2026/03/AI-Cutdown-1024x371.png</image:loc>
-      <image:title>Ai request routing</image:title>
-      <image:caption>Ai request routing</image:caption>
+      <image:title>AI request routing diagram showing SmarterRouter directing traffic across the self-hosted AI stack</image:title>
+      <image:caption>AI request routing diagram showing SmarterRouter directing traffic across the self-hosted AI stack</image:caption>
     </image:image>
   </url>
   <url>
@@ -1181,7 +1181,7 @@
   </url>
   <url>
     <loc>https://jameskilby.co.uk/evs/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-16</lastmod>
   </url>
   <url>
     <loc>https://jameskilby.co.uk/feed/</loc>

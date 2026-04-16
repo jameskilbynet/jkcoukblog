@@ -1,11 +1,11 @@
 ---
-title: "AWS EVS"
-description: "Access vital resources for Amazon Elastic VMware Service. Stay updated with the latest docs, pricing, and service announcements. Get started now!"
+title: "Amazon Elastic VMware Service (AWS EVS) – Links & Resources"
+description: "A curated collection of links and resources for Amazon Elastic VMware Service (AWS EVS) — official docs, design guides, pricing, networking, HCX, and the latest announcements from Broadcom and AWS."
 date: 2025-06-18T11:21:48+00:00
-modified: 2026-03-27T22:51:10+00:00
+modified: 2026-04-16T21:43:00+00:00
 author: James Kilby
 url: https://jameskilby.co.uk/evs/
 image: https://jameskilby.co.uk/wp-content/uploads/2026/02/maxresdefault.jpg
 ---
 
-📅 **Published:** June 18, 2025• **Updated:** March 27, 2026
+📅 **Published:** June 18, 2025• **Updated:** April 16, 2026

@@ -711,10 +711,10 @@
     },
     {
       "slug": "automating-the-deployment-of-my-ai-homelab-and-other-improvements",
-      "title": "Automating the deployment of my Homelab AI Infrastructure",
-      "description": "In a previous post, I wrote about using my VMware lab with an NVIDIA Tesla P4 for running some AI services. This deployment was done with the P4 GPU in passt...",
+      "title": "Automating the Deployment of my Homelab AI Infrastructure",
+      "description": "How I use Ansible to fully automate the deployment of an Ubuntu VM with NVIDIA GPU passthrough, Docker, Traefik, and an AI stack — managed end-to-end with Semaphore in my homelab.",
       "date": "2026-02-09T11:54:54Z",
-      "modified": "2026-03-15T17:08:18Z",
+      "modified": "2026-04-16T21:50:41Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/",
       "markdown_url": "/markdown/posts/automating-the-deployment-of-my-ai-homelab-and-other-improvements.md",
@@ -728,13 +728,10 @@
         "NVIDIA",
         "Traefik",
         "VMware",
+        "VMware Cloud on AWS",
+        "Personal",
         "Docker",
-        "Veeam",
-        "Storage",
-        "vExpert",
-        "Mikrotik",
-        "Networking",
-        "VMware Cloud on AWS"
+        "Automation"
       ],
       "tags": [
         null,
@@ -744,7 +741,7 @@
         null
       ],
       "image": "https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv.png",
-      "excerpt": "![Vmware Nvidia Logos Ee2F18Dc 615D 4C9E 8F11 9C3C2Ce2Bf37 Prv](https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv.png)\n\n[Ansible](https://jameskilby.co.uk/category/ansible/) | [Artificial Intelligence](https://jameskilby.co.uk/category/a..."
+      "excerpt": "![](https://jameskilby.co.uk/wp-content/uploads/2026/01/VMware-NVIDIA-logos_ee2f18dc-615d-4c9e-8f11-9c3c2ce2bf37-prv.png)\n\n[Ansible](https://jameskilby.co.uk/category/ansible/) | [Artificial Intelligence](https://jameskilby.co.uk/category/artificial-intelligence/) | [Containers](https://jameskilby.c..."
     },
     {
       "slug": "nutanix-ce",
@@ -1196,9 +1193,9 @@
     {
       "slug": "my-self-hosted-ai-stack-a-technical-deep-dive",
       "title": "My Self-Hosted AI Stack: Architecture Overview (Part 1)",
-      "description": "Build a fully private AI stack on your own hardware with Ollama, Open WebUI, n8n, ComfyUI, Qdrant & SearxNG on Docker Compose. Full technical deep dive with ...",
+      "description": "Build a fully private AI stack on your own hardware with Ollama, Open WebUI, n8n, ComfyUI, Qdrant & SearxNG on Docker Compose. Full technical deep dive with configs and observability.",
       "date": "2026-03-27T11:56:33Z",
-      "modified": "2026-04-10T22:04:27Z",
+      "modified": "2026-04-16T21:48:23Z",
       "author": "James Kilby",
       "url": "https://jameskilby.co.uk/2026/03/my-self-hosted-ai-stack-a-technical-deep-dive/",
       "markdown_url": "/markdown/posts/my-self-hosted-ai-stack-a-technical-deep-dive.md",
@@ -1211,11 +1208,10 @@
         "NVIDIA",
         "Traefik",
         "VMware",
-        "Storage",
-        "vExpert",
-        "Hosting",
-        "VMware Cloud on AWS",
-        "Veeam"
+        "VCF",
+        "AWS",
+        "Veeam",
+        "VMware Cloud on AWS"
       ],
       "tags": [
         null,

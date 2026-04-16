@@ -1,6 +1,6 @@
 # Markdown Content Sitemap
 
-Generated: 2026-04-16 21:05:53
+Generated: 2026-04-16 21:55:42
 
 Total Files: 83
 
@@ -201,7 +201,7 @@ Total Files: 83
 - [AWS For Beginners: IAM Setup, Root Security & Billing Alerts](https://jameskilby.co.uk/2018/03/aws-for-beginners1/) - 2018-03-30 23:13:21+00:00
   - Markdown: `/markdown/posts/aws-for-beginners1.md`
 
-- [Automating the deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/) - 2026-02-09 11:54:54+00:00
+- [Automating the Deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/) - 2026-02-09 11:54:54+00:00
   - Markdown: `/markdown/posts/automating-the-deployment-of-my-ai-homelab-and-other-improvements.md`
 
 - [Automated VCF 9 Offline Depot](https://jameskilby.co.uk/2026/04/automated-vcf-9-offline-depot/) - 2026-04-10 11:36:03+00:00

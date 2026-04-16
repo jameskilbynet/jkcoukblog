@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1147
+1148
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-16
 
-17:15:49
+20:22:55
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -215,11 +215,5 @@ Add a 301 www→non-www redirect at the start of _worker.template.js and public/
 
 Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
 
-2026-04-11 751046cDocs
-
-Preview noindex, CDN purge, sitemap priority
-
-Add preview-domain noindex and propagate hostname to cache handlers in the Cloudflare worker (serve disallow-all robots.txt for jkcoukblog.pages.dev and add X-Robots-Tag). Update getSecurityHeaders to conditionally set X-Robots-Tag and pass hostname through KV/CacheAPI handlers. Add grep check to .claude settings and two docs to .gitignore. Rename page titles in stats/changelog generators to “James Kilby”. Extend purge_html_kv_cache.py with a purge_cdn_cache() function, --skip-cdn flag, CLOUDFLARE_ZONE_ID support, and improved docs/dry-run output. Enhance wp_to_static_generator.py to emit <priority> in sitemap entries and compute priorities based on URL patterns and post age.
-
-Page generated: 2026-04-16 20:22:50 UTC  
+Page generated: 2026-04-16 21:08:01 UTC  
 Changelog powered by Git history and Lighthouse CI
