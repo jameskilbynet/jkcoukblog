@@ -13,13 +13,13 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1137
+1139
 
 Git commits
 
 ### Repository Age
 
-194
+195
 
 Days active
 
@@ -31,9 +31,9 @@ Active contributors
 
 ### Last Deployment
 
-2026-04-15
+2026-04-16
 
-08:20:47
+11:26:44
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,14 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-16 8c89ec4Other
+
+Bump Actions checkout and setup-python versions
+
+Upgrade GitHub Actions used in workflow files: actions/checkout@v4 -> actions/checkout@v5 across all workflows, and actions/setup-python@v4/@v5 -> actions/setup-python@v6 where present. Updated workflows: deploy-static-site.yml, enable-cloudflare-indexing.yml, quality-checks.yml, rollback-site.yml, secret-scan.yml, spell-check-consolidated.yml. No behavioral changes aside from using newer action releases; existing fetch-depth and Python version settings are preserved.
+
+  
 
 2026-04-15 5ea7e91Other
 
@@ -213,5 +221,5 @@ chore: remove dead Pages Function + route Worker layers, add HTTP timeout
 
 Cleanup driven by a code review of the cache layers.
 
-Page generated: 2026-04-15 21:43:24 UTC  
+Page generated: 2026-04-16 10:37:00 UTC  
 Changelog powered by Git history and Lighthouse CI
