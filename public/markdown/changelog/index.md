@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1144
+1146
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-16
 
-16:14:21
+18:08:05
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,12 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-16 b4dc9ddImprovement
+
+Update Claude settings and rotate indexnow key
+
+Add new probes to .claude/settings.local.json (Bash(xxd) and WebFetch for www.bing.com) and update the stored IndexNow key in .indexnow_key (key rotated). These changes enable additional local checks and refresh the indexing key without altering other configuration.
 
 2026-04-16 3a9b5caFeature
 
@@ -215,9 +221,5 @@ Preview noindex, CDN purge, sitemap priority
 
 Add preview-domain noindex and propagate hostname to cache handlers in the Cloudflare worker (serve disallow-all robots.txt for jkcoukblog.pages.dev and add X-Robots-Tag). Update getSecurityHeaders to conditionally set X-Robots-Tag and pass hostname through KV/CacheAPI handlers. Add grep check to .claude settings and two docs to .gitignore. Rename page titles in stats/changelog generators to “James Kilby”. Extend purge_html_kv_cache.py with a purge_cdn_cache() function, --skip-cdn flag, CLOUDFLARE_ZONE_ID support, and improved docs/dry-run output. Enhance wp_to_static_generator.py to emit <priority> in sitemap entries and compute priorities based on URL patterns and post age.
 
-2026-04-11 21bab28Feature
-
-fix(seo): inject canonical tags when absent, add KV cache bulk-purge
-
-Page generated: 2026-04-16 15:24:04 UTC  
+Page generated: 2026-04-16 17:15:45 UTC  
 Changelog powered by Git history and Lighthouse CI
