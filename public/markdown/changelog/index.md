@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1159
+1160
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-17
 
-11:08:09
+10:12:26
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -201,13 +201,5 @@ Reuse optimized assets, refine validation output
 
 Workflow: improve reuse of previously-optimized assets by rsync-ing AVIF/WebP from public/ into static-output with --ignore-existing, count copied files, and replace originals only when the previous version is smaller. Preserve and reuse .br/.gz only when the static-output source matches the public source (compare sizes) and report how many compressed files were reused vs skipped as stale. Also remove redundant copy to public before validation.
 
-  
-
-2026-04-11 f10e886Other
-
-Deduplicate head links and robust CSS preload
-
-Add a pre-parse cleanup that strips accumulated <noscript> fallbacks and deduplicates <link> tags in <head> (_dedup_head_links), preventing runaway duplication on repeated pipeline runs. Make CSS externalization idempotent and self-healing: convert stylesheets to preload+onload safely, skip critical files (brutalist-theme, fonts.css), and add exactly one noscript fallback per preload link. Also adjust insertion order for the generated stylesheet link. Finally, switch BeautifulSoup usage in wp_to_static_generator.py from 'lxml' to 'html.parser' to improve parsing robustness.
-
-Page generated: 2026-04-17 10:12:22 UTC  
+Page generated: 2026-04-17 10:23:32 UTC  
 Changelog powered by Git history and Lighthouse CI
