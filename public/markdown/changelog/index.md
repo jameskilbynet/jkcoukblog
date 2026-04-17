@@ -13,13 +13,13 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1151
+1152
 
 Git commits
 
 ### Repository Age
 
-195
+196
 
 Days active
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-16
 
-23:01:16
+22:09:41
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -207,9 +207,5 @@ feat: add Google image sitemap support
 
 Extends create_sitemap() to emit <image:image> entries for each post/page
 
-2026-04-11 3649944Other
-
-Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
-
-Page generated: 2026-04-16 22:09:36 UTC  
+Page generated: 2026-04-17 06:54:13 UTC  
 Changelog powered by Git history and Lighthouse CI
