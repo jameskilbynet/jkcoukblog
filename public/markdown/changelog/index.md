@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1155
+1157
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-17
 
-09:42:53
+11:01:37
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,12 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-17 a291f50Fix
+
+fix: bump Node to 20 for Wrangler and correct KV upload success reporting
+
+Wrangler requires Node 20+, so the Node 18 pin caused the KV search index
 
 2026-04-17 6f31482Improvement
 
@@ -201,11 +207,5 @@ Add a pre-parse cleanup that strips accumulated <noscript> fallbacks and dedupli
 
 fix: eliminate noscript accumulation and fix image sitemap parser
 
-2026-04-11 236d8e3Fix
-
-fix: resolve noscript tag explosion from non-idempotent CSS preload conversion
-
-Root cause: _convert_css_to_preload() matched fallback links inside existing
-
-Page generated: 2026-04-17 09:58:00 UTC  
+Page generated: 2026-04-17 10:06:14 UTC  
 Changelog powered by Git history and Lighthouse CI
