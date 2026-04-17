@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1157
+1159
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-17
 
-11:01:37
+11:08:09
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,12 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-17 3273384Fix
+
+fix: use Wrangler v4 kv key syntax for search index upload
+
+Wrangler v4 removed the colon form `kv:key put` in favour of `kv key put`.
 
 2026-04-17 a291f50Fix
 
@@ -203,9 +209,5 @@ Deduplicate head links and robust CSS preload
 
 Add a pre-parse cleanup that strips accumulated <noscript> fallbacks and deduplicates <link> tags in <head> (_dedup_head_links), preventing runaway duplication on repeated pipeline runs. Make CSS externalization idempotent and self-healing: convert stylesheets to preload+onload safely, skip critical files (brutalist-theme, fonts.css), and add exactly one noscript fallback per preload link. Also adjust insertion order for the generated stylesheet link. Finally, switch BeautifulSoup usage in wp_to_static_generator.py from 'lxml' to 'html.parser' to improve parsing robustness.
 
-2026-04-11 6e4b9d0Fix
-
-fix: eliminate noscript accumulation and fix image sitemap parser
-
-Page generated: 2026-04-17 10:06:14 UTC  
+Page generated: 2026-04-17 10:12:22 UTC  
 Changelog powered by Git history and Lighthouse CI
