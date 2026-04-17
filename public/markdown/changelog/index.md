@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1152
+1154
 
 Git commits
 
@@ -31,9 +31,9 @@ Active contributors
 
 ### Last Deployment
 
-2026-04-16
+2026-04-17
 
-22:09:41
+10:24:26
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,12 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-17 6f31482Improvement
+
+Update deploy-static-site.yml
+
+  
 
 2026-04-16 ba60ef5Other
 
@@ -207,5 +213,5 @@ feat: add Google image sitemap support
 
 Extends create_sitemap() to emit <image:image> entries for each post/page
 
-Page generated: 2026-04-17 06:54:13 UTC  
+Page generated: 2026-04-17 09:42:49 UTC  
 Changelog powered by Git history and Lighthouse CI
