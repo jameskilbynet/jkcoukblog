@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1149
+1151
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-16
 
-21:08:06
+23:01:16
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,12 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-16 ba60ef5Other
+
+Only install missing system dependencies
+
+Change the workflow to probe for required system binaries and Python modules first, accumulating any missing packages into MISSING_PKGS. If nothing is missing, skip apt entirely; otherwise run apt-get update/install only for the missing items. This avoids unnecessary dpkg lock waits on long-lived self-hosted runners and speeds up the job startup. The script checks jq, bc, avifenc, optipng, jpegoptim, cwebp, python3-pip and python3-venv and still prints versions after installation.
 
 2026-04-16 b4dc9ddImprovement
 
@@ -205,11 +211,5 @@ Extends create_sitemap() to emit <image:image> entries for each post/page
 
 Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
 
-2026-04-11 e4a85efFeature
-
-Add www→non-www redirect to worker
-
-Add a 301 www→non-www redirect at the start of _worker.template.js and public/_worker.js so cross-domain canonical redirects run in Advanced Mode Workers (which ignore _redirects). Remove the corresponding rule from public/_redirects and add a comment pointing to the worker. This ensures a single-hop canonical redirect and fixes Google Search Console crawl errors for www.jameskilby.co.uk.
-
-Page generated: 2026-04-16 21:57:51 UTC  
+Page generated: 2026-04-16 22:09:36 UTC  
 Changelog powered by Git history and Lighthouse CI
