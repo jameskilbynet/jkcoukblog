@@ -90,7 +90,7 @@ I am quite a heavy consumer of electricity at home. This is primarily driven by 
 
 ## [Automating the Deployment of my Homelab AI Infrastructure](https://jameskilby.co.uk/2026/02/automating-the-deployment-of-my-ai-homelab-and-other-improvements/)
 
-By[James](https://jameskilby.co.uk) February 9, 2026April 16, 2026
+By[James](https://jameskilby.co.uk) February 9, 2026April 18, 2026
 
 Learn how to use Ansible to configure an Ubuntu VM for use with NVIDIA based AI workloads in vSphere
 
