@@ -13,7 +13,7 @@ Site improvements, deployments, and performance metrics
 
 ### Total Deployments
 
-1165
+1168
 
 Git commits
 
@@ -33,7 +33,7 @@ Active contributors
 
 2026-04-18
 
-13:58:50
+20:18:12
 
 ## 🚀 Lighthouse Performance Scores
 
@@ -56,6 +56,16 @@ Best Practices
 SEO
 
 ## Recent Changes
+
+2026-04-18 d54fdd3Fix
+
+fix: stamp worker and manifest before brotli compression
+
+Run generate_soft404_artefacts.py and stamp_worker_manifest.py against
+
+2026-04-18 c94b6f0Improvement
+
+Update SEO.md
 
 2026-04-18 251c3aeFeature
 
@@ -193,15 +203,5 @@ Improve taxonomy name extraction from title
 
 Refine the regex used to extract taxonomy names from page titles. Use a non-greedy match for patterns like "Docker Archives - James Kilby" and add a fallback to the previous pattern when the 'Archives' token isn't present. Also update the comment/example. This prevents incorrect captures for taxonomy names that include hyphens or other characters.
 
-2026-04-12 39c71d5Other
-
-Merge branch 'main' of https://github.com/jameskilbynet/jkcoukblog
-
-2026-04-12 09703e2Other
-
-Deduplicate meta descriptions on paginated pages
-
-Add fix_pagination_meta_description to detect /page/N/ URLs and append " - Page N" to meta description, og:description and twitter:description to avoid duplicate SEO content. The method strips trailing periods, truncates content to keep it within ~160 characters (adding ellipses if needed), and logs a brief message per modified page. Also call this new method during page processing so paginated archive pages get unique descriptions.
-
-Page generated: 2026-04-18 13:03:23 UTC  
+Page generated: 2026-04-18 19:22:26 UTC  
 Changelog powered by Git history and Lighthouse CI
