@@ -23,6 +23,33 @@
 const PATH_MANIFEST_RAW = /*__PATH_MANIFEST_START__*/null/*__PATH_MANIFEST_END__*/;
 const PATH_MANIFEST = PATH_MANIFEST_RAW ? new Set(PATH_MANIFEST_RAW) : null;
 
+// Canonical production origin used for cache keys. Hardcoded so a request
+// arriving on the Pages preview domain can't write/read entries in the
+// production Cache API namespace (defense-in-depth — `url.origin` is
+// already controlled by Pages bindings, but tying cache keys to a single
+// origin removes the ambient-authority footgun entirely).
+const CANONICAL_ORIGIN = 'https://jameskilby.co.uk';
+
+// Constant-time string comparison. Web Crypto in Workers does not expose
+// timingSafeEqual, so we implement the textbook XOR-accumulate. Length
+// mismatch returns false immediately — tokens are fixed-length so this
+// leaks nothing useful.
+function timingSafeEqual(a, b) {
+  if (typeof a !== 'string' || typeof b !== 'string') return false;
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) {
+    diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return diff === 0;
+}
+
+function checkAdminToken(request, env) {
+  const token = request.headers.get('X-Purge-Token');
+  if (!env.PURGE_TOKEN || !token) return false;
+  return timingSafeEqual(token, env.PURGE_TOKEN);
+}
+
 /**
  * Is this path a known content URL?
  *
@@ -330,13 +357,41 @@ async function handleCacheAPI(request, env, ctx, path, hostname = '') {
  * Pass hostname to automatically add X-Robots-Tag: noindex on the Pages preview domain.
  */
 function getSecurityHeaders(hostname = '') {
+  // CSP is split into directives for readability. Notable choices:
+  // - 'unsafe-eval' is dropped: nothing on the site uses eval/new Function.
+  // - 'unsafe-inline' for script-src is kept *only* because Schema.org
+  //   JSON-LD blocks vary per page — moving to nonce-based CSP requires
+  //   per-request HTML rewriting in the worker (planned follow-up).
+  // - object-src 'none', base-uri 'self', form-action 'self', and
+  //   frame-ancestors 'self' close common XSS / clickjacking vectors at
+  //   zero cost.
+  // - upgrade-insecure-requests is belt-and-braces; the site is HTTPS-only
+  //   already but this protects mixed-content edge cases in third-party
+  //   embeds.
+  const csp = [
+    "default-src 'self'",
+    "script-src 'self' 'unsafe-inline' plausible.io plausible.jameskilby.cloud https://utteranc.es cdn.credly.com cdn.youracclaim.com",
+    "style-src 'self' 'unsafe-inline' fonts.googleapis.com",
+    "font-src 'self' fonts.gstatic.com",
+    "img-src 'self' data: https:",
+    "connect-src 'self' plausible.io plausible.jameskilby.cloud https://api.github.com",
+    "frame-src 'self' plausible.jameskilby.cloud https://utteranc.es https://www.youtube.com https://youtube.com https://embed.acast.com https://www.credly.com https://www.youracclaim.com",
+    "object-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    "frame-ancestors 'self'",
+    "upgrade-insecure-requests"
+  ].join('; ');
+
   const headers = {
-    'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' plausible.io plausible.jameskilby.cloud https://utteranc.es cdn.credly.com cdn.youracclaim.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' plausible.io plausible.jameskilby.cloud https://api.github.com; frame-src 'self' plausible.jameskilby.cloud https://utteranc.es https://www.youtube.com https://youtube.com https://embed.acast.com https://www.credly.com https://www.youracclaim.com;",
+    'Content-Security-Policy': csp,
     'X-Frame-Options': 'SAMEORIGIN',
     'X-Content-Type-Options': 'nosniff',
     'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload',
     'Referrer-Policy': 'strict-origin-when-cross-origin',
-    'Permissions-Policy': 'geolocation=(), microphone=(), camera=()'
+    'Permissions-Policy': 'geolocation=(), microphone=(), camera=(), interest-cohort=()',
+    'Cross-Origin-Opener-Policy': 'same-origin',
+    'Cross-Origin-Resource-Policy': 'same-site'
   };
 
   // Prevent the Cloudflare Pages preview domain from appearing in search results
@@ -410,13 +465,11 @@ async function handlePurge(request, env) {
     });
   }
 
-  const url = new URL(request.url);
-  const purgeToken = request.headers.get('X-Purge-Token');
-
-  if (!env.PURGE_TOKEN || purgeToken !== env.PURGE_TOKEN) {
+  if (!checkAdminToken(request, env)) {
     return new Response('Unauthorized', { status: 401 });
   }
 
+  const url = new URL(request.url);
   const all = url.searchParams.get('all');
   const path = url.searchParams.get('path');
 
@@ -431,10 +484,12 @@ async function handlePurge(request, env) {
         const list = await env.HTML_CACHE.list({ cursor });
         const deletes = list.keys.map(async (key) => {
           await env.HTML_CACHE.delete(key.name);
-          // Also clear corresponding Cache API entry
+          // Also clear corresponding Cache API entry. Pin to CANONICAL_ORIGIN
+          // so we always purge the production cache namespace, regardless of
+          // which hostname the purge request arrived on.
           if (key.name.startsWith('html:')) {
             const cachePath = key.name.slice(5); // strip "html:" prefix
-            await cache.delete(new Request(`${url.origin}${cachePath}`));
+            await cache.delete(new Request(`${CANONICAL_ORIGIN}${cachePath}`));
           }
         });
         await Promise.all(deletes);
@@ -463,9 +518,9 @@ async function handlePurge(request, env) {
     await env.HTML_CACHE.delete(cacheKey);
   }
 
-  // Also clear from Cache API
+  // Also clear from Cache API. Pin to CANONICAL_ORIGIN — see note above.
   const cache = caches.default;
-  const cacheKey = new Request(`${url.origin}${path}`); // use request origin, not hardcoded domain
+  const cacheKey = new Request(`${CANONICAL_ORIGIN}${path}`);
   await cache.delete(cacheKey);
 
   return new Response(JSON.stringify({
@@ -481,8 +536,7 @@ async function handlePurge(request, env) {
  * Handle diagnostic endpoint — gated by PURGE_TOKEN (#17)
  */
 async function handleDiagnostic(request, env) {
-  const token = request.headers.get('X-Purge-Token');
-  if (!env.PURGE_TOKEN || token !== env.PURGE_TOKEN) {
+  if (!checkAdminToken(request, env)) {
     return new Response('Unauthorized', { status: 401 });
   }
 
@@ -538,8 +592,7 @@ async function handleDiagnostic(request, env) {
  * Handle trace endpoint — gated by PURGE_TOKEN (#17)
  */
 async function handleTrace(request, env) {
-  const token = request.headers.get('X-Purge-Token');
-  if (!env.PURGE_TOKEN || token !== env.PURGE_TOKEN) {
+  if (!checkAdminToken(request, env)) {
     return new Response('Unauthorized', { status: 401 });
   }
 

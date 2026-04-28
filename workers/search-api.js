@@ -78,11 +78,30 @@ export default {
   
   async handleSearch(request, env, corsHeaders) {
     const url = new URL(request.url);
-    const query = url.searchParams.get('q');
-    const limit = parseInt(url.searchParams.get('limit') || '10');
-    
-    if (!query || query.trim().length === 0) {
+    const rawQuery = url.searchParams.get('q') || '';
+    const query = rawQuery.trim();
+
+    // Bound the limit param. parseInt('foo') is NaN → falls through to 10.
+    // Clamp to 1..100 to prevent attackers requesting unbounded result sets.
+    const rawLimit = parseInt(url.searchParams.get('limit'), 10);
+    const limit = Number.isFinite(rawLimit)
+      ? Math.min(Math.max(rawLimit, 1), 100)
+      : 10;
+
+    if (!query) {
       return new Response(JSON.stringify({ error: 'Missing query parameter' }), {
+        status: 400,
+        headers: {
+          ...corsHeaders,
+          'Content-Type': 'application/json'
+        }
+      });
+    }
+
+    // Reject obvious abuse: queries shorter than 2 chars match too much,
+    // and queries longer than 100 chars are almost certainly junk.
+    if (query.length < 2 || query.length > 100) {
+      return new Response(JSON.stringify({ error: 'Query length must be 2-100 chars' }), {
         status: 400,
         headers: {
           ...corsHeaders,

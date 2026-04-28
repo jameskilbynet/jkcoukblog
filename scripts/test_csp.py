@@ -48,19 +48,31 @@ PROVIDERS = {
 
 
 def read_csp():
-    """Read and return the CSP string from _worker.template.js."""
+    """Read and return the CSP string from _worker.template.js.
+
+    Supports two source formats:
+    1. Inline string: `'Content-Security-Policy': "default-src 'self'; ..."`
+    2. Array form:    `const csp = [\n  "default-src 'self'",\n  ...\n].join('; ')`
+    """
     worker_file = Path('_worker.template.js')
     if not worker_file.exists():
         print("❌ _worker.template.js not found!")
         return None
 
     content = worker_file.read_text()
-    csp_match = re.search(r"'Content-Security-Policy':\s*\"([^\"]+)\"", content)
-    if not csp_match:
-        print("❌ No CSP header found in Worker!")
-        return None
 
-    return csp_match.group(1)
+    inline_match = re.search(r"'Content-Security-Policy':\s*\"([^\"]+)\"", content)
+    if inline_match:
+        return inline_match.group(1)
+
+    array_match = re.search(r'const csp = \[(.*?)\]\.join', content, re.DOTALL)
+    if array_match:
+        directives = re.findall(r'"([^"]+)"', array_match.group(1))
+        if directives:
+            return '; '.join(directives)
+
+    print("❌ No CSP header found in Worker!")
+    return None
 
 
 def check_provider(csp, name):

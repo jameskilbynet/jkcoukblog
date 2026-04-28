@@ -1,13 +1,36 @@
 /**
  * Cloudflare Worker to handle deployment notifications and forward them to Slack
- * Deploy this worker and use its URL as the webhook endpoint in Cloudflare Pages notifications
+ * Deploy this worker and use its URL as the webhook endpoint in Cloudflare Pages notifications.
+ *
+ * Auth: requires `?token=<secret>` matching env.WEBHOOK_SECRET. CF Pages
+ * notifications support arbitrary webhook URLs but not custom headers, so
+ * the shared secret is delivered as a query string. Compared in constant
+ * time to avoid timing leaks.
  */
+
+function timingSafeEqual(a, b) {
+  if (typeof a !== 'string' || typeof b !== 'string') return false;
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) {
+    diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return diff === 0;
+}
 
 export default {
   async fetch(request, env, ctx) {
     // Only accept POST requests
     if (request.method !== 'POST') {
       return new Response('Method not allowed', { status: 405 });
+    }
+
+    // Reject unauthenticated callers. If WEBHOOK_SECRET is unset we fail
+    // closed — the worker is useless without Slack credentials anyway.
+    const url = new URL(request.url);
+    const presented = url.searchParams.get('token') || '';
+    if (!env.WEBHOOK_SECRET || !timingSafeEqual(presented, env.WEBHOOK_SECRET)) {
+      return new Response('Unauthorized', { status: 401 });
     }
 
     try {
